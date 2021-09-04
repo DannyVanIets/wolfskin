@@ -748,7 +748,7 @@ screen preferences():
                 ## Additional vboxes of type "radio_pref" or "check_pref" can be
                 ## added here, to add additional creator-defined preferences.
 
-            null height (4 * gui.pref_spacing)
+            null height(4 * gui.pref_spacing)
 
             hbox:
                 style_prefix "slider"
@@ -919,7 +919,7 @@ screen history():
 
 ## This determines what tags are allowed to be displayed on the history screen.
 
-define gui.history_allow_tags = { "alt", "noalt" }
+define gui.history_allow_tags = {"alt", "noalt"}
 
 
 style history_window is empty
@@ -954,7 +954,7 @@ style history_text:
     xsize gui.history_text_width
     min_width gui.history_text_width
     text_align gui.history_text_xalign
-    layout ("subtitle" if gui.history_text_xalign else "tex")
+    layout("subtitle" if gui.history_text_xalign else "tex")
 
 style history_label:
     xfill True
@@ -1174,7 +1174,7 @@ style confirm_button is gui_medium_button
 style confirm_button_text is gui_medium_button_text
 
 style confirm_frame:
-    background Frame([ "gui/confirm_frame.png", "gui/frame.png"], gui.confirm_frame_borders, tile=gui.frame_tile)
+    background Frame(["gui/confirm_frame.png", "gui/frame.png"], gui.confirm_frame_borders, tile=gui.frame_tile)
     padding gui.confirm_frame_borders.padding
     xalign .5
     yalign .5
@@ -1224,7 +1224,7 @@ transform delayed_blink(delay, cycle):
         linear .2 alpha 1.0
         pause .2
         linear .2 alpha 0.5
-        pause (cycle - .4)
+        pause(cycle - .4)
         repeat
 
 
@@ -1383,7 +1383,7 @@ style nvl_dialogue:
     xsize gui.nvl_text_width
     min_width gui.nvl_text_width
     text_align gui.nvl_text_xalign
-    layout ("subtitle" if gui.nvl_text_xalign else "tex")
+    layout("subtitle" if gui.nvl_text_xalign else "tex")
 
 style nvl_thought:
     xpos gui.nvl_thought_xpos
@@ -1392,7 +1392,7 @@ style nvl_thought:
     xsize gui.nvl_thought_width
     min_width gui.nvl_thought_width
     text_align gui.nvl_thought_xalign
-    layout ("subtitle" if gui.nvl_text_xalign else "tex")
+    layout("subtitle" if gui.nvl_text_xalign else "tex")
 
 style nvl_button:
     properties gui.button_properties("nvl_button")
