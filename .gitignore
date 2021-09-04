@@ -256,3 +256,4 @@ dmypy.json
 .pyre/
 
 Wolfskin/game/saves/*
+Wolfskin/log.txt
