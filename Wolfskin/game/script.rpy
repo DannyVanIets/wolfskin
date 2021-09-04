@@ -40,7 +40,7 @@ label start:
     scene bg forest night
     with fadehold
 
-    play music 'audio/ambience/bbc woods night.mp3' volume 0.1
+    play music 'audio/ambience/bbc woods night.mp3' volume 0.01
 
     il "We should think of finding shelter soon, before it gets too dark."
 
@@ -89,7 +89,7 @@ label start:
     ed """
     And that fateful night, lord… I did not know the extent of the hatred that lay within their souls… to go as far as to burn me alive…
 
-    Is there something wrong with me, Ilona? I-I’m so sorry that I’m putting you through this. I’ve been fearing for our lives, clueless about what may befall us, always on high alert-
+    Is there something wrong with me, Ilona? I-I’m so sorry that I’m putting you through this. I’ve been fearing for our lives, always on high alert-
     """
 
     il """
@@ -101,6 +101,8 @@ label start:
 
     You're not. You’re-
     """
+
+    "Edwin immediately lets go of her hand, intertwined seconds ago, but now balled into a fist. The rustling of dry leaves brought with it a heavily armed guard and an archer under a cloak."
 
     # This ends the game.
 
