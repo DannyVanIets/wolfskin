@@ -1,5 +1,14 @@
 # ----------------- REN'PY GITIGNORE FILES ------------------------------------
 
+*.rpy[bc]
+*.bak
+**/tmp/*
+**/log.txt
+**/game/saves/*
+**/errors.txt
+**/traceback.txt
+*-dists/*
+
 # macOS-related files
 .DS_Store
 .AppleDouble
