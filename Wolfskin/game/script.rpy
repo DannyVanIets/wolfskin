@@ -35,7 +35,33 @@ label start:
     scene bg black
     with fade
 
-    centered "I am lost. {p=0.8}Pray, that I shall find my path.{p=0.8}Pray, that I shall not lose heart.{p=0.8}Let me see, for who I really am.{p=0.8}This, the only wish I have.{p=0.8}{p=0.8}Before I’ve wronged,{p=0.8}So far gone."
+    # Edwin's monologue for the intro in NVL mode
+    define nvlNarrator = Character(None, kind=nvl, what_font="CrimsonPro-Light.ttf")
+
+    # NVL mode: Edwin's monologue
+    window hide
+
+    nvlNarrator """
+    I am lost.
+
+    Pray, that I shall find my path.
+
+    Pray, that I shall not lose heart.
+
+    Let me see, for who I really am.
+
+    This, the only wish I have.
+
+    \nBefore I’ve wronged,
+
+    So far gone.
+    """
+
+    nvl clear
+
+    window show
+
+    # Switch to AVD mode.
 
     scene bg forest night
     with fadehold
