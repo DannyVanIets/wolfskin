@@ -1,34 +1,7 @@
-## End credits file.
-## First we have the label, which is only used to disable the quick menu, textbox and fade to the credits screen. This will also enable it once it's done with the credits screen.
-## After that is the transform credits_scroll, used to scroll the screen and how far it will go down.
-## After that is the screen, to show the text and disable key bindings, so no one can open the quick menu while it's happening. Also adds a skip button.
-## As last we have some styling for the credits text.
+## You can find the label in "scripts/credits-script.rpy".
 
-label credits_from_script:
-
-    # If the player is currently skipping text, this removes that textbox. It also auto saves which I am not too happy about. Will try to find a better solution.
-    $ renpy.choice_for_skipping()
-
-    ## We hide the quickmenu for the End Credits so they don't appear at the bottom.
-    $ quick_menu = False
-
-    ## We hide the textbox as well so it doesn't mess with things
-    window hide
-
-    scene black with fade
-
-    ## Go to the credits screen.
-    call screen credits
-
-    # This ends the game and returns you to the main menu.
-    return
-
-label credits_from_main_menu:
-    ## Go to the credits screen.
-    call screen credits
-
-    # This ends the game and returns you to the main menu.
-    return
+## In here is the screen, to show the text and disable key bindings, so no one can open the quick menu while it's happening. Also adds a skip button.
+## After the screne we have styling for the credits text.
 
 ## End Credits Scroll ############################################################
 ## ATL for scrolling screen object. In this case, credits roll.
@@ -39,7 +12,6 @@ transform credits_scroll(speed):
     linear speed ypos -5500  # This is how far down the screen will scroll, with the speed for how fast it will scroll.
 
 screen credits():
-
     # Make a menu of this, so you do not have main menu in the background while the credits are rolling.
     tag menu
 
@@ -58,14 +30,18 @@ screen credits():
     ## Adjust this number to control when the Credits screen is hidden and the game
     ## returns to its normal flow.
     ## Ideally, there is some wait time after the the credits reaches the end.
+    ## If you make the credits longer or shorter, you need to adjust this timer!
     timer 33.0 action Return()
 
     ## Adjust this number to control the speed at which the credits scroll.
+    ## Needs to be adjusted if you make the credits longer or shorter.
     frame at credits_scroll(30.0):
         background None
         xalign 0.5
 
+        # In here is all the text for the credits.
         vbox:
+            # This "Credits" label is the hbox.
             label "Credits" xalign 0.5
 
             null height 300
@@ -137,6 +113,7 @@ screen credits():
 
             text "And thank you, the player, for playing this game!" size 100
 
+# The styling for all the credit text.
 style credits_hbox:
     spacing 40
     ysize 30
