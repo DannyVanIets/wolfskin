@@ -250,7 +250,7 @@ screen quick_menu():
         hbox:
             style_prefix "quick"
 
-            xalign 0.85
+            xalign 0.75
             yalign 1.0
 
             textbutton _("Back") action Rollback()
@@ -322,10 +322,6 @@ screen navigation():
             textbutton _("Main Menu") action MainMenu()
 
         textbutton _("About") action ShowMenu("about")
-
-        if main_menu:
-
-            textbutton _("Credits") action Jump("credits_from_main_menu") alt "Credits"
 
         if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 

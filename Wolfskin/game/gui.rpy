@@ -61,10 +61,10 @@ define gui.text_font = "Mada-Medium.otf"
 define gui.interface_text_font = "Mada-Medium.otf"
 
 ## The size of normal dialogue text.
-define gui.text_size = 36
+define gui.text_size = 35
 
 ## The size of character names.
-define gui.name_text_size = 38
+define gui.name_text_size = 35
 
 ## The size of text in the game's user interface.
 define gui.interface_text_size = 38
@@ -101,7 +101,7 @@ define gui.textbox_yalign = 1.0
 
 ## The placement of the speaking character's name, relative to the textbox.
 ## These can be a whole number of pixels from the left or top, or 0.5 to center.
-define gui.name_xpos = 320
+define gui.name_xpos = 500
 define gui.name_ypos = -0.12
 
 ## The horizontal alignment of the character's name. This can be 0.0 for left-
@@ -125,11 +125,11 @@ define gui.namebox_tile = False
 ## The placement of dialogue relative to the textbox. These can be a whole
 ## number of pixels relative to the left or top side of the textbox, or 0.5 to
 ## center.
-define gui.dialogue_xpos = 200
-define gui.dialogue_ypos = 75
+define gui.dialogue_xpos = 390
+define gui.dialogue_ypos = 70
 
 ## The maximum width of dialogue text, in pixels.
-define gui.dialogue_width = 1080
+define gui.dialogue_width = 1170
 
 ## The horizontal alignment of the dialogue text. This can be 0.0 for left-
 ## aligned, 0.5 for centered, and 1.0 for right-aligned.
@@ -183,8 +183,8 @@ define gui.confirm_button_text_xalign = 0.5
 
 define gui.page_button_borders = Borders(10, 4, 10, 4)
 
-define gui.quick_button_borders = Borders(10, 20, 40, 20)
-define gui.quick_button_text_size = 20
+define gui.quick_button_borders = Borders(10, 20, 30, 15)
+define gui.quick_button_text_size = 17
 define gui.quick_button_text_idle_color = gui.idle_small_color
 define gui.quick_button_text_selected_color = gui.accent_color
 
@@ -282,7 +282,7 @@ define gui.main_menu_text_xalign = 1.0
 define gui.frame_borders = Borders(4, 4, 4, 4)
 
 ## The frame that is used as part of the confirm screen.
-define gui.confirm_frame_borders = Borders(100, 100, 100, 100)
+define gui.confirm_frame_borders = Borders(80, 80, 80, 80)
 
 ## The frame that is used as part of the skip screen.
 define gui.skip_frame_borders = Borders(16, 5, 50, 5)
@@ -357,15 +357,15 @@ define gui.history_text_xalign = 0.0
 ## The NVL-mode screen displays the dialogue spoken by NVL-mode characters.
 
 ## The borders of the background of the NVL-mode background window.
-define gui.nvl_borders = Borders(0, 10, 0, 20)
+define gui.nvl_borders = Borders(700, 230, 0, 0)
 
 ## The maximum number of NVL-mode entries Ren'Py will display. When more entries
 ## than this are to be show, the oldest entry will be removed.
-define gui.nvl_list_length = 6
+define gui.nvl_list_length = 7
 
 ## The height of an NVL-mode entry. Set this to None to have the entries
 ## dynamically adjust height.
-define gui.nvl_height = 115
+define gui.nvl_height = None
 
 ## The spacing between NVL-mode entries when gui.nvl_height is None, and between
 ## NVL-mode entries and an NVL-mode menu.
@@ -373,15 +373,15 @@ define gui.nvl_spacing = 10
 
 ## The position, width, and alignment of the label giving the name of the
 ## speaking character.
-define gui.nvl_name_xpos = 430
+define gui.nvl_name_xpos = 0
 define gui.nvl_name_ypos = 0
-define gui.nvl_name_width = 150
-define gui.nvl_name_xalign = 1.0
+define gui.nvl_name_width = 0
+define gui.nvl_name_xalign = 0.0
 
 ## The position, width, and alignment of the dialogue text.
-define gui.nvl_text_xpos = 450
-define gui.nvl_text_ypos = 8
-define gui.nvl_text_width = 590
+define gui.nvl_text_xpos = 0
+define gui.nvl_text_ypos = 0
+define gui.nvl_text_width = 1920
 define gui.nvl_text_xalign = 0.0
 
 ## The position, width, and alignment of nvl_thought text (the text said by the
