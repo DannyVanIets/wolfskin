@@ -12,6 +12,19 @@ define ke = Character("Kellac")
 define ei = Character("Eisleigh")
 define sa = Character("Salome")
 define ul = Character("Uldin")
+define unk = Character("???")
+
+# Hold at black for a bit.
+define fadehold = Fade(0.5, 2.0, 0.5)
+
+# long fade
+define longfade = Fade(1.5, 0.0, 1.5)
+
+style say_label:
+    outlines [ ( 0, "#000000", 2, 2) ]
+
+style say_dialogue:
+    outlines [ ( 0, "#000000", 2, 2) ]
 
 # The game starts here.
 label start:
