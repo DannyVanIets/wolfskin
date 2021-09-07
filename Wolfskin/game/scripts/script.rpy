@@ -3,15 +3,25 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define il = Character("Ilona")
-define ed = Character("Edwin")
-define an = Character("Anari")
-define fl = Character("Fleur")
-define ke = Character("Kellac")
-define ei = Character("Eisleigh")
-define sa = Character("Salome")
-define ul = Character("Uldin")
-define unk = Character("???")
+define il = Character("Ilona", ctc="ctc_anchored", ctc_position="fixed")
+define ed = Character("Edwin", ctc="ctc_anchored", ctc_position="fixed")
+define an = Character("Anari", ctc="ctc_anchored", ctc_position="fixed")
+define fl = Character("Fleur", ctc="ctc_anchored", ctc_position="fixed")
+define ke = Character("Kellac", ctc="ctc_anchored", ctc_position="fixed")
+define ei = Character("Eisleigh", ctc="ctc_anchored", ctc_position="fixed")
+define sa = Character("Salome", ctc="ctc_anchored", ctc_position="fixed")
+define ul = Character("Uldin", ctc="ctc_anchored", ctc_position="fixed")
+define unk = Character("???", ctc="ctc_anchored", ctc_position="fixed")
+define narrator = Character(name=None, ctc="ctc_anchored", ctc_position="fixed")
+
+# CTC SHENANIGANS
+
+image ctc_anchored:
+       "ctc.png"
+       yalign 0.93 xalign 0.96 #Adjust these numbers to fit your own textbox
+       linear 0.95 alpha 1.0
+       linear 0.85 alpha 0.0
+       repeat
 
 # Hold at black for a bit.
 define fadehold = Fade(0.5, 2.0, 0.5)
@@ -112,7 +122,7 @@ label start:
 
     "His eyes flicker for a moment."
 
-    scene bg field
+    scene bg road
     with longfade
 
     "Eventually, they press on. They sight a lonely settlement on the horizon; stone walls surrounding its perimeter."
@@ -190,3 +200,6 @@ label start:
     # This ends the game.
 
     return
+
+    # Go to the credits.
+    jump credits_from_script
