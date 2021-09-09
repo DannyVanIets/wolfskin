@@ -58,15 +58,18 @@ label act1:
 
     "Ilona waits for Edwin to turn back into a human, closing her eyes to rest for a moment. There's only the sound of the forest, until Edwin speaks to break their silence."
 
-    ed "Despite everything that's happened, would you please stay with me?"
+    show edwin anxious at right with dissolve:
+        zoom 0.50 xpos 1.0
+
+    ed "I know that I'm asking for too much, but despite everything that's happened… would you please stay with me?"
 
     show ilona fear
 
     il "What? Edwin, please, calm down-"
 
-    ed "... Ilona I-I can’t. Not in a situation like this..."
+    show edwin sad
 
-    show ilona sad
+    ed "... Ilona I-I can’t. Not in a situation like this..."
 
     il "You’re right, but I need you to slow down. I can’t keep up with you and that is only going to make us look all the more suspicious."
 
@@ -76,11 +79,15 @@ label act1:
 
     il "We have only each other to rely on."
 
+    show edwin annoyed
+
     "As she says this, she places her hands over his. His hands are abnormally cold to touch. Ilona learned this was a sign of his transformation."
 
     "Even so, she must remain with him."
 
     "The moonlight beams over them, slightly wavering with each breath they take."
+
+    show ilona shy
 
     il "(If only the moonlight would never leave us. We should rest here for a while.)"
 
@@ -88,17 +95,25 @@ label act1:
 
     ed "…"
 
-    show ilona happy
+    show ilona uwu
 
     il "Ed…"
 
+    show edwin chuckle
+
     ed "Yes, I’m here. Please forgive my wandering mind."
+
+    show ilona happy
+
+    show edwin smirk
 
     ed "...What could I ever do without you? I feel like I have never thanked you for-"
 
     il "You have thanked me more than enough already, Edwin. I appreciate it… but let's not dwell on it any further. "
 
     show ilona pensive
+
+    show edwin neutral
 
     "Their eyes flicker for a moment, and he’s not shivering anymore. "
 
@@ -107,18 +122,25 @@ label act1:
 
     "Eventually, they press on. They sight a lonely settlement on the horizon; stone walls surrounding its perimeter."
 
-    ed """
-    Heh…
+    show edwin smirk at right with dissolve:
+        zoom 0.50
 
+    ed "Heh…"
+
+    show edwin anxious
+
+    ed """
     I haven't felt like m-myself lately, since the incident back at the priory. Try as I may to blend in, to do good and keep myself in check… I am a beast, through and through.
 
     What is it that we've done wrong? Is us being together something so heinous? Is my existence such a sin?
     """
 
     show ilona sad with dissolve:
-        zoom 0.50 xpos 100
+        zoom 0.50 xpos 50
 
     il "I know..."
+
+    show edwin annoyed
 
     ed """
     I did not know the extent of the hatred that lay within their souls until that night… to go as far as to burn me alive…
@@ -137,6 +159,8 @@ label act1:
 
     hide ilona
 
+    hide edwin
+
     "Edwin immediately lets go of her hand, intertwined seconds ago, but now balled into a fist. The rustling of dry leaves brought with it a heavily armed guard and an archer under a cloak. "
 
     unk """
@@ -145,10 +169,13 @@ label act1:
     I've been observing your movements from the battlements for a while now. Be grateful that the town master wishes to have a meeting with you, or else I would have already pierced you with my arrows.
     """
 
+    show edwin serious at right with dissolve:
+        zoom 0.50 xpos 1.0
+
     ed "But, we-"
 
     show ilona annoyed with dissolve:
-        zoom 0.50 xpos 100
+        zoom 0.50 xpos 0.75 xzoom -1
 
     il "May we ask, to what purpose do we owe this pleasure?"
 
@@ -171,7 +198,6 @@ label act1:
     """
 
     show ilona annoyedtalk with dissolve:
-        zoom 0.50 xpos 100
 
     il "...I suppose that choice is not truly much of one. I accept."
 
@@ -179,9 +205,13 @@ label act1:
 
     an "A wise judgement. You’re clever for a nun, but you should learn to keep your dog in line."
 
+    show edwin fear
+
     ed "...Excuse me?"
 
     an "I don’t appreciate being called ‘feisty’."
+
+    show edwin anxious
 
     ed "I meant no offense when I said that. My apologies."
 
