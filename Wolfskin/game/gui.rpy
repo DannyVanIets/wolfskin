@@ -110,8 +110,8 @@ define gui.name_xalign = 0.5
 
 ## The width, height, and borders of the box containing the character's name, or
 ## None to automatically size it.
-define gui.namebox_width = 430
-define gui.namebox_height = 130
+define gui.namebox_width = 420
+define gui.namebox_height = 120
 
 ## The borders of the box containing the character's name, in left, top, right,
 ## bottom order.
