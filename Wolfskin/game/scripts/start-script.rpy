@@ -15,6 +15,40 @@ define ul = Character("Uldin", ctc="ctc_anchored", ctc_position="fixed")
 define unk = Character("???", ctc="ctc_anchored", ctc_position="fixed")
 define narrator = Character(name=None, ctc="ctc_anchored", ctc_position="fixed")
 
+#begin auto_layeredimage for Edwin
+layeredimage edwin:
+
+    always:
+        "edwin_base"
+
+    group outfit:
+        attribute wolf
+
+    group eyes auto:
+        attribute open default
+
+    group mouth auto:
+        attribute neutral default
+
+    group emotion auto
+
+#begin auto_layeredimage for ilona
+layeredimage ilona:
+
+    always:
+        "ilona_base"
+
+    group eyes auto:
+        attribute open default
+
+    group eyebrows auto:
+        attribute relaxed default
+
+    group mouth auto:
+        attribute neutral default
+
+    group emotion auto
+
 # CTC SHENANIGANS
 
 image ctc_anchored:

@@ -47,73 +47,90 @@ label act1:
 
     $ renpy.pause(2.0)
 
-    show ilona neutral at left with dissolve:
+    show ilona at left with dissolve:
         zoom 0.50 xpos 100
 
     $ renpy.pause(1.0)
 
     il "We should think of finding shelter soon, before it gets too dark."
 
-    show ilona shy
+    show ilona closed
 
     "Ilona waits for Edwin to turn back into a human, closing her eyes to rest for a moment. There's only the sound of the forest, until Edwin speaks to break their silence."
 
-    show edwin anxious at right with dissolve:
+    show edwin glance talk at right with dissolve:
         zoom 0.50 xpos 1.0
 
     ed "I know that I'm asking for too much, but despite everything that's happened… would you please stay with me?"
 
-    show ilona fear
+    show ilona sad shock talk
 
     il "What? Edwin, please, calm down-"
 
-    show edwin sad
+    show edwin sad talk
 
     ed "... Ilona I-I can’t. Not in a situation like this..."
+
+    show ilona open sad neutral
+
+    show edwin glance neutral
 
     il "You’re right, but I need you to slow down. I can’t keep up with you and that is only going to make us look all the more suspicious."
 
     ed "..."
 
-    show ilona pensive
+    show ilona pensive sad talk with dissolve:
+        xpos 100
+        linear 0.3 xpos 0.35
+
 
     il "We have only each other to rely on."
 
-    show edwin annoyed
+    show edwin sad neutral
+
+    show ilona pensive sad neutral
 
     "As she says this, she places her hands over his. His hands are abnormally cold to touch. Ilona learned this was a sign of his transformation."
 
     "Even so, she must remain with him."
 
+    show ilona closed relaxed
+
     "The moonlight beams over them, slightly wavering with each breath they take."
 
-    show ilona shy
+    show edwin angry furrow
 
     il "(If only the moonlight would never leave us. We should rest here for a while.)"
 
     il "Edwin…"
 
+    show edwin closed neutral -furrow
+
     ed "…"
 
-    show ilona uwu
+    show ilona blush happy
 
     il "Ed…"
 
-    show edwin chuckle
+    show ilona smile
+
+    show edwin sad grin blush
 
     ed "Yes, I’m here. Please forgive my wandering mind."
 
-    show ilona happy
+    show edwin closed grin
 
-    show edwin smirk
+    show ilona open
 
     ed "...What could I ever do without you? I feel like I have never thanked you for-"
 
+    show ilona happy
+
     il "You have thanked me more than enough already, Edwin. I appreciate it… but let's not dwell on it any further. "
 
-    show ilona pensive
+    show ilona closed smile
 
-    show edwin neutral
+    show edwin glance smile blush
 
     "Their eyes flicker for a moment, and he’s not shivering anymore. "
 
@@ -122,12 +139,12 @@ label act1:
 
     "Eventually, they press on. They sight a lonely settlement on the horizon; stone walls surrounding its perimeter."
 
-    show edwin smirk at right with dissolve:
+    show edwin anxious grin at right with dissolve:
         zoom 0.50
 
     ed "Heh…"
 
-    show edwin anxious
+    show edwin anxious talk furrow
 
     ed """
     I haven't felt like m-myself lately, since the incident back at the priory. Try as I may to blend in, to do good and keep myself in check… I am a beast, through and through.
@@ -135,19 +152,23 @@ label act1:
     What is it that we've done wrong? Is us being together something so heinous? Is my existence such a sin?
     """
 
-    show ilona sad with dissolve:
+    show ilona sad pensive talk with dissolve:
         zoom 0.50 xpos 50
 
     il "I know..."
 
-    show edwin annoyed
+    show edwin angry furrow
+
+    show ilona neutral
 
     ed """
     I did not know the extent of the hatred that lay within their souls until that night… to go as far as to burn me alive…
 
     Is there something wrong with me, Ilona? I'm always on edge, fearing for our lives… I never meant to put you through this.
     """
-    show ilona pensive
+    show ilona talk
+
+    show edwin neutral
 
     il """
     If you want my answer as a former nun… You and I have sinned.
@@ -161,6 +182,8 @@ label act1:
 
     hide edwin
 
+    with vpunch
+
     "Edwin immediately lets go of her hand, intertwined seconds ago, but now balled into a fist. The rustling of dry leaves brought with it a heavily armed guard and an archer under a cloak. "
 
     unk """
@@ -169,23 +192,28 @@ label act1:
     I've been observing your movements from the battlements for a while now. Be grateful that the town master wishes to have a meeting with you, or else I would have already pierced you with my arrows.
     """
 
-    show edwin serious at right with dissolve:
+    show edwin sad furrow talk at right with dissolve:
         zoom 0.50 xpos 1.0
 
     ed "But, we-"
 
-    show ilona annoyed with dissolve:
+    show ilona glance annoyed talk with dissolve:
         zoom 0.50 xpos 0.75 xzoom -1
 
     il "May we ask, to what purpose do we owe this pleasure?"
+
+    show ilona aaaa neutral
 
     unk """
     Sister, all I know is that the master called you. I sighted a nun and a man outside the town walls and informed him of this.
 
     I can tell your legs are shaking even from here… so make sure to comply obediently and I won't ask any difficult questions about you in return.
     """
+    show edwin talk open furrow
 
     ed "She simply asked what business the master has with us. You're acting very feisty for someone who didn't even have the decency to introduce herself."
+
+    show edwin neutral
 
     unk "Hmph. Fair enough."
 
@@ -197,15 +225,15 @@ label act1:
     So, let’s get back to it. Will you accept the town master's call?
     """
 
-    show ilona annoyedtalk with dissolve:
+    show ilona closed talk annoyed
 
     il "...I suppose that choice is not truly much of one. I accept."
 
-    show ilona annoyed
+    show ilona glance neutral
 
     an "A wise judgement. You’re clever for a nun, but you should learn to keep your dog in line."
 
-    show edwin fear
+    show edwin fear talk furrow
 
     ed "...Excuse me?"
 
@@ -217,6 +245,10 @@ label act1:
 
     an "So you do have manners; it would do you well to keep them. Let’s get moving, then. I’ll escort you to the manse. "
 
+    hide ilona
+
+    hide edwin
+        
     """
     Anari takes the position of rear guard, as the other guard leads the way forward. Ilona glances back, just once. Anari's bow is by her side and a hand rests on the quiver, ready to fire if the two of them even thought of escaping.
 
@@ -224,6 +256,9 @@ label act1:
 
     She glances at Edwin, his face inscrutable. And so, they enter the gates.
     """
+
+    scene bg forest day
+    with fadehold
 
     ed """
     (When was the last time I felt any hope? Anything besides pain? The swelling in my chest is excruciating…)
@@ -234,12 +269,28 @@ label act1:
     """
     "It’s almost time to head home for normal folk, but the town is bustling. There's a large bonfire in the square, and there's carved turnips at the doors of all the houses-"
 
+    show edwin neutral at right with dissolve:
+            zoom 0.50 xpos 1.0
+
+    show ilona glance sad neutral with dissolve:
+        zoom 0.50 xpos 0.75 xzoom -1
+
+    # spoken as though Ilona is suspicious of jack o' lanterns
     il "What kind of decorations are these?"
+
+    show edwin glance grin
 
     ed "It’s for... All Hallows’ Eve, a celebration to commemorate the dead."
 
+    show ilona angry sad talk
+
     il "You mean All Saints’ Eve? Why are the townsfolk celebrating in joy, then?"
 
+    show edwin closed grin furrow
+
+    show ilona neutral
+
+    # said with a straight face, but playfully poking fun at her
     ed "You were raised strictly, Ilona. Father Ivanov never wanted you to know about these pagan festivals."
 
     ed "Oh!-"
