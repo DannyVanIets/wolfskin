@@ -58,7 +58,7 @@ define gui.interface_text_color = u'#ffffff'
 define gui.text_font = "Mada-Medium.otf"
 
 ## The font used for out-of-game text.
-define gui.interface_text_font = "Mada-Medium.otf"
+define gui.interface_text_font = "BluuNext-Bold.otf"
 
 ## The size of normal dialogue text.
 define gui.text_size = 41
@@ -67,13 +67,13 @@ define gui.text_size = 41
 define gui.name_text_size = 39
 
 ## The size of text in the game's user interface.
-define gui.interface_text_size = 38
+define gui.interface_text_size = 50
 
 ## The size of labels in the game's user interface.
-define gui.label_text_size = 24
+define gui.label_text_size = 35
 
 ## The size of text on the notify screen.
-define gui.notify_text_size = 16
+define gui.notify_text_size = 19
 
 ## The size of the game's title.
 define gui.title_text_size = 50
