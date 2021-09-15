@@ -15,7 +15,8 @@ define ul = Character("Uldin", ctc="ctc_anchored", ctc_position="fixed")
 define unk = Character("???", ctc="ctc_anchored", ctc_position="fixed")
 define narrator = Character(name=None, ctc="ctc_anchored", ctc_position="fixed")
 
-#begin auto_layeredimage for Edwin
+# begin auto_layeredimage for Edwin
+
 layeredimage edwin:
 
     always:
@@ -32,7 +33,8 @@ layeredimage edwin:
 
     group emotion auto
 
-#begin auto_layeredimage for ilona
+# begin auto_layeredimage for ilona
+
 layeredimage ilona:
 
     always:
@@ -46,6 +48,27 @@ layeredimage ilona:
 
     group mouth auto:
         attribute neutral default
+
+    group emotion auto
+
+# begin auto_layeredimage for anari
+
+layeredimage anari:
+
+    always:
+        "anari_base"
+
+    group eyes auto:
+        attribute open default
+
+    group eyebrows auto:
+        attribute relaxed default
+
+    group mouth auto:
+        attribute smile default
+
+    group outfit auto:
+        attribute unarmed default
 
     group emotion auto
 
@@ -63,6 +86,11 @@ define fadehold = Fade(0.5, 2.0, 0.5)
 
 # long fade
 define longfade = Fade(1.5, 0.0, 1.5)
+
+## moving sprites are a pain
+define midleft= Position(xpos=0.40)
+
+# drop shadows for dialogue box
 
 style say_label:
     outlines [ ( 0, "#000000", 2, 2) ]

@@ -9,7 +9,7 @@
 ## Code Source: https://lemmasoft.renai.us/forums/viewtopic.php?t=42667
 transform credits_scroll(speed):
     ypos 1100  # This is the space between the top of the screen and the text 'credits'.
-    linear speed ypos -5500  # This is how far down the screen will scroll, with the speed for how fast it will scroll.
+    linear speed ypos -5800  # This is how far down the screen will scroll, with the speed for how fast it will scroll.
 
 screen credits():
     # Make a menu of this, so you do not have main menu in the background while the credits are rolling.
@@ -31,7 +31,7 @@ screen credits():
     ## returns to its normal flow.
     ## Ideally, there is some wait time after the the credits reaches the end.
     ## If you make the credits longer or shorter, you need to adjust this timer!
-    timer 33.0 action Return()
+    timer 1000.0 action Return()
 
     ## Adjust this number to control the speed at which the credits scroll.
     ## Needs to be adjusted if you make the credits longer or shorter.
@@ -44,68 +44,112 @@ screen credits():
             # This "Credits" label is the hbox.
             label "Credits" xalign 0.5
 
-            null height 300
+            null height 400
+
+            text "Voice Cast" size 100
+            null height 100
+            text "Lasli Tran as Ilona"
+
+            null height 100
+            text "Connor Howard as Edwin"
+
+            null height 100
+            text "Elissa Park as Anari"
+
+            null height 100
+            text "Shakyra Dunn as Eisleigh"
+
+            null height 100
+            text "Daniel Walton as Kellac"
+
+            null height 100
+            text "Trent Martin as Uldin"
+
+            null height 100
+            text "Lisa-Marie Lee as Salome"
+
+            null height 100
+            text "and"
+
+            null height 100
+            text "Bindy Coda as Fleur"
+
+            null height 400
 
             text "Director, lead arist & writer" size 100
-            null height 50
+            null height 80
             text "Tamafry"
 
-            null height 300
+            null height 400
 
-            text "Co-writers" size 100
-            null height 50
-            text "Ahkmin"
+            text "Lead writer" size 100
+            null height 80
+            text "Abhishek"
 
-            null height 50
-            text "PotatoLays"
+            null height 400
 
-            null height 300
+            text "Story Consultant, Beta Tester" size 100
+            null height 80
+            text "Gaming Variety Potato"
 
-            text "Editor" size 100
-            null height 50
+            null height 400
+
+            text "Editor & Proofreader" size 100
+            null height 80
             text "Billie"
 
-            null height 300
+            null height 400
+
+            text "Casting and Voice Direction, Script Editing" size 100
+            null height 80
+            text "Maxi Molina (SandraMJ)"
+
+            null height 400
 
             text "Music & sound designers" size 100
-            null height 50
+            null height 80
+            text "Luis \"RunnerGuitar\" Guerrero"
+            null height 80
 
             hbox:
                 xalign 0.5
-                spacing 250
+                spacing 280
 
                 vbox:
-                    text "Luis \"RunnerGuitar\" Guerrero"
+                    text "Octavio Savinelli"
 
                 vbox:
-                    text "Patrick Intallura"
+                    text "Luke Ford"
 
-            null height 200
+            null height 400
+
+            text "GUI design" size 100
+            null height 80
+            text "Kaya"
+
+            null height 400
+
+            text "Logo design by" size 100
+            null height 80
+            text "Puchi"
+
+            null height 400
 
             text "Programming" size 100
-            null height 50
+            null height 80
             text "Vygan"
 
-            null height 300
-
-            text "Voice acting" size 100
-            null height 50
-            text "??? as Ilona"
-
-            null height 50
-            text "??? as Edwin"
-
-            null height 300
+            null height 400
 
             text "Special Thanks" size 100
-            null height 50
+            null height 80
             text "Remort Studios for hosting this Visual Novel Jam."
 
-            null height 300
+            null height 400
 
             text "Made with Ren'Py [renpy.version_only]." size 100
 
-            null height 300
+            null height 400
 
             text "Made for the Spooktober 3rd Annual Visual Novel Jam by DevTalk." size 100
 
@@ -120,7 +164,7 @@ style credits_hbox:
 
 style credits_label_text:
     xalign 0.5
-    size 200
+    size 140
     text_align 0.5
 
 style credits_text:

@@ -17,7 +17,7 @@ label credits_from_script:
     window hide
 
     ## The background of the credits, for now it's just black.
-    scene black with fade
+    scene fluffies with fade
 
     ## Go to the credits screen, in here is the text for the credits.
     call screen credits
