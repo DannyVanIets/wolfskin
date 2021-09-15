@@ -70,13 +70,15 @@ label act3:
 
     ed "You… You should stay here. Live, and survive."
 
-    il "And watch you die? Do you really think I would be happy with something like that?"
+    il "And watch you {i}die{/i}? Do you really think I would be happy with something like that?"
 
     ed "I'm going to get what's coming to me, sooner or later."
 
     ed "Your hurt and pain will heal. You can recover. If you're with me, you can't walk a righteous path. But if you leave me here, at least one of us can survive."
 
     il "Enough!{p}I already accepted that when I left the priory with you!"
+
+    # Ilona is crying.
 
     il "I'm not trying to find a way to break your curse so I can return to the priory, or to repent for my sins."
 
@@ -318,7 +320,7 @@ label act3:
 
     "A good look at Anari leaves nothing more than questions.{p}Does she want to let them leave?{p}Or capture and burn them at the stake alive?"
 
-    "Her intentions remain unclear, as one final arrow impales Ilona in the back."
+    "Her intentions remain unclear, as one final arrow impales Ilona in the back, shooting through her. Blood stains her white dress."
 
     "With a light scream, Ilona loses her footing. There's only one hand she could use to hold onto the rough stone wall, and her fingers are slipping."
 
@@ -328,9 +330,11 @@ label act3:
 
     "The stone wall shows a trail of their blood.{p}They make it out of Belorov, despite their injuries."
 
-# Scene 46
+    # Scene 46 - the voice direction here should sound a little slower than usual to reflect their injuries.
 
     "Edwin marches on, with Ilona in his arms. It’s too dangerous to be out in the open. They search for a place to rest, as dusk greets them with open arms."
+
+    "Ilona heals the wound that pierced her abdomen through, and the blood slows. However, the wound does not close. The other arrows stuck in them would prove more dangerous to deal with."
 
     il "Edwin, set me down. You're more injured than I am."
 
@@ -338,7 +342,7 @@ label act3:
 
     il "Darling?"
 
-    "At the awkward exchange, Edwin gingerly sets Ilona down on the ground. He reverts to human form, his ears and face red."
+    "At the awkward exchange, Edwin gingerly sets Ilona down on the ground. He reverts to human form, his ears and face red. Ilona tries to heal what open wounds that Edwin has."
 
     ed "Yes, I've —  I’ve been waiting to call you that for so long."
 
@@ -346,7 +350,7 @@ label act3:
 
     ed "The time I spent without you, in that cell. It was excruciating. And that’s when I realised, {w}how much I want you by my side."
 
-    il "My, the exhaustion must be getting you.{p}Now I know you weren't joking about wanting me to meet your family…"
+    il "My, the exhaustion must be getting to you.{p}Now I know you weren't joking about wanting me to meet your family…"
 
     ed "…"
 
@@ -361,6 +365,8 @@ label act3:
     il "About what?"
 
     ed "You’re right about me not saying what it is that I want to say,{p}burying it so deep within the abyss that I can’t even reach it."
+
+    # watch the wait and pauses for some of these lines.
 
     ed "Even if I want to...{p}...And just maybe, if I’d come clean to the people that we came across, {w}to you, {w}about the wolfskin; the incessant nightmares that I’ve been having...."
 
@@ -378,9 +384,9 @@ label act3:
 
     ed "Why must the cycle of violence perpetuate? Wherever I go, something always goes wrong."
 
-    ed "I’ve noticed hints of it. Even in  these past few days - mind you, that banquet was all too much for me to begin with. I used to enjoy these things, but now, I..."
+    ed "I’ve noticed hints of it. Even in these past few days - mind you, that banquet was all too much for me to begin with. I used to enjoy these things, but now, I..."
 
-    il "Right, I know."
+    il " I know."
 
     ed "It felt like everybody there had something to hide, and doubts arose from that…{p}We were all turning against each other."
 
@@ -394,7 +400,9 @@ label act3:
 
     il "I do not know, but I pity her.{p}I pray that she's not alone.{p}…"
 
-    "Ilona hears Edwin's breathing slow. Ilona is too weary to use healing magic. They can’t remove the arrows that pierce them, or the two of them would surely bleed out and die."
+    # at this point, the voices should have more pauses in between them, and gradually slow and quieten down to reflect a death scene.
+
+    "Ilona hears Edwin's breathing slow. Ilona is too weary to use any more healing magic. They can’t remove the arrows that pierced them, or the two of them would surely bleed out and die."
 
     ed "…"
 
@@ -436,15 +444,18 @@ label act3:
 
     "Ilona lays her head against Edwin's chest, and he gently wraps his arms around her. He heaves a contented sigh, yet the arrows piercing him dig into his weary body."
 
-    "He strokes her hair, speaking softly. He can feel his hands wet with the blood from her wounds."
+    "Edwin thinks of the time they met, reading aloud poetry and ballads together. He strokes her hair, speaking softly in a murmur. He can feel his hands wet with the blood from her wounds."
 
-    ed "If our journey ends here, so be it.{p}I am not lost anymore, I have you."
+    # despite the beautiful poem, it should be delivered clumsily and slowly with pauses, as though struggling to think of the next line, and also struggling for breath if possible.
 
-    ed "With the sun’s blessing over us,{p}I shall now lay to rest."
+    ed "Should our journey end, so let it be.{p}Lost no more, I lay to rest."
 
-    ed "And flourish with the bountiful verdue."
+    ed "The sun bestows its blessings over me,{p}While I have you at my side."
 
-    ed "I was never much of a poet,{p}But know that,{p}I love you."
+    # pronunciation of verdure - vur-jur
+    ed "I flourish with the bountiful verdure,"
+
+    ed "Though my words are withering,{p}For all uncertainty we may perjure,{p}I bid you know: I love you."
 
     ed "I-I love…"
 
@@ -455,7 +466,8 @@ label act3:
     scene bg black
     with fade
 
-    # NVL mode: Edwin's monologue
+    # NVL mode: The final poem - this is still being rewritten to have correct stanzas and structure. We are thinking part of this should be spoken in unison, and Edwin and Ilona should have separate parts.
+
     $ quick_menu = False
 
     window hide

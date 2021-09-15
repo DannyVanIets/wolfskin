@@ -31,7 +31,7 @@ label act2:
 
     il "There's traces of fur in this room, but that's about it. What about any of the other rooms?"
 
-    an "Eisleigh told me there was something strange in Fleur's room.{p}}I'll also let you look through Salome's room."
+    an "Eisleigh told me there was something strange in Fleur's room.{p}I'll also let you look through Salome's room."
 
 # SCENE 17
 
@@ -41,7 +41,7 @@ label act2:
 
     il "She asked you to debrief with her, after she met with us. Were you here, Anari?"
 
-    an "Correct. I gave my report about seeing you and Edwin for the lady's record-keeping.{p}The only thing that's moved is the locked chest. Though…"
+    an "Correct. I gave my report about seeing you and Edwin for the lady's record-keeping.{p}The only thing that's moved is the chest. Though…"
 
     il "What is it? Please, don't hold back."
 
