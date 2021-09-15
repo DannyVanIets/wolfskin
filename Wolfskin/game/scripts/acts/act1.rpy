@@ -81,7 +81,7 @@ label act1:
 
     ed "..."
 
-    show ilona pensive sad talk with move:
+    show ilona pensive sad talk with dissolve:
         xpos 100
         linear 0.3 xpos 0.35
 

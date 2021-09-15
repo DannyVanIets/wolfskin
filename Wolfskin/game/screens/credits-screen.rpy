@@ -76,7 +76,7 @@ screen credits():
 
             null height 400
 
-            text "Director, lead arist & writer" size 100
+            text "Creative Director" size 100
             null height 80
             text "Tamafry"
 
@@ -88,7 +88,7 @@ screen credits():
 
             null height 400
 
-            text "Story Consultant, Beta Tester" size 100
+            text "Story Consultant, Quality Assurance Tester" size 100
             null height 80
             text "Gaming Variety Potato"
 
@@ -123,6 +123,26 @@ screen credits():
 
             null height 400
 
+            text "Audio Engineer" size 100
+            null height 80
+            text "Luke Ford"
+
+            text "Lead Artist & Sprites" size 100
+            null height 80
+            text "Tamafry"
+
+            text "Backgrounds & Cleanup" size 100
+            null height 80
+            text "Jason"
+
+            null height 400
+
+            text "Backgrounds & Cleanup" size 100
+            null height 80
+            text "Jason"
+
+            null height 400
+
             text "GUI design" size 100
             null height 80
             text "Kaya"
@@ -141,7 +161,7 @@ screen credits():
 
             null height 400
 
-            text "Special Thanks" size 100
+            text "Special Thanks to" size 100
             null height 80
             text "Remort Studios for hosting this Visual Novel Jam."
 
