@@ -475,23 +475,27 @@ label act3:
     nvlNarrator """
     We are found,
 
-    Praying in the dead of night,
+    Praying deep in the dead of night,
 
-    you shall find your route.
+    You have found your path.
 
-    No desire, no end in sight,
+    \nPraying still, no end in sight,
 
-    you will arrive alive.
+    A pure heart perseveres.
 
-    \nYour soul will purify melancholic hearts,
+    \nPraying, no desire, delight,
 
-    with no bounds.
+    A serene soul you see.
 
-    Bringing them back,
+    {clear}
 
-    out of sorts,
+    Bring back those melancholy hearts,
 
-    No loss shall be found.
+    Cleanse these with your soul unbound.
+
+    Out of sorts, but not far gone,
+
+    With you, never a loss is found.
     """
 
     nvl clear

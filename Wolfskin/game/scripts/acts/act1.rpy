@@ -27,7 +27,7 @@ label act1:
 
     Pray, that I shall not lose heart.
 
-    Let me see, for who I really am.
+    Pray, I see for who I am.
 
     This, the only wish I have.
 
@@ -144,11 +144,9 @@ label act1:
 
     show edwin anxious talk furrow
 
-    ed """
-    I haven't felt like m-myself lately, since the incident back at the priory. Try as I may to blend in, to do good and keep myself in check… I am a beast, through and through.
+    ed "I haven't felt like m-myself lately, since the incident back at the priory. Try as I may to blend in, to do good and keep myself in check… I am a beast, through and through."
 
-    What is it that we've done wrong? Is us being together something so heinous? Is my existence such a sin?
-    """
+    ed "What is it that we've done wrong? Is us being together something so heinous? Is my existence such a sin?"
 
     show ilona sad pensive neutral with dissolve:
         zoom 0.50 xpos 50
@@ -159,20 +157,17 @@ label act1:
 
     show ilona neutral
 
-    ed """
-    I did not know the extent of the hatred that lay within their souls until that night… to go as far as to burn me alive…
+    ed "I did not know the extent of the hatred that lay within their souls until that night… to go as far as to burn me alive…"
 
-    Is there something wrong with me, Ilona? I'm always on edge, fearing for our lives… I never meant to put you through this.
-    """
+    ed "Is there something wrong with me, Ilona? I'm always on edge, fearing for our lives… I never meant to put you through this."
+
     show ilona
 
     show edwin neutral
 
-    il """
-    If you want my answer as a {i}former{/i} nun… You and I have sinned.
+    il "If you want my answer as a {i}former{/i} nun… You and I have sinned."
 
-    You said that you were a beast, through and through.
-    """
+    il "You said that you were a beast, through and through."
 
     show ilona closed talk
 
@@ -189,11 +184,9 @@ label act1:
     show anari angry glance talk bow with dissolve:
         zoom 0.50 xpos 10 xzoom -1
 
-    unk """
-    That's enough loitering around the town wall looking suspicious, don't you think?
+    unk "That's enough loitering around the town wall looking suspicious, don't you think?"
 
-    I've been observing your movements from the battlements for a while now. Be grateful that the town master wishes to have a meeting with you, or else I would have already pierced you with my arrows.
-    """
+    unk "I've been observing your movements from the battlements for a while now. Be grateful that the town master wishes to have a meeting with you, or else I would have already pierced you with my arrows."
 
     show anari neutral
 
@@ -211,11 +204,10 @@ label act1:
 
     show anari open smile
 
-    unk """
-    {i}Sister{/i}, all I know is that the master called you. I sighted a nun and a man outside the town walls and informed him of this.
+    unk "{i}Sister{/i}, all I know is that the master called you. I sighted a nun and a man outside the town walls and informed him of this."
 
-    I can tell your legs are shaking even from here… so make sure to comply obediently and I won't ask any difficult questions about you in return.
-    """
+    unk "I can tell your legs are shaking even from here… so make sure to comply obediently and I won't ask any difficult questions about you in return."
+
     show edwin talk open furrow
 
     ed "She simply asked what business the master has with us. You're acting very feisty for someone who didn't even have the decency to introduce herself."
@@ -228,15 +220,13 @@ label act1:
 
     show anari open talk
 
-    an """
-    My name is Anari. Happy now?
+    an "My name is Anari. Happy now?"
 
-    I'm not going to probe you or anything.
+    an "I'm not going to probe you or anything."
 
-    You may be outsiders, but you look like decent enough folk. No need to come up with any grand excuses for why you’re here.
+    an "You may be outsiders, but you look like decent enough folk. No need to come up with any grand excuses for why you’re here."
 
-    So, let’s get back to it. Will you accept the town master's call?
-    """
+    an "So, let’s get back to it. Will you accept the town master's call?"
 
     show anari neutral
 
@@ -293,13 +283,11 @@ label act1:
     show edwin closed at right with dissolve:
         zoom 0.50 xpos 1.0
 
-    ed """
-    (When was the last time I felt any hope? Anything besides pain? The swelling in my chest is excruciating…)
+    ed "(When was the last time I felt any hope? Anything besides pain? The swelling in my chest is excruciating…)"
 
-    (I truly wouldn't have made it this far on my own. Even if I hide what I am well, people can't help but to be suspicious.)
+    ed "(I truly wouldn't have made it this far on my own. Even if I hide what I am well, people can't help but to be suspicious.)"
 
-    (Although - a town full of people not trying to kill me yet is quite an improvement.)
-    """
+    ed "(Although - a town full of people not trying to kill me yet is quite an improvement.)"
 
     "It’s almost time to head home for normal folk, but the town is bustling. There's a large bonfire in the square, and there's carved turnips at the doors of all the houses-"
 
@@ -431,13 +419,11 @@ label act1:
 
     il "I heard about the destruction of a chapel some time ago, but I had no idea it was here."
 
-    sa """
-    Yes, it was the barbarians' doing. Even now, we're still rebuilding the town, but the faithful have moved on from here.
+    sa "Yes, it was the barbarians' doing. Even now, we're still rebuilding the town, but the faithful have moved on from here."
 
-    I miss having someone to share my connection with God, so I am sorry to impose my sudden invitation on you.
+    sa "I miss having someone to share my connection with God, so I am sorry to impose my sudden invitation on you."
 
-    Belorov is home to people of many faiths. Many of us have travelled from afar, like myself.
-    """
+    sa "Belorov is home to people of many faiths. Many of us have travelled from afar, like myself."
 
     il "From what I understand, Edwin was also quite the traveller before we met."
 
