@@ -81,10 +81,12 @@ label act1:
 
     ed "..."
 
-    show ilona pensive sad talk with dissolve:
-        xpos 100
-        linear 0.3 xpos 0.35
+    show ilona pensive with move:
+        linear 0.8 xpos 690
 
+    $ renpy.pause(0.6)
+
+    show ilona sad talk
 
     il "We have only each other to rely on."
 
@@ -319,6 +321,9 @@ label act1:
 
     ed "Oh!-"
 
+    show kellac smile at easeinleft_transform:
+        zoom 0.50
+
     # calmly, not overly acted out
     unk "Young lad, please watch your step. One mistake and this weary old man is done for…"
 
@@ -327,6 +332,9 @@ label act1:
     show ilona open solemn
 
     ed "I’m so sorry for bumping into you, sir-"
+
+    show anari closed talk angry sweatdrop with dissolve:
+        zoom 0.50 xpos 540
 
     # as though tired of an old joke
     an "...Kellac, we're the same age."

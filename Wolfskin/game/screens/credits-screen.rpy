@@ -9,7 +9,7 @@
 ## Code Source: https://lemmasoft.renai.us/forums/viewtopic.php?t=42667
 transform credits_scroll(speed):
     ypos 1100  # This is the space between the top of the screen and the text 'credits'.
-    linear speed ypos -5800  # This is how far down the screen will scroll, with the speed for how fast it will scroll.
+    linear speed ypos -12800 # This is how far down the screen will scroll, with the speed for how fast it will scroll.
 
 screen credits():
     # Make a menu of this, so you do not have main menu in the background while the credits are rolling.
@@ -35,7 +35,7 @@ screen credits():
 
     ## Adjust this number to control the speed at which the credits scroll.
     ## Needs to be adjusted if you make the credits longer or shorter.
-    frame at credits_scroll(30.0):
+    frame at credits_scroll(60.0):
         background None
         xalign 0.5
 
@@ -76,92 +76,79 @@ screen credits():
 
             null height 400
 
-            text "Creative Director" size 100
+            text "Creative Director, Lead Artist" size 100
             null height 80
             text "Tamafry"
 
             null height 400
 
-            text "Lead writer" size 100
+            text "Lead Writer" size 100
             null height 80
             text "Abhishek"
 
             null height 400
 
-            text "Story Consultant, Quality Assurance Tester" size 100
-            null height 80
-            text "Gaming Variety Potato"
-
-            null height 400
-
-            text "Editor & Proofreader" size 100
+            text "Editor" size 100
             null height 80
             text "Billie"
 
             null height 400
 
-            text "Casting and Voice Direction, Script Editing" size 100
+            text "Quality Assurance Tester" size 100
             null height 80
-            text "Maxi Molina (SandraMJ)"
+            text "Gaming Variety Potato"
 
             null height 400
 
-            text "Music & sound designers" size 100
-            null height 80
-            text "Luis \"RunnerGuitar\" Guerrero"
-            null height 80
-
-            hbox:
-                xalign 0.5
-                spacing 280
-
-                vbox:
-                    text "Octavio Savinelli"
-
-                vbox:
-                    text "Luke Ford"
-
-            null height 400
-
-            text "Audio Engineer" size 100
-            null height 80
-            text "Luke Ford"
-
-            text "Lead Artist & Sprites" size 100
-            null height 80
-            text "Tamafry"
-
-            text "Backgrounds & Cleanup" size 100
-            null height 80
-            text "Jason"
-
-            null height 400
-
-            text "Backgrounds & Cleanup" size 100
-            null height 80
-            text "Jason"
-
-            null height 400
-
-            text "GUI design" size 100
-            null height 80
-            text "Kaya"
-
-            null height 400
-
-            text "Logo design by" size 100
-            null height 80
-            text "Puchi"
-
-            null height 400
-
-            text "Programming" size 100
+            text "Programmer" size 100
             null height 80
             text "Vygan"
 
             null height 400
 
-            text "Special Thanks to" size 100
+            text "Background Artist" size 100
+            null height 80
+            text "Jason"
+
+            null height 400
+
+            text "GUI and Promotional Assets Designer" size 100
+            null height 80
+            text "Kaya"
+
+            null height 400
+
+            text "Logo Designer" size 100
+            null height 80
+            text "Puchi"
+
+            null height 400
+
+            text "Music Composer, Arranger, Mixer" size 100
+            null height 80
+            text "Luis \"RunnerGuitar\" Guerrero"
+
+            null height 400
+
+            text "Music Composer" size 100
+            null height 80
+            text "Octavio Savinelli"
+
+            null height 400
+
+            text "Music Composer, Sound Designer" size 100
+            null height 80
+            text "Luke Ford"
+
+            null height 400
+
+            text "Casting and Voice Director, Script Editor" size 100
+            null height 80
+            text "Maxi Molina (SandraMJ)"
+
+            null height 400
+
+            text "Special Thanks" size 100
             null height 80
             text "Remort Studios for hosting this Visual Novel Jam."
 

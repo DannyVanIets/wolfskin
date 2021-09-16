@@ -15,6 +15,30 @@ define ul = Character("Uldin", ctc="ctc_anchored", ctc_position="fixed")
 define unk = Character("???", ctc="ctc_anchored", ctc_position="fixed")
 define narrator = Character(name=None, ctc="ctc_anchored", ctc_position="fixed")
 
+# moving sprites.
+
+transform easeinleft_transform:
+     offscreenleft
+     easein 1.0 left
+
+transform easeinright_transform:
+     offscreenright
+     easein 1.0 right
+
+transform midleft_transform:
+     easein 0.5 center
+
+transform gocenter_transform:
+     easein 1.0 center
+
+transform centertoleft_transform:
+     center
+     easein 1.0 left
+
+transform centertoright_transform:
+     center
+     easein 1.0 right
+
 # begin auto_layeredimage for Edwin
 
 layeredimage edwin:
@@ -69,6 +93,24 @@ layeredimage anari:
 
     group outfit auto:
         attribute unarmed default
+
+    group emotion auto
+
+# begin auto_layeredimage for kellac
+
+layeredimage kellac:
+
+    always:
+        "kellac_base"
+
+    group eyes auto:
+        attribute open default
+
+    group eyebrows auto:
+        attribute relaxed default
+
+    group mouth auto:
+        attribute neutral default
 
     group emotion auto
 

@@ -58,13 +58,17 @@ define gui.interface_text_color = u'#ffffff'
 define gui.text_font = "Mada-Medium.otf"
 
 ## The font used for out-of-game text.
-define gui.interface_text_font = "BluuNext-Bold.otf"
+define gui.interface_text_font = "Mada-Medium.otf"
+
+define gui.navigation_button_text_font = "BluuNext-Bold.otf"
 
 define gui.quick_button_text_font = "Mada-Medium.otf"
 
 define gui.radio_button_text_font = "Mada-Medium.otf"
 
 define gui.check_button_text_font = "Mada-Medium.otf"
+
+define gui.history_text_font = "Mada-Medium.otf"
 
 ## The size of normal dialogue text.
 define gui.text_size = 41

@@ -304,7 +304,7 @@ label act3:
 
     "There is one he cannot escape from. Anari's skill with a bow is frightening, her gaze ever calm and steady."
 
-    "Two arrows finally meet its target. They pierce his side, fired in rapid succession. But this isn’t a problem for the werewolf, as he brushes aside the pain. He’s taken greater beatings  than this."
+    "Two arrows finally meet its target. They pierce his side, fired in rapid succession. But this isn’t a problem for the werewolf, as he brushes aside the pain. He’s taken greater beatings than this."
 
     "However, he’s not invincible; a few more well placed shots and he’s down, along with Ilona."
 
@@ -386,7 +386,7 @@ label act3:
 
     ed "I’ve noticed hints of it. Even in these past few days - mind you, that banquet was all too much for me to begin with. I used to enjoy these things, but now, I..."
 
-    il " I know."
+    il "I know."
 
     ed "It felt like everybody there had something to hide, and doubts arose from that…{p}We were all turning against each other."
 
