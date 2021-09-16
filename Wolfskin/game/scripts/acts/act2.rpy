@@ -175,7 +175,7 @@ label act2:
 
     an "And Uldin wouldn't hesitate, because they share quite the history."
 
-    an "Although, I do know one thing. Kellac is hiding something. His fiance died in a tragic and bizarre accident, and it haunts him to this day. It even keeps him up at night."
+    an "Although, I do know one thing. Kellac is hiding something. Before he settled here, he's done nothing but walk and regret for five years, or so he says. It even keeps him up at night."
 
     an "Whether it’s related to this case, I do not know."
 
@@ -281,13 +281,13 @@ label act2:
 
 # TRANSITION TO BLACK.
 
-    "When Ilona opens her eyes again, she's in an unfamiliar bed and room. The air is heavy with an earthy smell, suffocatingly so."
+    "When Ilona opens her eyes again, she's in an unfamiliar bed and room. The air is heavy with an medicinal smell, suffocatingly so."
 
     "She feels far too conscious of her body. Her mouth feels dry, and her heart still feels like it's beating too fast."
 
     il "Did-? Was I…?"
 
-    ke "Take it easy. You're safe — this my apothecary and workspace."
+    ke "Take it easy. You're safe — we're still in the manse."
 
     il "Just how long was I out for?"
 
@@ -325,7 +325,7 @@ label act2:
 
     ke "She would be fearful about the idea that Fleur has been spirited away by the fair folk. {w}It's not something that she could accept, which is probably why she is leading the search."
 
-    "Ilona shifts her body off the bed, able to move freely again. Kellac invites her to take a seat at the table, and Ilona does so. He pours her some clear water."
+    "Ilona shifts her body off the bed, able to move freely again. Kellac invites her to take a seat at the hall, and Ilona does so. He pours her some clear water. The smell of a simmering stew wafts from the kitchen."
 
     ke "About the tea you had with Anari — did you happen to find anything odd with it? {w}I'm asking because before the banquet, I gave Uldin his medicine, a powerful soporific."
 
@@ -353,7 +353,7 @@ label act2:
 
     ke "That was what I feared. Anari and I left before that, so I don't really have a clear picture of what exactly happened."
 
-    il "Last night, I drank tea without sugar or milk, following Fleur and Uldin's example. This morning, I had milk and sugar with it."
+    il "Last night, I drank tea without sugar or milk, following Fleur and Uldin's example. This morning, I added both to my tea."
 
     ei "I remember Fleur being insistent on putting sugar in my tea, which I thought was weird."
 

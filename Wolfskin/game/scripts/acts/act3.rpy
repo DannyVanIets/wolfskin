@@ -448,14 +448,14 @@ label act3:
 
     # despite the beautiful poem, it should be delivered clumsily and slowly with pauses, as though struggling to think of the next line, and also struggling for breath if possible.
 
-    ed "Should our journey end, so let it be.{p}Lost no more, I lay to rest."
+    ed "Should our journey end, so just it be.{p}I am lost no more, I lay to rest."
 
-    ed "The sun bestows its blessings over me,{p}While I have you at my side."
+    ed "The sun bestows its blessings over me,{p}While you wait beside."
 
     # pronunciation of verdure - vur-jur
     ed "I flourish with the bountiful verdure,"
 
-    ed "Though my words are withering,{p}For all uncertainty we may perjure,{p}I bid you know: I love you."
+    ed "Though words are withering,{p}In all uncertainty we usher{p}I bid you know: I love you."
 
     ed "I-I love…"
 
@@ -472,12 +472,41 @@ label act3:
 
     window hide
 
+#####   ALTERNATING LINES FOR THE LAST POEM  ########
+#
+#    Ilona & Edwin:
+#       We are found.
+#
+#    Ilona:
+#       Praying deep in dead of night,
+#       You have found your path.
+#
+#    Edwin:
+#       Praying still, no end in sight,
+#       A pure heart perseveres.
+#
+#    Ilona:
+#       Praying, no desire, delight,
+#       A serene soul you see.
+#
+#    Ilona & Edwin:
+#       Bring back those melancholy hearts,
+#       Cleanse these with your soul unbound.
+#
+#    Edwin:
+#       Out of sorts, but not far gone,
+#       With you, nothing lost is found.
+#
+######################################################
+
     nvlNarrator """
     We are found,
 
     Praying deep in the dead of night,
 
     You have found your path.
+
+    {clear}
 
     \nPraying still, no end in sight,
 
@@ -495,7 +524,7 @@ label act3:
 
     Out of sorts, but not far gone,
 
-    With you, never a loss is found.
+    With you, nothing lost is found.
     """
 
     nvl clear
