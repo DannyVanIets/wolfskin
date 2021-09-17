@@ -49,7 +49,7 @@ label act1:
 
     $ renpy.pause(2.0)
 
-    show ilona_night at left with dissolve:
+    show ilona at twilight at left with dissolve:
         zoom 0.50 xpos 300
 
     $ renpy.pause(1.0)
@@ -513,9 +513,9 @@ label act1:
 
     ul "Those foul beasts… A werewolf truly must be cursed to succumb to their bloodlust."
 
-    "An oppressive silence lingers, and sweat beads down Edwin’s forehead. Ilona tries to keep a straight face, but her brow twitches as she sips her tea."
+    "An oppressive silence lingers, and sweat beads down Edwin’s forehead. Ilona tries to keep a straight face, but her brow twitches."
 
-    "Edwin adds more milk and sugar to his serving, and he takes care to not rattle the crockery as he stirs it with the spoon."
+    "Edwin adds more sugar to his tea, and he takes care to not rattle the crockery as he stirs it with the spoon."
 
     ul "Please pay no heed to my language, it- It’s just..."
 
