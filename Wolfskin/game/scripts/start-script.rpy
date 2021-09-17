@@ -178,3 +178,6 @@ label start:
 
         "Credits":
             jump credits_from_script
+
+        "Epilogue":
+            jump epilogue

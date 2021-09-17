@@ -22,8 +22,8 @@ label credits_from_script:
     ## Go to the credits screen, in here is the text for the credits.
     call screen credits
 
-    # This ends the game and returns you to the main menu.
-    return
+    # Go to the epilogue.
+    jump epilogue
 
 # This label is used to go to the credits from the main menu. Doesn't need a whole lot of fancy stuff, so I removed that.
 label credits_from_main_menu:

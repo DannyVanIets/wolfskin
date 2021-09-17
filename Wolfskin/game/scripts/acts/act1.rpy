@@ -49,7 +49,7 @@ label act1:
 
     $ renpy.pause(2.0)
 
-    show ilona at twilight at left with dissolve:
+    show ilona_night at left with dissolve:
         zoom 0.50 xpos 300
 
     $ renpy.pause(1.0)
