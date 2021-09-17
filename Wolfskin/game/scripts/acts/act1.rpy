@@ -2,6 +2,18 @@
 
 ## moving sprites are a pain
 define midleft= Position(xpos=0.40)
+transform ilona_transform_pos1:
+    left
+    zoom 0.5
+    xpos 300
+transform edwin_transform_pos1:
+    right
+    zoom 0.5
+    xpos 1800
+transform move_right:
+    left
+    xpos 300
+    linear 0.8 xpos 550
 
 label act1:
 
@@ -49,8 +61,8 @@ label act1:
 
     $ renpy.pause(2.0)
 
-    show ilona_night at left with dissolve:
-        zoom 0.50 xpos 300
+    show ilona_night at ilona_transform_pos1
+    show expression AlphaMask("canopy", At("ilona", ilona_transform_pos1)) as ilona_mask
 
     $ renpy.pause(1.0)
 
@@ -60,8 +72,8 @@ label act1:
 
     "Ilona waits for Edwin to turn back into a human, closing her eyes to rest for a moment. There's only the sound of the forest, until Edwin speaks to break their silence."
 
-    show edwin_night glance talk at right with dissolve:
-        zoom 0.50 xpos 1800
+    show edwin_night glance talk at edwin_transform_pos1
+    show expression AlphaMask("canopy", At("edwin", edwin_transform_pos1)) as edwin_mask
 
     ed "I know that I'm asking for too much, but despite everything that's happened… would you please stay with me?"
 
@@ -81,8 +93,8 @@ label act1:
 
     ed "..."
 
-    show ilona_night pensive with move:
-        linear 0.8 xpos 550
+    show ilona_night pensive at move_right
+    show expression AlphaMask("canopy", At("ilona_mask", move_right)) as ilona_mask
 
     $ renpy.pause(0.6)
 
@@ -133,6 +145,10 @@ label act1:
     show edwin_night glance smile blush
 
     "Their eyes flicker for a moment, and he’s not shivering anymore. "
+
+    # foliage masks are not needed anymore
+    hide ilona_mask
+    hide edwin_mask
 
     scene bg road
     with longfade

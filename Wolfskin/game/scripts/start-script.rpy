@@ -48,9 +48,31 @@ define dark_matrix = (
     TintMatrix(Color(rgb=(0.9, 1.0, 1.2)))*BrightnessMatrix(-0.08)
     )
 
+define sunset_matrix = (
+    TintMatrix(Color(rgb=(0.85, 0.6, 0.45)))*BrightnessMatrix(0.1)
+    )
+
+define dim_matrix = (
+    TintMatrix(Color(rgb=(0.9, 0.9, 1)))*BrightnessMatrix(-0.1)
+    )
+
+# sprites with night shading
 image edwin_night = LayeredImageProxy("edwin", Transform(matrixcolor=dark_matrix))
 image ilona_night = LayeredImageProxy("ilona", Transform(matrixcolor=dark_matrix))
 image anari_night = LayeredImageProxy("anari", Transform(matrixcolor=dark_matrix))
+image kellac_night = LayeredImageProxy("kellac", Transform(matrixcolor=dark_matrix))
+
+# sprites with sunset shading
+image edwin_sunset = LayeredImageProxy("edwin", Transform(matrixcolor=sunset_matrix))
+image ilona_sunset = LayeredImageProxy("ilona", Transform(matrixcolor=sunset_matrix))
+image anari_sunset = LayeredImageProxy("anari", Transform(matrixcolor=sunset_matrix))
+image kellac_sunset = LayeredImageProxy("kellac", Transform(matrixcolor=sunset_matrix))
+
+# sprites with dim shading
+image edwin_dim = LayeredImageProxy("edwin", Transform(matrixcolor=dim_matrix))
+image ilona_dim = LayeredImageProxy("ilona", Transform(matrixcolor=dim_matrix))
+image anari_dim = LayeredImageProxy("anari", Transform(matrixcolor=dim_matrix))
+image kellac_dim = LayeredImageProxy("kellac", Transform(matrixcolor=dim_matrix))
 
 # begin auto_layeredimage for Edwin
 
@@ -87,8 +109,6 @@ layeredimage ilona:
         attribute neutral default
 
     group emotion auto
-
-image ilona night = LayeredImageProxy("ilona", Transform(matrixcolor=BrightnessMatrix(-0.1)))
 
 # begin auto_layeredimage for anari
 
