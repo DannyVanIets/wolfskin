@@ -25,9 +25,6 @@ transform easeinright_transform:
      offscreenright
      easein 1.0 right
 
-transform midleft_transform:
-     easein 0.5 center
-
 transform gocenter_transform:
      easein 1.0 center
 
@@ -38,6 +35,22 @@ transform centertoleft_transform:
 transform centertoright_transform:
      center
      easein 1.0 right
+
+transform alphascaleleft_transform:
+    zoom 0.50 xpos 100
+
+transform alphascaleright_transform:
+    zoom 0.50 xpos 1900
+
+# I'm going bob ross over Here
+
+define dark_matrix = (
+    TintMatrix(Color(rgb=(0.8, 1.0, 1.3)))*BrightnessMatrix(-0.12)
+    )
+
+image edwin_night = LayeredImageProxy("edwin", Transform(matrixcolor=dark_matrix))
+image ilona_night = LayeredImageProxy("ilona", Transform(matrixcolor=dark_matrix))
+image anari_night = LayeredImageProxy("anari", Transform(matrixcolor=dark_matrix))
 
 # begin auto_layeredimage for Edwin
 
@@ -74,6 +87,8 @@ layeredimage ilona:
         attribute neutral default
 
     group emotion auto
+
+image ilona night = LayeredImageProxy("ilona", Transform(matrixcolor=BrightnessMatrix(-0.1)))
 
 # begin auto_layeredimage for anari
 
