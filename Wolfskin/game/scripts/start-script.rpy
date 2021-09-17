@@ -45,7 +45,7 @@ transform alphascaleright_transform:
 # I'm going bob ross over Here
 
 define dark_matrix = (
-    TintMatrix(Color(rgb=(0.8, 1.0, 1.3)))*BrightnessMatrix(-0.12)
+    TintMatrix(Color(rgb=(0.9, 1.0, 1.2)))*BrightnessMatrix(-0.08)
     )
 
 image edwin_night = LayeredImageProxy("edwin", Transform(matrixcolor=dark_matrix))
