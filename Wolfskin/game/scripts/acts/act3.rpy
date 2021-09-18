@@ -372,13 +372,11 @@ label act3:
 
     ed "The time I spent without you, in that cell. It was excruciating. And that’s when I realised, {w}how much I want you by my side."
 
-    il "My, the exhaustion must be getting to you."
-    extend " Now I know you weren't joking about wanting me to meet your family…"
+    il "My, the exhaustion must be getting to you. Now I know you weren't joking about wanting me to meet your family…"
 
     ed "…"
 
-    il "In all seriousness, thank you. It- it means a lot to me."
-    extend " Could we rest for a while?"
+    il "In all seriousness, thank you. It- it means a lot to me. Could we rest for a while?"
 
     ed "I don't hear anyone pursuing us. Just for a moment…"
 
@@ -392,9 +390,7 @@ label act3:
 
     # watch the wait and pauses for some of these lines.
 
-    ed "Even if I want to…"
-    extend "...And just maybe, if I’d come clean to the people that we came across,"
-    extend "and to you, about the wolfskin; the incessant nightmares that I’ve been having...."
+    ed "Even if I want to… Just maybe, if I’d come clean to the people that we came across, and to you, about the wolfskin; the incessant nightmares that I’ve been having...."
 
     ed "I couldn't even trust you to watch me transform..."
 
@@ -404,13 +400,11 @@ label act3:
 
     il "We must be strong and keep our past behind us. What’s done is done."
 
-    il "Besides, I’m here for you now."
-    extend " And you are for me."
-    extend " I’m sure that God will not send another trial to test our resolve."
+    il "Besides, I’m here for you now. And you are for me. I’m sure that God will not send another trial to test our resolve."
 
     ed "I would like to believe that."
 
-    "Edwin and Ilona stay silent, listening to the breathing of the other. They both feared when they would only hear silence, and so the grievous wounds would prove that they were alive."
+    "Edwin and Ilona stay silent, listening to the breathing of the other. They both feared when they would only hear silence. The grievous wounds would prove to both of them that they were alive."
 
     ed "Why must the cycle of violence perpetuate? Wherever I go, something always goes wrong."
 
@@ -422,8 +416,7 @@ label act3:
 
     ed "Why hide? I know I’m in no position to say this, but I see the absurdity of it all now. It does no good."
 
-    il "I guess it's hard sometimes. Especially when you have no one you can trust,"
-    extend " nobody to confide in."
+    il "I guess it's hard sometimes. Especially when you have no one you can trust, nobody to confide in."
 
     il "And you’re all alone, because you always second guess intentions… There’s nothing worse than feeling utterly alone."
 
@@ -445,8 +438,7 @@ label act3:
 
     ed "Yes, love. I'm still here. What is it?"
 
-    il "Is it okay if I close my eyes for a while?"
-    extend " I don’t think I’ll be able to hold out for any longer…"
+    il "Is it okay if I close my eyes for a while? I don’t think I’ll be able to hold out for any longer…"
 
     ed "You may. I'll keep watch, so you can rest."
 
@@ -462,11 +454,11 @@ label act3:
 
     il "I'm here. Did you need anything?"
 
-    ed "I-I just…"
-    extend " I just wanted to say that I’m indebted to you."
+    ed "I-I just… I just wanted to say that I’m indebted to you."
 
     il "You're always thanking me…"
-    extend " Ed…"
+
+    il "Ed…"
 
     ed "Yes?"
 
@@ -480,20 +472,18 @@ label act3:
 
     "Edwin thinks of the time they met, reading aloud poetry and ballads together. He strokes her hair, speaking softly in a murmur. He can feel his hands wet with the blood from her wounds."
 
-    # despite the beautiful poem, it should be delivered clumsily and slowly with pauses, as though struggling to think of the next line, and also struggling for breath if possible.
+    # despite the beautiful poem, it should be delivered clumsily as possible (I mean, he's dying, or close to death). "though words are withering" should be admitted through gritted teeth.
 
-    ed "Should our journey end, so just it be."
-    extend " I am lost no more, I lay to rest."
+    ed "Should our journey end, so just it be.{p}I am lost no more, I lay to rest."
 
-    ed "The sun bestows its blessings over me,"
-    extend " While you wait beside."
+    ed "The sun bestows its blessings over me,{p}While you wait beside."
 
     # pronunciation of verdure - vur-jur
-    ed "I flourish with the bountiful verdure,"
+    ed "I flourish with the bountiful verdure{p}Though words are withering,
 
-    ed "Though words are withering,"
-    extend " In all uncertainty we usher"
-    extend " I bid you know: I love you."
+    ed "In all uncertainty we usher,"
+
+    ed "I bid you know: I love you."
 
     ed "I-I love…"
 
