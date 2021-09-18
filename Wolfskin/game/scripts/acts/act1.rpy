@@ -3,16 +3,15 @@
 ## moving sprites are a pain
 define midleft= Position(xpos=0.40)
 transform ilona_transform_pos1:
-    left
     zoom 0.5
+    left
     xpos 300
 transform edwin_transform_pos1:
-    right
     zoom 0.5
+    right
     xpos 1800
-transform move_right:
-    left
-    xpos 300
+transform ilona_move_right:
+    ilona_transform_pos1
     linear 0.8 xpos 550
 
 label act1:
@@ -93,8 +92,8 @@ label act1:
 
     ed "..."
 
-    show ilona_night pensive at move_right
-    show expression AlphaMask("canopy", At("ilona_mask", move_right)) as ilona_mask
+    show ilona_night pensive at ilona_move_right
+    show expression AlphaMask("canopy", At("ilona", ilona_move_right)) as ilona_mask
 
     $ renpy.pause(0.6)
 
