@@ -167,6 +167,14 @@ define longfade = Fade(1.5, 0.0, 1.5)
 ## moving sprites are a pain
 define midleft= Position(xpos=0.40)
 
+# logo transition
+
+define logodissolve = MultipleTransition([
+    False, Dissolve(0.7),
+    "logo.png", Pause(4.0),
+    "logo.png", dissolve,
+    True])
+
 # drop shadows for dialogue box
 
 style say_label:

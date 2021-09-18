@@ -49,8 +49,6 @@ label act1:
 
     nvl clear
 
-    $ quick_menu = True
-
     # Switch to AVD mode.
 
     play music 'audio/music/He Who Seeks Hope - Theme Of Edwin -.ogg'
@@ -64,6 +62,8 @@ label act1:
     show expression AlphaMask("canopy", At("ilona", ilona_transform_pos1)) as ilona_mask
 
     $ renpy.pause(1.0)
+
+    $ quick_menu = True
 
     il "We should think of finding shelter soon, before it gets too dark."
 
