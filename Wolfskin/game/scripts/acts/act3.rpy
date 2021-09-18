@@ -252,7 +252,7 @@ label act3:
 
     "Ilona hands Anari the paper she found in the chest. Upon realizing that it explains the existence wooden statue of Fleur, she looks thoroughly displeased, nearly crumpling the document."
 
-    il "Fleur must have had some suspicion this plan was risky, so she wrote a short letter. If she succeeded in her prank, all she had to do was destroy it.
+    il "Fleur must have had some suspicion this plan was risky, so she wrote a short letter. If she succeeded in her prank, all she had to do was destroy it."
 
     il "In fact, since the letter was found still sealed, I would suspect Salome encouraged Fleur to write it. To make Fleur's disappearance seem more credible, she placed it in the forest after her escape."
 
@@ -499,76 +499,8 @@ label act3:
 
 # Renpy Blur, jump to credits
 
-# FINAL SCENE
-
     scene bg black
     with fade
-
-    # NVL mode: The final poem - this is still being rewritten to have correct stanzas and structure. We are thinking part of this should be spoken in unison, and Edwin and Ilona should have separate parts.
-
-    $ quick_menu = False
-
-    window hide
-
-#####   ALTERNATING LINES FOR THE LAST POEM  ########
-#
-#    Ilona & Edwin:
-#       We are found.
-#
-#    Ilona:
-#       Praying deep in dead of night,
-#       You have found your path.
-#
-#    Edwin:
-#       Praying still, no end in sight,
-#       A pure heart perseveres.
-#
-#    Ilona:
-#       Praying, no desire, delight,
-#       A serene soul you see.
-#
-#    Ilona & Edwin:
-#       Bring back those melancholy hearts,
-#       Cleanse these with your soul unbound.
-#
-#    Edwin:
-#       Out of sorts, but not far gone,
-#       With you, nothing lost is found.
-#
-######################################################
-
-    nvlNarrator """
-    We are found,
-
-    Praying deep in the dead of night,
-
-    You have found your path.
-
-    {clear}
-
-    \nPraying still, no end in sight,
-
-    A pure heart perseveres.
-
-    \nPraying, no desire, delight,
-
-    A serene soul you see.
-
-    {clear}
-
-    Bring back those melancholy hearts,
-
-    Cleanse these with your soul unbound.
-
-    Out of sorts, but not far gone,
-
-    With you, nothing lost is found.
-    """
-
-    nvl clear
-
-    $ quick_menu = True
-
 
     # Go to the credits.
     jump credits_from_script

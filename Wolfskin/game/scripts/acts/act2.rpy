@@ -141,11 +141,11 @@ label act2:
 
     il "How do you suppose that everyone is saying the absolute truth?"
 
-   il "Kellac could have acted as if he had witnessed the murder. We have no account of what he was doing before that."
+    il "Kellac could have acted as if he had witnessed the murder. We have no account of what he was doing before that."
 
-   il "There was also nobody around to confirm that Eisleigh was not at the crime scene, and I found her alone."
+    il "There was also nobody around to confirm that Eisleigh was not at the crime scene, and I found her alone."
 
-   il "And finally, where was Fleur? You do understand where I’m coming from, yes?"
+    il "And finally, where was Fleur? You do understand where I’m coming from, yes?"
 
     an "...I do. You’re smarter than you look, nun."
 
@@ -207,7 +207,7 @@ label act2:
 
     il "Are you feeling alright, Anari-"
 
-    an "Don't you dare patronize me, woman! Who do you think you are, prying so brazenly? Take your high and mighty Servant of God tripe elsewhere!
+    an "Don't you dare patronize me, woman! Who do you think you are, prying so brazenly? Take your high and mighty Servant of God tripe elsewhere!"
 
     an "Trying to save that monster lover of yours… Are you out of your mind?"
 
