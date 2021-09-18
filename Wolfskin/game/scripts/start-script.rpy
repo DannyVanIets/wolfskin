@@ -196,6 +196,9 @@ label start:
         "Act 3":
             jump act3
 
+        "Blurry and shaking":
+            jump blurry_shake
+
         "Credits":
             jump credits_from_script
 
