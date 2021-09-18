@@ -483,6 +483,8 @@ label act1:
 
     sa "Fleur, you shouldn't tease guests. And you really shouldn't encourage her, Eisleigh!"
 
+    fl "Mother, it's All Hallow's Eve! Tricks and pranks are part of the fun. I'm merely teaching Sister Ilona about this part of the festival — She shouldn't be so serious and uptight all the time."
+
     ul "Well, they said they were on a pilgrimage. If their sins are meant to be forgiven in the end, they should be able to sin along the way all they want!"
 
     il "..."
@@ -490,6 +492,8 @@ label act1:
     ed "Grk..."
 
     sa "Not you too, dear… You must have had too much to drink."
+
+    "Salome gives one stern glance to both Fleur and Uldin, and their boisterous laughs subside. Uldin still seems pleased with his comment. When he recalls the looks on Ilona and Edwin's faces, he tries to not burst out laughing again."
 
     fl "I apologize, Mother. And I apologize to you as well, Edwin and Sister Ilona, for insinuating something I should not have. "
 

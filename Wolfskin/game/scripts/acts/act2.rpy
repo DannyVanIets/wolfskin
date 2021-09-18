@@ -21,7 +21,7 @@ label act2:
 
     "Ilona looks around the room, seeing the scorched walls and destroyed tapestries and paintings."
 
-    il "(Apparently, Uldin is capable of using fire magic.{p}Did Salome get caught in his attack? I can't really imagine that happening.)"
+    il "(Apparently, Uldin was capable of using fire magic.{p}Did Salome get caught in his attack? I can't really imagine that happening.)"
 
     "Ilona tries to find anything else in the room that could have been used. On the nightstand, there's a candle turned over. Droplets of now hard wax marred the wood surface. "
 
@@ -29,9 +29,9 @@ label act2:
 
     an "Anything out of place?"
 
-    il "There's traces of fur in this room, but that's about it. What about any of the other rooms?"
+    il "There's traces of fur, but that's about it. What about the other rooms?"
 
-    an "Eisleigh told me there was something strange in Fleur's room.{p}I'll also let you look through Salome's room."
+    an "Eisleigh told me there was something that felt out of place in Fleur's room.{p}I'll also let you look through Salome's room."
 
 # SCENE 17
 
@@ -39,15 +39,15 @@ label act2:
 
     "The most prominent part of the room is a writing table, items left strewn upon it as though she was in the middle of an important task."
 
-    il "She asked you to debrief with her, after she met with us. Were you here, Anari?"
+    il "She asked you to go over the events of the day with her, after she met with us. I assume you came to her room, Anari?"
 
-    an "Correct. I gave my report about seeing you and Edwin for the lady's record-keeping.{p}The only thing that's moved is the chest. Though…"
+    an "Correct. I gave my report about seeing you and Edwin for the lady's record-keeping.{p}The one thing that's not where it should be is the chest. Though…"
 
     il "What is it? Please, don't hold back."
 
     an "I don't think it has anything to do with the murders. That chest is meant for Fleur when she is married. Salome had it made recently."
 
-    an "It's natural she might have moved it since I was last here. She does worry about Fleur's future, after all…"
+    an "It's natural she might have moved it since I was last here. She does worry about Fleur's future, after all… Salome was still considering which items should go inside. "
 
     "It surprises Ilona that Anari became so candid at this moment. Salome and Anari were closer in age, and it made sense that Anari acted as Salome's confidant."
 
@@ -71,7 +71,7 @@ label act2:
 
     "Anari does not say anything else, but moves back from the effigy. Her hand is balled into a fist, and is shaking, either from rage or fear."
 
-    an "I-I've seen quite enough. I'm leaving this ghastly room."
+    an "I-I've seen quite enough. I don't want to remain in this ghastly room."
 
     "She turns immediately on her heel. The sudden reaction surprises Ilona, and she is unsure whether to follow or not."
 
@@ -87,17 +87,17 @@ label act2:
 
     an "...Tea?"
 
-    an "Sister, does it look like I’m in the mood for some tea right now? Amidst all this mess? I’m not sure if there’s something wrong in your head, or if you simply are that benevolent…"
+    an "Sister, does it look like I’m in the mood for some tea right now? In the middle of this mess? Is there something wrong with your head, Sister? Have you forgotten the situation we find ourselves in?…"
 
-    an "Or if you’re trying to lace my drink with-"
+    an "Or are you trying to lace my drink with-"
 
     il "I can assure you, it’s none of that. I want to find the culprit as much as you do. But I’ll need your help for that."
 
-    il "I only wish to see that you’re in good health to proceed, and I thought we could take a quick break-"
+    il "I only wish to see that you’re in good health to proceed, soI thought we could take a quick break-"
 
-    an "With some tea, I get it. Very well, I must tell you that I despise the tea from this country, so it better be good enough-"
+    an "With some tea, I get it. Very well, I must tell you that I despise the leavesfrom this country, so you'd better make a damn fine cup."
 
-    il "Then is there any kind of tea you like?"
+    il "Are there any to your taste?"
 
     an "…Fine black tea, with bitter orange. I think Uldin still had some in his pantry."
 
@@ -141,41 +141,41 @@ label act2:
 
     il "How do you suppose that everyone is saying the absolute truth?"
 
-    "Kellac could have acted as if he had witnessed the murder. We have no account of what he was doing before that."
+   il "Kellac could have acted as if he had witnessed the murder. We have no account of what he was doing before that."
 
-    "There was also nobody around to confirm that Eisleigh was not at the crime scene, and I found her alone."
+   il "There was also nobody around to confirm that Eisleigh was not at the crime scene, and I found her alone."
 
-    "And finally, where was Fleur? You do understand where I’m coming from, yes?"
+   il "And finally, where was Fleur? You do understand where I’m coming from, yes?"
 
-    an "Yes, I do. You’re smarter than you look, nun."
+    an "...I do. You’re smarter than you look, nun."
 
-    an "Indeed, Fleur was missing at the time of the murder. Nobody had seen her enter, or exit the manse. I'll give you that much, but I highly doubt she was the murderer. She's far too frail."
+    an "Indeed, Fleur was missing at the time of the murder. Nobody had seen her enter, or exit the manse. I'll give you that much, but I highly doubt she could be the murderer. She's far too frail."
 
-    il "When Eisleigh and I returned, the door was broken in during the time we were away.{p}How do you explain that?"
+    il "The door was destroyed in the time it took for Eisleigh and I to return. How do you explain that?"
 
-    an "There could have been a struggle inside, during the time you were away. Also, it doesn't change the fact that Edwin was at the crime scene.{p}Transformed."
+    an "Does the door being destroyed really mean anything? It doesn't change the fact that Edwin was at the crime scene. Transformed."
 
     il "…"
 
-    an "Let me cue you on this: out of everyone around here, you and Edwin are the most suspicious."
+    an "Let me cue you in on this: out of everyone around here, you and Edwin are the most suspicious."
 
-    an "The two of you are outsiders, and we’ve all known each other for a long time."
+    an "The two of you are outsiders, whereas we’ve all known each other for a long time."
 
-    an "However, I will not let my prejudice against the two of you get the better of me. Considering that, let’s start off with the motivation for murder."
+    an "I don't plan on letting my bias against the two of you get the better of me, however. Let's start at the beginning: what could be the motivation for the murder?."
 
-    an "Kellac was an associate of Uldin and I during the war. He’s selfless, to the point of stupidity. I guess serving as a medic did that to him."
+    an "Kellac was an associate of Uldin and I during the war. He’s selfless, to the point of stupidity. I guess serving as a medic will do that to you."
 
-    an "It’s hard to admit this, but I consider Kellac to be close to me. He is a kind-hearted man."
+    an "It’s hard to admit this, but I consider Kellac to be a close friend. He is a kind-hearted man."
 
-    an "But that’s not why he’s off the hook. He… has no reason for murder."
+    an "But that is no reason for letting him off the hook. He simply… has no reason for murder."
 
     il "Please explain."
 
-    an "He’s weak, so I doubt he could overpower both Uldin and Salome. Anything else he needs, whether coin or rare books on magic, he could simply ask Uldin."
+    an "He’s as kind as he is weak, so I doubt he could overpower both Uldin and Salome. Anything he could have ever needed, whether coin or rare books on magic, he could have simply asked Uldin."
 
-    an "And Uldin wouldn't hesitate, because they share quite the history."
+    an "And Uldin wouldn't have hesitated, because they share quite the history."
 
-    an "Although, I do know one thing. Kellac is hiding something. Before he settled here, he's done nothing but walk and regret for five years, or so he says. It even keeps him up at night."
+    an "Although, one thing I can tell you for sure is: Kellac is hiding something. Before he settled here, he had done nothing but walk and regret for five years, or so he says. It keeps him up at night."
 
     an "Whether it’s related to this case, I do not know."
 
@@ -183,19 +183,19 @@ label act2:
 
     il "What about Eisleigh? I honestly don’t know much about her."
 
-    an "She acts as an assistant to Salome; to help with keeping the town running, organization and tasks."
+    an "She acted as an assistant to Salome; to help with keeping the town running, organization and tasks."
 
-    an "She's a bit clumsier than when she first started, but is still earnestly doing her job…  Perhaps she's just daydreaming more."
+    an "She's been doing her fair share of blunders lately, but I know she takes her job seriously…  Perhaps she's just daydreaming more."
 
-    an "I'm not saying that she's incompetent, let me get that straight. As long as it doesn't get in my way."
+    an "I'm not saying that she's incompetent, let me get that straight. As long as her clumsiness doesn't get in my way."
 
-    an "Though, I don't know much about her either to determine a motivation."
+    an "Though, I don't know much about her either to determine her motivation."
 
     il "Is she close with Fleur? They are almost the same age."
 
-    an "Not really, Eisleigh and Fleur seem to be in their own heads. Eisleigh, with the study of magic as an apprentice, and Fleur, with being a daydreamer and a prankster, even at her age."
+    an "Not really, Eisleigh and Fleur seem to be in their own heads. Eisleigh, with the study of magic as an apprentice, and Fleur, being a little troublemaker and a prankster."
 
-    an "Fleur still plays jokes and tricks, even at her age. It's all childish nonsense…"
+    an "My niece still plays jokes and tricks, even at her age. It's all childish nonsense…"
 
     an "Fleur…"
 
@@ -205,15 +205,15 @@ label act2:
 
     "Moreover, Ilona’s demeanour and her relationship with Edwin…"
 
-    il "Are you okay, Anari-"
+    il "Are you feeling alright, Anari-"
 
-    an "Stop woman. What is with you anyway? Do you think you’re all high and mighty? A servant of God? You can go and spout your questioning and nonsense elsewhere."
+    an "Don't you dare patronize me, woman! Who do you think you are, prying so brazenly? Take your high and mighty Servant of God tripe elsewhere!
 
-    an "And your companionship with that monster… Are you out of your mind?"
+    an "Trying to save that monster lover of yours… Are you out of your mind?"
 
     il "I do not know what has gotten into you all of a sudden, but I do not appreciate being spoken to like this."
 
-    il "You’ve been hostile ever since our arrival. Do you think you own this place? Do you consider yourself better than everyone around you?"
+    il "I showed compassion for you, when time is of the essence — instead of listening to you berate me, I should be finding the murderer!"
 
     "Silence looms over, waiting to be broken. Anari glares, her hand instinctively touches one of her arrows. She grimaces, and folds her arms across her body."
 
@@ -225,19 +225,19 @@ label act2:
 
     an "However, I did step out of line. Who you choose to be with is none of my business. I know violence for the sake of it won’t solve anything."
 
-    an "Though we may not see eye to eye on everything, nun, I quite like you now. The tea must have swayed my opinion, but no matter."
+    an "Though we may not see eye to eye on everything, nun, I quite like you now. The tea must have swayed my opinion, I'm sure."
 
     an "Since we’re on good terms now-"
 
-    il "I’m not sure about that…"
+    il "(Are we?)"
 
-    an "-and I can’t bear to see you with such a sad face, I’ll tell you that there is a cure for lycanthropy, the beast that lies within your dear beloved."
+    an "-and I can’t bear to see you with such a sad face, I’ll let you in on a secret: there is a cure for lycanthropy. You may yet be rid of the beast that lies within your dear beloved."
 
     an "For your and Edwin’s sake, I suggest you use it."
 
     il "Which is?"
 
-    an "It’s for the lycan to die."
+    an "It’s for the lycan to die, of course!"
 
     il "…"
 
@@ -247,13 +247,13 @@ label act2:
 
     an "Anyhow, enough chit-chat. I must go and make preparations to lead the search party for Fleur."
 
-    il "I should get going too. I need to think upon many things, after what we’ve seen today."
+    il "I should take my leave, as well. There is much to consider after what we’ve seen today."
 
-    an "Indeed. {w}I can’t wait for what kind of answer you will give at sundown. Heh."
+    an "Indeed. {w}I can’t wait to hear what kind of answer you will give at sundown. Heh."
 
-    il "At this point, I’m not sure if you’re on my side or not."
+    il "I can't ever tell if you're on my side."
 
-    an "I wonder too."
+    an "I wonder, too."
 
 # SCENE 25
 
@@ -295,39 +295,39 @@ label act2:
 
     "Ilona grimaces. Too much time was lost. She moves her arms slowly, her body heavy. Sensation comes back into the tips of her fingers, and the unpleasant tingling stops. The smell of herbal medicine starts to become more bearable to her senses."
 
-    ke "It wasn't an ordinary fainting spell. You should have regained consciousness more quickly if it was simply fatigue and stress."
+    ke "It wasn't an ordinary fainting spell. You should have regained consciousness faster if it was simply fatigue and stress."
 
     ke "I've taken precautions, and treated you for poisoning."
 
-    il "Then, did you think — Anari tried to poison me?"
+    il "Then, do you think — Did Anari try to poison me?"
 
     ke "…I suppose you can't really rule out that possibility.{p}Did you eat or drink anything with her?"
 
     il "Only tea, but I was the one who suggested and prepared it."
 
-    il "I didn't see her slip anything in my drink. In fact, I'm quite certain she thought I was trying to poison her…"
+    il "I didn't see her slip anything in my drink. In fact, she was convinced I was trying to poison her…"
 
-    ke "I know how she is, but I don't really think she's the type."
+    ke "She's not the type to take such a cowardly approach."
 
     ke "She may seem cruel, but I don't think she would go that far to sabotage your efforts and put a stop to you."
 
-    il "I need to ask, and I don’t have much time. You and Anari know each other well."
+    il "It seems you and Anari know each other well. I don't have much time, but I need to ask:"
 
-    il "Do you have any idea why she might be so afraid about the wooden statue resembling Fleur?"
+    il "She had an extreme reaction upon seeing a wooden statue resembling Fleur. What could have terrified her so much about it?"
 
-    ke "Truth be told, I don't really know much about her history, only rumours. She must think that the statue has to do something with the fae — she mistrusts them due to her past."
+    ke "Truth be told, I don't really know much about her history, only rumours. She must think that the statue has to do something with the fae — Something in her past made her be wary of them."
 
-    ke "Fleur admires the fair folk. The wooden statue is too elaborate to be one of Fleur's pranks, especially at a time when her parents are dead…"
+    ke "Fleur admires the fair folk. The wooden statue is too elaborate to be one of Fleur's pranks, especially with the death of her parents…"
 
-    il "So her extreme reaction to seeing the statue of Fleur has to do with her trauma, and distaste for Fleur's fae-related tricks?"
+    il "So her aversion to seeing the statue has to do with her trauma, and distaste for Fleur's fae-related tricks?"
 
     ke "Something like that. Anari hates being pitied, and she doesn't show pity for anyone else either."
 
-    ke "She would be fearful about the idea that Fleur has been spirited away by the fair folk. {w}It's not something that she could accept, which is probably why she is leading the search."
+    ke "She would be terrified at the thought of Fleur being spirited away by the fair folk. {w}It's not something that she could ever accept - That's probably why she is leading the search."
 
     "Ilona shifts her body off the bed, able to move freely again. Kellac invites her to take a seat at the hall, and Ilona does so. He pours her some clear water. The smell of a simmering stew wafts from the kitchen."
 
-    ke "About the tea you had with Anari — did you happen to find anything odd with it? {w}I'm asking because before the banquet, I gave Uldin his medicine, a powerful soporific."
+    ke "About the tea you had with Anari — was there anything odd about it? {w}I'm asking because before the banquet, I gave Uldin his medicine, a powerful soporific."
 
     ke "There were three less doses in the pantry when I checked."
 
@@ -337,7 +337,7 @@ label act2:
 
     ei "Oh, Ilona — I heard you fainted in the town square. I was worried."
 
-    ke "I invited Eisleigh over for lunch. Ilona, you probably haven't eaten at all yet, have you? You should try to eat, even if it's just a little."
+    ke "Ah, yes! I invited Eisleigh over for lunch. Ilona, you probably haven't eaten at all yet, have you? You should try to eat, even if it's just a little."
 
     il "…"
 
@@ -349,13 +349,15 @@ label act2:
 
     "Ilona would have thought that Anari's defense was unbreakable, but there was actually one new thing they learnt about last night…"
 
-    il "About what I was saying earlier, did you think someone tried to drug us during the banquet?"
+    il "So are you considering the possibility someone tried to drug us during the banquet?"
 
-    ke "That was what I feared. Anari and I left before that, so I don't really have a clear picture of what exactly happened."
+    ke "That's what I feared, at least. Anari and I left before that, so I don't really have a clear picture of what exactly happened."
 
-    il "Last night, I drank tea without sugar or milk, following Fleur and Uldin's example. This morning, I added both to my tea."
+    "Ilona stares at an empty teacup in the room, and then realizes something — if the tea she served Anari was different, but she used the same sugar from last night—"
 
-    ei "I remember Fleur being insistent on putting sugar in my tea, which I thought was weird."
+    il "The sugar — it must have been tampered with! Last night, I didn't add any to my tea because I didn't want to be rude, but I took some when I had tea with Anari."
+
+    ei "I remember Fleur was reallyinsistent on putting sugar in my tea. I did think that was weird."
 
     ke "How much sugar did you put in your tea this morning, Ilona?"
 
@@ -363,19 +365,19 @@ label act2:
 
     ei "Uhh, that sure is a lot…"
 
-    ke "Goodness, no wonder you were out for so long! I'm surprised Anari was able to hold back her rage when she saw you do that."
+    ke "Goodness, no wonder you were out for so long! I'm surprised Anari didn't get on your case for adding tea to your cup of sugar."
 
-    ei "I think we can confirm this theory to be true then: someone was trying to put us into a deep sleep, and perhaps they were trying to target Edwin specifically."
+    ei "I think we can confirm this theory to be true then: someone was trying to put us into a deep sleep - and there's a chance they were trying to target Edwin specifically."
 
-    il "Then this would implicate Salome, or Fleur most strongly. They were the ones who prepared the tea last night."
+    il "Then that would implicate Salome, or Fleur, most likely. They were the ones who prepared the tea last night."
 
-    ei "I- I don't really want to believe it, but I can't deny it."
+    ei "It's not like I can deny it, but..."
 
-    ke "Actually, this could implicate Uldin too."
+    ke "Uldin could be involved, too."
 
-    ke "The truth is… the medicine he uses is made to look inconspicuous because it can be used specifically to drug someone."
+    ke "The truth is… the medicine he uses is made to look inconspicuous on purpose."
 
-    ke "I never inquired too closely about it, but he comes from a rather unscrupulous family; so it wouldn't surprise me if he was aware of this plot."
+    ke "I never inquired too closely about it, but he comes from a rather unscrupulous family; it wouldn't surprise me if he was aware of this plot."
 
     "Kellac seems to know the most about Uldin's family and his circumstances, so Ilona asked for more information."
 
@@ -383,9 +385,9 @@ label act2:
 
     "On the topic of magic, Eisleigh recalls something that she needed to discuss."
 
-    ei "Do you know more about how Edwin is able to transform into a werewolf?{p}Have you ever seen him do it?"
+    ei "Could you tell us more about how Edwin is able to transform into a werewolf? Have you ever seen him do it?"
 
-    il "No, I haven't. When he transforms, even when I ask him to, he tells me to look away or to close my eyes."
+    il "No, I haven't. When he transforms, even when I ask it of him, he tells me to look away or to close my eyes."
 
     ke "Wait, why do you ask him to transform? What do you do when he's a werewolf?"
 
@@ -395,43 +397,45 @@ label act2:
 
     "Everyone else looks at Eisleigh in alarm."
 
-    ei "I heard of shapechangers before in my studies of cursed objects. They would use either an ointment, or the pelt of an animal, to assume the form of a beast."
+    ei "I heard of shapechangers before while studying cursed objects. They would use either an ointment, or the pelt of an animal, to assume the form of a beast."
 
     ei "If the curse was tied to his body, he wouldn't fear you witnessing his transformation."
 
     ei "But what if it was an item? If he feared betrayal, he wouldn't even show it to an ally."
 
-    ei "Additionally, there's always a risk involved in keeping that item safe — so it is better that only the bearer knows of it, because —"
+    ei "Besides, there's always a risk involved in keeping that item safe — so it is better that only the bearer knows of it, because it could get lost, destroyed, or..."
 
-    ei "— it could get lost, destroyed, or… stolen."
+    il "… stolen."
 
-    ei "Yes. There is a high chance that this cursed pelt still exists. If it was destroyed, he would have died along with it."
+    "Both Kellac and Ilona look at Eisleigh with tense faces. Ilona isn't sure what to be more surprised at: Eisleigh's incredible reasoning and knowledge, or that someone would go as far as to steal an item uncertain to be in Edwin's possession."
 
-    ei "Also, it gives us a reason as to why Edwin was drugged last night: Uldin and Salome are sharp, and they might have caught onto Edwin being a werewolf early on."
+    ei "There is a high chance that this cursed item still exists. Had it been destroyed, he would have died along with it."
 
-    il "If we restore this item to Edwin, would it restore the transformed arms back to human form?"
+    ei "This would give us a reason as to why Edwin was drugged last night: Uldin and Salome are sharp, and they might have caught onto Edwin being a werewolf early on."
 
-    ei "It's possible, especially if the item controls the transformation. A cursed item like that can generally only be bound to one person."
+    il "If we return this item to Edwin, would it restore the transformed arms back to human form?"
 
-    ei "Someone else could have also used it, but… Uldin would understand the consequences of a cursed item. I highly doubt it would be him."
+    ei "It's entirely possible, if that's what controls the transformation. A cursed item like that can generally only be bound to one person."
 
-    ke "Even so, finding this item might help us in finding the true culprit, or to make sense of this tragedy…"
+    ei "Someone else could have also used it, but… Uldin would understand the consequences of such a thing. I highly doubt it would be him."
 
-    ke "Though, if we don't find the culprit, you might not be able to convince everyone that Edwin is innocent."
+    ke "Even so, finding this item might lead us to  finding the true culprit, or at least help make sense of this tragedy…"
 
-    il "Do you mean Anari? What would it take to convince her of Edwin's innocence?"
+    ke "You might not be able to convince everyone that Edwin is innocent, otherwise."
 
-    ke "In short of having the culprit confess their crime, or finding Fleur in hope for an answer… I don't know."
+    il "Yes, Anari wouldn't accept it so easily... What would it take to convince her of Edwin's innocence?"
+
+    ke "Short of having the culprit confess their crime, or finding Fleur in hope for an answer… I don't know."
 
 # SCENE 32
 
-    "The three of them start their search for the cursed pelt. Based on Anari's report, Kellac confirms with Ilona that nobody was able to enter or exit the town after Ilona and Edwin entered."
+    "The three of them start their search for the cursed item. Based on Anari's report, Kellac confirms with Ilona that nobody was able to enter or exit the town after Ilona and Edwin entered."
 
     "Eisleigh was eager to help out in any way possible, now that there was a chance of witnessing or finding a cursed magical object."
 
     ei "Kellac knows this, but I am not meant to have a copy of the master key."
 
-    ei "The reason why I was an assistant to this household, was because I tried to steal one of Uldin's rare books…"
+    ei "I used to be a thief before I came here. The reason why I was an assistant to this household, was because I tried to steal one of Uldin's rare books…"
 
     ei "However, I've put the past well behind me. Uldin made me his friend instead of punishing me, and I'm thankful for that."
 
@@ -441,7 +445,7 @@ label act2:
 
     "They move onto Salome's room. Nothing appears to have been touched since the last time Ilona was here with Anari. Like Anari, Eisleigh comments that the chest was moved and then moves to inspect it."
 
-    ei "This chest… Last time I saw it, it wasn’t locked. Salome was still re-arranging it to look nice when I last saw her."
+    ei "This chest… Last time I saw it, it wasn’t locked. Salome was still re-arranging it to look nice."
 
     ei "Let me try opening it…"
 
@@ -449,11 +453,11 @@ label act2:
 
 # SCENE 33
 
-    il "I thought you said you had put the past behind you."
+    il "I thought you said you put the past behind you."
 
     ei "I did, but I thought the tools might come to be useful one day. We're doing a good thing, aren't we? Lockpicking is not inherently evil."
 
-    ke "Full of surprises, eh? I trust that you are not inventing stories now."
+    ke "Full of surprises, eh? I trust you're not making excuses now."
 
     ei "Of course not, I merely-{p}Ah-ha! I got it!"
 
@@ -461,7 +465,7 @@ label act2:
 
     "…{p}…{p}……"
 
-    "……{p}Five stabs pierce the palmar surface of Eisleigh’s soft flesh."
+    "……{p}Five stabs pierce the soft flesh of Eisleigh's hand."
 
     ke "Eisleigh!"
 
@@ -469,7 +473,7 @@ label act2:
 
     "Kellac fumbles through his thick, heavy cloak, drawing out a clean cloth for use as a compress."
 
-    ei "There's too much blood…! It won't stop flowing!"
+    ei "We need to do something!"
 
     ke "There should still be some medical supplies in my room. Let's move there."
 
@@ -483,7 +487,7 @@ label act2:
 
     "The hairs on Ilona’s arms raise, and she can feel her heart beat faster. She puts her hand on her chest, as though uttering a short prayer."
 
-    il "I must calm down. If the chest was a trap, then there has to be something in there that someone doesn’t want found."
+    il "Breathe. If the chest was a trap, then there has to be something in there that someone doesn’t want found."
 
     "Despite her best instincts, Ilona picks up the lockpicks Eisleigh used. She spots a thin tool and uses it to pry the wood chest open…"
 
@@ -497,13 +501,13 @@ label act2:
 
     il "(Salome seemed so kind and caring. Could someone like that really be a murderer?)"
 
-    "A slip of paper falls out with the wolfskin, the contents addressed to a sculptor. According to the paper, the deposit was paid for, but the project was never finished and was thus refunded."
+    "A slip of paper falls out with the wolfskin, the contents addressed to a sculptor. According to the paper, the deposit was paid for, but the project was never finished and was thus refunded. A note explains that the item was delivered yesterday."
 
-    il "(It looks like Salome bought something, and the final product was never finished? Maybe this is important - I’d better hold onto this.)"
+    il "(It looks like Salome bought something, but the final product was never finished? This could be important - I’d better hold onto this.)"
 
-    il "(What about this chest? Did Fleur witness the murder? Did she take the wolfskin to place it as a message in her mother's room?)"
+    il "(What about this chest? Did Fleur witness the murder? Did she take the wolfskin and leave it as a message in her mother's room?)"
 
-    il "(But the chest is trapped, and placed in the open… That doesn't make sense. She wanted us to find it, but she wanted to hurt us.)"
+    il "(But the chest is trapped, and placed in the open… That doesn't make sense. Why would she want us to find it, only to hurt us?)"
 
 # SCENE 34
 
@@ -529,13 +533,13 @@ label act2:
 
     ed "Ilona? You shouldn't be here. Wait, you found the…"
 
-    il "Nobody was with me when I took it, nor did anyone wear it."
+    il "I was alone when I took it. Nobody wore it, either."
 
-    ed "…Thank goodness you're okay. Where was it?"
+    ed "…Thank goodness you're okay. Where did you find it?"
 
     il "Salome's bedroom. Inside a chest meant for Fleur."
 
-    ed "Huh, that's—"
+    ed "What? That's—"
 
     "Edwin falters, lost for words."
 
@@ -545,27 +549,27 @@ label act2:
 
     ed "You've saved my life once again… Thank you."
 
-    il "Please, there's no need to thank me. It's given me a chance to talk to you again… Do you think you can talk to me about the murder?"
+    il "Please, there's no need to thank me. It's given me a chance to talk to you again… Do you think you can tell me more about the murder?"
 
-    ed "Of course, though you probably know more about it than I do."
+    ed "Of course — though you probably know more about it than I do."
 
-    il "Did Salome murder Uldin? Both must have died from the wounds they inflicted on each other. Is that right?"
+    il "If I think of who could have been present in the Master's chambers at the time, only two people remain. Did Salome murder Uldin? I've gathered that they must have died from the wounds they inflicted on each other. Am I correct?"
 
     ed "From what I could tell, yes. But I… I’ve already put you through too much. You have to stop this investigation. There’s no use in getting your hopes up."
 
-    il "...What?{p}I don't understand. We're so close to finding out the truth! What is there left to hide?"
+    il "...What? I don't understand. We're so close to finding out the truth! What is there left to hide?"
 
-    ed "…{p}If I were to live my life honestly... If I were not a monster…{p}You wouldn't have to keep living a lie."
+    ed "… If I were to live my life honestly... If I were not a monster… You wouldn't have to keep living a lie."
 
-    il "Earlier today, I saw you with Salome's corpse in your arms. What really happened?"
+    il "Earlier today, I saw you holding Salome's corpse in your arms. What happened?"
 
     ed "I hid the answer from you for a reason. Please, don’t pry any further…"
 
-    il "Then you really did kill her."
+    il "...You really did kill her."
 
     "His eyes are empty and cold. At his loss for words, Ilona's heart sinks. Her hands tremble, and she lowers her head."
 
-    il "No…{p}There’s no way… I… You couldn’t have actually, truly…"
+    il "No… There’s no way… I… You couldn’t have…"
 
     ed "I should've said something sooner rather than have you go through all of this. I'm sorry."
 
