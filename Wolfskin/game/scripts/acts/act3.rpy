@@ -479,7 +479,7 @@ label act3:
     ed "The sun bestows its blessings over me,{p}While you wait beside."
 
     # pronunciation of verdure - vur-jur
-    ed "I flourish with the bountiful verdure{p}Though words are withering,
+    ed "I flourish with the bountiful verdure{p}Though words are withering,"
 
     ed "In all uncertainty we usher,"
 
