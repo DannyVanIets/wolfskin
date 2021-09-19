@@ -31,7 +31,7 @@ screen credits():
     ## returns to its normal flow.
     ## Ideally, there is some wait time after the the credits reaches the end.
     ## If you make the credits longer or shorter, you need to adjust this timer!
-    timer 1000.0 action Return()
+    timer 70.0 action Return()
 
     ## Adjust this number to control the speed at which the credits scroll.
     ## Needs to be adjusted if you make the credits longer or shorter.
