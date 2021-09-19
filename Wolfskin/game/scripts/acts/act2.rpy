@@ -52,6 +52,8 @@ label act2:
 
     an "Eisleigh told me there was something that felt out of place in Fleur's room.{p}I'll also let you look through Salome's room."
 
+    stop music fadeout 3.0
+
 # SCENE 17
 
     "Ilona decides to look in Salome's room first, the room closest to the master's chambers. The room is bright, orderly and spacious; and partly serves as the lady's study."
@@ -83,6 +85,8 @@ label act2:
     "When they reach the bed, Ilona isn't sure what to expect. Anari remains behind her, and nods for Ilona to pull back the covers. Ilona could see something that looked like it's carved from wood…"
 
     "It resembles a wood statue, or an effigy."
+
+    # TO DO: Implement Fleur's Theme
 
     "The face looks eerily like Fleur, her expression mysterious; neither happy or sad. The rest of the body looks as though it remains trapped inside a still-living tree."
 
@@ -117,6 +121,8 @@ label act2:
     an "With some tea, I get it. Very well, I must tell you that I despise the leavesfrom this country, so you'd better make a damn fine cup."
 
     il "Are there any to your taste?"
+
+    # TO DO: Implement a continous Clock Sound Tick Tock Tick Tock. No Music
 
     an "…Fine black tea, with bitter orange. I think Uldin still had some in his pantry."
 
@@ -284,6 +290,10 @@ label act2:
 
     "Her own heart sounds louder in her ears, so much that it’s making her weak and dizzy… Her extremities are tingling."
 
+    play sound 'audio/sfx/heartbeat.mp3' loop
+
+    # TO DO: Implement high pitched ambience?
+
     "It is taking everything for her to stay conscious. Anari glances at Ilona, before smiling to herself and walking away. Ilona sees a figure move in front of her, clad in black robes…"
 
     ke "Where to?"
@@ -293,6 +303,10 @@ label act2:
     "She can barely recognize the voice. Ilona's vision blurs and the ground beneath her feet feels unsteady."
 
     ke "Ilona?"
+
+    stop sound
+
+    play sound 'audio/sfx/Gravel Floor Fall 1.mp3'
 
 # Note for SFX: (vpunch effect + sound of collapsing?)
 
@@ -514,6 +528,8 @@ label act2:
 
     "Nestled underneath delicate pieces of jewelry and other finery, lay the red and glistening gold of a sash; with bloodstained, hoary fur on the other side."
 
+    play music 'audio/music/Haunting.ogg'
+
     il "This must be it…"
 
     il "Ilona touches the wolfskin. She thinks back to meeting Salome, and the dissonance between that friendly encounter and the thought of Salome as a cold-blooded killer."
@@ -542,6 +558,8 @@ label act2:
 
     "Now is her only chance to return it to him privately."
 
+    stop music fadeout 1.0
+
     il "I must have courage. I know that I made the right decision."
 
     il "If this can ease his spirits, even just a little, then it will have been worth it."
@@ -561,6 +579,8 @@ label act2:
     ed "What? That's—"
 
     "Edwin falters, lost for words."
+
+    play music 'audio/music/He Who Seeks Hope - Theme Of Edwin -.ogg'
 
     "Ilona kneels down, returning the wolfskin to Edwin. She asks where he normally would wear it. After he tells her, she ties it to the inside of a thick leather piece around his waist."
 

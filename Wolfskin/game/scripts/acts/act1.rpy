@@ -206,12 +206,16 @@ label act1:
 
     with vpunch
 
+    stop music fadeout 2.0
+
     "Edwin immediately lets go of her hand, intertwined seconds ago, but now balled into a fist. The rustling of dry leaves brought with it a heavily armed guard and an archer under a cloak."
 
     show anari_night angry glance neutral bow with dissolve:
         zoom 0.50 xpos 10 xzoom -1
 
     unk "That's enough loitering around the town wall looking suspicious, don't you think?"
+
+    # TO DO: Implement Anari's Rain Theme Here
 
     unk "I've been observing your movements from the battlements for a while now. Be grateful that the town master wishes to have a meeting with you, or else I would have already pierced you with my arrows."
 
@@ -418,6 +422,8 @@ label act1:
 
     # HALL(SCENE 4)
 
+    queue music 'audio/music/The Banquet.ogg'
+
     "It had only been a few days since they were on the run… Ilona could scarcely believe that they were welcomed so readily."
 
     "They sit at a table laden with food: a rich coloured beetroot soup, mulled wine with spices, pickled vegetables, a glistening whole roasted pheasant and even more dishes than one could name."
@@ -574,6 +580,8 @@ label act1:
 
     # SCENE 8(EDWIN POV)
 
+    stop music fadeout 3.0
+
     "Eisleigh unlocks the door by the stairs, and opens the guest room. She gives Edwin the key."
 
     "Having a separated sleeping quarters is more than what he could normally ask for. For this style of house, he would assume that the guests share one large sleeping space."
@@ -674,6 +682,8 @@ label act1:
 
     il "(Ed… I wonder how he's doing. That conversation earlier really took a turn for the worse for him.)"
 
+    # TO DO: Implement Ilona's Theme here
+
     "His room is on the right side of hers, and Kellac’s on the left."
 
     "Ilona presses her ear up to the wall separating her and Edwin's room, but hears nothing from the other side."
@@ -705,6 +715,8 @@ label act1:
     "Ilona hears footsteps rush past her room, and her eyes flutter open; registering what woke her. She puts on her habit, covering her head, and hurries out the door, unlocking it first…"
 
     "Kellac stops on the stairwell when he sees her, turning his head back to see Ilona. Edwin is not with him. She looks to the door next to hers, on the right."
+
+    play music 'audio/music/Death Tolls.ogg'
 
     ke "There's no time to lose! See if you can wake him up, I'm going on ahead!"
 
@@ -746,7 +758,11 @@ label act1:
 
     # TRANSITION TO SCENE 11
 
+    stop music fadeout 3.0
+
     "When they rush back to the masters' chambers, there is no use for the master key. They find the door broken and battered, but no sign of Anari or Kellac yet."
+
+    play sound 'audio/sfx/heartbeat.mp3' loop
 
     "Traces of blood are on the door, as with thick shards of wood splintering from its fractures."
 
@@ -781,6 +797,8 @@ label act1:
     ke "I was too late… I'm so sorry… I couldn't save them."
 
     # SCENE 12 + 13
+
+    stop sound fadeout 3.0
 
     "Kellac is on his knees, facing Salome's corpse. All the jovial cheer that he displayed since meeting Ilona vanishes, and he resembles a husk of a man."
 
@@ -838,6 +856,8 @@ label act1:
     "Nobody could find Fleur in the manse afterwards, her room and bed empty of her presence."
 
     "The sun has not risen yet, and the clouds are dark and looming. There's a damp chill in the air."
+
+    play music 'audio/music/Haunting.ogg'
 
     ei "What now?"
 
