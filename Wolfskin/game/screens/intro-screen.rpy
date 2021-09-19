@@ -38,6 +38,7 @@ screen intro(actNumber):
 
                 text "To be filled in"
 
+            # In case we want to make it clear that it is the epilogue.
             else:
                 label "Epilogue" xalign 0.5
 
