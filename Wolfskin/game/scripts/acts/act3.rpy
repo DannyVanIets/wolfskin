@@ -132,6 +132,8 @@ label act3:
 
     "Ilona's heart leaps when she hears Anari speak so suddenly."
 
+    # knowing that she sounds suspicious, but spoken confidently like she's trying to regain composure
+
     il "… Sure, I was. I was praying for your success in finding Fleur. Did you find her yet?"
 
     an "No, but there's still time before sundown. We'll search the forest. There was another important job I had to oversee."
@@ -142,11 +144,11 @@ label act3:
 
     il "…!"
 
-    an "Edwin is a pretty big man. Wouldn't it be terrible to burn him at the stake, but leave the job half-finished? And he can turn into a werewolf… That's going to take a lot of fuel."
+    an "Edwin is a {i}huge{/i} man. Wouldn't it be terrible to burn him at the stake, but leave the job half-finished? And he can turn into a werewolf… What if he transforms as he burns up?"
 
     il "Honestly, I wonder if you're really the monster instead."
 
-    an "Relax, I'm just being prepared for any situation. How about you, did you find anything about the real murderer?"
+    an "Relax, I'm just being prepared for any situation. Besides, it's not like I'm the one who murdered two people. Speaking of which, did you make any progress in your investigation?"
 
     il "You shouldn't let your guard down; I have a better understanding of the situation now."
 
@@ -156,7 +158,9 @@ label act3:
 
     "As part of the investigation, Ilona and Kellac join the search party for Fleur. While doing so, Ilona searches for an escape route, and any part of the wall that may look like it could be scaleable."
 
-    "Eventually, Kellac takes his leave to watch over Eisleigh, to make sure her condition remains stable; leaving Ilona in the town square."
+    "Eventually, Kellac takes his leave to watch over Eisleigh to make sure her condition remains stable; leaving Ilona in the town square."
+
+    with logodissolve
 
 # SCENE 40
 
