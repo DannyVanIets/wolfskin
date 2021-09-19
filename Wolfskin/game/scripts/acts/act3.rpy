@@ -2,6 +2,24 @@
 
 label act3:
 
+    # Show the intro of the act.
+    # Makes sure that skipping is stopped, also autosaves.
+    $ renpy.choice_for_skipping()
+
+    $ quick_menu = False
+
+    window hide
+
+    scene bg fluffies
+    with fade
+
+    call screen intro(3)
+
+    $ quick_menu = True
+
+    scene bg forest night
+    with fade
+
 # SCENE 35-39
 
     ed "I retired to the bedroom after Uldin's story about the werewolf attack. I couldn't take much more of it. Afterwards, I fell into a deep and dreamless sleep."

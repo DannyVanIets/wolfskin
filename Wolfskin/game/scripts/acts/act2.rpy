@@ -2,7 +2,26 @@
 
 label act2:
 
+    # Show the intro of the act.
+    # Makes sure that skipping is stopped, also autosaves.
+    $ renpy.choice_for_skipping()
+
+    $ quick_menu = False
+
+    window hide
+
+    scene bg fluffies
+    with fade
+
+    call screen intro(2)
+
+    $ quick_menu = True
+
+    scene bg forest night
+    with fade
+
 # SCENE 16
+
     "Ilona takes a look once more at the corpses of Salome and Uldin."
 
     "Kellac examined the bodies when Edwin was being escorted to the dungeon."

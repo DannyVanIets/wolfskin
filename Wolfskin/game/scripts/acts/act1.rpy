@@ -6,15 +6,21 @@ transform ilona_transform_pos1:
     zoom 0.5
     left
     xpos 300
+
 transform edwin_transform_pos1:
     zoom 0.5
     right
     xpos 1800
+
 transform ilona_move_right:
     ilona_transform_pos1
     linear 0.8 xpos 550
 
 label act1:
+
+    $ quick_menu = False
+
+    window hide
 
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
@@ -27,9 +33,6 @@ label act1:
     define nvlNarrator = Character(None, kind=nvl, what_font="BluuNext-Bolditalic.otf", what_size=50, what_kerning=2)
 
     # NVL mode: Edwin's monologue
-    $ quick_menu = False
-
-    window hide
 
     nvlNarrator """
     I am lost.
@@ -48,6 +51,13 @@ label act1:
     """
 
     nvl clear
+
+    # Show the intro of the act.
+
+    scene bg fluffies
+    with fade
+
+    call screen intro(1)
 
     # Switch to AVD mode.
 
