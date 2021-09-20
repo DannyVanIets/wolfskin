@@ -22,8 +22,6 @@ label act2:
 
 # SCENE 16
 
-    play music 'audio/music/Haunting.ogg'
-
     "Ilona takes a look once more at the corpses of Salome and Uldin."
 
     "Kellac examined the bodies when Edwin was being escorted to the dungeon."
@@ -432,8 +430,6 @@ label act2:
 
     "Everyone else looks at Eisleigh in alarm."
 
-    play music 'audio/music/Wail of the Moon.ogg'
-
     ei "I heard of shapechangers before while studying cursed objects. They would use either an ointment, or the pelt of an animal, to assume the form of a beast."
 
     ei "If the curse was tied to his body, he wouldn't fear you witnessing his transformation."
@@ -496,11 +492,10 @@ label act2:
 
     ke "Full of surprises, eh? I trust you're not making excuses now."
 
-    ei "Of course not, I merely-{p}Ah-ha! I got it!"
+    ei "Of course not, I merely-"
+    extend "Ah-ha! I got it!"
 
     "She jammed the lockpick into the keyhole and wriggled it around. A faint 'click' was heard."
-
-    stop music fadeout 1.0
 
     "…{p}…{p}……"
 

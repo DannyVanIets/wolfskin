@@ -520,24 +520,20 @@ label act3:
 #    Ilona & Edwin:
 #       We are found.
 #
-#    Ilona:
-#       Praying deep in dead of night,
-#       You have found your path.
+#    il "Praying deep in dead of night,"
+#    il "You have found your path."
 #
-#    Edwin:
-#       Praying still, no end in sight,
-#       A pure heart perseveres.
+#    ed "Praying still, no end in sight,"
+#    ed "A pure heart perseveres."
 #
-#    Ilona:
-#       Praying, no desire, delight,
-#       A serene soul you see.
+#    il "Praying, no desire, delight,"
+#    il "A serene soul you see."
 #
 #    Ilona & Edwin:
-#       Bring back those melancholy hearts,
-#       Cleanse these with your soul unbound.
+#       "Bring back those melancholy hearts,"
+#       "Cleanse these with your soul unbound."
 #
-#    Edwin:
-#       Out of sorts, but not far gone,
-#       With you, nothing lost is found.
+#     ed "Out of sorts, but not far gone,"
+#     ed "With you, nothing lost is found."
 #
 ######################################################

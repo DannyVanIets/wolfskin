@@ -149,6 +149,41 @@ layeredimage kellac:
 
     group emotion auto
 
+# begin auto_layeredimage for eisleigh
+
+layeredimage eisleigh:
+
+    always:
+        "eisleigh_base"
+
+    group eyes auto:
+        attribute open default
+
+    group eyebrows auto:
+        attribute relaxed default
+
+    group mouth auto:
+        attribute smile default
+
+    if evil:
+        "eisleigh_glasses_evil"
+    else:
+        "eisleigh_glasses_regular"
+
+
+# begin auto_layeredimage for Fleur
+
+layeredimage fleur:
+
+    always:
+        "fleur_base"
+
+    group eyes auto:
+        attribute open default
+
+    group mouth auto:
+        attribute smile default
+
 # CTC SHENANIGANS
 
 image ctc_anchored:
