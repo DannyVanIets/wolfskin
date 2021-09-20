@@ -2,47 +2,31 @@
 
 label act3:
 
-    # Show the intro of the act.
-    # Makes sure that skipping is stopped, also autosaves.
-    $ renpy.choice_for_skipping()
-
-    $ quick_menu = False
-
-    window hide
-
-    scene bg fluffies
-    with fade
-
-    call screen intro(3)
-
-    $ quick_menu = True
-
-    scene bg forest night
-    with fade
-
 # SCENE 35-39
 
-    ed "I retired to the bedroom after Uldin's story about the werewolf attack. I couldn't take much more of it. Afterwards, I fell into a deep and dreamless sleep."
+    ed "I retired to my bedroom after Uldin's story about the werewolf attack. I couldn't take much more of it. After that, I fell into a deep and dreamless sleep."
 
-    ed "I first noticed the wolfskin was gone when I heard the scream. I smelled the faint scent of perfume, so I figured it was Salome."
+    ed "I first noticed the wolfskin was gone when I heard the scream. The faint scent of perfume made me think it must have been Salome's doing."
 
     il "Did you hear me knocking on your door?"
 
-    ed "I was still inside. I heard Kellac's voice, so I didn't answer. I couldn't risk opening the door with my arms transformed."
+    ed "I didn't know if you were alone — I heard Kellac's voice on the other side. I kept quiet knowing  I couldn't risk opening the door with my arms transformed."
 
-    il "So, when Kellac and I moved to seek help, you moved to the master bedroom."
+    il "So, when Kellac and I left to seek help, you moved to the master bedroom."
 
-    ed "Yes. If the wolfskin had been taken, I thought it would be there. At the time, I was worried for my own life. "
+    ed "Yes. If the wolfskin had been taken, it surely would be there. I was only thinking of saving my own life."
 
-    ed "When I broke down the door, Salome was barely conscious. The room was full of smoke and ash. She still had some lycan features: fangs, and claws… "
+    ed "When I broke down the door, Salome was on the ground, barely conscious anymore. The room was full of smoke and ash. She still had some lycan features: fangs, and claws… "
 
-    ed "Her voice was thin, high and frail. Her body seemed so small, like it was burned away."
+    ed "Her voice was thin, high and frail. Her body seemed so small. I've never seen burns that horrible."
 
-    ed "I asked for the wolfskin back. She ignored my plea and with the last of her strength, begged me to kill her."
+    ed "I asked to have the wolfskin back, but she ignored my plea. With the last of her strength, she begged me to kill her."
+
+    "Ilona remains silent for a long while. The fatigue is starting to set in, and she feels ready to crumble."
 
     il "How did you do it? Kellac ruled her death as complications from her burn wounds."
 
-    ed "I tried to think of the most merciful way to give her peace. By then, I truly did pity her - we suffered the same curse, and I felt my sorrow in her."
+    ed "I tried to think of the most merciful way to give her peace. I truly did pity her - we suffered the same curse, and I felt my sorrow in her."
 
     ed "I held her close and crushed the bones in her neck, hoping for an instant death."
 
@@ -50,53 +34,53 @@ label act3:
 
     ed "When a bearer of the wolfskin dies, they revert to human form. She no longer had any bestial features when I was done."
 
-    il "And then when you were trying to search for the wolfskin, we found you."
+    il "And as you searched for the wolfskin, we found you."
 
-    ed "Yes. How it moved to the chest in Salome's room, I don't know."
+    ed "Yes. How you found it in the chest in Salome's room, I don't know."
 
     "Ilona and Edwin fall silent. Even though he had killed Salome, he was not the one who orchestrated the murder on Uldin."
 
     il "Fleur still hasn't been found. People fear she's actually been kidnapped, or taken by the fae."
 
-    ed "Do you think that's true?"
+    ed "Do you think that could be the case?"
 
-    il "During the murder, her location was not accounted for. Part of me believes she's more than just a witness."
+    il "Her location was not accounted for during or after the murder. Part of me believes she's more than just a witness."
 
-    ed "Then you think she may be an accomplice… Or, if she were the murderer… Hmm…"
+    ed "Then you believe her to be an accomplice… Or, if she were the murderer… Hmm…"
 
     "Edwin considers this for a moment."
 
-    ed "She could do it, if she wore the wolfskin."
+    ed "If she wore the wolfskin, perhaps."
 
-    ed "But if she truly is lost, she'd be suffering the same effects that I did. It's excruciating to go through."
+    ed "But if she truly is lost, she'd be suffering the same consequences as I did. It's excruciating to go through."
 
-    ed "When I was first given the wolfskin, I foolishly tried to part with it and leave it behind. In retribution for not obeying the curse, I was left howling in pain."
+    ed "When I was first given the wolfskin, I foolishly tried to part with it and leave it behind. In retribution for not heeding the curse, I was left howling in pain."
 
-    ed "If she's still missing and was the murderer, she'd need to have incredible fortitude to remain silent for all this time."
+    ed "If she's still missing and guilty, she'd need to have incredible fortitude to remain silent for such a long time."
 
-    il "Then maybe Fleur was an accomplice, even unwillingly? I strongly believe that she helped Salome."
+    il "Then maybe Fleur was just an accomplice — unwillingly, perhaps? I strongly believe that she helped Salome."
 
-    ed "That's probably the safest assumption, unless she is found."
+    ed "That's probably the safest assumption, until she is found."
 
-    il "If only we had stayed together and were honest with ourselves…"
+    il "If only we had been honest and asked to stay together…"
 
-    ed "No. If they wanted the wolfskin while we were together, they might have killed you to get to it. It would have been very easy to make me look guilty of that."
+    ed "No. Had they sought the wolfskin while we were together, they might have killed you to get their hands on it. It would have been just as easy to frame me for that."
 
-    ed "Maybe it's better that it happened this way - both of us separated."
+    ed "This may have been for the best."
 
-    il "Let's not think about that now. I'm involved in this as much as you are now."
+    il "Let's not think about that now. I'm as involved in this as you are, regardless."
 
-    ed "Ilona, listen to me. The people here… They like you. I was going to suggest it to you in the morning, when we saw each other again."
+    ed "Ilona, listen to me. The people here… They appreciate you. I meant to bring this up in the morning, when we saw each other again."
 
-    ed "You… You should stay here. Live, and survive."
+    ed "You… You should stay here. Let them dispose of me. Live, and survive."
 
     il "And watch you {i}die{/i}? Do you really think I would be happy with something like that?"
 
     ed "I'm going to get what's coming to me, sooner or later."
 
-    ed "Your hurt and pain will heal. You can recover. If you're with me, you can't walk a righteous path. But if you leave me here, at least one of us can survive."
+    ed "Your hurt and pain will heal. You can recover. If you're with me, you won't be able to walk a righteous path. But if you leave me here, at least one of us will survive."
 
-    il "Enough!{p}I already accepted that when I left the priory with you!"
+    il "Enough! I was well aware of the consequences when I left the priory with you!"
 
     # Ilona is crying.
 
@@ -106,7 +90,7 @@ label act3:
 
     ed "I-Ilona… You really want…"
 
-    il "I can't do that if you're going to offer yourself up to be killed."
+    il "I can't do that if you offer yourself up to be killed."
 
     "Edwin goes to reach for her face, but pauses. He slips off his glove first, and brushes away Ilona's tears with his thumb."
 
@@ -114,9 +98,9 @@ label act3:
 
     "He smiles warmly at her. Her tears subside as he wipes them away. She touches the hand at her cheek, finally laughing lightly at his comment."
 
-    il "Don't say things like that yet. We need to figure out a plan first. You have your wolfskin back, so you could easily break through the chains… We could escape."
+    il "Let's not get ahead of ourselves yet. We need to figure out a plan first. Now that you have your wolfskin back, you could easily break through the chains… We could escape."
 
-    ed "It'll be difficult… but I can try. The walls are high, but I could scale them if I transform. If you survey the town's layout, and find a part of the wall that could give me some footing, that would help us."
+    ed "It'll be difficult… but I can try. The walls are high, but I could scale them if I transform. If you could survey the town's layout looking for a part of the wall that could give me some footing, that would help us."
 
     il "Understood. I should go — someone might be searching for me."
 
@@ -128,15 +112,15 @@ label act3:
 
     "The wind howls, and she draws her nun's habit closer to her body. The ruins of the chapel loomed towards her, as though the remaining structure would threaten to collapse."
 
-    an "What are you doing here, Ilona? Are you now praying for help?"
+    an "What are you doing here, Ilona? Praying for help now of all times?"
 
     "Ilona's heart leaps when she hears Anari speak so suddenly."
 
     # knowing that she sounds suspicious, but spoken confidently like she's trying to regain composure
 
-    il "… Sure, I was. I was praying for your success in finding Fleur. Did you find her yet?"
+    il "…Indeed. I was praying for your success in finding Fleur. Are there any new leads?"
 
-    an "No, but there's still time before sundown. We'll search the forest. There was another important job I had to oversee."
+    an "No, but there's still time before sundown. We'll search the forest. I had to personally oversee another crucial job."
 
     il "What might that be?"
 
@@ -144,11 +128,11 @@ label act3:
 
     il "…!"
 
-    an "Edwin is a {i}huge{/i} man. Wouldn't it be terrible to burn him at the stake, but leave the job half-finished? And he can turn into a werewolf… What if he transforms as he burns up?"
+    an "Edwin is a {i}huge{/i} man. Wouldn't it be terrible to burn him at the stake only to leave the job half-finished? And he can turn into a werewolf… What if he transforms as he burns up?"
 
-    il "Honestly, I wonder if you're really the monster instead."
+    il "You may think him a monster, but sometimes you speak like one."
 
-    an "Relax, I'm just being prepared for any situation. Besides, it's not like I'm the one who murdered two people. Speaking of which, did you make any progress in your investigation?"
+    an "It's not like I'm the one who murdered two people. But I'm sure you've had more than enough time to learn how your beloved little werewolf took care of that through your investigation."
 
     il "You shouldn't let your guard down; I have a better understanding of the situation now."
 
@@ -156,7 +140,7 @@ label act3:
 
     "With that remark, Anari leaves. In the remaining time, Ilona reconvenes with Kellac. Eisleigh's condition is now stable and she is resting, the bleeding ceased."
 
-    "As part of the investigation, Ilona and Kellac join the search party for Fleur. While doing so, Ilona searches for an escape route, and any part of the wall that may look like it could be scaleable."
+    "As part of the investigation, Ilona and Kellac join the search party for Fleur. While doing so, Ilona searches for an escape route, and any part of the wall that may look like it could be scalable."
 
     "Eventually, Kellac takes his leave to watch over Eisleigh to make sure her condition remains stable; leaving Ilona in the town square."
 
@@ -168,29 +152,27 @@ label act3:
 
     "Anari is waiting, and several of the townsfolk look to the pyre stacked in the middle of the town square. There is an air of formality surrounding her, clad in her red hunting garments. They seem even more vibrant, illuminated by the glow of the sun."
 
-    an "We will begin the proceedings against Edwin, who has been apprehended this morning."
+    an "We will begin the proceedings against Edwin, who was apprehended this morning."
 
-    an "The claims against the accused are that he is both a monster and a murderer."
+    an "He has made his companionship with the nun, Ilona, clear. Ilona has been harboring him with the knowledge that he is a werewolf."
 
-    an "He has made his companionship with the nun, Ilona, clear; who has been harboring him with the knowledge that he is a werewolf."
+    an "The master of the town, Uldin, and his wife, Salome, have been killed. Their daughter, Fleur, has gone missing. Edwin was found on scene, holding Salome's lifeless body."
 
-    an "As many of you heard, the master of the town, Uldin, and his wife, Salome, have been killed. Their daughter, Fleur, has gone missing. The found one on scene is Edwin."
+    an "I'll start first with some important information. We could not locate Fleur, but we found this envelope in the forest. The seal on it was still intact."
 
-    an "I'll start first with some important information. We could not locate Fleur, but we found this in the forest. When we found it, the seal on it was still intact."
+    "Anari's face is grim. She pulls out a letter, the seal on it broken. She reads the brief message out loud for all to hear."
 
-    an "Anari's face is grim. She pulls out a letter, the seal on it broken. She reads the brief message out loud for all to hear."
+    fl "{i}By the time you receive this letter, I will be reunited with who I consider to be my true family.{/i}"
 
-    "{i}By the time you receive this letter, I will be reunited with who I consider to be my true family.{/i}"
+    fl "{i}I could only choose one or the other, and so I have decided to take a test of faith to prove my worthiness: I will strike terror into the one who has abandoned me.{/i}"
 
-    "{i}I could only choose one or the other, and so I have decided to take a test of faith to prove my worthiness: I will strike terror into the one who has abandoned me.{/i}"
+    fl "{i}In doing so, I have let fate decide my hand, and this was the result - to reunite me with the fair ones forevermore.{p}- Fleur Belorovna{/i}"
 
-    "{i}In doing so, I have let fate decide my hand, and this was the result - to reunite me with the fair ones forevermore.{p}- Fleur Belorovna{/i}"
+    an "We are certain that this is her hand-writing."
 
-    an "It's confirmed to be in her hand-writing."
+    an "Fleur is… no longer with us. She has been taken by the fair folk. We couldn't find any trace of her, not even her footprints,, or any clues towards her disappearance."
 
-    an "Fleur is… no longer with us. She has been taken by the fair folk. During the search, we could not find even her footprints, or any clues towards her disappearance."
-
-    an "…{p}With that matter settled, let's proceed with Edwin. The nun Ilona has prepared a defence. Please, rise."
+    an "…With that matter settled, let's proceed with Edwin. The nun Ilona has prepared a defence. Please, rise."
 
 # SCENE 41
 
@@ -206,13 +188,13 @@ label act3:
 
     il "Both Salome and Fleur conspired together to drug the guests at the banquet, by poisoning the sugar with a powerful soporific."
 
-    il "This was given to Uldin by Kellac last night as part of his medicine to aid his sleeplessness. Kellac has confirmed three doses of this medicine are gone."
+    il "This was given to Uldin by Kellac last night as part of his medicine to aid his sleeplessness. Kellac has confirmed three doses of this medicine disappeared from his dispensary."
 
     il "During the banquet, Fleur and Salome were able to figure out Edwin's true nature, and thought to drug him by lacing the sugar with the soporific. When Edwin was asleep, they were able to steal a cursed item from him, and assume the form of a werewolf."
 
     an "I'll spare you the details on motivation for why these two would want to murder their beloved Uldin, or you'll surely run wild with some strange story. Thank me later."
 
-    an "I'm more interested on how this was done. So? Who was the one that murdered Uldin?"
+    an "All I care about are the deaths themselves at the end of the day. So? Who was the one that murdered Uldin?"
 
     "Ilona thinks carefully about the course of events, and what she really saw."
 
@@ -220,65 +202,81 @@ label act3:
 
     "(Her voice was thin, high and frail. Her body seemed smaller, possibly due to the burns…)"
 
-    "(“She could do it, if she wore the wolfskin.”)"
+    "(“If she wore the wolfskin....”)"
 
     "A theory appears before her, dispelling the illusion of what she saw. If she is right, then this would explain the tragedy of last night in its entirety."
 
-    il "How could we identify the burned corpse in the Master's chamber?"
+    il "How were you able to identify the burned corpse in the Master's chamber?"
 
-    an "It was difficult, but she was wearing Salome's effects, and her hair looked to be worn in the same way."
+    an "Her skin was charred beyond recognition, so we had to resort to what remained of her hair and dress to determine it was Salome."
 
     il "Did Salome have any identifying features on her body? Anything that could be used to set her apart?"
 
-    an "Nothing that I know of, apart from the mole near her eye… And her face has been horribly burned — "
+    an "Nothing that I know of, apart from the mole near her eye… And as I said, her face has been horribly burned — "
 
-    il "Then, here's my answer for who murdered Uldin: the culprit was Fleur. {p}The corpse of Salome has been misidentified."
+    il "Then, here's my answer for who murdered Uldin: the culprit was Fleur."
+    extend "The corpse of Salome has been misidentified."
 
-    an "What? Do you mistrust Kellac's judgement? We've known Salome for so long, and yet you make this bold claim — this better not be some convenient excuse!"
+    an "What? How dare you doubt Kellac's judgement?  You must be truly grasping at straws to make such bold claims! !"
 
-    il "The corpse's face, hair and body was burned to an unrecognizable state. The only identifiers we had were the ring of Salome’s, and her dress - all clothing and effects."
+    il "You said the corpse's face, hair and body was burned to an unrecognizable state. The only identifiers we had were Salome's ring, and her nightgown - all clothing and effects."
 
-    il "In actuality, it is Fleur's body."
+    il "I insist: this is Fleur's body."
 
-    an "So, we might have mistaken the identity of the corpse. But why Fleur? Did she have a reason for patricide?"
+    an "Say we believe for one second we mistook one corpse for another — why Fleur? Why would she ever want to murder her own father?!"
 
-    il "This information is still new to me… But she's the only one who has presented any real motivation. Her letter read: I will strike terror into the one who has abandoned me."
+    il "I don't have all the details… But she's the only one who has presented any real motivation. Her letter read: I will strike terror into the one who has abandoned me."
 
-    il "Fleur's letter talks about choosing between who is her true family. Uldin is not frequently in this town, is he not? He has essentially abandoned his daughter."
+    il "Fleur's letter talks about choosing her true family. Uldin is not frequently in this town, is he? He has essentially abandoned his daughter."
 
-    il "Only the guests were targeted to be drugged that night — but not Uldin, nor herself or her mother. She needed him awake to scare him. As luck would have it, Edwin had the cursed item needed for transformation into a werewolf."
+    il "Only the guests were drugged that night — but not Uldin, herself or her mother. She needed him awake to scare him. As luck would have it, Edwin had the cursed item needed for transformation into a werewolf."
 
     il "Her mother was assisting her in this plot. Fleur never intended to kill, she only wished to scare Uldin, perhaps to convince him to change his behaviour."
 
     il "She assumed the form of a werewolf, Uldin's worst fear."
 
-    il "She wore her mother's dress and ring, perhaps to avoid suspicion if found wandering at night… Or to further intensify his fear if she wore those items transformed. As you know, Fleur is fond of pranks and tricks. What better night than All Hallow's Eve?"
+    il "She wore her mother's ring, perhaps to prove she had permission if found wandering at night… As you know, Fleur is fond of pranks and tricks. What better night than All Hallow's Eve?"
 
     an "I refuse to believe this… This is all far too absurd."
 
     il "A werewolf has considerable strength, even more than a beast, but it doesn't make you impervious to all attack."
 
-    il "In retaliation of seeing such a horrible sight, Uldin did not hesitate to burn Fleur, and in rage, she killed him by biting his throat."
+    il "Terrified by such a horrible sight, Uldin did not hesitate to burn Fleur with magic, and driven mad by the pain, she killed him by biting his throat."
 
     il "You may have believed she was taken by the fair folk, but this would explain why you were unable to find her; or even to glimpse any trace of her - she was already dead."
 
-    an "Let's say this is true. How do you explain Fleur's letter? The wooden effigy of her that appeared in her bed?"
+    an "Then how do you explain Fleur's letter? Or the wooden effigy of her that appeared in her bed?!"
 
-    il "As I said, there was more than one conspirator, and therefore an accomplice. Even if Edwin did not have a cursed item, Salome could be assured that a monster in her house was sedated. And I strongly believe that she encouraged Fleur to do this 'prank' on her father."
+    il "I've already laid the evidence bare: there was more than one conspirator. Even taking the cursed item out of the equation, Salome was surely aware that there was a sedated monster in her house. And I strongly believe that she encouraged Fleur to do this 'prank' on her father."
 
-    il "Salome must have entered the room after the howl, and she let out a scream at the sight of both Uldin and Fleur's wounds. She took the cursed item stolen from Edwin, and hid in the room before we entered."
+    il "Salome must have screamed to clear suspicion from herself, and hid in the master's chamber. At that point, Edwin was looking for his stolen item. He broke down the door and found Fleur's body."
 
-    il "She waited patiently until the manse was empty. After we escorted Edwin to the dungeon and gathered in the town square, Salome was able to move again. She locked the wolfskin away in a chest in her room, and trapped it with a device."
+    an "How dare you — Are you forgetting Salome loved her daughter? She'd never abandon her like that!"
+
+    il "It's more possible than you think. In Salome's room, we found a chest made for Fleur. Eisleigh opened it, and suffered a horrific injury from a trap. Salome had the trap already made, and her target was Fleur."
+
+    "Anari remains silent, but her glare is penetrating and cold. Despite this, Ilona continues."
+
+    il "After the murder, she waited patiently until the manse was empty. After we escorted Edwin to the dungeon and gathered in the town square, Salome was able to move again. She locked the wolfskin away in a chest in her room, setting the trap."
 
     il "Salome placed the statue in Fleur's bed to make it seem like she was spirited away by the fair folk. This statue fits the description of this receipt I found in Salome's room. Here."
 
-    "Ilona hands Anari the paper she found in the chest. Upon realizing that it explains the existence wooden statue of Fleur, she looks thoroughly displeased, nearly crumpling the document."
+    "Ilona hands Anari the paper she found in the chest. Upon realizing that it explains the existence of the wooden statue of Fleur, she looks thoroughly displeased, nearly crumpling the document."
 
     il "Fleur must have had some suspicion this plan was risky, so she wrote a short letter. If she succeeded in her prank, all she had to do was destroy it."
 
     il "In fact, since the letter was found still sealed, I would suspect Salome encouraged Fleur to write it. To make Fleur's disappearance seem more credible, she placed it in the forest after her escape."
 
-    il "The one that orchestrated the plan was Salome, and she is the survivor."
+    il "Not only did Salome orchestrate this parricide. She survived."
+
+    "Anari crosses her arms, and her brows knit together as she takes in Ilona's theory."
+
+    an "You're forgetting something. You never explained what Edwin did in that room when he found the burned body. If I were him, I'd hide rather than stay out in the open. Why was he holding the body in his arms?"
+
+    "Ilona freezes, her legs shaking. The words are caught in her throat again. As she sees this, Anari chuckled to herself."
+
+    # would absolutely love to have a small, smug chuckle before this line
+    an "You really are awful at keeping secrets. There's no need to talk — I can already tell just by looking at you."
 
 # SCENE 42
 
@@ -290,9 +288,9 @@ label act3:
 
     "There is now only one question that remains-and a clocktower that's ticking away, endlessly."
 
-    an "Let me ask you: where is Salome?"
+    an "So where is she? Where is Salome?"
 
-    il "That, I can't tell you. I'm certain that my theory is correct, though."
+    il "That, I can't tell you. I'm certain that my theory is correct, however."
 
     il "I do not care what happens next, Anari. Whether you believe me or not is irrelevant. I've only tried to make sense of what I could from this tragedy."
 
@@ -300,15 +298,15 @@ label act3:
 
     il "I have provided evidence and my theory, as you asked. Nothing I do now can change your mind. I accept it, regardless of the outcome."
 
-    an "Nun, I would like to believe you. More than anyone else, believe it or not. As to why I feel that way…"
+    an "Sister, I would like to believe you. More than anyone else, believe it or not. Why, however…"
 
     an "Well, maybe I can tell you some other time. If we even get a chance that is. In your mind, you may be right..."
 
-    an "But unless you bring me Salome, you can't convince me. The ‘righteousness’ that you preach of is meaningless without tangible proof. So, where is Salome? We searched everywhere in this town for her daughter."
+    an "But unless you bring Salome to me, I will not be convinced. The ‘righteousness’ that you preach is meaningless without tangible proof. So, where is Salome? We searched everywhere in this town for her daughter."
 
-    il "I can only speculate at this point. I don't know if Belorov has any secret or hidden passages."
+    il "I can only speculate at this point. Are there any secret or hidden passages in Belorov?"
 
-    an "That would be far too convenient, wouldn't it? Perhaps I’m misguided, but I’ve had far, far too many repercussions for trusting people in the past. In more ways than you can ever imagine."
+    an "That would be far too convenient, wouldn't it? You are right: nothing you do will change my mind. I have been burned by blindly trusting others in the past more times and in worse ways than you could ever imagine."
 
     an "If I am wrong, so be it. When my time comes, I’ll gladly accept my penance."
 
@@ -316,11 +314,11 @@ label act3:
 
     an "If it weren't for you and Edwin, this tragedy would never have happened."
 
-    il "You're blaming us for being caught in a plot that was using us? For all I know, you were always looking for a reason to kill Edwin. Maybe you planned for this to happen, to usurp power in Belorov."
+    il "You're blaming us for being caught in a plot that we had no part in? You have done nothing but look for reasons to kill Edwin all along. For all I know, . maybe you planned for this to happen, to usurp power in Belorov."
 
-    an "Hahahahaha! How amusing. I don't desire that in the least."
+    an "Hahahahaha! I didn't know nuns could tell jokes. As if I would ever wish  for such a thing."
 
-    an "You should choose your words more wisely, nun. It's unbecoming of a holy woman… but I knew you were a heretic from the first moment I saw you. The truth is, I never intended for you to win."
+    an "You should learn to choose your words more wisely, Sister. It's unbecoming of a holy woman… but I had the nagging suspicion you were a heretic from the first moment I saw you. Someone like you could never win."
 
     "With a signal of Anari's hand, two town guards move in on Ilona and grip her arms tightly; drawing them behind her back. The men tried to bind Ilona's hands together with thick rope."
 
@@ -338,7 +336,7 @@ label act3:
 
     "He continues to run on all fours, with only Ilona to guide him. She adjusts herself on his back, grasping tufts of thick fur. Anari scowls, and then goes to climb a tower to gain a higher vantage point."
 
-    il "The guards will have closed the gates. There's a part of the wall that has been rebuilt with jagged stones. That can give you more of a footing."
+    il "The gates will be already closed by now. There's a part of the wall that was hastily patched up. You should be able to climb through there."
 
     "Edwin takes a running leap, and latches his claws into the stone wall. He shifts back into his half-wolf form and starts climbing."
 
@@ -362,7 +360,7 @@ label act3:
 
     "There’s no question about it - Ilona knows Anari could never miss her mark, not with a target so large. She’s missing their vitals on purpose."
 
-    "A good look at Anari leaves nothing more than questions.{p}Does she want to let them leave?{p}Or capture and burn them at the stake alive?"
+    "A good look at Anari leaves nothing more than questions. Does she want to let them leave? Or capture and burn them at the stake alive?"
 
     "Her intentions remain unclear, as one final arrow impales Ilona in the back, shooting through her cleanly."
 
@@ -390,17 +388,17 @@ label act3:
 
     ed "Yes, I've —  I’ve been waiting to call you that for so long."
 
-    ed "What a fool I was to keep what I felt about you hidden, because you were a nun…"
+    ed "What a fool I was to keep what I felt about you hidden…"
 
     ed "The time I spent without you, in that cell. It was excruciating. And that’s when I realised, {w}how much I want you by my side."
 
-    il "My, the exhaustion must be getting to you. Now I know you weren't joking about wanting me to meet your family…"
+    il "My, the exhaustion must be getting to you. So you weren't joking about wanting me to meet your family…"
 
     ed "…"
 
-    il "In all seriousness, thank you. It- it means a lot to me. Could we rest for a while?"
+    il "...Thank you. It- it means a lot to me. Could we rest for a while?"
 
-    ed "I don't hear anyone pursuing us. Just for a moment…"
+    ed "I don't hear anyone pursuing us. Just for a moment, then…"
 
     "They walk for a while, seeing the valley unfold before them. Eventually, they stop to sit under the shade of a tree, basking in its shadow. Their breath is ragged, but in sync with each other's. Ilona rests her head on Edwin’s shoulders."
 
@@ -412,7 +410,7 @@ label act3:
 
     # watch the wait and pauses for some of these lines.
 
-    ed "Even if I want to… Just maybe, if I’d come clean to the people that we came across, and to you, about the wolfskin; the incessant nightmares that I’ve been having...."
+    ed "Even if I want to… Just maybe, if I’d come clean to the people that we met thus far, and to you, about the wolfskin; the incessant nightmares that I’ve been having...."
 
     ed "I couldn't even trust you to watch me transform..."
 
@@ -422,25 +420,25 @@ label act3:
 
     il "We must be strong and keep our past behind us. What’s done is done."
 
-    il "Besides, I’m here for you now. And you are for me. I’m sure that God will not send another trial to test our resolve."
+    il "Besides, I’m here for you now. And you are for me. I’m sure that God has tested our resolve more than enough."
 
     ed "I would like to believe that."
 
     "Edwin and Ilona stay silent, listening to the breathing of the other. They both feared when they would only hear silence. The grievous wounds would prove to both of them that they were alive."
 
-    ed "Why must the cycle of violence perpetuate? Wherever I go, something always goes wrong."
+    ed "Evil breeds evil, indeed. Wherever I go, something always goes wrong."
 
-    ed "I’ve noticed hints of it. Even in these past few days - mind you, that banquet was all too much for me to begin with. I used to enjoy these things, but now, I..."
+    ed "I’ve noticed hints of it. Even in these past few days - mind you, that banquet was all too much for someone like me to begin with. I used to enjoy these things, but now, I..."
 
-    il " I know."
+    il "I know."
 
-    ed "It felt like everybody there had something to hide, and doubts arose from that… We were all turning against each other."
+    ed "Everybody had something to hide. That fear only led to mistrust, and this to violence… We were all alone, yet turning against each other."
 
-    ed "Why hide? I know I’m in no position to say this, but I see the absurdity of it all now. It does no good."
+    ed "I know I’m in no position to say this, but I see the absurdity of it all now. There is no point in hiding. It does no good."
 
-    il "I guess it's hard sometimes. Especially when you have no one you can trust, nobody to confide in."
+    il "It's hard sometimes to be vulnerable, isn't it? To feel exposed, when you have no one you can trust, nobody to confide in."
 
-    il "And you’re all alone, because you always second guess intentions… There’s nothing worse than feeling utterly alone."
+    il "And you cannot close this distance with others, because you always second guess intentions… There’s nothing worse than feeling alone in the world."
 
     ed "Is that why Salome did what she did?"
 
@@ -476,7 +474,7 @@ label act3:
 
     il "I'm here. Did you need anything?"
 
-    ed "I-I just… I just wanted to say that I’m indebted to you."
+    ed "I-I just… I just wanted to say how much I owe to you."
 
     il "You're always thanking me…"
 
@@ -516,3 +514,30 @@ label act3:
 
     # Go to the credits.
     jump credits_from_script
+
+#####   ALTERNATING LINES FOR THE LAST POEM  ########
+#
+#    Ilona & Edwin:
+#       We are found.
+#
+#    Ilona:
+#       Praying deep in dead of night,
+#       You have found your path.
+#
+#    Edwin:
+#       Praying still, no end in sight,
+#       A pure heart perseveres.
+#
+#    Ilona:
+#       Praying, no desire, delight,
+#       A serene soul you see.
+#
+#    Ilona & Edwin:
+#       Bring back those melancholy hearts,
+#       Cleanse these with your soul unbound.
+#
+#    Edwin:
+#       Out of sorts, but not far gone,
+#       With you, nothing lost is found.
+#
+######################################################

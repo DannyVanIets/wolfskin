@@ -468,7 +468,7 @@ label act1:
 
     ed "Haha. To tell you everything that happened would tax my wits."
 
-    fl "Have you seen any mythical creatures in your journeys? Ever met the fair folk??"
+    fl "Have you seen any mythical creatures in your journeys? Ever met the fair folk?? I've always dreamed of finding one!!"
 
     ed "Let me think. There was this one time I had an encounter with a giant… "
 
@@ -490,15 +490,16 @@ label act1:
 
     ei "Ahaha, is that it? You might be onto something, Fleur."
 
-    il "…{p}(Girls these days are sharp.)"
+    il "…"
+    extend "(Girls these days are sharp.)"
 
     ed "No no, that's not it at all! It's… not that interesting compared to my other stories."
 
-    fl "Hmph, I was under the impression you two shared a forbidden romance."
+    fl "Hmph, I was under the impression you two shared a forbidden romance. Perhaps the strange forces that wander tonight will tip the scales at last!"
 
     sa "Fleur, you shouldn't tease guests. And you really shouldn't encourage her, Eisleigh!"
 
-    fl "Mother, it's All Hallow's Eve! Tricks and pranks are part of the fun. I'm merely teaching Sister Ilona about this part of the festival — She shouldn't be so serious and uptight all the time."
+    fl "Mother, it's All Hallow's Eve! Tricks and pranks are part of the fun. I'm merely teaching Sister Ilona about this part of the festival — She shouldn't be so serious and uptight all the time!"
 
     ul "Well, they said they were on a pilgrimage. If their sins are meant to be forgiven in the end, they should be able to sin along the way all they want!"
 
@@ -564,7 +565,7 @@ label act1:
 
     ed "..."
 
-    fl "Edwin, are you okay? You look pale."
+    fl "Edwin, are you okay? You're looking awfully pale."
 
     ul "I apologise, I might have gone too far..."
 
