@@ -84,6 +84,7 @@ image ilona_dim = LayeredImageProxy("ilona", Transform(matrixcolor=dim_matrix))
 image anari_dim = LayeredImageProxy("anari", Transform(matrixcolor=dim_matrix))
 image kellac_dim = LayeredImageProxy("kellac", Transform(matrixcolor=dim_matrix))
 image eisleigh_dim = LayeredImageProxy("eisleigh", Transform(matrixcolor=dim_matrix))
+image fleur_dim = LayeredImageProxy("fleur", Transform(matrixcolor=dim_matrix))
 
 # begin auto_layeredimage for Edwin
 

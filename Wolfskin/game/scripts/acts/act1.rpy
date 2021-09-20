@@ -59,6 +59,8 @@ label act1:
 
     # Switch to AVD mode.
 
+    ## FOREST
+
     play music 'audio/music/He Who Seeks Hope - Theme Of Edwin -.ogg'
 
     scene bg forest night
@@ -155,9 +157,7 @@ label act1:
 
     "Their eyes flicker for a moment, and he’s not shivering anymore. "
 
-    # canopy masks are not needed anymore
-    hide ilona_mask
-    hide edwin_mask
+    ## OUTSIDE TOWN
 
     scene bg road
     with longfade
@@ -289,13 +289,10 @@ label act1:
 
     an "So you do have manners; it would do you well to keep them. Let’s get moving, then. I’ll escort you to the manse."
 
-    hide anari_night
+    ## TOWN GATE
 
-    hide ilona_night
-
-    hide edwin_night
-
-    with fade
+    scene bg belorov night
+    with longfade
 
     "Anari takes the position of rear guard, as the other guard leads the way forward."
 
@@ -309,8 +306,11 @@ label act1:
 
     "She glances at Edwin, his face inscrutable. And so, they enter the gates."
 
+    ## TOWN PLAZA
+
+    # FIXME bg townplaza night
     scene bg forest day
-    with fadehold
+    with longfade
     play music 'audio/music/The Town.ogg'
 
     show edwin closed at right with dissolve:
@@ -406,33 +406,29 @@ label act1:
 
     "Edwin wonders, how should they go about this? It’s best they wait and see what happens once they enter."
 
-    hide ilona
-    hide edwin
-    hide anari
+    ## AT THE MANSE
 
-# TOWN SCENE
+    scene bg chapel night
+    with longfade
 
-    scene bg chapel
-    with fadehold
-
-    show edwin at extra_left:
+    show edwin_night at extra_left:
         zoom 0.5 xzoom -1
-    show ilona at less_left:
+    show ilona_night at less_left:
         zoom 0.5
-    show anari at center:
+    show anari_night at center:
         zoom 0.5 xzoom -1
     with dissolve
-    show uldin at right
-    show salome at right
+    show uldin_night at right
+    show salome_night at right
     with dissolve
 
     an "Sir Uldin, Lady Salome. I've brought to you Sister Ilona, and her companion Edwin."
 
-    hide anari with dissolve
+    hide anari_night with dissolve
 
     ul "So the man was with her after all?"
 
-    show anari behind uldin with dissolve:
+    show anari_night behind uldin_night with dissolve:
         zoom 0.5 xcenter 1800
 
     # probably not in any need to say this, but the pronunciation of 'blackguard' is spoken like 'bla-grd'
@@ -458,10 +454,10 @@ label act1:
 
     sa "Tonight's banquet will begin shortly, but you should still have time to prepare for it. Anari, let us debrief in the meantime."
 
-    # HALL(SCENE 4)
+    ## HALL(SCENE 4)
 
     scene bg hall night
-    with fadehold
+    with longfade
 
     queue music 'audio/music/The Banquet.ogg'
 
@@ -712,14 +708,21 @@ label act1:
 
     ed "I will have a damn good reason for it."
 
-    hide edwin_dim with dissolve
+    # SCENE 9
 
     scene bg hall night
     with longfade
 
-    # SCENE 9
+    show ilona_dim at less_left:
+        zoom 0.5
+    show eisleigh_dim at extra_left
+    show fleur_dim at less_right
+    show uldin_dim at extra_right
+    with dissolve
 
     "Ilona stayed after Edwin's exit, to ask Uldin and Eisleigh about the nature of curses, but the conversation following was dense and difficult."
+
+    hide fleur_dim with dissolve
 
     "At that point, Fleur took her leave, no longer interested in the dry and tiring conversation at hand."
 
@@ -916,6 +919,9 @@ label act1:
 
     # TRANSITION TO SCENE 14 + 15
 
+    ## TOWN PLAZA
+
+    #FIXME bg town plaza night (and not belorov night)
     scene bg belorov night
     with longfade
 
