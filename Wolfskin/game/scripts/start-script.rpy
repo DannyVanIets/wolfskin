@@ -36,11 +36,19 @@ transform centertoright_transform:
      center
      easein 1.0 right
 
-transform alphascaleleft_transform:
-    zoom 0.50 xpos 100
+## Commonly used sprite positions
 
-transform alphascaleright_transform:
-    zoom 0.50 xpos 1900
+transform extra_left:
+    xcenter 250
+
+transform less_left:
+    xcenter 540
+
+transform extra_right:
+    xcenter 1670
+
+transform less_right:
+    xcenter 1380
 
 # I'm going bob ross over Here
 
@@ -61,18 +69,21 @@ image edwin_night = LayeredImageProxy("edwin", Transform(matrixcolor=dark_matrix
 image ilona_night = LayeredImageProxy("ilona", Transform(matrixcolor=dark_matrix))
 image anari_night = LayeredImageProxy("anari", Transform(matrixcolor=dark_matrix))
 image kellac_night = LayeredImageProxy("kellac", Transform(matrixcolor=dark_matrix))
+image eisleigh_night = LayeredImageProxy("eisleigh", Transform(matrixcolor=dark_matrix))
 
 # sprites with sunset shading
 image edwin_sunset = LayeredImageProxy("edwin", Transform(matrixcolor=sunset_matrix))
 image ilona_sunset = LayeredImageProxy("ilona", Transform(matrixcolor=sunset_matrix))
 image anari_sunset = LayeredImageProxy("anari", Transform(matrixcolor=sunset_matrix))
 image kellac_sunset = LayeredImageProxy("kellac", Transform(matrixcolor=sunset_matrix))
+image eisleigh_sunset = LayeredImageProxy("eisleigh", Transform(matrixcolor=sunset_matrix))
 
 # sprites with dim shading
 image edwin_dim = LayeredImageProxy("edwin", Transform(matrixcolor=dim_matrix))
 image ilona_dim = LayeredImageProxy("ilona", Transform(matrixcolor=dim_matrix))
 image anari_dim = LayeredImageProxy("anari", Transform(matrixcolor=dim_matrix))
 image kellac_dim = LayeredImageProxy("kellac", Transform(matrixcolor=dim_matrix))
+image eisleigh_dim = LayeredImageProxy("eisleigh", Transform(matrixcolor=dim_matrix))
 
 # begin auto_layeredimage for Edwin
 
@@ -165,11 +176,10 @@ layeredimage eisleigh:
     group mouth auto:
         attribute smile default
 
-    if evil:
-        "eisleigh_glasses_evil"
-    else:
-        "eisleigh_glasses_regular"
+    group glasses auto:
+        attribute regular default
 
+    group emotion auto
 
 # begin auto_layeredimage for Fleur
 

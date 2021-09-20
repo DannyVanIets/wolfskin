@@ -4,13 +4,11 @@
 define midleft= Position(xpos=0.40)
 transform ilona_transform_pos1:
     zoom 0.5
-    left
     xpos 300
 
 transform edwin_transform_pos1:
     zoom 0.5
     right
-    xpos 1800
 
 transform ilona_move_right:
     ilona_transform_pos1
@@ -70,6 +68,7 @@ label act1:
 
     show ilona_night at ilona_transform_pos1
     show expression AlphaMask("canopy", At("ilona", ilona_transform_pos1)) as ilona_mask
+    with dissolve
 
     $ renpy.pause(1.0)
 
@@ -83,6 +82,7 @@ label act1:
 
     show edwin_night glance talk at edwin_transform_pos1
     show expression AlphaMask("canopy", At("edwin", edwin_transform_pos1)) as edwin_mask
+    with dissolve
 
     ed "I know that I'm asking for too much, but despite everything that's happened… would you please stay with me?"
 
@@ -415,14 +415,16 @@ label act1:
     scene bg chapel
     with fadehold
 
-    show edwin at left with dissolve:
-        zoom 0.5 xzoom -1 xpos -200
-    show ilona at left with dissolve:
-        zoom 0.5 xpos -200
-    show anari at center with dissolve:
+    show edwin at extra_left:
         zoom 0.5 xzoom -1
-    show uldin at right with dissolve
-    show salome at right with dissolve
+    show ilona at less_left:
+        zoom 0.5
+    show anari at center:
+        zoom 0.5 xzoom -1
+    with dissolve
+    show uldin at right
+    show salome at right
+    with dissolve
 
     an "Sir Uldin, Lady Salome. I've brought to you Sister Ilona, and her companion Edwin."
 
@@ -430,8 +432,8 @@ label act1:
 
     ul "So the man was with her after all?"
 
-    show anari at right behind uldin with dissolve:
-        zoom 0.5
+    show anari behind uldin with dissolve:
+        zoom 0.5 xcenter 1800
 
     # probably not in any need to say this, but the pronunciation of 'blackguard' is spoken like 'bla-grd'
     an "At first, I thought a holy woman was being accosted by some blackguard. To think that he was her travelling companion..."
@@ -630,11 +632,16 @@ label act1:
 
     "Eisleigh bows, and leaves him with only saying a few words of comfort, hoping that he will feel better with rest. He nods, and then closes the door, locking it with the key."
 
+    #TODO scene bg bedroom
+
     "The unexpected privacy given to him helps ease his mind and, feeling his skin cool, he wipes the cold sweat from his brow."
 
     "The chatter of the party is distant, and he has to strain his ears to listen."
 
     "Now, he is alone."
+
+    show edwin_dim at center with dissolve:
+        zoom 0.5
 
     "Edwin's towering frame lowers to the ground, and the floorboards creak slightly with his movement."
 
@@ -649,7 +656,7 @@ label act1:
     ed "If I were to end it… right here and right now. Wouldn’t that be spectacular?"
 
     ed "Hah. Hahah."
-    extend "Ahahahahahahahahahahahahahhahah!"
+    extend " Ahahahahahahahahahahahahahhahah!"
 
     ed "Look at me, a husk of myself. Not even courage remains."
 
@@ -705,6 +712,9 @@ label act1:
 
     ed "I will have a damn good reason for it."
 
+    hide edwin_dim with dissolve
+
+    scene bg hall night
     with longfade
 
     # SCENE 9
@@ -721,9 +731,15 @@ label act1:
 
     "Ilona opens the door, and thinks for a moment if she wants to lock it. Her head is swimming, either from the spiced wine, or the meandering conversation."
 
+    #TODO scene bg bedroom
+    with longfade
+
+    show ilona_dim at center with dissolve:
+        zoom 0.5
+
     il "(Ed… I wonder how he's doing. That conversation earlier really took a turn for the worse for him.)"
 
-    # TO DO: Implement Ilona's Theme here
+    # TODO: Implement Ilona's Theme here
 
     "His room is on the right side of hers, and Kellac’s on the left."
 
@@ -744,6 +760,8 @@ label act1:
     "Though, there are strangers in the house, and some of them are men…"
 
     "… Edwin would have wanted her door locked. She goes to the door and turns the key in the keyhole, hearing a reassuring click."
+
+    hide ilona_dim with dissolve
 
     "After a silent prayer, she crawls into bed. Lying there, she feels a sense of unease and restlessness, and also feels strangely awake."
 
@@ -780,6 +798,8 @@ label act1:
     "Ilona feels her heart lurch."
 
     "She stumbles up the stairs, finding Kellac at the door to what seems to be the master’s chambers."
+
+    scene bg master door night
 
     "He knocks urgently, and tries ramming the door with his shoulders, but grunts when the door wouldn't budge."
 
@@ -896,7 +916,19 @@ label act1:
 
     # TRANSITION TO SCENE 14 + 15
 
+    scene bg belorov night
+    with longfade
+
     "With Edwin locked away, the remaining members of the party gather in the town square: Ilona, Eisleigh, Kellac and Anari."
+
+    show ilona_night at less_left:
+        zoom 0.5
+    show kellac_night at extra_left behind ilona_night:
+        zoom 0.5
+    show eisleigh_night at less_right:
+    show anari_night at extra_right behind eisleigh_night:
+        zoom 0.5
+    with dissolve
 
     "Nobody could find Fleur in the manse afterwards, her room and bed empty of her presence."
 
