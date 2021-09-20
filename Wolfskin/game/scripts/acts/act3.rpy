@@ -74,8 +74,6 @@ label act3:
 
     ed "You… You should stay here. Let them dispose of me. Live, and survive."
 
-    # TO DO: Implement Ilona Theme Here
-
     il "And watch you {i}die{/i}? Do you really think I would be happy with something like that?"
 
     ed "I'm going to get what's coming to me, sooner or later."
@@ -96,7 +94,7 @@ label act3:
 
     "Edwin goes to reach for her face, but pauses. He slips off his glove first, and brushes away Ilona's tears with his thumb."
 
-    ed "Then we need to survive and break the curse, so that I can take you back to meet my family."
+    ed "Then we need to survive and break the curse. We'll travel to my homeland, and you can meet my family. We'll live in a valley by a lake, and you won't have to feel lonely ever again."
 
     "He smiles warmly at her. Her tears subside as he wipes them away. She touches the hand at her cheek, finally laughing lightly at his comment."
 
@@ -158,17 +156,17 @@ label act3:
 
     an "He has made his companionship with the nun, Ilona, clear. Ilona has been harboring him with the knowledge that he is a werewolf."
 
-    an "The master of the town, Uldin, and his wife, Salome, have been killed. Their daughter, Fleur, has gone missing. Edwin was found on scene, holding Salome's lifeless body."
+    an "Edwin was found on scene, holding Salome's lifeless body."
 
     an "I'll start first with some important information. We could not locate Fleur, but we found this envelope in the forest. The seal on it was still intact."
 
     "Anari's face is grim. She pulls out a letter, the seal on it broken. She reads the brief message out loud for all to hear."
 
-    fl "{i}By the time you receive this letter, I will be reunited with who I consider to be my true family.{/i}"
+    "{i}By the time you receive this letter, I will be reunited with who I consider to be my true family.{/i}"
 
-    fl "{i}I could only choose one or the other, and so I have decided to take a test of faith to prove my worthiness: I will strike terror into the one who has abandoned me.{/i}"
+    "{i}I could only choose one or the other, and so I have decided to take a test of faith to prove my worthiness: I will strike terror into the one who has abandoned me.{/i}"
 
-    fl "{i}In doing so, I have let fate decide my hand, and this was the result - to reunite me with the fair ones forevermore.{p}- Fleur Belorovna{/i}"
+    "{i}In doing so, I have let fate decide my hand, and this was the result - to reunite me with the fair ones forevermore.{p}- Fleur Belorovna{/i}"
 
     an "We are certain that this is her hand-writing."
 
@@ -193,8 +191,6 @@ label act3:
     il "This was given to Uldin by Kellac last night as part of his medicine to aid his sleeplessness. Kellac has confirmed three doses of this medicine disappeared from his dispensary."
 
     il "During the banquet, Fleur and Salome were able to figure out Edwin's true nature, and thought to drug him by lacing the sugar with the soporific. When Edwin was asleep, they were able to steal a cursed item from him, and assume the form of a werewolf."
-
-    an "I'll spare you the details on motivation for why these two would want to murder their beloved Uldin, or you'll surely run wild with some strange story. Thank me later."
 
     an "All I care about are the deaths themselves at the end of the day. So? Who was the one that murdered Uldin?"
 
@@ -227,7 +223,7 @@ label act3:
 
     an "Say we believe for one second we mistook one corpse for another — why Fleur? Why would she ever want to murder her own father?!"
 
-    il "I don't have all the details… But she's the only one who has presented any real motivation. Her letter read: I will strike terror into the one who has abandoned me."
+    il "I don't have all the details… This is only a theory if the letter's contents can be believed. Her letter read: I will strike terror into the one who has abandoned me."
 
     il "Fleur's letter talks about choosing her true family. Uldin is not frequently in this town, is he? He has essentially abandoned his daughter."
 
@@ -253,13 +249,16 @@ label act3:
 
     il "Salome must have screamed to clear suspicion from herself, and hid in the master's chamber. At that point, Edwin was looking for his stolen item. He broke down the door and found Fleur's body."
 
-    an "How dare you — Are you forgetting Salome loved her daughter? She'd never abandon her like that!"
+    an "How dare you — are you forgetting Salome loved her daughter? She'd never abandon her like that!"
 
     il "It's more possible than you think. In Salome's room, we found a chest made for Fleur. Eisleigh opened it, and suffered a horrific injury from a trap. Salome had the trap already made, and her target was Fleur."
 
     "Anari remains silent, but her glare is penetrating and cold. Despite this, Ilona continues."
 
     il "After the murder, she waited patiently until the manse was empty. After we escorted Edwin to the dungeon and gathered in the town square, Salome was able to move again. She locked the wolfskin away in a chest in her room, setting the trap."
+
+
+    il "She waited patiently until the manse was empty. After we escorted Edwin to the dungeon and gathered in the town square, Salome was able to move again. She locked the wolfskin away in a chest in her room, and trapped it with a device."
 
     il "Salome placed the statue in Fleur's bed to make it seem like she was spirited away by the fair folk. This statue fits the description of this receipt I found in Salome's room. Here."
 
@@ -271,7 +270,7 @@ label act3:
 
     il "Not only did Salome orchestrate this parricide. She survived."
 
-    "Anari crosses her arms, and her brows knit together as she takes in Ilona's theory."
+"Anari crosses her arms, and her brows knit together as she takes in Ilona's theory."
 
     an "You're forgetting something. You never explained what Edwin did in that room when he found the burned body. If I were him, I'd hide rather than stay out in the open. Why was he holding the body in his arms?"
 
@@ -279,6 +278,7 @@ label act3:
 
     # would absolutely love to have a small, smug chuckle before this line
     an "You really are awful at keeping secrets. There's no need to talk — I can already tell just by looking at you."
+
 
 # SCENE 42
 
@@ -316,7 +316,7 @@ label act3:
 
     an "If it weren't for you and Edwin, this tragedy would never have happened."
 
-    il "You're blaming us for being caught in a plot that we had no part in? You have done nothing but look for reasons to kill Edwin all along. For all I know, . maybe you planned for this to happen, to usurp power in Belorov."
+    il "You're blaming us for being caught in a plot that we had no part in? You have done nothing but look for reasons to kill Edwin all along. For all I know, maybe you planned for this to happen, to usurp power in Belorov."
 
     an "Hahahahaha! I didn't know nuns could tell jokes. As if I would ever wish  for such a thing."
 
@@ -520,7 +520,7 @@ label act3:
 #####   ALTERNATING LINES FOR THE LAST POEM  ########
 #
 #    Ilona & Edwin:
-#       We are found.
+#       "We are found."
 #
 #    il "Praying deep in dead of night,"
 #    il "You have found your path."

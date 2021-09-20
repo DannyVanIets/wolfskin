@@ -195,6 +195,25 @@ layeredimage fleur:
     group mouth auto:
         attribute smile default
 
+# begin auto_layeredimage for Salome
+
+layeredimage salome:
+
+    always:
+        "salome_base"
+
+    group eyes auto:
+        attribute open default
+
+    group eyebrows auto:
+        attribute relaxed default
+
+    group mouth auto:
+        attribute smallgrin default
+
+    group emotion auto
+
+    
 # CTC SHENANIGANS
 
 image ctc_anchored:
