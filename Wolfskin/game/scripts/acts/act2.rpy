@@ -42,7 +42,7 @@ label act2:
 
     "Ilona looks around the room, seeing the scorched walls and destroyed tapestries and paintings."
 
-    il "(Apparently, Uldin was capable of using fire magic.{p}Did Salome get caught in his attack? I can't really imagine that happening.)"
+    il "(Apparently, Uldin was capable of using fire magic. Did Salome get caught in his attack? I can't really imagine that happening.)"
 
     "Ilona tries to find anything else in the room that could have been used. On the nightstand, there's a candle turned over. Droplets of now hard wax marred the wood surface. "
 
@@ -270,13 +270,13 @@ label act2:
 
     an "Ahahahahaha, the look on your face. Brilliant."
 
-    an "Now now, don’t give me that look. I was only kidding.{p}Partly."
+    an "Now now, don’t give me that look. I was only kidding. Partly."
 
     an "Anyhow, enough chit-chat. I must go and make preparations to lead the search party for Fleur."
 
     il "I should take my leave, as well. There is much to consider after what we’ve seen today."
 
-    an "Indeed. {w}I can’t wait to hear what kind of answer you will give at sundown. Heh."
+    an "Indeed. I can’t wait to hear what kind of answer you will give at sundown. Heh."
 
     il "I can't ever tell if you're on my side."
 
@@ -336,7 +336,7 @@ label act2:
 
     il "Then, do you think — Did Anari try to poison me?"
 
-    ke "…I suppose you can't really rule out that possibility.{p}Did you eat or drink anything with her?"
+    ke "…I suppose you can't really rule out that possibility. Did you eat or drink anything with her?"
 
     il "Only tea, but I was the one who suggested and prepared it."
 
@@ -358,11 +358,11 @@ label act2:
 
     ke "Something like that. Anari hates being pitied, and she doesn't show pity for anyone else either."
 
-    ke "She would be terrified at the thought of Fleur being spirited away by the fair folk. {w}It's not something that she could ever accept - That's probably why she is leading the search."
+    ke "She would be terrified at the thought of Fleur being spirited away by the fair folk. It's not something that she could ever accept - That's probably why she is leading the search."
 
     "Ilona shifts her body off the bed, able to move freely again. Kellac invites her to take a seat at the hall, and Ilona does so. He pours her some clear water. The smell of a simmering stew wafts from the kitchen."
 
-    ke "About the tea you had with Anari — was there anything odd about it? {w}I'm asking because before the banquet, I gave Uldin his medicine, a powerful soporific."
+    ke "About the tea you had with Anari — was there anything odd about it? I'm asking because before the banquet, I gave Uldin his medicine, a powerful soporific."
 
     ke "There were three less doses in the pantry when I checked."
 

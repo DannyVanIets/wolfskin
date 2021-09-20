@@ -210,12 +210,12 @@ label act1:
 
     "Edwin immediately lets go of her hand, intertwined seconds ago, but now balled into a fist. The rustling of dry leaves brought with it a heavily armed guard and an archer under a cloak."
 
-    show anari_night angry glance neutral bow with dissolve:
-        zoom 0.50 xpos 10 xzoom -1
-
     unk "That's enough loitering around the town wall looking suspicious, don't you think?"
 
     # TO DO: Implement Anari's Rain Theme Here
+
+    show anari_night angry glance neutral bow with dissolve:
+        zoom 0.50 xpos 10 xzoom -1
 
     unk "I've been observing your movements from the battlements for a while now. Be grateful that the town master wishes to have a meeting with you, or else I would have already pierced you with my arrows."
 
@@ -606,13 +606,14 @@ label act1:
 
     # note: please mind the parentheses - they are thoughts, and should not be voiced
 
-    ed "If I were to end it…{p}right here and right now.{p}Wouldn’t that be spectacular?"
+    ed "If I were to end it… right here and right now. Wouldn’t that be spectacular?"
 
-    ed "Hah.{p}Hahah{p}Ahahahahahahahahahahahahahhahah!"
+    ed "Hah. Hahah."
+    extend "Ahahahahahahahahahahahahahhahah!"
 
     ed "Look at me, a husk of myself. Not even courage remains."
 
-    ed "Pathetic.{p}I should be better than this.{p}Stronger than this."
+    ed "Pathetic. I should be better than this. Stronger than this."
 
     ed "What was the point of going through the trials of the military, otherwise?"
 
@@ -620,7 +621,7 @@ label act1:
 
     ed "That day… I was brave, wasn’t I? I did save my sister from the werewolf attack, didn’t I?"
 
-    ed "(But did I really do it for her?{p}Or did my thirst for blood take over…)"
+    ed "(But did I really do it for her? Or did my thirst for blood take over…)"
 
     ed "(A whiff of blood, and I’m running towards it…)"
 
@@ -632,7 +633,7 @@ label act1:
 
     "The Wolfskin; a sash of wolf pelt that sits on his waist with intricate designs, foreign to this land. Or to any land, for that matter."
 
-    "The gold glistens, and the red…{p}Well, the red reflects the sheen of madness that rests within."
+    "The gold glistens, and the red… Well, the red reflects the sheen of madness that rests within."
 
     ed "(Only the insane ones are bestowed with this torment. Like I…)"
 
@@ -654,11 +655,11 @@ label act1:
 
     ed "(Now I don’t think I’ll get another chance to say what I want to say… I can feel the hysteria building up within me.)"
 
-    ed "(Expanding like it’s never before.{p}Rising, so far…{p}Far, far away…from my control.)"
+    ed "(Expanding like it’s never before. Rising, so far… Far, far away…from my control.)"
 
     ed "But I promise you this, Ilona:"
 
-    ed "I am not going to hurt you.{p}I am going to do right by you. I am not going to hurt anyone who’s innocent."
+    ed "I am not going to hurt you. I am going to do right by you. I am not going to hurt anyone who’s innocent."
 
     ed "It may seem the other way around, but whatever I do;"
 
