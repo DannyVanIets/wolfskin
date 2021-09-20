@@ -155,7 +155,7 @@ label act1:
 
     "Their eyes flicker for a moment, and he’s not shivering anymore. "
 
-    # foliage masks are not needed anymore
+    # canopy masks are not needed anymore
     hide ilona_mask
     hide edwin_mask
 
@@ -362,12 +362,19 @@ label act1:
 
     show anari closed talk angry sweatdrop with dissolve:
         zoom 0.50 xpos 540
+    show edwin open neutral -furrow
 
     # as though tired of an old joke
     an "...Kellac, we're the same age."
 
+    show anari open neutral -sweatdrop
+    show kellac nii talk
+
     # most of Kellac's lines should be delivered without too much enthusiasm, as though he was an older person or an 'old soul'.
     ke "Fancy meeting you here, Anari. I didn’t know you like to take strolls. I never knew you had friends either! And who may you be, dear sister?"
+
+    show edwin closed neutral sweat
+    show ilona annoyed
 
     ed "Uh, I’m not sure we're friends…"
 
@@ -389,13 +396,38 @@ label act1:
 
     ke "I should get going, but we're bound to see each other again soon. Keep well, Anari."
 
+    hide kellac with fade
+
     "Anari only nods curtly, and the group moves along. Further into the town, they find a large house made of timber and stone."
 
     "Edwin wonders, how should they go about this? It’s best they wait and see what happens once they enter."
 
+    hide ilona
+    hide edwin
+    hide anari
+
+# TOWN SCENE
+
+    scene bg chapel
+    with fadehold
+
+    show edwin at left with dissolve:
+        zoom 0.5 xzoom -1 xpos -200
+    show ilona at left with dissolve:
+        zoom 0.5 xpos -200
+    show anari at center with dissolve:
+        zoom 0.5 xzoom -1
+    show uldin at right with dissolve
+    show salome at right with dissolve
+
     an "Sir Uldin, Lady Salome. I've brought to you Sister Ilona, and her companion Edwin."
 
+    hide anari with dissolve
+
     ul "So the man was with her after all?"
+
+    show anari at right behind uldin with dissolve:
+        zoom 0.5
 
     # probably not in any need to say this, but the pronunciation of 'blackguard' is spoken like 'bla-grd'
     an "At first, I thought a holy woman was being accosted by some blackguard. To think that he was her travelling companion..."
@@ -421,6 +453,9 @@ label act1:
     sa "Tonight's banquet will begin shortly, but you should still have time to prepare for it. Anari, let us debrief in the meantime."
 
     # HALL(SCENE 4)
+
+    scene bg hall night
+    with fadehold
 
     queue music 'audio/music/The Banquet.ogg'
 
@@ -902,8 +937,6 @@ label act1:
     an "I'll go first. You two assemble a search party for the forest in the meantime. I'll lead the search once you're ready."
 
     an "Ilona. You have until sundown. Prove that Edwin is innocent, or I'm going to personally make sure you won't like what’s coming to the two of you."
-
-    with longfade
 
     # Go to act 2.
     jump act2
