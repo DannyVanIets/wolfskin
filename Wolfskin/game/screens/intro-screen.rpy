@@ -22,21 +22,21 @@ screen intro(actNumber):
 
                 null height 50
 
-                text "All Hallows' Eve"
+                text "All Hallows' Eve - Welcome to Belorov"
 
             elif actNumber == 2:
                 label "Act II" xalign 0.5
 
                 null height 50
 
-                text "To be filled in"
+                text "All Hallows' Day - Questioning"
 
             elif actNumber == 3:
                 label "Act III" xalign 0.5
 
                 null height 50
 
-                text "To be filled in"
+                text "All Hallow's Day - Resolution"
 
             # In case we want to make it clear that it is the epilogue.
             else:

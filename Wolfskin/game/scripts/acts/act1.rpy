@@ -784,6 +784,10 @@ label act1:
 
     "The sound of footsteps rushes up the stairs again, and Ilona knows immediately who it is."
 
+    stop sound fadeout 1.0
+
+    play music 'audio/music/Wail of the Moon.ogg'
+
     an "Get away from him, Ilona!"
 
     an "I knew there was something wrong with him. I should've shot him dead when I had the chance…"
@@ -797,8 +801,6 @@ label act1:
     ke "I was too late… I'm so sorry… I couldn't save them."
 
     # SCENE 12 + 13
-
-    stop sound fadeout 3.0
 
     "Kellac is on his knees, facing Salome's corpse. All the jovial cheer that he displayed since meeting Ilona vanishes, and he resembles a husk of a man."
 
@@ -849,6 +851,8 @@ label act1:
 
     "Anari escorts him forcefully out of the mansion, and takes him underground to a dungeon. The only thing Ilona sees before the doors close is Edwin's taciturn and listless expression."
 
+    stop music fadeout 1.0
+
     # TRANSITION TO SCENE 14 + 15
 
     "With Edwin locked away, the remaining members of the party gather in the town square: Ilona, Eisleigh, Kellac and Anari."
@@ -856,8 +860,6 @@ label act1:
     "Nobody could find Fleur in the manse afterwards, her room and bed empty of her presence."
 
     "The sun has not risen yet, and the clouds are dark and looming. There's a damp chill in the air."
-
-    play music 'audio/music/Haunting.ogg'
 
     ei "What now?"
 
