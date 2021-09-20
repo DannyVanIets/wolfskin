@@ -74,6 +74,8 @@ label act2:
 
     "It surprises Ilona that Anari became so candid at this moment. Salome and Anari were closer in age, and it made sense that Anari acted as Salome's confidant."
 
+    play music 'audio/music/Echoing - Theme Of Fleur -.ogg'
+
     "They then move to investigate Fleur's room. Ilona couldn't help but be curious about what Anari said earlier. Opening the young girl's room, both of them notice a distinct lump in the bed."
 
     "Ilona looks to Anari. They agree silently to move closer."
@@ -87,8 +89,6 @@ label act2:
     "When they reach the bed, Ilona isn't sure what to expect. Anari remains behind her, and nods for Ilona to pull back the covers. Ilona could see something that looked like it's carved from wood…"
 
     "It resembles a wood statue, or an effigy."
-
-    # TO DO: Implement Fleur's Theme
 
     "The face looks eerily like Fleur, her expression mysterious; neither happy or sad. The rest of the body looks as though it remains trapped inside a still-living tree."
 
@@ -118,13 +118,15 @@ label act2:
 
     il "I can assure you, it’s none of that. I want to find the culprit as much as you do. But I’ll need your help for that."
 
-    il "I only wish to see that you’re in good health to proceed, soI thought we could take a quick break-"
+    il "I only wish to see that you’re in good health to proceed, so I thought we could take a quick break-"
 
     an "With some tea, I get it. Very well, I must tell you that I despise the leavesfrom this country, so you'd better make a damn fine cup."
 
     il "Are there any to your taste?"
 
     # TO DO: Implement a continous Clock Sound Tick Tock Tick Tock. No Music
+
+    stop music fadeout 3.0
 
     an "…Fine black tea, with bitter orange. I think Uldin still had some in his pantry."
 
@@ -294,7 +296,7 @@ label act2:
 
     play sound 'audio/sfx/heartbeat.mp3' loop
 
-    # TO DO: Implement high pitched ambience?
+    play music 'audio/music/Fade Away.ogg'
 
     "It is taking everything for her to stay conscious. Anari glances at Ilona, before smiling to herself and walking away. Ilona sees a figure move in front of her, clad in black robes…"
 
@@ -307,6 +309,8 @@ label act2:
     ke "Ilona?"
 
     stop sound
+
+    stop music
 
     play sound 'audio/sfx/Gravel Floor Fall 1.mp3'
 
@@ -624,6 +628,8 @@ label act2:
     ed "If it truly were that simple, then… Well, I wouldn’t have been locked up."
 
     "She chokes back her tears, before gathering her composure and speaking again."
+
+    stop music fadeout 2.0
 
     il "Tell me everything. Even if the truth will damn us both… I need to know."
 

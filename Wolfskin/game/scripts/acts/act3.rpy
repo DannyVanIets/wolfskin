@@ -74,6 +74,8 @@ label act3:
 
     ed "You… You should stay here. Let them dispose of me. Live, and survive."
 
+    # TO DO: Implement Ilona Theme Here
+
     il "And watch you {i}die{/i}? Do you really think I would be happy with something like that?"
 
     ed "I'm going to get what's coming to me, sooner or later."

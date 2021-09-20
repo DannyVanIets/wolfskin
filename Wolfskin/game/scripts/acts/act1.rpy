@@ -206,13 +206,11 @@ label act1:
 
     with vpunch
 
-    stop music fadeout 2.0
+    stop music fadeout 1.0
 
     "Edwin immediately lets go of her hand, intertwined seconds ago, but now balled into a fist. The rustling of dry leaves brought with it a heavily armed guard and an archer under a cloak."
 
     unk "That's enough loitering around the town wall looking suspicious, don't you think?"
-
-    # TO DO: Implement Anari's Rain Theme Here
 
     show anari_night angry glance neutral bow with dissolve:
         zoom 0.50 xpos 10 xzoom -1
@@ -248,6 +246,10 @@ label act1:
     unk "Hmph. Fair enough."
 
     show anari_night open talk
+
+    # If Possible, apply Layering to Anari's theme
+
+    play music 'audio/music/March Of The Huntress - Theme Of Anari -.ogg'
 
     an "My name is Anari. Happy now?"
 
@@ -302,6 +304,8 @@ label act1:
     "Ilona cannot help but wonder just how much Anari overheard of their conversation... Her arrival seemed too well-timed."
 
     "Did they give away too much, even when they thought they were alone?"
+
+    stop music fadeout 2.0
 
     "She glances at Edwin, his face inscrutable. And so, they enter the gates."
 
