@@ -70,6 +70,8 @@ image ilona_night = LayeredImageProxy("ilona", Transform(matrixcolor=dark_matrix
 image anari_night = LayeredImageProxy("anari", Transform(matrixcolor=dark_matrix))
 image kellac_night = LayeredImageProxy("kellac", Transform(matrixcolor=dark_matrix))
 image eisleigh_night = LayeredImageProxy("eisleigh", Transform(matrixcolor=dark_matrix))
+image salome_night = LayeredImageProxy("salome", Transform(matrixcolor=dark_matrix))
+image uldin_night = LayeredImageProxy("uldin", Transform(matrixcolor=dark_matrix))
 
 # sprites with sunset shading
 image edwin_sunset = LayeredImageProxy("edwin", Transform(matrixcolor=sunset_matrix))
@@ -84,6 +86,8 @@ image ilona_dim = LayeredImageProxy("ilona", Transform(matrixcolor=dim_matrix))
 image anari_dim = LayeredImageProxy("anari", Transform(matrixcolor=dim_matrix))
 image kellac_dim = LayeredImageProxy("kellac", Transform(matrixcolor=dim_matrix))
 image eisleigh_dim = LayeredImageProxy("eisleigh", Transform(matrixcolor=dim_matrix))
+image salome_dim = LayeredImageProxy("salome", Transform(matrixcolor=dim_matrix))
+image uldin_dim = LayeredImageProxy("uldin", Transform(matrixcolor=dim_matrix))
 image fleur_dim = LayeredImageProxy("fleur", Transform(matrixcolor=dim_matrix))
 
 # begin auto_layeredimage for Edwin
@@ -206,7 +210,7 @@ layeredimage salome:
         attribute open default
 
     group eyebrows auto:
-        attribute relaxed default
+        attribute neutral default
 
     group mouth auto:
         attribute smallgrin default
@@ -224,7 +228,7 @@ layeredimage uldin:
         attribute open default
 
     group eyebrows auto:
-        attribute relaxed default
+        attribute neutral default
 
     group mouth auto:
         attribute smile default
