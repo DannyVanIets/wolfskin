@@ -396,7 +396,7 @@ label act2:
 
     il "The sugar — it must have been tampered with! Last night, I didn't add any to my tea because I didn't want to be rude, but I took some when I had tea with Anari."
 
-    ei "I remember Fleur was reallyinsistent on putting sugar in my tea. I did think that was weird."
+    ei "I remember Fleur was really insistent on putting sugar in my tea. I did think that was weird."
 
     ke "How much sugar did you put in your tea this morning, Ilona?"
 
