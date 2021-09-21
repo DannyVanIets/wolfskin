@@ -622,12 +622,12 @@ label act1:
 
     stop music fadeout 3.0
 
-    scene bg door
-    with longfade
+    scene bg door day
+    with fade
 
     "Eisleigh unlocks the door by the stairs, and opens the guest room. She gives Edwin the key."
 
-    scene bg bedroom
+    scene bg bedroom night light
     with longfade
 
     "Having a separated sleeping quarters is more than what he could normally ask for. For this style of house, he would assume that the guests share one large sleeping space."
@@ -736,19 +736,19 @@ label act1:
 
     "Ilona tried her best to keep up. Uldin tried to challenge her with theories that needed to be formed on the spot and, at times, it turned into a messy debate."
 
-    scene bg hallway
+    scene bg hallway night light
     with longfade
 
     "The rest of the party retired to bed before midnight. When Salome entered, she became the mediator of peace and that was when everyone agreed to call it a night; departing from the main hall on friendly terms."
 
     "Salome ushered a rather drunk Uldin back to bed. Eisleigh showed Ilona to the room that was prepared for her, and they bid each other a good night."
 
-    scene bg door
-    with longfade
+    scene bg door day
+    with fade
 
     "Ilona opens the door, and thinks for a moment if she wants to lock it. Her head is swimming, either from the spiced wine, or the meandering conversation."
 
-    scene bg bedroom
+    scene bg bedroom night light
     with longfade
 
     show ilona_dim at center with dissolve:
@@ -764,11 +764,17 @@ label act1:
 
     il "(Not a sound. He's probably asleep.)"
 
+    scene bg bedroom night dark
+    with fade
+
     il "(I should get some rest too, so we can both leave early tomorrow. The people here are kind, but there's too much risk if we stay… We have to keep moving.)"
 
     "She thinks of going to see him, to maybe knock on his door and to check up on him."
 
     "However, in the end she decides not to. Ilona can only trust him to be cautious. She could not continue to worry about him; it would make her restless…"
+
+    scene bg door night
+    with fade
 
     "Ilona wonders if she should leave her door unlocked, in case he wants to speak to her."
 
@@ -778,20 +784,34 @@ label act1:
 
     "… Edwin would have wanted her door locked. She goes to the door and turns the key in the keyhole, hearing a reassuring click."
 
-    hide ilona_dim with dissolve
+    scene bg bedroom night dark
+    with fade
 
     "After a silent prayer, she crawls into bed. Lying there, she feels a sense of unease and restlessness, and also feels strangely awake."
 
+    scene bg black
+    with longfade
+
     "Ilona closes her eyes and tries to drift into sleep. Within the peaceful silence of the manse, rest came to her easier than expected."
 
-    with longfade
+    # NOTE: Here is the huge turning point to the murder
+    with fadehold
 
     "The piercing sound of a howl wakes Kellac first, followed shortly by a woman's loud scream. His door opens with a slam, sensing something is incredibly wrong…"
 
+    scene bg bedroom night dark
+    with fade
+
     "Ilona hears footsteps rush past her room, and her eyes flutter open; registering what woke her. She puts on her habit, covering her head, and hurries out the door, unlocking it first…"
 
-    scene bg hallway
+    scene bg hallway night dark
     with longfade
+
+    show ilona_night at left:
+        zoom 0.5
+    show kellac_night at right:
+        zoom 0.5 xzoom -1
+    with dissolve
 
     "Kellac stops on the stairwell when he sees her, turning his head back to see Ilona. Edwin is not with him. She looks to the door next to hers, on the right."
 
@@ -801,7 +821,13 @@ label act1:
 
     "He runs up the stairs. For a man who always seems so weary, there is a vivacity in his face now that danger is present."
 
+    scene bg door night
+    with fade
+
     "Ilona knocks on Edwin's door, trying to hear for any sign of life in the room."
+
+    show ilona_night at left:
+        zoom 0.5
 
     il "Edwin? It's Ilona!"
 
@@ -814,6 +840,8 @@ label act1:
     il "No… Please, no…"
 
     # SCENE 10
+    scene bg hallway night dark
+    with fade
 
     "Ilona feels her heart lurch."
 
@@ -824,15 +852,29 @@ label act1:
 
     "He knocks urgently, and tries ramming the door with his shoulders, but grunts when the door wouldn't budge."
 
-    show kellac
+    show kellac_night at right with dissolve:
+        zoom 0.5 xzoom -1
 
     ke "It's no use! Damn it! If only I were stronger…"
 
     ke "I'm going to get Anari! Something's wrong."
 
+    scene bg hallway night dark
+    with fade
+
+    show ilona_night at left:
+        zoom 0.5
+    show kellac_night at right:
+        zoom 0.5 xzoom -1
+    with dissolve
+
     ke "The servants' quarters are on the other side of the house, up the stairs. Get a master key for this door!"
 
+    hide kellac_night with dissolve
+
     "Ilona nods and follows Kellac's instructions, passing through the now empty hall and up the stairs."
+
+    show eisleigh_night at right with dissolve
 
     "She finds Eisleigh first, and explains the situation."
 
@@ -841,12 +883,17 @@ label act1:
     ei "I- I have a copy of the master key. Come on! There's no time to waste!"
 
     # TRANSITION TO SCENE 11
-
     stop music fadeout 3.0
+
+    scene bg master door night
+    with longfade
 
     "When they rush back to the masters' chambers, there is no use for the master key. They find the door broken and battered, but no sign of Anari or Kellac yet."
 
     play sound 'audio/sfx/heartbeat.mp3' loop
+
+    scene bg gore
+    with longfade
 
     "Traces of blood are on the door, as with thick shards of wood splintering from its fractures."
 
