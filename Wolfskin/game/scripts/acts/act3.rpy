@@ -94,7 +94,7 @@ label act3:
 
     "Edwin goes to reach for her face, but pauses. He slips off his glove first, and brushes away Ilona's tears with his thumb."
 
-    ed "Then we need to survive and break the curse. We'll travel to my homeland, and you can meet my family. We'll live in a valley by a lake, and you won't have to feel lonely ever again."
+    ed "Then we need to survive and break the curse. We'll travel to my homeland, and you can meet my family. We'll live in a valley by a lake, and you… you won't have to feel lonely ever again."
 
     "He smiles warmly at her. Her tears subside as he wipes them away. She touches the hand at her cheek, finally laughing lightly at his comment."
 
@@ -213,7 +213,7 @@ label act3:
     an "Nothing that I know of, apart from the mole near her eye… And as I said, her face has been horribly burned — "
 
     il "Then, here's my answer for who murdered Uldin: the culprit was Fleur."
-    extend "The corpse of Salome has been misidentified."
+    extend " The corpse of Salome has been misidentified."
 
     an "What? How dare you doubt Kellac's judgement?  You must be truly grasping at straws to make such bold claims! !"
 
@@ -249,14 +249,13 @@ label act3:
 
     il "Salome must have screamed to clear suspicion from herself, and hid in the master's chamber. At that point, Edwin was looking for his stolen item. He broke down the door and found Fleur's body."
 
-    an "How dare you — are you forgetting Salome loved her daughter? She'd never abandon her like that!"
+    an "How dare you — You have no idea how much Salome loved her daughter! She'd never abandon her like that!"
 
-    il "It's more possible than you think. In Salome's room, we found a chest made for Fleur. Eisleigh opened it, and suffered a horrific injury from a trap. Salome had the trap already made, and her target was Fleur."
+    il "I wouldn't be so quick to discount the possibility. We found a chest made for Fleur in Salome's room. When Eisleigh opened it, she suffered a horrific injury from a trap. Perhaps Salome had the trap for some time, and her target was Fleur."
 
     "Anari remains silent, but her glare is penetrating and cold. Despite this, Ilona continues."
 
     il "After the murder, she waited patiently until the manse was empty. After we escorted Edwin to the dungeon and gathered in the town square, Salome was able to move again. She locked the wolfskin away in a chest in her room, setting the trap."
-
 
     il "She waited patiently until the manse was empty. After we escorted Edwin to the dungeon and gathered in the town square, Salome was able to move again. She locked the wolfskin away in a chest in her room, and trapped it with a device."
 
@@ -270,7 +269,7 @@ label act3:
 
     il "Not only did Salome orchestrate this parricide. She survived."
 
-"Anari crosses her arms, and her brows knit together as she takes in Ilona's theory."
+    "Anari crosses her arms, and her brows knit together as she takes in Ilona's theory."
 
     an "You're forgetting something. You never explained what Edwin did in that room when he found the burned body. If I were him, I'd hide rather than stay out in the open. Why was he holding the body in his arms?"
 
@@ -278,7 +277,6 @@ label act3:
 
     # would absolutely love to have a small, smug chuckle before this line
     an "You really are awful at keeping secrets. There's no need to talk — I can already tell just by looking at you."
-
 
 # SCENE 42
 

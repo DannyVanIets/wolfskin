@@ -213,7 +213,24 @@ layeredimage salome:
 
     group emotion auto
 
-    
+# begin auto_layeredimage for Uldin
+
+layeredimage uldin:
+
+    always:
+        "uldin_base"
+
+    group eyes auto:
+        attribute open default
+
+    group eyebrows auto:
+        attribute relaxed default
+
+    group mouth auto:
+        attribute smile default
+
+    group emotion auto
+
 # CTC SHENANIGANS
 
 image ctc_anchored:

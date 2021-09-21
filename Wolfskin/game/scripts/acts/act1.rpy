@@ -517,7 +517,7 @@ label act1:
 
     "Even though the party thins out a little, Fleur seems as excitable as when she began. Even Eisleigh, who kept to herself as she ate, joins in on the conversation."
 
-    ei "You've really travelled a long way away if you came from across the sea, Edwin."
+    ei "You've really travelled a long way if you came from across the sea, Edwin."
 
     fl "Now I'm wondering, how did you meet Sister Ilona?"
 
