@@ -404,8 +404,6 @@ label act1:
 
     "Anari only nods curtly, and the group moves along. Further into the town, they find a large house made of timber and stone."
 
-    "Edwin wonders, how should they go about this? It’s best they wait and see what happens once they enter."
-
     ## AT THE MANSE
 
     scene bg chapel night
@@ -421,6 +419,8 @@ label act1:
     show uldin_night at right
     show salome_night at right
     with dissolve
+
+    "Anari knocks on the door, and it was answered by a man and woman in fine clothing. They step outside of the house."
 
     an "Sir Uldin, Lady Salome. I've brought to you Sister Ilona, and her companion Edwin."
 
