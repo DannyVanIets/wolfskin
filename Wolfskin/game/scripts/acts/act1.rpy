@@ -308,12 +308,11 @@ label act1:
 
     ## TOWN PLAZA
 
-    # FIXME bg townplaza night
-    scene bg forest day
+    scene bg town plaza night
     with longfade
     play music 'audio/music/The Town.ogg'
 
-    show edwin closed at right with dissolve:
+    show edwin_night closed at right with dissolve:
         zoom 0.50 xpos 1.0
 
     ed "(When was the last time I felt any hope? Anything besides pain? The swelling in my chest is excruciating…)"
@@ -324,61 +323,61 @@ label act1:
 
     "It’s almost time to head home for normal folk, but the town is bustling. There's a large bonfire in the square, and there's carved turnips at the doors of all the houses-"
 
-    show ilona glance sad neutral with dissolve:
+    show ilona_night glance sad neutral with dissolve:
         zoom 0.50 xpos 0.75 xzoom -1
 
     # spoken as though Ilona is suspicious of jack o' lanterns
     il "What kind of decorations are these?"
 
-    show edwin glance grin
+    show edwin_night glance grin
 
     ed "It’s for... All Hallows’ Eve, a celebration to commemorate the dead."
 
-    show ilona angry sad talk
+    show ilona_night angry sad talk
 
     il "You mean All Saints’ Eve? Why are the townsfolk celebrating in joy, then?"
 
-    show edwin closed grin furrow
+    show edwin_night closed grin furrow
 
-    show ilona neutral
+    show ilona_night neutral
 
     # said as though trying not to laugh, mock-seriously
     ed "You were raised strictly, Ilona. Father Ivanov never wanted you to know about these pagan festivals."
 
-    show edwin fear talk
+    show edwin_night fear talk
     with hpunch
 
-    show ilona shock sad
+    show ilona_night shock sad
 
     ed "Oh!-"
 
-    show kellac smile at easeinleft_transform:
+    show kellac_night smile at easeinleft_transform:
         zoom 0.50
 
     # calmly, not overly acted out
     unk "Young lad, please watch your step. One mistake and this weary old man is done for…"
 
-    show edwin closed
+    show edwin_night closed
 
-    show ilona open solemn
+    show ilona_night open solemn
 
     ed "I’m so sorry for bumping into you, sir-"
 
-    show anari closed talk angry sweatdrop with dissolve:
+    show anari_night closed talk angry sweatdrop with dissolve:
         zoom 0.50 xpos 540
-    show edwin open neutral -furrow
+    show edwin_night open neutral -furrow
 
     # as though tired of an old joke
     an "...Kellac, we're the same age."
 
-    show anari open neutral -sweatdrop
-    show kellac nii talk
+    show anari_night open neutral -sweatdrop
+    show kellac_night nii talk
 
     # most of Kellac's lines should be delivered without too much enthusiasm, as though he was an older person or an 'old soul'.
     ke "Fancy meeting you here, Anari. I didn’t know you like to take strolls. I never knew you had friends either! And who may you be, dear sister?"
 
-    show edwin closed neutral sweat
-    show ilona annoyed
+    show edwin_night closed neutral sweat
+    show ilona_night annoyed
 
     ed "Uh, I’m not sure we're friends…"
 
@@ -400,7 +399,7 @@ label act1:
 
     ke "I should get going, but we're bound to see each other again soon. Keep well, Anari."
 
-    hide kellac with fade
+    hide kellac_night with fade
 
     "Anari only nods curtly, and the group moves along. Further into the town, they find a large house made of timber and stone."
 
@@ -409,18 +408,21 @@ label act1:
     scene bg chapel night
     with longfade
 
-    show edwin_night at extra_left:
-        zoom 0.5 xzoom -1
-    show ilona_night at less_left:
-        zoom 0.5
-    show anari_night at center:
-        zoom 0.5 xzoom -1
-    with dissolve
-    show uldin_night at right
-    show salome_night at right
+    show edwin_night:
+        zoom 0.5 xcenter 170 xzoom -1
+    show ilona_night:
+        zoom 0.5 xcenter 370
+    show anari_night:
+        zoom 0.5 xcenter 850 xzoom -1
     with dissolve
 
     "Anari knocks on the door, and it was answered by a man and woman in fine clothing. They step outside of the house."
+
+    show uldin_night:
+        xcenter 1500 xzoom -1
+    show salome_night:
+        xcenter 1750 xzoom -1
+    with dissolve
 
     an "Sir Uldin, Lady Salome. I've brought to you Sister Ilona, and her companion Edwin."
 
@@ -429,7 +431,7 @@ label act1:
     ul "So the man was with her after all?"
 
     show anari_night behind uldin_night with dissolve:
-        zoom 0.5 xcenter 1800
+        zoom 0.5 xcenter 1100
 
     # probably not in any need to say this, but the pronunciation of 'blackguard' is spoken like 'bla-grd'
     an "At first, I thought a holy woman was being accosted by some blackguard. To think that he was her travelling companion..."
@@ -620,15 +622,19 @@ label act1:
 
     stop music fadeout 3.0
 
+    scene bg door day
+    with fade
+
     "Eisleigh unlocks the door by the stairs, and opens the guest room. She gives Edwin the key."
+
+    scene bg bedroom night light
+    with longfade
 
     "Having a separated sleeping quarters is more than what he could normally ask for. For this style of house, he would assume that the guests share one large sleeping space."
 
     "He was prepared to run out of the manse, and to be alone in the darkness of night. Instead, he still has to play the role of an honoured houseguest."
 
     "Eisleigh bows, and leaves him with only saying a few words of comfort, hoping that he will feel better with rest. He nods, and then closes the door, locking it with the key."
-
-    #TODO scene bg bedroom
 
     "The unexpected privacy given to him helps ease his mind and, feeling his skin cool, he wipes the cold sweat from his brow."
 
@@ -715,9 +721,11 @@ label act1:
 
     show ilona_dim at less_left:
         zoom 0.5
-    show eisleigh_dim at extra_left
+    show eisleigh_dim at extra_left behind ilona_dim:
+        xzoom -1
     show fleur_dim at less_right
-    show uldin_dim at extra_right
+    show uldin_dim at extra_right behind fleur_dim:
+        xzoom -1
     with dissolve
 
     "Ilona stayed after Edwin's exit, to ask Uldin and Eisleigh about the nature of curses, but the conversation following was dense and difficult."
@@ -728,13 +736,19 @@ label act1:
 
     "Ilona tried her best to keep up. Uldin tried to challenge her with theories that needed to be formed on the spot and, at times, it turned into a messy debate."
 
+    scene bg hallway night light
+    with longfade
+
     "The rest of the party retired to bed before midnight. When Salome entered, she became the mediator of peace and that was when everyone agreed to call it a night; departing from the main hall on friendly terms."
 
     "Salome ushered a rather drunk Uldin back to bed. Eisleigh showed Ilona to the room that was prepared for her, and they bid each other a good night."
 
+    scene bg door day
+    with fade
+
     "Ilona opens the door, and thinks for a moment if she wants to lock it. Her head is swimming, either from the spiced wine, or the meandering conversation."
 
-    #TODO scene bg bedroom
+    scene bg bedroom night light
     with longfade
 
     show ilona_dim at center with dissolve:
@@ -750,11 +764,17 @@ label act1:
 
     il "(Not a sound. He's probably asleep.)"
 
+    scene bg bedroom night dark
+    with fade
+
     il "(I should get some rest too, so we can both leave early tomorrow. The people here are kind, but there's too much risk if we stay… We have to keep moving.)"
 
     "She thinks of going to see him, to maybe knock on his door and to check up on him."
 
     "However, in the end she decides not to. Ilona can only trust him to be cautious. She could not continue to worry about him; it would make her restless…"
+
+    scene bg door night
+    with fade
 
     "Ilona wonders if she should leave her door unlocked, in case he wants to speak to her."
 
@@ -764,17 +784,34 @@ label act1:
 
     "… Edwin would have wanted her door locked. She goes to the door and turns the key in the keyhole, hearing a reassuring click."
 
-    hide ilona_dim with dissolve
+    scene bg bedroom night dark
+    with fade
 
     "After a silent prayer, she crawls into bed. Lying there, she feels a sense of unease and restlessness, and also feels strangely awake."
 
+    scene bg black
+    with longfade
+
     "Ilona closes her eyes and tries to drift into sleep. Within the peaceful silence of the manse, rest came to her easier than expected."
 
-    with longfade
+    # NOTE: Here is the huge turning point to the murder
+    with fadehold
 
     "The piercing sound of a howl wakes Kellac first, followed shortly by a woman's loud scream. His door opens with a slam, sensing something is incredibly wrong…"
 
+    scene bg bedroom night dark
+    with fade
+
     "Ilona hears footsteps rush past her room, and her eyes flutter open; registering what woke her. She puts on her habit, covering her head, and hurries out the door, unlocking it first…"
+
+    scene bg hallway night dark
+    with longfade
+
+    show ilona_night at left:
+        zoom 0.5
+    show kellac_night at right:
+        zoom 0.5 xzoom -1
+    with dissolve
 
     "Kellac stops on the stairwell when he sees her, turning his head back to see Ilona. Edwin is not with him. She looks to the door next to hers, on the right."
 
@@ -784,7 +821,13 @@ label act1:
 
     "He runs up the stairs. For a man who always seems so weary, there is a vivacity in his face now that danger is present."
 
+    scene bg door night
+    with fade
+
     "Ilona knocks on Edwin's door, trying to hear for any sign of life in the room."
+
+    show ilona_night at left:
+        zoom 0.5
 
     il "Edwin? It's Ilona!"
 
@@ -797,22 +840,41 @@ label act1:
     il "No… Please, no…"
 
     # SCENE 10
+    scene bg hallway night dark
+    with fade
 
     "Ilona feels her heart lurch."
 
     "She stumbles up the stairs, finding Kellac at the door to what seems to be the master’s chambers."
 
     scene bg master door night
+    with longfade
 
     "He knocks urgently, and tries ramming the door with his shoulders, but grunts when the door wouldn't budge."
+
+    show kellac_night at right with dissolve:
+        zoom 0.5 xzoom -1
 
     ke "It's no use! Damn it! If only I were stronger…"
 
     ke "I'm going to get Anari! Something's wrong."
 
+    scene bg hallway night dark
+    with fade
+
+    show ilona_night at left:
+        zoom 0.5
+    show kellac_night at right:
+        zoom 0.5 xzoom -1
+    with dissolve
+
     ke "The servants' quarters are on the other side of the house, up the stairs. Get a master key for this door!"
 
+    hide kellac_night with dissolve
+
     "Ilona nods and follows Kellac's instructions, passing through the now empty hall and up the stairs."
+
+    show eisleigh_night at right with dissolve
 
     "She finds Eisleigh first, and explains the situation."
 
@@ -821,12 +883,17 @@ label act1:
     ei "I- I have a copy of the master key. Come on! There's no time to waste!"
 
     # TRANSITION TO SCENE 11
-
     stop music fadeout 3.0
+
+    scene bg master door night
+    with longfade
 
     "When they rush back to the masters' chambers, there is no use for the master key. They find the door broken and battered, but no sign of Anari or Kellac yet."
 
     play sound 'audio/sfx/heartbeat.mp3' loop
+
+    scene bg gore
+    with longfade
 
     "Traces of blood are on the door, as with thick shards of wood splintering from its fractures."
 
@@ -921,8 +988,7 @@ label act1:
 
     ## TOWN PLAZA
 
-    #FIXME bg town plaza night (and not belorov night)
-    scene bg belorov night
+    scene bg town plaza night
     with longfade
 
     "With Edwin locked away, the remaining members of the party gather in the town square: Ilona, Eisleigh, Kellac and Anari."
