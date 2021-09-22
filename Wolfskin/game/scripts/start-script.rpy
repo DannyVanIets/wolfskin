@@ -250,6 +250,9 @@ define fadehold = Fade(0.5, 2.0, 0.5)
 # long fade
 define longfade = Fade(1.5, 0.0, 1.5)
 
+# long dissolve for suspenseful introductions of characters
+define longdissolve = Dissolve(3.0)
+
 ## moving sprites are a pain
 define midleft= Position(xpos=0.40)
 
