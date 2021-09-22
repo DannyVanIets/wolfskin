@@ -442,11 +442,13 @@ label act1:
 
     an "True. There's no need to understand the conversations of beasts to hunt them, only their behaviour."
 
-    sa "How amusing... Judging by Anari's report, I would have thought she was describing a saint!"
+    sa "Judging by Anari's report, I would have thought she was describing a saint!"
 
     il "Thank you for your kind words, but they are far too gracious to be wasted on me... I have not done anything to be deserving of such praise."
 
     sa "I thought you might be able to join us for tonight's feast for All Hallows' Day, and to perhaps lead us in prayer."
+
+    "Nobody commented on Salome's blunder of saying the wrong day. Her invitation is both gracious and surprising — perhaps the lady is flustered herself."
 
     ul "It’s not every day that you see a nun, and much less in such unlikely company. So, Would you accept our invitation?"
 
@@ -507,7 +509,7 @@ label act1:
 
     ed "Haha. To tell you everything that happened would tax my wits."
 
-    fl "Have you seen any mythical creatures in your journeys? Ever met the fair folk?? I've always dreamed of finding one!!"
+    fl "Have you met any mythical creatures in your journeys? Ever met the fair folk?? I've always dreamed of finding one!!"
 
     ed "Let me think. There was this one time I had an encounter with a giant… "
 
