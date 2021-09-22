@@ -162,11 +162,11 @@ label act3:
 
     "Anari's face is grim. She pulls out a letter, the seal on it broken. She reads the brief message out loud for all to hear."
 
-    "{i}By the time you receive this letter, I will be reunited with who I consider to be my true family.{/i}"
+    fl "{i}By the time you receive this letter, I will be reunited with who I consider to be my true family.{/i}"
 
-    "{i}I could only choose one or the other, and so I have decided to take a test of faith to prove my worthiness: I will strike terror into the one who has abandoned me.{/i}"
+    fl "{i}I could only choose one or the other, and so I have decided to take a test of faith to prove my worthiness: I will strike terror into the one who has abandoned me.{/i}"
 
-    "{i}In doing so, I have let fate decide my hand, and this was the result - to reunite me with the fair ones forevermore.{p}- Fleur Belorovna{/i}"
+    fl "{i}In doing so, I have let fate decide my hand, and this was the result - to reunite me with the fair ones forevermore.{p}- Fleur Belorovna{/i}"
 
     an "We are certain that this is her hand-writing."
 
