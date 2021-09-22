@@ -1,5 +1,7 @@
 # The script of the game goes in this file.
 
+#config auto voice
+
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
