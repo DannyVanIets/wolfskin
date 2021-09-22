@@ -460,7 +460,7 @@ label act1:
 
     ## HALL(SCENE 4)
 
-    scene bg hall night
+    scene bg hall alt
     with longfade
 
     queue music 'audio/music/The Banquet.ogg'
@@ -469,13 +469,81 @@ label act1:
 
     "They sit at a table laden with food: a rich coloured beetroot soup, mulled wine with spices, pickled vegetables, a glistening whole roasted pheasant and even more dishes than one could name."
 
+    scene bg hall night
+    with fade
+
+    # show Fleur and Eisleigh for their introduction (for only one moment)
+    show fleur_dim with dissolve:
+        xcenter 640
+    show eisleigh_dim with dissolve:
+        xcenter 1280
+
     "Seated at the table were two new faces: Fleur, the daughter of Uldin. On Fleur's left side was Eisleigh, an assistant to the house."
+
+    hide fleur_dim
+    hide eisleigh_dim
+    with dissolve
+
+    # show Uldin and Salome to highlight their importance (for only one moment)
+    show uldin_dim:
+        xcenter 640
+    show salome_dim:
+        xcenter 1280
+    with dissolve
 
     "Uldin plans to rebuild the ruined chapel in Belorov, as Salome is deeply pious. That was why Salome regards the meeting with Ilona as such good fortune."
 
+    hide uldin_dim
+    hide salome_dim
+    with dissolve
+
+    # group shot with all characters shown on screen
+    show uldin_dim:
+        yalign 1.0 zoom 0.7 xcenter 85
+    show salome_dim:
+        yalign 1.0 zoom 0.7 xcenter 335
+    show fleur_dim behind anari_dim, salome_dim:
+        yalign 1.0 zoom 0.7 xzoom -1 xcenter 585
+    show anari_dim:
+        yalign 1.0 zoom 0.35 xzoom -1 xcenter 835
+
+    show eisleigh_dim behind anari_dim, kellac_dim:
+        yalign 1.0 zoom 0.7 xzoom -1 xcenter 1085
+    show kellac_dim:
+        yalign 1.0 zoom 0.35 xcenter 1335
+    show edwin_dim behind kellac_dim, ilona_dim:
+        yalign 1.0 zoom 0.35 xzoom -1 xcenter 1585
+    show ilona_dim:
+        yalign 1.0 zoom 0.35 xzoom -1 xcenter 1835
+    with dissolve
+
     "As everyone gathers at the table, Uldin urges Ilona to lead them in prayer before the meal."
 
+    hide uldin_dim
+    hide salome_dim
+    hide fleur_dim
+    hide anari_dim
+    hide eisleigh_dim
+    hide kellac_dim
+    hide edwin_dim
+    with dissolve
+
+    show ilona_dim closed at center with dissolve:
+        zoom 0.65
+
     "She speaks a few words of gratitude for the harvest, and for peace and protection. When she lifts her eyes once again, the lively banquet commences."
+
+    hide ilona_dim with dissolve
+
+    # Anari, Kellac and Fleur convo
+
+    show fleur_dim at extra_left:
+        xzoom -1
+    show anari_dim at center:
+        zoom 0.5 xzoom -1
+    show kellac_dim at extra_right:
+        zoom 0.5 xzoom -1
+    with dissolve
 
     ke "The food smells amazing. Was that the pheasant you caught today, Anari?"
 
@@ -483,11 +551,26 @@ label act1:
 
     ke "You should always be in a good mood, then!"
 
+    # Anari switches to left to face Fleur
+    show anari_dim:
+        xzoom 1
+
     an "Heheheh. Fleur, would you like some spiced pheasant?"
 
     fl "Oh no, thank you, Aunt Anari. You always make it way too spicy… "
 
     an "That's too bad… I guess you really don't take after Uldin when it comes to food."
+
+    # Salome, Fleur, Ilona, and Edwin convo
+    scene bg hall alt
+    with fade
+
+    show salome_dim at extra_left
+    show ilona_dim:
+        zoom 0.5 xzoom -1 xcenter 1750
+    show edwin_dim behind ilona_dim:
+        zoom 0.5 xcenter 1550
+    with dissolve
 
     sa "So, what brings you to Belorov, Mister Edwin and Sister Ilona?"
 
@@ -505,6 +588,9 @@ label act1:
 
     il "From what I understand, Edwin was also quite the traveller before we met."
 
+    show fleur_dim behind salome_dim with dissolve:
+        xzoom -1 xcenter 530
+
     fl "Do you have any stories, Edwin? I'd love to hear them."
 
     ed "Haha. To tell you everything that happened would tax my wits."
@@ -515,11 +601,40 @@ label act1:
 
     "Edwin regales the table with his tale of encountering a giant when he was atop a mountain. Fleur and Salome listen with rapturous attention."
 
+    # Kellac and Anari leaves
+
+    show kellac_dim with dissolve:
+        zoom 0.5 xcenter 800
+
     "Even Kellac takes an interest in these tales, and starts telling of his own travels. He loses track of time, and he decides that it is getting late, and he needs to head in early."
+
+    show anari_dim with dissolve:
+        zoom 0.5 xcenter 1200
 
     "Anari leaves to get some rest for her shift as the town guard. Both of them bid everyone at the table a good night."
 
+    hide kellac_dim
+    hide anari_dim
+    with dissolve
+
+    # Uldin, Salome, Fleur, Eisleigh, Edwin, Ilona convo
+    scene bg hall night
+    with longfade
+
+    show salome_dim:
+        xcenter 150
+    show fleur_dim behind salome_dim:
+        xzoom -1 xcenter 730
+    show ilona_dim:
+        zoom 0.5 xzoom -1 xcenter 1830
+    show edwin_dim behind ilona_dim:
+        zoom 0.5 xcenter 1630
+    with dissolve
+
     "Even though the party thins out a little, Fleur seems as excitable as when she began. Even Eisleigh, who kept to herself as she ate, joins in on the conversation."
+
+    show eisleigh_dim behind fleur_dim with dissolve:
+        xzoom -1 xcenter 1100
 
     ei "You've really travelled a long way if you came from across the sea, Edwin."
 
@@ -529,7 +644,14 @@ label act1:
 
     fl "Oh, could it be…? Is the story of how you met Ilona not suitable for my ears? "
 
+    # Eisleigh turns to left briefly to face Fleur
+    show eisleigh_dim:
+        xzoom 1
+
     ei "Ahaha, is that it? You might be onto something, Fleur."
+
+    show eisleigh_dim:
+        xzoom -1
 
     il "…"
     extend "(Girls these days are sharp.)"
@@ -540,7 +662,14 @@ label act1:
 
     sa "Fleur, you shouldn't tease guests. And you really shouldn't encourage her, Eisleigh!"
 
+    # Fleur turns to left to face Salome
+    show fleur_dim:
+        xzoom 1
+
     fl "Mother, it's All Hallow's Eve! Tricks and pranks are part of the fun. I'm merely teaching Sister Ilona about this part of the festival — She shouldn't be so serious and uptight all the time!"
+
+    show uldin_dim behind fleur_dim, eisleigh_dim with dissolve:
+        xzoom 1 xcenter 400
 
     ul "Well, they said they were on a pilgrimage. If their sins are meant to be forgiven in the end, they should be able to sin along the way all they want!"
 
@@ -552,11 +681,19 @@ label act1:
 
     "Salome gives one stern glance to both Fleur and Uldin, and their boisterous laughs subside. Uldin still seems pleased with his comment. When he recalls the looks on Ilona and Edwin's faces, he tries to not burst out laughing again."
 
+    # Fleur turns to right to face Edwin/Ilona
+    show fleur_dim:
+        xzoom -1
+
     fl "I apologize, Mother. And I apologize to you as well, Edwin and Sister Ilona, for insinuating something I should not have. "
 
     "Ilona and Edwin sheepishly mumble their acceptance of Fleur's apology. There is still too much attention on them…"
 
+    hide salome_dim with dissolve
+
     "Salome asks everyone their preferences for tea to make preparations, and she excuses herself."
+
+    hide fleur_dim with dissolve
 
     "A brief moment later, Fleur rises from her seat. She helps Salome with preparing the tea, truly apologetic about her earlier behaviour."
 
@@ -567,6 +704,10 @@ label act1:
     ul "Oh no need, but if you must insist: you’re welcome."
 
     ul "Please, I know this is all too much for you and Sister Ilona. You’ve met quite a few people already, and it's getting late. If you need to retire for the evening, you are welcome to."
+
+    # Tea party : Uldin, Fleur, Eisleigh, Ilona, Edwin convo
+    scene bg hall alt
+    with longfade
 
     "At this point, Salome and Fleur have the tea ready, and Eisleigh helps in serving it to the guests, along with servings of milk and sugar at each end of the table."
 
@@ -977,7 +1118,7 @@ label act1:
 
     "Instead of the cool and elegant Anari that Ilona had seen before, she disguises her sorrow with fury instead."
 
-    show kellac_night at less_left behind anari_night with dissolve:
+    show kellac_night at less_left behind anari_night, ilona_night with dissolve:
         zoom 0.5
 
     "Ilona can’t move. With Anari's arrow trained on them, Kellac rushes in; carrying a healer's kit. Edwin sets the body of the woman down and backs away. Kellac checks the unburned section of her wrist."
