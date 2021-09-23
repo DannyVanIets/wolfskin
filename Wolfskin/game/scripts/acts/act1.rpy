@@ -528,8 +528,9 @@ label act1:
     hide edwin_dim
     with dissolve
 
+    # Close-up of Ilona (praying)
     show ilona_dim closed at center with dissolve:
-        zoom 0.65
+        zoom 0.8 yoffset 300
 
     "She speaks a few words of gratitude for the harvest, and for peace and protection. When she lifts her eyes once again, the lively banquet commences."
 
@@ -709,9 +710,30 @@ label act1:
     scene bg hall alt
     with longfade
 
+    show eisleigh_dim at extra_left
+    show fleur_dim:
+        xzoom -1 xcenter 1200
+    show salome_dim at extra_right behind fleur_dim:
+        xzoom -1
+    with dissolve
+
     "At this point, Salome and Fleur have the tea ready, and Eisleigh helps in serving it to the guests, along with servings of milk and sugar at each end of the table."
 
+    hide fleur_dim
+    hide salome_dim
+    hide eisleigh_dim
+    with dissolve
+
+    show uldin_dim at extra_right with dissolve:
+        xzoom -1
+
     "Uldin remarks that this is one of his favourite teas — indeed, the pleasant aroma of black tea is refreshing, and any awkwardness from the conversation before is soon forgotten."
+
+    show ilona_dim at less_left:
+        zoom 0.5
+    show edwin_dim behind ilona_dim:
+        zoom 0.5 xzoom -1 xcenter 200
+    with dissolve
 
     ul "Though, I must admit I remain curious as to how you two knew each other. Are you religious, Edwin?"
 
@@ -720,6 +742,10 @@ label act1:
     ed "I did not want to let her travel alone, so I decided to act as her guard on this journey."
 
     ul "I see. Having a companion to talk about the same texts… That's not so different from me and Eisleigh."
+
+    show eisleigh_dim behind uldin_dim:
+        xcenter 1300
+    with dissolve
 
     ei "Well… magical texts; books about curses and spells, rather than stories and poems."
 
@@ -747,9 +773,17 @@ label act1:
 
     ed "..."
 
+    show fleur_dim behind ilona_dim:
+        xzoom 1 xcenter 850
+    with dissolve
+
     fl "Edwin, are you okay? You're looking awfully pale."
 
     ul "I apologise, I might have gone too far..."
+
+    # Ilona turns to left (facing Edwin)
+    show ilona_dim:
+        xzoom -1
 
     il "...Do you need any assistance?"
 
@@ -760,6 +794,10 @@ label act1:
     ul "Very well. Eisleigh, if you may, show him to his room, please."
 
     ei "Of course."
+
+    hide edwin_dim
+    hide eisleigh_dim
+    with dissolve
 
     # SCENE 8(EDWIN POV)
 
@@ -874,10 +912,11 @@ label act1:
 
     show ilona_dim at less_left:
         zoom 0.5
-    show eisleigh_dim at extra_left behind ilona_dim:
+    show fleur_dim at extra_left behind ilona_dim:
         xzoom -1
-    show fleur_dim at less_right
-    show uldin_dim at extra_right behind fleur_dim:
+    show eisleigh_dim:
+        xcenter 1300
+    show uldin_dim at extra_right:
         xzoom -1
     with dissolve
 
