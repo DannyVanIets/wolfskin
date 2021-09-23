@@ -122,7 +122,7 @@ label act2:
 
     "They then move to investigate Fleur's room. Ilona couldn't help but be curious about what Anari said earlier. Opening the young girl's room, both of them notice a distinct lump in the bed."
 
-    "Ilona looks to Anari. They agree silently to move closer."
+    "Ilona looks at Anari. They agree silently to move closer."
 
     "Anari did not pay any heed to the room's whimsical decor, but Ilona can't help but steal glances at the spectacle of floral and woodland motifs in her belongings as they pass through."
 
@@ -134,7 +134,7 @@ label act2:
 
     "It resembles a wood statue, or an effigy."
 
-    "The face looks eerily like Fleur, her expression mysterious; neither happy or sad. The rest of the body looks as though it remains trapped inside a still-living tree."
+    "The face looks eerily like Fleur, her expression mysterious; neither happy nor sad. The rest of the body looks as though it remains trapped inside a still-living tree."
 
     show ilona_dim at left:
         zoom 0.5
@@ -178,7 +178,7 @@ label act2:
     show anari_dim:
         ease 0.5 xcenter 1500
 
-    an "Sister, does it look like I’m in the mood for some tea right now? In the middle of this mess? Is there something wrong with your head, Sister? Have you forgotten the situation we find ourselves in?"
+    an "Does it look like I’m in the mood for some tea right now? In the middle of this mess? Is there something wrong with your head, Sister? Have you forgotten the situation we find ourselves in?"
 
     an "Or are you trying to lace my drink with-"
 
@@ -409,7 +409,7 @@ label act2:
     scene bg kellacs room
     with fadehold
 
-    "When Ilona opens her eyes again, she's in an unfamiliar bed and room. The air is heavy with an medicinal smell, suffocatingly so."
+    "When Ilona opens her eyes again, she's in an unfamiliar bed and room. The air is heavy with a medicinal smell, suffocatingly so."
 
     "She feels far too conscious of her body. Her mouth feels dry, and her heart still feels like it's beating too fast."
 

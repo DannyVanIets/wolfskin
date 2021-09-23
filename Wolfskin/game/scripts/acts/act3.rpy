@@ -185,7 +185,7 @@ label act3:
 
     an "We are certain that this is her hand-writing."
 
-    an "Fleur is… no longer with us. She has been taken by the fair folk. We couldn't find any trace of her, not even her footprints,, or any clues towards her disappearance."
+    an "Fleur is… no longer with us. She has been taken by the fair folk. We couldn't find any trace of her, not even her footprints, or any clues towards her disappearance."
 
     an "…With that matter settled, let's proceed with Edwin. The nun Ilona has prepared a defence. Please, rise."
 
@@ -221,7 +221,7 @@ label act3:
 
     il "How were you able to identify the burned corpse in the Master's chamber?"
 
-    an "Her skin was charred beyond recognition, so we had to resort to what remained of her hair and dress to determine it was Salome."
+    an "Her skin was charred beyond recognition, so we had to resort to what remained of her hair and her ring to determine it was Salome."
 
     il "Did Salome have any identifying features on her body? Anything that could be used to set her apart?"
 
@@ -230,7 +230,7 @@ label act3:
     il "Then, here's my answer for who murdered Uldin: the culprit was Fleur."
     extend " The corpse of Salome has been misidentified."
 
-    an "What? How dare you doubt Kellac's judgement?  You must be truly grasping at straws to make such bold claims! !"
+    an "What? How dare you doubt Kellac's judgement? You must be truly grasping at straws to make such bold claims!!"
 
     il "You said the corpse's face, hair and body was burned to an unrecognizable state. The only identifiers we had were Salome's ring, and her nightgown - all clothing and effects."
 

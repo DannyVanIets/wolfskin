@@ -450,7 +450,7 @@ label act1:
 
     "Nobody dares to tell Salome that it is actually called 'All Hallows' Eve'. They don't wish to be rude."
 
-    ul "It’s not every day that you see a nun, and much less in such unlikely company. So, Would you accept our invitation?"
+    ul "It’s not every day that you see a nun, and much less in such unlikely company. So, would you accept our invitation?"
 
     "Ilona had to consider this carefully. She and Edwin had drawn too much attention already… So it surprised her when Edwin spoke without any fear."
 
@@ -639,7 +639,7 @@ label act1:
 
     ed "Oh uh… Heh heh. That's a story for another time. I'm pretty tired…"
 
-    fl "Oh, could it be…? Is the story of how you met Ilona not suitable for my ears? "
+    fl "Oh, could it be…? Is the story of how you met Ilona not suitable for my ears?"
 
     # Eisleigh turns to left briefly to face Fleur
     show eisleigh_dim:
@@ -731,7 +731,7 @@ label act1:
         zoom 0.5 xzoom -1 xcenter 200
     with dissolve
 
-    ul "Though, I must admit I remain curious as to how you two knew each other. Are you religious, Edwin?"
+    ul "Though, I must admit I remain curious as to how you two met each other. Are you religious, Edwin?"
 
     ed "As much as any other man. Our meeting, well… Ilona pulled me out of a dark place. We bonded over the stories and poems she was recording."
 
