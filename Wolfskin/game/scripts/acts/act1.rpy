@@ -473,10 +473,8 @@ label act1:
     with fade
 
     # show Fleur and Eisleigh for their introduction (for only one moment)
-    show fleur_dim with dissolve:
-        xcenter 640
-    show eisleigh_dim with dissolve:
-        xcenter 1280
+    show fleur_dim at left_center with dissolve
+    show eisleigh_dim at right_center with dissolve
 
     "Seated at the table were two new faces: Fleur, the daughter of Uldin. On Fleur's left side was Eisleigh, an assistant to the house."
 
@@ -485,10 +483,8 @@ label act1:
     with dissolve
 
     # show Uldin and Salome to highlight their importance (for only one moment)
-    show uldin_dim:
-        xcenter 640
-    show salome_dim:
-        xcenter 1280
+    show uldin_dim at left_center
+    show salome_dim at right_center
     with dissolve
 
     "Uldin plans to rebuild the ruined chapel in Belorov, as Salome is deeply pious. That was why Salome regards the meeting with Ilona as such good fortune."
@@ -1266,8 +1262,8 @@ label act1:
         zoom 0.5
     show kellac_night at extra_left behind ilona_night:
         zoom 0.5
-    show eisleigh_night at less_right:
-    show anari_night at extra_right behind eisleigh_night:
+    show eisleigh_night at less_right behind anari_night:
+    show anari_night at extra_right:
         zoom 0.5
     with dissolve
 

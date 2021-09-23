@@ -17,12 +17,17 @@ label act2:
 
     $ quick_menu = True
 
-    scene bg forest night
-    with fade
-
 # SCENE 16
 
+    ## MASTER'S CHAMBER : MORNING TIME
+
+    # FIXME shorter fade after all?
+    scene bg masters chamber
+    with longfade
+
     play music 'audio/music/Haunting.ogg'
+
+    # TODO show Ilona and Kellac
 
     "Ilona takes a look once more at the corpses of Salome and Uldin."
 
@@ -34,9 +39,24 @@ label act2:
 
     "The methods and reasons for their death are clear. To do a further examination, Kellac would have to perform an autopsy."
 
+    # Show Uldin and Salome because the text is about them as victims
+    show uldin at left_center
+    show salome at right_center
+    with dissolve
+
     "From what is seen, Uldin died of blood loss from a wound to his neck, and Salome shows signs of burns surpassing the third degree."
 
     "There's swelling at her neck and spine; possibly a fracture. Both of them died at around the same time, shortly before they entered the room to witness the gruesome scenario."
+
+    hide uldin
+    hide salome
+    with dissolve
+
+    show ilona_dim at left:
+        zoom 0.5
+    show anari_dim at right:
+        zoom 0.5
+    with dissolve
 
     il "(Could Salome have survived that attack, even for just a moment?)"
 
@@ -52,27 +72,51 @@ label act2:
 
     il "There's traces of fur, but that's about it. What about the other rooms?"
 
-    an "Eisleigh told me there was something that felt out of place in Fleur's room.{p}I'll also let you look through Salome's room."
+    an "Eisleigh told me there was something that felt out of place in Fleur's room. I'll also let you look through Salome's room."
 
     stop music fadeout 3.0
 
 # SCENE 17
 
+    ## SALOME'S BEDROOM
+
+    scene bg salomes bedroom
+    with longfade
+
     "Ilona decides to look in Salome's room first, the room closest to the master's chambers. The room is bright, orderly and spacious; and partly serves as the lady's study."
 
     "The most prominent part of the room is a writing table, items left strewn upon it as though she was in the middle of an important task."
 
+    show ilona_dim at left:
+        zoom 0.5
+    show anari_dim at right:
+        zoom 0.5
+    with dissolve
+
     il "She asked you to go over the events of the day with her, after she met with us. I assume you came to her room, Anari?"
 
-    an "Correct. I gave my report about seeing you and Edwin for the lady's record-keeping.{p}The one thing that's not where it should be is the chest. Though…"
+    an "Correct. I gave my report about seeing you and Edwin for the lady's record-keeping. The one thing that's not where it should be is the chest. Though…"
+
+    # Let Anari turn around to the right facing the chest
+    show anari_dim at right_center with dissolve:
+        xzoom -1
 
     il "What is it? Please, don't hold back."
 
     an "I don't think it has anything to do with the murders. That chest is meant for Fleur when she is married. Salome had it made recently."
 
+    # Anari turns back to face Ilona
+    show anari_dim:
+        xzoom 1
+
     an "It's natural she might have moved it since I was last here. She does worry about Fleur's future, after all… Salome was still considering which items should go inside. "
 
     "It surprises Ilona that Anari became so candid at this moment. Salome and Anari were closer in age, and it made sense that Anari acted as Salome's confidant."
+
+    ## FLEUR'S BEDROOM
+
+    scene bg fleur bedroom
+    with longfade
 
     play music 'audio/music/Echoing - Theme Of Fleur -.ogg'
 
@@ -92,13 +136,31 @@ label act2:
 
     "The face looks eerily like Fleur, her expression mysterious; neither happy or sad. The rest of the body looks as though it remains trapped inside a still-living tree."
 
+    show ilona_dim at left:
+        zoom 0.5
+    show anari_dim at right:
+        zoom 0.5
+    with dissolve
+
     an "Impossible…"
 
     "Anari does not say anything else, but moves back from the effigy. Her hand is balled into a fist, and is shaking, either from rage or fear."
 
     an "I-I've seen quite enough. I don't want to remain in this ghastly room."
 
+    hide anari_dim with dissolve
+
     "She turns immediately on her heel. The sudden reaction surprises Ilona, and she is unsure whether to follow or not."
+
+    ## HALLWAY
+
+    scene bg hallway
+    with longfade
+
+    show ilona_dim at left with dissolve:
+        zoom 0.5
+    show anari_dim at extra_right with longdissolve:
+        zoom 0.5
 
     "Finding nothing else of note in the room, Ilona rejoins Anari. She finds Anari with her back pressed to the wall, steadily taking deep breaths."
 
@@ -112,7 +174,11 @@ label act2:
 
     an "...Tea?"
 
-    an "Sister, does it look like I’m in the mood for some tea right now? In the middle of this mess? Is there something wrong with your head, Sister? Have you forgotten the situation we find ourselves in?…"
+    # Anari moves slightly to the left (from wall) to show outburst
+    show anari_dim:
+        ease 0.5 xcenter 1500
+
+    an "Sister, does it look like I’m in the mood for some tea right now? In the middle of this mess? Is there something wrong with your head, Sister? Have you forgotten the situation we find ourselves in?"
 
     an "Or are you trying to lace my drink with-"
 
@@ -120,7 +186,7 @@ label act2:
 
     il "I only wish to see that you’re in good health to proceed, so I thought we could take a quick break-"
 
-    an "With some tea, I get it. Very well, I must tell you that I despise the leavesfrom this country, so you'd better make a damn fine cup."
+    an "With some tea, I get it. Very well, I must tell you that I despise the leaves from this country, so you'd better make a damn fine cup."
 
     il "Are there any to your taste?"
 
@@ -134,7 +200,18 @@ label act2:
 
     "Uldin isn't around anymore to enjoy what he had in life, that is certain."
 
+    ## HALLWAY
+
+    scene bg hall day
+    with longfade
+
     "Anari goes into the pantry and finds some tea bricks sealed in a container. She was sure that last night, Salome and Fleur did talk about this kind of tea."
+
+    show ilona_dim at left:
+        zoom 0.5
+    show anari_dim at right:
+        zoom 0.5
+    with dissolve
 
     "Ilona, feeling some remorse as though the two of them were bandits, prepares the deceased man's tea according to Anari's instruction. Trying her best to be hospitable, Ilona also serves it with milk and sugar, as Fleur did."
 
@@ -164,7 +241,7 @@ label act2:
 
     an "Everyone's locations were accounted for:"
 
-    an "I was on patrol as the head of the town guard.{p}Kellac was the first one to react to the scream, followed by you.{p}Eisleigh was in her room."
+    an "I was on patrol as the head of the town guard. Kellac was the first one to react to the scream, followed by you. Eisleigh was in her room."
 
     an "Each of us were able to confirm each others' locations at the time of the murder. The only one who couldn't be found was Edwin."
 
@@ -190,7 +267,7 @@ label act2:
 
     an "The two of you are outsiders, whereas we’ve all known each other for a long time."
 
-    an "I don't plan on letting my bias against the two of you get the better of me, however. Let's start at the beginning: what could be the motivation for the murder?."
+    an "I don't plan on letting my bias against the two of you get the better of me, however. Let's start at the beginning: what could be the motivation for the murder?"
 
     an "Kellac was an associate of Uldin and I during the war. He’s selfless, to the point of stupidity. I guess serving as a medic will do that to you."
 
@@ -286,6 +363,11 @@ label act2:
 
 # SCENE 25
 
+    ## TOWN SQUARE
+
+    scene bg town plaza morning
+    with longfade
+
     "Anari leads her out of the room, and back into the town square."
 
     "Ilona can feel her body covered in a light sweat. She can feel her heart leaping frantically inside her chest, just reminiscing about the conversation she had with Anari."
@@ -312,13 +394,20 @@ label act2:
 
     stop music
 
-    play sound 'audio/sfx/Gravel Floor Fall 1.mp3'
-
-# Note for SFX: (vpunch effect + sound of collapsing?)
+    # TRANSITION TO BLACK.
+    scene bg black
+    with fade
 
     ke "Hey! Is everything alright? Stay with me!"
 
-# TRANSITION TO BLACK.
+    # Note for SFX: (vpunch effect + sound of collapsing?)
+
+    play sound 'audio/sfx/Gravel Floor Fall 1.mp3'
+
+    ## KELLAC'S ROOM : NOON TIME
+
+    scene bg kellacs room
+    with fadehold
 
     "When Ilona opens her eyes again, she's in an unfamiliar bed and room. The air is heavy with an medicinal smell, suffocatingly so."
 
@@ -470,6 +559,10 @@ label act2:
 
 # SCENE 32
 
+    ## HALLWAY
+    scene bg hallway
+    with longfade
+
     "The three of them start their search for the cursed item. Based on Anari's report, Kellac confirms with Ilona that nobody was able to enter or exit the town after Ilona and Edwin entered."
 
     "Eisleigh was eager to help out in any way possible, now that there was a chance of witnessing or finding a cursed magical object."
@@ -480,9 +573,17 @@ label act2:
 
     ei "However, I've put the past well behind me. Uldin made me his friend instead of punishing me, and I'm thankful for that."
 
+    ## MASTER'S CHAMBER
+    scene bg masters chamber
+    with longfade
+
     "Ilona can’t help but find this suspicious. They start their search around Uldin's chambers. Once again, they see the mutilated corpse of Uldin, and the corpse of Salome, burned beyond recognition…"
 
     "Despite thoroughly searching the bodies, the trio was unable to find the wolfskin or anything else of importance."
+
+    ## SALOME'S BEDROOM
+    scene bg salomes bedroom
+    with longfade
 
     "They move onto Salome's room. Nothing appears to have been touched since the last time Ilona was here with Anari. Like Anari, Eisleigh comments that the chest was moved and then moves to inspect it."
 
@@ -501,15 +602,18 @@ label act2:
     ke "Full of surprises, eh? I trust you're not making excuses now."
 
     ei "Of course not, I merely-"
-    extend "Ah-ha! I got it!"
+    extend " Ah-ha! I got it!"
 
     "She jammed the lockpick into the keyhole and wriggled it around. A faint 'click' was heard."
 
     stop music fadeout 1.0
 
-    "…{p}…{p}……"
+    "…"
+    extend "\n…"
+    extend "\n……"
 
-    "……{p}Five stabs pierce the soft flesh of Eisleigh's hand."
+    "……"
+    extend "\nFive stabs pierce the soft flesh of Eisleigh's hand."
 
     ke "Eisleigh!"
 
@@ -557,11 +661,19 @@ label act2:
 
 # SCENE 34
 
+    ## MANSE
+    scene bg chapel
+    with longfade
+
     "Ilona makes her way to where Edwin is imprisoned. The dungeons are behind the ruins of the chapel, which is on the south-east side of the manse."
 
     "She inserts the lockpicks into the keyhole. Ilona had only witnessed Eisleigh do it once, and apparently it’s not as easy as it looks."
 
     "After what seems like an eternity, the door opens with a loud click and a metallic groan."
+
+    ## DUNGEON
+    scene bg dungeon
+    with longfade
 
     "Fearing that Anari, or someone else, would hear her in the dungeon, she hesitates. If she stayed behind… There was no knowing what the others would do if they laid their eyes on the wolfskin."
 

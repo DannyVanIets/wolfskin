@@ -40,17 +40,26 @@ transform centertoright_transform:
 
 ## Commonly used sprite positions
 
+# variations of left
 transform extra_left:
     xcenter 250
 
 transform less_left:
     xcenter 540
 
+# variations of right
 transform extra_right:
     xcenter 1670
 
 transform less_right:
     xcenter 1380
+
+# to put two characters in the center
+transform left_center:
+    xcenter 640
+
+transform right_center:
+    xcenter 1280    
 
 # I'm going bob ross over Here
 
@@ -127,7 +136,7 @@ layeredimage ilona:
         attribute neutral default
 
     group outfit:
-        attribute blood    
+        attribute blood
 
     group emotion auto
 
