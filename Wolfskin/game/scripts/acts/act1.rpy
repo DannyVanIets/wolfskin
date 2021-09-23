@@ -448,7 +448,7 @@ label act1:
 
     sa "I thought you might be able to join us for tonight's feast for All Hallows' Day, and to perhaps lead us in prayer."
 
-    "Nobody commented on Salome's blunder of saying the wrong day. Her invitation is both gracious and surprising — perhaps the lady is flustered herself."
+    "Nobody dares to tell Salome that it is actually called 'All Hallows' Day'. They don't wish to be rude."
 
     ul "It’s not every day that you see a nun, and much less in such unlikely company. So, Would you accept our invitation?"
 
