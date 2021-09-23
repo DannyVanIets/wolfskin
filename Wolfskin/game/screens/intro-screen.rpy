@@ -36,7 +36,7 @@ screen intro(actNumber):
 
                 null height 50
 
-                text "All Hallow's Day - Warmth Combined"
+                text "All Hallow's Day - Warmth"
 
             # In case we want to make it clear that it is the epilogue.
             else:

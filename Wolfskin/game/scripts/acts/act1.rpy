@@ -448,7 +448,7 @@ label act1:
 
     sa "I thought you might be able to join us for tonight's feast for All Hallows' Day, and to perhaps lead us in prayer."
 
-    "Nobody dares to tell Salome that it is actually called 'All Hallows' Day'. They don't wish to be rude."
+    "Nobody dares to tell Salome that it is actually called 'All Hallows' Eve'. They don't wish to be rude."
 
     ul "It’s not every day that you see a nun, and much less in such unlikely company. So, Would you accept our invitation?"
 
