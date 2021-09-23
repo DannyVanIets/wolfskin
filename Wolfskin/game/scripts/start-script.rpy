@@ -126,6 +126,9 @@ layeredimage ilona:
     group mouth auto:
         attribute neutral default
 
+    group outfit:
+        attribute blood    
+
     group emotion auto
 
 # begin auto_layeredimage for anari
