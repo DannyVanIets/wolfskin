@@ -396,17 +396,17 @@ label act2:
 
     "She can barely recognize the voice. Ilona's vision blurs and the ground beneath her feet feels unsteady."
 
-    # TRANSITION TO BLACK.
-    scene bg black
-    with fade
-
-    ke "Ilona?"
+    ke "Hey! Is everything alright? Stay with me!"
 
     stop sound
 
     stop music
 
-    ke "Hey! Is everything alright? Stay with me!"
+    # TRANSITION TO BLACK.
+    scene bg black
+    with fade
+
+    ke "Ilona?"
 
     # NOTE for SFX: (vpunch effect + sound of collapsing?)
     with vpunch
