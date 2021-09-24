@@ -860,7 +860,7 @@ label act1:
 
     ul "Though, I must admit I remain curious as to how you two met each other. Are you religious, Edwin?"
 
-    show edwin_dim anxious
+    show edwin_dim glance talk
     ed "As much as any other man. Our meeting, well… Ilona pulled me out of a dark place. We bonded over the stories and poems she was recording."
 
     ed "I did not want to let her travel alone, so I decided to act as her guard on this journey."
@@ -868,18 +868,22 @@ label act1:
     show uldin_dim closed
     ul "I see. Having a companion to talk about the same texts… That's not so different from me and Eisleigh."
 
-    show eisleigh_dim behind uldin_dim:
+    show eisleigh_dim grin behind uldin_dim:
         xcenter 1300
     with dissolve
 
     ei "Well… magical texts; books about curses and spells, rather than stories and poems."
 
+    show ilona_dim smile
     il "Oh, that's unusual. Both of you practice magic?"
 
+    show uldin_dim angry neutral
     ul "It's a useful resource, but difficult to master. You did say the two of you are on a pilgrimage… so you might not be aware of recent events."
 
+    show eisleigh_dim angry look neutral
     ei "There have been sightings of a werewolf in another town."
 
+    show uldin_dim glance angry laugh
     ul "Those foul beasts… A werewolf truly must be cursed to succumb to their bloodlust."
 
     stop music fadeout 3.0
