@@ -633,6 +633,8 @@ label act2:
 
     "Kellac and Eisleigh make their descent down the stairs. All that remains near the chest is the blood that poured out from Eisleigh's hand, the set of lockpick and Ilona."
 
+    play sound 'audio/sfx/heartbeat.mp3' loop
+
     "The hairs on Ilona’s arms raise, and she can feel her heart beat faster. She puts her hand on her chest, as though uttering a short prayer."
 
     il "Breathe. If the chest was a trap, then there has to be something in there that someone doesn’t want found."
@@ -640,6 +642,8 @@ label act2:
     "Despite her best instincts, Ilona picks up the lockpicks Eisleigh used. She spots a thin tool and uses it to pry the wood chest open…"
 
     "The trap was already disengaged; the danger gone. She sighs with relief."
+
+    stop sound fadeout 2.0
 
     "Nestled underneath delicate pieces of jewelry and other finery, lay the red and glistening gold of a sash; with bloodstained, hoary fur on the other side."
 

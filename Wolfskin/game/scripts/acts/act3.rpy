@@ -102,6 +102,8 @@ label act3:
 
     # Ilona is crying.
 
+    #TO DO: Add Ilona's Theme Here
+
     il "I'm not trying to find a way to break your curse so I can return to the priory, or to repent for my sins."
 
     il "I'm doing it so we can live together without the constant fear of being hunted down!"
@@ -197,6 +199,8 @@ label act3:
 
     an "Edwin was found on scene, holding Salome's lifeless body."
 
+    play music 'audio/music/Echoing - Theme Of Fleur -.ogg'
+
     an "I'll start first with some important information. We could not locate Fleur, but we found this envelope in the forest. The seal on it was still intact."
 
     "Anari's face is grim. She pulls out a letter, the seal on it broken. She reads the brief message out loud for all to hear."
@@ -212,6 +216,8 @@ label act3:
 
     an "Fleur is… no longer with us. She has been taken by the fair folk. We couldn't find any trace of her, not even her footprints, or any clues towards her disappearance."
 
+    stop music fadeout 2.0
+
     an "…With that matter settled, let's proceed with Edwin. The nun Ilona has prepared a defence. Please, rise."
 
 # SCENE 41
@@ -221,6 +227,8 @@ label act3:
     "{i}I could only choose one or the other, and so I have decided to take a test of faith to prove my worthiness.{/i}"
 
     "Ilona decides that they should at least begin with what they know from the investigation, and think about Fleur's letter along the way."
+
+    play music 'audio/music/Wail of the Moon.ogg'
 
     il "This murder had at least two conspirators involved: Salome and Fleur."
 
@@ -311,7 +319,11 @@ label act3:
 
     "Anari crosses her arms, and her brows knit together as she takes in Ilona's theory."
 
+    stop music fadeout 2.0
+
     an "You're forgetting something. You never explained what Edwin did in that room when he found the burned body. If I were him, I'd hide rather than stay out in the open. Why was he holding the body in his arms?"
+
+    play sound 'audio/sfx/heartbeat.mp3' loop
 
     "Ilona freezes, her legs shaking. The words are caught in her throat again. As she sees this, Anari chuckled to herself."
 
@@ -346,9 +358,13 @@ label act3:
 
     il "I can only speculate at this point. Are there any secret or hidden passages in Belorov?"
 
+    stop sound
+
     an "That would be far too convenient, wouldn't it? You are right: nothing you do will change my mind. I have been burned by blindly trusting others in the past more times and in worse ways than you could ever imagine."
 
     an "If I am wrong, so be it. When my time comes, I’ll gladly accept my penance."
+
+    play music 'audio/music/Chaos And Torment.ogg'
 
     an "There's one thing that's certain: your arrival into this town brought with it the destruction of this family."
 
@@ -364,11 +380,19 @@ label act3:
 
     il "Aaaaaaaahh! Let me go!"
 
-    "Ilona struggles and tries to shake the men off, but the guards do not relent. One grabs her by the hair. Edwin cannot abide by this any longer. He transforms, the chains snapping off him as he transforms into a massive wolf-man."
+    "Ilona struggles and tries to shake the men off, but the guards do not relent. One grabs her by the hair. Edwin cannot abide by this any longer."
+
+    #TO DO: Insert Wolf CG Here
+
+    "He transforms, the chains snapping off him as he transforms into a massive wolf-man."
 
     "He rushes at the guards with a growl, knocking them over by slamming against them. He throws them off with both fang and claw, prying Ilona away from them."
 
+    stop music fadeout 3.0
+
     "Anari did not expect this development. She strings her bow, and takes an arrow from her quiver. She trains it on the werewolf."
+
+    play music 'audio/music/War Of The Huntress - VS Anari -.ogg'
 
     an "I won't let you escape."
 
@@ -415,6 +439,8 @@ label act3:
 
     "Edwin is quick to react, as he pulls her over while climbing over the wall; carrying her carefully, as though holding an injured bird."
 
+    stop music fadeout 3.0
+
     "The stone wall they escaped over is dyed red with their blood. Yet they make it out of Belorov, despite their injuries."
 
     # Scene 46 - the voice direction here should sound a little slower than usual to reflect their injuries.
@@ -424,6 +450,8 @@ label act3:
     "Edwin marches on, with Ilona in his arms. It’s too dangerous to be out in the open. They search for a place to rest, as dusk greets them with open arms."
 
     "Ilona heals the wound that pierced her abdomen through, and the blood slows. However, the wound does not close completely. The other arrows stuck in them would prove more dangerous to deal with, with no surgical equipment to use."
+
+    play music 'audio/music/Rising.ogg'
 
     il "Edwin, set me down. You're more injured than I am."
 
@@ -553,6 +581,8 @@ label act3:
     ed "I bid you know: I love you."
 
     ed "I-I love…"
+
+    stop music fadeout 3.0
 
 # Renpy Blur, jump to credits
 

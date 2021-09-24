@@ -753,6 +753,10 @@ label act1:
 
     ul "Those foul beasts… A werewolf truly must be cursed to succumb to their bloodlust."
 
+    stop music fadeout 3.0
+
+    #TO DO: Add Tick Tock For Tension
+
     "An oppressive silence lingers, and sweat beads down Edwin’s forehead. Ilona tries to keep a straight face, but her brow twitches."
 
     "Edwin adds more sugar to his tea, and he takes care to not rattle the crockery as he stirs it with the spoon."
@@ -796,8 +800,6 @@ label act1:
     with dissolve
 
     # SCENE 8(EDWIN POV)
-
-    stop music fadeout 3.0
 
     scene bg door night light
     with fade
@@ -867,6 +869,8 @@ label act1:
 
     ed "(And granting me the curse of the Wolfskin.)"
 
+    play music 'audio/music/Haunting.ogg'
+
     "The Wolfskin; a sash of wolf pelt that sits on his waist with intricate designs, foreign to this land. Or to any land, for that matter."
 
     "The gold glistens, and the red… Well, the red reflects the sheen of madness that rests within."
@@ -900,6 +904,8 @@ label act1:
     ed "It may seem the other way around, but whatever I do;"
 
     ed "I will have a damn good reason for it."
+
+    stop music fadeout 2.0
 
     # SCENE 9
 
@@ -1247,7 +1253,7 @@ label act1:
         zoom 0.5
     with longdissolve
 
-    stop music fadeout 1.0
+    stop music fadeout 3.0
 
     # TRANSITION TO SCENE 14 + 15
 
