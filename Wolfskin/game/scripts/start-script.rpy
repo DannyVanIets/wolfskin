@@ -263,6 +263,27 @@ layeredimage uldin:
 
     group emotion auto
 
+## BACKGROUNDS
+
+image bg_repeating_town_plaza_blurry:
+    "bg town plaza morning" with dissolve
+    pause 1
+    "bg town plaza morning blurry" with dissolve
+    pause 1
+    repeat
+
+image bg_repeating_town_plaza_kellac_blurry:
+    "bg town plaza morning kellac" with dissolve
+    pause 0.3
+    "bg town plaza morning kellac blurry" with dissolve
+    pause 2
+    repeat
+
+image bg_transition_blurry_kellac_extreme:
+    "bg town plaza morning kellac blurry" with dissolve
+    pause 0.3
+    "bg town plaza morning kellac blurry extreme" with dissolve
+
 # CTC SHENANIGANS
 
 image ctc_anchored:

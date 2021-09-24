@@ -839,11 +839,6 @@ label act1:
 
     "At this point, Salome and Fleur have the tea ready, and Eisleigh helps in serving it to the guests, along with servings of milk and sugar at each end of the table."
 
-    hide fleur_dim
-    hide salome_dim
-    hide eisleigh_dim
-    with dissolve
-
     scene bg hall night
     with fade
 

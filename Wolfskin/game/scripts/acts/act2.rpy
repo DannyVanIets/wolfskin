@@ -40,16 +40,18 @@ label act2:
     "The methods and reasons for their death are clear. To do a further examination, Kellac would have to perform an autopsy."
 
     # Show Uldin and Salome because the text is about them as victims
-    show uldin at left_center
-    show salome at right_center
+    show bw_ul_murder at left_center:
+        zoom 0.5
+    show bw_sa_murder at right_center:
+        zoom 0.5
     with dissolve
 
     "From what is seen, Uldin died of blood loss from a wound to his neck, and Salome shows signs of burns surpassing the third degree."
 
     "There's swelling at her neck and spine; possibly a fracture. Both of them died at around the same time, shortly before they entered the room to witness the gruesome scenario."
 
-    hide uldin
-    hide salome
+    hide bw_ul_murder
+    hide bw_sa_murder
     with dissolve
 
     show ilona_dim at left:
@@ -370,11 +372,15 @@ label act2:
 
     "Anari leads her out of the room, and back into the town square."
 
+    scene bg_repeating_town_plaza_blurry
+
     "Ilona can feel her body covered in a light sweat. She can feel her heart leaping frantically inside her chest, just reminiscing about the conversation she had with Anari."
 
     "Kellac is waiting at the square, and he exchanges some words with Anari. Their voices are indistinct and quiet."
 
     "Her own heart sounds louder in her ears, so much that it’s making her weak and dizzy… Her extremities are tingling."
+
+    scene bg_repeating_town_plaza_kellac_blurry with fade
 
     play sound 'audio/sfx/heartbeat.mp3' loop
 
@@ -386,7 +392,13 @@ label act2:
 
     il "…"
 
+    scene bg_transition_blurry_kellac_extreme
+
     "She can barely recognize the voice. Ilona's vision blurs and the ground beneath her feet feels unsteady."
+
+    # TRANSITION TO BLACK.
+    scene bg black
+    with fade
 
     ke "Ilona?"
 
@@ -394,14 +406,10 @@ label act2:
 
     stop music
 
-    # TRANSITION TO BLACK.
-    scene bg black
-    with fade
-
     ke "Hey! Is everything alright? Stay with me!"
 
-    # Note for SFX: (vpunch effect + sound of collapsing?)
-
+    # NOTE for SFX: (vpunch effect + sound of collapsing?)
+    with vpunch
     play sound 'audio/sfx/Gravel Floor Fall 1.mp3'
 
     ## KELLAC'S ROOM : NOON TIME
@@ -609,7 +617,7 @@ label act2:
     stop music fadeout 1.0
 
     ## EISLEIGH'S BLOOD
-    
+
     scene bg wound1
     with fade
 
