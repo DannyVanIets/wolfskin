@@ -403,7 +403,7 @@ label act1:
 
     "Anari only nods curtly, and the group moves along. Further into the town, they find a large house made of timber and stone."
 
-    ## AT THE MANSE
+    ## MANSE
 
     scene bg chapel night
     with longfade
@@ -1244,10 +1244,16 @@ label act1:
 
     "Ilona isn't sure if Edwin obliged so easily because he feared for her safety, or if he truly has given up; like what Anari said earlier. He wordlessly lets Anari bind him with chains."
 
-    scene bg dungeon
+    ## MANSE
+    scene bg chapel night
     with longfade
 
-    "Anari escorts him forcefully out of the mansion, and takes him underground to a dungeon. The only thing Ilona sees before the doors close is Edwin's taciturn and listless expression."
+    "Anari escorts him forcefully out of the mansion, and takes him underground to a dungeon."
+
+    ## DUNGEON
+    scene bg dungeon
+    with fade
+    extend "\nThe only thing Ilona sees before the doors close is Edwin's taciturn and listless expression."
 
     show edwin_night wolf at center:
         zoom 0.5
