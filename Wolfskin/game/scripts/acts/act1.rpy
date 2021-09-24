@@ -1054,7 +1054,7 @@ label act1:
 
     ed "...What am I doing?"
 
-    play music 'audio/music/Edwin Master Short.mp3' volume 0.2 fadein 2.0
+    play music 'audio/music/Edwin Master Short.ogg' volume 0.2 fadein 2.0
 
     ed "Ilona told me once to hold onto hope… What’s done is done."
 
