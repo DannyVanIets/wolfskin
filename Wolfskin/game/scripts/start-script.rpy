@@ -238,7 +238,7 @@ layeredimage salome:
         attribute open default
 
     group eyebrows auto:
-        attribute neutral default
+        attribute relaxed default
 
     group mouth auto:
         attribute smallgrin default
@@ -256,7 +256,7 @@ layeredimage uldin:
         attribute open default
 
     group eyebrows auto:
-        attribute neutral default
+        attribute relaxed default
 
     group mouth auto:
         attribute smile default
