@@ -201,7 +201,7 @@ layeredimage eisleigh:
         "eisleigh_base"
 
     group eyes auto:
-        attribute open default
+        attribute look default
 
     group eyebrows auto:
         attribute relaxed default
@@ -222,7 +222,7 @@ layeredimage fleur:
         "fleur_base"
 
     group eyes auto:
-        attribute open default
+        attribute look default
 
     group mouth auto:
         attribute smile default
