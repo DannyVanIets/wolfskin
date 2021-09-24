@@ -608,12 +608,32 @@ label act2:
 
     stop music fadeout 1.0
 
+    ## EISLEIGH'S BLOOD
+    
+    scene bg wound1
+    with fade
+
     "…"
+
+    scene bg wound2
+
     extend "\n…"
+
+    scene bg wound3
+
     extend "\n……"
 
+    scene bg wound4
+
     "……"
+
+    scene bg wound5
+
     extend "\nFive stabs pierce the soft flesh of Eisleigh's hand."
+
+    ## SALOME'S BEDROOM
+    scene bg salomes bedroom
+    with fade
 
     ke "Eisleigh!"
 

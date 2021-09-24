@@ -441,13 +441,20 @@ label act3:
 
     stop music fadeout 3.0
 
+    # mirror image of wall to give impression they climbed over it
+    scene bg belorov sunset:
+        xzoom -1
+    with longfade
+
     "The stone wall they escaped over is dyed red with their blood. Yet they make it out of Belorov, despite their injuries."
 
     # Scene 46 - the voice direction here should sound a little slower than usual to reflect their injuries.
 
-    # TODO Add a new scnene, either forest or valley sunset
-
     "Edwin marches on, with Ilona in his arms. It’s too dangerous to be out in the open. They search for a place to rest, as dusk greets them with open arms."
+
+    ## FOREST
+    scene bg forest sunset
+    with longfade
 
     "Ilona heals the wound that pierced her abdomen through, and the blood slows. However, the wound does not close completely. The other arrows stuck in them would prove more dangerous to deal with, with no surgical equipment to use."
 
@@ -474,6 +481,10 @@ label act3:
     il "...Thank you. It- it means a lot to me. Could we rest for a while?"
 
     ed "I don't hear anyone pursuing us. Just for a moment, then…"
+
+    ## VALLEY
+    scene bg valley sunset
+    with longfade
 
     "They walk for a while, seeing the valley unfold before them. Eventually, they stop to sit under the shade of a tree, basking in its shadow. Their breath is ragged, but in sync with each other's. Ilona rests her head on Edwin’s shoulders."
 
@@ -542,6 +553,10 @@ label act3:
     ed "It's a big family… They'll definitely welcome you…"
 
     il "That sounds… nice…"
+
+    ## SKY
+    scene bg sky sunset
+    with longfade
 
     "Edwin watches the brilliance of the sky and clouds, gradually darkening. With Ilona by his side, he relishes in the peace and comfort."
 
