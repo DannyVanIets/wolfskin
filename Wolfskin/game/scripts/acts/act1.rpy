@@ -27,6 +27,8 @@ label act1:
     scene bg black
     with fade
 
+    play sound 'audio/ambience/dark forest.mp3' fadein 5.0 fadeout 5.0 volume 0.3
+
     # Edwin's monologue for the intro in NVL mode
     define nvlNarrator = Character(None, kind=nvl, what_font="BluuNext-Bolditalic.otf", what_size=50, what_kerning=2)
 
@@ -60,8 +62,6 @@ label act1:
     # Switch to AVD mode.
 
     ## FOREST
-
-    play music 'audio/music/He Who Seeks Hope - Theme Of Edwin -.ogg'
 
     scene bg forest night
     with fadehold
@@ -101,6 +101,8 @@ label act1:
     show edwin_night glance neutral
 
     il "You’re right, but I need you to slow down. I can’t keep up with you and that is only going to make us look all the more suspicious."
+
+    queue music 'audio/music/He Who Seeks Hope - Theme Of Edwin -.ogg' fadein 10.0 volume 0.6
 
     ed "..."
 
@@ -184,6 +186,8 @@ label act1:
 
     show ilona_night neutral
 
+    play sound 'audio/ambience/bbc wind.mp3' fadein 5.0 volume 0.1
+
     ed "I did not know the extent of the hatred that lay within their souls until that night… to go as far as to burn me alive…"
 
     ed "Is there something wrong with me, Ilona? I'm always on edge, fearing for our lives… I never meant to put you through this."
@@ -208,6 +212,7 @@ label act1:
 
     stop music fadeout 1.0
 
+
     "Edwin immediately lets go of her hand, intertwined seconds ago, but now balled into a fist. The rustling of dry leaves brought with it a heavily armed guard and an archer under a cloak."
 
     unk "That's enough loitering around the town wall looking suspicious, don't you think?"
@@ -231,6 +236,8 @@ label act1:
 
     show anari_night open smile
 
+    queue music 'audio/music/March Of The Huntress - Theme Of Anari -.ogg' fadein 2.0 volume 0.5
+
     unk "{i}Sister{/i}, all I know is that the master called you. I sighted a nun and a man outside the town walls and informed him of this."
 
     unk "I can tell your legs are shaking even from here… so make sure to comply obediently and I won't ask any difficult questions about you in return."
@@ -248,8 +255,6 @@ label act1:
     show anari_night open talk
 
     # If Possible, apply Layering to Anari's theme
-
-    play music 'audio/music/March Of The Huntress - Theme Of Anari -.ogg'
 
     an "My name is Anari. Happy now?"
 
@@ -287,6 +292,10 @@ label act1:
 
     show anari_night nii smile relaxed
 
+    stop music fadeout 3.0
+
+    play music 'audio/ambience/dark forest.mp3' fadein 5.0 volume 0.5
+
     an "So you do have manners; it would do you well to keep them. Let’s get moving, then. I’ll escort you to the manse."
 
     ## TOWN GATE
@@ -302,15 +311,20 @@ label act1:
 
     "Did they give away too much, even when they thought they were alone?"
 
-    stop music fadeout 2.0
-
     "She glances at Edwin, his face inscrutable. And so, they enter the gates."
 
     ## TOWN PLAZA
 
+    show bg fluffies with fade
+
+    with logodissolve
+
     scene bg town plaza night
     with longfade
-    play music 'audio/music/The Town.ogg'
+
+    stop sound fadeout 4.0
+
+    play music 'audio/music/The Town.ogg' volume 0.7 fadein 2.0
 
     show edwin_night closed at right with dissolve:
         zoom 0.50 xpos 1.0
@@ -344,6 +358,8 @@ label act1:
     # said as though trying not to laugh, mock-seriously
     ed "You were raised strictly, Ilona. Father Ivanov never wanted you to know about these pagan festivals."
 
+    play sound 'audio/sfx/zapsplat cloth.mp3' volume 0.6
+
     show edwin_night fear talk
     with hpunch
 
@@ -351,7 +367,7 @@ label act1:
 
     ed "Oh!-"
 
-    show kellac_night smile at easeinleft_transform:
+    show kellac_night neutral at easeinleft_transform:
         zoom 0.50
 
     # calmly, not overly acted out
@@ -365,13 +381,13 @@ label act1:
 
     show anari_night closed talk angry sweatdrop with dissolve:
         zoom 0.50 xpos 540
-    show edwin_night open neutral -furrow
 
     # as though tired of an old joke
     an "...Kellac, we're the same age."
 
-    show anari_night open neutral -sweatdrop
-    show kellac_night nii talk
+    show anari_night look neutral -sweatdrop
+    show kellac_night nii smile raised
+    show edwin_night open neutral -furrow
 
     # most of Kellac's lines should be delivered without too much enthusiasm, as though he was an older person or an 'old soul'.
     ke "Fancy meeting you here, Anari. I didn’t know you like to take strolls. I never knew you had friends either! And who may you be, dear sister?"
@@ -381,30 +397,60 @@ label act1:
 
     ed "Uh, I’m not sure we're friends…"
 
+    show ilona_night relaxed
+    show kellac_night open raised
+    show edwin_night open -sweat
+
     ke "Pleased to make your acquaintance, anyhow. I’m Kellac, Anari and I go way back."
+
+    show anari_night closed angry neutral sweatdrop
 
     an "That we do, and I regret it."
 
+    show kellac_night nii happy
+
     ke "You’ve just got to love that personality! Don’t take her too seriously, she's always been like that."
 
-    ed "I see… I'm Edwin. Pleased to make your acquaintance. "
+    show edwin_night smile
+    show kellac_night smile
+
+    ed "I see… I'm Edwin. Pleased to make your acquaintance."
+
+    show ilona_night happy
 
     il "As am I. My name is Ilona. Forgive my ignorance, but are you the master of this town?"
 
+    queue sound 'audio/ambience/bbc wind.mp3' volume 0.2
+
+    show anari_night look
+    show kellac_night talk worry open
+
     ke "Me? Sorry, but no. I'm just the physician and herbalist. Did the master summon you?"
+
+    show kellac_night neutral
+    show ilona_night sad talk
+    show edwin_night neutral sad
 
     il "He did, but I don't know what business we have with him..."
 
+    show ilona_night neutral
+    show kellac_night smile sweat
+    show anari_night -sweatdrop
+
     ke "Aha. I should have expected as much; Anari has a habit of leaving out the details and jumping straight to the point."
+
+    show kellac_night raised -sweat
 
     ke "I should get going, but we're bound to see each other again soon. Keep well, Anari."
 
     hide kellac_night with dissolve
+    show anari_night closed relaxed
 
     "Anari only nods curtly, and the group moves along. Further into the town, they find a large house made of timber and stone."
 
-    ## MANSE
+    stop music fadeout 3.0
 
+    ## MANSE
     scene bg chapel night
     with longfade
 
@@ -412,7 +458,7 @@ label act1:
         zoom 0.5 xcenter 170 xzoom -1
     show ilona_night:
         zoom 0.5 xcenter 370
-    show anari_night:
+    show anari_night look:
         zoom 0.5 xcenter 850 xzoom -1
     with dissolve
 
@@ -420,35 +466,55 @@ label act1:
 
     show uldin_night:
         xcenter 1500 xzoom -1
-    show salome_night:
+    show salome_night neutral:
         xcenter 1750 xzoom -1
     with dissolve
 
     an "Sir Uldin, Lady Salome. I've brought to you Sister Ilona, and her companion Edwin."
 
+    show uldin_night closed laugh
+
     hide anari_night with dissolve
 
     ul "So the man was with her after all?"
 
-    show anari_night behind uldin_night with dissolve:
+    show anari_night worry neutral sweatdrop behind uldin_night with dissolve:
         zoom 0.5 xcenter 1100
 
-    # probably not in any need to say this, but the pronunciation of 'blackguard' is spoken like 'bla-grd'
     an "At first, I thought a holy woman was being accosted by some blackguard. To think that he was her travelling companion..."
+
+    show edwin_night glance talk
 
     ed "I understand I may not have the friendliest appearance… but I have sworn to protect Sister Ilona from harm."
 
+    show uldin_night smirk open
+
     ul "This is indeed unexpected… Anari's eyes are keen, but perhaps only for hunting her quarry."
+
+    show anari_night closed relaxed smile -sweatdrop
 
     an "True. There's no need to understand the conversations of beasts to hunt them, only their behaviour."
 
+    show salome_night grin downturn nii
+    show edwin_night neutral
+
     sa "Judging by Anari's report, I would have thought she was describing a saint!"
+
+    show ilona_night sad pensive
 
     il "Thank you for your kind words, but they are far too gracious to be wasted on me... I have not done anything to be deserving of such praise."
 
+    show salome_night smallgrin open
+
     sa "I thought you might be able to join us for tonight's feast for All Hallows' Day, and to perhaps lead us in prayer."
 
-    "Nobody dares to tell Salome that it is actually called 'All Hallows' Eve'. They don't wish to be rude."
+    show edwin_night neutral open
+    show uldin_night neutral
+    show anari_night open neutral sweatdrop
+
+    "Nobody dares to tell Salome that it is actually called 'All Hallows' Eve'. They don't want to be rude."
+
+    show uldin_night smile
 
     ul "It’s not every day that you see a nun, and much less in such unlikely company. So, would you accept our invitation?"
 
