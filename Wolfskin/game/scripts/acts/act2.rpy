@@ -134,6 +134,10 @@ label act2:
 
     "When they reach the bed, Ilona isn't sure what to expect. Anari remains behind her, and nods for Ilona to pull back the covers. Ilona could see something that looked like it's carved from wood…"
 
+    # wood effigy
+    show effigy at center with longdissolve:
+        zoom 0.5
+
     "It resembles a wood statue, or an effigy."
 
     "The face looks eerily like Fleur, her expression mysterious; neither happy nor sad. The rest of the body looks as though it remains trapped inside a still-living tree."
@@ -413,15 +417,22 @@ label act2:
     play sound 'audio/sfx/Gravel Floor Fall 1.mp3'
 
     ## KELLAC'S ROOM : NOON TIME
+    with logodissolve
 
     scene bg kellacs room
-    with fadehold
+    with longfade
 
     "When Ilona opens her eyes again, she's in an unfamiliar bed and room. The air is heavy with a medicinal smell, suffocatingly so."
 
     "She feels far too conscious of her body. Her mouth feels dry, and her heart still feels like it's beating too fast."
 
+    show ilona at left with dissolve:
+        zoom 0.5
+
     il "Did-? Was I…?"
+
+    show kellac at less_right with dissolve:
+        zoom 0.5 xzoom -1
 
     ke "Take it easy. You're safe — we're still in the manse."
 
@@ -470,6 +481,8 @@ label act2:
     il "Then, you think someone last night—"
 
     "There's a light knock on the door. Kellac tells them to enter, it's Eisleigh."
+
+    show eisleigh at extra_right with dissolve
 
     ei "Oh, Ilona — I heard you fainted in the town square. I was worried."
 
@@ -575,6 +588,13 @@ label act2:
 
     "Eisleigh was eager to help out in any way possible, now that there was a chance of witnessing or finding a cursed magical object."
 
+    show ilona at less_left:
+        zoom 0.5
+    show kellac at extra_left behind ilona:
+        zoom 0.5
+    show eisleigh at right
+    with dissolve
+
     ei "Kellac knows this, but I am not meant to have a copy of the master key."
 
     ei "I used to be a thief before I came here. The reason why I was an assistant to this household, was because I tried to steal one of Uldin's rare books…"
@@ -595,6 +615,9 @@ label act2:
 
     "They move onto Salome's room. Nothing appears to have been touched since the last time Ilona was here with Anari. Like Anari, Eisleigh comments that the chest was moved and then moves to inspect it."
 
+    show eisleigh at right_center with dissolve:
+        xzoom -1
+
     ei "This chest… Last time I saw it, it wasn’t locked. Salome was still re-arranging it to look nice."
 
     ei "Let me try opening it…"
@@ -602,6 +625,12 @@ label act2:
     "Eisleigh pulls out a set of various different keys and picks, agitating each in the keyhole, to no avail."
 
 # SCENE 33
+
+    show ilona at less_left:
+        zoom 0.5
+    show kellac at extra_left behind ilona:
+        zoom 0.5
+    with dissolve
 
     il "I thought you said you put the past behind you."
 
@@ -619,7 +648,7 @@ label act2:
     ## EISLEIGH'S BLOOD
 
     scene bg wound1
-    with fade
+    with longfade
 
     "…"
 
@@ -643,7 +672,19 @@ label act2:
     scene bg salomes bedroom
     with fade
 
+    show kellac at center behind eisleigh:
+        zoom 0.5
+    show ilona at left:
+        zoom 0.5
+    show eisleigh at right_center:
+        xzoom -1
+    with dissolve
+
     ke "Eisleigh!"
+
+    # Eisleighs turns to the left facing Kellac
+    show eisleigh:
+        xzoom 1
 
     ei "Aaaaaaaaghh! It… It hurts… It won't stop bleeding!"
 
@@ -653,11 +694,19 @@ label act2:
 
     ke "There should still be some medical supplies in my room. Let's move there."
 
+    # Ilona moves slightly to the right
+    show ilona:
+        ease 0.5 less_left
+
     il "Do you need my help? I know some healing magic-"
 
     ke "It’s all right. I’ve got this."
 
     ke "I just need to slow the bleeding and elevate the injury site. Don't touch anything else in this room. I'll be back soon."
+
+    hide kellac
+    hide eisleigh
+    with dissolve
 
     "Kellac and Eisleigh make their descent down the stairs. All that remains near the chest is the blood that poured out from Eisleigh's hand, the set of lockpick and Ilona."
 
@@ -666,6 +715,9 @@ label act2:
     "The hairs on Ilona’s arms raise, and she can feel her heart beat faster. She puts her hand on her chest, as though uttering a short prayer."
 
     il "Breathe. If the chest was a trap, then there has to be something in there that someone doesn’t want found."
+
+    # Ilona 'warps' to chest location (can't implement nice looking move/ease with such long distance)
+    show ilona at right_center with dissolve
 
     "Despite her best instincts, Ilona picks up the lockpicks Eisleigh used. She spots a thin tool and uses it to pry the wood chest open…"
 
@@ -715,11 +767,17 @@ label act2:
 
     stop music fadeout 1.0
 
+    # close-up of Ilona
+    show ilona_night closed at center with dissolve:
+        zoom 0.8 yoffset 300
+
     il "I must have courage. I know that I made the right decision."
 
     il "If this can ease his spirits, even just a little, then it will have been worth it."
 
     il "(We're so close. Salome must be the one who did it… If I can just get Edwin to confirm it, then I won't have any fear.)"
+
+    hide ilona_night with dissolve
 
     "Edwin is sitting in the darkness. His eyes make out the figure in white, clutching the wolfskin in her hand."
 
