@@ -518,18 +518,27 @@ label act1:
 
     ul "It’s not every day that you see a nun, and much less in such unlikely company. So, would you accept our invitation?"
 
+    show ilona_night closed annoyed
+
     "Ilona had to consider this carefully. She and Edwin had drawn too much attention already… So it surprised her when Edwin spoke without any fear."
 
+    show edwin_night talk closed
+    show anari_night look -sweatdrop
+
     ed "We will gladly accept."
+
+    show ilona_night glance solemn
 
     sa "Tonight's banquet will begin shortly, but you should still have time to prepare for it. Anari, let us debrief in the meantime."
 
     ## HALL(SCENE 4)
 
+    stop sound fadeout 5.0
+
     scene bg hall alt
     with longfade
 
-    queue music 'audio/music/The Banquet.ogg'
+    play sound 'audio/ambience/bbc fire.mp3' volume 0.2 loop
 
     "It had only been a few days since they were on the run… Ilona could scarcely believe that they were welcomed so readily."
 
@@ -564,12 +573,12 @@ label act1:
         yalign 1.0 zoom 0.7 xcenter 85
     show salome_dim:
         yalign 1.0 zoom 0.7 xcenter 335
-    show fleur_dim behind anari_dim, salome_dim:
+    show fleur_dim look behind anari_dim, salome_dim:
         yalign 1.0 zoom 0.7 xzoom -1 xcenter 585
-    show anari_dim:
+    show anari_dim look:
         yalign 1.0 zoom 0.35 xzoom -1 xcenter 835
 
-    show eisleigh_dim behind anari_dim, kellac_dim:
+    show eisleigh_dim look behind anari_dim, kellac_dim:
         yalign 1.0 zoom 0.7 xzoom -1 xcenter 1085
     show kellac_dim:
         yalign 1.0 zoom 0.35 xcenter 1335
@@ -596,31 +605,44 @@ label act1:
 
     "She speaks a few words of gratitude for the harvest, and for peace and protection. When she lifts her eyes once again, the lively banquet commences."
 
+    queue music 'audio/music/The Banquet.ogg' fadein 3.0
+
     hide ilona_dim with dissolve
 
     # Anari, Kellac and Fleur convo
 
-    show fleur_dim at extra_left:
+    show fleur_dim look at extra_left:
         xzoom -1
-    show anari_dim at center:
+    show anari_dim look at center:
         zoom 0.5 xzoom -1
-    show kellac_dim at extra_right:
+    show kellac_dim smile raised at extra_right:
         zoom 0.5 xzoom -1
     with dissolve
 
     ke "The food smells amazing. Was that the pheasant you caught today, Anari?"
 
+    show anari_dim nii raised
+
     an "The very one. Ahh, a successful hunt and high quality spices can put even someone like me in a good mood."
+
+    show kellac_dim raised nii happy sweat
+    show fleur_dim nii happy
 
     ke "You should always be in a good mood, then!"
 
     # Anari switches to left to face Fleur
-    show anari_dim:
+    show anari_dim look:
         xzoom 1
+    show kellac_dim smile open -sweat
 
     an "Heheheh. Fleur, would you like some spiced pheasant?"
 
+    show fleur_dim sorry happy
+
     fl "Oh no, thank you, Aunt Anari. You always make it way too spicy… "
+
+    show fleur_dim sorry smile
+    show anari_dim worry
 
     an "That's too bad… I guess you really don't take after Uldin when it comes to food."
 
@@ -637,36 +659,58 @@ label act1:
 
     sa "So, what brings you to Belorov, Mister Edwin and Sister Ilona?"
 
+    show salome_dim pensive sad neutral
+
     sa "Our town may not look like much after our chapel was ransacked and destroyed, but it was once breathtaking."
+
+    show ilona_dim sad happy
 
     il "We're… on a pilgrimage. We were just seeking shelter before dark."
 
+    show ilona_dim neutral
+
     il "I heard about the destruction of a chapel some time ago, but I had no idea it was here."
+
+    show salome_dim closed
 
     sa "Yes, it was the barbarians' doing. Even now, we're still rebuilding the town, but the faithful have moved on from here."
 
     sa "I miss having someone to share my connection with God, so I am sorry to impose my sudden invitation on you."
 
+    show salome_dim open relaxed
+
     sa "Belorov is home to people of many faiths. Many of us have travelled from afar, like myself."
+
+    show ilona_dim relaxed smile
+    show edwin_dim anxious smile blush
 
     il "From what I understand, Edwin was also quite the traveller before we met."
 
-    show fleur_dim behind salome_dim with dissolve:
+    show fleur_dim happy behind salome_dim with dissolve:
         xzoom -1 xcenter 530
 
     fl "Do you have any stories, Edwin? I'd love to hear them."
 
+    show edwin_dim closed grin
+
     ed "Haha. To tell you everything that happened would tax my wits."
+
+    show fleur_dim nii
+    show salome_dim smile
 
     fl "Have you met any mythical creatures in your journeys? Ever met the fair folk?? I've always dreamed of finding one!!"
 
+    show edwin_dim anxious smile -blush
+
     ed "Let me think. There was this one time I had an encounter with a giant… "
+
+    show edwin_dim grin
 
     "Edwin regales the table with his tale of encountering a giant when he was atop a mountain. Fleur and Salome listen with rapturous attention."
 
     # Kellac and Anari leaves
 
-    show kellac_dim with dissolve:
+    show kellac_dim smile behind fleur_dim with dissolve:
         zoom 0.5 xcenter 800
 
     "Even Kellac takes an interest in these tales, and starts telling of his own travels. He loses track of time, and he decides that it is getting late, and he needs to head in early."
@@ -696,19 +740,24 @@ label act1:
 
     "Even though the party thins out a little, Fleur seems as excitable as when she began. Even Eisleigh, who kept to herself as she ate, joins in on the conversation."
 
-    show eisleigh_dim behind fleur_dim with dissolve:
+    show eisleigh_dim glance small behind fleur_dim with dissolve:
         xzoom -1 xcenter 1100
 
     ei "You've really travelled a long way if you came from across the sea, Edwin."
 
+    show fleur_dim sorry
+    show salome_dim neutral
     fl "Now I'm wondering, how did you meet Sister Ilona?"
 
+    show ilona_dim glance
+    show edwin_dim fear grin blush
     ed "Oh uh… Heh heh. That's a story for another time. I'm pretty tired…"
 
+    show fleur_dim wink happy
     fl "Oh, could it be…? Is the story of how you met Ilona not suitable for my ears?"
 
     # Eisleigh turns to left briefly to face Fleur
-    show eisleigh_dim:
+    show eisleigh_dim nii grin:
         xzoom 1
 
     ei "Ahaha, is that it? You might be onto something, Fleur."
@@ -716,39 +765,53 @@ label act1:
     show eisleigh_dim:
         xzoom -1
 
+    show fleur_dim nii
+    show ilona_dim closed aaaa sweat
     il "…"
     extend "(Girls these days are sharp.)"
 
+    show edwin_dim fear talk blush
+    show eisleigh_dim look smile
     ed "No no, that's not it at all! It's… not that interesting compared to my other stories."
 
+    show fleur_dim look smile
     fl "Hmph, I was under the impression you two shared a forbidden romance. Perhaps the strange forces that wander tonight will tip the scales at last!"
 
+    show salome_dim angry pensive
     sa "Fleur, you shouldn't tease guests. And you really shouldn't encourage her, Eisleigh!"
 
     # Fleur turns to left to face Salome
-    show fleur_dim:
+    show fleur_dim sorry happy:
         xzoom 1
-
+    show ilona_dim open relaxed -sweat
     fl "Mother, it's All Hallow's Eve! Tricks and pranks are part of the fun. I'm merely teaching Sister Ilona about this part of the festival — She shouldn't be so serious and uptight all the time!"
 
-    show uldin_dim behind fleur_dim, eisleigh_dim with dissolve:
+    show uldin_dim wink smirk worry blush behind fleur_dim, eisleigh_dim with dissolve:
         xzoom 1 xcenter 400
 
     ul "Well, they said they were on a pilgrimage. If their sins are meant to be forgiven in the end, they should be able to sin along the way all they want!"
 
+    show ilona_dim glance aaaa blush
     il "..."
 
+    show edwin_dim angry blush neutral
     ed "Grk..."
 
+    show salome_dim sad closed parted
     sa "Not you too, dear… You must have had too much to drink."
-
+    show salome_dim angry pensive neutral
+    show fleur_dim neutral look
+    show uldin_dim glance smirk
     "Salome gives one stern glance to both Fleur and Uldin, and their boisterous laughs subside. Uldin still seems pleased with his comment. When he recalls the looks on Ilona and Edwin's faces, he tries to not burst out laughing again."
 
     # Fleur turns to right to face Edwin/Ilona
-    show fleur_dim:
+    show fleur_dim sorry smile:
         xzoom -1
 
     fl "I apologize, Mother. And I apologize to you as well, Edwin and Sister Ilona, for insinuating something I should not have. "
+
+    show ilona_dim pensive solemn
+    show edwin_dim anxious
 
     "Ilona and Edwin sheepishly mumble their acceptance of Fleur's apology. There is still too much attention on them…"
 
@@ -760,8 +823,10 @@ label act1:
 
     "A brief moment later, Fleur rises from her seat. She helps Salome with preparing the tea, truly apologetic about her earlier behaviour."
 
+    show uldin_dim open
     ul "We've arranged separate sleeping quarters for the both of you. Please, don't take our jests seriously."
 
+    show edwin_dim open -blush
     ed "You've been most gracious to offer us both this feast and shelter for the night. Thank you again for your hospitality."
 
     ul "Oh no need, but if you must insist: you’re welcome."
@@ -772,19 +837,15 @@ label act1:
     scene bg hall alt
     with longfade
 
-    show eisleigh_dim at extra_left
-    show fleur_dim:
-        xzoom -1 xcenter 1200
-    show salome_dim at extra_right behind fleur_dim:
-        xzoom -1
-    with dissolve
-
     "At this point, Salome and Fleur have the tea ready, and Eisleigh helps in serving it to the guests, along with servings of milk and sugar at each end of the table."
 
     hide fleur_dim
     hide salome_dim
     hide eisleigh_dim
     with dissolve
+
+    scene bg hall night
+    with fade
 
     show uldin_dim at extra_right with dissolve:
         xzoom -1
@@ -799,10 +860,12 @@ label act1:
 
     ul "Though, I must admit I remain curious as to how you two met each other. Are you religious, Edwin?"
 
+    show edwin_dim anxious
     ed "As much as any other man. Our meeting, well… Ilona pulled me out of a dark place. We bonded over the stories and poems she was recording."
 
     ed "I did not want to let her travel alone, so I decided to act as her guard on this journey."
 
+    show uldin_dim closed
     ul "I see. Having a companion to talk about the same texts… That's not so different from me and Eisleigh."
 
     show eisleigh_dim behind uldin_dim:
