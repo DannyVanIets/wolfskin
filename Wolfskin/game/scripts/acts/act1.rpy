@@ -883,18 +883,24 @@ label act1:
     show eisleigh_dim angry look neutral
     ei "There have been sightings of a werewolf in another town."
 
+    show edwin_dim neutral distant sweat
+    show ilona_dim pensive neutral solemn
+
     show uldin_dim glance angry laugh
     ul "Those foul beasts… A werewolf truly must be cursed to succumb to their bloodlust."
 
     stop music fadeout 3.0
-
-    #TO DO: Add Tick Tock For Tension
+    stop sound fadeout 5.0
 
     "An oppressive silence lingers, and sweat beads down Edwin’s forehead. Ilona tries to keep a straight face, but her brow twitches."
 
     "Edwin adds more sugar to his tea, and he takes care to not rattle the crockery as he stirs it with the spoon."
 
+    show uldin_dim neutral
     ul "Please pay no heed to my language, it- It’s just..."
+
+    scene bg hall alt
+    with fade
 
     ul "Belorov was once an old fortress, so we don't have to worry about monster attacks. But in my youth, I experienced an attack first hand..."
 
@@ -906,25 +912,47 @@ label act1:
 
     ed "..."
 
-    show fleur_dim behind ilona_dim:
+    scene bg hall night
+    with fade
+
+    show uldin_dim angry neutral at extra_right:
+        xzoom -1
+    show ilona_dim pensive sad at less_left:
+        zoom 0.5
+    show edwin_dim distant sweat behind ilona_dim:
+        zoom 0.5 xzoom -1 xcenter 200
+    with dissolve
+
+    $ renpy.pause(2.0)
+
+    show fleur_dim sorry parted behind ilona_dim:
         xzoom 1 xcenter 850
     with dissolve
 
     fl "Edwin, are you okay? You're looking awfully pale."
 
+    show uldin_dim closed talk
     ul "I apologise, I might have gone too far..."
 
     # Ilona turns to left (facing Edwin)
-    show ilona_dim:
+    show ilona_dim open:
         xzoom -1
+
+    show fleur_dim look neutral
 
     il "...Do you need any assistance?"
 
+    show uldin_dim open relaxed neutral
+    show edwin_dim closed neutral
     ed "No, thank you, Ilona. And yes; Fleur, I think I may need to rest for the day. Please excuse me, my mind’s been all over the place."
 
+    show edwin_dim glance smile
     ed "I should be back in full spirits by tomorrow."
 
     ul "Very well. Eisleigh, if you may, show him to his room, please."
+
+    show eisleigh_dim closed talk behind uldin_dim with dissolve:
+        xcenter 1300
 
     ei "Of course."
 
@@ -937,14 +965,14 @@ label act1:
     scene bg door night light
     with fade
 
+    queue sound 'audio/ambience/dark forest.mp3' volume 0.2 fadein 3.0 noloop
+
     "Eisleigh unlocks the door by the stairs, and opens the guest room. She gives Edwin the key."
 
     scene bg bedroom night light
     with longfade
 
-    show edwin_dim at less_left:
-        zoom 0.5 xzoom -1
-    show eisleigh_dim at extra_left:
+    show eisleigh_dim closed neutral at extra_left:
         xzoom -1
     with dissolve
 
@@ -952,11 +980,9 @@ label act1:
 
     "He was prepared to run out of the manse, and to be alone in the darkness of night. Instead, he still has to play the role of an honoured houseguest."
 
-    hide eisleigh_dim with dissolve
-
     "Eisleigh bows, and leaves him with only saying a few words of comfort, hoping that he will feel better with rest. He nods, and then closes the door, locking it with the key."
 
-    hide edwin_dim with dissolve
+    hide eisleigh_dim with dissolve
 
     "The unexpected privacy given to him helps ease his mind and, feeling his skin cool, he wipes the cold sweat from his brow."
 
@@ -964,12 +990,16 @@ label act1:
 
     "Now, he is alone."
 
-    show edwin_dim at center with dissolve:
-        zoom 0.5
+    show edwin_dim closed furrow at less_left with dissolve:
+        zoom 0.5 xzoom-1
 
     "Edwin's towering frame lowers to the ground, and the floorboards creak slightly with his movement."
 
     "He kneels down by the bed, as though praying. It's as if he only now remembers how to breathe…"
+
+    hide edwin_dim
+
+    show bg black with fade
 
     ed "Lord, please have mercy on my soul…"
 
@@ -980,20 +1010,29 @@ label act1:
     ed "If I were to end it… right here and right now. Wouldn’t that be spectacular?"
 
     ed "Hah. Hahah."
+
+    scene bg bedroom night light
+    show edwin_dim angry furrow laugh at center:
+        zoom 0.9 yoffset 860
+    with fade
+
     extend " Ahahahahahahahahahahahahahhahah!"
 
     ed "Look at me, a husk of myself. Not even courage remains."
 
     ed "Pathetic. I should be better than this. Stronger than this."
 
+    show edwin_dim fury yell
     ed "What was the point of going through the trials of the military, otherwise?"
 
     ed "I’ve been through worse."
 
+    show edwin_dim fury talk
     ed "That day… I was brave, wasn’t I? I did save my sister from the werewolf attack, didn’t I?"
 
     ed "(But did I really do it for her? Or did my thirst for blood take over…)"
 
+    scene bg blood with fade
     ed "(A whiff of blood, and I’m running towards it…)"
 
     ed "(And he won't leave me alone since then. the Lord of the Forest, he calls himself.)"
@@ -1002,15 +1041,20 @@ label act1:
 
     ed "(And granting me the curse of the Wolfskin.)"
 
-    play music 'audio/music/Haunting.ogg'
-
     "The Wolfskin; a sash of wolf pelt that sits on his waist with intricate designs, foreign to this land. Or to any land, for that matter."
 
     "The gold glistens, and the red… Well, the red reflects the sheen of madness that rests within."
 
     ed "(Only the insane ones are bestowed with this torment. Like I…)"
 
+    scene bg bedroom night light
+    show edwin_dim sad neutral at center:
+        zoom 0.9 yoffset 860
+    with fade
+
     ed "...What am I doing?"
+
+    play music 'audio/music/Edwin Master Short.mp3' volume 0.2 fadein 2.0
 
     ed "Ilona told me once to hold onto hope… What’s done is done."
 
@@ -1018,11 +1062,18 @@ label act1:
 
     ed "(And I will bring Ilona down with me.)"
 
+    show edwin_dim sad talk furrow
+
     ed "Ilona… my-my darling…"
 
     ed "I wish I could say these words to your face…"
 
+    show edwin_dim angry
+
     ed "What a fool I am for having kept my affection a secret from you..."
+
+    hide edwin_dim
+    show bg black with fade
 
     ed "(Because now…)"
 
@@ -1032,13 +1083,18 @@ label act1:
 
     ed "But I promise you this, Ilona:"
 
+    scene bg bedroom night light
+    show edwin_dim closed neutral at center:
+        zoom 0.9 yoffset 860
+    with fade
+
     ed "I am not going to hurt you. I am going to do right by you. I am not going to hurt anyone who’s innocent."
 
     ed "It may seem the other way around, but whatever I do;"
 
-    ed "I will have a damn good reason for it."
+    show edwin_dim fury furrow
 
-    stop music fadeout 2.0
+    ed "I will have a damn good reason for it."
 
     # SCENE 9
 
