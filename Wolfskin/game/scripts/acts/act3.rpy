@@ -19,13 +19,16 @@ label act3:
 
 # SCENE 35-39
 
+    scene bg dungeon
+    with longfade
+
     ed "I retired to my bedroom after Uldin's story about the werewolf attack. I couldn't take much more of it. After that, I fell into a deep and dreamless sleep."
 
     ed "I first noticed the wolfskin was gone when I heard the scream. The faint scent of perfume made me think it must have been Salome's doing."
 
     il "Did you hear me knocking on your door?"
 
-    ed "I didn't know if you were alone — I heard Kellac's voice on the other side. I kept quiet knowing  I couldn't risk opening the door with my arms transformed."
+    ed "I didn't know if you were alone — I heard Kellac's voice on the other side. I kept quiet knowing I couldn't risk opening the door with my arms transformed."
 
     il "So, when Kellac and I left to seek help, you moved to the master bedroom."
 
@@ -125,6 +128,11 @@ label act3:
 
     "Once confirming that nobody is at the door to the dungeon, she exits outside. The door to the dungeon shuts with a metallic groan."
 
+    ## MANSE
+
+    scene bg chapel
+    with longfade
+
     "The wind howls, and she draws her nun's habit closer to her body. The ruins of the chapel loomed towards her, as though the remaining structure would threaten to collapse."
 
     an "What are you doing here, Ilona? Praying for help now of all times?"
@@ -153,15 +161,31 @@ label act3:
 
     an "Good. This should be entertaining."
 
+    ## KELLAC'S ROOM
+
+    scene bg kellacs room
+    with longfade
+
     "With that remark, Anari leaves. In the remaining time, Ilona reconvenes with Kellac. Eisleigh's condition is now stable and she is resting, the bleeding ceased."
 
+    ## FOREST: FLEUR SEARCH PARTY
+    scene bg forest day
+    with fade
+
     "As part of the investigation, Ilona and Kellac join the search party for Fleur. While doing so, Ilona searches for an escape route, and any part of the wall that may look like it could be scalable."
+
+    ## TOWN PLAZA
+    scene bg town plaza day
+    with fade
 
     "Eventually, Kellac takes his leave to watch over Eisleigh to make sure her condition remains stable; leaving Ilona in the town square."
 
     with logodissolve
 
 # SCENE 40
+
+    ## TOWN PLAZA: SUNSET
+    scene bg town plaza sunset
 
     "The day grows darker, and the sky is bathed in gold as the sun dips below the horizon. Edwin is brought out from the dungeon, his wolf-like arms bound in chains."
 
@@ -181,7 +205,8 @@ label act3:
 
     fl "{i}I could only choose one or the other, and so I have decided to take a test of faith to prove my worthiness: I will strike terror into the one who has abandoned me.{/i}"
 
-    fl "{i}In doing so, I have let fate decide my hand, and this was the result - to reunite me with the fair ones forevermore.{p}- Fleur Belorovna{/i}"
+    fl "{i}In doing so, I have let fate decide my hand, and this was the result - to reunite me with the fair ones forevermore."
+    extend " - Fleur Belorovna{/i}"
 
     an "We are certain that this is her hand-writing."
 
@@ -230,7 +255,7 @@ label act3:
     il "Then, here's my answer for who murdered Uldin: the culprit was Fleur."
     extend " The corpse of Salome has been misidentified."
 
-    an "What? How dare you doubt Kellac's judgement? You must be truly grasping at straws to make such bold claims!!"
+    an "What? How dare you doubt Kellac's judgement?  You must be truly grasping at straws to make such bold claims!"
 
     il "You said the corpse's face, hair and body was burned to an unrecognizable state. The only identifiers we had were Salome's ring, and her nightgown - all clothing and effects."
 
@@ -301,7 +326,7 @@ label act3:
 
     "It’s impossible to say what Anari might be thinking right now. Her posture unflinching, the totality of her being in complete focus. She asks the crowd to simmer down, her usual aura of conceit fading away."
 
-    "There is now only one question that remains-and a clocktower that's ticking away, endlessly."
+    "There is now only one question that remains - and a clocktower that's ticking away, endlessly."
 
     an "So where is she? Where is Salome?"
 
@@ -331,7 +356,7 @@ label act3:
 
     il "You're blaming us for being caught in a plot that we had no part in? You have done nothing but look for reasons to kill Edwin all along. For all I know, maybe you planned for this to happen, to usurp power in Belorov."
 
-    an "Hahahahaha! I didn't know nuns could tell jokes. As if I would ever wish  for such a thing."
+    an "Hahahahaha! I didn't know nuns could tell jokes. As if I would ever wish for such a thing."
 
     an "You should learn to choose your words more wisely, Sister. It's unbecoming of a holy woman… but I had the nagging suspicion you were a heretic from the first moment I saw you. Someone like you could never win."
 
@@ -351,6 +376,10 @@ label act3:
 
     "He continues to run on all fours, with only Ilona to guide him. She adjusts herself on his back, grasping tufts of thick fur. Anari scowls, and then goes to climb a tower to gain a higher vantage point."
 
+    ## TOWN WALL
+    scene bg belorov sunset
+    with longfade
+
     il "The gates will be already closed by now. There's a part of the wall that was hastily patched up. You should be able to climb through there."
 
     "Edwin takes a running leap, and latches his claws into the stone wall. He shifts back into his half-wolf form and starts climbing."
@@ -361,11 +390,12 @@ label act3:
 
     "There is one he cannot escape from. Anari's skill with a bow is frightening, her gaze ever calm and steady."
 
-    "Two arrows finally meet its target. They pierce his side, fired in rapid succession. Then three more pierce his ribs. This isn’t a problem for the werewolf, as he brushes aside the pain. He’s taken greater beatings  than this."
+    "Two arrows finally meet its target. They pierce his side, fired in rapid succession. Then three more pierce his ribs. This isn’t a problem for the werewolf, as he brushes aside the pain. He’s taken greater beatings than this."
 
     "However, he’s not invincible; a few more well placed shots and he’s down, along with Ilona."
 
-    il "Stay with me Edwin! Don’t lose sight of our escape. I’ll do my best to heal your wounds with- {w}Ah!"
+    il "Stay with me Edwin! Don’t lose sight of our escape. I’ll do my best to heal your wounds with-"
+    extend " Ah!"
 
     "An arrow pierces the hand with which Ilona was trying to use to heal. Her hand twists and contorts, reflexingly convulsing due to the writhing pain."
 
@@ -389,6 +419,8 @@ label act3:
 
     # Scene 46 - the voice direction here should sound a little slower than usual to reflect their injuries.
 
+    # TODO Add a new scnene, either forest or valley sunset
+
     "Edwin marches on, with Ilona in his arms. It’s too dangerous to be out in the open. They search for a place to rest, as dusk greets them with open arms."
 
     "Ilona heals the wound that pierced her abdomen through, and the blood slows. However, the wound does not close completely. The other arrows stuck in them would prove more dangerous to deal with, with no surgical equipment to use."
@@ -405,7 +437,7 @@ label act3:
 
     ed "What a fool I was to keep what I felt about you hidden…"
 
-    ed "The time I spent without you, in that cell. It was excruciating. And that’s when I realised, {w}how much I want you by my side."
+    ed "The time I spent without you, in that cell. It was excruciating. And that’s when I realised, how much I want you by my side."
 
     il "My, the exhaustion must be getting to you. So you weren't joking about wanting me to meet your family…"
 

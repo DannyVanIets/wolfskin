@@ -59,7 +59,10 @@ transform left_center:
     xcenter 640
 
 transform right_center:
-    xcenter 1280    
+    xcenter 1280
+
+
+## TINT MATRICES
 
 # I'm going bob ross over Here
 
@@ -73,6 +76,10 @@ define sunset_matrix = (
 
 define dim_matrix = (
     TintMatrix(Color(rgb=(0.9, 0.9, 1)))*BrightnessMatrix(-0.1)
+    )
+
+define bw_matrix = (
+    TintMatrix("#ffffff") * SaturationMatrix(0.0, (0.2, 0.2, 0.2))
     )
 
 # sprites with night shading
@@ -100,6 +107,13 @@ image eisleigh_dim = LayeredImageProxy("eisleigh", Transform(matrixcolor=dim_mat
 image salome_dim = LayeredImageProxy("salome", Transform(matrixcolor=dim_matrix))
 image uldin_dim = LayeredImageProxy("uldin", Transform(matrixcolor=dim_matrix))
 image fleur_dim = LayeredImageProxy("fleur", Transform(matrixcolor=dim_matrix))
+
+# sprites with bw shading
+image salome_bw = LayeredImageProxy("salome", Transform(matrixcolor=bw_matrix))
+image uldin_bw = LayeredImageProxy("uldin", Transform(matrixcolor=bw_matrix))
+image fleur_bw = LayeredImageProxy("fleur", Transform(matrixcolor=bw_matrix))
+
+## LAYERED IMAGES
 
 # begin auto_layeredimage for Edwin
 

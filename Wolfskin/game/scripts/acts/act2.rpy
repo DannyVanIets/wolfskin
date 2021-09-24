@@ -735,7 +735,7 @@ label act2:
 
     ed "I should've said something sooner rather than have you go through all of this. I'm sorry."
 
-    il "I believed you were innocent…!"
+    il "I believed you were innocent!"
 
     ed "If it truly were that simple, then… Well, I wouldn’t have been locked up."
 
