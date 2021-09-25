@@ -220,8 +220,6 @@ label act2:
     show ilona_dim relaxed open neutral
     il "Are there any to your taste?"
 
-    # TO DO: Implement a continous Clock Sound Tick Tock Tick Tock. No Music
-
     stop music fadeout 3.0
 
     show anari_dim look neutral
@@ -397,11 +395,15 @@ label act2:
     show anari_dim closed
     an "Not really, Eisleigh and Fleur seem to be in their own heads. Eisleigh, with the study of magic as an apprentice, and Fleur, being a little troublemaker and a prankster."
 
+    stop music fadeout 3.0
+
     show anari_dim angry glance smile
     an "My niece still plays jokes and tricks, even at her age. It's all childish nonsense…"
 
     show anari_dim neutral fear with dissolve
     an "Fleur…"
+
+    $ renpy.pause(1.0)
 
     scene bg fleur bedroom with dissolve
 
@@ -433,6 +435,8 @@ label act2:
 
     "Silence looms over, waiting to be broken. Anari glares, her hand instinctively touches one of her arrows. She grimaces, and folds her arms across her body."
 
+    play music 'audio/sfx/zapsplat clock.mp3' loop volume 0.3
+
     il "I’m sorry. I didn’t - I didn't mean to lash out at you like that. It’s just... I want to find the culprit behind this mess."
 
     an "It’s fine."
@@ -452,6 +456,10 @@ label act2:
     an "For your and Edwin’s sake, I suggest you use it."
 
     il "Which is?"
+
+    stop music fadeout 2.0
+
+    $ renpy.pause(1.0)
 
     an "It’s for the lycan to die, of course!"
 
@@ -482,17 +490,16 @@ label act2:
 
     scene bg_repeating_town_plaza_blurry
 
+    play music 'audio/music/Fade Away.ogg' volume 0.3
+
     "Ilona can feel her body covered in a light sweat. She can feel her heart leaping frantically inside her chest, just reminiscing about the conversation she had with Anari."
 
     "Kellac is waiting at the square, and he exchanges some words with Anari. Their voices are indistinct and quiet."
 
+    play sound 'audio/sfx/heartbeat.mp3' loop volume 0.1
     "Her own heart sounds louder in her ears, so much that it’s making her weak and dizzy… Her extremities are tingling."
 
     scene bg_repeating_town_plaza_kellac_blurry with fade
-
-    play sound 'audio/sfx/heartbeat.mp3' loop
-
-    play music 'audio/music/Fade Away.ogg'
 
     "It is taking everything for her to stay conscious. Anari glances at Ilona, before smiling to herself and walking away. Ilona sees a figure move in front of her, clad in black robes…"
 
@@ -508,17 +515,21 @@ label act2:
 
     stop sound
 
-    stop music
-
     # TRANSITION TO BLACK.
     scene bg black
     with fade
 
+    stop music fadeout 2.0
+
     ke "Ilona?"
+
+    $ renpy.pause(1.0)
 
     # NOTE for SFX: (vpunch effect + sound of collapsing?)
     with vpunch
-    play sound 'audio/sfx/Gravel Floor Fall 1.mp3'
+    play sound 'audio/sfx/Gravel Floor Fall 1.mp3' volume 0.6
+
+    $ renpy.pause(2.0)
 
     ## KELLAC'S ROOM : NOON TIME
     with logodissolve

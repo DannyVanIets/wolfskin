@@ -340,10 +340,10 @@ define logodissolve = MultipleTransition([
 # drop shadows for dialogue box
 
 style say_label:
-    outlines [ ( 0, "#000000", 2, 2) ]
+    outlines [ ( 0, "#000000", 1, 1) ]
 
 style say_dialogue:
-    outlines [ ( 0, "#000000", 2, 2) ]
+    outlines [ ( 0, "#000000", 1, 1) ]
 
 # The game starts here.
 label start:

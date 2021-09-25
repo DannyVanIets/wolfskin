@@ -1220,12 +1220,13 @@ label act1:
     queue music 'audio/music/Death Tolls.ogg' volume 0.4
 
     "The piercing sound of a howl wakes Kellac first, followed shortly by a woman's loud scream."
-    play sound 'audio/sfx/wood door close.mp3' volume 0.4
+    play sound 'audio/sfx/wood door open and close.wav' volume 0.7
     extend " His door opens with a slam, sensing something is incredibly wrong…"
 
     scene bg bedroom night dark
     with fade
 
+    play sound 'audio/sfx/footsteps hurried.wav' volume 0.4
     "Ilona hears footsteps rush past her room, and her eyes flutter open; registering what woke her. She puts on her habit, covering her head, and hurries out the door, unlocking it first…"
 
     scene bg hallway night dark
@@ -1238,6 +1239,7 @@ label act1:
     show kellac_twilight yell
     ke "There's no time to lose! See if you can wake him up, I'm going on ahead!"
 
+    play sound 'audio/sfx/stairs ascending hurried.wav' volume 0.3 fadeout 3.0
     hide kellac_twilight with dissolve
 
     "He runs up the stairs. For a man who always seems so weary, there is a vivacity in his face now that danger is present."
@@ -1273,6 +1275,7 @@ label act1:
 
     "Ilona feels her heart lurch."
 
+    play sound 'audio/sfx/stairs ascending hurried.wav' volume 0.4 fadeout 2.0
     "She stumbles up the stairs, finding Kellac at the door to what seems to be the master’s chambers."
 
     scene bg master door night
@@ -1301,6 +1304,7 @@ label act1:
 
     ke "The servants' quarters are on the other side of the house, up the stairs. Get a master key for this door!"
 
+    play sound 'audio/sfx/footsteps hurried.wav' volume 0.2
     hide kellac_twilight with dissolve
     hide ilona_twilight with dissolve
 
@@ -1328,6 +1332,8 @@ label act1:
     with longfade
 
     $ renpy.pause(1.0)
+
+    play sound 'audio/sfx/stairs ascending hurried.wav' volume 0.2
 
     "When they rush back to the masters' chambers, there is no use for the master key. They find the door broken and battered, but no sign of Anari or Kellac yet."
 
@@ -1383,13 +1389,13 @@ label act1:
     "The sound of footsteps rushes up the stairs again, and Ilona knows immediately who it is."
 
     scene bg hallway night dark
-    show anari_twilight angry scary sweatdrop cringe kill at center:
+    show anari_twilight furious scary yell kill at center:
         zoom 0.7 yoffset 220
     with dissolve
 
     an "Get away from him, Ilona!"
 
-    show anari_twilight blank cringe with dissolve
+    show anari_twilight cringe sweatdrop with dissolve
     an "I knew there was something wrong with him. I should've shot him dead when I had the chance…"
 
     "Instead of the cool and elegant Anari that Ilona had seen before, she disguises her sorrow with fury instead."
