@@ -67,7 +67,7 @@ transform right_center:
 # I'm going bob ross over Here
 
 define dark_matrix = (
-    TintMatrix(Color(rgb=(0.46, 0.7, 1.1)))*BrightnessMatrix(-0.05)
+    TintMatrix(Color(rgb=(0.46, 0.7, 1.2)))*BrightnessMatrix(-0.02)
     )
 
 define sunset_matrix = (
@@ -82,7 +82,20 @@ define bw_matrix = (
     TintMatrix("#ffffff") * SaturationMatrix(0.0, (0.2, 0.2, 0.2))
     )
 
-# sprites with night shading
+define twilight_matrix = (
+    TintMatrix(Color(rgb=(0.9, 1.0, 1.2)))*BrightnessMatrix(-0.08)
+    )
+
+# sprites with night shading (weak)
+image edwin_twilight = LayeredImageProxy("edwin", Transform(matrixcolor=twilight_matrix))
+image ilona_twilight = LayeredImageProxy("ilona", Transform(matrixcolor=twilight_matrix))
+image anari_twilight = LayeredImageProxy("anari", Transform(matrixcolor=twilight_matrix))
+image kellac_twilight = LayeredImageProxy("kellac", Transform(matrixcolor=twilight_matrix))
+image eisleigh_twilight = LayeredImageProxy("eisleigh", Transform(matrixcolor=twilight_matrix))
+image salome_twilight = LayeredImageProxy("salome", Transform(matrixcolor=twilight_matrix))
+image uldin_twilight = LayeredImageProxy("uldin", Transform(matrixcolor=twilight_matrix))
+
+# sprites with night shading (strong)
 image edwin_night = LayeredImageProxy("edwin", Transform(matrixcolor=dark_matrix))
 image ilona_night = LayeredImageProxy("ilona", Transform(matrixcolor=dark_matrix))
 image anari_night = LayeredImageProxy("anari", Transform(matrixcolor=dark_matrix))
