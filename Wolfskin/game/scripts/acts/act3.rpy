@@ -137,11 +137,23 @@ label act3:
 
     "The wind howls, and she draws her nun's habit closer to her body. The ruins of the chapel loomed towards her, as though the remaining structure would threaten to collapse."
 
+    show anari at center:
+        zoom 0.7 yoffset 300
+    with dissolve
+
     an "What are you doing here, Ilona? Praying for help now of all times?"
+
+    hide anari with dissolve
 
     "Ilona's heart leaps when she hears Anari speak so suddenly."
 
     # knowing that she sounds suspicious, but spoken confidently like she's trying to regain composure
+
+    show ilona at left:
+        zoom 0.5
+    show anari at right:
+        zoom 0.5
+    with dissolve
 
     il "…Indeed. I was praying for your success in finding Fleur. Are there any new leads?"
 
@@ -193,6 +205,10 @@ label act3:
 
     "Anari is waiting, and several of the townsfolk look to the pyre stacked in the middle of the town square. There is an air of formality surrounding her, clad in her red hunting garments. They seem even more vibrant, illuminated by the glow of the sun."
 
+    show anari_twilight at center:
+        zoom 0.6 yoffset 200
+    with dissolve
+
     an "We will begin the proceedings against Edwin, who was apprehended this morning."
 
     an "He has made his companionship with the nun, Ilona, clear. Ilona has been harboring him with the knowledge that he is a werewolf."
@@ -205,12 +221,24 @@ label act3:
 
     "Anari's face is grim. She pulls out a letter, the seal on it broken. She reads the brief message out loud for all to hear."
 
+    hide anari_twilight with dissolve
+
+    show lost_fl at center:
+        zoom 0.5
+    with dissolve
+
     fl "{i}By the time you receive this letter, I will be reunited with who I consider to be my true family.{/i}"
 
     fl "{i}I could only choose one or the other, and so I have decided to take a test of faith to prove my worthiness: I will strike terror into the one who has abandoned me.{/i}"
 
     fl "{i}In doing so, I have let fate decide my hand, and this was the result - to reunite me with the fair ones forevermore."
     extend " - Fleur Belorovna{/i}"
+
+    hide lost_fl with dissolve
+
+    show anari_twilight at center:
+        zoom 0.6 yoffset 200
+    with dissolve
 
     an "We are certain that this is her hand-writing."
 
@@ -220,7 +248,15 @@ label act3:
 
     an "…With that matter settled, let's proceed with Edwin. The nun Ilona has prepared a defence. Please, rise."
 
+    hide anari_twilight with dissolve
+
 # SCENE 41
+
+    show ilona_twilight at left:
+        zoom 0.5
+    show anari_twilight at right:
+        zoom 0.5
+    with dissolve
 
     "The words were stuck in Ilona's throat. She thinks deeply about the contents of Fleur's letter, but it truly sounds like the young girl mysteriously vanished."
 
@@ -376,7 +412,17 @@ label act3:
 
     an "You should learn to choose your words more wisely, Sister. It's unbecoming of a holy woman… but I had the nagging suspicion you were a heretic from the first moment I saw you. Someone like you could never win."
 
+    hide ilona_twilight
+    show anari_twilight at center:
+        zoom 0.8 yoffset 450
+    with dissolve
+
     "With a signal of Anari's hand, two town guards move in on Ilona and grip her arms tightly; drawing them behind her back. The men tried to bind Ilona's hands together with thick rope."
+
+    hide anari_twilight
+    show ilona_twilight at center:
+        zoom 0.8 yoffset 450
+    with dissolve
 
     il "Aaaaaaaahh! Let me go!"
 
