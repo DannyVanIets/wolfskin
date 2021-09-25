@@ -6,15 +6,15 @@
 # name of the character.
 
 define test = Character("Remove") # Remove any text from this character before uploading and remove the character too!
-define il = Character("Ilona", ctc="ctc_anchored", ctc_position="fixed")
-define ed = Character("Edwin", ctc="ctc_anchored", ctc_position="fixed")
-define an = Character("Anari", ctc="ctc_anchored", ctc_position="fixed")
-define fl = Character("Fleur", ctc="ctc_anchored", ctc_position="fixed")
-define ke = Character("Kellac", ctc="ctc_anchored", ctc_position="fixed")
-define ei = Character("Eisleigh", ctc="ctc_anchored", ctc_position="fixed")
-define sa = Character("Salome", ctc="ctc_anchored", ctc_position="fixed")
-define ul = Character("Uldin", ctc="ctc_anchored", ctc_position="fixed")
-define unk = Character("???", ctc="ctc_anchored", ctc_position="fixed")
+define il = Character("Ilona", ctc="ctc_anchored", ctc_position="fixed", namebox_background = "gui/ribbons/ilona_ribbon.png")
+define ed = Character("Edwin", ctc="ctc_anchored", ctc_position="fixed", namebox_background = "gui/ribbons/edwin_ribbon.png")
+define an = Character("Anari", ctc="ctc_anchored", ctc_position="fixed", namebox_background = "gui/ribbons/anari_ribbon.png")
+define fl = Character("Fleur", ctc="ctc_anchored", ctc_position="fixed", namebox_background = "gui/ribbons/fleur_ribbon.png")
+define ke = Character("Kellac", ctc="ctc_anchored", ctc_position="fixed", namebox_background = "gui/ribbons/kellac_ribbon.png")
+define ei = Character("Eisleigh", ctc="ctc_anchored", ctc_position="fixed", namebox_background = "gui/ribbons/eisleigh_ribbon.png")
+define sa = Character("Salome", ctc="ctc_anchored", ctc_position="fixed", namebox_background = "gui/ribbons/salome_ribbon.png")
+define ul = Character("Uldin", ctc="ctc_anchored", ctc_position="fixed", namebox_background = "gui/ribbons/uldin_ribbon.png")
+define unk = Character("???", ctc="ctc_anchored", ctc_position="fixed", namebox_background = "gui/ribbons/default_ribbon.png")
 define narrator = Character(name=None, ctc="ctc_anchored", ctc_position="fixed")
 
 # moving sprites.
