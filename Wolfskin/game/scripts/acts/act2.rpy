@@ -26,7 +26,7 @@ label act2:
     scene bg masters chamber
     with longfade
 
-    play music 'audio/music/Haunting.ogg'
+    play sound 'audio/music/janbezo wind.ogg' volume 0.3
 
     # TODO show Ilona and Kellac
 

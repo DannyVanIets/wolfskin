@@ -10,7 +10,7 @@
 
 transform credits_scroll(speed):
     ypos 1100  # This is the space between the top of the screen and the text 'credits'.
-    linear speed ypos -12800 # This is how far down the screen will scroll, with the speed for how fast it will scroll.
+    linear speed ypos -23500 # This is how far down the screen will scroll, with the speed for how fast it will scroll.
 
 screen credits():
     # Make a menu of this, so you do not have main menu in the background while the credits are rolling.
@@ -32,11 +32,11 @@ screen credits():
     ## returns to its normal flow.
     ## Ideally, there is some wait time after the the credits reaches the end.
     ## If you make the credits longer or shorter, you need to adjust this timer!
-    timer 70.0 action Return()
+    timer 380.0 action Return()
 
     ## Adjust this number to control the speed at which the credits scroll.
     ## Needs to be adjusted if you make the credits longer or shorter.
-    frame at credits_scroll(60.0):
+    frame at credits_scroll(195.0):
         background None
         xalign 0.5
 
@@ -77,7 +77,7 @@ screen credits():
 
             null height 400
 
-            text "Creative Director, Lead Artist" size 100
+            text "Creative Director" size 100
             null height 80
             text "Tamafry"
 
@@ -89,9 +89,41 @@ screen credits():
 
             null height 400
 
-            text "Editor" size 100
+            text "Editor and Proofreader" size 100
             null height 80
             text "Billie"
+
+            null height 400
+
+            text "Casting and Voice Director" size 100
+            null height 80
+            text "Maxi Molina (SandraMJ)"
+
+            null height 400
+
+            text "Script Editors" size 100
+            null height 80
+            text "Jordan K. Brown"
+            null height 80
+            text "Maxi Molina (SandraMJ)"
+
+            null height 400
+
+            text "Voice Audio Editing Team" size 100
+            null height 80
+            text "Jordan K. Brown"
+            null height 80
+            text "Luis \"RunnerGuitar\" Guerrero"
+            null height 80
+            text "ObsidianWasp"
+            null height 80
+            text "ThatOneNerd"
+
+            null height 400
+
+            text "Voice Mastering" size 100
+            null height 80
+            text "Luke Ford"
 
             null height 400
 
@@ -101,19 +133,33 @@ screen credits():
 
             null height 400
 
-            text "Programmer" size 100
+            text "Programmers" size 100
+            null height 80
+            text "Gaming Variety Potato"
             null height 80
             text "Vygan"
 
             null height 400
 
-            text "Background Artist" size 100
+            text "Lead Artist" size 100
+            null height 80
+            text "Tamafry"
+
+            null height 400
+
+            text "CG Assistance" size 100
+            null height 80
+            text "Luis \"RunnerGuitar\" Guerrero"
+
+            null height 400
+
+            text "Assistant BG Artist & Colours" size 100
             null height 80
             text "Jason"
 
             null height 400
 
-            text "GUI and Promotional Assets Designer" size 100
+            text "GUI & Graphic Designer" size 100
             null height 80
             text "Kaya"
 
@@ -125,45 +171,100 @@ screen credits():
 
             null height 400
 
-            text "Music Composer, Arranger, Mixer" size 100
+            text "Music Composers" size 100
             null height 80
             text "Luis \"RunnerGuitar\" Guerrero"
-
-            null height 400
-
-            text "Music Composer" size 100
             null height 80
             text "Octavio Savinelli"
-
-            null height 400
-
-            text "Music Composer, Sound Designer" size 100
             null height 80
             text "Luke Ford"
 
             null height 400
 
-            text "Casting and Voice Director, Script Editor" size 100
+            text "Music Arranger and Mixer" size 100
             null height 80
-            text "Maxi Molina (SandraMJ)"
+            text "Luis \"RunnerGuitar\" Guerrero"
+
+            null height 400
+
+            text "Sound Designer" size 100
+            null height 80
+            text "Luke Ford"
+
+            null height 400
+
+            text "Background Resources" size 100
+            null height 80
+            text "Ľuboš Repta"
+            null height 80
+            text "Daniel Thornton"
+            null height 80
+            text "Jack1956"
+            null height 80
+            text "Zidikai1"
+            null height 80
+            text "Leonid Evdokimov"
+            null height 80
+            text "Александр Байдуков"
+            null height 80
+            text "Horia Varlan"
+            null height 80
+            text "Gary Todd"
+            null height 80
+            text "Monyesz"
+            null height 80
+            text "of Wikicommons"
+
+            null height 400
+
+            text "Graphic Resources" size 100
+            null height 80
+            text "Racool Studio"
+            null height 80
+            text "Jannoon028"
+            null height 80
+            text "GaryKillian"
+            null height 80
+            text "of Freepik"
+
+            null height 400
+
+            text "Sound Effect Resources" size 100
+            null height 80
+            text "PatrickLieberkind"
+            null height 80
+            text "InspectorK"
+            null height 80
+            text "Tim Kahn"
+            null height 80
+            text "nhaudio"
+            null height 80
+            text "of Freesound"
 
             null height 400
 
             text "Special Thanks" size 100
             null height 80
+            text "Avery Beardmore"
+            null height 80
+            text "Adam, Sam, Selene and Chase"
+            null height 80
+            text "Jessica and Jacob Elaouf of Exigent"
+            null height 80
             text "Remort Studios for hosting this Visual Novel Jam."
+            null height 400
 
             null height 400
 
-            text "Made with Ren'Py [renpy.version_only]." size 100
+            text "No real animals were harmed in the making of this visual novel." size 100
 
             null height 400
 
-            text "Made for the Spooktober 3rd Annual Visual Novel Jam by DevTalk." size 100
+            text "This project was created for the Spooktober 3rd Annual Visual Novel Jam by DevTalk" size 100
 
             null height 600
 
-            text "And thank you, the player, for playing this game!" size 100
+            text "And thank you — the player — for playing this game. We hope you enjoyed it." size 100
 
 # The styling for all the credit text.
 style credits_hbox:
