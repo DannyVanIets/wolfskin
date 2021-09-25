@@ -26,7 +26,7 @@ label act2:
     scene bg masters chamber
     with longfade
 
-    play sound 'audio/music/janbezo wind.ogg' volume 0.3
+    play sound 'audio/ambience/janbezo wind.ogg' volume 0.3
 
     # TODO show Ilona and Kellac
 
@@ -44,7 +44,7 @@ label act2:
     show bw_ul_murder at left_center:
         zoom 0.5
     show bw_sa_murder at right_center:
-        zoom 0.5
+        zoom 0.5 xzoom-1
     with dissolve
 
     "From what is seen, Uldin died of blood loss from a wound to his neck, and Salome shows signs of burns surpassing the third degree."
@@ -55,9 +55,11 @@ label act2:
     hide bw_sa_murder
     with dissolve
 
-    show ilona_dim at left:
+    play music 'audio/music/Haunting.ogg' fadein 2.0
+
+    show ilona_dim aaaa pensive at left:
         zoom 0.5
-    show anari_dim at right:
+    show anari_dim look neutral at right:
         zoom 0.5
     with dissolve
 
@@ -67,17 +69,27 @@ label act2:
 
     il "(Apparently, Uldin was capable of using fire magic. Did Salome get caught in his attack? I can't really imagine that happening.)"
 
+    show ilona_dim at gocenter_transform
+
+    $ renpy.pause(2.0)
+
+    show ilona_dim at centertoleft_transform:
+        xzoom-1
+
+    $ renpy.pause(2.0)
+
     "Ilona tries to find anything else in the room that could have been used. On the nightstand, there's a candle turned over. Droplets of now hard wax marred the wood surface. "
 
     "The burns scorching the wall and room seem too significant to come from just a candle. Near the bed, and on the floor are traces of fur. Some of it is burnt."
 
     an "Anything out of place?"
 
+    show ilona_dim open annoyed with dissolve:
+        xzoom 1
     il "There's traces of fur, but that's about it. What about the other rooms?"
 
+    show anari_dim talk open
     an "Eisleigh told me there was something that felt out of place in Fleur's room. I'll also let you look through Salome's room."
-
-    stop music fadeout 3.0
 
 # SCENE 17
 
@@ -92,16 +104,17 @@ label act2:
 
     show ilona_dim at left:
         zoom 0.5
-    show anari_dim at right:
+    show anari_dim look neutral at right:
         zoom 0.5
     with dissolve
 
     il "She asked you to go over the events of the day with her, after she met with us. I assume you came to her room, Anari?"
 
+    show anari_dim smile at right
     an "Correct. I gave my report about seeing you and Edwin for the lady's record-keeping. The one thing that's not where it should be is the chest. Though…"
 
     # Let Anari turn around to the right facing the chest
-    show anari_dim at right_center with dissolve:
+    show anari_dim angry neutral at right_center with dissolve:
         xzoom -1
 
     il "What is it? Please, don't hold back."
@@ -109,19 +122,19 @@ label act2:
     an "I don't think it has anything to do with the murders. That chest is meant for Fleur when she is married. Salome had it made recently."
 
     # Anari turns back to face Ilona
-    show anari_dim:
+    show anari_dim relaxed:
         xzoom 1
 
     an "It's natural she might have moved it since I was last here. She does worry about Fleur's future, after all… Salome was still considering which items should go inside. "
 
     "It surprises Ilona that Anari became so candid at this moment. Salome and Anari were closer in age, and it made sense that Anari acted as Salome's confidant."
 
+    stop music fadeout 3.0
+
     ## FLEUR'S BEDROOM
 
     scene bg fleur bedroom
     with longfade
-
-    play music 'audio/music/Echoing - Theme Of Fleur -.ogg'
 
     "They then move to investigate Fleur's room. Ilona couldn't help but be curious about what Anari said earlier. Opening the young girl's room, both of them notice a distinct lump in the bed."
 
@@ -135,6 +148,8 @@ label act2:
 
     "When they reach the bed, Ilona isn't sure what to expect. Anari remains behind her, and nods for Ilona to pull back the covers. Ilona could see something that looked like it's carved from wood…"
 
+    play music 'audio/music/Echoing - Theme Of Fleur -.ogg'
+
     # wood effigy
     show effigy at center with longdissolve:
         zoom 0.5
@@ -143,9 +158,9 @@ label act2:
 
     "The face looks eerily like Fleur, her expression mysterious; neither happy nor sad. The rest of the body looks as though it remains trapped inside a still-living tree."
 
-    show ilona_dim at left:
+    show ilona_dim glance annoyed sweat at left:
         zoom 0.5
-    show anari_dim at right:
+    show anari_dim blank angry cringe fear at right:
         zoom 0.5
     with dissolve
 
@@ -156,6 +171,7 @@ label act2:
     an "I-I've seen quite enough. I don't want to remain in this ghastly room."
 
     hide anari_dim with dissolve
+    show ilona_dim shock sad talk
 
     "She turns immediately on her heel. The sudden reaction surprises Ilona, and she is unsure whether to follow or not."
 
@@ -164,10 +180,11 @@ label act2:
     scene bg hallway
     with longfade
 
-    show ilona_dim at left with dissolve:
+    show ilona_dim at less_left:
         zoom 0.5
-    show anari_dim at extra_right with longdissolve:
+    show anari_dim closed talk angry shadow at extra_right:
         zoom 0.5
+    with longdissolve
 
     "Finding nothing else of note in the room, Ilona rejoins Anari. She finds Anari with her back pressed to the wall, steadily taking deep breaths."
 
@@ -177,8 +194,10 @@ label act2:
 
     il "Anari… you don’t look too well. I think we should pause our investigation for the moment."
 
+    show ilona_dim glance solemn
     il "Umm… would you like some tea?"
 
+    show anari_dim look cringe
     an "...Tea?"
 
     # Anari moves slightly to the left (from wall) to show outburst
@@ -187,111 +206,179 @@ label act2:
 
     an "Does it look like I’m in the mood for some tea right now? In the middle of this mess? Is there something wrong with your head, Sister? Have you forgotten the situation we find ourselves in?"
 
+    show anari_dim blank
     an "Or are you trying to lace my drink with-"
 
+    show ilona_dim pensive annoyed
     il "I can assure you, it’s none of that. I want to find the culprit as much as you do. But I’ll need your help for that."
 
     il "I only wish to see that you’re in good health to proceed, so I thought we could take a quick break-"
 
+    show anari_dim open neutral
     an "With some tea, I get it. Very well, I must tell you that I despise the leaves from this country, so you'd better make a damn fine cup."
 
+    show ilona_dim relaxed open neutral
     il "Are there any to your taste?"
 
     # TO DO: Implement a continous Clock Sound Tick Tock Tick Tock. No Music
 
     stop music fadeout 3.0
 
+    show anari_dim look neutral
     an "…Fine black tea, with bitter orange. I think Uldin still had some in his pantry."
+
+    scene bg black with fade
 
     "Both of them fall silent. There is nobody in the house who can say what to do with Uldin's possessions… Anari isn't even sure if he left a will."
 
     "Uldin isn't around anymore to enjoy what he had in life, that is certain."
 
-    ## HALLWAY
-
-    scene bg hall day
-    with longfade
-
     "Anari goes into the pantry and finds some tea bricks sealed in a container. She was sure that last night, Salome and Fleur did talk about this kind of tea."
-
-    show ilona_dim at left:
-        zoom 0.5
-    show anari_dim at right:
-        zoom 0.5
-    with dissolve
 
     "Ilona, feeling some remorse as though the two of them were bandits, prepares the deceased man's tea according to Anari's instruction. Trying her best to be hospitable, Ilona also serves it with milk and sugar, as Fleur did."
 
+    scene bg hall day
+    show ilona_dim at left:
+        zoom 0.5
+    show anari_dim angry neutral at right:
+        zoom 0.5
+    with dissolve
+
+    show ilona_dim smile pensive
     il "Here you go. Please, have some."
 
-    "Ilona serves tea to Anari. As expected, Anari does not take any of the milk or sugar. In contrast, Ilona puts a generous amount of both in hers. The taste was far too bitter for her to enjoy so early in the morning."
+    play music 'audio/sfx/zapsplat clock.mp3' loop volume 0.3
 
+    "Ilona serves tea to Anari. As expected, Anari does not take any of the milk or sugar."
+    play sound 'audio/sfx/zapsplat tea.mp3' volume 0.2
+    extend " In contrast, Ilona puts a generous amount of both in hers. The taste was far too bitter for her to enjoy so early in the morning."
+
+    show anari_dim closed raised neutral
     "Anari leans back in her chair, closing her eyes and taking in the aroma. She takes a sip before putting her tea cup down elegantly, without even the slightest clatter."
 
+    show anari_dim angry
     "Ilona follows suit, but she is not nearly as graceful. Anari rubs her temples with the tips of her fingers, before speaking again."
 
+    show anari_dim smile
     an "Not bad. Tell me, are all nuns this annoying?"
 
+    show ilona_dim annoyed neutral
     il "Pardon me?"
 
+    show anari_dim look
     an "Whatever you're trying to do is futile. Re-examining the corpses or the rooms won't change anything — Edwin was the one who killed them."
 
+    show ilona_dim aaaa pensive talk
     il "What makes you so sure of that?"
 
     an "I heard the details from Kellac and Eisleigh."
 
-    "Anari details how the events played out: Salome screamed. It was heard by Kellac and Ilona, sleeping on the floor below. Edwin was not in his room."
+    scene bg masters chamber night
+    with dissolve
+    show salome_sil at right:
+        xzoom-1
+    with longdissolve
+    "Anari details how the events played out: Salome screamed."
+    scene bg door night dark
+    show kellac_night at left:
+        zoom 0.7 yoffset 300
+    show ilona_night at right:
+        zoom 0.7 xzoom-1 yoffset 300
+    with dissolve
+    extend " It was heard by Kellac and Ilona, sleeping on the floor below. Edwin was not in his room."
 
+    scene bg masters chamber night
+    show salome_sil at right:
+        xzoom-1
+    show edwin_sil wolf at center:
+        zoom 0.5 xzoom-1
+    with dissolve
+
+    $ renpy.pause(1.0)
+
+    show salome_bw at right:
+        xzoom-1
+    show edwin_bw wolf at center:
+        zoom 0.5 xzoom-1
+    with longdissolve
     "Therefore, Edwin was already inside the master's chambers at the time of the murder."
 
+    scene bg hallway night dark
+    with dissolve
     "It took some time to make it to the servants quarters and the other guest lodgings, which are on the opposite end of the manse."
+
+    scene bg hall day
+    show ilona_dim at left:
+        zoom 0.5
+    show anari_dim look neutral at right:
+        zoom 0.5
+    with dissolve
+
+    stop music fadeout 5.0
 
     an "Everyone's locations were accounted for:"
 
     an "I was on patrol as the head of the town guard. Kellac was the first one to react to the scream, followed by you. Eisleigh was in her room."
 
+    show anari_dim open angry smile
     an "Each of us were able to confirm each others' locations at the time of the murder. The only one who couldn't be found was Edwin."
 
+    show ilona_dim closed talk
     il "How do you suppose that everyone is saying the absolute truth?"
 
+    play music 'audio/music/Ilona Theme.mp3' volume 0.3 loop
     il "Kellac could have acted as if he had witnessed the murder. We have no account of what he was doing before that."
 
     il "There was also nobody around to confirm that Eisleigh was not at the crime scene, and I found her alone."
 
+    show ilona_dim angry aaaa talk
     il "And finally, where was Fleur? You do understand where I’m coming from, yes?"
 
+    show ilona_dim neutral
+    show anari_dim look angry neutral
     an "...I do. You’re smarter than you look, nun."
 
     an "Indeed, Fleur was missing at the time of the murder. Nobody had seen her enter, or exit the manse. I'll give you that much, but I highly doubt she could be the murderer. She's far too frail."
 
+    show ilona_dim glance annoyed talk
     il "The door was destroyed in the time it took for Eisleigh and I to return. How do you explain that?"
 
+    show ilona_dim neutral
+    show anari_dim open smile sweatdrop
     an "Does the door being destroyed really mean anything? It doesn't change the fact that Edwin was at the crime scene. Transformed."
 
     il "…"
 
+    show anari_dim -sweatdrop
     an "Let me cue you in on this: out of everyone around here, you and Edwin are the most suspicious."
 
     an "The two of you are outsiders, whereas we’ve all known each other for a long time."
 
+    show anari_dim look
     an "I don't plan on letting my bias against the two of you get the better of me, however. Let's start at the beginning: what could be the motivation for the murder?"
 
     an "Kellac was an associate of Uldin and I during the war. He’s selfless, to the point of stupidity. I guess serving as a medic will do that to you."
 
     an "It’s hard to admit this, but I consider Kellac to be a close friend. He is a kind-hearted man."
 
+    show anari_dim closed relaxed neutral
     an "But that is no reason for letting him off the hook. He simply… has no reason for murder."
 
+    show ilona_dim talk solemn
     il "Please explain."
 
+    show ilona_dim neutral
     an "He’s as kind as he is weak, so I doubt he could overpower both Uldin and Salome. Anything he could have ever needed, whether coin or rare books on magic, he could have simply asked Uldin."
 
     an "And Uldin wouldn't have hesitated, because they share quite the history."
 
+    show anari_dim open
     an "Although, one thing I can tell you for sure is: Kellac is hiding something. Before he settled here, he had done nothing but walk and regret for five years, or so he says. It keeps him up at night."
 
+    show anari_dim look
     an "Whether it’s related to this case, I do not know."
 
+    show ilona_dim open neutral
     il "Hmm… I see."
 
     il "What about Eisleigh? I honestly don’t know much about her."
@@ -300,23 +387,39 @@ label act2:
 
     an "She's been doing her fair share of blunders lately, but I know she takes her job seriously…  Perhaps she's just daydreaming more."
 
+    show anari_dim open worry smile
     an "I'm not saying that she's incompetent, let me get that straight. As long as her clumsiness doesn't get in my way."
 
     an "Though, I don't know much about her either to determine her motivation."
 
     il "Is she close with Fleur? They are almost the same age."
 
+    show anari_dim closed
     an "Not really, Eisleigh and Fleur seem to be in their own heads. Eisleigh, with the study of magic as an apprentice, and Fleur, being a little troublemaker and a prankster."
 
+    show anari_dim angry glance smile
     an "My niece still plays jokes and tricks, even at her age. It's all childish nonsense…"
 
+    show anari_dim neutral fear with dissolve
     an "Fleur…"
+
+    scene bg fleur bedroom with dissolve
 
     "Anari was confident up until this point, calm and refined. Now, dread and restlessness begins to take over."
 
-    "Yet she could not overlook the superstitions, even for someone as experienced of a hunter. The wooden effigy of Fleur, her disapearance, the uncertainty behind the murder tarnishes Anari's unshakeable visage."
+    show effigy at center with dissolve:
+        zoom 0.5
+
+    "Yet she could not overlook the superstitions, even for someone as experienced of a hunter. The wooden effigy of Fleur, her disappearance, the uncertainty behind the murder tarnishes Anari's unshakeable visage."
 
     "Moreover, Ilona’s demeanour and her relationship with Edwin…"
+
+    scene bg hall day
+    show ilona_dim sad pensive at left:
+        zoom 0.5
+    show anari_dim angry glance neutral fear at right:
+        zoom 0.5
+    with dissolve
 
     il "Are you feeling alright, Anari-"
 

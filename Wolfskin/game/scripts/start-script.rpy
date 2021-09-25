@@ -79,11 +79,15 @@ define dim_matrix = (
     )
 
 define bw_matrix = (
-    TintMatrix("#ffffff") * SaturationMatrix(0.0, (0.2, 0.2, 0.2))
+    TintMatrix("#EDFAFF") * SaturationMatrix(0.0, (0.39, 0.39, 0.39))
     )
 
 define twilight_matrix = (
     TintMatrix(Color(rgb=(0.9, 1.0, 1.2)))*BrightnessMatrix(-0.08)
+    )
+
+define sil_matrix = (
+    TintMatrix(Color(rgb=(0.9, 1.0, 1.2)))*BrightnessMatrix(-1.0)
     )
 
 # sprites with night shading (weak)
@@ -125,6 +129,13 @@ image fleur_dim = LayeredImageProxy("fleur", Transform(matrixcolor=dim_matrix))
 image salome_bw = LayeredImageProxy("salome", Transform(matrixcolor=bw_matrix))
 image uldin_bw = LayeredImageProxy("uldin", Transform(matrixcolor=bw_matrix))
 image fleur_bw = LayeredImageProxy("fleur", Transform(matrixcolor=bw_matrix))
+image edwin_bw = LayeredImageProxy("edwin", Transform(matrixcolor=bw_matrix))
+
+# sprites black silhouette
+image salome_sil = LayeredImageProxy("salome", Transform(matrixcolor=sil_matrix))
+image uldin_sil = LayeredImageProxy("uldin", Transform(matrixcolor=sil_matrix))
+image fleur_sil = LayeredImageProxy("fleur", Transform(matrixcolor=sil_matrix))
+image edwin_sil = LayeredImageProxy("edwin", Transform(matrixcolor=sil_matrix))
 
 ## LAYERED IMAGES
 

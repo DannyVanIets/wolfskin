@@ -27,7 +27,7 @@ label act1:
     scene bg black
     with fade
 
-    play sound 'audio/ambience/dark forest.mp3' fadein 5.0 fadeout 5.0 volume 0.2
+    play music 'audio/ambience/dark forest.mp3' fadein 5.0 fadeout 5.0 volume 0.2
 
     # Edwin's monologue for the intro in NVL mode
     define nvlNarrator = Character(None, kind=nvl, what_font="BluuNext-Bolditalic.otf", what_size=50, what_kerning=2)
