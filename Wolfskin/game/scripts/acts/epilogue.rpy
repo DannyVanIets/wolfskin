@@ -2,6 +2,9 @@
 
 label epilogue:
 
+    # Stop the credits theme
+    stop music fadeout 0.1
+
     scene bg black
     with fade
 
