@@ -67,7 +67,7 @@ transform right_center:
 # I'm going bob ross over Here
 
 define dark_matrix = (
-    TintMatrix(Color(rgb=(0.9, 1.0, 1.2)))*BrightnessMatrix(-0.08)
+    TintMatrix(Color(rgb=(0.46, 0.7, 1.1)))*BrightnessMatrix(-0.05)
     )
 
 define sunset_matrix = (

@@ -18,6 +18,7 @@ label act2:
     $ quick_menu = True
 
 # SCENE 16
+    stop music fadeout 3.0
 
     ## MASTER'S CHAMBER : MORNING TIME
 

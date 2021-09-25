@@ -19,6 +19,9 @@ label credits_from_script:
     ## The background of the credits, for now it's just black.
     scene black with fade
 
+    ## Playing music? please???
+    play music 'audio/music/Main Theme WIP.mp3' fadein 2.0 noloop
+
     ## Go to the credits screen, in here is the text for the credits.
     call screen credits
 

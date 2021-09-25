@@ -7,6 +7,7 @@
 ## ATL for scrolling screen object. In this case, credits roll.
 ## Speed is the time for object to move up from initial ypos to finish ypos.
 ## Code Source: https://lemmasoft.renai.us/forums/viewtopic.php?t=42667
+
 transform credits_scroll(speed):
     ypos 1100  # This is the space between the top of the screen and the text 'credits'.
     linear speed ypos -12800 # This is how far down the screen will scroll, with the speed for how fast it will scroll.

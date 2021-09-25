@@ -75,8 +75,6 @@ style frame:
     padding gui.frame_borders.padding
     background Frame("gui/frame.png", gui.frame_borders, tile=gui.frame_tile)
 
-
-
 ################################################################################
 ## In-game screens
 ################################################################################
