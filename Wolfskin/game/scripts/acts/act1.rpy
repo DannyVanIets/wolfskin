@@ -92,7 +92,7 @@ label act1:
 
     il "What? Edwin, please, calm down-"
 
-    show edwin_twilight sad talk
+    show edwin_twilight fear furrow talk
 
     ed "... Ilona I-I can’t. Not in a situation like this..."
 
@@ -175,6 +175,8 @@ label act1:
 
     ed "I haven't felt like m-myself lately, since the incident back at the priory. Try as I may to blend in, to do good and keep myself in check… I am a beast, through and through."
 
+    show edwin_night fury neutral
+
     ed "What is it that we've done wrong? Is us being together something so heinous? Is my existence such a sin?"
 
     show ilona_night sad pensive neutral with dissolve:
@@ -187,6 +189,8 @@ label act1:
     show ilona_night neutral
 
     play sound 'audio/ambience/wind and trees.ogg' fadein 5.0 volume 0.1
+
+    show edwin_night glance
 
     ed "I did not know the extent of the hatred that lay within their souls until that night… to go as far as to burn me alive…"
 
@@ -809,7 +813,7 @@ label act1:
     "Salome gives one stern glance to both Fleur and Uldin, and their boisterous laughs subside. Uldin still seems pleased with his comment. When he recalls the looks on Ilona and Edwin's faces, he tries to not burst out laughing again."
 
     # Fleur turns to right to face Edwin/Ilona
-    show fleur_dim sorry smile:
+    show fleur_dim sorry smile with dissolve:
         xzoom -1
 
     fl "I apologize, Mother. And I apologize to you as well, Edwin and Sister Ilona, for insinuating something I should not have. "
@@ -1552,6 +1556,8 @@ label act1:
 
     "The sun has not risen yet, and the clouds are dark and looming. There's a damp chill in the air."
 
+    queue music 'audio/ambience/wind and trees.ogg' volume 0.1 fadein 2.0 noloop
+
     show eisleigh_night closed worry
     ei "What now?"
 
@@ -1589,8 +1595,6 @@ label act1:
 
     show ilona_night closed neutral
     il "I am searching for a way to cure him of his curse. That is all."
-
-    queue music 'audio/music/Ilona Theme.mp3' volume 0.3 fadein 2.0 noloop
 
     show ilona_night open aaaa
     il "Please, I honestly don't think he did it. There must be more to what happened - I can help you find it."

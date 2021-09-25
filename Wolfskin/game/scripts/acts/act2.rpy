@@ -160,13 +160,15 @@ label act2:
 
     show ilona_dim glance annoyed sweat at left:
         zoom 0.5
-    show anari_dim blank angry cringe fear at right:
+    show anari_dim blank furious yell fear at right:
         zoom 0.5
     with dissolve
 
     an "Impossible…"
 
     "Anari does not say anything else, but moves back from the effigy. Her hand is balled into a fist, and is shaking, either from rage or fear."
+
+    show anari_dim cringe
 
     an "I-I've seen quite enough. I don't want to remain in this ghastly room."
 
@@ -206,7 +208,7 @@ label act2:
 
     an "Does it look like I’m in the mood for some tea right now? In the middle of this mess? Is there something wrong with your head, Sister? Have you forgotten the situation we find ourselves in?"
 
-    show anari_dim blank
+    show anari_dim blank yell
     an "Or are you trying to lace my drink with-"
 
     show ilona_dim pensive annoyed
@@ -214,7 +216,7 @@ label act2:
 
     il "I only wish to see that you’re in good health to proceed, so I thought we could take a quick break-"
 
-    show anari_dim open neutral
+    show anari_dim open talk
     an "With some tea, I get it. Very well, I must tell you that I despise the leaves from this country, so you'd better make a damn fine cup."
 
     show ilona_dim relaxed open neutral
@@ -425,58 +427,80 @@ label act2:
 
     il "Are you feeling alright, Anari-"
 
+    show anari_dim yell scary
     an "Don't you dare patronize me, woman! Who do you think you are, prying so brazenly? Take your high and mighty Servant of God tripe elsewhere!"
 
+    show anari_dim blank cringe
     an "Trying to save that monster lover of yours… Are you out of your mind?"
 
+    show ilona_dim aaaa angry neutral with dissolve
     il "I do not know what has gotten into you all of a sudden, but I do not appreciate being spoken to like this."
 
+    show ilona_dim closed yell with dissolve
     il "I showed compassion for you, when time is of the essence — instead of listening to you berate me, I should be finding the murderer!"
 
+    show ilona_dim neutral
+    show anari_dim neutral -fear
+    with dissolve
     "Silence looms over, waiting to be broken. Anari glares, her hand instinctively touches one of her arrows. She grimaces, and folds her arms across her body."
 
     play music 'audio/sfx/zapsplat clock.mp3' loop volume 0.3
 
+    show ilona_dim pensive sad with dissolve
     il "I’m sorry. I didn’t - I didn't mean to lash out at you like that. It’s just... I want to find the culprit behind this mess."
 
+    show anari_dim open relaxed talk with dissolve
     an "It’s fine."
 
     an "If the ‘I’ standing here was the Anari a couple of years back, you would have been mutilated by now."
 
     an "However, I did step out of line. Who you choose to be with is none of my business. I know violence for the sake of it won’t solve anything."
 
+    show anari_dim look smile
     an "Though we may not see eye to eye on everything, nun, I quite like you now. The tea must have swayed my opinion, I'm sure."
 
+    show anari_dim nii
     an "Since we’re on good terms now-"
 
+    show ilona_dim glance annoyed
     il "(Are we?)"
 
     an "-and I can’t bear to see you with such a sad face, I’ll let you in on a secret: there is a cure for lycanthropy. You may yet be rid of the beast that lies within your dear beloved."
 
+    show anari_dim look
     an "For your and Edwin’s sake, I suggest you use it."
 
     il "Which is?"
 
     stop music fadeout 2.0
 
-    $ renpy.pause(1.0)
+    $ renpy.pause(2.0)
 
+    show anari_dim blank furious grin with vpunch
     an "It’s for the lycan to die, of course!"
 
+    show ilona_dim shock sad talk sweat with dissolve
     il "…"
 
+    show anari_dim nii angry with dissolve
     an "Ahahahahaha, the look on your face. Brilliant."
 
+    show anari_dim look worry smile with dissolve
     an "Now now, don’t give me that look. I was only kidding. Partly."
 
+    show anari_dim relaxed with dissolve
     an "Anyhow, enough chit-chat. I must go and make preparations to lead the search party for Fleur."
 
+    show ilona_dim glance solemn with dissolve
     il "I should take my leave, as well. There is much to consider after what we’ve seen today."
 
+    show anari_dim angry
     an "Indeed. I can’t wait to hear what kind of answer you will give at sundown. Heh."
 
+    show ilona_dim pensive neutral -sweat
     il "I can't ever tell if you're on my side."
 
+    show anari_dim open grin
     an "I wonder, too."
 
 # SCENE 25
@@ -490,16 +514,15 @@ label act2:
 
     scene bg_repeating_town_plaza_blurry
 
-    play music 'audio/music/Fade Away.ogg' volume 0.3
-
+    play sound 'audio/sfx/heartbeat.mp3' loop volume 0.2
     "Ilona can feel her body covered in a light sweat. She can feel her heart leaping frantically inside her chest, just reminiscing about the conversation she had with Anari."
 
     "Kellac is waiting at the square, and he exchanges some words with Anari. Their voices are indistinct and quiet."
 
-    play sound 'audio/sfx/heartbeat.mp3' loop volume 0.1
     "Her own heart sounds louder in her ears, so much that it’s making her weak and dizzy… Her extremities are tingling."
 
     scene bg_repeating_town_plaza_kellac_blurry with fade
+    queue music 'audio/music/Fade Away.ogg' volume 0.2
 
     "It is taking everything for her to stay conscious. Anari glances at Ilona, before smiling to herself and walking away. Ilona sees a figure move in front of her, clad in black robes…"
 
@@ -522,8 +545,6 @@ label act2:
     stop music fadeout 2.0
 
     ke "Ilona?"
-
-    $ renpy.pause(1.0)
 
     # NOTE for SFX: (vpunch effect + sound of collapsing?)
     with vpunch
