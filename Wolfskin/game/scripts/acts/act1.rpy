@@ -27,7 +27,7 @@ label act1:
     scene bg black
     with fade
 
-    play sound 'audio/ambience/dark forest.mp3' fadein 5.0 fadeout 5.0 volume 0.3
+    play sound 'audio/ambience/dark forest.mp3' fadein 5.0 fadeout 5.0 volume 0.2
 
     # Edwin's monologue for the intro in NVL mode
     define nvlNarrator = Character(None, kind=nvl, what_font="BluuNext-Bolditalic.otf", what_size=50, what_kerning=2)
@@ -68,7 +68,7 @@ label act1:
 
     $ renpy.pause(2.0)
 
-    show ilona_night at ilona_transform_pos1
+    show ilona_twilight at ilona_transform_pos1
     show expression AlphaMask("canopy", At("ilona", ilona_transform_pos1)) as ilona_mask
     with dissolve
 
@@ -78,27 +78,27 @@ label act1:
 
     il "We should think of finding shelter soon, before it gets too dark."
 
-    show ilona_night closed
+    show ilona_twilight closed
 
     "Ilona waits for Edwin to turn back into a human, closing her eyes to rest for a moment. There's only the sound of the forest, until Edwin speaks to break their silence."
 
-    show edwin_night glance talk at edwin_transform_pos1
+    show edwin_twilight glance talk at edwin_transform_pos1
     show expression AlphaMask("canopy", At("edwin", edwin_transform_pos1)) as edwin_mask
     with dissolve
 
     ed "I know that I'm asking for too much, but despite everything that's happened… would you please stay with me?"
 
-    show ilona_night sad shock talk
+    show ilona_twilight sad shock talk
 
     il "What? Edwin, please, calm down-"
 
-    show edwin_night sad talk
+    show edwin_twilight sad talk
 
     ed "... Ilona I-I can’t. Not in a situation like this..."
 
-    show ilona_night open sad neutral
+    show ilona_twilight open sad neutral
 
-    show edwin_night glance neutral
+    show edwin_twilight glance neutral
 
     il "You’re right, but I need you to slow down. I can’t keep up with you and that is only going to make us look all the more suspicious."
 
@@ -106,24 +106,24 @@ label act1:
 
     ed "..."
 
-    show ilona_night pensive at ilona_move_right
+    show ilona_twilight pensive at ilona_move_right
     show expression AlphaMask("canopy", At("ilona", ilona_move_right)) as ilona_mask
 
     $ renpy.pause(0.6)
 
-    show ilona_night sad talk
+    show ilona_twilight sad talk
 
     il "We have only each other to rely on."
 
-    show edwin_night sad neutral
+    show edwin_twilight sad neutral
 
-    show ilona_night pensive sad neutral
+    show ilona_twilight pensive sad neutral
 
     "As she says this, she places her hands over his. His hands are abnormally cold to touch. Ilona learned this was a sign of his transformation."
 
     "Even so, she must remain with him."
 
-    show ilona_night closed relaxed
+    show ilona_twilight closed relaxed
 
     "The moonlight beams over them, slightly wavering with each breath they take."
 
@@ -131,31 +131,31 @@ label act1:
 
     il "Edwin…"
 
-    show edwin_night closed neutral
+    show edwin_twilight closed neutral
 
     ed "…"
 
-    show ilona_night blush smile
+    show ilona_twilight blush smile
 
     il "Ed…"
 
-    show edwin_night sad grin blush
+    show edwin_twilight sad grin blush
 
     ed "Yes, I’m here. Please forgive my wandering mind."
 
-    show edwin_night closed grin
+    show edwin_twilight closed grin
 
-    show ilona_night open
+    show ilona_twilight open
 
     ed "...What could I ever do without you? I feel like I have never thanked you for-"
 
-    show ilona_night happy
+    show ilona_twilight happy
 
     il "You have thanked me more than enough already, Edwin. I appreciate it… but let's not dwell on it any further. "
 
-    show ilona_night closed smile
+    show ilona_twilight closed smile
 
-    show edwin_night glance smile blush
+    show edwin_twilight glance smile blush
 
     "Their eyes flicker for a moment, and he’s not shivering anymore. "
 
@@ -221,8 +221,6 @@ label act1:
     show anari_night angry glance neutral bow with dissolve:
         zoom 0.50 xpos 10 xzoom -1
 
-    queue music 'audio/music/March Of The Huntress - Theme Of Anari -.ogg' fadein 2.0 volume 0.5
-
     unk "I've been observing your movements from the battlements for a while now. Be grateful that the town master wishes to have a meeting with you, or else I would have already pierced you with my arrows."
 
     show edwin_night sad furrow talk at right with dissolve:
@@ -239,6 +237,8 @@ label act1:
 
     show anari_night open smile
 
+    queue music 'audio/music/March Of The Huntress - Theme Of Anari -.ogg' fadein 2.0 volume 0.5
+
     unk "{i}Sister{/i}, all I know is that the master called you. I sighted a nun and a man outside the town walls and informed him of this."
 
     unk "I can tell your legs are shaking even from here… so make sure to comply obediently and I won't ask any difficult questions about you in return."
@@ -254,8 +254,6 @@ label act1:
     unk "Hmph. Fair enough."
 
     show anari_night open talk
-
-    # If Possible, apply Layering to Anari's theme
 
     an "My name is Anari. Happy now?"
 
@@ -301,6 +299,8 @@ label act1:
     with longfade
 
     "Anari takes the position of rear guard, as the other guard leads the way forward."
+
+    stop music fadeout 3.0
 
     "Ilona glances back, just once. Anari's bow is by her side and a hand rests on the quiver, ready to fire if the two of them even thought of escaping."
 
@@ -454,11 +454,11 @@ label act1:
     scene bg chapel night
     with longfade
 
-    show edwin_night:
+    show edwin_twilight:
         zoom 0.5 xcenter 170 xzoom -1
-    show ilona_night:
+    show ilona_twilight:
         zoom 0.5 xcenter 370
-    show anari_night look:
+    show anari_twilight look:
         zoom 0.5 xcenter 850 xzoom -1
     with dissolve
 
@@ -468,70 +468,70 @@ label act1:
 
     queue sound 'audio/ambience/wind and trees.ogg' volume 0.2
 
-    show uldin_night:
+    show uldin_twilight:
         xcenter 1500 xzoom -1
-    show salome_night neutral:
+    show salome_twilight neutral:
         xcenter 1750 xzoom -1
     with dissolve
 
     an "Sir Uldin, Lady Salome. I've brought to you Sister Ilona, and her companion Edwin."
 
-    show uldin_night closed laugh
+    show uldin_twilight closed laugh
 
-    hide anari_night with dissolve
+    hide anari_twilight with dissolve
 
     ul "So the man was with her after all?"
 
-    show anari_night worry neutral sweatdrop behind uldin_night with dissolve:
+    show anari_twilight worry neutral sweatdrop behind uldin_night with dissolve:
         zoom 0.5 xcenter 1100
 
     an "At first, I thought a holy woman was being accosted by some blackguard. To think that he was her travelling companion..."
 
-    show edwin_night glance talk
+    show edwin_twilight glance talk
 
     ed "I understand I may not have the friendliest appearance… but I have sworn to protect Sister Ilona from harm."
 
-    show uldin_night smirk open
+    show uldin_twilight smirk open
 
     ul "This is indeed unexpected… Anari's eyes are keen, but perhaps only for hunting her quarry."
 
-    show anari_night closed relaxed smile -sweatdrop
+    show anari_twilight closed relaxed smile -sweatdrop
 
     an "True. There's no need to understand the conversations of beasts to hunt them, only their behaviour."
 
-    show salome_night grin downturn nii
-    show edwin_night neutral
+    show salome_twilight grin downturn nii
+    show edwin_twilight neutral
 
     sa "Judging by Anari's report, I would have thought she was describing a saint!"
 
-    show ilona_night sad pensive
+    show ilona_twilight sad pensive
 
     il "Thank you for your kind words, but they are far too gracious to be wasted on me... I have not done anything to be deserving of such praise."
 
-    show salome_night smallgrin open
+    show salome_twilight smallgrin open
 
     sa "I thought you might be able to join us for tonight's feast for All Hallows' Day, and to perhaps lead us in prayer."
 
-    show edwin_night neutral open
-    show uldin_night neutral
-    show anari_night open neutral sweatdrop
+    show edwin_twilight neutral open
+    show uldin_twilight neutral
+    show anari_twilight open neutral sweatdrop
 
     "Nobody dares to tell Salome that it is actually called 'All Hallows' Eve'. They don't want to be rude."
 
-    show uldin_night laugh
+    show uldin_twilight laugh
 
     ul "It’s not every day that you see a nun, and much less in such unlikely company. So, would you accept our invitation?"
 
-    show ilona_night closed annoyed
+    show ilona_twilight closed annoyed
 
     "Ilona had to consider this carefully. She and Edwin had drawn too much attention already… So it surprised her when Edwin spoke without any fear."
 
-    show edwin_night talk closed
-    show anari_night look -sweatdrop
+    show edwin_twilight talk closed
+    show anari_twilight look -sweatdrop
 
     ed "We will gladly accept."
 
-    show ilona_night glance solemn
+    show ilona_twilight glance solemn
 
     sa "Tonight's banquet will begin shortly, but you should still have time to prepare for it. Anari, let us debrief in the meantime."
 
@@ -964,8 +964,6 @@ label act1:
     scene bg door night light
     with fade
 
-    queue sound 'audio/ambience/dark forest.mp3' volume 0.2 fadein 3.0 noloop
-
     "Eisleigh unlocks the door by the stairs, and opens the guest room. She gives Edwin the key."
 
     scene bg bedroom night light
@@ -978,6 +976,8 @@ label act1:
     "Having a separated sleeping quarters is more than what he could normally ask for. For this style of house, he would assume that the guests share one large sleeping space."
 
     show eisleigh_dim open neutral
+
+    queue sound 'audio/ambience/dark forest.mp3' volume 0.1 fadein 3.0 noloop
 
     "He was prepared to run out of the manse, and to be alone in the darkness of night. Instead, he still has to play the role of an honoured houseguest."
 
@@ -1020,8 +1020,6 @@ label act1:
 
     extend " Ahahahahahahahahahahahahahhahah!"
 
-    play sound 'audio/sfx/Creepy Wind A.ogg' volume 0.2
-
     ed "Look at me, a husk of myself. Not even courage remains."
 
     show edwin_dim stare
@@ -1035,6 +1033,8 @@ label act1:
     show edwin_dim fury talk
 
     ed "That day… I was brave, wasn’t I? I did save my sister from the werewolf attack, didn’t I?"
+
+    play sound 'audio/sfx/Creepy Wind A.ogg' volume 0.2
 
     ed "(But did I really do it for her? Or did my thirst for blood take over…)"
 
@@ -1063,7 +1063,7 @@ label act1:
 
     ed "...What am I doing?"
 
-    play sound 'audio/music/Edwin Vocal Theme.mp3' volume 0.2 fadein 2.0 noloop
+    play music 'audio/music/Edwin Vocal Theme.mp3' volume 0.2 fadein 2.0 noloop
 
     ed "Ilona told me once to hold onto hope… What’s done is done."
 
@@ -1107,6 +1107,8 @@ label act1:
 
     # SCENE 9
 
+    stop music fadeout 3.0
+
     scene bg hall night
     with longfade
 
@@ -1121,6 +1123,8 @@ label act1:
     with dissolve
 
     "Ilona stayed after Edwin's exit, to ask Uldin and Eisleigh about the nature of curses, but the conversation following was dense and difficult."
+
+    play music 'audio/music/Ilona Theme.mp3' volume 0.2 fadein 2.0 noloop
 
     hide fleur_dim with dissolve
 
@@ -1200,6 +1204,8 @@ label act1:
 
     "Ilona closes her eyes and tries to drift into sleep. Within the peaceful silence of the manse, rest came to her easier than expected."
 
+    stop music fadeout 3.0
+
     $ quick_menu = False
     # NOTE: Here is the huge turning point to the murder
     show bg fluffies with fade
@@ -1223,16 +1229,16 @@ label act1:
     "Ilona hears footsteps rush past her room, and her eyes flutter open; registering what woke her. She puts on her habit, covering her head, and hurries out the door, unlocking it first…"
 
     scene bg hallway night dark
-    show kellac_night glance anger at center:
+    show kellac_twilight glance anger at center:
         zoom 0.7 yoffset 380
     with dissolve
 
     "Kellac stops on the stairwell when he sees her, turning his head back to see Ilona. Edwin is not with him. She looks to the door next to hers, on the right."
 
-    show kellac_night yell
+    show kellac_twilight yell
     ke "There's no time to lose! See if you can wake him up, I'm going on ahead!"
 
-    hide kellac_night with dissolve
+    hide kellac_twilight with dissolve
 
     "He runs up the stairs. For a man who always seems so weary, there is a vivacity in his face now that danger is present."
 
@@ -1243,7 +1249,7 @@ label act1:
 
     "Ilona knocks on Edwin's door, trying to hear for any sign of life in the room."
 
-    show ilona_night solemn talk at center:
+    show ilona_twilight solemn talk at center:
         zoom 0.7 yoffset 260
     with dissolve
 
@@ -1252,13 +1258,13 @@ label act1:
     "Silence."
 
     play sound 'audio/sfx/knockers.wav'
-    show ilona_night neutral sad
+    show ilona_twilight neutral sad
 
     "She knocks again, this time urgently. Still, there is nothing coming from the other side of the room."
 
     "She turns the handle. The door is locked, and there is no reply…"
 
-    show ilona_night pensive neutral
+    show ilona_twilight pensive neutral
     il "No… Please, no…"
 
     # SCENE 10
@@ -1276,45 +1282,45 @@ label act1:
 
     "He knocks urgently, and tries ramming the door with his shoulders, but grunts when the door wouldn't budge."
 
-    show kellac_night anger closed grimace sweat at center:
+    show kellac_twilight anger closed grimace sweat at center:
         zoom 0.7 yoffset 380
 
     ke "It's no use! Damn it! If only I were stronger…"
 
-    show kellac_night glance talk
+    show kellac_twilight glance talk
     ke "I'm going to get Anari! Something's wrong."
 
     scene bg hallway night dark
     with fade
 
-    show ilona_night at left:
+    show ilona_twilight at left:
         zoom 0.5
-    show kellac_night anger talk at right:
+    show kellac_twilight anger talk at right:
         zoom 0.5 xzoom -1
     with dissolve
 
     ke "The servants' quarters are on the other side of the house, up the stairs. Get a master key for this door!"
 
-    hide kellac_night with dissolve
-    hide ilona_night with dissolve
+    hide kellac_twilight with dissolve
+    hide ilona_twilight with dissolve
 
     show bg black with fade
 
     "Ilona nods and follows Kellac's instructions, passing through the now empty hall and up the stairs."
 
     scene bg hallway night dark
-    show ilona_night annoyed talk at left:
+    show ilona_twilight annoyed talk at left:
         zoom 0.5
-    show eisleigh_night neutral at right
+    show eisleigh_twilight neutral at right
     with fade
 
     "She finds Eisleigh first, and explains the situation."
 
-    show eisleigh_night surprise worry
-    show ilona_night neutral
+    show eisleigh_twilight surprise worry
+    show ilona_twilight neutral
     "Eisleigh's eyes go wide, and she fumbles in her long green robe, producing a dangling set of keys, nearly dropping them in her haste."
 
-    show eisleigh_night surprise worry talk
+    show eisleigh_twilight surprise worry talk
     ei "I- I have a copy of the master key. Come on! There's no time to waste!"
 
     stop music fadeout 3.0
@@ -1339,21 +1345,21 @@ label act1:
 
     "Ilona and Eisleigh enter the bedroom, stepping over part of the broken door. It smells strongly of blood and burnt hair."
 
-    show ilona_night shock sad neutral at less_left:
+    show ilona_twilight shock sad neutral at less_left:
         zoom 0.5
-    show eisleigh_night fear worry talk at extra_left behind ilona_night:
+    show eisleigh_twilight fear worry talk at extra_left behind ilona_night:
         xzoom -1
     with dissolve
 
     "They lay their eyes on the blood-soaked bedsheets, and the dead figure of Uldin. His neck is mutilated; torn flesh hangs off of his body, and his eyes are blank."
 
-    show eisleigh_night closed worry neutral
+    show eisleigh_twilight closed worry neutral
     "Eisleigh holds a hand over her mouth, and squeezes her eyes shut."
 
     "A figure of a man hunched over a woman in a dress makes his presence known; he turns to look at them. His yellow eyes give off an eerie glint, as though it were an animal's."
 
     # Use longdissolve to make Edwin appear slower in scene
-    show edwin_night distant wolf at extra_right:
+    show edwin_twilight distant wolf at extra_right:
         zoom 0.5
     with longdissolve
 
@@ -1362,10 +1368,10 @@ label act1:
     il "Edwin…"
 
     # Ilona moves closer towards Edwin
-    show ilona_night:
+    show ilona_twilight:
         ease 1.0 xcenter 1000
     # Edwin turns around
-    show edwin_night stare yell furrow wolf:
+    show edwin_twilight stare yell furrow wolf:
         xzoom -1
 
     ed "Don't come any closer! Stay away…"
@@ -1377,37 +1383,37 @@ label act1:
     "The sound of footsteps rushes up the stairs again, and Ilona knows immediately who it is."
 
     scene bg hallway night dark
-    show anari_night angry scary sweatdrop cringe kill at center:
+    show anari_twilight angry scary sweatdrop cringe kill at center:
         zoom 0.7 yoffset 220
     with dissolve
 
     an "Get away from him, Ilona!"
 
-    show anari_night blank cringe with dissolve
+    show anari_twilight blank cringe with dissolve
     an "I knew there was something wrong with him. I should've shot him dead when I had the chance…"
 
     "Instead of the cool and elegant Anari that Ilona had seen before, she disguises her sorrow with fury instead."
 
     scene bg masters chamber night
-    show kellac_night anger at easeinleft_transform:
+    show kellac_twilight anger at easeinleft_transform:
         zoom 0.8 yoffset 500
 
     "Ilona can’t move. With Anari's arrow trained on them, Kellac rushes in; carrying a healer's kit. Edwin sets the body of the woman down and backs away. Kellac checks the unburned section of her wrist."
 
-    show kellac_night closed grimace
+    show kellac_twilight closed grimace
     "There is only the sound of Kellac choking back his frustration and dismay."
 
-    show kellac_night talk
+    show kellac_twilight talk
     ke "I was too late… I'm so sorry… I couldn't save them."
 
     # SCENE 12 + 13
 
-    hide kellac_night with dissolve
+    hide kellac_twilight with dissolve
 
     "Kellac is on his knees, facing Salome's corpse. All the jovial cheer that he displayed since meeting Ilona vanishes, and he resembles a husk of a man."
 
     # Anari moves to the right slightly
-    show anari_night kill scary angry neutral at easeinleft_transform:
+    show anari_twilight kill scary angry neutral at easeinleft_transform:
         zoom 0.5 xzoom -1
 
     "Anari moves in after seeing that Edwin shows no signs of retaliation."
@@ -1415,87 +1421,87 @@ label act1:
     an "We need to restrain him. Fleur's gone missing…"
 
     # Edwin turns to left
-    show edwin_night distant talk wolf at extra_right:
+    show edwin_twilight distant talk wolf at extra_right:
         zoom 0.5 xzoom 1
     with dissolve
 
     ed "I didn't do it… I wasn't the one who did this."
 
-    show anari_night smile
+    show anari_twilight smile
     an "An honest man would beg harder for his life. You sound like you've already accepted your execution."
 
     # Ilona turns to left
-    show ilona_night sad talk at center:
+    show ilona_twilight sad talk at center:
         zoom 0.5 xzoom -1
 
     il "Wait! Please give us a minute. I… I want to talk to Edwin."
 
-    show anari_night neutral
+    show anari_twilight neutral
     an "…Fine. One minute, and no more. I'm sure you wouldn't be so stupid as to try anything… but be warned."
 
     scene bg masters chamber night with dissolve
-    show edwin_night wolf distant at right:
+    show edwin_twilight wolf distant at right:
         zoom 0.8 yoffset 600
     with dissolve
 
     $ renpy.pause(1.0)
 
     # Ilona turns to right and moves towards Edwin (close enough to touch him)
-    show ilona_night pensive solemn at easeinleft_transform:
+    show ilona_twilight pensive solemn at easeinleft_transform:
         zoom 0.85 yoffset 400
 
     $ renpy.pause(1.0)
 
     "Ilona crouches down beside Edwin. His distant gaze lacks warmth and familiarity."
 
-    show ilona_night sad
+    show ilona_twilight sad
     il "Edwin, can you hear me?"
 
     ed "…"
 
-    show ilona_night closed
+    show ilona_twilight closed
     il "Ed…"
 
-    show edwin_night sad talk
+    show edwin_twilight sad talk
     ed "I-I am so sorry, Ilona. I wasn't able to control it… "
 
     "Hearing him talk reassures her slightly. Ilona gingerly takes his wolf-like hands into hers. Even though his gaze is cold and stony, the hands still hold warmth."
 
-    show ilona_night open
+    show ilona_twilight open
     il "Do you swear that you didn't kill them?"
 
-    show edwin_night neutral
+    show edwin_twilight neutral
     ed "When I entered the room, they were already like this."
 
-    show ilona_night talk
+    show ilona_twilight talk
     il "Then— You weren't the one—"
 
-    show ilona_night sweat pensive neutral
+    show ilona_twilight sweat pensive neutral
     il "Something's wrong. Your hands… they're not turning back—"
 
     an "Stop — time's up."
 
     # Ilona turns left (facing Anari)
-    show ilona_night:
+    show ilona_twilight:
         xzoom -1
     with dissolve
 
     "Anari's voice is enough to cut the two apart, and Ilona lets go of Edwin's hands immediately."
 
     scene bg masters chamber night with dissolve
-    show anari_night angry scary neutral bow at center:
+    show anari_twilight angry scary neutral bow at center:
         zoom 0.7 yoffset 240
     with dissolve
 
     an "I can't say that I trust you quite yet, Ilona."
 
-    show anari_night open smile with dissolve
+    show anari_twilight open smile with dissolve
     an "You really seem like a clever girl... and who would dare suspect a nun of planning such a gruesome scene?"
 
-    show anari_night neutral
+    show anari_twilight neutral
     an "Turn yourself in quietly, Edwin, and I'll make sure her interrogation isn't painful."
 
-    hide anari_night with dissolve
+    hide anari_twilight with dissolve
 
     play sound 'audio/sfx/zapsplat chain move.mp3' volume 0.2
     stop music fadeout 2.0
@@ -1512,7 +1518,7 @@ label act1:
     with fade
     extend "\nThe only thing Ilona sees before the doors close is Edwin's taciturn and listless expression."
 
-    show edwin_night wolf distant at center:
+    show edwin_twilight wolf distant at center:
         zoom 0.5
     with longdissolve
 
@@ -1569,8 +1575,6 @@ label act1:
     show anari_night look talk -sweatdrop
     an "Ilona. Did you know that the man was a werewolf before entering this town?"
 
-    queue music 'audio/music/Ilona Theme.mp3' volume 0.3 fadein 2.0 noloop
-
     show ilona_night talk
     il "…Yes. In my presence, he's more capable of controlling his transformation."
 
@@ -1579,6 +1583,8 @@ label act1:
 
     show ilona_night closed neutral
     il "I am searching for a way to cure him of his curse. That is all."
+
+    queue music 'audio/music/Ilona Theme.mp3' volume 0.3 fadein 2.0 noloop
 
     show ilona_night open aaaa
     il "Please, I honestly don't think he did it. There must be more to what happened - I can help you find it."
