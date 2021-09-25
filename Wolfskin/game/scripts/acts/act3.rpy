@@ -205,7 +205,7 @@ label act3:
 
     "Anari is waiting, and several of the townsfolk look to the pyre stacked in the middle of the town square. There is an air of formality surrounding her, clad in her red hunting garments. They seem even more vibrant, illuminated by the glow of the sun."
 
-    show anari_twilight at center:
+    show anari_sunset at center:
         zoom 0.6 yoffset 200
     with dissolve
 
@@ -221,7 +221,7 @@ label act3:
 
     "Anari's face is grim. She pulls out a letter, the seal on it broken. She reads the brief message out loud for all to hear."
 
-    hide anari_twilight with dissolve
+    hide anari_sunset with dissolve
 
     show lost_fl at center:
         zoom 0.5
@@ -236,7 +236,7 @@ label act3:
 
     hide lost_fl with dissolve
 
-    show anari_twilight at center:
+    show anari_sunset at center:
         zoom 0.6 yoffset 200
     with dissolve
 
@@ -248,13 +248,13 @@ label act3:
 
     an "…With that matter settled, let's proceed with Edwin. The nun Ilona has prepared a defence. Please, rise."
 
-    hide anari_twilight with dissolve
+    hide anari_sunset with dissolve
 
 # SCENE 41
 
-    show ilona_twilight at left:
+    show ilona_sunset at left:
         zoom 0.5
-    show anari_twilight at right:
+    show anari_sunset at right:
         zoom 0.5
     with dissolve
 
@@ -412,15 +412,15 @@ label act3:
 
     an "You should learn to choose your words more wisely, Sister. It's unbecoming of a holy woman… but I had the nagging suspicion you were a heretic from the first moment I saw you. Someone like you could never win."
 
-    hide ilona_twilight
-    show anari_twilight at center:
+    hide ilona_sunset
+    show anari_sunset at center:
         zoom 0.8 yoffset 450
     with dissolve
 
     "With a signal of Anari's hand, two town guards move in on Ilona and grip her arms tightly; drawing them behind her back. The men tried to bind Ilona's hands together with thick rope."
 
-    hide anari_twilight
-    show ilona_twilight at center:
+    hide anari_sunset
+    show ilona_sunset at center:
         zoom 0.8 yoffset 450
     with dissolve
 
@@ -428,13 +428,22 @@ label act3:
 
     "Ilona struggles and tries to shake the men off, but the guards do not relent. One grabs her by the hair. Edwin cannot abide by this any longer."
 
-    #TO DO: Insert Wolf CG Here
+    # Show CG wolf
+    scene edwolf unleashed with vpunch
+    $ renpy.pause(1.5, hard=True)
 
     "He transforms, the chains snapping off him as he transforms into a massive wolf-man."
+
+    scene edwolf protecc with hpunch
 
     "He rushes at the guards with a growl, knocking them over by slamming against them. He throws them off with both fang and claw, prying Ilona away from them."
 
     stop music fadeout 3.0
+
+    scene bg town plaza sunset
+    show anari_sunset angry scary cringe kill at center:
+        zoom 0.7 yoffset 220
+    with fade
 
     "Anari did not expect this development. She strings her bow, and takes an arrow from her quiver. She trains it on the werewolf."
 
@@ -442,7 +451,11 @@ label act3:
 
     an "I won't let you escape."
 
+    hide anari_sunset with dissolve
+
     "When she releases the bowstring, a piercing, otherworldly whistle cries out from her weapon. It misses. The arrow grazes Edwin's fur as he transforms from half-man, half-wolf, into an enormous grey wolf."
+
+    scene edwolf protecc close
 
     "He continues to run on all fours, with only Ilona to guide him. She adjusts herself on his back, grasping tufts of thick fur. Anari scowls, and then goes to climb a tower to gain a higher vantage point."
 
@@ -456,20 +469,48 @@ label act3:
 
 # SCENE 44
 
+    with vpunch
+
     "The looming stone wall in front of them is a substantial hurdle to overcome. The town guards mobilise, firing arrows that torrent Edwin and Ilona. Edwin does his best to throw off their aim."
+
+    show anari_sunset angry scary cringe kill at center:
+        zoom 0.7 yoffset 220
+    with fade
 
     "There is one he cannot escape from. Anari's skill with a bow is frightening, her gaze ever calm and steady."
 
+    scene edwolf arrows with hpunch
+
     "Two arrows finally meet its target. They pierce his side, fired in rapid succession. Then three more pierce his ribs. This isn’t a problem for the werewolf, as he brushes aside the pain. He’s taken greater beatings than this."
 
+    scene edwolf claws with vpunch
+
     "However, he’s not invincible; a few more well placed shots and he’s down, along with Ilona."
+
+    show ilona_sunset at center:
+        zoom 0.5 xzoom -1
+    with dissolve
 
     il "Stay with me Edwin! Don’t lose sight of our escape. I’ll do my best to heal your wounds with-"
     extend " Ah!"
 
+    show ilona_sunset blood:
+    with dissolve
+
     "An arrow pierces the hand with which Ilona was trying to use to heal. Her hand twists and contorts, reflexingly convulsing due to the writhing pain."
 
     ed "Ilona! Ho-hold on, we’re almost there!"
+
+    scene cg_repeating_edwolf_close_blurry:
+        # Makes you able to use subpixels, handy for positioning.
+        subpixel True
+        # Keep this as it is, really annoying to change. It tells where to position the image and how far you want to zoom in.
+        xpos 0.5 ypos 1.0 xanchor 0.5 yanchor 1.0 zoom 1.02
+        # Tells where you will circle around in the image and how far.
+        alignaround(.5, .5)
+        # Linear is how fast you want the circling to be, lower it to make it faster. yalign is the same as like xpos, don't bother changing that. Circles is the amount of circles it will do before repeating.
+        linear 10.0 yalign 1.0 clockwise circles 1
+        repeat
 
     "Time seems to move too slowly. How much more pain can they accept? Edwin grimaces past the pain of his sustained wounds."
 
@@ -481,7 +522,21 @@ label act3:
 
     "With a light scream, Ilona loses her footing. There's only one hand she could use to hold onto the rough stone wall, and her fingers are slipping. Blood stains her white dress from the hole it left behind, and she can feel it drip down on the wall."
 
+    scene edwolf face
+    with fade
+
     ed "Ilona! No!"
+
+    scene cg_edwolf_last with vpunch:
+        # Makes you able to use subpixels, handy for positioning.
+        subpixel True
+        # Keep this as it is, really annoying to change. It tells where to position the image and how far you want to zoom in.
+        xpos 0.5 ypos 1.0 xanchor 0.5 yanchor 1.0 zoom 1.02
+        # Tells where you will circle around in the image and how far.
+        alignaround(.5, .5)
+        # Linear is how fast you want the circling to be, lower it to make it faster. yalign is the same as like xpos, don't bother changing that. Circles is the amount of circles it will do before repeating.
+        linear 10.0 yalign 1.0 clockwise circles 1
+        repeat
 
     "Edwin is quick to react, as he pulls her over while climbing over the wall; carrying her carefully, as though holding an injured bird."
 
@@ -500,7 +555,8 @@ label act3:
 
     ## FOREST
     scene bg forest sunset
-    with longfade
+
+    # TODO: add the canopy alpha mask
 
     "Ilona heals the wound that pierced her abdomen through, and the blood slows. However, the wound does not close completely. The other arrows stuck in them would prove more dangerous to deal with, with no surgical equipment to use."
 
@@ -511,6 +567,12 @@ label act3:
     ed "Ilona, my darling-"
 
     il "{i}Darling?{/i}"
+
+    show ilona_sunset blood:
+        zoom 0.5 yoffset 0 xcenter 700
+    show edwin_sunset blood at center behind ilona_sunset:
+        zoom 0.5
+    with dissolve
 
     "At the awkward exchange, Edwin gingerly sets Ilona down on the ground. He reverts to human form, his ears and face red. Ilona tries to heal what open wounds that Edwin has."
 
@@ -533,6 +595,14 @@ label act3:
     with longfade
 
     "They walk for a while, seeing the valley unfold before them. Eventually, they stop to sit under the shade of a tree, basking in its shadow. Their breath is ragged, but in sync with each other's. Ilona rests her head on Edwin’s shoulders."
+
+    show ilona_sunset blood:
+        zoom 0.5 yoffset 0 xcenter 700
+    show edwin_sunset blood at center behind ilona_sunset:
+        zoom 0.5 xzoom -1
+    with dissolve
+
+    # TODO: change bg back to forest at a good point?
 
     ed "I’m sorry."
 
@@ -624,18 +694,25 @@ label act3:
 
     il "Thank you…"
 
+    # CG lying on grass (eyes open)
+    scene final open with dissolve
+    $ renpy.pause(1.5, hard=True)
+
     "Ilona lays her head against Edwin's chest, and he gently wraps his arms around her. He heaves a contented sigh, yet the arrows piercing him dig into his weary body."
 
     "Edwin thinks of the time they met, reading aloud poetry and ballads together. He strokes her hair, speaking softly in a murmur. He can feel his hands wet with the blood from her wounds."
 
     # despite the beautiful poem, it should be delivered clumsily as possible (I mean, he's dying, or close to death). "though words are withering" should be admitted through gritted teeth.
 
-    ed "Should our journey end, so just it be.{p}I am lost no more, I lay to rest."
+    ed "Should our journey end, so just it be."
+    extend "\nI am lost no more, I lay to rest."
 
-    ed "The sun bestows its blessings over me,{p}While you wait beside."
+    ed "The sun bestows its blessings over me,"
+    extend "\nWhile you wait beside."
 
     # pronunciation of verdure - vur-jur
-    ed "I flourish with the bountiful verdure{p}Though words are withering,"
+    ed "I flourish with the bountiful verdure"
+    extend "\nThough words are withering,"
 
     ed "In all uncertainty we usher,"
 
@@ -643,12 +720,11 @@ label act3:
 
     ed "I-I love…"
 
+    # CG lying on grass (eyes closed)
+    scene final closed with dissolve
+    $ renpy.pause(2, hard=True)
+
     stop music fadeout 3.0
-
-# Renpy Blur, jump to credits
-
-    scene bg black
-    with fade
 
     # Go to the credits.
     jump credits_from_script

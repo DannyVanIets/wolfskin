@@ -148,6 +148,7 @@ layeredimage edwin:
 
     group outfit:
         attribute wolf
+        attribute blood
 
     group eyes auto:
         attribute open default
@@ -307,6 +308,26 @@ image bg_transition_blurry_kellac_extreme:
     "bg town plaza morning kellac blurry" with dissolve
     pause 0.3
     "bg town plaza morning kellac blurry extreme" with dissolve
+
+image cg_repeating_edwolf_close_blurry:
+    "edwolf close" with dissolve
+    pause 0.5
+    "edwolf close blurry" with dissolve
+    pause 1
+    repeat
+
+image cg_repeating_edwolf_edgewolf_blurry:
+    "edwolf edgehog" with dissolve
+    pause 2
+    "edwolf edgehog blurry" with dissolve
+    pause 1
+    repeat
+
+image cg_edwolf_last:
+    "cg_repeating_edwolf_close_blurry" with dissolve
+    pause 2
+    "cg_repeating_edwolf_edgewolf_blurry" with dissolve
+    pause 1
 
 # CTC SHENANIGANS
 
