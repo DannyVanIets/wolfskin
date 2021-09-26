@@ -16,10 +16,10 @@ label credits_from_script:
     ## We hide the textbox as well so it doesn't mess with things.
     window hide
 
-    ## The background of the credits, for now it's just black.
-    scene black with fade
+    ## The background of the credits: bg moon for in-game credits
+    scene bg moon with longfade
 
-    ## Playing music? please???
+    ## Play credits theme
     play music 'audio/music/Main Theme WIP.mp3' fadein 2.0 noloop
 
     ## Go to the credits screen, in here is the text for the credits.
@@ -30,10 +30,14 @@ label credits_from_script:
 
 # This label is used to go to the credits from the main menu. Doesn't need a whole lot of fancy stuff, so I removed that.
 label credits_from_main_menu:
+    ## Play music (not the actual in-game credits theme to keep that as a surprise)
+    play music 'audio/music/Wolfskin_Main_Theme_Piano_Lead.mp3' fadein 2.0 noloop
+
+    ## The background of the credits: bg fluffies for main menu credits
+    scene bg fluffies
+
     ## Go to the credits screen.
     call screen credits
-
-    play music 'audio/music/Main Theme WIP.mp3' fadein 2.0 noloop
 
     # This ends the game and returns you to the main menu.
     return

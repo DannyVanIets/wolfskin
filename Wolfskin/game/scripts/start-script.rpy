@@ -375,6 +375,10 @@ label start:
 
     scene bg forest night
 
+    # TODO When this selection screen is removed, make sure this statement is called at beginning of the game.
+    # Stop the main menu music
+    stop music fadeout 0.1
+
     menu:
         "Click the act you want to go to!"
 

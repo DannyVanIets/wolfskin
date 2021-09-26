@@ -71,5 +71,7 @@ label epilogue:
 
     nvl clear
 
+    with fade
+
     # This ends the game and returns you to the main menu.
     return

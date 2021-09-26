@@ -61,7 +61,7 @@ define config.sample_sound = "audio/sfx/lock metal.mp3"
 ## the player is at the main menu. This file will continue playing into the
 ## game, until it is stopped or another file is played.
 
-# define config.main_menu_music = "main-menu-theme.ogg"
+define config.main_menu_music = "audio/music/Wolfskin_Main_Theme_Piano_Lead.mp3"
 
 
 ## Transitions #################################################################
