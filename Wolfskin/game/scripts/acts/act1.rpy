@@ -897,6 +897,7 @@ label act1:
 
     "An oppressive silence lingers, and sweat beads down Edwin’s forehead. Ilona tries to keep a straight face, but her brow twitches."
 
+    play sound 'audio/sfx/zapsplat tea.mp3' volume 0.2
     "Edwin adds more sugar to his tea, and he takes care to not rattle the crockery as he stirs it with the spoon."
 
     show uldin_dim neutral

@@ -22,6 +22,11 @@ label act3:
     scene bg dungeon
     with longfade
 
+    show edwin_dim wolf distant at right:
+        zoom 0.6 yoffset 220
+    show ilona_dim blush glance solemn at left with dissolve:
+        zoom 0.6 yoffset 20 xpos 500
+        
     ed "I retired to my bedroom after Uldin's story about the werewolf attack. I couldn't take much more of it. After that, I fell into a deep and dreamless sleep."
 
     ed "I first noticed the wolfskin was gone when I heard the scream. The faint scent of perfume made me think it must have been Salome's doing."

@@ -33,5 +33,7 @@ label credits_from_main_menu:
     ## Go to the credits screen.
     call screen credits
 
+    play music 'audio/music/Main Theme WIP.mp3' fadein 2.0 noloop
+
     # This ends the game and returns you to the main menu.
     return
