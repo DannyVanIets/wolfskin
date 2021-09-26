@@ -17,6 +17,7 @@ label credits_from_script:
     window hide
 
     ## The background of the credits: bg moon for in-game credits
+    # a variant of fade is necessary to transition from Act 3 ending CG.
     scene bg moon with longfade
 
     ## Play credits theme
