@@ -19,27 +19,43 @@ label act3:
 
 # SCENE 35-39
 
-    scene bg dungeon
-    with longfade
+    play music 'audio/music/He Who Seeks Hope - Theme Of Edwin -.ogg' fadein 5.0 volume 0.5
 
-    show edwin_dim wolf distant at right:
-        zoom 0.6 yoffset 220
-    show ilona_dim blush glance solemn at left with dissolve:
-        zoom 0.6 yoffset 20 xpos 500
-        
+    scene bg moon with dissolve
+
     ed "I retired to my bedroom after Uldin's story about the werewolf attack. I couldn't take much more of it. After that, I fell into a deep and dreamless sleep."
 
     ed "I first noticed the wolfskin was gone when I heard the scream. The faint scent of perfume made me think it must have been Salome's doing."
 
+    scene bg bedroom night dark
+    with dissolve
+
     il "Did you hear me knocking on your door?"
 
+    show edwin_night wolf sad neutral at center with dissolve:
+        zoom 0.5
+
     ed "I didn't know if you were alone — I heard Kellac's voice on the other side. I kept quiet knowing I couldn't risk opening the door with my arms transformed."
+
+    scene bg hallway night dark with dissolve
 
     il "So, when Kellac and I left to seek help, you moved to the master bedroom."
 
     ed "Yes. If the wolfskin had been taken, it surely would be there. I was only thinking of saving my own life."
 
+    $ renpy.pause(1.0)
+
+    scene bg master door night with fade
+
+    stop music fadeout 2.0
+
     ed "When I broke down the door, Salome was on the ground, barely conscious anymore. The room was full of smoke and ash. She still had some lycan features: fangs, and claws… "
+
+    scene bg masters chamber night with dissolve
+
+    show bw_sa_murder at center:
+        zoom 0.7 xzoom-1
+    with dissolve
 
     ed "Her voice was thin, high and frail. Her body seemed so small. I've never seen burns that horrible."
 
@@ -49,11 +65,28 @@ label act3:
 
     il "How did you do it? Kellac ruled her death as complications from her burn wounds."
 
+    scene bg black
+    show bw_sa_murder at center:
+        zoom 0.7 xzoom-1
+    with dissolve
+
     ed "I tried to think of the most merciful way to give her peace. I truly did pity her - we suffered the same curse, and I felt my sorrow in her."
+
+    hide bw_sa_murder with fade
+
+    $ renpy.pause(1.0)
+
+    play sound 'audio/sfx/zap bone break.mp3' volume 0.2
+
+    scene bg gore with dissolve
+
+    $ renpy.pause(2.0)
 
     ed "I held her close and crushed the bones in her neck, hoping for an instant death."
 
     il "You're certain you killed her? She wasn’t already dead before that?"
+
+    play music 'audio/ambience/dark forest.mp3' volume 0.2 fadein 4.0
 
     ed "When a bearer of the wolfskin dies, they revert to human form. She no longer had any bestial features when I was done."
 
@@ -61,9 +94,28 @@ label act3:
 
     ed "Yes. How you found it in the chest in Salome's room, I don't know."
 
+    stop music fadeout 3.0
+
     "Ilona and Edwin fall silent. Even though he had killed Salome, he was not the one who orchestrated the murder on Uldin."
 
+
+    play music 'audio/music/Echoing - Theme Of Fleur -.ogg' volume 0.1
+
+    scene bg forest day
+    with dissolve
+
+    $ renpy.pause(1.0)
+
+    show lost_fl at center:
+        zoom 0.7 xzoom-1
+    with dissolve
+
     il "Fleur still hasn't been found. People fear she's actually been kidnapped, or taken by the fae."
+
+    scene bg black
+    show lost_fl at center:
+        zoom 0.7 xzoom-1
+    with dissolve
 
     ed "Do you think that could be the case?"
 
@@ -75,9 +127,18 @@ label act3:
 
     ed "If she wore the wolfskin, perhaps."
 
+    show effigy at center:
+        zoom 0.7 xzoom-1
+    with longdissolve
+
     ed "But if she truly is lost, she'd be suffering the same consequences as I did. It's excruciating to go through."
 
     ed "When I was first given the wolfskin, I foolishly tried to part with it and leave it behind. In retribution for not heeding the curse, I was left howling in pain."
+
+    scene bg gore
+    show lost_fl at center:
+        zoom 0.7 xzoom-1
+    with longdissolve
 
     ed "If she's still missing and guilty, she'd need to have incredible fortitude to remain silent for such a long time."
 
@@ -85,53 +146,104 @@ label act3:
 
     ed "That's probably the safest assumption, until she is found."
 
+    stop music fadeout 2.0
+
+    scene bg dungeon
+    show edwin_dim distant:
+        zoom 0.6 yoffset 20 xpos 800
+    show ilona_dim pensive sad at left:
+        zoom 0.6 yoffset 20 xpos 200
+    with longfade
+
     il "If only we had been honest and asked to stay together…"
 
+    show edwin_dim fury yell furrow with dissolve
     ed "No. Had they sought the wolfskin while we were together, they might have killed you to get their hands on it. It would have been just as easy to frame me for that."
 
     ed "This may have been for the best."
 
+    show ilona_dim talk
+    show edwin_dim neutral
+    with dissolve
     il "Let's not think about that now. I'm as involved in this as you are, regardless."
 
+    show ilona_dim neutral
+    show edwin_dim sad talk
+    with dissolve
     ed "Ilona, listen to me. The people here… They appreciate you. I meant to bring this up in the morning, when we saw each other again."
 
+    show edwin_dim fury with dissolve
     ed "You… You should stay here. Let them dispose of me. Live, and survive."
 
+    show ilona_dim aaaa yell open tears with dissolve
     il "And watch you {i}die{/i}? Do you really think I would be happy with something like that?"
 
+    show edwin_dim distant -furrow
+    show ilona_dim neutral
+    with dissolve
     ed "I'm going to get what's coming to me, sooner or later."
 
+    show edwin_dim angry furrow
     ed "Your hurt and pain will heal. You can recover. If you're with me, you won't be able to walk a righteous path. But if you leave me here, at least one of us will survive."
 
+    play music 'audio/music/Ilonas_Theme_backing.mp3' volume 0.3 fadein 2.0
+
+    show ilona_dim cry talk
+    show edwin_dim neutral
+    with dissolve
     il "Enough! I was well aware of the consequences when I left the priory with you!"
 
-    # Ilona is crying.
-
-    #TO DO: Add Ilona's Theme Here
-
+    show ilona_dim baby yell
     il "I'm not trying to find a way to break your curse so I can return to the priory, or to repent for my sins."
 
+    show ilona_dim wail with dissolve
     il "I'm doing it so we can live together without the constant fear of being hunted down!"
 
+    show edwin_dim fear -furrow blush talk
+    show ilona_dim talk
+    with dissolve
     ed "I-Ilona… You really want…"
 
+    show ilona_dim open neutral sad
+    with dissolve
     il "I can't do that if you offer yourself up to be killed."
 
-    "Edwin goes to reach for her face, but pauses. He slips off his glove first, and brushes away Ilona's tears with his thumb."
+    "Edwin goes to reach for her face, but pauses."
+    show edwin_dim sad smile:
+        ease 0.7 xpos 740
+    " He slips off his glove first, and brushes away Ilona's tears with his thumb."
 
+    show edwin_dim anxious grin with dissolve
     ed "Then we need to survive and break the curse. We'll travel to my homeland, and you can meet my family. We'll live in a valley by a lake, and you… you won't have to feel lonely ever again."
 
+    show edwin_dim sad smile
+    show ilona_dim cry baby happy
+    with dissolve
     "He smiles warmly at her. Her tears subside as he wipes them away. She touches the hand at her cheek, finally laughing lightly at his comment."
 
+    show ilona_dim glance smile blush with dissolve
     il "Let's not get ahead of ourselves yet. We need to figure out a plan first. Now that you have your wolfskin back, you could easily break through the chains… We could escape."
 
+    show edwin_dim glance talk -blush with dissolve
     ed "It'll be difficult… but I can try. The walls are high, but I could scale them if I transform. If you could survey the town's layout looking for a part of the wall that could give me some footing, that would help us."
 
+    show ilona_dim -blush neutral solemn with dissolve
     il "Understood. I should go — someone might be searching for me."
 
 # SCENE 40
+    hide edwin_dim
+    hide ilona_dim
+    with dissolve
+
+    stop music fadeout 4.0
+
+    play sound 'audio/sfx/zap chain move.mp3' volume 0.3
+
+    $ renpy.pause(2.0)
 
     "Ilona ties the chains around Edwin again. His possession of the wolfskin should remain a secret until the time comes to escape, and he partially transforms to appear as he did before."
+
+    play sound 'audio/sfx/metal door.wav' volume 0.4
 
     "Once confirming that nobody is at the door to the dungeon, she exits outside. The door to the dungeon shuts with a metallic groan."
 
@@ -140,9 +252,11 @@ label act3:
     scene bg chapel
     with longfade
 
+    play sound 'audio/ambience/wind and trees.ogg' volume 0.4
+
     "The wind howls, and she draws her nun's habit closer to her body. The ruins of the chapel loomed towards her, as though the remaining structure would threaten to collapse."
 
-    show anari at center:
+    show anari grin at center:
         zoom 0.7 yoffset 300
     with dissolve
 
@@ -152,33 +266,46 @@ label act3:
 
     "Ilona's heart leaps when she hears Anari speak so suddenly."
 
-    # knowing that she sounds suspicious, but spoken confidently like she's trying to regain composure
-
-    show ilona at left:
+    show ilona shock sweat at left:
         zoom 0.5
-    show anari at right:
+    show anari look at right:
         zoom 0.5
     with dissolve
 
+    show ilona closed happy annoyed with dissolve
     il "…Indeed. I was praying for your success in finding Fleur. Are there any new leads?"
 
+    show anari look grin
     an "No, but there's still time before sundown. We'll search the forest. I had to personally oversee another crucial job."
 
+    show ilona pensive smile
     il "What might that be?"
 
+    play music [ "<silence 2.0>", "audio/ambience/dark ambience.ogg" ] volume 0.4
+    show anari nii smile with dissolve
     an "Making sure there's enough firewood to build a pyre."
 
+    show ilona talk open with dissolve
     il "…!"
 
+    show anari blank grin
     an "Edwin is a {i}huge{/i} man. Wouldn't it be terrible to burn him at the stake only to leave the job half-finished? And he can turn into a werewolf… What if he transforms as he burns up?"
 
+    show ilona aaaa neutral
     il "You may think him a monster, but sometimes you speak like one."
 
+    show anari open worry smile with dissolve
     an "It's not like I'm the one who murdered two people. But I'm sure you've had more than enough time to learn how your beloved little werewolf took care of that through your investigation."
 
+    show ilona smile
     il "You shouldn't let your guard down; I have a better understanding of the situation now."
 
+    show anari angry grin with dissolve
     an "Good. This should be entertaining."
+
+    stop music fadeout 4.0
+
+    play sound 'audio/sfx/footsteps slow leather tile.wav'
 
     ## KELLAC'S ROOM
 
@@ -187,15 +314,10 @@ label act3:
 
     "With that remark, Anari leaves. In the remaining time, Ilona reconvenes with Kellac. Eisleigh's condition is now stable and she is resting, the bleeding ceased."
 
-    ## FOREST: FLEUR SEARCH PARTY
     scene bg forest day
     with fade
 
     "As part of the investigation, Ilona and Kellac join the search party for Fleur. While doing so, Ilona searches for an escape route, and any part of the wall that may look like it could be scalable."
-
-    ## TOWN PLAZA
-    scene bg town plaza day
-    with fade
 
     "Eventually, Kellac takes his leave to watch over Eisleigh to make sure her condition remains stable; leaving Ilona in the town square."
 
@@ -204,9 +326,9 @@ label act3:
 # SCENE 40
 
     ## TOWN PLAZA: SUNSET
-    scene bg town plaza sunset
+    scene bg town plaza sunset with longdissolve
 
-    "The day grows darker, and the sky is bathed in gold as the sun dips below the horizon. Edwin is brought out from the dungeon, his wolf-like arms bound in chains."
+    "The day grows darker as the sun dips below the horizon. Edwin is brought out from the dungeon, his wolf-like arms bound in chains."
 
     "Anari is waiting, and several of the townsfolk look to the pyre stacked in the middle of the town square. There is an air of formality surrounding her, clad in her red hunting garments. They seem even more vibrant, illuminated by the glow of the sun."
 
@@ -269,8 +391,6 @@ label act3:
 
     "Ilona decides that they should at least begin with what they know from the investigation, and think about Fleur's letter along the way."
 
-    play music 'audio/music/Wail of the Moon.ogg'
-
     il "This murder had at least two conspirators involved: Salome and Fleur."
 
     an "Hoh? Go on."
@@ -292,6 +412,8 @@ label act3:
     "(“If she wore the wolfskin....”)"
 
     "A theory appears before her, dispelling the illusion of what she saw. If she is right, then this would explain the tragedy of last night in its entirety."
+
+    play music 'audio/music/Chaos and Torment.ogg'
 
     il "How were you able to identify the burned corpse in the Master's chamber?"
 
@@ -405,7 +527,7 @@ label act3:
 
     an "If I am wrong, so be it. When my time comes, I’ll gladly accept my penance."
 
-    play music 'audio/music/Chaos And Torment.ogg'
+    play music 'audio/music/War Of The Huntress - VS Anari -.ogg'
 
     an "There's one thing that's certain: your arrival into this town brought with it the destruction of this family."
 
@@ -452,8 +574,6 @@ label act3:
 
     "Anari did not expect this development. She strings her bow, and takes an arrow from her quiver. She trains it on the werewolf."
 
-    play music 'audio/music/War Of The Huntress - VS Anari -.ogg'
-
     an "I won't let you escape."
 
     hide anari_sunset with dissolve
@@ -481,6 +601,8 @@ label act3:
     show anari_sunset angry scary cringe kill at center:
         zoom 0.7 yoffset 220
     with fade
+
+    play music 'audio/music/Rising.ogg'
 
     "There is one he cannot escape from. Anari's skill with a bow is frightening, her gaze ever calm and steady."
 
@@ -564,8 +686,6 @@ label act3:
     # TODO: add the canopy alpha mask
 
     "Ilona heals the wound that pierced her abdomen through, and the blood slows. However, the wound does not close completely. The other arrows stuck in them would prove more dangerous to deal with, with no surgical equipment to use."
-
-    play music 'audio/music/Rising.ogg'
 
     il "Edwin, set me down. You're more injured than I am."
 

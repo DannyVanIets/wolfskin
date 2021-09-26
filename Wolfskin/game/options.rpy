@@ -54,14 +54,14 @@ define config.auto_voice =  "voice/{id}.mp3"
 ## uncomment a line below and use it to set a sample sound to play.
 
 define config.sample_sound = "audio/sfx/lock metal.mp3"
-# define config.sample_voice = "sample-voice.ogg"
+define config.sample_voice = "voice/act2_086f652a.mp3"
 
 
 ## Uncomment the following line to set an audio file that will be played while
 ## the player is at the main menu. This file will continue playing into the
 ## game, until it is stopped or another file is played.
 
-define config.main_menu_music = "audio/music/Wolfskin_Main_Theme_Piano_Lead.mp3"
+define config.main_menu_music = "audio/ambience/wind and trees.ogg"
 
 
 ## Transitions #################################################################

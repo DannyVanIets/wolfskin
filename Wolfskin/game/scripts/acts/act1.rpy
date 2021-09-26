@@ -54,7 +54,7 @@ label act1:
 
     stop music fadeout 3.0
 
-    play music 'audio/sfx/bbc woodland.ogg' volume 0.08
+    play music 'audio/sfx/bbc woodland.ogg' volume 0.04
 
     # Show the intro of the act.
 
@@ -222,7 +222,7 @@ label act1:
 
     stop music fadeout 1.0
 
-    play sound 'audio/sfx/zapsplat cloth.mp3' volume 0.3
+    play sound 'audio/sfx/zapsplat cloth.mp3' volume 0.1
 
     "Edwin immediately lets go of her hand, intertwined seconds ago, but now balled into a fist. The rustling of dry leaves brought with it a heavily armed guard and an archer under a cloak."
 
@@ -370,7 +370,7 @@ label act1:
     # said as though trying not to laugh, mock-seriously
     ed "You were raised strictly, Ilona. Father Ivanov never wanted you to know about these pagan festivals."
 
-    play sound 'audio/sfx/zapsplat cloth.mp3' volume 0.3
+    play sound 'audio/sfx/zapsplat cloth.mp3' volume 0.2
 
     show edwin_night fear talk
     with hpunch
@@ -477,7 +477,7 @@ label act1:
         zoom 0.5 xcenter 850 xzoom -1
     with dissolve
 
-    play sound 'audio/sfx/bbc 3 knocks.mp3' volume 0.3
+    play sound 'audio/sfx/bbc 3 knocks.mp3' volume 0.15
 
     "Anari knocks on the door, and it was answered by a man and woman in fine clothing. They step outside of the house."
 
@@ -561,7 +561,7 @@ label act1:
     scene bg hall alt
     with longfade
 
-    play sound 'audio/ambience/bbc fire.mp3' volume 0.2 loop
+    play sound 'audio/ambience/bbc fire.mp3' volume 0.1 loop
 
     "It had only been a few days since they were on the run… Ilona could scarcely believe that they were welcomed so readily."
 
@@ -1212,7 +1212,7 @@ label act1:
 
     "However, in the end she decides not to. Ilona can only trust him to be cautious. She could not continue to worry about him; it would make her restless…"
 
-    play sound 'audio/sfx/zap clothes rustle.mp3' volume 0.3
+    play sound 'audio/sfx/zap clothes rustle.mp3' volume 0.1
 
     scene bg door night dark:
         xzoom -1
@@ -1254,7 +1254,7 @@ label act1:
     queue music 'audio/music/Death Tolls.ogg' volume 0.2
 
     "The piercing sound of a howl wakes Kellac first, followed shortly by a woman's loud scream."
-    play sound 'audio/sfx/wood door open and close.wav' volume 1.0
+    play sound 'audio/sfx/wood door open and close.wav'
     extend " His door opens with a slam, sensing something is incredibly wrong…"
 
     scene bg bedroom night dark
@@ -1262,7 +1262,7 @@ label act1:
 
     play sound 'audio/sfx/footsteps hurried.wav'
     "Ilona hears footsteps rush past her room, and her eyes flutter open; registering what woke her."
-    play sound 'audio/sfx/zap clothes rustle.mp3' volume 0.3
+    play sound 'audio/sfx/zap clothes rustle.mp3' volume 0.2
     extend " She puts on her habit, covering her head, and hurries out the door, unlocking it first…"
 
     scene bg hallway night dark
@@ -1283,7 +1283,7 @@ label act1:
     scene bg door night dark
     with fade
 
-    play sound 'audio/sfx/bbc 3 knocks.mp3' volume 0.4
+    play sound 'audio/sfx/bbc 3 knocks.mp3' volume 0.2
 
     "Ilona knocks on Edwin's door, trying to hear for any sign of life in the room."
 
@@ -1300,7 +1300,7 @@ label act1:
 
     "She knocks again, this time urgently. Still, there is nothing coming from the other side of the room."
 
-    play sound 'audio/sfx/zap door handle movement.mp3' volume 0.4
+    play sound 'audio/sfx/zap door handle movement.mp3' volume 0.2
     "She turns the handle. The door is locked, and there is no reply…"
 
     show ilona_twilight pensive neutral
@@ -1362,7 +1362,7 @@ label act1:
     "Eisleigh's eyes go wide, and she fumbles in her long green robe, producing a dangling set of keys, nearly dropping them in her haste."
 
     show eisleigh_twilight surprise worry talk
-    play sound 'audio/sfx/old keys jingle.mp3'
+    play sound 'audio/sfx/old keys jingle.mp3' volume 0.2
     ei "I- I have a copy of the master key. Come on! There's no time to waste!"
 
     stop music fadeout 3.0
@@ -1562,7 +1562,7 @@ label act1:
 
     hide anari_twilight with dissolve
 
-    play sound 'audio/sfx/zapsplat chain move.mp3' volume 0.2 fadeout 5.0
+    play sound 'audio/sfx/zap chain move.mp3' volume 0.2 fadeout 7.0
     stop music fadeout 2.0
     "Ilona isn't sure if Edwin obliged so easily because he feared for her safety, or if he truly has given up; like what Anari said earlier. He wordlessly lets Anari bind him with chains."
 
@@ -1609,7 +1609,7 @@ label act1:
 
     "The sun has not risen yet, and the clouds are dark and looming. There's a damp chill in the air."
 
-    queue music 'audio/ambience/wind and trees.ogg' volume 0.3 fadein 2.0 noloop
+    queue music 'audio/ambience/wind and trees.ogg' volume 0.3 fadein 2.0
 
     show eisleigh_night closed worry
     ei "What now?"

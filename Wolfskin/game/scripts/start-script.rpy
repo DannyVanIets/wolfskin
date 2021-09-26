@@ -71,7 +71,7 @@ define dark_matrix = (
     )
 
 define sunset_matrix = (
-    TintMatrix(Color(rgb=(0.85, 0.6, 0.45)))*BrightnessMatrix(0.1)
+    TintMatrix(Color(rgb=(1.05, 0.80, 0.95)))*BrightnessMatrix(-0.05)
     )
 
 define dim_matrix = (
