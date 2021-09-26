@@ -80,13 +80,14 @@ label act2:
 
     "The burns scorching the wall and room seem too significant to come from just a candle. Near the bed, and on the floor are traces of fur. Some of it is burnt."
 
+    show anari_dim talk with dissolve
     an "Anything out of place?"
 
     show ilona_dim open annoyed with dissolve:
         xzoom 1
     il "There's traces of fur, but that's about it. What about the other rooms?"
 
-    show anari_dim talk open
+    show anari_dim open neutral
     an "Eisleigh told me there was something that felt out of place in Fleur's room. I'll also let you look through Salome's room."
 
 # SCENE 17
@@ -115,8 +116,12 @@ label act2:
     show anari_dim angry neutral at right_center with dissolve:
         xzoom -1
 
+    show ilona_dim talk
     il "What is it? Please, don't hold back."
 
+    show anari_dim talk
+    show ilona_dim neutral
+    with dissolve
     an "I don't think it has anything to do with the murders. That chest is meant for Fleur when she is married. Salome had it made recently."
 
     # Anari turns back to face Ilona
@@ -209,7 +214,7 @@ label act2:
     show anari_dim blank yell
     an "Or are you trying to lace my drink with-"
 
-    show ilona_dim pensive annoyed
+    show ilona_dim pensive annoyed talk
     il "I can assure you, it’s none of that. I want to find the culprit as much as you do. But I’ll need your help for that."
 
     il "I only wish to see that you’re in good health to proceed, so I thought we could take a quick break-"
@@ -235,6 +240,8 @@ label act2:
 
     "Ilona, feeling some remorse as though the two of them were bandits, prepares the deceased man's tea according to Anari's instruction. Trying her best to be hospitable, Ilona also serves it with milk and sugar, as Fleur did."
 
+    play music 'audio/sfx/zapsplat clock.mp3' loop volume 0.1
+
     scene bg hall day
     show ilona_dim at left:
         zoom 0.5
@@ -244,8 +251,6 @@ label act2:
 
     show ilona_dim smile pensive
     il "Here you go. Please, have some."
-
-    play music 'audio/sfx/zapsplat clock.mp3' loop volume 0.2
 
     "Ilona serves tea to Anari. As expected, Anari does not take any of the milk or sugar."
     play sound 'audio/sfx/zapsplat tea.mp3' volume 0.2
@@ -353,7 +358,7 @@ label act2:
 
     an "The two of you are outsiders, whereas we’ve all known each other for a long time."
 
-    show anari_dim look
+    show anari_dim look talk
     an "I don't plan on letting my bias against the two of you get the better of me, however. Let's start at the beginning: what could be the motivation for the murder?"
 
     an "Kellac was an associate of Uldin and I during the war. He’s selfless, to the point of stupidity. I guess serving as a medic will do that to you."
@@ -367,6 +372,7 @@ label act2:
     il "Please explain."
 
     show ilona_dim neutral
+    show anari_dim talk
     an "He’s as kind as he is weak, so I doubt he could overpower both Uldin and Salome. Anything he could have ever needed, whether coin or rare books on magic, he could have simply asked Uldin."
 
     an "And Uldin wouldn't have hesitated, because they share quite the history."
@@ -374,14 +380,17 @@ label act2:
     show anari_dim open
     an "Although, one thing I can tell you for sure is: Kellac is hiding something. Before he settled here, he had done nothing but walk and regret for five years, or so he says. It keeps him up at night."
 
-    show anari_dim look
+    show anari_dim look neutral
     an "Whether it’s related to this case, I do not know."
 
     show ilona_dim open neutral
     il "Hmm… I see."
 
+    show ilona_dim talk
     il "What about Eisleigh? I honestly don’t know much about her."
 
+    show anari_dim talk
+    show ilona_dim neutral
     an "She acted as an assistant to Salome; to help with keeping the town running, organization and tasks."
 
     an "She's been doing her fair share of blunders lately, but I know she takes her job seriously…  Perhaps she's just daydreaming more."
@@ -391,6 +400,7 @@ label act2:
 
     an "Though, I don't know much about her either to determine her motivation."
 
+    show ilona_dim talk
     il "Is she close with Fleur? They are almost the same age."
 
     show anari_dim closed
@@ -426,7 +436,7 @@ label act2:
 
     il "Are you feeling alright, Anari-"
 
-    show anari_dim yell scary
+    show anari_dim yell blank
     an "Don't you dare patronize me, woman! Who do you think you are, prying so brazenly? Take your high and mighty Servant of God tripe elsewhere!"
 
     show anari_dim blank cringe
@@ -493,7 +503,7 @@ label act2:
     show ilona_dim glance solemn with dissolve
     il "I should take my leave, as well. There is much to consider after what we’ve seen today."
 
-    show anari_dim angry
+    show anari_dim angry grin
     an "Indeed. I can’t wait to hear what kind of answer you will give at sundown. Heh."
 
     show ilona_dim pensive neutral -sweat
@@ -563,61 +573,61 @@ label act2:
 
     "She feels far too conscious of her body. Her mouth feels dry, and her heart still feels like it's beating too fast."
 
-    show ilona closed sad talk at left with dissolve:
+    show ilona_dim closed sad talk at left with dissolve:
         zoom 0.5
 
     il "Did-? Was I…?"
 
-    show kellac raised smile at less_right with dissolve:
+    show kellac_dim raised smile at less_right with dissolve:
         zoom 0.5 xzoom -1
 
     ke "Take it easy. You're safe — we're still in the manse."
 
-    show ilona open neutral
+    show ilona_dim open neutral
     il "Just how long was I out for?"
 
-    show kellac relaxed talk
+    show kellac_dim relaxed talk
     ke "It's almost midday."
 
-    show ilona glance annoyed sweat
+    show ilona_dim glance annoyed sweat
     "Ilona grimaces. Too much time was lost. She moves her arms slowly, her body heavy. Sensation comes back into the tips of her fingers, and the unpleasant tingling stops. The smell of herbal medicine starts to become more bearable to her senses."
 
-    show kellac anger neutral
+    show kellac_dim anger neutral
     ke "It wasn't an ordinary fainting spell. You should have regained consciousness faster if it was simply fatigue and stress."
 
     ke "I've taken precautions, and treated you for poisoning."
 
     il "Then, do you think — Did Anari try to poison me?"
 
-    show kellac glance
+    show kellac_dim glance
     ke "…I suppose you can't really rule out that possibility. Did you eat or drink anything with her?"
 
-    show ilona open
+    show ilona_dim open
     il "Only tea, but I was the one who suggested and prepared it."
 
     il "I didn't see her slip anything in my drink. In fact, she was convinced I was trying to poison her…"
 
-    show kellac closed relaxed talk
+    show kellac_dim closed relaxed talk
     ke "She's not the type to take such a cowardly approach."
 
     ke "She may seem cruel, but I don't think she would go that far to sabotage your efforts and put a stop to you."
 
     stop music fadeout 5.0
 
-    show ilona relaxed -sweat
+    show ilona_dim relaxed -sweat
     il "It seems you and Anari know each other well. I don't have much time, but I need to ask:"
 
-    show ilona sad
+    show ilona_dim sad
     il "She had an extreme reaction upon seeing a wooden statue resembling Fleur. What could have terrified her so much about it?"
 
-    show kellac anger neutral
+    show kellac_dim anger neutral
     ke "Truth be told, I don't really know much about her history, only rumours. She must think that the statue has to do something with the fae — Something in her past made her be wary of them."
 
     ke "Fleur admires the fair folk. The wooden statue is too elaborate to be one of Fleur's pranks, especially with the death of her parents…"
 
     il "So her aversion to seeing the statue has to do with her trauma, and distaste for Fleur's fae-related tricks?"
 
-    show kellac glance talk
+    show kellac_dim glance talk
     ke "Something like that. Anari hates being pitied, and she doesn't show pity for anyone else either."
 
     ke "She would be terrified at the thought of Fleur being spirited away by the fair folk. It's not something that she could ever accept - That's probably why she is leading the search."
@@ -627,41 +637,41 @@ label act2:
     "Ilona shifts her body off the bed, able to move freely again. Kellac invites her to take a seat, and Ilona does so. He pours her some clear water. The smell of a simmering stew wafts from the kitchen."
 
     scene bg kellacs room
-    show ilona at left:
+    show ilona_dim at left:
         zoom 0.5
-    show kellac glance anger neutral at less_right:
+    show kellac_dim glance anger neutral at less_right:
         zoom 0.5 xzoom -1
     with longdissolve
 
     play music 'audio/music/The Town.ogg' volume 0.5 fadein 1.0
 
-    show kellac relaxed talk open
+    show kellac_dim relaxed talk open
     ke "About the tea you had with Anari — was there anything odd about it? I'm asking because before the banquet, I gave Uldin his medicine, a powerful soporific."
 
-    show kellac anger
+    show kellac_dim anger
     ke "There were three less doses in the pantry when I checked."
 
-    show ilona sad pensive talk
+    show ilona_dim sad pensive talk
     il "Then, you think someone last night—"
 
     play sound 'audio/sfx/bbc 3 knocks.mp3' volume 0.3
     "There's a light knock on the door. Kellac tells them to enter, it's Eisleigh."
 
     play sound 'audio/sfx/wood door open and close.wav' volume 0.5
-    show eisleigh worry neutral at extra_right with dissolve
+    show eisleigh_dim worry neutral at extra_right with dissolve
 
     ei "Oh, Ilona — I heard you fainted in the town square. I was worried."
 
-    show kellac nii smile relaxed
+    show kellac_dim nii smile relaxed
     ke "Ah, yes! I invited Eisleigh over for lunch. Ilona, you probably haven't eaten at all yet, have you? You should try to eat, even if it's just a little."
 
-    show ilona glance neutral sweat
+    show ilona_dim glance neutral sweat
     il "…"
 
-    show kellac open worry neutral
+    show kellac_dim open worry neutral
     ke "…I guess it's hard to trust anyone after what you've been through."
 
-    show ilona pensive -sweat
+    show ilona_dim pensive -sweat
     il "No, it's fine… I'll eat with you. You're right, I probably can't do much if I don't take care of myself."
 
     scene bg black with fade
@@ -1078,7 +1088,7 @@ label act2:
     show edwin_dim fear yell sweat with dissolve
     ed "Ilona? You shouldn't be here. Wait, you found the…"
 
-    play music 'audio/music/Ilonas_Theme_backing.mp3' volume 0.5 fadein 1.0
+    play music 'audio/music/Ilona Theme.mp3' volume 0.5 fadein 1.0
     show ilona_dim pensive solemn at easeinleft_transform:
         zoom 0.6 yoffset 30
 
@@ -1124,14 +1134,14 @@ label act2:
     show edwin_dim open grin with dissolve
     ed "You've saved my life once again… Thank you."
 
-    show ilona_dim blush glance solemn at left with dissolve:
+    show ilona_dim blush glance neutral solemn at left with dissolve:
         zoom 0.6 yoffset 20 xpos 500
     il "Please, there's no need to thank me. It's given me a chance to talk to you again… Do you think you can tell me more about the murder?"
 
     show edwin_dim glance talk
     ed "Of course — though you probably know more about it than I do."
 
-    show ilona_dim open talk -blush with dissolve
+    show ilona_dim open neutral -blush with dissolve
     il "If I think of who could have been present in the Master's chambers at the time, only two people remain. Did Salome murder Uldin? I've gathered that they must have died from the wounds they inflicted on each other. Am I correct?"
 
     show edwin_dim angry furrow yell

@@ -48,11 +48,12 @@ define build.name = "WolfskinI"
 define config.has_sound = True
 define config.has_music = True
 define config.has_voice = True
+define config.auto_voice =  "voice/{id}.mp3"
 
 ## To allow the user to play a test sound on the sound or voice channel,
 ## uncomment a line below and use it to set a sample sound to play.
 
-# define config.sample_sound = "sample-sound.ogg"
+define config.sample_sound = "audio/sfx/lock metal.mp3"
 # define config.sample_voice = "sample-voice.ogg"
 
 

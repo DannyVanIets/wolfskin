@@ -52,6 +52,10 @@ label act1:
 
     nvl clear
 
+    stop music fadeout 3.0
+
+    play music 'audio/sfx/bbc woodland.ogg' volume 0.08
+
     # Show the intro of the act.
 
     scene bg fluffies
@@ -102,8 +106,6 @@ label act1:
 
     il "You’re right, but I need you to slow down. I can’t keep up with you and that is only going to make us look all the more suspicious."
 
-    queue music 'audio/music/He Who Seeks Hope - Theme Of Edwin -.ogg' fadein 5.0 volume 0.5
-
     ed "..."
 
     show ilona_twilight pensive at ilona_move_right
@@ -118,6 +120,8 @@ label act1:
     show edwin_twilight sad neutral
 
     show ilona_twilight pensive sad neutral
+
+    stop music fadeout 8.0
 
     "As she says this, she places her hands over his. His hands are abnormally cold to touch. Ilona learned this was a sign of his transformation."
 
@@ -140,6 +144,8 @@ label act1:
     il "Ed…"
 
     show edwin_twilight sad grin blush
+
+    play music 'audio/music/He Who Seeks Hope - Theme Of Edwin -.ogg' fadein 5.0 volume 0.5
 
     ed "Yes, I’m here. Please forgive my wandering mind."
 
@@ -206,8 +212,6 @@ label act1:
 
     show ilona_night closed talk
 
-    play sound 'audio/sfx/zapsplat cloth.mp3' volume 0.3
-
     il "You're not. You’re-"
 
     hide ilona_night
@@ -218,12 +222,16 @@ label act1:
 
     stop music fadeout 1.0
 
+    play sound 'audio/sfx/zapsplat cloth.mp3' volume 0.3
+
     "Edwin immediately lets go of her hand, intertwined seconds ago, but now balled into a fist. The rustling of dry leaves brought with it a heavily armed guard and an archer under a cloak."
 
     unk "That's enough loitering around the town wall looking suspicious, don't you think?"
 
     show anari_night angry glance neutral bow with dissolve:
         zoom 0.50 xpos 10 xzoom -1
+
+    queue music 'audio/music/March Of The Huntress - Theme Of Anari -.ogg' fadein 2.0 volume 0.35
 
     unk "I've been observing your movements from the battlements for a while now. Be grateful that the town master wishes to have a meeting with you, or else I would have already pierced you with my arrows."
 
@@ -240,8 +248,6 @@ label act1:
     show ilona_night aaaa neutral
 
     show anari_night open smile
-
-    queue music 'audio/music/March Of The Huntress - Theme Of Anari -.ogg' fadein 2.0 volume 0.5
 
     unk "{i}Sister{/i}, all I know is that the master called you. I sighted a nun and a man outside the town walls and informed him of this."
 
@@ -369,8 +375,6 @@ label act1:
     show edwin_night fear talk
     with hpunch
 
-    show ilona_night shock sad
-
     ed "Oh!-"
 
     show kellac_night neutral at easeinleft_transform:
@@ -380,8 +384,8 @@ label act1:
     unk "Young lad, please watch your step. One mistake and this weary old man is done for…"
 
     show edwin_night closed
-
     show ilona_night open solemn
+    with dissolve
 
     ed "I’m so sorry for bumping into you, sir-"
 
@@ -400,6 +404,7 @@ label act1:
 
     show edwin_night closed neutral sweat
     show ilona_night annoyed
+    with dissolve
 
     ed "Uh, I’m not sure we're friends…"
 
@@ -434,23 +439,29 @@ label act1:
     show kellac_night neutral
     show ilona_night sad talk
     show edwin_night neutral sad
+    with dissolve
 
     il "He did, but I don't know what business we have with him..."
 
     show ilona_night neutral
     show kellac_night smile sweat
     show anari_night -sweatdrop
+    with dissolve
 
     ke "Aha. I should have expected as much; Anari has a habit of leaving out the details and jumping straight to the point."
 
     show kellac_night raised -sweat
+    with dissolve
 
     ke "I should get going, but we're bound to see each other again soon. Keep well, Anari."
 
     hide kellac_night with dissolve
     show anari_night closed relaxed
+    with dissolve
 
     "Anari only nods curtly, and the group moves along. Further into the town, they find a large house made of timber and stone."
+
+    play sound 'audio/sfx/footsteps slow leather tile.wav'
 
     stop music fadeout 3.0
 
@@ -505,10 +516,12 @@ label act1:
 
     show salome_twilight grin downturn nii
     show edwin_twilight neutral
+    with dissolve
 
     sa "Judging by Anari's report, I would have thought she was describing a saint!"
 
     show ilona_twilight sad pensive
+    with dissolve
 
     il "Thank you for your kind words, but they are far too gracious to be wasted on me... I have not done anything to be deserving of such praise."
 
@@ -519,10 +532,12 @@ label act1:
     show edwin_twilight neutral open
     show uldin_twilight neutral
     show anari_twilight open neutral sweatdrop
+    with dissolve
 
     "Nobody dares to tell Salome that it is actually called 'All Hallows' Eve'. They don't want to be rude."
 
     show uldin_twilight laugh
+    with dissolve
 
     ul "It’s not every day that you see a nun, and much less in such unlikely company. So, would you accept our invitation?"
 
@@ -530,7 +545,7 @@ label act1:
 
     "Ilona had to consider this carefully. She and Edwin had drawn too much attention already… So it surprised her when Edwin spoke without any fear."
 
-    show edwin_twilight talk closed
+    show edwin_twilight talk closed with dissolve
     show anari_twilight look -sweatdrop
 
     ed "We will gladly accept."
@@ -667,7 +682,7 @@ label act1:
 
     sa "So, what brings you to Belorov, Mister Edwin and Sister Ilona?"
 
-    show salome_dim pensive sad neutral
+    show salome_dim pensive sad neutral with dissolve
 
     sa "Our town may not look like much after our chapel was ransacked and destroyed, but it was once breathtaking."
 
@@ -679,13 +694,13 @@ label act1:
 
     il "I heard about the destruction of a chapel some time ago, but I had no idea it was here."
 
-    show salome_dim closed
+    show salome_dim parted
 
     sa "Yes, it was the barbarians' doing. Even now, we're still rebuilding the town, but the faithful have moved on from here."
 
     sa "I miss having someone to share my connection with God, so I am sorry to impose my sudden invitation on you."
 
-    show salome_dim open relaxed
+    show salome_dim open relaxed smallgrin
 
     sa "Belorov is home to people of many faiths. Many of us have travelled from afar, like myself."
 
@@ -831,7 +846,7 @@ label act1:
 
     "A brief moment later, Fleur rises from her seat. She helps Salome with preparing the tea, truly apologetic about her earlier behaviour."
 
-    show uldin_dim open
+    show uldin_dim wink laugh relaxed with dissolve
     ul "We've arranged separate sleeping quarters for the both of you. Please, don't take our jests seriously."
 
     show edwin_dim open -blush
@@ -839,6 +854,7 @@ label act1:
 
     ul "Oh no need, but if you must insist: you’re welcome."
 
+    show uldin_dim glance with dissolve
     ul "Please, I know this is all too much for you and Sister Ilona. You’ve met quite a few people already, and it's getting late. If you need to retire for the evening, you are welcome to."
 
     # Tea party : Uldin, Fleur, Eisleigh, Ilona, Edwin convo
@@ -868,11 +884,12 @@ label act1:
 
     ed "I did not want to let her travel alone, so I decided to act as her guard on this journey."
 
-    show uldin_dim closed
+    show uldin_dim closed laugh
     ul "I see. Having a companion to talk about the same texts… That's not so different from me and Eisleigh."
 
     show eisleigh_dim grin behind uldin_dim:
         xcenter 1300
+    show uldin_dim neutral
     with dissolve
 
     ei "Well… magical texts; books about curses and spells, rather than stories and poems."
@@ -880,16 +897,16 @@ label act1:
     show ilona_dim smile
     il "Oh, that's unusual. Both of you practice magic?"
 
-    show uldin_dim angry neutral
+    show uldin_dim talk
     ul "It's a useful resource, but difficult to master. You did say the two of you are on a pilgrimage… so you might not be aware of recent events."
 
-    show eisleigh_dim angry look neutral
+    show eisleigh_dim angry look talk
     ei "There have been sightings of a werewolf in another town."
 
     show edwin_dim neutral distant sweat
     show ilona_dim pensive neutral solemn
 
-    show uldin_dim glance angry laugh
+    show uldin_dim pensive angry neutral with dissolve
     ul "Those foul beasts… A werewolf truly must be cursed to succumb to their bloodlust."
 
     stop music fadeout 3.0
@@ -900,7 +917,7 @@ label act1:
     play sound 'audio/sfx/zapsplat tea.mp3' volume 0.2
     "Edwin adds more sugar to his tea, and he takes care to not rattle the crockery as he stirs it with the spoon."
 
-    show uldin_dim neutral
+    show uldin_dim laugh
     ul "Please pay no heed to my language, it- It’s just..."
 
     scene bg hall alt
@@ -947,12 +964,13 @@ label act1:
     il "...Do you need any assistance?"
 
     show uldin_dim open relaxed neutral
-    show edwin_dim closed neutral
+    show edwin_dim closed talk
     ed "No, thank you, Ilona. And yes; Fleur, I think I may need to rest for the day. Please excuse me, my mind’s been all over the place."
 
-    show edwin_dim glance smile
+    show edwin_dim glance grin
     ed "I should be back in full spirits by tomorrow."
 
+    show uldin_dim talk
     ul "Very well. Eisleigh, if you may, show him to his room, please."
 
     show eisleigh_dim closed talk behind uldin_dim with dissolve:
@@ -965,8 +983,6 @@ label act1:
     with dissolve
 
     # SCENE 8(EDWIN POV)
-
-    play sound 'audio/sfx/footsteps slow leather wood.wav' volume 0.3
 
     scene bg door night light
     with fade
@@ -985,8 +1001,6 @@ label act1:
 
     show eisleigh_dim open neutral
 
-    queue sound 'audio/ambience/dark forest.mp3' volume 0.1 fadein 3.0 noloop
-
     "He was prepared to run out of the manse, and to be alone in the darkness of night. Instead, he still has to play the role of an honoured houseguest."
 
     show eisleigh_dim smile
@@ -995,6 +1009,8 @@ label act1:
 
     hide eisleigh_dim with dissolve
     play sound 'audio/sfx/wood door close.wav' volume 0.3
+
+    queue sound 'audio/ambience/dark forest.mp3' volume 0.1 fadein 3.0 noloop
 
     "The unexpected privacy given to him helps ease his mind and, feeling his skin cool, he wipes the cold sweat from his brow."
 
@@ -1043,7 +1059,7 @@ label act1:
 
     ed "That day… I was brave, wasn’t I? I did save my sister from the werewolf attack, didn’t I?"
 
-    play sound 'audio/sfx/Creepy Wind A.ogg' volume 0.2
+    play sound 'audio/sfx/Creepy Wind A.ogg' volume 0.13
 
     ed "(But did I really do it for her? Or did my thirst for blood take over…)"
 
@@ -1072,7 +1088,7 @@ label act1:
 
     ed "...What am I doing?"
 
-    play music 'audio/music/Edwin Vocal Theme.mp3' volume 0.3 fadein 1.0 noloop
+    play music 'audio/music/Edwin Vocal Theme.mp3' volume 0.1 fadein 1.0 noloop
 
     ed "Ilona told me once to hold onto hope… What’s done is done."
 
@@ -1091,7 +1107,7 @@ label act1:
     ed "What a fool I am for having kept my affection a secret from you..."
 
     hide edwin_dim
-    show bg black with fade
+    show bg moon with fade
 
     ed "(Because now…)"
 
@@ -1164,6 +1180,8 @@ label act1:
     scene bg door night light
     with fade
 
+    play sound 'audio/sfx/wood door open and close.wav'
+
     "Ilona opens the door, and thinks for a moment if she wants to lock it. Her head is swimming, either from the spiced wine, or the meandering conversation."
 
     scene bg bedroom night light
@@ -1173,7 +1191,7 @@ label act1:
         zoom 0.5
 
     stop music fadeout 2.0
-    play music 'audio/ambience/janbezo wind.ogg' volume 0.5
+    play music 'audio/ambience/janbezo wind.ogg'
 
     il "(Ed… I wonder how he's doing. That conversation earlier really took a turn for the worse for him.)"
 
@@ -1193,6 +1211,8 @@ label act1:
     "She thinks of going to see him, to maybe knock on his door and to check up on him."
 
     "However, in the end she decides not to. Ilona can only trust him to be cautious. She could not continue to worry about him; it would make her restless…"
+
+    play sound 'audio/sfx/zap clothes rustle.mp3' volume 0.3
 
     scene bg door night dark:
         xzoom -1
@@ -1231,7 +1251,7 @@ label act1:
 
     scene bg black with fade
 
-    queue music 'audio/music/Death Tolls.ogg' volume 0.4
+    queue music 'audio/music/Death Tolls.ogg' volume 0.2
 
     "The piercing sound of a howl wakes Kellac first, followed shortly by a woman's loud scream."
     play sound 'audio/sfx/wood door open and close.wav' volume 1.0
@@ -1241,7 +1261,9 @@ label act1:
     with fade
 
     play sound 'audio/sfx/footsteps hurried.wav'
-    "Ilona hears footsteps rush past her room, and her eyes flutter open; registering what woke her. She puts on her habit, covering her head, and hurries out the door, unlocking it first…"
+    "Ilona hears footsteps rush past her room, and her eyes flutter open; registering what woke her."
+    play sound 'audio/sfx/zap clothes rustle.mp3' volume 0.3
+    extend " She puts on her habit, covering her head, and hurries out the door, unlocking it first…"
 
     scene bg hallway night dark
     show kellac_twilight glance anger at center:
@@ -1278,7 +1300,7 @@ label act1:
 
     "She knocks again, this time urgently. Still, there is nothing coming from the other side of the room."
 
-    play sound 'audio/sfx/zap door handle movement.mp3'
+    play sound 'audio/sfx/zap door handle movement.mp3' volume 0.4
     "She turns the handle. The door is locked, and there is no reply…"
 
     show ilona_twilight pensive neutral
@@ -1290,7 +1312,7 @@ label act1:
 
     "Ilona feels her heart lurch."
 
-    play sound 'audio/sfx/stairs ascending hurried.wav' volume 0.4 fadeout 2.0
+    play sound 'audio/sfx/stairs ascending hurried.wav' fadeout 2.0
     "She stumbles up the stairs, finding Kellac at the door to what seems to be the master’s chambers."
 
     scene bg master door night
@@ -1358,7 +1380,7 @@ label act1:
 
     $ renpy.pause(1.0)
 
-    play sound 'audio/ambience/Dark Ambience.ogg' volume 0.1
+    play sound 'audio/ambience/Dark Ambience.ogg' volume 0.4
 
     "Traces of blood are on the door, as with thick shards of wood splintering from its fractures."
 
@@ -1387,7 +1409,7 @@ label act1:
         zoom 0.5
     with longdissolve
 
-    play music 'audio/music/Wail of the Moon.ogg' volume 0.4 fadein 2.0
+    play music 'audio/music/Wail of the Moon.ogg' volume 0.3 fadein 2.0
 
     il "Edwin…"
 
@@ -1463,7 +1485,7 @@ label act1:
     an "An honest man would beg harder for his life. You sound like you've already accepted your execution."
 
     # Ilona turns to left
-    show ilona_twilight sad talk at center:
+    show ilona_twilight sad talk at center with dissolve:
         zoom 0.5 xzoom -1
 
     il "Wait! Please give us a minute. I… I want to talk to Edwin."
@@ -1489,15 +1511,15 @@ label act1:
 
     "Ilona crouches down beside Edwin. His distant gaze lacks warmth and familiarity."
 
-    show ilona_twilight sad
+    show ilona_twilight sad talk with dissolve
     il "Edwin, can you hear me?"
 
     ed "…"
 
-    show ilona_twilight closed
+    show ilona_twilight closed with dissolve
     il "Ed…"
 
-    show edwin_twilight sad talk
+    show edwin_twilight sad talk with dissolve
     ed "I-I am so sorry, Ilona. I wasn't able to control it… "
 
     "Hearing him talk reassures her slightly. Ilona gingerly takes his wolf-like hands into hers. Even though his gaze is cold and stony, the hands still hold warmth."
@@ -1505,13 +1527,13 @@ label act1:
     show ilona_twilight open
     il "Do you swear that you didn't kill them?"
 
-    show edwin_twilight neutral
+    show edwin_twilight talk with dissolve
     ed "When I entered the room, they were already like this."
 
     show ilona_twilight talk
     il "Then— You weren't the one—"
 
-    show ilona_twilight sweat pensive neutral
+    show ilona_twilight sweat pensive neutral with dissolve
     il "Something's wrong. Your hands… they're not turning back—"
 
     an "Stop — time's up."
@@ -1540,7 +1562,7 @@ label act1:
 
     hide anari_twilight with dissolve
 
-    play sound 'audio/sfx/zapsplat chain move.mp3' volume 0.2
+    play sound 'audio/sfx/zapsplat chain move.mp3' volume 0.2 fadeout 5.0
     stop music fadeout 2.0
     "Ilona isn't sure if Edwin obliged so easily because he feared for her safety, or if he truly has given up; like what Anari said earlier. He wordlessly lets Anari bind him with chains."
 
