@@ -965,9 +965,12 @@ label act1:
 
     # SCENE 8(EDWIN POV)
 
+    play sound 'audio/sfx/footsteps slow leather wood.wav' volume 0.3
+
     scene bg door night light
     with fade
 
+    play sound 'audio/sfx/wood door open.wav' volume 0.3
     "Eisleigh unlocks the door by the stairs, and opens the guest room. She gives Edwin the key."
 
     scene bg bedroom night light
@@ -990,6 +993,7 @@ label act1:
     "Eisleigh bows, and leaves him with only saying a few words of comfort, hoping that he will feel better with rest. He nods, and then closes the door, locking it with the key."
 
     hide eisleigh_dim with dissolve
+    play sound 'audio/sfx/wood door close.wav' volume 0.3
 
     "The unexpected privacy given to him helps ease his mind and, feeling his skin cool, he wipes the cold sweat from his brow."
 
@@ -1067,7 +1071,7 @@ label act1:
 
     ed "...What am I doing?"
 
-    play music 'audio/music/Edwin Vocal Theme.mp3' volume 0.2 fadein 2.0 noloop
+    play music 'audio/music/Edwin Vocal Theme.mp3' volume 0.3 fadein 1.0 noloop
 
     ed "Ilona told me once to hold onto hope… What’s done is done."
 
@@ -1128,7 +1132,7 @@ label act1:
 
     "Ilona stayed after Edwin's exit, to ask Uldin and Eisleigh about the nature of curses, but the conversation following was dense and difficult."
 
-    play music 'audio/music/Ilona Theme.mp3' volume 0.2 fadein 2.0 noloop
+    play music 'audio/ambience/bbc fire.mp3' volume 0.2 fadein 2.0 noloop
 
     hide fleur_dim with dissolve
 
@@ -1164,17 +1168,20 @@ label act1:
     scene bg bedroom night light
     with longfade
 
-    show ilona_dim at center with dissolve:
+    show ilona_dim pensive solemn at center with dissolve:
         zoom 0.5
 
-    queue sound 'audio/ambience/janbezo wind.ogg' volume 0.5
+    stop music fadeout 2.0
+    play music 'audio/ambience/janbezo wind.ogg' volume 0.5
 
     il "(Ed… I wonder how he's doing. That conversation earlier really took a turn for the worse for him.)"
 
     "His room is on the right side of hers, and Kellac’s on the left."
 
+    show ilona_dim closed
     "Ilona presses her ear up to the wall separating her and Edwin's room, but hears nothing from the other side."
 
+    show ilona_dim pensive
     il "(Not a sound. He's probably asleep.)"
 
     scene bg bedroom night dark
@@ -1196,7 +1203,9 @@ label act1:
 
     "Though, there are strangers in the house, and some of them are men…"
 
-    "… Edwin would have wanted her door locked. She goes to the door and turns the key in the keyhole, hearing a reassuring click."
+    "… Edwin would have wanted her door locked."
+    play sound 'audio/sfx/lock metal.mp3'
+    extend " She goes to the door and turns the key in the keyhole, hearing a reassuring click."
 
     scene bg bedroom night dark
     with fade
@@ -1224,13 +1233,13 @@ label act1:
     queue music 'audio/music/Death Tolls.ogg' volume 0.4
 
     "The piercing sound of a howl wakes Kellac first, followed shortly by a woman's loud scream."
-    play sound 'audio/sfx/wood door open and close.wav' volume 0.7
+    play sound 'audio/sfx/wood door open and close.wav' volume 1.0
     extend " His door opens with a slam, sensing something is incredibly wrong…"
 
     scene bg bedroom night dark
     with fade
 
-    play sound 'audio/sfx/footsteps hurried.wav' volume 0.4
+    play sound 'audio/sfx/footsteps hurried.wav'
     "Ilona hears footsteps rush past her room, and her eyes flutter open; registering what woke her. She puts on her habit, covering her head, and hurries out the door, unlocking it first…"
 
     scene bg hallway night dark
@@ -1243,7 +1252,7 @@ label act1:
     show kellac_twilight yell
     ke "There's no time to lose! See if you can wake him up, I'm going on ahead!"
 
-    play sound 'audio/sfx/stairs ascending hurried.wav' volume 0.3 fadeout 3.0
+    play sound 'audio/sfx/stairs ascending hurried.wav' fadeout 1.0
     hide kellac_twilight with dissolve
 
     "He runs up the stairs. For a man who always seems so weary, there is a vivacity in his face now that danger is present."
@@ -1268,6 +1277,7 @@ label act1:
 
     "She knocks again, this time urgently. Still, there is nothing coming from the other side of the room."
 
+    play sound 'audio/sfx/zap door handle movement.mp3'
     "She turns the handle. The door is locked, and there is no reply…"
 
     show ilona_twilight pensive neutral
@@ -1308,7 +1318,7 @@ label act1:
 
     ke "The servants' quarters are on the other side of the house, up the stairs. Get a master key for this door!"
 
-    play sound 'audio/sfx/footsteps hurried.wav' volume 0.2
+    play sound 'audio/sfx/footsteps hurried leather tile.wav'
     hide kellac_twilight with dissolve
     hide ilona_twilight with dissolve
 
@@ -1329,6 +1339,7 @@ label act1:
     "Eisleigh's eyes go wide, and she fumbles in her long green robe, producing a dangling set of keys, nearly dropping them in her haste."
 
     show eisleigh_twilight surprise worry talk
+    play sound 'audio/sfx/old keys jingle.mp3'
     ei "I- I have a copy of the master key. Come on! There's no time to waste!"
 
     stop music fadeout 3.0
@@ -1337,7 +1348,7 @@ label act1:
 
     $ renpy.pause(1.0)
 
-    play sound 'audio/sfx/stairs ascending hurried.wav' volume 0.2
+    play sound 'audio/sfx/stairs ascending hurried.wav'
 
     "When they rush back to the masters' chambers, there is no use for the master key. They find the door broken and battered, but no sign of Anari or Kellac yet."
 
@@ -1352,6 +1363,8 @@ label act1:
 
     scene bg masters chamber night
     with fade
+
+    play sound 'audio/sfx/footsteps slow leather tile.wav'
 
     "Ilona and Eisleigh enter the bedroom, stepping over part of the broken door. It smells strongly of blood and burnt hair."
 
@@ -1390,12 +1403,16 @@ label act1:
 
     "With his body turned away, Ilona couldn't tell who it was in his arms, but she now sees a ring on the hand, and chestnut brown hair…"
 
+    play sound 'audio/sfx/footsteps hurried tile trainers.wav'
+
     "The sound of footsteps rushes up the stairs again, and Ilona knows immediately who it is."
 
     scene bg hallway night dark
     show anari_twilight furious scary yell kill at center:
         zoom 0.7 yoffset 220
     with dissolve
+
+    stop sound
 
     an "Get away from him, Ilona!"
 
@@ -1408,7 +1425,10 @@ label act1:
     show kellac_twilight anger at easeinleft_transform:
         zoom 0.8 yoffset 500
 
-    "Ilona can’t move. With Anari's arrow trained on them, Kellac rushes in; carrying a healer's kit. Edwin sets the body of the woman down and backs away. Kellac checks the unburned section of her wrist."
+    play sound 'audio/sfx/footsteps hurried leather tile.wav'
+    "Ilona can’t move. With Anari's arrow trained on them, Kellac rushes in; carrying a healer's kit."
+    stop sound
+    extend " Edwin sets the body of the woman down and backs away. Kellac checks the unburned section of her wrist."
 
     show kellac_twilight closed grimace
     "There is only the sound of Kellac choking back his frustration and dismay."
@@ -1425,9 +1445,10 @@ label act1:
     # Anari moves to the right slightly
     show anari_twilight kill scary angry neutral at easeinleft_transform:
         zoom 0.5 xzoom -1
-
+    play sound 'audio/sfx/footsteps slow trainers.wav'
     "Anari moves in after seeing that Edwin shows no signs of retaliation."
 
+    stop sound
     an "We need to restrain him. Fleur's gone missing…"
 
     # Edwin turns to left
@@ -1456,11 +1477,14 @@ label act1:
 
     $ renpy.pause(1.0)
 
+    play sound 'audio/sfx/footsteps slow leather tile.wav' volume 0.7
     # Ilona turns to right and moves towards Edwin (close enough to touch him)
     show ilona_twilight pensive solemn at easeinleft_transform:
         zoom 0.85 yoffset 400
 
     $ renpy.pause(1.0)
+
+    stop sound
 
     "Ilona crouches down beside Edwin. His distant gaze lacks warmth and familiarity."
 
@@ -1496,6 +1520,8 @@ label act1:
         xzoom -1
     with dissolve
 
+    stop music fadeout 3.0
+
     "Anari's voice is enough to cut the two apart, and Ilona lets go of Edwin's hands immediately."
 
     scene bg masters chamber night with dissolve
@@ -1517,10 +1543,13 @@ label act1:
     stop music fadeout 2.0
     "Ilona isn't sure if Edwin obliged so easily because he feared for her safety, or if he truly has given up; like what Anari said earlier. He wordlessly lets Anari bind him with chains."
 
+    $ renpy.pause(2.0)
+
     ## MANSE
     scene bg chapel night
     with longfade
 
+    play sound 'audio/sfx/footsteps slow trainers.wav'
     "Anari escorts him forcefully out of the mansion, and takes him underground to a dungeon."
 
     ## DUNGEON
@@ -1528,11 +1557,12 @@ label act1:
     with fade
     extend "\nThe only thing Ilona sees before the doors close is Edwin's taciturn and listless expression."
 
+    play sound 'audio/sfx/metal door.wav' volume 0.7
+
     show edwin_twilight wolf distant at center:
         zoom 0.5
     with longdissolve
 
-    stop music fadeout 3.0
 
     # TRANSITION TO SCENE 14 + 15
 
@@ -1556,7 +1586,7 @@ label act1:
 
     "The sun has not risen yet, and the clouds are dark and looming. There's a damp chill in the air."
 
-    queue music 'audio/ambience/wind and trees.ogg' volume 0.1 fadein 2.0 noloop
+    queue music 'audio/ambience/wind and trees.ogg' volume 0.3 fadein 2.0 noloop
 
     show eisleigh_night closed worry
     ei "What now?"
@@ -1586,6 +1616,8 @@ label act1:
 
     show anari_night look talk -sweatdrop
     an "Ilona. Did you know that the man was a werewolf before entering this town?"
+
+    play music 'audio/music/Ilonas_Theme_backing.mp3' volume 0.3 fadein 2.0 noloop
 
     show ilona_night talk
     il "…Yes. In my presence, he's more capable of controlling his transformation."

@@ -199,8 +199,6 @@ screen credits():
             null height 80
             text "Daniel Thornton"
             null height 80
-            text "Jack1956"
-            null height 80
             text "Zidikai1"
             null height 80
             text "Leonid Evdokimov"
@@ -238,6 +236,8 @@ screen credits():
             text "Tim Kahn"
             null height 80
             text "nhaudio"
+            null height 80
+            text "Volivieri"
             null height 80
             text "of Freesound"
 

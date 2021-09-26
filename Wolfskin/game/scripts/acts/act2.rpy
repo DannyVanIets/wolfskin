@@ -26,8 +26,6 @@ label act2:
     scene bg masters chamber
     with longfade
 
-    play sound 'audio/ambience/janbezo wind.ogg' volume 0.3
-
     # TODO show Ilona and Kellac
 
     "Ilona takes a look once more at the corpses of Salome and Uldin."
@@ -47,6 +45,8 @@ label act2:
         zoom 0.5 xzoom-1
     with dissolve
 
+    play music 'audio/music/Haunting.ogg' fadein 2.0 volume 0.5
+
     "From what is seen, Uldin died of blood loss from a wound to his neck, and Salome shows signs of burns surpassing the third degree."
 
     "There's swelling at her neck and spine; possibly a fracture. Both of them died at around the same time, shortly before they entered the room to witness the gruesome scenario."
@@ -54,8 +54,6 @@ label act2:
     hide bw_ul_murder
     hide bw_sa_murder
     with dissolve
-
-    play music 'audio/music/Haunting.ogg' fadein 2.0
 
     show ilona_dim aaaa pensive at left:
         zoom 0.5
@@ -71,12 +69,12 @@ label act2:
 
     show ilona_dim at gocenter_transform
 
-    $ renpy.pause(2.0)
+    $ renpy.pause(1.0)
 
     show ilona_dim at centertoleft_transform:
         xzoom-1
 
-    $ renpy.pause(2.0)
+    $ renpy.pause(1.0)
 
     "Ilona tries to find anything else in the room that could have been used. On the nightstand, there's a candle turned over. Droplets of now hard wax marred the wood surface. "
 
@@ -122,7 +120,7 @@ label act2:
     an "I don't think it has anything to do with the murders. That chest is meant for Fleur when she is married. Salome had it made recently."
 
     # Anari turns back to face Ilona
-    show anari_dim relaxed:
+    show anari_dim relaxed with dissolve:
         xzoom 1
 
     an "It's natural she might have moved it since I was last here. She does worry about Fleur's future, after all… Salome was still considering which items should go inside. "
@@ -148,7 +146,7 @@ label act2:
 
     "When they reach the bed, Ilona isn't sure what to expect. Anari remains behind her, and nods for Ilona to pull back the covers. Ilona could see something that looked like it's carved from wood…"
 
-    play music 'audio/music/Echoing - Theme Of Fleur -.ogg'
+    play music 'audio/music/Echoing - Theme Of Fleur -.ogg' volume 0.5
 
     # wood effigy
     show effigy at center with longdissolve:
@@ -247,7 +245,7 @@ label act2:
     show ilona_dim smile pensive
     il "Here you go. Please, have some."
 
-    play music 'audio/sfx/zapsplat clock.mp3' loop volume 0.3
+    play music 'audio/sfx/zapsplat clock.mp3' loop volume 0.2
 
     "Ilona serves tea to Anari. As expected, Anari does not take any of the milk or sugar."
     play sound 'audio/sfx/zapsplat tea.mp3' volume 0.2
@@ -296,9 +294,9 @@ label act2:
 
     $ renpy.pause(1.0)
 
-    show salome_bw at right:
+    show salome_bw closed sad neutral at right:
         xzoom-1
-    show edwin_bw wolf at center:
+    show edwin_bw fury furrow yell wolf at center:
         zoom 0.5 xzoom-1
     with longdissolve
     "Therefore, Edwin was already inside the master's chambers at the time of the murder."
@@ -327,6 +325,7 @@ label act2:
     il "How do you suppose that everyone is saying the absolute truth?"
 
     play music 'audio/music/Ilona Theme.mp3' volume 0.3 loop
+
     il "Kellac could have acted as if he had witnessed the murder. We have no account of what he was doing before that."
 
     il "There was also nobody around to confirm that Eisleigh was not at the crime scene, and I found her alone."
@@ -558,146 +557,237 @@ label act2:
     scene bg kellacs room
     with longfade
 
+    play music 'audio/ambience/bbc fire.mp3' volume 0.3
+
     "When Ilona opens her eyes again, she's in an unfamiliar bed and room. The air is heavy with a medicinal smell, suffocatingly so."
 
     "She feels far too conscious of her body. Her mouth feels dry, and her heart still feels like it's beating too fast."
 
-    show ilona at left with dissolve:
+    show ilona closed sad talk at left with dissolve:
         zoom 0.5
 
     il "Did-? Was I…?"
 
-    show kellac at less_right with dissolve:
+    show kellac raised smile at less_right with dissolve:
         zoom 0.5 xzoom -1
 
     ke "Take it easy. You're safe — we're still in the manse."
 
+    show ilona open neutral
     il "Just how long was I out for?"
 
+    show kellac relaxed talk
     ke "It's almost midday."
 
+    show ilona glance annoyed sweat
     "Ilona grimaces. Too much time was lost. She moves her arms slowly, her body heavy. Sensation comes back into the tips of her fingers, and the unpleasant tingling stops. The smell of herbal medicine starts to become more bearable to her senses."
 
+    show kellac anger neutral
     ke "It wasn't an ordinary fainting spell. You should have regained consciousness faster if it was simply fatigue and stress."
 
     ke "I've taken precautions, and treated you for poisoning."
 
     il "Then, do you think — Did Anari try to poison me?"
 
+    show kellac glance
     ke "…I suppose you can't really rule out that possibility. Did you eat or drink anything with her?"
 
+    show ilona open
     il "Only tea, but I was the one who suggested and prepared it."
 
     il "I didn't see her slip anything in my drink. In fact, she was convinced I was trying to poison her…"
 
+    show kellac closed relaxed talk
     ke "She's not the type to take such a cowardly approach."
 
     ke "She may seem cruel, but I don't think she would go that far to sabotage your efforts and put a stop to you."
 
+    stop music fadeout 5.0
+
+    show ilona relaxed -sweat
     il "It seems you and Anari know each other well. I don't have much time, but I need to ask:"
 
+    show ilona sad
     il "She had an extreme reaction upon seeing a wooden statue resembling Fleur. What could have terrified her so much about it?"
 
+    show kellac anger neutral
     ke "Truth be told, I don't really know much about her history, only rumours. She must think that the statue has to do something with the fae — Something in her past made her be wary of them."
 
     ke "Fleur admires the fair folk. The wooden statue is too elaborate to be one of Fleur's pranks, especially with the death of her parents…"
 
     il "So her aversion to seeing the statue has to do with her trauma, and distaste for Fleur's fae-related tricks?"
 
+    show kellac glance talk
     ke "Something like that. Anari hates being pitied, and she doesn't show pity for anyone else either."
 
     ke "She would be terrified at the thought of Fleur being spirited away by the fair folk. It's not something that she could ever accept - That's probably why she is leading the search."
 
-    "Ilona shifts her body off the bed, able to move freely again. Kellac invites her to take a seat at the hall, and Ilona does so. He pours her some clear water. The smell of a simmering stew wafts from the kitchen."
+    scene bg black with fade
 
+    "Ilona shifts her body off the bed, able to move freely again. Kellac invites her to take a seat, and Ilona does so. He pours her some clear water. The smell of a simmering stew wafts from the kitchen."
+
+    scene bg kellacs room
+    show ilona at left:
+        zoom 0.5
+    show kellac glance anger neutral at less_right:
+        zoom 0.5 xzoom -1
+    with longdissolve
+
+    play music 'audio/music/The Town.ogg' volume 0.5 fadein 1.0
+
+    show kellac relaxed talk open
     ke "About the tea you had with Anari — was there anything odd about it? I'm asking because before the banquet, I gave Uldin his medicine, a powerful soporific."
 
+    show kellac anger
     ke "There were three less doses in the pantry when I checked."
 
+    show ilona sad pensive talk
     il "Then, you think someone last night—"
 
+    play sound 'audio/sfx/bbc 3 knocks.mp3' volume 0.3
     "There's a light knock on the door. Kellac tells them to enter, it's Eisleigh."
 
-    show eisleigh at extra_right with dissolve
+    play sound 'audio/sfx/wood door open and close.wav' volume 0.5
+    show eisleigh worry neutral at extra_right with dissolve
 
     ei "Oh, Ilona — I heard you fainted in the town square. I was worried."
 
+    show kellac nii smile relaxed
     ke "Ah, yes! I invited Eisleigh over for lunch. Ilona, you probably haven't eaten at all yet, have you? You should try to eat, even if it's just a little."
 
+    show ilona glance neutral sweat
     il "…"
 
+    show kellac open worry neutral
     ke "…I guess it's hard to trust anyone after what you've been through."
 
+    show ilona pensive -sweat
     il "No, it's fine… I'll eat with you. You're right, I probably can't do much if I don't take care of myself."
+
+    scene bg black with fade
 
     "Kellac serves Eisleigh and Ilona a rustic stew, with dark bread and clear water on the side. During the time eating together, Eisleigh asks about the investigation, and Ilona repeats Anari's reasoning surrounding Eisleigh and Kellac."
 
     "Ilona would have thought that Anari's defense was unbreakable, but there was actually one new thing they learnt about last night…"
 
+    scene bg hall day
+    show ilona at left:
+        zoom 0.5
+    show kellac glance anger neutral at less_right behind eisleigh:
+        zoom 0.5 xzoom -1
+    show eisleigh worry neutral at extra_right
+    with longdissolve
+
     il "So are you considering the possibility someone tried to drug us during the banquet?"
 
+    show kellac open talk
     ke "That's what I feared, at least. Anari and I left before that, so I don't really have a clear picture of what exactly happened."
 
+    show kellac closed
+    show ilona glance solemn
     "Ilona stares at an empty teacup in the room, and then realizes something — if the tea she served Anari was different, but she used the same sugar from last night—"
 
+    show ilona open aaaa talk with dissolve
     il "The sugar — it must have been tampered with! Last night, I didn't add any to my tea because I didn't want to be rude, but I took some when I had tea with Anari."
 
+    show eisleigh glance small
     ei "I remember Fleur was really insistent on putting sugar in my tea. I did think that was weird."
 
+    show kellac open
     ke "How much sugar did you put in your tea this morning, Ilona?"
 
+    show ilona glance sad smile sweat
     il "Four spoonfuls…"
 
+    show eisleigh surprise talk
     ei "Uhh, that sure is a lot…"
 
+    show kellac closed relaxed smile sweat
     ke "Goodness, no wonder you were out for so long! I'm surprised Anari didn't get on your case for adding tea to your cup of sugar."
 
+    show eisleigh angry glance small
     ei "I think we can confirm this theory to be true then: someone was trying to put us into a deep sleep - and there's a chance they were trying to target Edwin specifically."
 
+    show ilona open -sweat
     il "Then that would implicate Salome, or Fleur, most likely. They were the ones who prepared the tea last night."
 
+    show eisleigh closed evil neutral
     ei "It's not like I can deny it, but..."
 
+    show kellac glance anger talk with dissolve
     ke "Uldin could be involved, too."
 
     ke "The truth is… the medicine he uses is made to look inconspicuous on purpose."
 
+    show kellac neutral
     ke "I never inquired too closely about it, but he comes from a rather unscrupulous family; it wouldn't surprise me if he was aware of this plot."
+
+    scene bg black with fade
 
     "Kellac seems to know the most about Uldin's family and his circumstances, so Ilona asked for more information."
 
+    show uldin_bw at center with dissolve:
     "Uldin suffered from insomnia, and slept in separate arrangements so as to not disturb his wife. Last night was also one of the rare occasions when Uldin was back in town, as he travelled frequently for his research; studying magic."
+
+    hide uldin with dissolve
+
+    stop music fadeout 5.0
 
     "On the topic of magic, Eisleigh recalls something that she needed to discuss."
 
+    scene bg hall day
+    show ilona at left:
+        zoom 0.5
+    show kellac glance relaxed neutral at less_right behind eisleigh:
+        zoom 0.5 xzoom -1
+    show eisleigh worry neutral at extra_right
+    with fade
+
     ei "Could you tell us more about how Edwin is able to transform into a werewolf? Have you ever seen him do it?"
 
+    show ilona glance solemn
     il "No, I haven't. When he transforms, even when I ask it of him, he tells me to look away or to close my eyes."
 
+    show kellac sweat worry talk
     ke "Wait, why do you ask him to transform? What do you do when he's a werewolf?"
 
+    show ilona neutral blush sad
     il "It's… a secret."
 
+    show eisleigh open yell angry
     ei "Secret… Wait, that's precisely it!"
 
+    show kellac -sweat
+    show ilona open talk sweat
+    with dissolve
     "Everyone else looks at Eisleigh in alarm."
 
-    play music 'audio/music/Wail of the Moon.ogg'
+    play music 'audio/music/Haunting.ogg' fadein 1.0 volume 0.5
 
+    show ilona -sweatdrop
+    show eisleigh neutral
+    with dissolve
     ei "I heard of shapechangers before while studying cursed objects. They would use either an ointment, or the pelt of an animal, to assume the form of a beast."
 
+    show eisleigh look
     ei "If the curse was tied to his body, he wouldn't fear you witnessing his transformation."
 
+    show eisleigh small glance
     ei "But what if it was an item? If he feared betrayal, he wouldn't even show it to an ally."
 
+    show eisleigh closed
     ei "Besides, there's always a risk involved in keeping that item safe — so it is better that only the bearer knows of it, because it could get lost, destroyed, or..."
 
+    show ilona aaaa neutral
     il "… stolen."
 
+    show kellac anger neutral
     "Both Kellac and Ilona look at Eisleigh with tense faces. Ilona isn't sure what to be more surprised at: Eisleigh's incredible reasoning and knowledge, or that someone would go as far as to steal an item uncertain to be in Edwin's possession."
 
+    show eisleigh talk open
     ei "There is a high chance that this cursed item still exists. Had it been destroyed, he would have died along with it."
 
+    scene bg moon with dissolve
     ei "This would give us a reason as to why Edwin was drugged last night: Uldin and Salome are sharp, and they might have caught onto Edwin being a werewolf early on."
 
     il "If we return this item to Edwin, would it restore the transformed arms back to human form?"
@@ -706,13 +796,31 @@ label act2:
 
     ei "Someone else could have also used it, but… Uldin would understand the consequences of such a thing. I highly doubt it would be him."
 
+    scene bg hall day
+    show ilona pensive aaaa at left:
+        zoom 0.5
+    show kellac glance anger neutral at less_right behind eisleigh:
+        zoom 0.5 xzoom -1
+    show eisleigh angry open neutral at extra_right
+    with fade
+
     ke "Even so, finding this item might lead us to  finding the true culprit, or at least help make sense of this tragedy…"
 
+    show kellac closed talk
     ke "You might not be able to convince everyone that Edwin is innocent, otherwise."
 
+    show ilona sad neutral
     il "Yes, Anari wouldn't accept it so easily... What would it take to convince her of Edwin's innocence?"
 
+    show kellac worry open neutral sweat
     ke "Short of having the culprit confess their crime, or finding Fleur in hope for an answer… I don't know."
+    $ renpy.pause(2.0)
+
+    scene bg black with fade
+
+    $ renpy.pause(1.0)
+
+    scene bg fluffies with logodissolve
 
 # SCENE 32
 
@@ -720,6 +828,7 @@ label act2:
     scene bg hallway
     with longfade
 
+    play sound 'audio/sfx/stairs ascending slow.wav'
     "The three of them start their search for the cursed item. Based on Anari's report, Kellac confirms with Ilona that nobody was able to enter or exit the town after Ilona and Edwin entered."
 
     "Eisleigh was eager to help out in any way possible, now that there was a chance of witnessing or finding a cursed magical object."
@@ -728,22 +837,34 @@ label act2:
         zoom 0.5
     show kellac at extra_left behind ilona:
         zoom 0.5
-    show eisleigh at right
+    show eisleigh open worry neutral at right
     with dissolve
 
     ei "Kellac knows this, but I am not meant to have a copy of the master key."
 
+    show eisleigh closed
     ei "I used to be a thief before I came here. The reason why I was an assistant to this household, was because I tried to steal one of Uldin's rare books…"
 
+    show eisleigh look smile relaxed
     ei "However, I've put the past well behind me. Uldin made me his friend instead of punishing me, and I'm thankful for that."
+
+    play sound 'audio/sfx/footsteps slow trainers.wav'
 
     ## MASTER'S CHAMBER
     scene bg masters chamber
     with longfade
 
+    show bw_ul_murder at left_center:
+        zoom 0.5
+    show bw_sa_murder at right_center:
+        zoom 0.5 xzoom-1
+    with dissolve
+
     "Ilona can’t help but find this suspicious. They start their search around Uldin's chambers. Once again, they see the mutilated corpse of Uldin, and the corpse of Salome, burned beyond recognition…"
 
-    "Despite thoroughly searching the bodies, the trio was unable to find the wolfskin or anything else of importance."
+    "Despite thoroughly searching the bodies, the trio was unable to find the cursed item or anything else of importance."
+
+    stop music fadeout 5.0
 
     ## SALOME'S BEDROOM
     scene bg salomes bedroom
@@ -751,18 +872,19 @@ label act2:
 
     "They move onto Salome's room. Nothing appears to have been touched since the last time Ilona was here with Anari. Like Anari, Eisleigh comments that the chest was moved and then moves to inspect it."
 
-    show eisleigh at right_center with dissolve:
+    show eisleigh angry small glance at right_center with dissolve:
         xzoom -1
 
     ei "This chest… Last time I saw it, it wasn’t locked. Salome was still re-arranging it to look nice."
 
     ei "Let me try opening it…"
 
+    play sound 'audio/sfx/old keys jingle.mp3'
     "Eisleigh pulls out a set of various different keys and picks, agitating each in the keyhole, to no avail."
 
 # SCENE 33
 
-    show ilona at less_left:
+    show ilona happy sad sweat at less_left:
         zoom 0.5
     show kellac at extra_left behind ilona:
         zoom 0.5
@@ -770,106 +892,125 @@ label act2:
 
     il "I thought you said you put the past behind you."
 
+    show eisleigh nii grin relaxed
     ei "I did, but I thought the tools might come to be useful one day. We're doing a good thing, aren't we? Lockpicking is not inherently evil."
 
+    show kellac closed raised smile sweat
     ke "Full of surprises, eh? I trust you're not making excuses now."
 
+    show eisleigh angry glance small
     ei "Of course not, I merely-"
+    show eisleigh grin nii relaxed
+    play sound 'audio/sfx/bolt metal unlock.mp3'
     extend " Ah-ha! I got it!"
 
+    play sound 'audio/sfx/lock metal.mp3' volume 0.3
     "She jammed the lockpick into the keyhole and wriggled it around. A faint 'click' was heard."
-
-    stop music fadeout 1.0
 
     ## EISLEIGH'S BLOOD
 
-    scene bg wound1
-    with longfade
+    $ renpy.pause(0.3)
 
+    scene bg wound1
+
+    play sound 'audio/sfx/stab flesh.mp3' volume 0.8
     "…"
 
     scene bg wound2
-
+    play sound 'audio/sfx/stab flesh 2.mp3' volume 0.8
     extend "\n…"
 
     scene bg wound3
-
+    play sound 'audio/sfx/stab flesh.mp3' volume 0.8
     extend "\n……"
 
     scene bg wound4
-
+    play sound 'audio/sfx/stab flesh 2.mp3' volume 0.8
     "……"
 
     scene bg wound5
-
+    play sound 'audio/sfx/stab flesh.mp3' volume 0.8
     extend "\nFive stabs pierce the soft flesh of Eisleigh's hand."
 
-    ## SALOME'S BEDROOM
-    scene bg salomes bedroom
-    with fade
+    play music 'audio/music/fade away.ogg' volume 0.2 noloop
 
-    show kellac at center behind eisleigh:
-        zoom 0.5
-    show ilona at left:
-        zoom 0.5
-    show eisleigh at right_center:
-        xzoom -1
-    with dissolve
+    ## SALOME'S BEDROOM
+
+    scene bg blood with hpunch
 
     ke "Eisleigh!"
 
-    # Eisleighs turns to the left facing Kellac
-    show eisleigh:
-        xzoom 1
-
     ei "Aaaaaaaaghh! It… It hurts… It won't stop bleeding!"
 
+    play sound 'audio/sfx/zap clothes rustle.mp3'
     "Kellac fumbles through his thick, heavy cloak, drawing out a clean cloth for use as a compress."
+
+    scene bg salomes bedroom
+    with fade
+
+    show kellac sweat yell anger at center behind eisleigh:
+        zoom 0.5
+    show ilona shock sad talk at left:
+        zoom 0.5
+    show eisleigh fear worry talk at right_center:
+    with dissolve
 
     ei "We need to do something!"
 
+    show kellac neutral -sweat
     ke "There should still be some medical supplies in my room. Let's move there."
 
     # Ilona moves slightly to the right
-    show ilona:
-        ease 0.5 less_left
+    show ilona pensive neutral:
+        ease 0.5 xpos 130
 
     il "Do you need my help? I know some healing magic-"
 
+    show kellac relaxed closed
     ke "It’s all right. I’ve got this."
 
+    show kellac glance
     ke "I just need to slow the bleeding and elevate the injury site. Don't touch anything else in this room. I'll be back soon."
 
     hide kellac
     hide eisleigh
     with dissolve
 
+    play sound 'audio/sfx/stairs descending slow.wav'
+
     "Kellac and Eisleigh make their descent down the stairs. All that remains near the chest is the blood that poured out from Eisleigh's hand, the set of lockpick and Ilona."
 
-    play sound 'audio/sfx/heartbeat.mp3' loop
-
+    show ilona closed
     "The hairs on Ilona’s arms raise, and she can feel her heart beat faster. She puts her hand on her chest, as though uttering a short prayer."
 
+    stop music fadeout 5.0
+
+    show ilona pensive annoyed with dissolve
     il "Breathe. If the chest was a trap, then there has to be something in there that someone doesn’t want found."
 
-    # Ilona 'warps' to chest location (can't implement nice looking move/ease with such long distance)
-    show ilona at right_center with dissolve
+    show ilona pensive neutral:
+        ease 1.0 xpos 800
 
+    play sound 'audio/sfx/old keys jingle.mp3'
     "Despite her best instincts, Ilona picks up the lockpicks Eisleigh used. She spots a thin tool and uses it to pry the wood chest open…"
 
     "The trap was already disengaged; the danger gone. She sighs with relief."
 
-    stop sound fadeout 2.0
+    hide ilona
+
+    show bg blood with dissolve
+
+    play music 'audio/sfx/creepy wind a.ogg' volume 0.2 fadein 2.0
 
     "Nestled underneath delicate pieces of jewelry and other finery, lay the red and glistening gold of a sash; with bloodstained, hoary fur on the other side."
-
-    play music 'audio/music/Haunting.ogg'
 
     il "This must be it…"
 
     il "Ilona touches the wolfskin. She thinks back to meeting Salome, and the dissonance between that friendly encounter and the thought of Salome as a cold-blooded killer."
 
     il "(Salome seemed so kind and caring. Could someone like that really be a murderer?)"
+
+    play sound 'audio/sfx/gynation paper.wav'
 
     "A slip of paper falls out with the wolfskin, the contents addressed to a sculptor. According to the paper, the deposit was paid for, but the project was never finished and was thus refunded. A note explains that the item was delivered yesterday."
 
@@ -885,11 +1026,23 @@ label act2:
     scene bg chapel
     with longfade
 
+    $ renpy.pause(3.0)
+
+    stop music fadeout 5.0
+
+    play sound 'audio/sfx/footsteps slow trainers.wav' volume 0.4
     "Ilona makes her way to where Edwin is imprisoned. The dungeons are behind the ruins of the chapel, which is on the south-east side of the manse."
 
+    stop sound
+    play sound 'audio/sfx/old keys jingle.mp3'
     "She inserts the lockpicks into the keyhole. Ilona had only witnessed Eisleigh do it once, and apparently it’s not as easy as it looks."
 
+    $ renpy.pause(3.0)
+
+    play sound 'audio/sfx/metal door.wav' volume 0.7
     "After what seems like an eternity, the door opens with a loud click and a metallic groan."
+
+    play music 'audio/ambience/janbezo wind.ogg'
 
     ## DUNGEON
     scene bg dungeon
@@ -904,8 +1057,8 @@ label act2:
     stop music fadeout 1.0
 
     # close-up of Ilona
-    show ilona_night closed at center with dissolve:
-        zoom 0.8 yoffset 300
+    show ilona_dim closed at left with dissolve:
+        zoom 0.6
 
     il "I must have courage. I know that I made the right decision."
 
@@ -913,62 +1066,114 @@ label act2:
 
     il "(We're so close. Salome must be the one who did it… If I can just get Edwin to confirm it, then I won't have any fear.)"
 
-    hide ilona_night with dissolve
+    hide ilona_dim with dissolve
+
+    play sound 'audio/sfx/footsteps slow trainers.wav' volume 0.3
+
+    show edwin_dim wolf distant at right with dissolve:
+        zoom 0.6 yoffset 200
 
     "Edwin is sitting in the darkness. His eyes make out the figure in white, clutching the wolfskin in her hand."
 
+    show edwin_dim fear yell sweat with dissolve
     ed "Ilona? You shouldn't be here. Wait, you found the…"
+
+    play music 'audio/music/Ilonas_Theme_backing.mp3' volume 0.5 fadein 1.0
+    show ilona_dim pensive solemn at easeinleft_transform:
+        zoom 0.6 yoffset 30
 
     il "I was alone when I took it. Nobody wore it, either."
 
+    show edwin_dim closed talk with dissolve
     ed "…Thank goodness you're okay. Where did you find it?"
 
+    show ilona_dim aaaa with dissolve
     il "Salome's bedroom. Inside a chest meant for Fleur."
 
+    show edwin_dim fury yell with dissolve
     ed "What? That's—"
 
+    show edwin_dim talk with dissolve
     "Edwin falters, lost for words."
 
-    play music 'audio/music/He Who Seeks Hope - Theme Of Edwin -.ogg'
+    hide ilona_dim
+    hide edwin_dim
 
-    "Ilona kneels down, returning the wolfskin to Edwin. She asks where he normally would wear it. After he tells her, she ties it to the inside of a thick leather piece around his waist."
+    show bg black with fade
+    "Ilona kneels down, returning the wolfskin to Edwin. She asks where he normally would wear it."
+    play sound 'audio/sfx/zap clothes rustle.mp3' volume 0.3 fadeout 1.0
+    extend " After he tells her, she ties it to the inside of a thick leather piece around his waist."
 
-    "The chains fall to the floor, unbinding his once girthy wolf-like arms, now restored to human form."
+    play sound 'audio/sfx/zap chain drop.mp3' volume 0.3 fadeout 1.0
 
+    "The chains fall to the floor, unbinding his thick wolf-like arms, now restored to human form."
+
+    $ renpy.pause(1.0)
+
+    scene bg dungeon
+    show edwin_dim wolf distant at right:
+        zoom 0.6 yoffset 220
+    with fade
+
+    $ renpy.pause(1.0)
+
+    show edwin_dim -wolf with longdissolve
+
+    $ renpy.pause(1.3)
+
+    show edwin_dim open grin with dissolve
     ed "You've saved my life once again… Thank you."
 
+    show ilona_dim blush glance solemn at left with dissolve:
+        zoom 0.6 yoffset 20 xpos 500
     il "Please, there's no need to thank me. It's given me a chance to talk to you again… Do you think you can tell me more about the murder?"
 
+    show edwin_dim glance talk
     ed "Of course — though you probably know more about it than I do."
 
+    show ilona_dim open talk -blush with dissolve
     il "If I think of who could have been present in the Master's chambers at the time, only two people remain. Did Salome murder Uldin? I've gathered that they must have died from the wounds they inflicted on each other. Am I correct?"
 
+    show edwin_dim angry furrow yell
     ed "From what I could tell, yes. But I… I’ve already put you through too much. You have to stop this investigation. There’s no use in getting your hopes up."
 
+    stop music fadeout 3.0
+
+    show ilona_dim aaaa open yell with dissolve
     il "...What? I don't understand. We're so close to finding out the truth! What is there left to hide?"
 
+    play music 'audio/ambience/janbezo wind.ogg'
+
+    show edwin_dim talk
     ed "… If I were to live my life honestly... If I were not a monster… You wouldn't have to keep living a lie."
 
+    show ilona_dim talk
     il "Earlier today, I saw you holding Salome's corpse in your arms. What happened?"
 
+    show edwin_dim sad -furrow talk
     ed "I hid the answer from you for a reason. Please, don’t pry any further…"
 
+    show ilona_dim pensive annoyed tears with dissolve
     il "...You really did kill her."
 
+    show edwin_dim distant furrow with dissolve
     "His eyes are empty and cold. At his loss for words, Ilona's heart sinks. Her hands tremble, and she lowers her head."
 
+    show ilona_dim baby sad with dissolve
     il "No… There’s no way… I… You couldn’t have…"
 
     ed "I should've said something sooner rather than have you go through all of this. I'm sorry."
 
+    show ilona_dim cry wail yell aaaa with dissolve
     il "I believed you were innocent!"
 
+    show edwin_dim talk sad -furrow with dissolve
     ed "If it truly were that simple, then… Well, I wouldn’t have been locked up."
 
+    show ilona_dim cry weep talk sad with dissolve
     "She chokes back her tears, before gathering her composure and speaking again."
 
-    stop music fadeout 2.0
-
+    show ilona_dim pensive baby talk with dissolve
     il "Tell me everything. Even if the truth will damn us both… I need to know."
 
     # Go to act 3.
