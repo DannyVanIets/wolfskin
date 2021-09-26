@@ -30,9 +30,9 @@ label credits_from_script:
     jump epilogue
 
 # This label is used to go to the credits from the main menu. Doesn't need a whole lot of fancy stuff, so I removed that.
+# NOTE: We do not define a music theme here so it can use the same as main menu theme,
+# because the main menu theme will not be played again when we leave this credits screen.
 label credits_from_main_menu:
-    ## Play music (not the actual in-game credits theme to keep that as a surprise)
-    play music 'audio/music/Wolfskin_Main_Theme_Piano_Lead.mp3' fadein 2.0 noloop
 
     ## The background of the credits: bg fluffies for main menu credits
     scene bg fluffies
@@ -40,5 +40,4 @@ label credits_from_main_menu:
     ## Go to the credits screen.
     call screen credits
 
-    # This ends the game and returns you to the main menu.
-    return
+    # NOTE: Unreachable code from this point
