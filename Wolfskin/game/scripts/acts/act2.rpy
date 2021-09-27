@@ -541,7 +541,7 @@ label act2:
 
     scene bg_transition_blurry_kellac_extreme
 
-    "She can barely recognize the voice. Ilona's vision blurs and the ground beneath her feet feels unsteady."
+    "She can barely recognise the voice. Ilona's vision blurs and the ground beneath her feet feels unsteady."
 
     ke "Hey! Is everything alright? Stay with me!"
 
@@ -678,7 +678,7 @@ label act2:
 
     "Kellac serves Eisleigh and Ilona a rustic stew, with dark bread and clear water on the side. During the time eating together, Eisleigh asks about the investigation, and Ilona repeats Anari's reasoning surrounding Eisleigh and Kellac."
 
-    "Ilona would have thought that Anari's defense was unbreakable, but there was actually one new thing they learnt about last night…"
+    "Ilona would have thought that Anari's defence was unbreakable, but there was actually one new thing they learnt about last night…"
 
     scene bg hall day
     show ilona at left:

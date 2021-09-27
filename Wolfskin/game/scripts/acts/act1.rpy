@@ -300,7 +300,7 @@ label act1:
 
     show edwin_night anxious
 
-    ed "I meant no offense when I said that. My apologies."
+    ed "I meant no offence when I said that. My apologies."
 
     show anari_night nii smile relaxed
 
@@ -836,7 +836,7 @@ label act1:
     show fleur_dim look happy with dissolve:
         xzoom -1
 
-    fl "I apologize, Mother. And I apologize to you as well, Edwin and Sister Ilona, for insinuating something I should not have. "
+    fl "I apologise, Mother. And I apologise to you as well, Edwin and Sister Ilona, for insinuating something I should not have. "
 
     show ilona_dim pensive solemn
     show edwin_dim anxious
