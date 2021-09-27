@@ -1023,6 +1023,8 @@ label act3:
         zoom 0.75 xpos 240 yoffset -100
     show edwin_sunset closed blood behind ilona_sunset:
         zoom 0.75 xpos 420 yoffset -100
+    # image to give the canopy shading
+    show valleytree
     with longfade
 
     il "Ed…"
