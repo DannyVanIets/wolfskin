@@ -377,7 +377,7 @@ label start:
 
     # TODO When this selection screen is removed, make sure this statement is called at beginning of the game.
     # Stop the main menu music
-    stop music fadeout 0.1
+    stop music fadeout 0.1 
 
     menu:
         "Click the act you want to go to!"
@@ -395,7 +395,10 @@ label start:
             jump blurry_shake
 
         "Action Editor Test":
-            jump action_editor_test  
+            jump action_editor_test
+
+        "Scrolling Background Test":
+            jump scrolling_bg_test
 
         "Credits":
             jump credits_from_script
