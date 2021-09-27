@@ -974,7 +974,7 @@ label act3:
 
     scene bg valley sunset with dissolve
     show ilona_sunset closed sad blood at ilona_final_canopy
-    show edwin_sunset closed behind ilona_sunset at edwin_final_canopy
+    show edwin_sunset closed blood behind ilona_sunset at edwin_final_canopy
     # image to give the canopy shading
     show valleytree
     with longfade
