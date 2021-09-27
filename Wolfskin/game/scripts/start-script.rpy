@@ -394,6 +394,9 @@ label start:
         "Blurry and shaking":
             jump blurry_shake
 
+        "Action Editor Test":
+            jump action_editor_test  
+
         "Credits":
             jump credits_from_script
 
