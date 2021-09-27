@@ -991,12 +991,12 @@ label act3:
 
     show ilona_sunset pensive
     il "I know."
-
+    $ renpy.pause(3.0)
     show edwin_sunset open neutral
     ed "Everybody had something to hide. That fear only led to mistrust, and this to violence… We were all alone, yet turning against each other."
 
     ed "I know I’m in no position to say this, but I see the absurdity of it all now. There is no point in hiding. It does no good."
-
+    $ renpy.pause(4.0)
     show ilona_sunset talk open
     il "It's hard sometimes to be vulnerable, isn't it? To feel exposed, when you have no one you can trust, nobody to confide in."
 
@@ -1043,7 +1043,7 @@ label act3:
     il "I wonder — what your family is like…"
 
     ed "It's a big family… They'll definitely welcome you…"
-
+    $ renpy.pause(2.0)
     il "That sounds… nice…"
 
     ## SKY
@@ -1067,7 +1067,7 @@ label act3:
     il "Do you think you could hold me? I want to lie down…"
 
     ed "Of course… I'll lie down with you. We should be safe here…"
-
+    $ renpy.pause(3.0)
     il "Thank you…"
 
     play sound 'audio/sfx/zap clothes rustle.mp3' volume 0.2
