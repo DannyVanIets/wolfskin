@@ -392,7 +392,7 @@ label act1:
     show ilona_night open solemn
     with dissolve
 
-    ed "I’m so sorry for bumping into you, sir."
+    ed "I’m so sorry for bumping into you, sir-"
 
     show anari_night closed talk angry sweatdrop with dissolve:
         zoom 0.50 xpos 540
@@ -405,19 +405,19 @@ label act1:
     show edwin_night open neutral -furrow
 
     # most of Kellac's lines should be delivered without too much enthusiasm, as though he was an older person or an 'old soul'.
-    ke "Fancy meeting you here, Anari. I didn’t know you like to take strolls. I never knew you had friends, either! And who may you be, dear Sister?"
+    ke "Fancy meeting you here, Anari. I didn’t know you like to take strolls. I never knew you had friends either! And who may you be, dear sister?"
 
     show edwin_night closed neutral sweat
     show ilona_night annoyed
     with dissolve
 
-    ed "Uh, I’m not sure we're friends..."
+    ed "Uh, I’m not sure we're friends…"
 
     show ilona_night relaxed
     show kellac_night open raised
     show edwin_night open -sweat
 
-    ke "Pleased to make your acquaintance anyhow. I’m Kellac. Anari and I go way back."
+    ke "Pleased to make your acquaintance, anyhow. I’m Kellac, Anari and I go way back."
 
     show anari_night closed angry neutral sweatdrop
 
@@ -425,12 +425,12 @@ label act1:
 
     show kellac_night nii happy
 
-    ke "You’ve just got to love that personality! Don’t take her too seriously — she's always been like that."
+    ke "You’ve just got to love that personality! Don’t take her too seriously, she's always been like that."
 
     show edwin_night smile
     show kellac_night smile
 
-    ed "I see. I'm Edwin. Pleased to make your acquaintance."
+    ed "I see… I'm Edwin. Pleased to make your acquaintance."
 
     show ilona_night happy
 
@@ -439,21 +439,21 @@ label act1:
     show anari_night look
     show kellac_night talk worry open
 
-    ke "Me? Sorry, but no. I'm just the physician and herbalist. Did the Master summon you?"
+    ke "Me? Sorry, but no. I'm just the physician and herbalist. Did the master summon you?"
 
     show kellac_night neutral
     show ilona_night sad talk
     show edwin_night neutral sad
     with dissolve
 
-    il "He did, but I don't know what business we have with him."
+    il "He did, but I don't know what business we have with him..."
 
     show ilona_night neutral
     show kellac_night smile sweat
     show anari_night -sweatdrop
     with dissolve
 
-    ke "Aha. I should have expected as much. Anari has a habit of leaving out the details and jumping straight to the point."
+    ke "Aha. I should have expected as much; Anari has a habit of leaving out the details and jumping straight to the point."
 
     show kellac_night raised -sweat
     with dissolve
@@ -464,7 +464,7 @@ label act1:
     show anari_night closed relaxed
     with dissolve
 
-    "Anari nods curtly and the group trots along. Wandering further into the town, they come across a large house that looks to be made of wood."
+    "Anari only nods curtly, and the group moves along. Further into the town, they find a large house made of timber and stone."
 
     play sound 'audio/sfx/footsteps slow leather tile.wav'
 
@@ -484,7 +484,7 @@ label act1:
 
     play sound 'audio/sfx/bbc 3 knocks.mp3' volume 0.15
 
-    "Anari knocks on the door. After a few tense moments, the door swings open to reveal a man and woman in lavish clothing. They step outside of the house, eyeing Illona and Edwin."
+    "Anari knocks on the door, and it was answered by a man and woman in fine clothing. They step outside of the house."
 
     queue sound 'audio/ambience/wind and trees.ogg' volume 0.2
 
@@ -494,7 +494,7 @@ label act1:
         xcenter 1750 xzoom -1
     with dissolve
 
-    an "Sir Uldin. Lady Salome. I've brought to you Sister Ilona, and her companion Edwin."
+    an "Sir Uldin, Lady Salome. I've brought to you Sister Ilona, and her companion Edwin."
 
     show uldin_twilight closed laugh
 
@@ -509,15 +509,15 @@ label act1:
 
     show edwin_twilight glance talk
 
-    ed "I understand I may not have the friendliest appearance, but I have sworn to protect Sister Ilona from harm."
+    ed "I understand I may not have the friendliest appearance… but I have sworn to protect Sister Ilona from harm."
 
     show uldin_twilight smirk open
 
-    ul "This is indeed unexpected. Anari's eyes are keen, but perhaps only for hunting her quarry."
+    ul "This is indeed unexpected… Anari's eyes are keen, but perhaps only for hunting her quarry."
 
     show anari_twilight closed relaxed smile -sweatdrop
 
-    an "True. There's no need to understand the conversations of beasts to hunt them — only their behaviour."
+    an "True. There's no need to understand the conversations of beasts to hunt them, only their behaviour."
 
     show salome_twilight grin downturn nii
     show edwin_twilight neutral
@@ -528,7 +528,7 @@ label act1:
     show ilona_twilight sad pensive
     with dissolve
 
-    il "Thank you for your kind words, but they are far too gracious to be wasted on me. I have not done anything to be deserving of such praise."
+    il "Thank you for your kind words, but they are far too gracious to be wasted on me... I have not done anything to be deserving of such praise."
 
     show salome_twilight smallgrin open
 
@@ -539,7 +539,7 @@ label act1:
     show anari_twilight open neutral sweatdrop
     with dissolve
 
-    "Nobody dares to correct Salome on her slip of the tongue. They don't want to appear rude."
+    "Nobody dares to tell Salome that it is actually called 'All Hallows' Eve'. They don't want to be rude."
 
     show uldin_twilight laugh
     with dissolve
@@ -548,7 +548,7 @@ label act1:
 
     show ilona_twilight closed annoyed
 
-    "Ilona had to consider this carefully. She and Edwin had drawn too much attention already, so it surprised her when Edwin spoke without any fear."
+    "Ilona had to consider this carefully. She and Edwin had drawn too much attention already… So it surprised her when Edwin spoke without any fear."
 
     show edwin_twilight talk closed with dissolve
     show anari_twilight look -sweatdrop
@@ -568,9 +568,9 @@ label act1:
 
     play sound 'audio/ambience/bbc fire.mp3' volume 0.1 loop
 
-    “Ilona could hardly believe that they had been welcomed so readily after being persecuted, but she was grateful nonetheless."
+    "It had only been a few days since they were on the run… Ilona could scarcely believe that they were welcomed so readily."
 
-    "A richly coloured beetroot soup, mulled wine with spices, pickled vegetables, a glistening whole roasted pheasant, and many other dishes lay on the extravagant table."
+    "They sit at a table laden with food: a rich coloured beetroot soup, mulled wine with spices, pickled vegetables, a glistening whole roasted pheasant and even more dishes than one could name."
 
     scene bg hall night
     with fade
@@ -579,7 +579,7 @@ label act1:
     show fleur_dim at left_center with dissolve
     show eisleigh_dim at right_center with dissolve
 
-    "Seated at the table were two new faces — Fleur, the daughter of Uldin. To Fleur's left sat Eisleigh, an assistant to the house."
+    "Seated at the table were two new faces: Fleur, the daughter of Uldin. On Fleur's left side was Eisleigh, an assistant to the house."
 
     hide fleur_dim
     hide eisleigh_dim
