@@ -169,7 +169,8 @@ label act1:
 
     ## OUTSIDE TOWN
 
-    scene bg road
+    scene bg road:
+        xzoom-1
     with longfade
 
     "Eventually, they press on. They sight a lonely settlement on the horizon; stone walls surrounding its perimeter."

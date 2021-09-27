@@ -435,8 +435,10 @@ label act3:
 
     il "This was given to Uldin by Kellac last night as part of his medicine to aid his sleeplessness. Kellac has confirmed three doses of this medicine disappeared from his dispensary."
 
-    show ilona_sunset glance with dissolve
+    show ilona_sunset glance
     il "During the banquet, Fleur and Salome were able to figure out Edwin's true nature, and thought to drug him by lacing the sugar with the soporific. When Edwin was asleep, they were able to steal a cursed item from him, and assume the form of a werewolf."
+
+    play music 'audio/music/Wail of the Moon.ogg' volume 0.4 fadein 2.0
 
     show anari_sunset open talk angry
     an "All I care about are the deaths themselves at the end of the day. So? Who was the one that murdered Uldin?"
@@ -447,8 +449,6 @@ label act3:
     show bw_sa_murder at center:
         zoom 0.7 xzoom-1
     with dissolve
-
-    play music 'audio/music/Wail of the Moon.ogg' volume 0.4 fadein 2.0
 
     "(The corpse of Salome, burned beyond recognition… )"
 
@@ -470,6 +470,8 @@ label act3:
         zoom 0.7 xzoom-1
     with dissolve
 
+    stop music fadeout 4.0
+
     il "How were you able to identify the burned corpse in the Master's chamber?"
 
     an "Her skin was charred beyond recognition, so we had to resort to what remained of her hair and her ring to determine it was Salome."
@@ -478,26 +480,58 @@ label act3:
 
     an "Nothing that I know of, apart from the mole near her eye… And as I said, her face has been horribly burned — "
 
+    $ renpy.pause(2.0)
+
+    scene bg black
+    show bw_sa_murder at center:
+        zoom 0.7 xzoom-1
+    with dissolve
+
     il "Then, here's my answer for who murdered Uldin: the culprit was Fleur."
+    show bw_murder_fl at center:
+        zoom 0.7 xzoom-1
+    hide bw_sa_burder
+    with vpunch
     play music 'audio/music/Chaos and Torment.ogg' volume 0.5
     extend " The corpse of Salome has been misidentified."
 
-    show anari_sunset scary fury cringe with vpunch
+    scene bg town plaza sunset
+    show ilona_sunset pensive annoyed at left:
+        zoom 0.5
+    show anari_sunset blank fury yell sweatdrop at right:
+        zoom 0.5
+    with vpunch
+
     an "What? How dare you doubt Kellac's judgement?  You must be truly grasping at straws to make such bold claims!"
 
+    show ilona_sunset talk
     il "You said the corpse's face, hair and body were burned to an unrecognizable state. The only identifiers we had were Salome's ring, and her nightgown - all clothing and effects."
 
     il "I insist: this is Fleur's body."
 
+    show ilona_sunset neutral
+    show anari_sunset talk scary
+    with dissolve
     an "Say we believe for one second we mistook one corpse for another — why Fleur? Why would she ever want to murder her own father?!"
 
+    show ilona_sunset glance talk
     il "I don't have all the details… This is only a theory if the letter's contents can be believed. Her letter read: I will strike terror into the one who has abandoned me."
 
     il "Fleur's letter talks about choosing her true family. Uldin is not frequently in this town, is he? He has essentially abandoned his daughter."
 
+    scene bg hall night
+    with dissolve
+
     il "Only the guests were drugged that night — but not Uldin, herself or her mother. She needed him awake to scare him. As luck would have it, Edwin had the cursed item needed for transformation into a werewolf."
 
+    show salome_bw closed angry smile at less_left
+    show fleur_bw sorry happy at less_right
+    with dissolve
+
     il "Her mother was assisting her in this plot. Fleur never intended to kill, she only wished to scare Uldin, perhaps to convince him to change his behaviour."
+
+    scene bg moon
+    with fade
 
     il "She assumed the form of a werewolf, Uldin's worst fear."
 
@@ -507,25 +541,63 @@ label act3:
 
     il "A werewolf has considerable strength, even more than a beast, but it doesn't make you impervious to all attacks."
 
+    scene bg gore with fade
+
     il "Terrified by such a horrible sight, Uldin did not hesitate to burn Fleur with magic, and driven mad by the pain, she killed him by biting his throat."
+
+    scene bg town plaza sunset
+    show ilona_sunset pensive annoyed smile at left:
+        zoom 0.5
+    show anari_sunset look fury neutral sweatdrop at right:
+        zoom 0.5
+    with dissolve
 
     il "You may have believed she was taken by the fair folk, but this would explain why you were unable to find her; or even to glimpse any trace of her - she was already dead."
 
+    show anari_sunset yell with dissolve
     an "Then how do you explain Fleur's letter? Or the wooden effigy of her that appeared in her bed?!"
 
+    show ilona_sunset happy annoyed open -sweat with dissolve
     il "I've already laid the evidence bare: there was more than one conspirator. Even taking the cursed item out of the equation, Salome was surely aware that there was a sedated monster in her house. And I strongly believe that she encouraged Fleur to do this 'prank' on her father."
+
+    scene bg masters chamber night with fade
+    show bw_murder_fl at center:
+        zoom 0.5
+    show salome_bw pensive angry smallgrin at extra_right:
+        xzoom-1
+    with dissolve
 
     il "Salome must have screamed to clear suspicion from herself, and hid in the master's chamber. At that point, Edwin was looking for his stolen item. He broke down the door and found Fleur's body."
 
+    hide salome_bw with dissolve
+    $ renpy.pause(2.0)
+    show edwin_bw wolf fear talk sweat at easeinleft_transform:
+        zoom 0.5 xzoom-1
+    $ renpy.pause(2.0)
+
+    scene bg town plaza sunset
+    show ilona_sunset annoyed at left:
+        zoom 0.5
+    show anari_sunset look fury yell sweatdrop at right:
+        zoom 0.5
+    with dissolve
+
     an "How dare you — You have no idea how much Salome loved her daughter! She'd never abandon her like that!"
 
+    show ilona_sunset pensive talk
     il "I wouldn't be so quick to discount the possibility. We found a chest made for Fleur in Salome's room. When Eisleigh opened it, she suffered a horrific injury from a trap. Perhaps Salome had the trap for some time, and her target was Fleur."
 
+    show anari_sunset blank cringe shadow with dissolve
     "Anari remains silent, but her glare is penetrating and cold. Despite this, Ilona continues."
 
+    show ilona_sunset talk
     il "She waited patiently until the manse was empty. After we escorted Edwin to the dungeon and gathered in the town square, Salome was able to move again. She locked the wolfskin away in a chest in her room, and trapped it with a device."
 
+    show ilona_sunset closed relaxed
     il "Salome placed the statue in Fleur's bed to make it seem like she was spirited away by the fair folk. This statue fits the description of this receipt I found in Salome's room. Here."
+
+    play sound 'audio/sfx/gynation paper.wav'
+    scene cg open chest with fade
 
     "Ilona hands Anari the paper she found in the chest. Upon realizing that it explains the existence of the wooden statue of Fleur, she looks thoroughly displeased, nearly crumpling the document."
 
@@ -533,80 +605,111 @@ label act3:
 
     il "In fact, since the letter was found still sealed, I would suspect Salome encouraged Fleur to write it. To make Fleur's disappearance seem more credible, she placed it in the forest after her escape."
 
-    il "Not only did Salome orchestrate this parricide. She survived."
+    scene bg town plaza sunset
+    show ilona_sunset aaaa smile at left:
+        zoom 0.5
+    show anari_sunset glance neutral shadow at right:
+        zoom 0.5
+    with dissolve
 
-    "Anari crosses her arms, and her brows knit together as she takes in Ilona's theory."
+    il "Not only did Salome orchestrate this parricide. She survived."
 
     stop music fadeout 2.0
 
+    show anari_sunset fury closed -shadow with dissolve
+    "Anari crosses her arms, and her brows knit together as she takes in Ilona's theory."
+
+    show anari_sunset grin glance with dissolve
     an "You're forgetting something. You never explained what Edwin did in that room when he found the burned body. If I were him, I'd hide rather than stay out in the open. Why was he holding the body in his arms?"
 
-    play sound 'audio/sfx/heartbeat.mp3' loop
-
+    show ilona_sunset pensive neutral sweat with dissolve
     "Ilona freezes, her legs shaking. The words are caught in her throat again. As she sees this, Anari chuckled to herself."
 
-    # would absolutely love to have a small, smug chuckle before this line
     an "You really are awful at keeping secrets. There's no need to talk — I can already tell just by looking at you."
-
-# SCENE 42
 
     "Ilona’s proposition is met with mumblings, grumblings, dissatisfied grunts and a few voices of support from the townsfolk. However, it’s all drowned out in the eyes and minds of both Ilona and Anari-"
 
+    play music 'audio/music/Ilona Theme.mp3' volume 0.5 fadein 1.0
+
     "Ilona is shivering, as the warm rays of sun accentuate the bags under her eyes. Tired. Broken. But still standing."
 
+    show anari_sunset open talk with dissolve
     "It’s impossible to say what Anari might be thinking right now. Her posture unflinching, the totality of her being in complete focus. She asks the crowd to simmer down, her usual aura of conceit fading away."
 
+    show anari_sunset neutral with dissolve
     "There is now only one question that remains - and a clocktower that's ticking away, endlessly."
 
     an "So where is she? Where is Salome?"
 
+    show ilona_sunset glance talk
     il "That, I can't tell you. I'm certain that my theory is correct, however."
 
+    show ilona_sunset open
     il "I do not care what happens next, Anari. Whether you believe me or not is irrelevant. I've only tried to make sense of what I could from this tragedy."
 
+    show ilona_sunset closed solemn happy
     il "You cannot make me feel guilt for harbouring Edwin as a werewolf. He is not defined by his curse, and I want you to see that."
 
+    show ilona_sunset talk relaxed -sweat
     il "I have provided evidence and my theory, as you asked. Nothing I do now can change your mind. I accept it, regardless of the outcome."
 
+    show anari_sunset look talk
     an "Sister, I would like to believe you. More than anyone else, believe it or not. Why, however…"
 
+    show anari_sunset angry smile
+    show ilona_sunset neutral
+    with dissolve
     an "Well, maybe I can tell you some other time. If we even get a chance that is. In your mind, you may be right..."
 
+    show anari_sunset fury with dissolve
     an "But unless you bring Salome to me, I will not be convinced. The ‘righteousness’ that you preach is meaningless without tangible proof. So, where is Salome? We searched everywhere in this town for her daughter."
 
+    show ilona_sunset sad open talk
     il "I can only speculate at this point. Are there any secret or hidden passages in Belorov?"
 
-    stop sound
+    stop music fadeout 2.0
 
+    show anari_sunset nii raised smile with dissolve
     an "That would be far too convenient, wouldn't it? You are right: nothing you do will change my mind. I have been burned by blindly trusting others in the past more times and in worse ways than you could ever imagine."
 
+    show anari_sunset relaxed
     an "If I am wrong, so be it. When my time comes, I’ll gladly accept my penance."
-
-    play music 'audio/music/War Of The Huntress - VS Anari -.ogg'
 
     an "There's one thing that's certain: your arrival into this town brought with it the destruction of this family."
 
+    show anari_sunset scary fury cringe
     an "If it weren't for you and Edwin, this tragedy would never have happened."
 
+    show ilona_sunset aaaa talk
     il "You're blaming us for being caught in a plot that we had no part in? You have done nothing but look for reasons to kill Edwin all along. For all I know, maybe you planned for this to happen, to usurp power in Belorov."
 
+    show anari_sunset nii grin
     an "Hahahahaha! I didn't know nuns could tell jokes. As if I would ever wish for such a thing."
 
+    play music 'audio/music/War Of The Huntress - VS Anari -.ogg' volume 0.5
+
+    show anari_sunset glance fury smile
     an "You should learn to choose your words more wisely, Sister. It's unbecoming of a holy woman… but I had the nagging suspicion you were a heretic from the first moment I saw you. Someone like you could never win."
 
     hide ilona_sunset
-    show anari_sunset at center:
+    show anari_sunset fury open smile at center:
         zoom 0.8 yoffset 450
     with dissolve
 
     "With a signal of Anari's hand, two town guards move in on Ilona and grip her arms tightly; drawing them behind her back. The men tried to bind Ilona's hands together with thick rope."
 
     hide anari_sunset
-    show ilona_sunset at center:
+    show ilona_sunset closed aaaa yell tears at center:
         zoom 0.8 yoffset 450
     with dissolve
 
     il "Aaaaaaaahh! Let me go!"
+
+    play sound 'audio/sfx/zap clothes rustle.mp3'
+
+    $ renpy.pause(1.5, hard=True)
+
+    play sound 'audio/sfx/werewolf breath.mp3'
 
     "Ilona struggles and tries to shake the men off, but the guards do not relent. One grabs her by the hair. Edwin cannot abide by this any longer."
 
@@ -616,80 +719,105 @@ label act3:
 
     "He transforms, the chains snapping off him as he transforms into a massive wolf-man."
 
-    scene edwolf protecc with hpunch
-
     "He rushes at the guards with a growl, knocking them over by slamming against them. He throws them off with both fang and claw, prying Ilona away from them."
 
-    stop music fadeout 3.0
-
     scene bg town plaza sunset
-    show anari_sunset angry scary cringe kill at center:
+    show anari_sunset fury glance grin kill at center:
         zoom 0.7 yoffset 220
     with fade
 
-    "Anari did not expect this development. She strings her bow, and takes an arrow from her quiver. She trains it on the werewolf."
+    "Anari strings her bow, and takes an arrow from her quiver. She trains it on the werewolf."
 
     an "I won't let you escape."
 
     hide anari_sunset with dissolve
 
-    "When she releases the bowstring, a piercing, otherworldly whistle cries out from her weapon. It misses. The arrow grazes Edwin's fur as he transforms from half-man, half-wolf, into an enormous grey wolf."
+    play sound 'audio/sfx/arrow whistle.mp3'
 
-    scene edwolf protecc close
-
-    "He continues to run on all fours, with only Ilona to guide him. She adjusts herself on his back, grasping tufts of thick fur. Anari scowls, and then goes to climb a tower to gain a higher vantage point."
+    "When she releases the bowstring, a piercing, otherworldly whistle cries out from her weapon. The arrow grazes Edwin's fur as he transforms from half-man, half-wolf, into an enormous grey wolf."
 
     ## TOWN WALL
-    scene bg belorov sunset
-    with longfade
+    scene bg black with fade
+
+    "He continues to run on all fours, with only Ilona to guide him. Anari scowls, and then goes to climb a tower to gain a higher vantage point."
+
+    scene edwolf protecc with dissolve
 
     il "The gates will be already closed by now. There's a part of the wall that was hastily patched up. You should be able to climb through there."
 
     "Edwin takes a running leap, and latches his claws into the stone wall. He shifts back into his half-wolf form and starts climbing."
 
 # SCENE 44
+    play sound 'audio/sfx/Gravel Floor Fall 1.mp3' volume 0.3
 
     with vpunch
 
     "The looming stone wall in front of them is a substantial hurdle to overcome. The town guards mobilise, firing arrows that torrent Edwin and Ilona. Edwin does his best to throw off their aim."
 
-    show anari_sunset angry scary cringe kill at center:
-        zoom 0.7 yoffset 220
+    show bg belorov sunset
+    show anari_sunset fury scary neutral kill at center:
+        zoom 0.85 yoffset 420
     with fade
-
-    play music 'audio/music/Rising.ogg'
 
     "There is one he cannot escape from. Anari's skill with a bow is frightening, her gaze ever calm and steady."
 
-    scene edwolf arrows with hpunch
+    scene bg wound1
+    play sound 'audio/sfx/arrow whistle.mp3'
 
-    "Two arrows finally meet its target. They pierce his side, fired in rapid succession. Then three more pierce his ribs. This isn’t a problem for the werewolf, as he brushes aside the pain. He’s taken greater beatings than this."
+    $ renpy.pause(0.6, hard=True)
+    stop sound
 
-    scene edwolf claws with vpunch
+    scene bg wound2
+    play sound 'audio/sfx/zap arrow.mp3'
+
+    "Two arrows finally meet its target. They pierce his side, fired in rapid succession."
+
+    scene bg wound3
+    play sound 'audio/sfx/arrow whistle.mp3'
+
+    $ renpy.pause(0.4, hard=True)
+    stop sound
+
+    scene bg wound4
+    play sound 'audio/sfx/zap arrow.mp3'
+
+    $ renpy.pause(0.2, hard=True)
+    stop sound
+
+    scene bg wound5
+    play sound 'audio/sfx/zap arrow.mp3'
+
+    extend " Then three more pierce his ribs. This isn’t a problem for the werewolf, as he brushes aside the pain. He’s taken greater beatings than this."
+
+    scene edwolf claws with longfade
 
     "However, he’s not invincible; a few more well placed shots and he’s down, along with Ilona."
 
-    show ilona_sunset at center:
+    show ilona_sunset glance aaaa talk at center:
         zoom 0.5 xzoom -1
     with dissolve
 
-    il "Stay with me Edwin! Don’t lose sight of our escape. I’ll do my best to heal your wounds with-"
-    extend " Ah!"
+    il "Stay with me Edwin! Don’t lose sight of our escape. I’ll do my best to heal your wounds with- Ah!"
 
-    show ilona_sunset blood:
-    with dissolve
+    play sound 'audio/sfx/arrow whistle.mp3'
+
+    $ renpy.pause(0.5, hard=True)
+
+    play sound 'audio/sfx/zap bone break.mp3' volume 0.7
+
+    scene bg blood
 
     "An arrow pierces the hand with which Ilona was trying to use to heal. Her hand twists and contorts, reflexingly convulsing due to the writhing pain."
 
     ed "Ilona! Ho-hold on, we’re almost there!"
 
-    scene cg_repeating_edwolf_close_blurry:
+    scene cg_repeating_edwolf_edgewolf_blurry with dissolve:
         # Makes you able to use subpixels, handy for positioning.
         subpixel True
         # Keep this as it is, really annoying to change. It tells where to position the image and how far you want to zoom in.
         xpos 0.5 ypos 1.0 xanchor 0.5 yanchor 1.0 zoom 1.02
         # Tells where you will circle around in the image and how far.
-        alignaround(.5, .5)
+        alignaround(.5, .6)
         # Linear is how fast you want the circling to be, lower it to make it faster. yalign is the same as like xpos, don't bother changing that. Circles is the amount of circles it will do before repeating.
         linear 10.0 yalign 1.0 clockwise circles 1
         repeat
@@ -699,30 +827,26 @@ label act3:
     "There’s no question about it - Ilona knows Anari could never miss her mark, not with a target so large. She’s missing their vitals on purpose."
 
     "A good look at Anari leaves nothing more than questions. Does she want to let them leave? Or capture and burn them at the stake alive?"
+    $ renpy.pause(0.3)
+    play sound 'audio/sfx/arrow whistle.mp3'
+
+    $ renpy.pause(0.5, hard=True)
+
+    play sound 'audio/sfx/zap bone break.mp3' volume 0.7
+
+    scene bg gore with hpunch
+
+    stop music fadeout 3.0
 
     "Her intentions remain unclear, as one final arrow impales Ilona in the back, shooting through her cleanly."
 
     "With a light scream, Ilona loses her footing. There's only one hand she could use to hold onto the rough stone wall, and her fingers are slipping. Blood stains her white dress from the hole it left behind, and she can feel it drip down on the wall."
 
-    scene edwolf face
-    with fade
-
     ed "Ilona! No!"
 
-    scene cg_edwolf_last with vpunch:
-        # Makes you able to use subpixels, handy for positioning.
-        subpixel True
-        # Keep this as it is, really annoying to change. It tells where to position the image and how far you want to zoom in.
-        xpos 0.5 ypos 1.0 xanchor 0.5 yanchor 1.0 zoom 1.02
-        # Tells where you will circle around in the image and how far.
-        alignaround(.5, .5)
-        # Linear is how fast you want the circling to be, lower it to make it faster. yalign is the same as like xpos, don't bother changing that. Circles is the amount of circles it will do before repeating.
-        linear 10.0 yalign 1.0 clockwise circles 1
-        repeat
+    play music 'audio/music/Rising.ogg'
 
     "Edwin is quick to react, as he pulls her over while climbing over the wall; carrying her carefully, as though holding an injured bird."
-
-    stop music fadeout 3.0
 
     # mirror image of wall to give impression they climbed over it
     scene bg belorov sunset:
@@ -731,12 +855,11 @@ label act3:
 
     "The stone wall they escaped over is dyed red with their blood. Yet they make it out of Belorov, despite their injuries."
 
-    # Scene 46 - the voice direction here should sound a little slower than usual to reflect their injuries.
-
-    "Edwin marches on, with Ilona in his arms. It’s too dangerous to be out in the open. They search for a place to rest, as dusk greets them with open arms."
+    "Edwin marches on, with Ilona in his arms. It’s too dangerous to be out in the open. They search for a place to rest, as dusk waits."
 
     ## FOREST
-    scene bg forest sunset
+    scene bg road sunset with dissolve:
+        xzoom-1
 
     # TODO: add the canopy alpha mask
 
@@ -744,105 +867,150 @@ label act3:
 
     il "Edwin, set me down. You're more injured than I am."
 
+    play sound 'audio/sfx/werewolf breath.mp3'
+
     ed "Ilona, my darling-"
 
     il "{i}Darling?{/i}"
 
-    show ilona_sunset blood:
+    play sound 'audio/sfx/zap clothes rustle.mp3'
+
+    show ilona_sunset shock sad talk blush blood:
         zoom 0.5 yoffset 0 xcenter 700
-    show edwin_sunset blood at center behind ilona_sunset:
+    show edwin_sunset fear blush talk blood at center behind ilona_sunset:
         zoom 0.5
     with dissolve
 
     "At the awkward exchange, Edwin gingerly sets Ilona down on the ground. He reverts to human form, his ears and face red. Ilona tries to heal what open wounds that Edwin has."
 
+    show edwin_sunset sad smile
     ed "Yes, I've —  I’ve been waiting to call you that for so long."
 
+    show edwin_sunset closed
     ed "What a fool I was to keep what I felt about you hidden…"
 
+    show edwin_sunset distant talk -blush
     ed "The time I spent without you, in that cell. It was excruciating. And that’s when I realised, how much I want you by my side."
 
+    show ilona_sunset glance happy
     il "My, the exhaustion must be getting to you. So you weren't joking about wanting me to meet your family…"
 
+    show edwin_sunset glance neutral
     ed "…"
 
+    show ilona_sunset closed happy solemn
     il "...Thank you. It- it means a lot to me. Could we rest for a while?"
 
+    show edwin_sunset talk
     ed "I don't hear anyone pursuing us. Just for a moment, then…"
+
+    play sound 'audio/sfx/Footsteps Slow Trainers.wav'
+
+    "They walk for a while to search for a resting place, seeing the valley unfold before them."
 
     ## VALLEY
     scene bg valley sunset
     with longfade
 
-    "They walk for a while, seeing the valley unfold before them. Eventually, they stop to sit under the shade of a tree, basking in its shadow. Their breath is ragged, but in sync with each other's. Ilona rests her head on Edwin’s shoulders."
-
-    show ilona_sunset blood:
+    show ilona_sunset pensive blood:
         zoom 0.5 yoffset 0 xcenter 700
-    show edwin_sunset blood at center behind ilona_sunset:
+    show edwin_sunset sad talk blood at center behind ilona_sunset:
         zoom 0.5 xzoom -1
     with dissolve
 
-    # TODO: change bg back to forest at a good point?
-
     ed "I’m sorry."
 
+    show ilona_sunset open
     il "About what?"
 
+    show edwin_sunset angry furrow talk
     ed "You’re right about me not saying what it is that I want to say, burying it so deep within the abyss that I can’t even reach it."
 
-    # watch the wait and pauses for some of these lines.
-
+    show edwin_sunset distant neutral
     ed "Even if I want to… Just maybe, if I’d come clean to the people that we met thus far, and to you, about the wolfskin; the incessant nightmares that I’ve been having...."
 
+    show edwin_sunset sad talk -furrow
     ed "I couldn't even trust you to watch me transform..."
 
+    show ilona_sunset pensive smile
     il "It’s okay. We can start over."
 
+    show edwin_sunset neutral
     ed "If I’d had the courage to ask for your assistance, we could have found an alternative."
 
+    show ilona_sunset solemn neutral
     il "We must be strong and keep our past behind us. What’s done is done."
 
     il "Besides, I’m here for you now. And you are for me. I’m sure that God has tested our resolve more than enough."
 
+    show edwin_sunset closed smile
     ed "I would like to believe that."
+
+    scene bg valley sunset
+    show ilona_sunset closed sad blood:
+        zoom 0.75 xpos 240 yoffset -100
+    show edwin_sunset closed behind ilona_sunset:
+        zoom 0.75 xpos 420 yoffset -100
+    with longfade
+
+    "Eventually, they stop to sit under the shade of a tree, basking in its shadow. Their breath is ragged, but in sync with each other's. Ilona rests her head on Edwin’s shoulders."
 
     "Edwin and Ilona stay silent, listening to the breathing of the other. They both feared when they would only hear silence. The grievous wounds would prove to both of them that they were alive."
 
+    show edwin_sunset glance talk
     ed "Evil breeds evil, indeed. Wherever I go, something always goes wrong."
 
+    show edwin_sunset anxious
     ed "I’ve noticed hints of it. Even in these past few days - mind you, that banquet was all too much for someone like me to begin with. I used to enjoy these things, but now, I..."
 
+    show ilona_sunset pensive
     il "I know."
 
+    show edwin_sunset open neutral
     ed "Everybody had something to hide. That fear only led to mistrust, and this to violence… We were all alone, yet turning against each other."
 
     ed "I know I’m in no position to say this, but I see the absurdity of it all now. There is no point in hiding. It does no good."
 
+    show ilona_sunset talk open
     il "It's hard sometimes to be vulnerable, isn't it? To feel exposed, when you have no one you can trust, nobody to confide in."
 
     il "And you cannot close this distance with others, because you always second guess intentions… There’s nothing worse than feeling alone in the world."
 
+    show edwin_sunset distant talk
     ed "Is that why Salome did what she did?"
 
+    show ilona_sunset pensive neutral
     il "I do not know, but I pity her…"
 
-    # at this point, the voices should have more pauses in between them, and gradually slow and quieten down to reflect a death scene.
+    scene bg black with longdissolve
 
     "Ilona hears Edwin's breathing slow. Ilona is too weary to use any more healing magic. They can’t remove the arrows that pierced them, or the two of them would surely bleed out and die."
 
     ed "…"
 
     il "Edwin?"
-
+    $ renpy.pause(3.0)
     ed "…"
 
-    il "Ed…"
+    scene bg valley sunset
+    show ilona_sunset pensive solemn neutral blood:
+        zoom 0.75 xpos 240 yoffset -100
+    show edwin_sunset closed blood behind ilona_sunset:
+        zoom 0.75 xpos 420 yoffset -100
+    with longfade
 
+    il "Ed…"
+    $ renpy.pause(3.0)
+    show edwin_sunset anxious smile with dissolve
     ed "Yes, love. I'm still here. What is it?"
 
+    show ilona_sunset sad with dissolve
     il "Is it okay if I close my eyes for a while? I don’t think I’ll be able to hold out for any longer…"
 
+    show edwin_sunset sad smile
     ed "You may. I'll keep watch, so you can rest."
+
+    scene bg black with longdissolve
 
     il "I wonder — what your family is like…"
 
@@ -857,13 +1025,13 @@ label act3:
     "Edwin watches the brilliance of the sky and clouds, gradually darkening. With Ilona by his side, he relishes in the peace and comfort."
 
     ed "Ilona, love…"
-
+    $ renpy.pause(3.0)
     il "I'm here. Did you need anything?"
 
     ed "I-I just… I just wanted to say how much I owe to you."
 
     il "You're always thanking me…"
-
+    $ renpy.pause(3.0)
     il "Ed…"
 
     ed "Yes?"
@@ -874,8 +1042,10 @@ label act3:
 
     il "Thank you…"
 
+    play sound 'audio/sfx/zap clothes rustle.mp3' volume 0.2
+
     # CG lying on grass (eyes open)
-    scene final open with dissolve
+    scene final open with longdissolve
     $ renpy.pause(1.5, hard=True)
 
     "Ilona lays her head against Edwin's chest, and he gently wraps his arms around her. He heaves a contented sigh, yet the arrows piercing him dig into his weary body."
@@ -884,14 +1054,17 @@ label act3:
 
     # despite the beautiful poem, it should be delivered clumsily as possible (I mean, he's dying, or close to death). "though words are withering" should be admitted through gritted teeth.
 
+    scene final open talk with dissolve
     ed "Should our journey end, so just it be."
     extend "\nI am lost no more, I lay to rest."
 
+    scene final closed with dissolve
     ed "The sun bestows its blessings over me,"
     extend "\nWhile you wait beside."
 
-    # pronunciation of verdure - vur-jur
+    scene final open talk with dissolve
     ed "I flourish with the bountiful verdure"
+    stop music fadeout 5.0
     extend "\nThough words are withering,"
 
     ed "In all uncertainty we usher,"
@@ -901,10 +1074,8 @@ label act3:
     ed "I-I love…"
 
     # CG lying on grass (eyes closed)
-    scene final closed with dissolve
-    $ renpy.pause(2, hard=True)
-
-    stop music fadeout 3.0
+    scene final closed with longdissolve
+    $ renpy.pause(4, hard=True)
 
     # Go to the credits.
     jump credits_from_script
