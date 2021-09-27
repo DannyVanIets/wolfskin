@@ -1,7 +1,7 @@
 ## The file for act 1.
 
 ## moving sprites are a pain
-## define midleft= Position(xpos=0.40)
+define midleft= Position(xpos=0.40)
 transform ilona_transform_pos1:
     zoom 0.5
     xpos 300
@@ -86,7 +86,7 @@ label act1:
 
     show ilona_twilight closed
 
-    "Ilona closes her weary eyes, daring to give them a moment of respite while waiting for Edwin’s transformation back into human form to finish. The only thing that she can hear is the lullaby of the forest animals. After he is finished transforming, Edwin speaks up."
+    "Ilona waits for Edwin to turn back into a human, closing her eyes to rest for a moment. There's only the sound of the forest, until Edwin speaks to break their silence."
 
     show edwin_twilight glance talk at edwin_transform_pos1
     show expression AlphaMask("canopy", At("edwin", edwin_transform_pos1)) as edwin_mask
@@ -125,13 +125,13 @@ label act1:
 
     stop music fadeout 8.0
 
-    "Ilona places her hands over Edwin’s while she says this. His hands are freezing to the touch – inhumanly so. A remnant of his recent transformation."
+    "As she says this, she places her hands over his. His hands are abnormally cold to touch. Ilona learned this was a sign of his transformation."
 
-    "Even still, she's certain that she must remain with him."
+    "Even so, she must remain with him."
 
     show ilona_twilight closed relaxed
 
-    "The moonlight iluminates the both of them, the night air frigid and dry."
+    "The moonlight beams over them, slightly wavering with each breath they take."
 
     il "(If only the moonlight would never leave us. We should rest here for a while.)"
 
@@ -165,7 +165,7 @@ label act1:
 
     show edwin_twilight glance smile blush
 
-    "Their eyes meet for but a moment, the heat from their cheeks warming both of them up. "
+    "Their eyes flicker for a moment, and he’s not shivering anymore. "
 
     ## OUTSIDE TOWN
 
@@ -173,7 +173,7 @@ label act1:
         xzoom-1
     with longfade
 
-    "Eventually, they press on. They spy a lonely settlement on the horizon; tall stone walls surround its perimeter."
+    "Eventually, they press on. They sight a lonely settlement on the horizon; stone walls surrounding its perimeter."
 
     show edwin_night anxious grin at right with dissolve:
         zoom 0.50
@@ -227,7 +227,7 @@ label act1:
 
     play sound 'audio/sfx/zapsplat cloth.mp3' volume 0.1
 
-    "Edwin immediately releases Ilona's hand and instinctively tenses his into a fist. The rustling of dry leaves brings with it a fully-armed archer and a guard in heavy armor."
+    "Edwin immediately lets go of her hand, intertwined seconds ago, but now balled into a fist. The rustling of dry leaves brought with it a heavily armed guard and an archer under a cloak."
 
     unk "That's enough loitering around the town wall looking suspicious, don't you think?"
 
@@ -275,7 +275,6 @@ label act1:
     an "You may be outsiders, but you look like decent enough folk. No need to come up with any grand excuses for why you’re here."
 
     show anari_night angry smile
-
     an "So, let’s get back to it. Will you accept the town master's call?"
 
     show anari_night neutral
@@ -313,15 +312,17 @@ label act1:
     scene bg belorov night
     with longfade
 
-    "The armored man paves the way forward. Anari takes the position of rear guard."
+    "Anari takes the position of rear guard, as the other guard leads the way forward."
 
     stop music fadeout 3.0
 
-    "Ilona's gaze wanders to Anari. Her bow is by her side, one hand hovering above her quiver - ready to quickly grab it and shoot them both at any moment."
+    "Ilona glances back, just once. Anari's bow is by her side and a hand rests on the quiver, ready to fire if the two of them even thought of escaping."
 
-    "She can't help but wonder just how much Anari overheard of her and Edwin's conversation prior. Anari's arrival had seemed just a bit {i}too{/i} opportune."
+    "Ilona cannot help but wonder just how much Anari overheard of their conversation... Her arrival seemed too well-timed."
 
-    "Ilona quickly glances at Edwin and is unable to discern his inscrutable expression. Before she has a chance to speak, the duo is informed that they have arrived at the town gate."
+    "Did they give away too much, even when they thought they were alone?"
+
+    "She glances at Edwin, his face inscrutable. And so, they enter the gates."
 
     stop music fadeout 3.0
 
@@ -352,7 +353,7 @@ label act1:
 
     ed "(Although - a town full of people not trying to kill me yet is quite an improvement.)"
 
-    "As they venture further into the city, Illona notices the bizzare scenery: a large bonfire lay in the center of the town square, and strange carved turnips sit at the doorsteps of many houses."
+    "It’s almost time to head home for normal folk, but the town is bustling. There's a large bonfire in the square, and there's carved turnips at the doors of all the houses-"
 
     show ilona_night glance sad neutral with dissolve:
         zoom 0.50 xpos 0.75 xzoom -1
@@ -484,7 +485,7 @@ label act1:
 
     play sound 'audio/sfx/bbc 3 knocks.mp3' volume 0.15
 
-    "Anari knocks on the door. After a few tense moments, the door swings open to reveal a man and woman in lavish clothing. They step outside of the house, eyeing Illona and Edwin."
+    "Anari knocks on the door, and it was answered by a man and woman in fine clothing. They step outside of the house."
 
     queue sound 'audio/ambience/wind and trees.ogg' volume 0.2
 
@@ -539,7 +540,7 @@ label act1:
     show anari_twilight open neutral sweatdrop
     with dissolve
 
-    "Nobody dares to correct Salome on her slip of the tongue. They don't want to appear rude."
+    "Nobody dares to tell Salome that it is actually called 'All Hallows' Eve'. They don't want to be rude."
 
     show uldin_twilight laugh
     with dissolve
@@ -548,7 +549,7 @@ label act1:
 
     show ilona_twilight closed annoyed
 
-    "Ilona had to consider this carefully. She and Edwin had drawn too much attention already, so it surprised her when Edwin spoke without any fear."
+    "Ilona had to consider this carefully. She and Edwin had drawn too much attention already… So it surprised her when Edwin spoke without any fear."
 
     show edwin_twilight talk closed with dissolve
     show anari_twilight look -sweatdrop
@@ -568,9 +569,9 @@ label act1:
 
     play sound 'audio/ambience/bbc fire.mp3' volume 0.1 loop
 
-    "Ilona could hardly believe that they had been welcomed so readily after being persecuted, but she was grateful nonetheless."
+    "It had only been a few days since they were on the run… Ilona could scarcely believe that they were welcomed so readily."
 
-    "A richly coloured beetroot soup, mulled wine with spices, pickled vegetables, a glistening whole roasted pheasant, and many other dishes lay on the extravagant table."
+    "They sit at a table laden with food: a rich coloured beetroot soup, mulled wine with spices, pickled vegetables, a glistening whole roasted pheasant and even more dishes than one could name."
 
     scene bg hall night
     with fade
@@ -579,7 +580,7 @@ label act1:
     show fleur_dim at left_center with dissolve
     show eisleigh_dim at right_center with dissolve
 
-    "Seated at the table were two new faces — Fleur, the daughter of Uldin. To Fleur's left sat Eisleigh, an assistant to the house."
+    "Seated at the table were two new faces: Fleur, the daughter of Uldin. On Fleur's left side was Eisleigh, an assistant to the house."
 
     hide fleur_dim
     hide eisleigh_dim
