@@ -1,4 +1,16 @@
 ## The file for act 3.
+ # I should not be doing this at 6:24AM
+ # The Final Canopy
+
+transform ilona_final_canopy:
+    zoom 0.75
+    xpos 240
+    yoffset -100
+
+transform edwin_final_canopy:
+    zoom 0.75
+    xpos 420
+    yoffset -100
 
 label act3:
 
@@ -861,8 +873,6 @@ label act3:
     scene bg road sunset with dissolve:
         xzoom-1
 
-    # TODO: add the canopy alpha mask
-
     "Ilona heals the wound that pierced her abdomen through, and the blood slows. However, the wound does not close completely. The other arrows stuck in them would prove more dangerous to deal with, with no surgical equipment to use."
 
     il "Edwin, set me down. You're more injured than I am."
@@ -906,51 +916,71 @@ label act3:
 
     play sound 'audio/sfx/Footsteps Slow Trainers.wav'
 
+    scene bg valley sunset with dissolve
+
+    $ renpy.pause(2.0)
+
     "They walk for a while to search for a resting place, seeing the valley unfold before them."
 
-    ## VALLEY
-    scene bg valley sunset
-    with longfade
-
-    show ilona_sunset pensive blood:
+    # The scrolling bg
+    scene valley_scroll
+    show ilona_sunset blood:
         zoom 0.5 yoffset 0 xcenter 700
-    show edwin_sunset sad talk blood at center behind ilona_sunset:
+    show edwin_sunset blood at center behind ilona_sunset:
         zoom 0.5 xzoom -1
-    with dissolve
+    with longfade
 
     ed "I’m sorry."
 
-    show ilona_sunset open
+    show ilona_sunset open with dissolve
     il "About what?"
 
-    show edwin_sunset angry furrow talk
+    show edwin_sunset angry furrow talk with dissolve
     ed "You’re right about me not saying what it is that I want to say, burying it so deep within the abyss that I can’t even reach it."
 
     show edwin_sunset distant neutral
     ed "Even if I want to… Just maybe, if I’d come clean to the people that we met thus far, and to you, about the wolfskin; the incessant nightmares that I’ve been having...."
 
-    show edwin_sunset sad talk -furrow
+    $ renpy.pause(2.0)
+
+    show edwin_sunset sad talk -furrow with dissolve
     ed "I couldn't even trust you to watch me transform..."
 
-    show ilona_sunset pensive smile
+    $ renpy.pause(2.0)
+
+    show ilona_sunset pensive smile with dissolve
     il "It’s okay. We can start over."
 
-    show edwin_sunset neutral
+    show edwin_sunset neutral with dissolve
     ed "If I’d had the courage to ask for your assistance, we could have found an alternative."
 
-    show ilona_sunset solemn neutral
+    show ilona_sunset solemn neutral with dissolve
     il "We must be strong and keep our past behind us. What’s done is done."
+
+    $ renpy.pause(4.0)
 
     il "Besides, I’m here for you now. And you are for me. I’m sure that God has tested our resolve more than enough."
 
     show edwin_sunset closed smile
     ed "I would like to believe that."
 
-    scene bg valley sunset
-    show ilona_sunset closed sad blood:
-        zoom 0.75 xpos 240 yoffset -100
-    show edwin_sunset closed behind ilona_sunset:
-        zoom 0.75 xpos 420 yoffset -100
+# keep the xalign values for the bg to scroll in the correct direction
+# Increase linear value for slower scrolling
+    image valley_scroll:
+        "images/bg/bg valley sunset long.png"
+        xalign 0.0
+        linear 340.0 xalign 1.0
+        repeat
+
+
+    # Apply the Final Canopy
+
+    scene bg valley sunset with dissolve
+
+    show ilona_sunset closed sad blood at ilona_final_canopy
+    show expression AlphaMask("canopy", At("ilona", ilona_final_canopy)) as ilona_mask
+    show edwin_sunset closed behind at edwin_final_canopy
+    show expression AlphaMask("canopy", At("edwin", edwin_final_canopy)) as edwin_mask
     with longfade
 
     "Eventually, they stop to sit under the shade of a tree, basking in its shadow. Their breath is ragged, but in sync with each other's. Ilona rests her head on Edwin’s shoulders."

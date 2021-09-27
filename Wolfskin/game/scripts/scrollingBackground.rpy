@@ -39,5 +39,5 @@ label scrolling_bg_test:
 image valley_scroll:
     "images/bg/bg valley sunset long.png"
     xalign 0.0
-    linear 10.0 xalign 1.0
+    linear 200.0 xalign 1.0
     repeat
