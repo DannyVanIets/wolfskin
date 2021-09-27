@@ -86,7 +86,7 @@ label act1:
 
     show ilona_twilight closed
 
-    "Ilona closes her weary eyes, daring to give them a moment of respite while waiting for Edwin’s transformation back into human form to finish. The only thing that she can hear is the lullaby of the forest animals. After he is finished transforming, Edwin speaks up."
+    "Ilona waits for Edwin to turn back into a human, closing her eyes to rest for a moment. There's only the sound of the forest, until Edwin speaks to break their silence."
 
     show edwin_twilight glance talk at edwin_transform_pos1
     show expression AlphaMask("canopy", At("edwin", edwin_transform_pos1)) as edwin_mask
@@ -100,13 +100,13 @@ label act1:
 
     show edwin_twilight fear furrow talk
 
-    ed "... Ilona, I can’t. Not in a situation like this."
+    ed "... Ilona I-I can’t. Not in a situation like this..."
 
     show ilona_twilight open sad neutral
 
     show edwin_twilight glance neutral
 
-    il "You’re right, but I need you to slow down. I can’t keep up with you, and that is only going to make us look all the more suspicious."
+    il "You’re right, but I need you to slow down. I can’t keep up with you and that is only going to make us look all the more suspicious."
 
     ed "..."
 
@@ -125,13 +125,13 @@ label act1:
 
     stop music fadeout 8.0
 
-    "Ilona places her hands over Edwin’s while she says this. His hands are freezing to the touch – inhumanly so. A remnant of his recent transformation."
+    "As she says this, she places her hands over his. His hands are abnormally cold to touch. Ilona learned this was a sign of his transformation."
 
-    "Even still, she's certain that she must remain with him."
+    "Even so, she must remain with him."
 
     show ilona_twilight closed relaxed
 
-    "The moonlight iluminates the both of them, the night air frigid and dry."
+    "The moonlight beams over them, slightly wavering with each breath they take."
 
     il "(If only the moonlight would never leave us. We should rest here for a while.)"
 
@@ -159,7 +159,7 @@ label act1:
 
     show ilona_twilight happy
 
-    il "You have thanked me more than enough already, Edwin. I appreciate it, but let's not dwell on it any further."
+    il "You have thanked me more than enough already, Edwin. I appreciate it… but let's not dwell on it any further. "
 
     show ilona_twilight closed smile
 
@@ -173,7 +173,7 @@ label act1:
         xzoom-1
     with longfade
 
-    "Eventually, they press on. They spy a lonely settlement on the horizon; tall stone walls surround its perimeter."
+    "Eventually, they press on. They sight a lonely settlement on the horizon; stone walls surrounding its perimeter."
 
     show edwin_night anxious grin at right with dissolve:
         zoom 0.50
@@ -182,7 +182,7 @@ label act1:
 
     show edwin_night anxious talk furrow
 
-    ed "I haven't felt like myself lately — since the incident back at the priory. Try as I may to blend in, to do good and keep myself in check… I am a beast, through and through."
+    ed "I haven't felt like m-myself lately, since the incident back at the priory. Try as I may to blend in, to do good and keep myself in check… I am a beast, through and through."
 
     show edwin_night fury neutral
 
@@ -201,7 +201,7 @@ label act1:
 
     show edwin_night glance
 
-    ed "I did not know the extent of the hatred that lay within their souls until that night… To go as far as to burn me alive…"
+    ed "I did not know the extent of the hatred that lay within their souls until that night… to go as far as to burn me alive…"
 
     ed "Is there something wrong with me, Ilona? I'm always on edge, fearing for our lives… I never meant to put you through this."
 
@@ -209,7 +209,7 @@ label act1:
 
     show edwin_night neutral
 
-    il "If you want my answer as a {i}former{/i} nun — you and I have sinned."
+    il "If you want my answer as a {i}former{/i} nun… You and I have sinned."
 
     il "You said that you were a beast, through and through."
 
@@ -227,7 +227,7 @@ label act1:
 
     play sound 'audio/sfx/zapsplat cloth.mp3' volume 0.1
 
-    "Edwin immediately releases Ilona's hand and instinctively tenses his into a fist. The rustling of dry leaves brings with it a fully-armed archer and a guard in heavy armor."
+    "Edwin immediately lets go of her hand, intertwined seconds ago, but now balled into a fist. The rustling of dry leaves brought with it a heavily armed guard and an archer under a cloak."
 
     unk "That's enough loitering around the town wall looking suspicious, don't you think?"
 
@@ -254,7 +254,7 @@ label act1:
 
     unk "{i}Sister{/i}, all I know is that the master called you. I sighted a nun and a man outside the town walls and informed him of this."
 
-    unk "I can tell your legs are shaking even from here. So, make sure to comply obediently and I won't ask any difficult questions about you in return."
+    unk "I can tell your legs are shaking even from here… so make sure to comply obediently and I won't ask any difficult questions about you in return."
 
     show edwin_night talk open furrow
 
@@ -275,7 +275,6 @@ label act1:
     an "You may be outsiders, but you look like decent enough folk. No need to come up with any grand excuses for why you’re here."
 
     show anari_night angry smile
-
     an "So, let’s get back to it. Will you accept the town master's call?"
 
     show anari_night neutral
@@ -306,20 +305,20 @@ label act1:
 
     show anari_night nii smile relaxed
 
-    an "So you do have manners. It would do you well to keep them. Let’s get moving, then. I’ll escort you to the manse."
+    an "So you do have manners; it would do you well to keep them. Let’s get moving, then. I’ll escort you to the manse."
 
     ## TOWN GATE
 
     scene bg belorov night
     with longfade
 
-    "The armored man paves the way forward. Anari takes the position of rear guard."
+    "Anari takes the position of rear guard, as the other guard leads the way forward."
 
     stop music fadeout 3.0
 
-    "Ilona's gaze wanders to Anari. Her bow is by her side, one hand hovering above her quiver - ready to quickly grab it and shoot them both at any moment."
+    "Ilona glances back, just once. Anari's bow is by her side and a hand rests on the quiver, ready to fire if the two of them even thought of escaping."
 
-    "cannot help but wonder just how much Anari overheard of their conversation... Her arrival seemed too well-timed."
+    "Ilona cannot help but wonder just how much Anari overheard of their conversation... Her arrival seemed too well-timed."
 
     "Did they give away too much, even when they thought they were alone?"
 
