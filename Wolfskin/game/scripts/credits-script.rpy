@@ -18,7 +18,7 @@ label credits_from_script:
 
     ## The background of the credits: bg moon for in-game credits
     # a variant of fade is necessary to transition from Act 3 ending CG.
-    scene bg moon with longfade
+    scene cg_cry with longfade
 
     ## Play credits theme
     play music 'audio/music/Main Theme WIP.mp3' fadein 2.0 noloop

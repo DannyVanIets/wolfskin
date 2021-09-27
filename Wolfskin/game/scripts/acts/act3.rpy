@@ -82,11 +82,11 @@ label act3:
 
     $ renpy.pause(2.0)
 
+    play music 'audio/ambience/dark forest.mp3' volume 0.2 fadein 4.0
+
     ed "I held her close and crushed the bones in her neck, hoping for an instant death."
 
     il "You're certain you killed her? She wasn’t already dead before that?"
-
-    play music 'audio/ambience/dark forest.mp3' volume 0.2 fadein 4.0
 
     ed "When a bearer of the wolfskin dies, they revert to human form. She no longer had any bestial features when I was done."
 
@@ -103,6 +103,11 @@ label act3:
 
     scene bg forest day
     with dissolve
+
+    $ renpy.pause(1.0)
+
+    scene bg forest sunset
+    with longdissolve
 
     $ renpy.pause(1.0)
 
@@ -179,7 +184,7 @@ label act3:
     il "And watch you {i}die{/i}? Do you really think I would be happy with something like that?"
 
     show edwin_dim distant -furrow
-    show ilona_dim neutral
+    show ilona_dim talk
     with dissolve
     ed "I'm going to get what's coming to me, sooner or later."
 
@@ -266,7 +271,7 @@ label act3:
 
     "Ilona's heart leaps when she hears Anari speak so suddenly."
 
-    show ilona shock sweat at left:
+    show ilona shock sweat at less_left:
         zoom 0.5
     show anari look at right:
         zoom 0.5
@@ -317,11 +322,17 @@ label act3:
     scene bg forest day
     with fade
 
-    "As part of the investigation, Ilona and Kellac join the search party for Fleur. While doing so, Ilona searches for an escape route, and any part of the wall that may look like it could be scalable."
+    "As part of the investigation, Ilona and Kellac join the search party for Fleur."
+    scene bg belorov day
+    with dissolve
+    extend " While doing so, Ilona searches for an escape route, and any part of the wall that may look like it could be scalable."
+
+    $ renpy.pause(1.0)
+
+    scene bg town plaza day
+    with dissolve
 
     "Eventually, Kellac takes his leave to watch over Eisleigh to make sure her condition remains stable; leaving Ilona in the town square."
-
-    with logodissolve
 
 # SCENE 40
 
@@ -330,29 +341,48 @@ label act3:
 
     "The day grows darker as the sun dips below the horizon. Edwin is brought out from the dungeon, his wolf-like arms bound in chains."
 
-    "Anari is waiting, and several of the townsfolk look to the pyre stacked in the middle of the town square. There is an air of formality surrounding her, clad in her red hunting garments. They seem even more vibrant, illuminated by the glow of the sun."
 
-    show anari_sunset at center:
-        zoom 0.6 yoffset 200
+    play music 'audio/music/March Of The Huntress - Theme Of Anari -.ogg' fadein 3.0 volume 0.4
+    play sound 'audio/sfx/footsteps slow trainers.wav'
+    $ renpy.pause(2.0)
+
+    show edwin_sunset wolf distant at less_right with dissolve:
+        zoom 0.5
+
+    "Anari is waiting, and several of the townsfolk look to the pyre. There is an air of formality surrounding Anari. Clad in her red hunting garments, the vibrant colour is illuminated by the glow of the sun."
+
+    hide edwin_sunset with dissolve
+
+    show anari_sunset talk angry at center:
+        zoom 0.7 yoffset 220
     with dissolve
 
     an "We will begin the proceedings against Edwin, who was apprehended this morning."
 
     an "He has made his companionship with the nun, Ilona, clear. Ilona has been harboring him with the knowledge that he is a werewolf."
 
+    show anari_sunset scary neutral with dissolve
     an "Edwin was found on scene, holding Salome's lifeless body."
 
-    play music 'audio/music/Echoing - Theme Of Fleur -.ogg'
-
+    show anari_sunset closed neutral with dissolve
+    stop music fadeout 3.0
     an "I'll start first with some important information. We could not locate Fleur, but we found this envelope in the forest. The seal on it was still intact."
+
+    play sound 'audio/sfx/gynation paper.wav'
 
     "Anari's face is grim. She pulls out a letter, the seal on it broken. She reads the brief message out loud for all to hear."
 
+    play music '<from 65 to 128>audio/music/Echoing - Theme Of Fleur -.ogg' fadein 4.0 noloop
+
     hide anari_sunset with dissolve
 
+    scene bg forest night with fade
+
+    $ renpy.pause(2.0)
+
     show lost_fl at center:
-        zoom 0.5
-    with dissolve
+        zoom 0.7 yoffset 140
+    with longdissolve
 
     fl "{i}By the time you receive this letter, I will be reunited with who I consider to be my true family.{/i}"
 
@@ -361,59 +391,84 @@ label act3:
     fl "{i}In doing so, I have let fate decide my hand, and this was the result - to reunite me with the fair ones forevermore."
     extend " - Fleur Belorovna{/i}"
 
-    hide lost_fl with dissolve
+    hide lost_fl
+    show bg black
+    with fade
 
-    show anari_sunset at center:
-        zoom 0.6 yoffset 200
-    with dissolve
+    show bg town plaza sunset
+    show anari_sunset neutral angry glance at center:
+        zoom 0.7 yoffset 220
+    with longfade
 
     an "We are certain that this is her hand-writing."
 
+    show anari_sunset open worry neutral sweatdrop with dissolve
     an "Fleur is… no longer with us. She has been taken by the fair folk. We couldn't find any trace of her, not even her footprints, or any clues towards her disappearance."
 
-    stop music fadeout 2.0
-
+    show anari_sunset closed talk -sweatdrop with dissolve
     an "…With that matter settled, let's proceed with Edwin. The nun Ilona has prepared a defence. Please, rise."
 
     hide anari_sunset with dissolve
 
 # SCENE 41
 
-    show ilona_sunset at left:
-        zoom 0.5
-    show anari_sunset at right:
-        zoom 0.5
-    with dissolve
-
-    "The words were stuck in Ilona's throat. She thinks deeply about the contents of Fleur's letter, but it truly sounds like the young girl mysteriously vanished."
+    "The words were stuck in Ilona's throat. She thinks deeply about the contents of Fleur's letter, but it truly sounds like the young girl mysteriously vanished. Though part of her couldn't accept that explanation so easily."
 
     "{i}I could only choose one or the other, and so I have decided to take a test of faith to prove my worthiness.{/i}"
 
+    show ilona_sunset pensive solemn at left:
+        zoom 0.5
+    show anari_sunset neutral at right:
+        zoom 0.5
+    with dissolve
+
     "Ilona decides that they should at least begin with what they know from the investigation, and think about Fleur's letter along the way."
 
+    show ilona_sunset glance talk
     il "This murder had at least two conspirators involved: Salome and Fleur."
 
+    show anari_sunset angry look smile
     an "Hoh? Go on."
 
+    show ilona_sunset aaaa open talk
     il "Both Salome and Fleur conspired together to drug the guests at the banquet, by poisoning the sugar with a powerful soporific."
 
     il "This was given to Uldin by Kellac last night as part of his medicine to aid his sleeplessness. Kellac has confirmed three doses of this medicine disappeared from his dispensary."
 
+    show ilona_sunset glance with dissolve
     il "During the banquet, Fleur and Salome were able to figure out Edwin's true nature, and thought to drug him by lacing the sugar with the soporific. When Edwin was asleep, they were able to steal a cursed item from him, and assume the form of a werewolf."
 
+    show anari_sunset open talk angry
     an "All I care about are the deaths themselves at the end of the day. So? Who was the one that murdered Uldin?"
 
+    scene bg black with longfade
     "Ilona thinks carefully about the course of events, and what she really saw."
+
+    show bw_sa_murder at center:
+        zoom 0.7 xzoom-1
+    with dissolve
+
+    play music 'audio/music/Wail of the Moon.ogg' volume 0.4 fadein 2.0
 
     "(The corpse of Salome, burned beyond recognition… )"
 
+    hide bw_sa_murder with fade
+
     "(Her voice was thin, high and frail. Her body seemed smaller, possibly due to the burns…)"
+
+    show lost_fl at center with dissolve:
+        zoom 0.7
 
     "(“If she wore the wolfskin....”)"
 
     "A theory appears before her, dispelling the illusion of what she saw. If she is right, then this would explain the tragedy of last night in its entirety."
 
-    play music 'audio/music/Chaos and Torment.ogg'
+    hide lost_fl with fade
+
+    show bg masters chamber night
+    show bw_sa_murder at center:
+        zoom 0.7 xzoom-1
+    with dissolve
 
     il "How were you able to identify the burned corpse in the Master's chamber?"
 
@@ -424,11 +479,13 @@ label act3:
     an "Nothing that I know of, apart from the mole near her eye… And as I said, her face has been horribly burned — "
 
     il "Then, here's my answer for who murdered Uldin: the culprit was Fleur."
+    play music 'audio/music/Chaos and Torment.ogg' volume 0.5
     extend " The corpse of Salome has been misidentified."
 
+    show anari_sunset scary fury cringe with vpunch
     an "What? How dare you doubt Kellac's judgement?  You must be truly grasping at straws to make such bold claims!"
 
-    il "You said the corpse's face, hair and body was burned to an unrecognizable state. The only identifiers we had were Salome's ring, and her nightgown - all clothing and effects."
+    il "You said the corpse's face, hair and body were burned to an unrecognizable state. The only identifiers we had were Salome's ring, and her nightgown - all clothing and effects."
 
     il "I insist: this is Fleur's body."
 
@@ -448,7 +505,7 @@ label act3:
 
     an "I refuse to believe this… This is all far too absurd."
 
-    il "A werewolf has considerable strength, even more than a beast, but it doesn't make you impervious to all attack."
+    il "A werewolf has considerable strength, even more than a beast, but it doesn't make you impervious to all attacks."
 
     il "Terrified by such a horrible sight, Uldin did not hesitate to burn Fleur with magic, and driven mad by the pain, she killed him by biting his throat."
 
@@ -465,8 +522,6 @@ label act3:
     il "I wouldn't be so quick to discount the possibility. We found a chest made for Fleur in Salome's room. When Eisleigh opened it, she suffered a horrific injury from a trap. Perhaps Salome had the trap for some time, and her target was Fleur."
 
     "Anari remains silent, but her glare is penetrating and cold. Despite this, Ilona continues."
-
-    il "After the murder, she waited patiently until the manse was empty. After we escorted Edwin to the dungeon and gathered in the town square, Salome was able to move again. She locked the wolfskin away in a chest in her room, setting the trap."
 
     il "She waited patiently until the manse was empty. After we escorted Edwin to the dungeon and gathered in the town square, Salome was able to move again. She locked the wolfskin away in a chest in her room, and trapped it with a device."
 

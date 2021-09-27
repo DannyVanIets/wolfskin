@@ -245,7 +245,7 @@ screen credits():
 
             text "Special Thanks" size 100
             null height 80
-            text "Avery Beardmore"
+            text "Amemarteau"
             null height 80
             text "Adam, Sam, Selene and Chase"
             null height 80

@@ -163,7 +163,7 @@ label act2:
 
     show ilona_dim glance annoyed sweat at left:
         zoom 0.5
-    show anari_dim blank furious yell fear at right:
+    show anari_dim blank fury yell fear at right:
         zoom 0.5
     with dissolve
 
@@ -206,7 +206,7 @@ label act2:
     an "...Tea?"
 
     # Anari moves slightly to the left (from wall) to show outburst
-    show anari_dim:
+    show anari_dim fury:
         ease 0.5 xcenter 1500
 
     an "Does it look like I’m in the mood for some tea right now? In the middle of this mess? Is there something wrong with your head, Sister? Have you forgotten the situation we find ourselves in?"
@@ -219,7 +219,7 @@ label act2:
 
     il "I only wish to see that you’re in good health to proceed, so I thought we could take a quick break-"
 
-    show anari_dim open talk
+    show anari_dim open talk angry
     an "With some tea, I get it. Very well, I must tell you that I despise the leaves from this country, so you'd better make a damn fine cup."
 
     show ilona_dim relaxed open neutral
@@ -485,7 +485,7 @@ label act2:
 
     $ renpy.pause(2.0)
 
-    show anari_dim blank furious grin with vpunch
+    show anari_dim blank fury grin with vpunch
     an "It’s for the lycan to die, of course!"
 
     show ilona_dim shock sad talk sweat with dissolve

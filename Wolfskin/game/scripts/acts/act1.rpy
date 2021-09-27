@@ -52,10 +52,6 @@ label act1:
 
     nvl clear
 
-    stop music fadeout 3.0
-
-    play music 'audio/sfx/bbc woodland.ogg' volume 0.04
-
     # Show the intro of the act.
 
     scene bg fluffies
@@ -67,10 +63,16 @@ label act1:
 
     ## FOREST
 
+    stop music fadeout 3.0
+
     scene bg forest night
     with fadehold
 
     $ renpy.pause(2.0)
+
+    play music 'audio/sfx/bbc woodland.ogg' volume 0.17 fadein 3.0
+
+    $ renpy.pause(1.0)
 
     show ilona_twilight at ilona_transform_pos1
     show expression AlphaMask("canopy", At("ilona", ilona_transform_pos1)) as ilona_mask
@@ -271,6 +273,7 @@ label act1:
 
     an "You may be outsiders, but you look like decent enough folk. No need to come up with any grand excuses for why you’re here."
 
+    show anari_night angry smile
     an "So, let’s get back to it. Will you accept the town master's call?"
 
     show anari_night neutral
@@ -334,9 +337,11 @@ label act1:
 
     stop sound fadeout 4.0
 
-    play music 'audio/music/The Town.ogg' volume 0.7 fadein 2.0
+    play music 'audio/music/The Town.ogg' volume 0.7
 
-    show edwin_night closed at right with dissolve:
+    $ renpy.pause(3.0)
+
+    show edwin_night closed at right with longdissolve:
         zoom 0.50 xpos 1.0
 
     $ quick_menu = True
@@ -797,7 +802,7 @@ label act1:
     show eisleigh_dim look smile
     ed "No no, that's not it at all! It's… not that interesting compared to my other stories."
 
-    show fleur_dim look smile
+    show fleur_dim wink smile
     fl "Hmph, I was under the impression you two shared a forbidden romance. Perhaps the strange forces that wander tonight will tip the scales at last!"
 
     show salome_dim angry pensive blush
@@ -828,7 +833,7 @@ label act1:
     "Salome gives one stern glance to both Fleur and Uldin, and their boisterous laughs subside. Uldin still seems pleased with his comment. When he recalls the looks on Ilona and Edwin's faces, he tries to not burst out laughing again."
 
     # Fleur turns to right to face Edwin/Ilona
-    show fleur_dim sorry smile with dissolve:
+    show fleur_dim look happy with dissolve:
         xzoom -1
 
     fl "I apologize, Mother. And I apologize to you as well, Edwin and Sister Ilona, for insinuating something I should not have. "
@@ -1431,7 +1436,7 @@ label act1:
     "The sound of footsteps rushes up the stairs again, and Ilona knows immediately who it is."
 
     scene bg hallway night dark
-    show anari_twilight furious scary yell kill at center:
+    show anari_twilight fury scary yell kill at center:
         zoom 0.7 yoffset 220
     with dissolve
 
