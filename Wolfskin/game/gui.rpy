@@ -11,6 +11,10 @@ init offset = -2
 init python:
     gui.init(1920, 1080)
 
+    # Layer configurations to work with ActionEditor
+    config.layers = ['master', 'background', 'middle', 'forward', 'transient', 'screens', 'overlay']
+    register_3d_layer('background', 'middle', 'forward')
+
 
 
 ################################################################################
