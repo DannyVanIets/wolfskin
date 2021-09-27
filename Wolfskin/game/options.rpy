@@ -61,7 +61,7 @@ define config.sample_voice = "voice/act2_086f652a.mp3"
 ## the player is at the main menu. This file will continue playing into the
 ## game, until it is stopped or another file is played.
 
-define config.main_menu_music = "audio/ambience/wind and trees.ogg"
+define config.main_menu_music = "audio/music/Main_menu.mp3"
 
 ## Default values on the music, sfx, and voice sliders
 define config.default_music_volume = 0.5
