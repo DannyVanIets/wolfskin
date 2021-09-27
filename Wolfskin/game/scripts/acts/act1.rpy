@@ -100,13 +100,13 @@ label act1:
 
     show edwin_twilight fear furrow talk
 
-    ed "... Ilona I-I can’t. Not in a situation like this..."
+    ed "... Ilona, I can’t. Not in a situation like this."
 
     show ilona_twilight open sad neutral
 
     show edwin_twilight glance neutral
 
-    il "You’re right, but I need you to slow down. I can’t keep up with you and that is only going to make us look all the more suspicious."
+    il "You’re right, but I need you to slow down. I can’t keep up with you, and that is only going to make us look all the more suspicious."
 
     ed "..."
 
@@ -159,7 +159,7 @@ label act1:
 
     show ilona_twilight happy
 
-    il "You have thanked me more than enough already, Edwin. I appreciate it… but let's not dwell on it any further. "
+    il "You have thanked me more than enough already, Edwin. I appreciate it, but let's not dwell on it any further."
 
     show ilona_twilight closed smile
 
@@ -182,7 +182,7 @@ label act1:
 
     show edwin_night anxious talk furrow
 
-    ed "I haven't felt like m-myself lately, since the incident back at the priory. Try as I may to blend in, to do good and keep myself in check… I am a beast, through and through."
+    ed "I haven't felt like myself lately — since the incident back at the priory. Try as I may to blend in, to do good and keep myself in check… I am a beast, through and through."
 
     show edwin_night fury neutral
 
@@ -201,7 +201,7 @@ label act1:
 
     show edwin_night glance
 
-    ed "I did not know the extent of the hatred that lay within their souls until that night… to go as far as to burn me alive…"
+    ed "I did not know the extent of the hatred that lay within their souls until that night… To go as far as to burn me alive…"
 
     ed "Is there something wrong with me, Ilona? I'm always on edge, fearing for our lives… I never meant to put you through this."
 
@@ -209,7 +209,7 @@ label act1:
 
     show edwin_night neutral
 
-    il "If you want my answer as a {i}former{/i} nun… You and I have sinned."
+    il "If you want my answer as a {i}former{/i} nun — you and I have sinned."
 
     il "You said that you were a beast, through and through."
 
@@ -254,7 +254,7 @@ label act1:
 
     unk "{i}Sister{/i}, all I know is that the master called you. I sighted a nun and a man outside the town walls and informed him of this."
 
-    unk "I can tell your legs are shaking even from here… so make sure to comply obediently and I won't ask any difficult questions about you in return."
+    unk "I can tell your legs are shaking even from here. So, make sure to comply obediently and I won't ask any difficult questions about you in return."
 
     show edwin_night talk open furrow
 
@@ -306,7 +306,7 @@ label act1:
 
     show anari_night nii smile relaxed
 
-    an "So you do have manners; it would do you well to keep them. Let’s get moving, then. I’ll escort you to the manse."
+    an "So you do have manners. It would do you well to keep them. Let’s get moving, then. I’ll escort you to the manse."
 
     ## TOWN GATE
 
@@ -321,7 +321,7 @@ label act1:
 
     "She can't help but wonder just how much Anari overheard of her and Edwin's conversation prior. Anari's arrival had seemed just a bit {i}too{/i} opportune."
 
-    "Ilona quickly glances at Edwin and is unable to discern his inscrutable expression. Before she has a chance to speak, the duo is informed that they have arrived at the town gate."
+    "Illona quickly glances at Edwin and is unable to discern his inscrutable expression. Before she has a chance to speak, the duo is informed that they have arrived at the town gate."
 
     stop music fadeout 3.0
 
@@ -350,7 +350,7 @@ label act1:
     show edwin_night open
     ed "(I truly wouldn't have made it this far on my own. Even if I hide what I am well, people can't help but to be suspicious.)"
 
-    ed "(Although - a town full of people not trying to kill me yet is quite an improvement.)"
+    ed "(Although, a town full of people {i}not{/i} trying to kill me yet is quite an improvement.)"
 
     "As they venture further into the city, Illona notices the bizzare scenery: a large bonfire lay in the center of the town square, and strange carved turnips sit at the doorsteps of many houses."
 
@@ -362,7 +362,7 @@ label act1:
 
     show edwin_night glance grin
 
-    ed "It’s for... All Hallows’ Eve, a celebration to commemorate the dead."
+    ed "It’s for All Hallows’ Eve, a celebration to commemorate the dead."
 
     show ilona_night angry sad talk
 
@@ -392,7 +392,7 @@ label act1:
     show ilona_night open solemn
     with dissolve
 
-    ed "I’m so sorry for bumping into you, sir-"
+    ed "I’m so sorry for bumping into you, sir."
 
     show anari_night closed talk angry sweatdrop with dissolve:
         zoom 0.50 xpos 540
@@ -405,19 +405,19 @@ label act1:
     show edwin_night open neutral -furrow
 
     # most of Kellac's lines should be delivered without too much enthusiasm, as though he was an older person or an 'old soul'.
-    ke "Fancy meeting you here, Anari. I didn’t know you like to take strolls. I never knew you had friends either! And who may you be, dear sister?"
+    ke "Fancy meeting you here, Anari. I didn’t know you like to take strolls. I never knew you had friends, either! And who may you be, dear Sister?"
 
     show edwin_night closed neutral sweat
     show ilona_night annoyed
     with dissolve
 
-    ed "Uh, I’m not sure we're friends…"
+    ed "Uh, I’m not sure we're friends..."
 
     show ilona_night relaxed
     show kellac_night open raised
     show edwin_night open -sweat
 
-    ke "Pleased to make your acquaintance, anyhow. I’m Kellac, Anari and I go way back."
+    ke "Pleased to make your acquaintance anyhow. I’m Kellac. Anari and I go way back."
 
     show anari_night closed angry neutral sweatdrop
 
@@ -425,12 +425,12 @@ label act1:
 
     show kellac_night nii happy
 
-    ke "You’ve just got to love that personality! Don’t take her too seriously, she's always been like that."
+    ke "You’ve just got to love that personality! Don’t take her too seriously — she's always been like that."
 
     show edwin_night smile
     show kellac_night smile
 
-    ed "I see… I'm Edwin. Pleased to make your acquaintance."
+    ed "I see. I'm Edwin. Pleased to make your acquaintance."
 
     show ilona_night happy
 
@@ -439,21 +439,21 @@ label act1:
     show anari_night look
     show kellac_night talk worry open
 
-    ke "Me? Sorry, but no. I'm just the physician and herbalist. Did the master summon you?"
+    ke "Me? Sorry, but no. I'm just the physician and herbalist. Did the Master summon you?"
 
     show kellac_night neutral
     show ilona_night sad talk
     show edwin_night neutral sad
     with dissolve
 
-    il "He did, but I don't know what business we have with him..."
+    il "He did, but I don't know what business we have with him."
 
     show ilona_night neutral
     show kellac_night smile sweat
     show anari_night -sweatdrop
     with dissolve
 
-    ke "Aha. I should have expected as much; Anari has a habit of leaving out the details and jumping straight to the point."
+    ke "Aha. I should have expected as much. Anari has a habit of leaving out the details and jumping straight to the point."
 
     show kellac_night raised -sweat
     with dissolve
@@ -464,7 +464,7 @@ label act1:
     show anari_night closed relaxed
     with dissolve
 
-    "Anari only nods curtly, and the group moves along. Further into the town, they find a large house made of timber and stone."
+    "Anari nods curtly and the group trots along. Wandering further into the town, they come across a large house that looks to be made of wood."
 
     play sound 'audio/sfx/footsteps slow leather tile.wav'
 
@@ -494,7 +494,7 @@ label act1:
         xcenter 1750 xzoom -1
     with dissolve
 
-    an "Sir Uldin, Lady Salome. I've brought to you Sister Ilona, and her companion Edwin."
+    an "Sir Uldin. Lady Salome. I've brought to you Sister Ilona, and her companion Edwin."
 
     show uldin_twilight closed laugh
 
@@ -509,15 +509,15 @@ label act1:
 
     show edwin_twilight glance talk
 
-    ed "I understand I may not have the friendliest appearance… but I have sworn to protect Sister Ilona from harm."
+    ed "I understand I may not have the friendliest appearance, but I have sworn to protect Sister Ilona from harm."
 
     show uldin_twilight smirk open
 
-    ul "This is indeed unexpected… Anari's eyes are keen, but perhaps only for hunting her quarry."
+    ul "This is indeed unexpected. Anari's eyes are keen, but perhaps only for hunting her quarry."
 
     show anari_twilight closed relaxed smile -sweatdrop
 
-    an "True. There's no need to understand the conversations of beasts to hunt them, only their behaviour."
+    an "True. There's no need to understand the conversations of beasts to hunt them — only their behaviour."
 
     show salome_twilight grin downturn nii
     show edwin_twilight neutral
@@ -528,7 +528,7 @@ label act1:
     show ilona_twilight sad pensive
     with dissolve
 
-    il "Thank you for your kind words, but they are far too gracious to be wasted on me... I have not done anything to be deserving of such praise."
+    il "Thank you for your kind words, but they are far too gracious to be wasted on me. I have not done anything to be deserving of such praise."
 
     show salome_twilight smallgrin open
 
@@ -568,7 +568,7 @@ label act1:
 
     play sound 'audio/ambience/bbc fire.mp3' volume 0.1 loop
 
-    "Ilona could hardly believe that they had been welcomed so readily after being persecuted, but she was grateful nonetheless."
+    “Ilona could hardly believe that they had been welcomed so readily after being persecuted, but she was grateful nonetheless."
 
     "A richly coloured beetroot soup, mulled wine with spices, pickled vegetables, a glistening whole roasted pheasant, and many other dishes lay on the extravagant table."
 
