@@ -5,7 +5,6 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define test = Character("Remove") # Remove any text from this character before uploading and remove the character too!
 define il = Character("Ilona", ctc="ctc_anchored", ctc_position="fixed", namebox_background = "gui/ribbons/ilona_ribbon.png")
 define ed = Character("Edwin", ctc="ctc_anchored", ctc_position="fixed", namebox_background = "gui/ribbons/edwin_ribbon.png")
 define an = Character("Anari", ctc="ctc_anchored", ctc_position="fixed", namebox_background = "gui/ribbons/anari_ribbon.png")

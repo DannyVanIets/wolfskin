@@ -32,7 +32,7 @@ label scrolling_bg_test:
         zoom 0.5 xzoom -1
     with fade
 
-    narrator "and stopped at their destination."
+    narrator "and stop at their destination."
 
 # keep the xalign values for the bg to scroll in the correct direction
 # Increase linear value for slower scrolling
