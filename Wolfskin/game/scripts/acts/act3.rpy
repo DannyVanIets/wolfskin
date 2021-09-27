@@ -972,15 +972,11 @@ label act3:
         linear 340.0 xalign 1.0
         repeat
 
-
-    # Apply the Final Canopy
-
     scene bg valley sunset with dissolve
-
     show ilona_sunset closed sad blood at ilona_final_canopy
-    show expression AlphaMask("canopy", At("ilona", ilona_final_canopy)) as ilona_mask
-    show edwin_sunset closed behind at edwin_final_canopy
-    show expression AlphaMask("canopy", At("edwin", edwin_final_canopy)) as edwin_mask
+    show edwin_sunset closed behind ilona_sunset at edwin_final_canopy
+    # image to give the canopy shading
+    show valleytree
     with longfade
 
     "Eventually, they stop to sit under the shade of a tree, basking in its shadow. Their breath is ragged, but in sync with each other's. Ilona rests her head on Edwin’s shoulders."
