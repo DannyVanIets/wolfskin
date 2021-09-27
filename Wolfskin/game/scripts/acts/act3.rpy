@@ -856,9 +856,9 @@ label act3:
 
     ed "Ilona! No!"
 
-    play music 'audio/music/Rising.ogg'
-
     "Edwin is quick to react, as he pulls her over while climbing over the wall; carrying her carefully, as though holding an injured bird."
+
+    play music 'audio/music/Rising.ogg'
 
     # mirror image of wall to give impression they climbed over it
     scene bg belorov sunset:
