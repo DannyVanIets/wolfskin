@@ -347,7 +347,7 @@ define longfade = Fade(1.5, 0.0, 1.5)
 define longdissolve = Dissolve(3.0)
 
 ## moving sprites are a pain
-define midleft= Position(xpos=0.40)
+## define midleft= Position(xpos=0.40)
 
 # logo transition
 

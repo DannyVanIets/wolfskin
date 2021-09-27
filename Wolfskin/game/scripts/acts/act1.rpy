@@ -1,7 +1,7 @@
 ## The file for act 1.
 
 ## moving sprites are a pain
-define midleft= Position(xpos=0.40)
+## define midleft= Position(xpos=0.40)
 transform ilona_transform_pos1:
     zoom 0.5
     xpos 300
@@ -165,7 +165,7 @@ label act1:
 
     show edwin_twilight glance smile blush
 
-    "Their eyes flicker for a moment, and he’s not shivering anymore. "
+    "Their eyes meet for but a moment, the heat from their cheeks warming both of them up. "
 
     ## OUTSIDE TOWN
 
@@ -319,11 +319,9 @@ label act1:
 
     "Ilona's gaze wanders to Anari. Her bow is by her side, one hand hovering above her quiver - ready to quickly grab it and shoot them both at any moment."
 
-    "cannot help but wonder just how much Anari overheard of their conversation... Her arrival seemed too well-timed."
+    "She can't help but wonder just how much Anari overheard of her and Edwin's conversation prior. Anari's arrival had seemed just a bit {i}too{/i} opportune."
 
-    "Did they give away too much, even when they thought they were alone?"
-
-    "She glances at Edwin, his face inscrutable. And so, they enter the gates."
+    "Illona quickly glances at Edwin and is unable to discern his inscrutable expression. Before she has a chance to speak, the duo is informed that they have arrived at the town gate."
 
     stop music fadeout 3.0
 
@@ -352,9 +350,9 @@ label act1:
     show edwin_night open
     ed "(I truly wouldn't have made it this far on my own. Even if I hide what I am well, people can't help but to be suspicious.)"
 
-    ed "(Although - a town full of people not trying to kill me yet is quite an improvement.)"
+    ed "(Although, a town full of people {i}not{/i} trying to kill me yet is quite an improvement.)"
 
-    "It’s almost time to head home for normal folk, but the town is bustling. There's a large bonfire in the square, and there's carved turnips at the doors of all the houses-"
+    "As they venture further into the city, Illona notices the bizzare scenery: a large bonfire lay in the center of the town square, and strange carved turnips sit at the doorsteps of many houses."
 
     show ilona_night glance sad neutral with dissolve:
         zoom 0.50 xpos 0.75 xzoom -1
@@ -364,7 +362,7 @@ label act1:
 
     show edwin_night glance grin
 
-    ed "It’s for... All Hallows’ Eve, a celebration to commemorate the dead."
+    ed "It’s for All Hallows’ Eve, a celebration to commemorate the dead."
 
     show ilona_night angry sad talk
 
