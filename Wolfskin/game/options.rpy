@@ -37,7 +37,7 @@ define gui.about = _p("""
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 
-define build.name = "WolfskinI"
+define build.name = "Wolfskin's_Curse"
 
 
 ## Sounds and music ############################################################
@@ -190,8 +190,21 @@ init python:
 
     ## To archive files, classify them as 'archive'.
 
-    # build.classify('game/**.png', 'archive')
-    # build.classify('game/**.jpg', 'archive')
+    # images
+    build.classify('game/**.png', 'archive')
+    build.classify('game/**.jpg', 'archive')
+
+    # audio
+    build.classify('game/**.ogg', 'archive')
+    build.classify('game/**.mp3', 'archive')
+    build.classify('game/**.wav', 'archive')
+
+    # scripts
+    build.classify('game/**.rpy', 'archive')
+    build.classify('game/**.rpyc', 'archive')
+
+    # fonts
+    build.classify('game/**.otf', 'archive')
 
     ## Files matching documentation patterns are duplicated in a mac app build,
     ## so they appear in both the app and the zip file.
