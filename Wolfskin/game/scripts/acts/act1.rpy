@@ -481,7 +481,7 @@ label act1:
         zoom 0.5 xcenter 850 xzoom -1
     with dissolve
 
-    play sound 'audio/sfx/bbc 3 knocks.mp3' volume 0.15
+    play sound 'audio/sfx/3 knocks.wav' volume 0.15
 
     "Anari knocks on the door, and it was answered by a man and woman in fine clothing. They step outside of the house."
 
@@ -1280,7 +1280,7 @@ label act1:
     scene bg door night dark
     with fade
 
-    play sound 'audio/sfx/bbc 3 knocks.mp3' volume 0.2
+    play sound 'audio/sfx/3 knocks.wav' volume 0.4
 
     "Ilona knocks on Edwin's door, trying to hear for any sign of life in the room."
 

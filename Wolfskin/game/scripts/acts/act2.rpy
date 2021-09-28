@@ -654,7 +654,7 @@ label act2:
     show ilona_dim sad pensive talk
     il "Then, you think someone last night—"
 
-    play sound 'audio/sfx/bbc 3 knocks.mp3' volume 0.3
+    play sound 'audio/sfx/3 knocks.wav' volume 0.3
     "There's a light knock on the door. Kellac tells them to enter, it's Eisleigh."
 
     play sound 'audio/sfx/wood door open and close.wav' volume 0.5

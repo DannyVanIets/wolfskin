@@ -113,11 +113,15 @@ screen credits():
             null height 80
             text "Jordan K. Brown"
             null height 80
-            text "Ultima"
+            text "Luis \"RunnerGuitar\" Guerrero"
+            null height 80
+            text "J-Der"
             null height 80
             text "ObsidianWasp"
             null height 80
             text "ThatOneNerd"
+            null height 80
+            text "Amemarteau"
 
             null height 400
 
@@ -193,7 +197,7 @@ screen credits():
 
             null height 400
 
-            text "Background Resources" size 100
+            text "Wikicommons: Background Resources" size 100
             null height 80
             text "Ľuboš Repta"
             null height 80
@@ -210,24 +214,20 @@ screen credits():
             text "Gary Todd"
             null height 80
             text "Monyesz"
-            null height 80
-            text "of Wikicommons"
 
             null height 400
 
-            text "Graphic Resources" size 100
+            text "Freepik: Graphic Resources" size 100
             null height 80
             text "Racool Studio"
             null height 80
             text "Jannoon028"
             null height 80
             text "GaryKillian"
-            null height 80
-            text "of Freepik"
 
-            null height 400
+            null height 200
 
-            text "Sound Effect Resources" size 100
+            text "FreeSound: Sound Resources" size 100
             null height 80
             text "PatrickLieberkind"
             null height 80
@@ -239,7 +239,17 @@ screen credits():
             null height 80
             text "Volivieri"
             null height 80
-            text "of Freesound"
+            text "Gynation"
+            null height 80
+            text "Reinsamba"
+
+            null height 200
+
+            text "Additional Sounds from" size 100
+            null height 80
+            text "Zapsplat"
+            null height 80
+            text "Pro Sound Effects"
 
             null height 400
 
@@ -251,20 +261,11 @@ screen credits():
             null height 80
             text "Jessica and Jacob Elaouf of Exigent"
             null height 80
-            text "Remort Studios for hosting this Visual Novel Jam."
-            null height 400
+            text "Remort Studios \nfor hosting\n Spooktober VN Game Jam 2021"
+            null height 250
 
-            null height 400
-
-            text "No real animals were harmed in the making of this visual novel." size 100
-
-            null height 400
-
-            text "This project was created for the Spooktober 3rd Annual Visual Novel Jam by DevTalk" size 100
-
-            null height 600
-
-            text "And thank you — the player — for playing this game. We hope you enjoyed it." size 100
+            null height 80
+            text "Thank you for playing this game. \n\nWe hope you enjoyed it."
 
 # The styling for all the credit text.
 style credits_hbox:

@@ -71,8 +71,12 @@ label epilogue:
 
     nvl clear
 
+    play music 'audio/sfx/birdsong.ogg' volume 0.7
+
     scene no_cry_be_happy with longfade
-    $ renpy.pause (10, hard=True)
+    $ renpy.pause (6, hard=True)
+    scene no_cry_be_end with longdissolve
+    $ renpy.pause ()
 
     # This ends the game and returns you to the main menu.
     return
