@@ -1,7 +1,5 @@
 ## The file for act 1.
 
-## moving sprites are a pain
-define midleft= Position(xpos=0.40)
 transform ilona_transform_pos1:
     zoom 0.5
     xpos 300

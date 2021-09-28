@@ -346,8 +346,6 @@ define longfade = Fade(1.5, 0.0, 1.5)
 # long dissolve for suspenseful introductions of characters
 define longdissolve = Dissolve(3.0)
 
-## moving sprites are a pain
-define midleft= Position(xpos=0.40)
 
 # logo transition
 
@@ -376,7 +374,7 @@ label start:
 
     # TODO When this selection screen is removed, make sure this statement is called at beginning of the game.
     # Stop the main menu music
-    stop music fadeout 0.1 
+    stop music fadeout 0.1
 
     menu:
         "Click the act you want to go to!"

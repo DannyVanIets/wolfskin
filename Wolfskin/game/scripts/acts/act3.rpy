@@ -400,8 +400,8 @@ label act3:
 
     fl "{i}I could only choose one or the other, and so I have decided to take a test of faith to prove my worthiness: I will strike terror into the one who has abandoned me.{/i}"
 
-    fl "{i}In doing so, I have let fate decide my hand, and this was the result - to reunite me with the fair ones forevermore."
-    extend " - Fleur Belorovna{/i}"
+    fl "{i}In doing so, I have let fate decide my hand, and this was the result - to reunite me with the fair ones forevermore.{/i}"
+    extend "{i} - Fleur Belorovna{/i}"
 
     hide lost_fl
     show bg black
@@ -502,7 +502,7 @@ label act3:
     il "Then, here's my answer for who murdered Uldin: the culprit was Fleur."
     show bw_murder_fl at center:
         zoom 0.7 xzoom-1
-    hide bw_sa_burder
+    hide bw_sa_murder
     with vpunch
     play music 'audio/music/Chaos and Torment.ogg' volume 0.5
     extend " The corpse of Salome has been misidentified."
