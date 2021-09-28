@@ -2,29 +2,33 @@
 # Can be removed once it´s succesfully implemented.
 
 label action_editor_test:
-    # Resets the camera and layers positions
-    $ camera_reset()
-    # Instantly sets layer distances from the camera
-    $ layer_move("background", 2000)
-    $ layer_move("middle", 1500)
-    $ layer_move("forward", 1000)
-    scene bg forest night onlayer background
-    # WARNING: The 'scene' command will reset the depth of whatever layer the image
-    # is displayed on. Make sure you reset the depth after you call the 'scene' command.
-    $ layer_move("background", 2000)
-    show A onlayer middle
-    show B onlayer forward
-    with dissolve
 
-    # "Moves the camera to (1800, 0, 0) in 1 second."
-    $ camera_move(1800, 0, 0, 0, 1)
-    # "Moves the camera to (0, 0, 1600) in 5 seconds."
-    $ camera_move(0, 0, 1600, 0, 5)
-    # "Moves the camera to (0, 0, 0) instantaneously."
-    $ camera_move(0, 0, 0)
-    # "Rotates the camera 180 degrees in 1 second."
-    $ camera_move(0, 0, 0, 180, 1)
-    # 'Rotates the camera -180 degrees in 1 second and subsequently moves the camera to (-1800, 0, 500) in 1.5 seconds'
-    $ camera_moves( ( (0, 0, 0, 0, 1, 'linear'), (-1800, 0, 500, 0, 1.5, 'linear') ) )
-    # 'Continually moves the camera between (-1800, 0, 500) and (0, 0, 0), taking 0.5 seconds for the first move and 1 second for the second until the action is interrupted.'
-    $ camera_moves( ( (0, 0, 0, 0, .5, 'linear'), (-1800, 0, 500, 0, 1, 'linear') ), loop=True)
+    scene bg black
+
+    show hd edwolf unchained  onlayer middle:
+        subpixel True xpos 0.5 ypos 1.0 xanchor 0.5 yanchor 1.0 rotate None
+        parallel:
+            yzoom 1
+            linear 3.5 yzoom 1.0
+        parallel:
+            xpos 1.36
+            linear 0.5 xpos 0.85
+            linear 0.5 xpos 0.63
+            linear 1.0 xpos 0.67
+            linear 1.0 xpos 0.49
+            linear 0.5 xpos 0.5
+        parallel:
+            ypos 2.82
+            linear 1.0 ypos 2.33
+            linear 0.5 ypos 1.75
+            linear 0.5 ypos 1.05
+            linear 1.5 ypos 1.06
+        parallel:
+            zoom 1
+            linear 1.5 zoom 0.8
+            linear 1.0 zoom 0.5
+            linear 0.5 zoom 0.4
+            linear 0.5 zoom 0.38
+
+    $ renpy.pause(5)
+    narrator "debug"
