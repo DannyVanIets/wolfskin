@@ -726,8 +726,29 @@ label act3:
     "Ilona struggles and tries to shake the men off, but the guards do not relent. One grabs her by the hair. Edwin cannot abide by this any longer."
 
     # Show CG wolf
-    scene edwolf unleashed with vpunch
-    $ renpy.pause(1.5, hard=True)
+    #scene edwolf unleashed with vpunch
+    #$ renpy.pause(1.5, hard=True)
+    scene hd edwolf unchained:
+        subpixel True xpos 0.5 ypos 1.0 xanchor 0.5 yanchor 1.0 rotate None
+        parallel:
+            xpos 1.36
+            easein 1.5 xpos 0.85 # face
+            linear 1.5 xpos 0.63 # neck upper
+            easeout_bounce 0.5 xpos 0.67 # neck lower
+            linear 0.5 xpos 0.5 # full body
+        parallel:
+            ypos 2.8
+            linear 1.5 ypos 2.5 # face
+            easein 1.5 ypos 1.9 # neck upper
+            linear 0.5 ypos 1.3 # neck lower
+            linear 0.5 ypos 1.06 # full body
+        parallel:
+            zoom 1
+            linear 1.5 zoom 0.9 # face
+            linear 1.5 zoom 0.8 # neck upper
+            linear 0.5 zoom 0.6 # neck lower
+            linear 0.5 zoom 0.38 # full body
+    $ renpy.pause(4, hard=True)
 
     "He transforms, the chains snapping off him as he transforms into a massive wolf-man."
 
@@ -753,7 +774,8 @@ label act3:
 
     "He continues to run on all fours, with only Ilona to guide him. Anari scowls, and then goes to climb a tower to gain a higher vantage point."
 
-    scene edwolf protecc with dissolve
+    scene edwolf protecc with dissolve:
+        xzoom -1
 
     il "The gates will be already closed by now. There's a part of the wall that was hastily patched up. You should be able to climb through there."
 
@@ -801,12 +823,13 @@ label act3:
 
     extend " Then three more pierce his ribs. This isn’t a problem for the werewolf, as he brushes aside the pain. He’s taken greater beatings than this."
 
-    scene edwolf claws with longfade
+    scene edwolf claws with longfade:
+        xzoom -1
 
     "However, he’s not invincible; a few more well placed shots and he’s down, along with Ilona."
 
     show ilona_sunset glance aaaa talk at center:
-        zoom 0.5 xzoom -1
+        zoom 0.5
     with dissolve
 
     il "Stay with me Edwin! Don’t lose sight of our escape. I’ll do my best to heal your wounds with- Ah!"
@@ -824,6 +847,7 @@ label act3:
     ed "Ilona! Ho-hold on, we’re almost there!"
 
     scene cg_repeating_edwolf_edgewolf_blurry with dissolve:
+        xzoom -1
         # Makes you able to use subpixels, handy for positioning.
         subpixel True
         # Keep this as it is, really annoying to change. It tells where to position the image and how far you want to zoom in.
