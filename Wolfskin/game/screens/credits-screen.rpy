@@ -52,7 +52,7 @@ screen credits():
             text "Lasli Tran as Ilona"
 
             null height 100
-            text "Connor Howard as Edwin"
+            text "Conner Howard as Edwin"
 
             null height 100
             text "Elissa Park as Anari"
@@ -113,7 +113,7 @@ screen credits():
             null height 80
             text "Jordan K. Brown"
             null height 80
-            text "Luis \"RunnerGuitar\" Guerrero"
+            text "Ultima"
             null height 80
             text "ObsidianWasp"
             null height 80
