@@ -128,7 +128,7 @@ label act2:
     show anari_dim relaxed with dissolve:
         xzoom 1
 
-    an "It's natural she might have moved it since I was last here. She does worry about Fleur's future, after all… Salome was still considering which items should go inside. "
+    an "It's natural she might have moved it since I was last here. She did worry about Fleur's future, after all… Salome was still considering which items should go inside. "
 
     "It surprises Ilona that Anari became so candid at this moment. Salome and Anari were closer in age, and it made sense that Anari acted as Salome's confidant."
 

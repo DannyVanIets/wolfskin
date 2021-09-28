@@ -157,7 +157,7 @@ label act1:
 
     show ilona_twilight happy
 
-    il "You have thanked me more than enough already, Edwin. I appreciate it… but let's not dwell on it any further. "
+    il "You have thanked me more than enough already, Edwin. I appreciate it…"
 
     show ilona_twilight closed smile
 
@@ -324,7 +324,7 @@ label act1:
 
     stop music fadeout 3.0
 
-    ## TOWN PLAZA
+    ## TOWN PLFAZA
     $ quick_menu = False
 
     show bg fluffies with fade
@@ -349,7 +349,7 @@ label act1:
     show edwin_night open
     ed "(I truly wouldn't have made it this far on my own. Even if I hide what I am well, people can't help but to be suspicious.)"
 
-    ed "(Although - a town full of people not trying to kill me yet is quite an improvement.)"
+    ed "(Although — a town full of people not trying to kill me yet is quite an improvement.)"
 
     "It’s almost time to head home for normal folk, but the town is bustling. There's a large bonfire in the square, and there's carved turnips at the doors of all the houses-"
 
@@ -531,14 +531,7 @@ label act1:
 
     show salome_twilight smallgrin open
 
-    sa "I thought you might be able to join us for tonight's feast for All Hallows' Day, and to perhaps lead us in prayer."
-
-    show edwin_twilight neutral open
-    show uldin_twilight neutral
-    show anari_twilight open neutral sweatdrop
-    with dissolve
-
-    "Nobody dares to tell Salome that it is actually called 'All Hallows' Eve'. They don't want to be rude."
+    sa "I thought you might be able to join us for tonight's feast for All Hallows' Eve, and to perhaps lead us in prayer."
 
     show uldin_twilight laugh
     with dissolve

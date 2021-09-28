@@ -64,9 +64,9 @@ define config.sample_voice = "voice/act2_086f652a.mp3"
 define config.main_menu_music = "audio/music/Main_menu.mp3"
 
 ## Default values on the music, sfx, and voice sliders
-define config.default_music_volume = 0.5
+define config.default_music_volume = 0.6
 define config.default_sfx_volume = 0.8
-define config.default_voice_volume = 1.0
+define config.default_voice_volume = 0.6
 
 
 ## Transitions #################################################################
@@ -124,13 +124,13 @@ define config.window_hide_transition = Dissolve(.2)
 ## Controls the default text speed. The default, 0, is infinite, while any other
 ## number is the number of characters per second to type out.
 
-default preferences.text_cps = 0
+default preferences.text_cps = 35
 
 
 ## The default auto-forward delay. Larger numbers lead to longer waits, with 0
 ## to 30 being the valid range.
 
-default preferences.afm_time = 15
+default preferences.afm_time = 12
 
 
 ## Save directory ##############################################################

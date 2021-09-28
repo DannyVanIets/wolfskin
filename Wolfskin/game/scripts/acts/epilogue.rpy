@@ -71,7 +71,8 @@ label epilogue:
 
     nvl clear
 
-    with fade
+    scene no_cry_be_happy with longfade
+    $ renpy.pause (10, hard=True)
 
     # This ends the game and returns you to the main menu.
     return
