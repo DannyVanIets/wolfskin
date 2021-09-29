@@ -898,6 +898,9 @@ screen history():
 
             window:
 
+                # adds spacing between different dialogue boxes
+                ypadding 15
+
                 ## This lays things out properly if history_height is None.
                 has fixed:
                     yfit True
@@ -908,10 +911,26 @@ screen history():
                         style "history_name"
                         substitute False
 
-                        ## Take the color of the who text from the Character, if
-                        ## set.
-                        if "color" in h.who_args:
-                            text_color h.who_args["color"]
+                        # Pick the name text colour from the character
+                        # NOTE: not using color_who because AVD mode is affected but there the font should remain white.
+                        if h.who == "Ilona":
+                            text_color "#73778F"
+                        elif h.who == "Edwin":
+                            text_color "#426288"
+                        elif h.who == "Anari":
+                            text_color "#A03837"
+                        elif h.who == "Kellac":
+                            text_color "#939885"
+                        elif h.who == "Eisleigh":
+                            text_color "#4C726F"
+                        elif h.who == "Uldin":
+                            text_color "#8D6188"
+                        elif h.who == "Salome":
+                            text_color "#C06936"
+                        elif h.who == "Fleur":
+                            text_color "#A67699"
+                        else:
+                            text_color "#ffffff"
 
                 $ what = renpy.filter_text_tags(h.what, allow=gui.history_allow_tags)
                 text what:
@@ -930,10 +949,7 @@ style history_window is empty
 
 style history_name is gui_label
 style history_name_text is gui_label_text
-style history_text is gui_text
-
-style history_text is gui_text
-
+style history_text is gui_label_text # to have the same size as history_name_text
 style history_label is gui_label
 style history_label_text is gui_label_text
 
