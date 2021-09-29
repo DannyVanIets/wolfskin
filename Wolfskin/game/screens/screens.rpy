@@ -924,11 +924,11 @@ screen history():
                         elif h.who == "Eisleigh":
                             text_color "#4C726F"
                         elif h.who == "Uldin":
-                            text_color "#8D6188"
+                            text_color "#8A5488"
                         elif h.who == "Salome":
                             text_color "#C06936"
                         elif h.who == "Fleur":
-                            text_color "#A67699"
+                            text_color "#DFA8BD"
                         else:
                             text_color "#ffffff"
 
