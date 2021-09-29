@@ -133,7 +133,7 @@ act1_1b4b8e1d	fl	Oh, could it be…? Is the story of how you met Ilona not suita
 act1_2c3eeb68	ei	Ahaha, is that it? You might be onto something, Fleur.	game/scripts/acts/act1.rpy	783	ei "[what]"
 act1_e72bef98	il	…	game/scripts/acts/act1.rpy	791	il "[what]"
 act1_da22bced	extend	(Girls these days are sharp.)	game/scripts/acts/act1.rpy	792	extend "[what]"
-act1_a7941d7f	ed	No no, that's not it at all! It's… not that interesting compared to my other stories.	game/scripts/acts/act1.rpy	797	ed "[what]"
+act1_3bbbf098	ed	No no no, that's not it at all! It's… not that interesting compared to my other stories.	game/scripts/acts/act1.rpy	797	ed "[what]"
 act1_c8637b7a	fl	Hmph, I was under the impression you two shared a forbidden romance. Perhaps the strange forces that wander tonight will tip the scales at last!	game/scripts/acts/act1.rpy	802	fl "[what]"
 act1_a4709631	sa	Fleur, you shouldn't tease guests. And you really shouldn't encourage her, Eisleigh!	game/scripts/acts/act1.rpy	806	sa "[what]"
 act1_726f2495	fl	Mother, it's All Hallow's Eve! Tricks and pranks are part of the fun. I'm merely teaching Sister Ilona about this part of the festival — She shouldn't be so serious and uptight all the time!	game/scripts/acts/act1.rpy	812	fl "[what]"
