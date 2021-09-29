@@ -794,7 +794,7 @@ label act1:
     show edwin_dim fear talk blush
     show eisleigh_dim look smile
     with dissolve
-    ed "No no, that's not it at all! It's… not that interesting compared to my other stories."
+    ed "No no no, that's not it at all! It's… not that interesting compared to my other stories."
 
     show fleur_dim wink smile
     show edwin_dim neutral sweat
