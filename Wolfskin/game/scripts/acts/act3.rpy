@@ -177,6 +177,7 @@ label act3:
     show edwin_dim fury yell furrow with dissolve
     ed "No. Had they sought the wolfskin while we were together, they might have killed you to get their hands on it. It would have been just as easy to frame me for that."
 
+    show edwin_dim talk
     ed "This may have been for the best."
 
     show ilona_dim talk
@@ -200,7 +201,7 @@ label act3:
     with dissolve
     ed "I'm going to get what's coming to me, sooner or later."
 
-    show edwin_dim angry furrow
+    show edwin_dim angry furrow with dissolve
     ed "Your hurt and pain will heal. You can recover. If you're with me, you won't be able to walk a righteous path. But if you leave me here, at least one of us will survive."
 
     play music 'audio/music/Ilonas_Theme_backing.mp3' volume 0.3 fadein 2.0
@@ -226,7 +227,7 @@ label act3:
     il "I can't do that if you offer yourself up to be killed."
 
     "Edwin goes to reach for her face, but pauses."
-    show edwin_dim sad smile:
+    show edwin_dim sad talk:
         ease 0.7 xpos 740
     " He slips off his glove first, and brushes away Ilona's tears with his thumb."
 
@@ -558,7 +559,7 @@ label act3:
     il "Terrified by such a horrible sight, Uldin did not hesitate to burn Fleur with magic, and driven mad by the pain, she killed him by biting his throat."
 
     scene bg town plaza sunset
-    show ilona_sunset pensive annoyed smile at left:
+    show ilona_sunset pensive annoyed talk at left:
         zoom 0.5
     show anari_sunset look fury neutral sweatdrop at right:
         zoom 0.5
@@ -566,7 +567,7 @@ label act3:
 
     il "You may have believed she was taken by the fair folk, but this would explain why you were unable to find her; or even to glimpse any trace of her - she was already dead."
 
-    show anari_sunset yell with dissolve
+    show anari_sunset talk with dissolve
     an "Then how do you explain Fleur's letter? Or the wooden effigy of her that appeared in her bed?!"
 
     show ilona_sunset happy annoyed open -sweat with dissolve
@@ -590,7 +591,7 @@ label act3:
     scene bg town plaza sunset
     show ilona_sunset annoyed at left:
         zoom 0.5
-    show anari_sunset look fury yell sweatdrop at right:
+    show anari_sunset blank fury yell sweatdrop at right:
         zoom 0.5
     with dissolve
 
@@ -651,9 +652,10 @@ label act3:
     show anari_sunset neutral with dissolve
     "There is now only one question that remains - and a clocktower that's ticking away, endlessly."
 
+    show anari_sunset blank fury yell with dissolve
     an "So where is she? Where is Salome?"
 
-    show ilona_sunset glance talk
+    show ilona_sunset glance talk with dissolve
     il "That, I can't tell you. I'm certain that my theory is correct, however."
 
     show ilona_sunset open
@@ -665,7 +667,7 @@ label act3:
     show ilona_sunset talk relaxed -sweat
     il "I have provided evidence and my theory, as you asked. Nothing I do now can change your mind. I accept it, regardless of the outcome."
 
-    show anari_sunset look talk
+    show anari_sunset look smile with dissolve
     an "Sister, I would like to believe you. More than anyone else, believe it or not. Why, however…"
 
     show anari_sunset angry smile
@@ -681,26 +683,26 @@ label act3:
 
     stop music fadeout 2.0
 
-    show anari_sunset nii raised smile with dissolve
+    play music 'audio/ambience/dark ambience.ogg'
+
+    show anari_sunset nii smile relaxed with dissolve
     an "That would be far too convenient, wouldn't it? You are right: nothing you do will change my mind. I have been burned by blindly trusting others in the past more times and in worse ways than you could ever imagine."
 
-    show anari_sunset relaxed
+    show anari_sunset yell fury scary with dissolve
     an "If I am wrong, so be it. When my time comes, I’ll gladly accept my penance."
 
     an "There's one thing that's certain: your arrival into this town brought with it the destruction of this family."
 
-    show anari_sunset scary fury cringe
+    show anari_sunset scary fury cringe with dissolve
     an "If it weren't for you and Edwin, this tragedy would never have happened."
 
-    show ilona_sunset aaaa talk
+    show ilona_sunset aaaa talk with dissolve
     il "You're blaming us for being caught in a plot that we had no part in? You have done nothing but look for reasons to kill Edwin all along. For all I know, maybe you planned for this to happen, to usurp power in Belorov."
 
-    show anari_sunset nii grin
+    show anari_sunset nii grin with dissolve
     an "Hahahahaha! I didn't know nuns could tell jokes. As if I would ever wish for such a thing."
 
-    play music 'audio/music/War Of The Huntress - VS Anari -.ogg' volume 0.5
-
-    show anari_sunset glance fury smile
+    show anari_sunset blank fury smile
     an "You should learn to choose your words more wisely, Sister. It's unbecoming of a holy woman… but I had the nagging suspicion you were a heretic from the first moment I saw you. Someone like you could never win."
 
     hide ilona_sunset
@@ -713,7 +715,7 @@ label act3:
     hide anari_sunset
     show ilona_sunset closed aaaa yell tears at center:
         zoom 0.8 yoffset 450
-    with dissolve
+    with hpunch
 
     il "Aaaaaaaahh! Let me go!"
 
@@ -721,18 +723,22 @@ label act3:
 
     $ renpy.pause(1.5, hard=True)
 
-    play sound 'audio/sfx/werewolf breath.mp3'
-
     "Ilona struggles and tries to shake the men off, but the guards do not relent. One grabs her by the hair. Edwin cannot abide by this any longer."
 
-    $all_moves(camera_check_points={'y': [(-122, 0, 'linear'), (-3533, 3.19, 'linear')], 'x': [(5606, 0, 'linear'), (187, 3.19, 'linear')]})
-    show hd edwolf unchained onlayer middle:
-        subpixel True xpos 0.5 ypos 1.0 xanchor 0.5 yanchor 1.0 rotate None
+    $ renpy.pause(1.5, hard=True)
+
+    play music '<from 71 to 128>audio/music/Chaos And Torment.ogg' fadein 3.0 noloop
+
+    $all_moves(camera_check_points={'y': [(-111, 0.0, 'bop_out_time_warp'), (-1344, 1.27, 'ease2')], 'x': [(2250, 0.0, 'bop_out_time_warp'), (1012, 1.27, 'ease2')]})
+    show hd edwolf unchained  onlayer middle:
+        subpixel True xpos 0.5 ypos 1.0 xanchor 0.5 yanchor 1.0 zoom 0.46 rotate None
         parallel:
-            zoom 0.61
-            linear 3.19 zoom 0.46
+            zoom 0.46
+            ease2 1.27 zoom 0.39
 
     "The chains snap off him as he transforms into a massive wolf-man."
+
+    play sound 'audio/sfx/werewolf breath.mp3'
 
     "He rushes at the guards with a growl. He throws them off, prying Ilona away from them."
 
@@ -759,7 +765,7 @@ label act3:
     "Ilona and Edwin make their escape. Anari scowls, and then goes to climb a tower to gain a higher vantage point."
 
     scene hd edwolf protecc with longfade:
-        zoom 0.4
+        zoom 0.5
 
     il "The gates will be already closed by now. There's a part of the wall that was hastily patched up. You should be able to climb through there."
 
@@ -808,12 +814,12 @@ label act3:
     extend " Then three more pierce his ribs. This isn’t a problem for the werewolf, as he brushes aside the pain. He’s taken greater beatings than this."
 
     scene edwolf claws with longfade:
-        xzoom -1 zoom 0.44
+        xzoom -1 zoom 0.6
 
     "However, he’s not invincible; a few more well placed shots and he’s down, along with Ilona."
 
     show ilona_sunset open aaaa talk at center with dissolve:
-        zoom 0.65 yoffset 60
+        zoom 0.55 yoffset 60
     il "Stay with me Edwin! Don’t lose sight of our escape. I’ll do my best to heal your wounds with- Ah!"
 
     play sound 'audio/sfx/arrow whistle.mp3'
@@ -830,15 +836,15 @@ label act3:
     ed "Ilona! Ho-hold on, we’re almost there!"
 
     scene cg_repeating_edwolf_edgewolf_blurry with longdissolve:
-        zoom 0.2
+        zoom 0.6
         # Makes you able to use subpixels, handy for positioning.
         subpixel True
         # Keep this as it is, really annoying to change. It tells where to position the image and how far you want to zoom in.
-        xpos 0.5 ypos 1.0 xanchor 0.5 yanchor 1.0 zoom 0.4
+        xpos 0.12 ypos 0.1 xanchor 0.13 yanchor 0.1 zoom 0.6
         # Tells where you will circle around in the image and how far.
-        alignaround(.5, .5)
+        alignaround(.3, .3)
         # Linear is how fast you want the circling to be, lower it to make it faster. yalign is the same as like xpos, don't bother changing that. Circles is the amount of circles it will do before repeating.
-        linear 20.0 yalign 1.0 clockwise circles 1
+        linear 40.0 yalign 0.2 clockwise circles 1
         repeat
 
     "Time seems to move too slowly. How much more pain can they accept? Edwin grimaces past the pain of his sustained wounds."
@@ -859,7 +865,11 @@ label act3:
 
     "Her intentions remain unclear, as one final arrow impales Ilona in the back, shooting through her cleanly."
 
-    "With a light scream, Ilona loses her footing. There's only one hand she could use to hold onto the rough stone wall, and her fingers are slipping. Blood stains her white dress from the hole it left behind, and she can feel it drip down on the wall."
+    "With a light scream, Ilona loses her footing."
+
+    "There's only one hand she could use to hold onto the rough stone wall, and her fingers are slipping."
+
+    "Blood stains her white dress from the hole it left behind, and she can feel it saturate her skin."
 
     ed "Ilona! No!"
 
@@ -874,17 +884,19 @@ label act3:
 
     "The stone wall they escaped over is dyed red with their blood. Yet they make it out of Belorov, despite their injuries."
 
-    "Edwin marches on, with Ilona in his arms. It’s too dangerous to be out in the open. They search for a place to rest, as dusk waits."
+    "Edwin marches on, with Ilona in his arms. It’s too dangerous to be out in the open."
+
+    "They search for a place to rest, as dusk awaits them with open arms."
 
     ## FOREST
     scene bg road sunset with dissolve:
         xzoom-1
 
-    "Ilona heals the wound that pierced her abdomen through, and the blood slows. However, the wound does not close completely. The other arrows stuck in them would prove more dangerous to deal with, with no surgical equipment to use."
+    "Ilona heals the wound that pierced her abdomen through, and the blood slows. However, the wound does not close completely."
+
+    "The other arrows stuck in them would prove more dangerous to deal with, with no surgical equipment to use."
 
     il "Edwin, set me down. You're more injured than I am."
-
-    play sound 'audio/sfx/werewolf breath.mp3'
 
     ed "Ilona, my darling-"
 
@@ -898,7 +910,9 @@ label act3:
         zoom 0.5
     with dissolve
 
-    "At the awkward exchange, Edwin gingerly sets Ilona down on the ground. He reverts to human form, his ears and face red. Ilona tries to heal what open wounds that Edwin has."
+    "At the awkward exchange, Edwin gingerly sets Ilona down on the ground. He reverts to human form, his ears and face red."
+
+    "Ilona tries to heal what open wounds that Edwin has, not saying a word."
 
     show edwin_sunset sad smile with dissolve
     ed "Yes, I've —  I’ve been waiting to call you that for so long."
@@ -906,7 +920,7 @@ label act3:
     show edwin_sunset sad neutral with dissolve
     ed "What a fool I was to keep what I felt about you hidden…"
 
-    show edwin_sunset distant talk -blush with dissolve
+    show edwin_sunset glance talk -blush with dissolve
     ed "The time I spent without you, in that cell. It was excruciating. And that’s when I realised, how much I want you by my side."
 
     show ilona_sunset glance happy with dissolve
@@ -928,6 +942,8 @@ label act3:
     $ renpy.pause(2.0)
 
     "They walk for a while to search for a resting place, seeing the valley unfold before them."
+
+    "Ilona holds against Edwin's arm, and they walk laboriously on the path. Neither knew what lay before them."
 
     # The scrolling bg
     scene valley_scroll
@@ -999,7 +1015,7 @@ label act3:
     show ilona_sunset pensive with dissolve
     il "I know."
     $ renpy.pause(3.0)
-    show edwin_sunset distant talk with dissolve
+    show edwin_sunset fury talk with dissolve
     ed "Everybody had something to hide. That fear only led to mistrust, and this to violence… We were all alone, yet turning against each other."
 
     ed "I know I’m in no position to say this, but I see the absurdity of it all now. There is no point in hiding. It does no good."
@@ -1015,6 +1031,17 @@ label act3:
     show ilona_sunset pensive neutral with dissolve
     il "I do not know, but I pity her…"
 
+    show bg black  onlayer forward:
+        subpixel True xpos 0.5 ypos 1.0 xanchor 0.5 yanchor 1.0 zoom 2.0 rotate None
+        parallel:
+            alpha -0.49
+            linear 1.07 alpha 0.47
+    $ renpy.pause(2.5)
+    show bg black  onlayer forward:
+        subpixel True xpos 0.5 ypos 1.0 xanchor 0.5 yanchor 1.0  zoom 2.0 rotate None
+        parallel:
+            alpha -0.11
+            linear 1.14 alpha 0.47
     scene bg black with longdissolve
 
     "Ilona hears Edwin's breathing slow. Ilona is too weary to use any more healing magic. They can’t remove the arrows that pierced them, or the two of them would surely bleed out and die."
@@ -1024,6 +1051,8 @@ label act3:
     il "Edwin?"
     $ renpy.pause(3.0)
     ed "…"
+
+    hide bg black  onlayer forward
 
     scene bg valley sunset
     show ilona_sunset pensive solemn neutral blood:
@@ -1045,13 +1074,27 @@ label act3:
     show edwin_sunset sad smile
     ed "You may. I'll keep watch, so you can rest."
 
-    scene bg black with longdissolve
+    show bg black  onlayer forward:
+        subpixel True xpos 0.5 ypos 1.0 xanchor 0.5 yanchor 1.0 rotate None  zoom 2.0
+        parallel:
+            alpha -0.49
+            linear 1.07 alpha 0.47
+    $ renpy.pause(2.5)
+    show bg black  onlayer forward:
+        subpixel True xpos 0.5 ypos 1.0 xanchor 0.5 yanchor 1.0 rotate None  zoom 2.0
+        parallel:
+            alpha -0.11
+            linear 1.14 alpha 0.47
 
     il "I wonder — what your family is like…"
 
     ed "It's a big family… They'll definitely welcome you…"
     $ renpy.pause(2.0)
+
+    show ilona_sunset smile with dissolve
     il "That sounds… nice…"
+
+    hide bg black  onlayer forward
 
     ## SKY
     scene bg sky sunset
@@ -1060,27 +1103,43 @@ label act3:
     "Edwin watches the brilliance of the sky and clouds, gradually darkening. With Ilona by his side, he relishes in the peace and comfort."
 
     ed "Ilona, love…"
-    $ renpy.pause(3.0)
+    $ renpy.pause(4.0, hard=True)
     il "I'm here. Did you need anything?"
 
     ed "I-I just… I just wanted to say how much I owe to you."
 
     il "You're always thanking me…"
-    $ renpy.pause(3.0)
+    $ renpy.pause(4.0, hard=True)
     il "Ed…"
-
+    $ renpy.pause(2.0, hard=True)
     ed "Yes?"
-
+    $ renpy.pause(2.0, hard=True)
     il "Do you think you could hold me? I want to lie down…"
-
+    $ renpy.pause(3.0, hard=True)
     ed "Of course… I'll lie down with you. We should be safe here…"
-    $ renpy.pause(3.0)
+    $ renpy.pause(2.0, hard=True)
     il "Thank you…"
+
+    scene bg black with longdissolve
 
     play sound 'audio/sfx/zap clothes rustle.mp3' volume 0.2
 
     # CG lying on grass (eyes open)
-    scene final open smile with longdissolve
+
+    $all_moves(camera_check_points={'y': [(-3988, 0, None), (-3988, 0, 'linear')], 'x': [(537, 0, None), (549, 0, 'linear')], 'z': [(0, 0, None), (0, 0, 'linear')], 'rotate': [(0, 0, None), (0, 0, 'linear')]}, layer_check_points={'forward': [(1848, 0, None), (1848, 0, None)], 'middle': [(1848, 0, None), (1848, 0, None)], 'background': [(1848, 0, None), (1848, 0, None)]}, focus_check_points={'dof': [(1848.9, 0, None), (9999999, 0, None)], 'focus': [(False, 0, None), (1848.9, 0, None)]})
+    show hd final  onlayer master:
+        subpixel True xpos 0.5 ypos 1.0 xanchor 0.5 yanchor 1.0 rotate None
+        parallel:
+            yanchor 1.0
+            easein_cubic 9.82 yanchor 1.0
+        parallel:
+            xpos 0.63
+            easein_cubic 50.82 xpos 0.66
+            easein_cubic 10.82 xpos 0.67
+        parallel:
+            ypos 1.29
+            easein_cubic 6.64 ypos 1.13
+
     $ renpy.pause(1.5, hard=True)
 
     "Ilona lays her head against Edwin's chest, and he gently wraps his arms around her. He heaves a contented sigh, yet the arrows piercing him dig into his weary body."
@@ -1089,7 +1148,7 @@ label act3:
 
     # despite the beautiful poem, it should be delivered clumsily as possible (I mean, he's dying, or close to death). "though words are withering" should be admitted through gritted teeth.
 
-    scene final open talk with dissolve
+    scene final open talk with longfade
     ed "Should our journey end, so just it be."
     extend "\nI am lost no more, I lay to rest."
 
