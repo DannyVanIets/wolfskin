@@ -544,7 +544,7 @@ label act1:
 
     ed "We will gladly accept."
 
-    show ilona_twilight glance solemn sweatdrop
+    show ilona_twilight glance solemn sweat
     with dissolve
 
     sa "Tonight's banquet will begin shortly, but you should still have time to prepare for it. Anari, let us debrief in the meantime."
