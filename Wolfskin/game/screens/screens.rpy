@@ -935,6 +935,9 @@ screen history():
                 $ what = renpy.filter_text_tags(h.what, allow=gui.history_allow_tags)
                 text what:
                     substitute False
+                    # A very subtle different light-grey for the text spoken by narrator.
+                    if h.who == None:
+                        color "#aaaaaa"
 
         if not _history_list:
             label _("The dialogue history is empty.")
