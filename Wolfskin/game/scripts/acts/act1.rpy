@@ -82,7 +82,7 @@ label act1:
 
     il "We should think of finding shelter soon, before it gets too dark."
 
-    show ilona_twilight closed
+    show ilona_twilight closed with dissolve
 
     "Ilona waits for Edwin to turn back into a human, closing her eyes to rest for a moment. There's only the sound of the forest, until Edwin speaks to break their silence."
 
@@ -101,8 +101,8 @@ label act1:
     ed "... Ilona I-I can’t. Not in a situation like this..."
 
     show ilona_twilight open sad neutral
-
     show edwin_twilight glance neutral
+    with dissolve
 
     il "You’re right, but I need you to slow down. I can’t keep up with you and that is only going to make us look all the more suspicious."
 
@@ -113,13 +113,12 @@ label act1:
 
     $ renpy.pause(0.6)
 
-    show ilona_twilight sad talk
+    show ilona_twilight sad talk with dissolve
 
     il "We have only each other to rely on."
 
     show edwin_twilight sad neutral
-
-    show ilona_twilight pensive sad neutral
+    show ilona_twilight pensive sad neutral with dissolve
 
     stop music fadeout 8.0
 
@@ -127,41 +126,41 @@ label act1:
 
     "Even so, she must remain with him."
 
-    show ilona_twilight closed relaxed
+    show ilona_twilight closed relaxed with dissolve
 
     "The moonlight beams over them, slightly wavering with each breath they take."
+
+    play music 'audio/music/He Who Seeks Hope - Theme Of Edwin -.ogg' fadein 5.0 volume 0.5
 
     il "(If only the moonlight would never leave us. We should rest here for a while.)"
 
     il "Edwin…"
 
-    show edwin_twilight closed neutral
+    show edwin_twilight closed neutral with dissolve
 
     ed "…"
 
-    show ilona_twilight blush smile
+    show ilona_twilight blush smile with dissolve
 
     il "Ed…"
 
-    show edwin_twilight sad grin blush
-
-    play music 'audio/music/He Who Seeks Hope - Theme Of Edwin -.ogg' fadein 5.0 volume 0.5
+    show edwin_twilight sad grin blush with dissolve
 
     ed "Yes, I’m here. Please forgive my wandering mind."
 
     show edwin_twilight closed grin
-
     show ilona_twilight open
+    with dissolve
 
     ed "...What could I ever do without you? I feel like I have never thanked you for-"
 
-    show ilona_twilight happy
+    show ilona_twilight happy -blush with dissolve
 
     il "You have thanked me more than enough already, Edwin. I appreciate it…"
 
     show ilona_twilight closed smile
-
     show edwin_twilight glance smile blush
+    with dissolve
 
     "Their eyes flicker for a moment, and he’s not shivering anymore. "
 
@@ -173,16 +172,16 @@ label act1:
 
     "Eventually, they press on. They sight a lonely settlement on the horizon; stone walls surrounding its perimeter."
 
-    show edwin_night anxious grin at right with dissolve:
+    show edwin_night closed at right with dissolve:
         zoom 0.50
 
     ed "Heh…"
 
-    show edwin_night anxious talk furrow
+    show edwin_night fury talk furrow with dissolve
 
     ed "I haven't felt like m-myself lately, since the incident back at the priory. Try as I may to blend in, to do good and keep myself in check… I am a beast, through and through."
 
-    show edwin_night fury neutral
+    show edwin_night stare yell with dissolve
 
     ed "What is it that we've done wrong? Is us being together something so heinous? Is my existence such a sin?"
 
@@ -192,26 +191,26 @@ label act1:
     il "..."
 
     show edwin_night angry furrow
-
     show ilona_night neutral
+    with dissolve
 
     play sound 'audio/ambience/wind and trees.ogg' fadein 5.0 volume 0.1
 
-    show edwin_night glance
+    show edwin_night glance talk with dissolve
 
     ed "I did not know the extent of the hatred that lay within their souls until that night… to go as far as to burn me alive…"
 
     ed "Is there something wrong with me, Ilona? I'm always on edge, fearing for our lives… I never meant to put you through this."
 
-    show ilona_night
-
     show edwin_night neutral
+    show ilona_night closed talk
+    with dissolve
 
     il "If you want my answer as a {i}former{/i} nun… You and I have sinned."
 
     il "You said that you were a beast, through and through."
 
-    show ilona_night closed talk
+    show ilona_night open talk
 
     il "You're not. You’re-"
 
@@ -222,8 +221,6 @@ label act1:
     with vpunch
 
     stop music fadeout 1.0
-
-    play sound 'audio/sfx/zapsplat cloth.mp3' volume 0.1
 
     "Edwin immediately lets go of her hand, intertwined seconds ago, but now balled into a fist. The rustling of dry leaves brought with it a heavily armed guard and an archer under a cloak."
 
@@ -264,10 +261,11 @@ label act1:
 
     unk "Hmph. Fair enough."
 
-    show anari_night open talk
+    show anari_night open talk with dissolve
 
     an "My name is Anari. Happy now?"
 
+    show anari_night smile
     an "I'm not going to probe you or anything."
 
     an "You may be outsiders, but you look like decent enough folk. No need to come up with any grand excuses for why you’re here."
@@ -275,15 +273,13 @@ label act1:
     show anari_night angry smile
     an "So, let’s get back to it. Will you accept the town master's call?"
 
-    show anari_night neutral
-
     show ilona_night closed talk annoyed
 
     il "...I suppose that choice is not truly much of one. I accept."
 
     show ilona_night glance neutral
 
-    show anari_night smile raised
+    show anari_night smile raised nii with dissolve
 
     an "A wise judgement. You’re clever for a nun, but you should learn to keep your dog in line."
 
@@ -291,7 +287,7 @@ label act1:
 
     ed "...Excuse me?"
 
-    show anari_night angry neutral
+    show anari_night angry glance neutral with dissolve
 
     an "I don’t appreciate being called ‘feisty’."
 
@@ -301,7 +297,7 @@ label act1:
 
     ed "I meant no offense when I said that. My apologies."
 
-    show anari_night nii smile relaxed
+    show anari_night nii smile relaxed with dissolve
 
     an "So you do have manners; it would do you well to keep them. Let’s get moving, then. I’ll escort you to the manse."
 
@@ -349,6 +345,7 @@ label act1:
     show edwin_night open
     ed "(I truly wouldn't have made it this far on my own. Even if I hide what I am well, people can't help but to be suspicious.)"
 
+    show edwin_night smile angry furrow
     ed "(Although — a town full of people not trying to kill me yet is quite an improvement.)"
 
     "It’s almost time to head home for normal folk, but the town is bustling. There's a large bonfire in the square, and there's carved turnips at the doors of all the houses-"
@@ -359,19 +356,18 @@ label act1:
     # spoken as though Ilona is suspicious of jack o' lanterns
     il "What kind of decorations are these?"
 
-    show edwin_night glance grin
+    show edwin_night glance grin -furrow with dissolve
 
     ed "It’s for... All Hallows’ Eve, a celebration to commemorate the dead."
 
-    show ilona_night angry sad talk
+    show ilona_night angry sad talk with dissolve
 
     il "You mean All Saints’ Eve? Why are the townsfolk celebrating in joy, then?"
 
     show edwin_night closed grin furrow
-
     show ilona_night neutral
+    with dissolve
 
-    # said as though trying not to laugh, mock-seriously
     ed "You were raised strictly, Ilona. Father Ivanov never wanted you to know about these pagan festivals."
 
     play sound 'audio/sfx/zapsplat cloth.mp3' volume 0.2
@@ -437,6 +433,7 @@ label act1:
 
     show anari_night look
     show kellac_night talk worry open
+    with dissolve
 
     ke "Me? Sorry, but no. I'm just the physician and herbalist. Did the master summon you?"
 
@@ -547,7 +544,8 @@ label act1:
 
     ed "We will gladly accept."
 
-    show ilona_twilight glance solemn
+    show ilona_twilight glance solemn sweatdrop
+    with dissolve
 
     sa "Tonight's banquet will begin shortly, but you should still have time to prepare for it. Anari, let us debrief in the meantime."
 
@@ -771,9 +769,11 @@ label act1:
 
     show ilona_dim glance
     show edwin_dim fear grin blush
+    with dissolve
     ed "Oh uh… Heh heh. That's a story for another time. I'm pretty tired…"
 
     show fleur_dim wink happy
+    with dissolve
     fl "Oh, could it be…? Is the story of how you met Ilona not suitable for my ears?"
 
     # Eisleigh turns to left briefly to face Fleur
@@ -787,17 +787,22 @@ label act1:
 
     show fleur_dim nii
     show ilona_dim closed aaaa sweat
+    with dissolve
     il "…"
     extend "(Girls these days are sharp.)"
 
     show edwin_dim fear talk blush
     show eisleigh_dim look smile
+    with dissolve
     ed "No no, that's not it at all! It's… not that interesting compared to my other stories."
 
     show fleur_dim wink smile
+    show edwin_dim neutral sweat
+    with dissolve
     fl "Hmph, I was under the impression you two shared a forbidden romance. Perhaps the strange forces that wander tonight will tip the scales at last!"
 
     show salome_dim angry pensive blush
+    with dissolve
     sa "Fleur, you shouldn't tease guests. And you really shouldn't encourage her, Eisleigh!"
 
     # Fleur turns to left to face Salome
@@ -811,10 +816,10 @@ label act1:
 
     ul "Well, they said they were on a pilgrimage. If their sins are meant to be forgiven in the end, they should be able to sin along the way all they want!"
 
-    show ilona_dim glance aaaa blush
+    show ilona_dim pensive annoyed blush with dissolve
     il "..."
 
-    show edwin_dim angry blush neutral
+    show edwin_dim stare talk blush with dissolve
     ed "Grk..."
 
     show salome_dim sad closed parted sweatblush
@@ -902,6 +907,7 @@ label act1:
 
     show edwin_dim neutral distant sweat
     show ilona_dim pensive neutral solemn
+    with dissolve
 
     show uldin_dim pensive angry neutral with dissolve
     ul "Those foul beasts… A werewolf truly must be cursed to succumb to their bloodlust."
@@ -955,6 +961,7 @@ label act1:
     # Ilona turns to left (facing Edwin)
     show ilona_dim open:
         xzoom -1
+    with dissolve
 
     show fleur_dim look neutral
 
@@ -998,11 +1005,15 @@ label act1:
 
     show eisleigh_dim open neutral
 
-    "He was prepared to run out of the manse, and to be alone in the darkness of night. Instead, he still has to play the role of an honoured houseguest."
+    "He was prepared to run out of the manse, and to be alone in the darkness of night."
+
+    "Instead, he still has to play the role of an honoured houseguest."
 
     show eisleigh_dim smile
 
-    "Eisleigh bows, and leaves him with only saying a few words of comfort, hoping that he will feel better with rest. He nods, and then closes the door, locking it with the key."
+    "Eisleigh bows, and leaves him with only saying a few words of comfort, hoping that he will feel better with rest."
+
+    "He nods, and then closes the door, locking it with the key."
 
     hide eisleigh_dim with dissolve
     play sound 'audio/sfx/wood door close.wav' volume 0.3
@@ -1029,8 +1040,6 @@ label act1:
     ed "Lord, please have mercy on my soul…"
 
     ed "I want to believe that I am human, but the people won't accept me all the same. Am I allowed to surrender at last?"
-
-    # note: please mind the parentheses - they are thoughts, and should not be voiced
 
     ed "If I were to end it… right here and right now. Wouldn’t that be spectacular?"
 
@@ -1269,7 +1278,7 @@ label act1:
 
     "Kellac stops on the stairwell when he sees her, turning his head back to see Ilona. Edwin is not with him. She looks to the door next to hers, on the right."
 
-    show kellac_twilight yell
+    show kellac_twilight yell with dissolve
     ke "There's no time to lose! See if you can wake him up, I'm going on ahead!"
 
     play sound 'audio/sfx/stairs ascending hurried.wav' fadeout 1.0
@@ -1284,7 +1293,7 @@ label act1:
 
     "Ilona knocks on Edwin's door, trying to hear for any sign of life in the room."
 
-    show ilona_twilight solemn talk at center:
+    show ilona_twilight sad talk at center:
         zoom 0.7 yoffset 260
     with dissolve
 
@@ -1293,14 +1302,14 @@ label act1:
     "Silence."
 
     play sound 'audio/sfx/knockers.wav'
-    show ilona_twilight neutral sad
+    show ilona_twilight annoyed neutral with dissolve
 
     "She knocks again, this time urgently. Still, there is nothing coming from the other side of the room."
 
     play sound 'audio/sfx/zap door handle movement.mp3' volume 0.2
     "She turns the handle. The door is locked, and there is no reply…"
 
-    show ilona_twilight pensive neutral
+    show ilona_twilight shock sad talk with dissolve
     il "No… Please, no…"
 
     # SCENE 10
@@ -1330,7 +1339,7 @@ label act1:
     scene bg hallway night dark
     with fade
 
-    show ilona_twilight at left:
+    show ilona_twilight annoyed at left:
         zoom 0.5
     show kellac_twilight anger talk at right:
         zoom 0.5 xzoom -1
@@ -1377,7 +1386,7 @@ label act1:
 
     $ renpy.pause(1.0)
 
-    play sound 'audio/ambience/Dark Ambience.ogg' volume 0.4
+    play music 'audio/ambience/Dark Ambience.ogg' volume 0.4
 
     "Traces of blood are on the door, as with thick shards of wood splintering from its fractures."
 
@@ -1399,7 +1408,9 @@ label act1:
     show eisleigh_twilight closed worry neutral
     "Eisleigh holds a hand over her mouth, and squeezes her eyes shut."
 
-    "A figure of a man hunched over a woman in a dress makes his presence known; he turns to look at them. His yellow eyes give off an eerie glint, as though it were an animal's."
+    "A figure of a man hunched over a woman in a dress makes his presence known; he turns to look at them."
+
+    "His yellow eyes give off an eerie glint, as though it were an animal's."
 
     # Use longdissolve to make Edwin appear slower in scene
     show edwin_twilight distant wolf at extra_right:
@@ -1419,7 +1430,7 @@ label act1:
 
     ed "Don't come any closer! Stay away…"
 
-    "His voice sounds guttural. It's hard to make out in the darkness, but his arms look huge, and beastly… the fur mixed with the blood of open wounds and bruises."
+    " It's hard to make out in the darkness, but his arms look huge, and beastly… the fur mixed with the blood of open wounds and bruises."
 
     "With his body turned away, Ilona couldn't tell who it was in his arms, but she now sees a ring on the hand, and chestnut brown hair…"
 
@@ -1448,19 +1459,22 @@ label act1:
     play sound 'audio/sfx/footsteps hurried leather tile.wav'
     "Ilona can’t move. With Anari's arrow trained on them, Kellac rushes in; carrying a healer's kit."
     stop sound
-    extend " Edwin sets the body of the woman down and backs away. Kellac checks the unburned section of her wrist."
 
-    show kellac_twilight closed grimace
+    "Edwin sets the body of the woman down and backs away. Kellac checks the unburned section of her wrist."
+
+    show kellac_twilight closed grimace  with dissolve
     "There is only the sound of Kellac choking back his frustration and dismay."
 
-    show kellac_twilight talk
+    show kellac_twilight talk  with dissolve
     ke "I was too late… I'm so sorry… I couldn't save them."
 
     # SCENE 12 + 13
 
     hide kellac_twilight with dissolve
 
-    "Kellac is on his knees, facing Salome's corpse. All the jovial cheer that he displayed since meeting Ilona vanishes, and he resembles a husk of a man."
+    "Kellac is on his knees, facing Salome's corpse."
+
+    "All the jovial cheer that he displayed since meeting Ilona vanishes, and he resembles a husk of a man."
 
     # Anari moves to the right slightly
     show anari_twilight kill scary angry neutral at easeinleft_transform:
@@ -1478,7 +1492,7 @@ label act1:
 
     ed "I didn't do it… I wasn't the one who did this."
 
-    show anari_twilight smile
+    show anari_twilight smile with dissolve
     an "An honest man would beg harder for his life. You sound like you've already accepted your execution."
 
     # Ilona turns to left
@@ -1511,11 +1525,12 @@ label act1:
     show ilona_twilight sad talk with dissolve
     il "Edwin, can you hear me?"
 
+    show edwin_twilight yell stare with dissolve
     ed "…"
-
+    $ renpy.pause(2.0)
     show ilona_twilight closed with dissolve
     il "Ed…"
-
+    $ renpy.pause(3.0)
     show edwin_twilight sad talk with dissolve
     ed "I-I am so sorry, Ilona. I wasn't able to control it… "
 
@@ -1621,6 +1636,7 @@ label act1:
 
     show eisleigh_night talk
     show kellac_night neutral
+    with dissolve
     ei "That matches up with what I saw of her. It just doesn't seem like something Ilona would do from what I know of her..."
 
     an "What? You think she would let you in on her plots in one night?"
@@ -1628,7 +1644,7 @@ label act1:
     show eisleigh_night open grin
     ei "…That's precisely it. She's awful at keeping secrets."
 
-    show eisleigh_night neutral
+    show eisleigh_night neutral with dissolve
     ei "If she really was involved, I don't think she would be able to hide it."
 
     show anari_night closed sweatdrop
@@ -1642,7 +1658,7 @@ label act1:
     show ilona_night talk
     il "…Yes. In my presence, he's more capable of controlling his transformation."
 
-    show anari_night cringe
+    show anari_night cringe with dissolve
     an "And yet you've been harbouring a monster, regardless of the consequences? Unfathomable…"
 
     show ilona_night closed neutral
@@ -1666,7 +1682,7 @@ label act1:
 
     an "I'll go first. You two assemble a search party for the forest in the meantime. I'll lead the search once you're ready."
 
-    show anari_night look angry
+    show anari_night scary talk with dissolve
     an "Ilona. You have until sundown. Prove that Edwin is innocent, or I'm going to personally make sure you won't like what’s coming to the two of you."
 
     # Go to act 2.

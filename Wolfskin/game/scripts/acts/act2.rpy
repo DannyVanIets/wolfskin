@@ -80,14 +80,14 @@ label act2:
 
     "The burns scorching the wall and room seem too significant to come from just a candle. Near the bed, and on the floor are traces of fur. Some of it is burnt."
 
-    show anari_dim talk with dissolve
+    show anari_dim talk angry closed with dissolve
     an "Anything out of place?"
 
     show ilona_dim open annoyed with dissolve:
         xzoom 1
     il "There's traces of fur, but that's about it. What about the other rooms?"
 
-    show anari_dim open neutral
+    show anari_dim open neutral with dissolve
     an "Eisleigh told me there was something that felt out of place in Fleur's room. I'll also let you look through Salome's room."
 
 # SCENE 17
@@ -149,7 +149,9 @@ label act2:
 
     "She thought it to be just a passing interest. Her room speaks otherwise; the girl seems utterly devoted to tales of fantasy."
 
-    "When they reach the bed, Ilona isn't sure what to expect. Anari remains behind her, and nods for Ilona to pull back the covers. Ilona could see something that looked like it's carved from wood…"
+    "When they reach the bed, Ilona isn't sure what to expect."
+
+    "Anari remains behind her, and nods for Ilona to pull back the covers. Ilona could see something that looked like it's carved from wood…"
 
     play music 'audio/music/Echoing - Theme Of Fleur -.ogg' volume 0.5
 
@@ -178,6 +180,8 @@ label act2:
     hide anari_dim with dissolve
     show ilona_dim shock sad talk
 
+    play sound 'audio/sfx/footsteps slow leather tile.wav'
+
     "She turns immediately on her heel. The sudden reaction surprises Ilona, and she is unsure whether to follow or not."
 
     ## HALLWAY
@@ -191,6 +195,7 @@ label act2:
         zoom 0.5
     with longdissolve
 
+    stop sound fadeout 3.0
     "Finding nothing else of note in the room, Ilona rejoins Anari. She finds Anari with her back pressed to the wall, steadily taking deep breaths."
 
     "For a woman who seemed to fear nothing, Ilona couldn't fathom why Anari looked so scared at that moment."
@@ -199,10 +204,10 @@ label act2:
 
     il "Anari… you don’t look too well. I think we should pause our investigation for the moment."
 
-    show ilona_dim glance solemn
+    show ilona_dim glance solemn with dissolve
     il "Umm… would you like some tea?"
 
-    show anari_dim look cringe
+    show anari_dim look cringe with dissolve
     an "...Tea?"
 
     # Anari moves slightly to the left (from wall) to show outburst
@@ -219,7 +224,7 @@ label act2:
 
     il "I only wish to see that you’re in good health to proceed, so I thought we could take a quick break-"
 
-    show anari_dim open talk angry
+    show anari_dim open talk angry with dissolve
     an "With some tea, I get it. Very well, I must tell you that I despise the leaves from this country, so you'd better make a damn fine cup."
 
     show ilona_dim relaxed open neutral
@@ -227,7 +232,7 @@ label act2:
 
     stop music fadeout 3.0
 
-    show anari_dim look neutral
+    show anari_dim worry neutral -shadow with dissolve
     an "…Fine black tea, with bitter orange. I think Uldin still had some in his pantry."
 
     scene bg black with fade
@@ -238,7 +243,9 @@ label act2:
 
     "Anari goes into the pantry and finds some tea bricks sealed in a container. She was sure that last night, Salome and Fleur did talk about this kind of tea."
 
-    "Ilona, feeling some remorse as though the two of them were bandits, prepares the deceased man's tea according to Anari's instruction. Trying her best to be hospitable, Ilona also serves it with milk and sugar, as Fleur did."
+    "Ilona, feeling some remorse as though the two of them were bandits, prepares the deceased man's tea according to Anari's instruction."
+
+    "Trying her best to be hospitable, Ilona also serves it with milk and sugar, as Fleur did."
 
     play music 'audio/sfx/zapsplat clock.mp3' loop volume 0.1
 
