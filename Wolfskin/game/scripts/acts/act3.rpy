@@ -650,7 +650,7 @@ label act3:
     "It’s impossible to say what Anari might be thinking right now. Her posture unflinching, the totality of her being in complete focus. She asks the crowd to simmer down, her usual aura of conceit fading away."
 
     show anari_sunset neutral with dissolve
-    "There is now only one question that remains - and a clocktower that's ticking away, endlessly."
+    "There is now only one question that remains — and a clocktower that's ticking away, endlessly."
 
     show anari_sunset blank fury yell with dissolve
     an "So where is she? Where is Salome?"
@@ -794,6 +794,11 @@ label act3:
     scene bg wound2
     play sound 'audio/sfx/zap arrow.mp3'
 
+    $ renpy.pause(0.1, hard=True)
+    stop sound
+    $ renpy.pause(0.1, hard=True)
+    play sound 'audio/sfx/zap arrow.mp3'
+
     "Two arrows finally meet its target. They pierce his side, fired in rapid succession."
 
     scene bg wound3
@@ -809,6 +814,11 @@ label act3:
     stop sound
 
     scene bg wound5
+    play sound 'audio/sfx/zap arrow.mp3'
+
+    $ renpy.pause(0.1, hard=True)
+    stop sound
+    $ renpy.pause(0.1, hard=True)
     play sound 'audio/sfx/zap arrow.mp3'
 
     extend " Then three more pierce his ribs. This isn’t a problem for the werewolf, as he brushes aside the pain. He’s taken greater beatings than this."
@@ -833,7 +843,16 @@ label act3:
 
     "An arrow pierces the hand with which Ilona was trying to use to heal. Her hand twists and contorts, reflexingly convulsing due to the writhing pain."
 
-    ed "Ilona! Ho-hold on, we’re almost there!"
+    scene bg wound1
+    play sound 'audio/sfx/arrow whistle.mp3'
+
+    $ renpy.pause(0.6, hard=True)
+    stop sound
+
+    scene bg wound2
+    play sound 'audio/sfx/zap arrow.mp3'
+
+    "Two more pierce her body when she is caught off-guard, hitting bone and rib."
 
     scene cg_repeating_edwolf_edgewolf_blurry with longdissolve:
         zoom 0.6
@@ -846,6 +865,8 @@ label act3:
         # Linear is how fast you want the circling to be, lower it to make it faster. yalign is the same as like xpos, don't bother changing that. Circles is the amount of circles it will do before repeating.
         linear 40.0 yalign 0.2 clockwise circles 1
         repeat
+
+    ed "Ilona! Ho-hold on, we’re almost there!"
 
     "Time seems to move too slowly. How much more pain can they accept? Edwin grimaces past the pain of his sustained wounds."
 
@@ -947,7 +968,7 @@ label act3:
 
     # The scrolling bg
     scene valley_scroll
-    show ilona_sunset blood:
+    show ilona_sunset pensive solemn blood:
         zoom 0.5 yoffset 0 xcenter 700
     show edwin_sunset sad blood at center behind ilona_sunset:
         zoom 0.5 xzoom -1
@@ -955,7 +976,7 @@ label act3:
 
     ed "I’m sorry."
 
-    show ilona_sunset open with dissolve
+    show ilona_sunset open sad with dissolve
     il "About what?"
 
     show edwin_sunset angry furrow talk with dissolve
@@ -1070,6 +1091,8 @@ label act3:
     ed "It's a big family… They'll definitely welcome you…"
     $ renpy.pause(2.0)
 
+    show slow_eyeblink_filter
+
     show ilona_sunset smile with dissolve
     il "That sounds… nice…"
 
@@ -1082,18 +1105,21 @@ label act3:
     ed "Ilona, love…"
     $ renpy.pause(4.0, hard=True)
     il "I'm here. Did you need anything?"
-
     ed "I-I just… I just wanted to say how much I owe to you."
 
     il "You're always thanking me…"
+    show slow_eyeblink_filter
     $ renpy.pause(4.0, hard=True)
     il "Ed…"
+
     $ renpy.pause(2.0, hard=True)
     ed "Yes?"
     $ renpy.pause(2.0, hard=True)
     il "Do you think you could hold me? I want to lie down…"
     $ renpy.pause(3.0, hard=True)
+
     ed "Of course… I'll lie down with you. We should be safe here…"
+    show slow_eyeblink_filter
     $ renpy.pause(2.0, hard=True)
     il "Thank you…"
 

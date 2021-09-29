@@ -532,7 +532,7 @@ label act2:
 
     play sound 'audio/sfx/heartbeat.mp3' loop volume 0.2
     "Ilona can feel her body covered in a light sweat. She can feel her heart leaping frantically inside her chest, just reminiscing about the conversation she had with Anari."
-
+    show slow_eyeblink_filter
     "Kellac is waiting at the square, and he exchanges some words with Anari. Their voices are indistinct and quiet."
 
     "Her own heart sounds louder in her ears, so much that it’s making her weak and dizzy… Her extremities are tingling."
@@ -549,7 +549,7 @@ label act2:
     scene bg_transition_blurry_kellac_extreme
 
     "She can barely recognise the voice. Ilona's vision blurs and the ground beneath her feet feels unsteady."
-
+    show slow_eyeblink_filter
     ke "Hey! Is everything alright? Stay with me!"
 
     stop sound
@@ -575,7 +575,7 @@ label act2:
     with longfade
 
     play music 'audio/ambience/bbc fire.mp3' volume 0.3
-
+    show slow_eyeblink_filter
     "When Ilona opens her eyes again, she's in an unfamiliar bed and room. The air is heavy with a medicinal smell, suffocatingly so."
 
     "She feels far too conscious of her body. Her mouth feels dry, and her heart still feels like it's beating too fast."
@@ -593,13 +593,13 @@ label act2:
     show ilona_dim open neutral
     il "Just how long was I out for?"
 
-    show kellac_dim relaxed talk
+    show kellac_dim relaxed talk with dissolve
     ke "It's almost midday."
 
-    show ilona_dim glance annoyed sweat
+    show ilona_dim glance annoyed sweat with dissolve
     "Ilona grimaces. Too much time was lost. She moves her arms slowly, her body heavy. Sensation comes back into the tips of her fingers, and the unpleasant tingling stops. The smell of herbal medicine starts to become more bearable to her senses."
 
-    show kellac_dim anger neutral
+    show kellac_dim anger neutral with dissolve
     ke "It wasn't an ordinary fainting spell. You should have regained consciousness faster if it was simply fatigue and stress."
 
     ke "I've taken precautions, and treated you for poisoning."
@@ -627,14 +627,14 @@ label act2:
     show ilona_dim sad
     il "She had an extreme reaction upon seeing a wooden statue resembling Fleur. What could have terrified her so much about it?"
 
-    show kellac_dim anger neutral
+    show kellac_dim anger neutral with dissolve
     ke "Truth be told, I don't really know much about her history, only rumours. She must think that the statue has to do something with the fae — Something in her past made her be wary of them."
 
     ke "Fleur admires the fair folk. The wooden statue is too elaborate to be one of Fleur's pranks, especially with the death of her parents…"
 
     il "So her aversion to seeing the statue has to do with her trauma, and distaste for Fleur's fae-related tricks?"
 
-    show kellac_dim glance talk
+    show kellac_dim glance talk with dissolve
     ke "Something like that. Anari hates being pitied, and she doesn't show pity for anyone else either."
 
     ke "She would be terrified at the thought of Fleur being spirited away by the fair folk. It's not something that she could ever accept - That's probably why she is leading the search."
@@ -652,13 +652,13 @@ label act2:
 
     play music 'audio/music/The Town.ogg' volume 0.5 fadein 1.0
 
-    show kellac_dim relaxed talk open
+    show kellac_dim relaxed talk open with dissolve
     ke "About the tea you had with Anari — was there anything odd about it? I'm asking because before the banquet, I gave Uldin his medicine, a powerful soporific."
 
     show kellac_dim anger
     ke "There were three less doses in the pantry when I checked."
 
-    show ilona_dim sad pensive talk
+    show ilona_dim sad pensive talk with dissolve
     il "Then, you think someone last night—"
 
     play sound 'audio/sfx/3 knocks.wav' volume 0.3
@@ -669,13 +669,13 @@ label act2:
 
     ei "Oh, Ilona — I heard you fainted in the town square. I was worried."
 
-    show kellac_dim nii smile relaxed
+    show kellac_dim nii smile relaxed with dissolve
     ke "Ah, yes! I invited Eisleigh over for lunch. Ilona, you probably haven't eaten at all yet, have you? You should try to eat, even if it's just a little."
 
-    show ilona_dim glance neutral sweat
+    show ilona_dim glance neutral sweat with dissolve
     il "…"
 
-    show kellac_dim open worry neutral
+    show kellac_dim open worry neutral with dissolve
     ke "…I guess it's hard to trust anyone after what you've been through."
 
     show ilona_dim pensive -sweat
@@ -697,32 +697,33 @@ label act2:
 
     il "So are you considering the possibility someone tried to drug us during the banquet?"
 
-    show kellac open talk
+    show kellac open talk with dissolve
     ke "That's what I feared, at least. Anari and I left before that, so I don't really have a clear picture of what exactly happened."
 
     show kellac closed
     show ilona glance solemn
+    with dissolve
     "Ilona stares at an empty teacup in the room, and then realizes something — if the tea she served Anari was different, but she used the same sugar from last night—"
 
     show ilona open aaaa talk with dissolve
     il "The sugar — it must have been tampered with! Last night, I didn't add any to my tea because I didn't want to be rude, but I took some when I had tea with Anari."
 
-    show eisleigh glance small
+    show eisleigh glance small with dissolve
     ei "I remember Fleur was really insistent on putting sugar in my tea. I did think that was weird."
 
     show kellac open
     ke "How much sugar did you put in your tea this morning, Ilona?"
 
-    show ilona glance sad smile sweat
+    show ilona glance sad smile sweat with dissolve
     il "Four spoonfuls…"
 
-    show eisleigh surprise talk
+    show eisleigh surprise talk with dissolve
     ei "Uhh, that sure is a lot…"
 
-    show kellac closed relaxed smile sweat
+    show kellac closed relaxed smile sweat with dissolve
     ke "Goodness, no wonder you were out for so long! I'm surprised Anari didn't get on your case for adding tea to your cup of sugar."
 
-    show eisleigh angry glance small
+    show eisleigh angry glance small with dissolve
     ei "I think we can confirm this theory to be true then: someone was trying to put us into a deep sleep - and there's a chance they were trying to target Edwin specifically."
 
     show ilona open -sweat
@@ -762,16 +763,16 @@ label act2:
 
     ei "Could you tell us more about how Edwin is able to transform into a werewolf? Have you ever seen him do it?"
 
-    show ilona glance solemn
+    show ilona glance solemn with dissolve
     il "No, I haven't. When he transforms, even when I ask it of him, he tells me to look away or to close my eyes."
 
-    show kellac sweat worry talk
+    show kellac sweat worry talk with dissolve
     ke "Wait, why do you ask him to transform? What do you do when he's a werewolf?"
 
-    show ilona neutral blush sad
+    show ilona neutral blush sad with dissolve
     il "It's… a secret."
 
-    show eisleigh open yell angry
+    show eisleigh open yell angry with dissolve
     ei "Secret… Wait, that's precisely it!"
 
     show kellac -sweat
@@ -877,7 +878,9 @@ label act2:
         zoom 0.5 xzoom-1
     with dissolve
 
-    "Ilona can’t help but find this suspicious. They start their search around Uldin's chambers. Once again, they see the mutilated corpse of Uldin, and the corpse of Salome, burned beyond recognition…"
+    "Ilona can’t help but find this suspicious."
+
+    "They start their search around Uldin's chambers. Once again, they see the mutilated corpse of Uldin, and the corpse of Salome, burned beyond recognition…"
 
     "Despite thoroughly searching the bodies, the trio was unable to find the cursed item or anything else of importance."
 
@@ -1029,7 +1032,9 @@ label act2:
 
     play sound 'audio/sfx/gynation paper.wav'
 
-    "A slip of paper falls out with the wolfskin, the contents addressed to a sculptor. According to the paper, the deposit was paid for, but the project was never finished and was thus refunded. A note explains that the item was delivered yesterday."
+    "A slip of paper falls out with the wolfskin, the contents addressed to a sculptor."
+
+    "According to the paper, the deposit was paid for, but the project was never finished and was thus refunded. A note explains that the item was delivered yesterday."
 
     il "(It looks like Salome bought something, but the final product was never finished? This could be important - I’d better hold onto this.)"
 

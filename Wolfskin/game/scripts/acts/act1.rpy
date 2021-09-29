@@ -1661,10 +1661,10 @@ label act1:
     show anari_night cringe with dissolve
     an "And yet you've been harbouring a monster, regardless of the consequences? Unfathomable…"
 
-    show ilona_night closed neutral
+    show ilona_night closed neutral with dissolve
     il "I am searching for a way to cure him of his curse. That is all."
 
-    show ilona_night open aaaa
+    show ilona_night open aaaa with dissolve
     il "Please, I honestly don't think he did it. There must be more to what happened - I can help you find it."
 
     show kellac_night glance sweat
@@ -1675,9 +1675,10 @@ label act1:
 
     show anari_night open neutral
     show kellac_night neutral
+    with dissolve
     "Anari sighs at Kellac's advice. Ilona couldn't help but to be thankful for his ability to sway Anari's opinions for even just a moment."
 
-    show anari_night relaxed neutral
+    show anari_night relaxed neutral with dissolve
     an "Fine. Let her run around, just make sure someone keeps an eye on her, always."
 
     an "I'll go first. You two assemble a search party for the forest in the meantime. I'll lead the search once you're ready."

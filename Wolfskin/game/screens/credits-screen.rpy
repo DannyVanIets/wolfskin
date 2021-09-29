@@ -91,7 +91,7 @@ screen credits():
 
             text "Editor and Proofreader" size 100
             null height 80
-            text "Billie"
+            text "Billie (thelof9)"
 
             null height 400
 
