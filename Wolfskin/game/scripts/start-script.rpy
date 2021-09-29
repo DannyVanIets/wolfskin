@@ -316,9 +316,9 @@ image cg_repeating_edwolf_close_blurry:
     repeat
 
 image cg_repeating_edwolf_edgewolf_blurry:
-    "edwolf edgehog" with dissolve
+    "hd edwolf final" with dissolve
     pause 2
-    "edwolf edgehog blurry" with dissolve
+    "hd edwolf final blurry" with dissolve
     pause 1
     repeat
 
