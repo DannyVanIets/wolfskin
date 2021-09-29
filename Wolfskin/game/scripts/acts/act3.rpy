@@ -759,7 +759,7 @@ label act3:
     "Ilona and Edwin make their escape. Anari scowls, and then goes to climb a tower to gain a higher vantage point."
 
     scene hd edwolf protecc with longfade:
-        zoom 0.6
+        zoom 0.4
 
     il "The gates will be already closed by now. There's a part of the wall that was hastily patched up. You should be able to climb through there."
 
@@ -808,12 +808,12 @@ label act3:
     extend " Then three more pierce his ribs. This isn’t a problem for the werewolf, as he brushes aside the pain. He’s taken greater beatings than this."
 
     scene edwolf claws with longfade:
-        xzoom -1 zoom 0.5
+        xzoom -1 zoom 0.44
 
     "However, he’s not invincible; a few more well placed shots and he’s down, along with Ilona."
 
     show ilona_sunset open aaaa talk at center with dissolve:
-        zoom 0.55 yoffset 60
+        zoom 0.65 yoffset 60
     il "Stay with me Edwin! Don’t lose sight of our escape. I’ll do my best to heal your wounds with- Ah!"
 
     play sound 'audio/sfx/arrow whistle.mp3'
@@ -829,12 +829,12 @@ label act3:
 
     ed "Ilona! Ho-hold on, we’re almost there!"
 
-    scene cg_repeating_edwolf_edgewolf_blurry with longfade:
-        zoom 0.6
+    scene cg_repeating_edwolf_edgewolf_blurry with longdissolve:
+        zoom 0.2
         # Makes you able to use subpixels, handy for positioning.
         subpixel True
         # Keep this as it is, really annoying to change. It tells where to position the image and how far you want to zoom in.
-        xpos 0.5 ypos 1.0 xanchor 0.5 yanchor 1.0 zoom 0.6
+        xpos 0.5 ypos 1.0 xanchor 0.5 yanchor 1.0 zoom 0.4
         # Tells where you will circle around in the image and how far.
         alignaround(.5, .5)
         # Linear is how fast you want the circling to be, lower it to make it faster. yalign is the same as like xpos, don't bother changing that. Circles is the amount of circles it will do before repeating.
