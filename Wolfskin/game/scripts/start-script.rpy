@@ -363,39 +363,37 @@ style say_dialogue:
 # The game starts here.
 label start:
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
-
     scene bg forest night
 
-    # TODO When this selection screen is removed, make sure this statement is called at beginning of the game.
     # Stop the main menu music
     stop music fadeout 0.1
 
-    menu:
-        "Click the act you want to go to!"
+    # Start the game from the first act
+    jump act1
 
-        "Act 1":
-            jump act1
-
-        "Act 2":
-            jump act2
-
-        "Act 3":
-            jump act3
-
-        "Blurry and shaking":
-            jump blurry_shake
-
-        "Action Editor Test":
-            jump action_editor_test
-
-        "Scrolling Background Test":
-            jump scrolling_bg_test
-
-        "Credits":
-            jump credits_from_script
-
-        "Epilogue":
-            jump epilogue
+    # menu:
+    #     "Click the act you want to go to!"
+    #
+    #     "Act 1":
+    #         jump act1
+    #
+    #     "Act 2":
+    #         jump act2
+    #
+    #     "Act 3":
+    #         jump act3
+    #
+    #     "Blurry and shaking":
+    #         jump blurry_shake
+    #
+    #     "Action Editor Test":
+    #         jump action_editor_test
+    #
+    #     "Scrolling Background Test":
+    #         jump scrolling_bg_test
+    #
+    #     "Credits":
+    #         jump credits_from_script
+    #
+    #     "Epilogue":
+    #         jump epilogue
