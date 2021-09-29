@@ -1031,28 +1031,17 @@ label act3:
     show ilona_sunset pensive neutral with dissolve
     il "I do not know, but I pity her…"
 
-    show bg black  onlayer forward:
-        subpixel True xpos 0.5 ypos 1.0 xanchor 0.5 yanchor 1.0 zoom 2.0 rotate None
-        parallel:
-            alpha -0.49
-            linear 1.07 alpha 0.47
-    $ renpy.pause(2.5)
-    show bg black  onlayer forward:
-        subpixel True xpos 0.5 ypos 1.0 xanchor 0.5 yanchor 1.0  zoom 2.0 rotate None
-        parallel:
-            alpha -0.11
-            linear 1.14 alpha 0.47
-    scene bg black with longdissolve
+    show slow_eyeblink_filter
 
     "Ilona hears Edwin's breathing slow. Ilona is too weary to use any more healing magic. They can’t remove the arrows that pierced them, or the two of them would surely bleed out and die."
+
+    scene bg black with longdissolve
 
     ed "…"
 
     il "Edwin?"
     $ renpy.pause(3.0)
     ed "…"
-
-    hide bg black  onlayer forward
 
     scene bg valley sunset
     show ilona_sunset pensive solemn neutral blood:
@@ -1074,17 +1063,7 @@ label act3:
     show edwin_sunset sad smile
     ed "You may. I'll keep watch, so you can rest."
 
-    show bg black  onlayer forward:
-        subpixel True xpos 0.5 ypos 1.0 xanchor 0.5 yanchor 1.0 rotate None  zoom 2.0
-        parallel:
-            alpha -0.49
-            linear 1.07 alpha 0.47
-    $ renpy.pause(2.5)
-    show bg black  onlayer forward:
-        subpixel True xpos 0.5 ypos 1.0 xanchor 0.5 yanchor 1.0 rotate None  zoom 2.0
-        parallel:
-            alpha -0.11
-            linear 1.14 alpha 0.47
+    show slow_eyeblink_filter
 
     il "I wonder — what your family is like…"
 
@@ -1093,8 +1072,6 @@ label act3:
 
     show ilona_sunset smile with dissolve
     il "That sounds… nice…"
-
-    hide bg black  onlayer forward
 
     ## SKY
     scene bg sky sunset
@@ -1173,26 +1150,3 @@ label act3:
 
     # Go to the credits.
     jump credits_from_script
-
-#####   ALTERNATING LINES FOR THE LAST POEM  ########
-#
-#    Ilona & Edwin:
-#       "We are found."
-#
-#    il "Praying deep in dead of night,"
-#    il "You have found your path."
-#
-#    ed "Praying still, no end in sight,"
-#    ed "A pure heart perseveres."
-#
-#    il "Praying, no desire, delight,"
-#    il "A serene soul you see."
-#
-#    Ilona & Edwin:
-#       "Bring back those melancholy hearts,"
-#       "Cleanse these with your soul unbound."
-#
-#     ed "Out of sorts, but not far gone,"
-#     ed "With you, nothing lost is found."
-#
-######################################################

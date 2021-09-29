@@ -308,13 +308,6 @@ image bg_transition_blurry_kellac_extreme:
     pause 0.3
     "bg town plaza morning kellac blurry extreme" with dissolve
 
-image cg_repeating_edwolf_close_blurry:
-    "edwolf close" with dissolve
-    pause 0.5
-    "edwolf close blurry" with dissolve
-    pause 1
-    repeat
-
 image cg_repeating_edwolf_edgewolf_blurry:
     "hd edwolf final" with dissolve
     pause 2
@@ -322,11 +315,16 @@ image cg_repeating_edwolf_edgewolf_blurry:
     pause 1
     repeat
 
-image cg_edwolf_last:
-    "cg_repeating_edwolf_close_blurry" with dissolve
-    pause 2
-    "cg_repeating_edwolf_edgewolf_blurry" with dissolve
-    pause 1
+## FILTER IMAGES    
+
+image slow_eyeblink_filter:
+    "bg black"
+    subpixel True xpos 0.5 ypos 1.0 xanchor 0.5 yanchor 1.0 zoom 2.0 rotate None
+    parallel:
+        alpha 0
+        linear 2 alpha 0.85
+        pause 1.5 alpha 0.85
+        linear 1.8 alpha 0
 
 # CTC SHENANIGANS
 
