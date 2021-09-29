@@ -315,16 +315,15 @@ image cg_repeating_edwolf_edgewolf_blurry:
     pause 1
     repeat
 
-## FILTER IMAGES    
+## FILTER IMAGES
 
+# Overlay a black bg with alpha value changed, on top of a scene to simulate slow eyeblinking.
 image slow_eyeblink_filter:
     "bg black"
-    subpixel True xpos 0.5 ypos 1.0 xanchor 0.5 yanchor 1.0 zoom 2.0 rotate None
-    parallel:
-        alpha 0
-        linear 2 alpha 0.85
-        pause 1.5 alpha 0.85
-        linear 1.8 alpha 0
+    alpha 0
+    linear 2 alpha 0.85
+    pause 1.5 alpha 0.85
+    linear 1.8 alpha 0
 
 # CTC SHENANIGANS
 
