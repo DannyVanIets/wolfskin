@@ -233,7 +233,7 @@ label act2:
     stop music fadeout 3.0
 
     show anari_dim worry neutral -shadow with dissolve
-    an "…Fine black tea, with bitter orange. I think Uldin still had some in his pantry."
+    an "…Fine black tea, with bitter orange. I think Uldin had some in his pantry."
 
     scene bg black with fade
 

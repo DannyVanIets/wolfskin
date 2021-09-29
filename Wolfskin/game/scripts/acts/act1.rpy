@@ -84,7 +84,7 @@ label act1:
 
     show ilona_twilight closed with dissolve
 
-    "Ilona waits for Edwin to turn back into a human, closing her eyes to rest for a moment. There's only the sound of the forest, until Edwin speaks to break their silence."
+    "Ilona waits for Edwin to turn back into a human, closing her eyes to rest for a moment. There's only the sound of the forest until Edwin speaks to break their silence."
 
     show edwin_twilight glance talk at edwin_transform_pos1
     show expression AlphaMask("canopy", At("edwin", edwin_transform_pos1)) as edwin_mask
@@ -162,7 +162,7 @@ label act1:
     show edwin_twilight glance smile blush
     with dissolve
 
-    "Their eyes flicker for a moment, and he’s not shivering anymore. "
+    "Their eyes flicker for a moment and he’s not shivering anymore. "
 
     ## OUTSIDE TOWN
 
@@ -170,7 +170,7 @@ label act1:
         xzoom-1
     with longfade
 
-    "Eventually, they press on. They sight a lonely settlement on the horizon; stone walls surrounding its perimeter."
+    "Eventually, they press on. They sight a lonely settlement on the horizon; stone walls surround its perimeter."
 
     show edwin_night closed at right with dissolve:
         zoom 0.50
@@ -312,7 +312,7 @@ label act1:
 
     "Ilona glances back, just once. Anari's bow is by her side and a hand rests on the quiver, ready to fire if the two of them even thought of escaping."
 
-    "Ilona cannot help but wonder just how much Anari overheard of their conversation... Her arrival seemed too well-timed."
+    "Ilona cannot help but wonder just how much of their conversation Anari overheard... Her arrival seemed too well-timed."
 
     "Did they give away too much, even when they thought they were alone?"
 
@@ -348,7 +348,7 @@ label act1:
     show edwin_night smile angry furrow
     ed "(Although — a town full of people not trying to kill me yet is quite an improvement.)"
 
-    "It’s almost time to head home for normal folk, but the town is bustling. There's a large bonfire in the square, and there's carved turnips at the doors of all the houses-"
+    "The town is bustling. There's a large bonfire in the square, and there are carved turnips at the doors of all the houses-"
 
     show ilona_night glance sad neutral with dissolve:
         zoom 0.50 xpos 0.75 xzoom -1
@@ -480,7 +480,7 @@ label act1:
 
     play sound 'audio/sfx/3 knocks.wav' volume 0.15
 
-    "Anari knocks on the door, and it was answered by a man and woman in fine clothing. They step outside of the house."
+    "Anari knocks on the door. It is answered by a man and woman in fine clothing. They step outside of the house."
 
     queue sound 'audio/ambience/wind and trees.ogg' volume 0.2
 
@@ -537,7 +537,7 @@ label act1:
 
     show ilona_twilight closed annoyed
 
-    "Ilona had to consider this carefully. She and Edwin had drawn too much attention already… So it surprised her when Edwin spoke without any fear."
+    "Ilona considers this carefully. She and Edwin had drawn too much attention already. So it surprises her when Edwin speaks without any fear."
 
     show edwin_twilight talk closed with dissolve
     show anari_twilight look -sweatdrop
@@ -580,7 +580,7 @@ label act1:
     show salome_dim at right_center
     with dissolve
 
-    "Uldin plans to rebuild the ruined chapel in Belorov, as Salome is deeply pious. That was why Salome regards the meeting with Ilona as such good fortune."
+    "Uldin plans to rebuild the ruined chapel in Belorov, as Salome is deeply pious. This is why Salome regards the meeting with Ilona as such good fortune."
 
     hide uldin_dim
     hide salome_dim
@@ -621,7 +621,7 @@ label act1:
     show ilona_dim closed at center with dissolve:
         zoom 0.8 yoffset 300
 
-    "She speaks a few words of gratitude for the harvest, and for peace and protection. When she lifts her eyes once again, the lively banquet commences."
+    "She speaks a few words of gratitude for the harvest and for peace and protection. When she lifts her eyes once again, the lively banquet commences."
 
     queue music 'audio/music/The Banquet.ogg' fadein 3.0
 
@@ -731,7 +731,7 @@ label act1:
     show kellac_dim smile behind fleur_dim with dissolve:
         zoom 0.5 xcenter 800
 
-    "Even Kellac takes an interest in these tales, and starts telling of his own travels. He loses track of time, and he decides that it is getting late, and he needs to head in early."
+    "Even Kellac takes an interest in these tales and starts telling of his own travels. He loses track of time and he decides that it is getting late and he needs to head in early."
 
     show anari_dim with dissolve:
         zoom 0.5 xcenter 1200
@@ -842,11 +842,11 @@ label act1:
 
     hide salome_dim with dissolve
 
-    "Salome asks everyone their preferences for tea to make preparations, and she excuses herself."
+    "Salome asks everyone their preferences for tea so she can make preparations, and she excuses herself."
 
     hide fleur_dim with dissolve
 
-    "A brief moment later, Fleur rises from her seat. She helps Salome with preparing the tea, truly apologetic about her earlier behaviour."
+    "A brief moment later, Fleur rises from her seat. She helps Salome to prepare the tea, truly apologetic about her earlier behaviour."
 
     show uldin_dim wink laugh relaxed with dissolve
     ul "We've arranged separate sleeping quarters for the both of you. Please, don't take our jests seriously."
@@ -863,7 +863,7 @@ label act1:
     scene bg hall alt
     with longfade
 
-    "At this point, Salome and Fleur have the tea ready, and Eisleigh helps in serving it to the guests, along with servings of milk and sugar at each end of the table."
+    "Salome and Fleur have the tea ready and Eisleigh helps serve it to the guests and places servings of milk and sugar at each end of the table."
 
     scene bg hall night
     with fade
@@ -915,7 +915,7 @@ label act1:
     stop music fadeout 3.0
     stop sound fadeout 5.0
 
-    "An oppressive silence lingers, and sweat beads down Edwin’s forehead. Ilona tries to keep a straight face, but her brow twitches."
+    "An oppressive silence lingers and sweat beads down Edwin’s forehead. Ilona tries to keep a straight face, but her brow twitches."
 
     play sound 'audio/sfx/zapsplat tea.mp3' volume 0.2
     "Edwin adds more sugar to his tea, and he takes care to not rattle the crockery as he stirs it with the spoon."
@@ -928,7 +928,9 @@ label act1:
 
     ul "Belorov was once an old fortress, so we don't have to worry about monster attacks. But in my youth, I experienced an attack first hand..."
 
-    "Uldin details a dramatic hunting trip in his youth, with his older brother and subordinate: a werewolf attacked the tent in the dead of night, but Uldin fended it off with fire magic."
+    "Uldin details a dramatic hunting trip in his youth, with his older brother and subordinate."
+
+    "A werewolf attacked the tent in the dead of night, but Uldin fended it off with fire magic."
 
     "His subordinate was torn to pieces, and Uldin's brother had his legs nearly hewn off."
 
@@ -992,7 +994,7 @@ label act1:
     with fade
 
     play sound 'audio/sfx/wood door open.wav' volume 0.3
-    "Eisleigh unlocks the door by the stairs, and opens the guest room. She gives Edwin the key."
+    "Eisleigh unlocks the door by the stairs and opens the guest room. She gives Edwin the key."
 
     scene bg bedroom night light
     with longfade
@@ -1001,19 +1003,19 @@ label act1:
         xzoom -1
     with dissolve
 
-    "Having a separated sleeping quarters is more than what he could normally ask for. For this style of house, he would assume that the guests share one large sleeping space."
+    "Having separate sleeping quarters is more than Edwin could normally ask for. In this style of house, he had assumed that the guests share one large sleeping space."
 
     show eisleigh_dim open neutral
 
     "He was prepared to run out of the manse, and to be alone in the darkness of night."
 
-    "Instead, he still has to play the role of an honoured houseguest."
+    "Instead, he has to play the role of an honoured houseguest."
 
     show eisleigh_dim smile
 
-    "Eisleigh bows, and leaves him with only saying a few words of comfort, hoping that he will feel better with rest."
+    "Eisleigh bows and leaves him with only a few words of comfort, hoping that he will feel better with rest."
 
-    "He nods, and then closes the door, locking it with the key."
+    "He nods and then closes the door, locking it with the key."
 
     hide eisleigh_dim with dissolve
     play sound 'audio/sfx/wood door close.wav' volume 0.3
@@ -1153,13 +1155,13 @@ label act1:
         xzoom -1
     with dissolve
 
-    "Ilona stayed after Edwin's exit, to ask Uldin and Eisleigh about the nature of curses, but the conversation following was dense and difficult."
+    "Ilona stayed after Edwin's exit to ask Uldin and Eisleigh about the nature of curses, but the conversation that followed was dense and difficult."
 
     play music 'audio/ambience/bbc fire.mp3' volume 0.2 fadein 2.0 noloop
 
     hide fleur_dim with dissolve
 
-    "At that point, Fleur took her leave, no longer interested in the dry and tiring conversation at hand."
+    "By that point, Fleur took her leave, no longer interested in the dry and tiring conversation at hand."
 
     show ilona_dim angry neutral
     show uldin_dim wink smirk
@@ -1169,7 +1171,9 @@ label act1:
     scene bg hallway night light
     with longfade
 
-    "The rest of the party retired to bed before midnight. When Salome entered, she became the mediator of peace and that was when everyone agreed to call it a night; departing from the main hall on friendly terms."
+    "The rest of the party retired to bed before midnight."
+
+    "When Salome entered, she became the mediator of peace and that was when everyone agreed to call it a night, departing from the main hall on friendly terms."
 
     show uldin_dim blush closed laugh:
         xcenter 1700
@@ -1188,7 +1192,7 @@ label act1:
 
     play sound 'audio/sfx/wood door open and close.wav'
 
-    "Ilona opens the door, and thinks for a moment if she wants to lock it. Her head is swimming, either from the spiced wine, or the meandering conversation."
+    "Ilona opens the door and wonders for a moment if she wants to lock it. Her head is swimming — either from the spiced wine or the meandering conversation."
 
     scene bg bedroom night light
     with longfade
@@ -1226,7 +1230,7 @@ label act1:
 
     "Ilona wonders if she should leave her door unlocked, in case he wants to speak to her."
 
-    "It seems risky, but Ilona is more than used to sleeping in a communal space in the priory… Having a private room felt like an excessive luxury."
+    "It seems risky, but Ilona is more than used to sleeping in a communal space in the priory… Having a private room feels like an excessive luxury."
 
     "Though, there are strangers in the house, and some of them are men…"
 
@@ -1242,7 +1246,7 @@ label act1:
     scene bg black
     with longfade
 
-    "Ilona closes her eyes and tries to drift into sleep. Within the peaceful silence of the manse, rest came to her easier than expected."
+    "Ilona closes her eyes and tries to drift into sleep. Within the peaceful silence of the manse, rest comes to her easier than expected."
 
     stop music fadeout 3.0
 
@@ -1269,7 +1273,7 @@ label act1:
     play sound 'audio/sfx/footsteps hurried.wav'
     "Ilona hears footsteps rush past her room, and her eyes flutter open; registering what woke her."
     play sound 'audio/sfx/zap clothes rustle.mp3' volume 0.2
-    extend " She puts on her habit, covering her head, and hurries out the door, unlocking it first…"
+    extend " She puts on her habit, covering her head, and hurries out the door."
 
     scene bg hallway night dark
     show kellac_twilight glance anger at center:
@@ -1291,7 +1295,7 @@ label act1:
 
     play sound 'audio/sfx/3 knocks.wav' volume 0.4
 
-    "Ilona knocks on Edwin's door, trying to hear for any sign of life in the room."
+    "Ilona knocks on Edwin's door, listening for any sign of life in the room."
 
     show ilona_twilight sad talk at center:
         zoom 0.7 yoffset 260
@@ -1365,7 +1369,7 @@ label act1:
 
     show eisleigh_twilight surprise worry
     show ilona_twilight neutral
-    "Eisleigh's eyes go wide, and she fumbles in her long green robe, producing a dangling set of keys, nearly dropping them in her haste."
+    "Eisleigh's eyes go wide and she fumbles in her long green robe, producing a dangling set of keys and nearly dropping them in her haste."
 
     show eisleigh_twilight surprise worry talk
     play sound 'audio/sfx/old keys jingle.mp3' volume 0.2
@@ -1379,7 +1383,7 @@ label act1:
 
     play sound 'audio/sfx/stairs ascending hurried.wav'
 
-    "When they rush back to the masters' chambers, there is no use for the master key. They find the door broken and battered, but no sign of Anari or Kellac yet."
+    "When they rush back to the masters' chambers, they realize there is no use for the master key. They find the door broken and battered, but no sign of Anari or Kellac yet."
 
     scene bg gore
     with fade
@@ -1388,7 +1392,7 @@ label act1:
 
     play music 'audio/ambience/Dark Ambience.ogg' volume 0.4
 
-    "Traces of blood are on the door, as with thick shards of wood splintering from its fractures."
+    "Traces of blood are on the door, with thick shards of wood splintering from its fractures."
 
     scene bg masters chamber night
     with fade
@@ -1403,12 +1407,14 @@ label act1:
         xzoom -1
     with dissolve
 
-    "They lay their eyes on the blood-soaked bedsheets, and the dead figure of Uldin. His neck is mutilated; torn flesh hangs off of his body, and his eyes are blank."
+    "They lay their eyes on the blood-soaked bed sheets and the lifeless figure of Uldin."
+
+    "His neck is mutilated; torn flesh hangs off of his body, and his eyes are blank."
 
     show eisleigh_twilight closed worry neutral
     "Eisleigh holds a hand over her mouth, and squeezes her eyes shut."
 
-    "A figure of a man hunched over a woman in a dress makes his presence known; he turns to look at them."
+    "A figure of a man is hunched over a woman in a dress and makes his presence known. He turns to look at them."
 
     "His yellow eyes give off an eerie glint, as though it were an animal's."
 
@@ -1432,11 +1438,11 @@ label act1:
 
     " It's hard to make out in the darkness, but his arms look huge, and beastly… the fur mixed with the blood of open wounds and bruises."
 
-    "With his body turned away, Ilona couldn't tell who it was in his arms, but she now sees a ring on the hand, and chestnut brown hair…"
+    "With his body turned away, Ilona can’t tell who is in his arms, but she now sees a ring on his hand and chestnut brown hair…"
 
     play sound 'audio/sfx/footsteps hurried tile trainers.wav'
 
-    "The sound of footsteps rushes up the stairs again, and Ilona knows immediately who it is."
+    "The sound of footsteps is heard again and Ilona knows immediately who it is."
 
     scene bg hallway night dark
     show anari_twilight fury scary yell kill at center:
@@ -1450,7 +1456,7 @@ label act1:
     show anari_twilight cringe sweatdrop with dissolve
     an "I knew there was something wrong with him. I should've shot him dead when I had the chance…"
 
-    "Instead of the cool and elegant Anari that Ilona had seen before, she disguises her sorrow with fury instead."
+    "This is not the cool and elegant Anari that Ilona had seen before. Instead, she disguises her sorrow with fury instead."
 
     scene bg masters chamber night
     show kellac_twilight anger at easeinleft_transform:
@@ -1567,7 +1573,7 @@ label act1:
     an "I can't say that I trust you quite yet, Ilona."
 
     show anari_twilight open smile with dissolve
-    an "You really seem like a clever girl... and who would dare suspect a nun of planning such a gruesome scene?"
+    an "You seem like a clever girl... and who would dare suspect a nun of planning such a gruesome scene?"
 
     show anari_twilight neutral
     an "Turn yourself in quietly, Edwin, and I'll make sure her interrogation isn't painful."
@@ -1576,7 +1582,7 @@ label act1:
 
     play sound 'audio/sfx/zap chain move.mp3' volume 0.2 fadeout 7.0
     stop music fadeout 2.0
-    "Ilona isn't sure if Edwin obliged so easily because he feared for her safety, or if he truly has given up; like what Anari said earlier. He wordlessly lets Anari bind him with chains."
+    "Ilona isn't sure if Edwin obliged so easily because he feared for her safety, or if he truly has given up, like Anari said earlier. He wordlessly lets Anari bind him with chains."
 
     $ renpy.pause(2.0)
 
@@ -1648,7 +1654,7 @@ label act1:
     ei "If she really was involved, I don't think she would be able to hide it."
 
     show anari_night closed sweatdrop
-    "Anari tries hard to not grumble, though Eisleigh did have a point."
+    "Anari tries hard to not grumble, though Eisleigh does have a point."
 
     show anari_night look talk -sweatdrop
     an "Ilona. Did you know that the man was a werewolf before entering this town?"
@@ -1676,7 +1682,7 @@ label act1:
     show anari_night open neutral
     show kellac_night neutral
     with dissolve
-    "Anari sighs at Kellac's advice. Ilona couldn't help but to be thankful for his ability to sway Anari's opinions for even just a moment."
+    "Anari sighs at Kellac's advice. Ilona can't help but to be thankful for his ability to sway Anari's opinions for even just a moment."
 
     show anari_night relaxed neutral with dissolve
     an "Fine. Let her run around, just make sure someone keeps an eye on her, always."
