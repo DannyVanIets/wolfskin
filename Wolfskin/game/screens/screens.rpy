@@ -251,8 +251,7 @@ screen quick_menu():
             xalign 0.95
             yalign 1.0
 
-            # FIXME Disable Back Button on game release
-            textbutton _("BACK") action Rollback()
+            #textbutton _("BACK") action Rollback()
             textbutton _("HISTORY") action ShowMenu('history')
             textbutton _("SKIP") action Skip() alternate Skip(fast=True, confirm=True)
             textbutton _("AUTO") action Preference("auto-forward", "toggle")
@@ -935,6 +934,9 @@ screen history():
                 $ what = renpy.filter_text_tags(h.what, allow=gui.history_allow_tags)
                 text what:
                     substitute False
+                    # A very subtle different light-grey for the text spoken by narrator.
+                    if h.who == None:
+                        color "#aaaaaa"
 
         if not _history_list:
             label _("The dialogue history is empty.")
