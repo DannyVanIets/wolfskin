@@ -31,7 +31,7 @@ label act3:
 
 # SCENE 35-39
 
-    play music 'audio/music/mastered/He_Who_Seeks_Hope_Theme_Of_Edwin.ogg' fadein 5.0 volume 0.5
+    play music 'audio/music/mastered/He_Who_Seeks_Hope_Theme_Of_Edwin.ogg' fadein 5.0 volume 0.35
 
     scene bg moon with dissolve
 
@@ -691,9 +691,10 @@ label act3:
     show anari_sunset yell fury scary with dissolve
     an "If I am wrong, so be it. When my time comes, I’ll gladly accept my penance."
 
+    show anari_sunset blank
     an "There's one thing that's certain: your arrival into this town brought with it the destruction of this family."
 
-    show anari_sunset scary fury cringe with dissolve
+    show anari_sunset fury cringe with dissolve
     an "If it weren't for you and Edwin, this tragedy would never have happened."
 
     show ilona_sunset aaaa talk with dissolve
@@ -702,11 +703,11 @@ label act3:
     show anari_sunset nii grin with dissolve
     an "Hahahahaha! I didn't know nuns could tell jokes. As if I would ever wish for such a thing."
 
-    show anari_sunset blank fury smile
+    show anari_sunset blank fury smile with dissolve
     an "You should learn to choose your words more wisely, Sister. It's unbecoming of a holy woman… but I had the nagging suspicion you were a heretic from the first moment I saw you. Someone like you could never win."
 
     hide ilona_sunset
-    show anari_sunset fury open smile at center:
+    show anari_sunset fury blank neutral at center:
         zoom 0.8 yoffset 450
     with dissolve
 
@@ -727,11 +728,13 @@ label act3:
 
     "As Edwin watches this, he feels a pang in his heart. He can only watch in horror as Ilona is slowly but steadily bound, resist as she might."
 
+    play sound 'audio/sfx/Growl_6.mp3'
+
+    play music '<from 71.55 to 128>audio/music/mastered/Chaos_And_Torment.ogg' fadeout 2.0 fadein 1.0
+
     "Edwin has seen enough."
 
-    $ renpy.pause(1.5, hard=True)
-
-    play music '<from 71 to 128>audio/music/mastered/Chaos_And_Torment.ogg' fadein 3.0 noloop fadeout 2.0
+    $ renpy.pause(1.1, hard=True)
 
     $all_moves(camera_check_points={'y': [(-111, 0.0, 'bop_out_time_warp'), (-1344, 1.27, 'ease2')], 'x': [(2250, 0.0, 'bop_out_time_warp'), (1012, 1.27, 'ease2')]})
     show hd edwolf unchained  onlayer middle:
@@ -742,9 +745,11 @@ label act3:
 
     "He transforms, the metallic chains that once constrained him clattering to the ground in pieces."
 
-    play sound 'audio/sfx/werewolf breath.mp3'
+    play sound 'audio/sfx/Growl_4.mp3'
 
     "He rushes at the guards with a growl. Their attempts are pathetic; he pries Ilona away from them effortlessly."
+
+    "His claws slice through the rope, freeing her."
 
     hide hd edwolf unchained onlayer middle
     show bg black
@@ -763,9 +768,11 @@ label act3:
 
     "Anari releases the bowstring and an arrow zooms out of the bow's nocking point, making a whistling sound as it flies."
 
-    "In one quick moment it pierces Edwin's hide and he transforms from his bipedal, humanoid werewolf form to the form of a massive, animalistic grey wolf."
+    "In one quick moment it grazes against Edwin's hide and he transforms from his bipedal, humanoid werewolf form to the form of a massive, animalistic grey wolf."
 
-    "He screams, his senses numbed with a lust for vengeance. Immediately, he swivels and targets Anari, swiping at her."
+    play sound 'audio/sfx/Growl_6.mp3'
+
+    "His senses numb with a lust for vengeance. Immediately, he swivels and targets Anari, swiping at her."
 
     "She takes another arrow out of her quiver but is not able to use it, as Edwin's girthy claws knock the bow out of her hands and into the distance."
 
@@ -965,7 +972,7 @@ label act3:
 
     il "{i}Darling?{/i}"
 
-    play sound 'audio/sfx/zap clothes rustle.mp3'
+    play sound 'audio/sfx/zap clothes rustle.mp3' volume 0.3
 
     show ilona_sunset shock sad talk blush blood:
         zoom 0.5 yoffset 0 xcenter 700
@@ -973,6 +980,8 @@ label act3:
         zoom 0.5
     with dissolve
 
+    stop sound fadeout 1.0
+    
     "After the awkward exchange, Edwin gingerly sets Ilona down on the ground. He reverts to human form, his ears and face red."
 
     "Ilona tries to heal what open wounds Edwin has, not saying a word."
