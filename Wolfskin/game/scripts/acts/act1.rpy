@@ -389,7 +389,7 @@ label act1:
 
     ed "You were raised strictly, Ilona. Father Ivanov never wanted you to know about these pagan festivals."
 
-    play sound 'audio/sfx/zapsplat cloth.mp3' volume 0.2
+    play sound 'audio/sfx/Bumping_into_thick_clothed_man.mp3'
 
     show edwin_night fear talk
     with hpunch

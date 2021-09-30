@@ -210,7 +210,7 @@ label act3:
     with dissolve
     il "Enough! I was well aware of the consequences when I left the priory with you!"
 
-    show ilona_dim baby yell
+    show ilona_dim baby yell with dissolve
     il "I'm not trying to find a way to break your curse so I can return to the priory, or to repent for my sins."
 
     show ilona_dim wail with dissolve
@@ -661,10 +661,10 @@ label act3:
     show ilona_sunset open
     il "I do not care what happens next, Anari. Whether you believe me or not is irrelevant. I've only tried to make sense of what I could from this tragedy."
 
-    show ilona_sunset closed solemn happy
+    show ilona_sunset closed solemn happy with dissolve
     il "You cannot make me feel guilty for harbouring Edwin as a werewolf. He is not defined by his curse, and I want you to see that."
 
-    show ilona_sunset talk relaxed -sweat
+    show ilona_sunset talk relaxed -sweat with dissolve
     il "I have provided evidence and my theory, as you asked. Nothing I do now can change your mind. I accept it, regardless of the outcome."
 
     show anari_sunset look smile with dissolve
@@ -678,7 +678,7 @@ label act3:
     show anari_sunset fury with dissolve
     an "But unless you bring Salome to me, I will not be convinced. The ‘righteousness’ that you preach is meaningless without tangible proof. So, where is Salome? We searched everywhere in this town for her daughter."
 
-    show ilona_sunset sad open talk
+    show ilona_sunset sad open talk with dissolve
     il "I can only speculate at this point. Are there any secret or hidden passages in Belorov?"
 
     stop music fadeout 2.0
