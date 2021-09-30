@@ -47,7 +47,7 @@ label act2:
 
     play music 'audio/music/mastered/Haunting.ogg' fadein 2.0 volume 0.5
 
-    "From what is seen, Uldin died of blood loss from a wound to his neck, and Salome shows signs of burns surpassing the third degree."
+    "From what Ilona can see, Uldin died of blood loss from a wound to his neck, and Salome shows signs of burns surpassing the third degree."
 
     "There's swelling at her neck and spine; possibly a fracture. Both of them died at around the same time, shortly before they entered the room to witness the gruesome scenario."
 
@@ -63,7 +63,7 @@ label act2:
 
     il "(Could Salome have survived that attack, even for just a moment?)"
 
-    "Ilona looks around the room, seeing the scorched walls and destroyed tapestries and paintings."
+    "Ilona looks around the room and sees the scorched walls and destroyed tapestries and paintings."
 
     il "(Apparently, Uldin was capable of using fire magic. Did Salome get caught in his attack? I can't really imagine that happening.)"
 
@@ -76,9 +76,9 @@ label act2:
 
     $ renpy.pause(1.0)
 
-    "Ilona tries to find anything else in the room that could have been used. On the nightstand, there's a candle turned over. Droplets of now hard wax marred the wood surface. "
+    "Ilona tries to find anything else in the room that could have been used. On the nightstand, there's a candle turned over. Droplets of now-hard wax mar the wood surface. "
 
-    "The burns scorching the wall and room seem too significant to come from just a candle. Near the bed, and on the floor are traces of fur. Some of it is burnt."
+    "The burns scorching the wall and room seem too significant to come from just a candle. Near the bed and on the floor are traces of fur. Some of it is burnt."
 
     show anari_dim talk angry closed with dissolve
     an "Anything out of place?"
@@ -97,7 +97,7 @@ label act2:
     scene bg salomes bedroom
     with longfade
 
-    "Ilona decides to look in Salome's room first, the room closest to the master's chambers. The room is bright, orderly and spacious; and partly serves as the lady's study."
+    "Ilona decides to look in Salome's room first, the room closest to the master's chambers. The room is bright, orderly and spacious; and partly serves as Salome's study."
 
     "The most prominent part of the room is a writing table, items left strewn upon it as though she was in the middle of an important task."
 
@@ -130,7 +130,7 @@ label act2:
 
     an "It's natural she might have moved it since I was last here. She did worry about Fleur's future, after all… Salome was still considering which items should go inside. "
 
-    "It surprises Ilona that Anari became so candid at this moment. Salome and Anari were closer in age, and it made sense that Anari acted as Salome's confidant."
+    "It surprises Ilona that Anari is suddenly so candid. Salome and Anari were closer in age, and it made sense that Anari acted as Salome's confidant."
 
     stop music fadeout 3.0
 
@@ -143,7 +143,7 @@ label act2:
 
     "Ilona looks at Anari. They agree silently to move closer."
 
-    "Anari did not pay any heed to the room's whimsical decor, but Ilona can't help but steal glances at the spectacle of floral and woodland motifs in her belongings as they pass through."
+    "Anari does not pay any heed to the room's whimsical decor, but Ilona can't help but steal glances at the spectacle of floral and woodland motifs in her belongings as they pass through."
 
     "Last night, Ilona never thought too much of Fleur's fascination with strange and mythic tales, especially regarding the fair folk."
 
@@ -151,7 +151,7 @@ label act2:
 
     "When they reach the bed, Ilona isn't sure what to expect."
 
-    "Anari remains behind her, and nods for Ilona to pull back the covers. Ilona could see something that looked like it's carved from wood…"
+    "Anari remains behind her and nods, indicating for Ilona to pull back the covers. Ilona can see something that looks like it is carved from wood."
 
     play music 'audio/music/mastered/Echoing_Fleur_Theme.ogg' volume 0.5
 
@@ -161,7 +161,7 @@ label act2:
 
     "It resembles a wood statue, or an effigy."
 
-    "The face looks eerily like Fleur, her expression mysterious; neither happy nor sad. The rest of the body looks as though it remains trapped inside a still-living tree."
+    "The face looks eerily like Fleur, her expression mysterious — neither happy nor sad. The rest of the body looks as though it remains trapped inside a still-living tree."
 
     show ilona_dim glance annoyed sweat at left:
         zoom 0.5
@@ -171,7 +171,7 @@ label act2:
 
     an "Impossible…"
 
-    "Anari does not say anything else, but moves back from the effigy. Her hand is balled into a fist, and is shaking, either from rage or fear."
+    "Anari does not say anything else, but moves back from the effigy. Her hand is balled into a fist, and is shaking either from rage or fear."
 
     show anari_dim cringe
 
@@ -198,7 +198,7 @@ label act2:
     stop sound fadeout 3.0
     "Finding nothing else of note in the room, Ilona rejoins Anari. She finds Anari with her back pressed to the wall, steadily taking deep breaths."
 
-    "For a woman who seemed to fear nothing, Ilona couldn't fathom why Anari looked so scared at that moment."
+    "For a woman who seemed to fear nothing, Ilona can’t fathom why Anari look so scared at that moment."
 
 # SCENE 18
 
@@ -245,7 +245,7 @@ label act2:
 
     "Ilona, feeling some remorse as though the two of them were bandits, prepares the deceased man's tea according to Anari's instruction."
 
-    "Trying her best to be hospitable, Ilona also serves it with milk and sugar, as Fleur did."
+    "Trying her best to be hospitable Ilona also serves it with milk and sugar, as Fleur did."
 
     play music 'audio/sfx/zapsplat clock.mp3' loop volume 0.1
 
@@ -267,7 +267,7 @@ label act2:
     "Anari leans back in her chair, closing her eyes and taking in the aroma. She takes a sip before putting her tea cup down elegantly, without even the slightest clatter."
 
     show anari_dim angry
-    "Ilona follows suit, but she is not nearly as graceful. Anari rubs her temples with the tips of her fingers, before speaking again."
+    "Ilona follows suit, but she is not nearly as graceful. Anari rubs her temples with the tips of her fingers before speaking again."
 
     show anari_dim smile
     an "Not bad. Tell me, are all nuns this annoying?"
@@ -295,7 +295,7 @@ label act2:
     show ilona_night at right:
         zoom 0.7 xzoom-1 yoffset 300
     with dissolve
-    extend " It was heard by Kellac and Ilona, sleeping on the floor below. Edwin was not in his room."
+    extend " It was heard by Kellac and Ilona who were sleeping on the floor below. Edwin was not in his room."
 
     scene bg masters chamber night
     show salome_sil at right:
@@ -315,7 +315,9 @@ label act2:
 
     scene bg hallway night dark
     with dissolve
-    "It took some time to make it to the servants quarters and the other guest lodgings, which are on the opposite end of the manse."
+    "It would take some time for a person sleeping below the master's chambers to make it to the servants quarters, which is on the opposite end of the manse."
+
+    "Since Anari was on duty for her job as the head of the town guard, she could not possibly be at the crime scene during the murder."
 
     scene bg hall day
     show ilona_dim at left:
@@ -425,12 +427,14 @@ label act2:
 
     scene bg fleur bedroom with dissolve
 
-    "Anari was confident up until this point, calm and refined. Now, dread and restlessness begins to take over."
+    "Anari is confident up until this point — calm and refined. Now, dread and restlessness begin to take over"
 
     show effigy at center with dissolve:
         zoom 0.5
 
-    "Yet she could not overlook the superstitions, even for someone as experienced of a hunter. The wooden effigy of Fleur, her disappearance, the uncertainty behind the murder tarnishes Anari's unshakeable visage."
+    "Yet she could not overlook the superstitions of the fae, even for someone as rational as her."
+
+    "The wooden effigy of Fleur, her disappearance, and the uncertainty behind the murder tarnishes Anari's unshakeable visage."
 
     "Moreover, Ilona’s demeanour and her relationship with Edwin…"
 
@@ -458,7 +462,7 @@ label act2:
     show ilona_dim neutral
     show anari_dim neutral -fear
     with dissolve
-    "Silence looms over, waiting to be broken. Anari glares, her hand instinctively touches one of her arrows. She grimaces, and folds her arms across her body."
+    "Silence looms over, waiting to be broken. Anari glares, her hand instinctively touching one of her arrows. She grimaces and folds her arms across her body."
 
     play music 'audio/sfx/zapsplat clock.mp3' loop volume 0.3
 
@@ -526,21 +530,21 @@ label act2:
     scene bg town plaza morning
     with longfade
 
-    "Anari leads her out of the room, and back into the town square."
+    "Anari leads her out of the room and back into the town square."
 
     scene bg_repeating_town_plaza_blurry
 
     play sound 'audio/sfx/heartbeat.mp3' loop volume 0.2
-    "Ilona can feel her body covered in a light sweat. She can feel her heart leaping frantically inside her chest, just reminiscing about the conversation she had with Anari."
+    "Ilona is covered in a light sweat. She can feel her heart leaping frantically inside her chest just by thinking about the conversation she had with Anari."
     show slow_eyeblink_filter
-    "Kellac is waiting at the square, and he exchanges some words with Anari. Their voices are indistinct and quiet."
+    "Kellac is waiting at the square and he exchanges some words with Anari. Their voices are indistinct and quiet."
 
-    "Her own heart sounds louder in her ears, so much that it’s making her weak and dizzy… Her extremities are tingling."
+    "Ilona’s own heart sounds louder in her ears, so much that it’s making her weak and dizzy… Her extremities are tingling."
 
     scene bg_repeating_town_plaza_kellac_blurry with fade
     queue music 'audio/music/mastered/Fade_Away.ogg' volume 0.2
 
-    "It is taking everything for her to stay conscious. Anari glances at Ilona, before smiling to herself and walking away. Ilona sees a figure move in front of her, clad in black robes…"
+    "It is taking everything for Ilona to stay conscious. Anari glances at her before smiling to herself and walking away. Ilona sees a figure move in front of her, clad in black robes…"
 
     ke "Where to?"
 
@@ -576,9 +580,9 @@ label act2:
 
     play music 'audio/ambience/bbc fire.mp3' volume 0.3
     show slow_eyeblink_filter
-    "When Ilona opens her eyes again, she's in an unfamiliar bed and room. The air is heavy with a medicinal smell, suffocatingly so."
+    "When Ilona opens her eyes again, she's in an unfamiliar bed and room. The air is heavy with a medicinal smell  — suffocatingly so."
 
-    "She feels far too conscious of her body. Her mouth feels dry, and her heart still feels like it's beating too fast."
+    "She feels far too aware of her body. Her mouth feels dry, and her heart still feels like it's beating too fast."
 
     show ilona_dim closed sad talk at left with dissolve:
         zoom 0.5
@@ -597,7 +601,9 @@ label act2:
     ke "It's almost midday."
 
     show ilona_dim glance annoyed sweat with dissolve
-    "Ilona grimaces. Too much time was lost. She moves her arms slowly, her body heavy. Sensation comes back into the tips of her fingers, and the unpleasant tingling stops. The smell of herbal medicine starts to become more bearable to her senses."
+    "Ilona grimaces. Too much time was lost. She moves her arms slowly, her body heavy."
+
+    "Sensation comes back into the tips of her fingers and the unpleasant tingling stops. The smell of herbal medicine starts to become more bearable to her senses."
 
     show kellac_dim anger neutral with dissolve
     ke "It wasn't an ordinary fainting spell. You should have regained consciousness faster if it was simply fatigue and stress."
@@ -662,7 +668,7 @@ label act2:
     il "Then, you think someone last night—"
 
     play sound 'audio/sfx/3 knocks.wav' volume 0.3
-    "There's a light knock on the door. Kellac tells them to enter, it's Eisleigh."
+    "There's a light knock on the door. Kellac tells them to enter. It's Eisleigh."
 
     play sound 'audio/sfx/wood door open and close.wav' volume 0.5
     show eisleigh_dim worry neutral at extra_right with dissolve
@@ -685,7 +691,7 @@ label act2:
 
     "Kellac serves Eisleigh and Ilona a rustic stew, with dark bread and clear water on the side. During the time eating together, Eisleigh asks about the investigation, and Ilona repeats Anari's reasoning surrounding Eisleigh and Kellac."
 
-    "Ilona would have thought that Anari's defence was unbreakable, but there was actually one new thing they learnt about last night…"
+    "Ilona thought that Anari's defence was unbreakable, but there was one new thing she learnt about last night…"
 
     scene bg hall day
     show ilona at left:
@@ -703,7 +709,7 @@ label act2:
     show kellac closed
     show ilona glance solemn
     with dissolve
-    "Ilona stares at an empty teacup in the room, and then realizes something — if the tea she served Anari was different, but she used the same sugar from last night—"
+    "Ilona stares at an empty teacup in the room and realizes something — if the tea she served Anari was different, but she used the same sugar from last night—"
 
     show ilona open aaaa talk with dissolve
     il "The sugar — it must have been tampered with! Last night, I didn't add any to my tea because I didn't want to be rude, but I took some when I had tea with Anari."
@@ -742,10 +748,14 @@ label act2:
 
     scene bg black with fade
 
-    "Kellac seems to know the most about Uldin's family and his circumstances, so Ilona asked for more information."
+    "Kellac seems to know the most about Uldin's family and his circumstances, so Ilona asked him for more information."
 
     show uldin_bw at center with dissolve:
-    "Uldin suffered from insomnia, and slept in separate arrangements so as to not disturb his wife. Last night was also one of the rare occasions when Uldin was back in town, as he travelled frequently for his research; studying magic."
+    "Uldin suffers from insomnia and slept in separate arrangements so as to not disturb his wife."
+
+    "Last night was also one of the rare occasions when Uldin was back in town, as he travelled frequently for his research studying magic."
+
+    "Salome often handles the day to day affairs of managing Belorov. Uldin came back a day ago, and his return was welcomed back with a feast on All Hallows' Eve."
 
     hide uldin with dissolve
 
@@ -849,7 +859,7 @@ label act2:
     play sound 'audio/sfx/stairs ascending slow.wav'
     "The three of them start their search for the cursed item. Based on Anari's report, Kellac confirms with Ilona that nobody was able to enter or exit the town after Ilona and Edwin entered."
 
-    "Eisleigh was eager to help out in any way possible, now that there was a chance of witnessing or finding a cursed magical object."
+    "Eisleigh was eager to help out in any way possible now that there was a chance of witnessing or finding a cursed magical object."
 
     show ilona at less_left:
         zoom 0.5
@@ -900,7 +910,7 @@ label act2:
     ei "Let me try opening it…"
 
     play sound 'audio/sfx/old keys jingle.mp3'
-    "Eisleigh pulls out a set of various different keys and picks, agitating each in the keyhole, to no avail."
+    "Eisleigh pulls out a set of various different keys and picks, agitating each in the keyhole to no avail."
 
 # SCENE 33
 
@@ -925,7 +935,7 @@ label act2:
     extend " Ah-ha! I got it!"
 
     play sound 'audio/sfx/lock metal.mp3' volume 0.3
-    "She jammed the lockpick into the keyhole and wriggled it around. A faint 'click' was heard."
+    "She jams the lockpick into the keyhole and wriggles it around. A faint 'click' is heard."
 
     ## EISLEIGH'S BLOOD
 
@@ -998,10 +1008,10 @@ label act2:
 
     play sound 'audio/sfx/stairs descending slow.wav'
 
-    "Kellac and Eisleigh make their descent down the stairs. All that remains near the chest is the blood that poured out from Eisleigh's hand, the set of lockpick and Ilona."
+    "Kellac and Eisleigh make their descent down the stairs. All that remains near the chest is the blood that poured out from Eisleigh's hand, the lockpick set, and Ilona."
 
     show ilona closed
-    "The hairs on Ilona’s arms raise, and she can feel her heart beat faster. She puts her hand on her chest, as though uttering a short prayer."
+    "The hairs on Ilona’s arms raise and she can feel her heart beat faster. She puts her hand on her chest, as though uttering a short prayer."
 
     stop music fadeout 5.0
 
@@ -1014,7 +1024,7 @@ label act2:
     play sound 'audio/sfx/old keys jingle.mp3'
     "Despite her best instincts, Ilona picks up the lockpicks Eisleigh used. She spots a thin tool and uses it to pry the wood chest open…"
 
-    "The trap was already disengaged; the danger gone. She sighs with relief."
+    "The trap was already disengaged, the danger gone. She sighs with relief."
 
     hide ilona
 
@@ -1022,7 +1032,7 @@ label act2:
 
     play music 'audio/sfx/creepy wind a.ogg' volume 0.2 fadein 2.0
 
-    "Nestled underneath delicate pieces of jewelry and other finery, lay the red and glistening gold of a sash; with bloodstained, hoary fur on the other side."
+    "Nestled underneath delicate pieces of jewelry and other finery lay the red and glistening gold of a sash. It has bloodstained, hoary fur on one side."
 
     il "This must be it…"
 
@@ -1070,11 +1080,11 @@ label act2:
     scene bg dungeon
     with longfade
 
-    "Fearing that Anari, or someone else, would hear her in the dungeon, she hesitates. If she stayed behind… There was no knowing what the others would do if they laid their eyes on the wolfskin."
+    "Fearing that Anari, or someone else, will hear her in the dungeon, she hesitates. If she stays behind… There was no knowing what the others would do if they laid their eyes on the wolfskin."
 
-    "Kellac and Eisleigh might have seemed cooperative until now, but that could change if they lusted after its power for themselves."
+    "Kellac and Eisleigh may have seemed cooperative up until now, but that could change if they lusted after its power for themselves."
 
-    "Now is her only chance to return it to him privately."
+    "Now is Ilona’s only chance to return it to Edwin privately."
 
     stop music fadeout 1.0
 
@@ -1124,11 +1134,12 @@ label act2:
     show bg black with fade
     "Ilona kneels down, returning the wolfskin to Edwin. She asks where he normally would wear it."
     play sound 'audio/sfx/zap clothes rustle.mp3' volume 0.3 fadeout 1.0
-    extend " After he tells her, she ties it to the inside of a thick leather piece around his waist."
+
+    "After he tells her, she follows his direction and ties it to the inside of a thick leather piece around his waist."
 
     play sound 'audio/sfx/zap chain drop.mp3' volume 0.3 fadeout 1.0
 
-    "The chains fall to the floor, unbinding his thick wolf-like arms, now restored to human form."
+    "The chains fall to the floor, unbinding his previously thick wolf-like arms  — now restored to human form."
 
     $ renpy.pause(1.0)
 
@@ -1193,7 +1204,7 @@ label act2:
     ed "If it truly were that simple, then… Well, I wouldn’t have been locked up."
 
     show ilona_dim cry weep talk sad with dissolve
-    "She chokes back her tears, before gathering her composure and speaking again."
+    "She chokes back her tears before gathering her composure and speaking again."
 
     show ilona_dim pensive baby talk with dissolve
     il "Tell me everything. Even if the truth will damn us both… I need to know."

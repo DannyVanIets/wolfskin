@@ -1261,7 +1261,7 @@ label act1:
 
     scene bg black with fade
 
-    queue music 'audio/music/Death Tolls.ogg' volume 0.2
+    queue music 'audio/music/mastered/Death_Tolls.ogg' volume 0.4
 
     "The piercing sound of a howl wakes Kellac first, followed shortly by a woman's loud scream."
     play sound 'audio/sfx/wood door open and close.wav'
