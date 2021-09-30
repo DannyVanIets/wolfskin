@@ -348,7 +348,9 @@ label act1:
     show edwin_night smile angry furrow
     ed "(Although — a town full of people not trying to kill me yet is quite an improvement.)"
 
-    "The town is bustling. There's a large bonfire in the square, and there are carved turnips at the doors of all the houses. A large clock tower looms over the plaza."
+    "The town is bustling despite not being very large. A large clock tower looms over the plaza. Small patches of land growing wheat are adjacent to the plaza and there is a stocked stable for horses nearby."
+
+    "There's a large bonfire in the square, and there are carved turnips at the doors of all the houses."
 
     show ilona_night glance sad neutral with dissolve:
         zoom 0.50 xpos 0.75 xzoom -1

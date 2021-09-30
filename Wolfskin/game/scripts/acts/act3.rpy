@@ -73,7 +73,7 @@ label act3:
 
     ed "I asked to have the wolfskin back, but she ignored my plea. With the last of her strength, she begged me to kill her."
 
-    "Ilona remains silent for a long while. The fatigue is starting to set in, and she feels ready to crumble."
+    "Ilona remains silent for a long while. The fatigue is starting to set in and she feels ready to crumble."
 
     il "How did you do it? Kellac ruled her death as complications from her burn wounds."
 
@@ -108,7 +108,7 @@ label act3:
 
     stop music fadeout 3.0
 
-    "Ilona and Edwin fall silent. Even though he had killed Salome, he was not the one who orchestrated the murder on Uldin."
+    "Ilona and Edwin fall silent. Even though he had killed Salome, he was not the one who orchestrated the murder of Uldin."
 
     play music 'audio/music/mastered/Echoing_Fleur_Theme.ogg' volume 0.1
 
@@ -228,7 +228,7 @@ label act3:
     "Edwin goes to reach for her face, but pauses."
     show edwin_dim sad talk:
         ease 0.7 xpos 740
-    " He slips off his glove first, and brushes away Ilona's tears with his thumb."
+    " He slips off his glove first and brushes away Ilona's tears with his thumb."
 
     show edwin_dim anxious grin with dissolve
     ed "Then we need to survive and break the curse. We'll travel to my homeland, and you can meet my family. We'll live in a valley by a lake, and you… you won't have to feel lonely ever again."
@@ -236,7 +236,7 @@ label act3:
     show edwin_dim sad smile
     show ilona_dim cry baby happy
     with dissolve
-    "He smiles warmly at her. Her tears subside as he wipes them away. She touches the hand at her cheek, finally laughing lightly at his comment."
+    "He smiles warmly at her. Her tears subside as he wipes them away. She touches the hand at her cheek, laughing lightly at his comment."
 
     show ilona_dim glance smile blush with dissolve
     il "Let's not get ahead of ourselves yet. We need to figure out a plan first. Now that you have your wolfskin back, you could easily break through the chains… We could escape."
@@ -258,11 +258,11 @@ label act3:
 
     $ renpy.pause(2.0)
 
-    "Ilona ties the chains around Edwin again. His possession of the wolfskin should remain a secret until the time comes to escape, and he partially transforms to appear as he did before."
+    "Ilona ties the chains around Edwin again. His possession of the wolfskin should remain a secret until the time comes for them to escape and he partially transforms his arms; appearing as he did before."
 
     play sound 'audio/sfx/metal door.wav' volume 0.4
 
-    "Once confirming that nobody is at the door to the dungeon, she exits outside. The door to the dungeon shuts with a metallic groan."
+    "After confirming that nobody is at the door to the dungeon, she exits outside. The door to the dungeon shuts with a metallic groan."
 
     ## MANSE
 
@@ -271,7 +271,7 @@ label act3:
 
     play sound 'audio/ambience/wind and trees.ogg' volume 0.4
 
-    "The wind howls, and she draws her nun's habit closer to her body. The ruins of the chapel loomed towards her, as though the remaining structure would threaten to collapse."
+    "The wind howls and she draws her nun's habit closer to her body. The ruins of the chapel loom towards her, as though the remaining structurethreatens to collapse."
 
     show anari grin at center:
         zoom 0.7 yoffset 300
@@ -337,14 +337,14 @@ label act3:
     "As part of the investigation, Ilona and Kellac join the search party for Fleur."
     scene bg belorov day
     with dissolve
-    extend " While doing so, Ilona searches for an escape route, and any part of the wall that may look like it could be scalable."
+    extend " While doing so, Ilona searches for an escape route, and any part of the wall that looks like it could be scalable."
 
     $ renpy.pause(1.0)
 
     scene bg town plaza day
     with dissolve
 
-    "Eventually, Kellac takes his leave to watch over Eisleigh to make sure her condition remains stable; leaving Ilona in the town square."
+    "Eventually, Kellac takes his leave to watch over Eisleigh, to make sure her condition remains stable, leaving Ilona in the town square."
 
 # SCENE 40
 
@@ -353,7 +353,6 @@ label act3:
 
     "The day grows darker as the sun dips below the horizon. Edwin is brought out from the dungeon, his wolf-like arms bound in chains."
 
-
     play music 'audio/music/mastered/March_Of_the_Huntress_Theme_Of_Anari.ogg' fadein 3.0 volume 0.4
     play sound 'audio/sfx/footsteps slow trainers.wav'
     $ renpy.pause(2.0)
@@ -361,7 +360,7 @@ label act3:
     show edwin_sunset wolf distant at less_right with dissolve:
         zoom 0.5
 
-    "Anari is waiting, and several of the townsfolk look to the pyre. There is an air of formality surrounding Anari. Clad in her red hunting garments, the vibrant colour is illuminated by the glow of the sun."
+    "Anari is waiting. Several of the townsfolk look to the pyre. There is an air of formality surrounding Anari —clad in her red hunting garments, the vibrant colour is illuminated by the glow of the sun."
 
     hide edwin_sunset with dissolve
 
@@ -424,7 +423,7 @@ label act3:
 
 # SCENE 41
 
-    "The words were stuck in Ilona's throat. She thinks deeply about the contents of Fleur's letter, but it truly sounds like the young girl mysteriously vanished. Though part of her couldn't accept that explanation so easily."
+    "The words are stuck in Ilona's throat. She thinks deeply about the contents of Fleur's letter, but it truly sounds like the young girl mysteriously vanished. Though a part of her can’t accept that explanation so easily."
 
     "{i}I could only choose one or the other, and so I have decided to take a test of faith to prove my worthiness.{/i}"
 
@@ -456,7 +455,7 @@ label act3:
     an "All I care about are the deaths themselves at the end of the day. So? Who was the one that murdered Uldin?"
 
     scene bg black with longfade
-    "Ilona thinks carefully about the course of events, and what she really saw."
+    "Ilona thinks carefully about the course of events and what she really saw."
 
     show bw_sa_murder at center:
         zoom 0.7 xzoom-1
@@ -611,7 +610,9 @@ label act3:
     play sound 'audio/sfx/gynation paper.wav'
     scene cg open chest with fade
 
-    "Ilona hands Anari the paper she found in the chest. Upon realizing that it explains the existence of the wooden statue of Fleur, she looks thoroughly displeased, nearly crumpling the document."
+    "Ilona hands Anari the paper she found in the chest."
+
+    "Upon realizing that it explains the existence of the wooden statue of Fleur, she looks thoroughly displeased; nearly crumpling the document."
 
     il "Fleur must have had some suspicion this plan was risky, so she wrote a short letter. If she succeeded in her prank, all she had to do was destroy it."
 
@@ -629,7 +630,7 @@ label act3:
     stop music fadeout 2.0
 
     show anari_sunset fury closed -shadow with dissolve
-    "Anari crosses her arms, and her brows knit together as she takes in Ilona's theory."
+    "Anari crosses her arms and her brows knit together as she takes in Ilona's theory."
 
     show anari_sunset grin glance with dissolve
     an "You're forgetting something. You never explained what Edwin did in that room when he found the burned body. If I were him, I'd hide rather than stay out in the open. Why was he holding the body in his arms?"
@@ -643,10 +644,10 @@ label act3:
 
     play music 'audio/music/mastered/Administer_Justice_Theme_Of_Ilona.ogg' volume 0.5 fadein 1.0
 
-    "Ilona is shivering, as the warm rays of sun accentuate the bags under her eyes. Tired. Broken. But still standing."
+    "Ilona is shivering, andthe warm rays of sun accentuate the bags under her eyes. Tired. Broken. But still standing."
 
     show anari_sunset open talk with dissolve
-    "It’s impossible to say what Anari might be thinking right now. Her posture unflinching, the totality of her being in complete focus. She asks the crowd to simmer down, her usual aura of conceit fading away."
+    "Anari’s posture remains unflinching, the totality of her being in complete focus. She asks the crowd to simmer down, uncharacteristically somber."
 
     show anari_sunset neutral with dissolve
     "There is now only one question that remains — and a clocktower that's ticking away, endlessly."
@@ -709,7 +710,7 @@ label act3:
         zoom 0.8 yoffset 450
     with dissolve
 
-    "With a signal of Anari's hand, two town guards move in on Ilona and grip her arms tightly; drawing them behind her back. The men tried to bind Ilona's hands together with thick rope."
+    "At Anari's signal, two town guards move in on Ilona and grip her arms tightly; drawing them behind her back. They bind Ilona's hands together with thick rope."
 
     hide anari_sunset
     show ilona_sunset closed aaaa yell tears at center:
@@ -722,11 +723,15 @@ label act3:
 
     $ renpy.pause(1.5, hard=True)
 
-    "Ilona struggles and tries to shake the men off, but the guards do not relent. One grabs her by the hair. Edwin cannot abide by this any longer."
+    "Ilona struggles and tries to shake the men off, but the guards do not relent. One grabs her by the hair and pulls it — the pain making Ilona wince in agony."
+
+    "As Edwin watches this, he feels a pang in his heart. He can only watch in horror as Ilona is slowly but steadily bound, resist as she might."
+
+    "Edwin has seen enough."
 
     $ renpy.pause(1.5, hard=True)
 
-    play music '<from 71 to 128>audio/music/mastered/Chaos_And_Torment.ogg' fadein 3.0 noloop
+    play music '<from 71 to 128>audio/music/mastered/Chaos_And_Torment.ogg' fadein 3.0 noloop fadeout 2.0
 
     $all_moves(camera_check_points={'y': [(-111, 0.0, 'bop_out_time_warp'), (-1344, 1.27, 'ease2')], 'x': [(2250, 0.0, 'bop_out_time_warp'), (1012, 1.27, 'ease2')]})
     show hd edwolf unchained  onlayer middle:
@@ -735,11 +740,11 @@ label act3:
             zoom 0.46
             ease2 1.27 zoom 0.39
 
-    "The chains snap off him as he transforms into a massive wolf-man."
+    "He transforms, the metallic chains that once constrained him clattering to the ground in pieces."
 
     play sound 'audio/sfx/werewolf breath.mp3'
 
-    "He rushes at the guards with a growl. He throws them off, prying Ilona away from them."
+    "He rushes at the guards with a growl. Their attempts are pathetic; he pries Ilona away from them effortlessly."
 
     hide hd edwolf unchained onlayer middle
     show bg black
@@ -748,7 +753,7 @@ label act3:
         zoom 0.7 yoffset 220
     with fade
 
-    "Anari strings her bow, and takes an arrow from her quiver. She trains it on the monster."
+    "Anari strings her bow and takes an arrow from her quiver, training it on Edwin’s beastly form."
 
     an "I won't let you escape."
 
@@ -756,33 +761,45 @@ label act3:
 
     play sound 'audio/sfx/arrow whistle.mp3'
 
-    "When she releases the bowstring, her arrow whistles as it flies. Edwin transforms from half-man, half-wolf, into an enormous grey wolf, and the shot grazes him."
+    "Anari releases the bowstring and an arrow zooms out of the bow's nocking point, making a whistling sound as it flies."
+
+    "In one quick moment it pierces Edwin's hide and he transforms from his bipedal, humanoid werewolf form to the form of a massive, animalistic grey wolf."
+
+    "He screams, his senses numbed with a lust for vengeance. Immediately, he swivels and targets Anari, swiping at her."
+
+    "She takes another arrow out of her quiver but is not able to use it, as Edwin's girthy claws knock the bow out of her hands and into the distance."
+
+    "Ilona quickly jumps onto Edwin, and he barrels off."
 
     ## TOWN WALL
     scene bg black with fade
-
-    "Ilona and Edwin make their escape. Anari scowls, and then goes to climb a tower to gain a higher vantage point."
 
     scene hd edwolf protecc with longfade:
         zoom 0.5
 
     il "The gates will be already closed by now. There's a part of the wall that was hastily patched up. You should be able to climb through there."
 
-    "Edwin takes a running leap, and latches his claws into the stone wall. He shifts back into his half-wolf form and starts climbing."
+    "Edwin shifts back into his bipedal form. He takes a running leap and embeds his claws into the ragged stone wall. He shifts back into his half-wolf form and starts climbing."
 
 # SCENE 44
-    play sound 'audio/sfx/Gravel Floor Fall 1.mp3' volume 0.3
 
+    play sound 'audio/sfx/Gravel Floor Fall 1.mp3' volume 0.3
     with vpunch
 
-    "The looming stone wall in front of them is a substantial hurdle to overcome. The town guards mobilise, firing arrows that torrent Edwin and Ilona. Edwin does his best to throw off their aim."
+    "The towering stone wall looms overhead. Edwin’s claws are sharp and his balance is not unlike a cat’s — precise and refined."
+
+    "However, he does have to account for Ilona in his other muscular claw, who is throwing his balance off while he does his best to climb as fast as he can."
 
     show bg belorov sunset
     show anari_sunset fury scary neutral kill at center:
         zoom 0.85 yoffset 420
     with fade
 
-    "There is one he cannot escape from. Anari's skill with a bow is frightening, her gaze ever calm and steady."
+    "Almost as if on cue, Anari approaches on horseback."
+
+    "Seeing the beast climbing the wall, she rides over to the clock tower and jumps from her position on the horse to the bottom of the tower and begins climbing it, her bow in hand and her quiver on her back."
+
+    "Anari reaches the top of the clock tower. Fury alights her eyes and she grits her teeth, loosing a volley of arrows at the beast, one right after the other."
 
     scene bg wound1
     play sound 'audio/sfx/arrow whistle.mp3'
@@ -798,7 +815,17 @@ label act3:
     $ renpy.pause(0.1, hard=True)
     play sound 'audio/sfx/zap arrow.mp3'
 
-    "Two arrows finally meet its target. They pierce his side, fired in rapid succession."
+    "Two pierce the wolf’s right shoulder and the fourth embeds itself on his lower back. He howls in agony, almost losing his grip on Ilona."
+
+    "Nonetheless, the beast perseveres, his resolve unaffected."
+
+    stop music fadeout 3.0
+
+    "Realizing the beast is too strong to shoot down, Anari goes for the next best thing — the cargo the beast is carrying."
+    $ renpy.pause(1, hard=True)
+    extend " Ilona."
+
+    play music '<from 87 to 192>audio/music/mastered/War_Of_The_Huntress_VS_Anari.ogg' fadein 3.0
 
     scene bg wound3
     play sound 'audio/sfx/arrow whistle.mp3'
@@ -820,12 +847,14 @@ label act3:
     $ renpy.pause(0.1, hard=True)
     play sound 'audio/sfx/zap arrow.mp3'
 
-    extend " Then three more pierce his ribs. This isn’t a problem for the werewolf, as he brushes aside the pain. He’s taken greater beatings than this."
+    "Edwin has taken worse beatings than this as a werewolf, so when three arrows pierce him — this time in the ribs, he grits his fangs and continues on. He will live — he has to, for Ilona’s sake."
 
     scene edwolf claws with longfade:
         xzoom -1 zoom 0.6
 
     "However, he’s not invincible; a few more well placed shots and he’s down, along with Ilona."
+
+    "Ilona, however, is not either of those. If Ilona falls, the beast will chase after her. Thus Anari aims a volley of arrows at the nun."
 
     show ilona_sunset open aaaa talk at center with dissolve:
         zoom 0.55 yoffset 60
@@ -840,7 +869,9 @@ label act3:
     scene bg blood
     with hpunch
 
-    "An arrow pierces the hand with which Ilona was trying to use to heal. Her hand twists and contorts, reflexingly convulsing due to the writhing pain."
+    "One arrow inserts itself deep into Ilona’s shoulder blade, and she winces in agony, Edwin struggling to contain her in his grip as she writhes about."
+
+    "Despite this, Edwin still manages to hold her in his grip and continues onward."
 
     scene bg wound1
     play sound 'audio/sfx/arrow whistle.mp3'
@@ -851,7 +882,12 @@ label act3:
     scene bg wound2
     play sound 'audio/sfx/zap arrow.mp3'
 
-    "Two more pierce her body when she is caught off-guard, hitting bone and rib."
+    $ renpy.pause(0.1, hard=True)
+    stop sound
+    $ renpy.pause(0.1, hard=True)
+    play sound 'audio/sfx/zap arrow.mp3'
+
+    "Two more arrows make their mark, impacting Ilona’s ribs."
 
     scene cg_repeating_edwolf_edgewolf_blurry with longdissolve:
         zoom 0.6
@@ -867,11 +903,18 @@ label act3:
 
     ed "Ilona! Ho-hold on, we’re almost there!"
 
-    "Time seems to move too slowly. How much more pain can they accept? Edwin grimaces past the pain of his sustained wounds."
+    "Time seems to slow down for Edward and Ilona. How much more agony can endure? Edwin braces himself, trying to move past the increasingly alarming pain of his sustained wounds."
 
-    "There’s no question about it — Ilona knows Anari could never miss her mark, not with a target so large. She’s missing their vitals to prolong the hunt."
+    "Ilona feels her senses deteriorating."
 
-    "A good look at Anari leaves nothing more than questions. Does she want to let them leave? Or capture and burn them at the stake alive?"
+    "Against her better judgement, she looks down and sees a pool of blood."
+
+    "Her head dizzies with the thought of whose it is, and she decides to instead consider Anari."
+
+    "What made Anari this way? What caused her to hold so much hatred in her heart?"
+
+    "Ilona can barely make out the top of the wall. A tired Edwin helps her over."
+
     $ renpy.pause(0.3)
     play sound 'audio/sfx/arrow whistle.mp3'
 
@@ -883,17 +926,15 @@ label act3:
 
     stop music fadeout 3.0
 
-    "Her intentions remain unclear, as one final arrow impales Ilona in the back, shooting through her cleanly."
+    "One final arrow impales Ilona in the back, shooting through her cleanly."
 
-    "With a light scream, Ilona loses her footing."
+    "Ilona instinctively arches back from the arrow’s momentum and screams in anguish."
 
-    "There's only one hand she could use to hold onto the rough stone wall, and her fingers are slipping."
-
-    "Blood stains her white dress from the hole it left behind, and she can feel it saturate her skin."
+    "Blood stains her white dress from the hole the arrow left behind, and she can feel the blood being soaked up by her dress."
 
     ed "Ilona! No!"
 
-    "Edwin is quick to react, as he pulls her over while climbing over the wall; carrying her carefully, as though holding an injured bird."
+    "Edwin is quick to react and he heaves them both over the top of the wall, lifting her very carefully, as if she were an injured bird."
 
     play music 'audio/music/mastered/Rising.ogg'
 
@@ -902,7 +943,7 @@ label act3:
         xzoom -1
     with longfade
 
-    "The stone wall they escaped over is dyed red with their blood. Yet they make it out of Belorov, despite their injuries."
+    "The wall is stained red with their blood. Despite this, they escape Belorov."
 
     "Edwin marches on, with Ilona in his arms. It’s too dangerous to be out in the open."
 
@@ -930,9 +971,9 @@ label act3:
         zoom 0.5
     with dissolve
 
-    "At the awkward exchange, Edwin gingerly sets Ilona down on the ground. He reverts to human form, his ears and face red."
+    "After the awkward exchange, Edwin gingerly sets Ilona down on the ground. He reverts to human form, his ears and face red."
 
-    "Ilona tries to heal what open wounds that Edwin has, not saying a word."
+    "Ilona tries to heal what open wounds Edwin has, not saying a word."
 
     show edwin_sunset sad smile with dissolve
     ed "Yes, I've —  I’ve been waiting to call you that for so long."
@@ -955,7 +996,7 @@ label act3:
     show edwin_sunset talk with dissolve
     ed "I don't hear anyone pursuing us. Just for a moment, then…"
 
-    play sound 'audio/sfx/Footsteps Slow Trainers.wav'
+    play sound 'audio/sfx/Footsteps Slow Trainers.wav' volume 0.3
 
     scene bg valley sunset with dissolve
 
@@ -963,7 +1004,7 @@ label act3:
 
     "They walk for a while to search for a resting place, seeing the valley unfold before them."
 
-    "Ilona holds against Edwin's arm, and they walk laboriously on the path. Neither knew what lay before them."
+    "Ilona holds herself against Edwin's arm, and they walk laboriously on the path. Neither knew what lay before them."
 
     # The scrolling bg
     scene valley_scroll
@@ -1000,7 +1041,7 @@ label act3:
     show ilona_sunset solemn neutral with dissolve
     il "We must be strong and keep our past behind us. What’s done is done."
 
-    $ renpy.pause(4.0)
+    $ renpy.pause(2.0)
 
     il "Besides, I’m here for you now. And you are for me. I’m sure that God has tested our resolve more than enough."
 
@@ -1053,7 +1094,7 @@ label act3:
 
     show slow_eyeblink_filter
 
-    "Ilona hears Edwin's breathing slow. Ilona is too weary to use any more healing magic. They can’t remove the arrows that pierced them, or the two of them would surely bleed out and die."
+    "Ilona hears Edwin's breathing slow. Ilona is too weary to use any more healing magic. They can’t remove the arrows that have pierced them, or the two of them would surely bleed out and die."
 
     scene bg black with longdissolve
 
@@ -1144,7 +1185,7 @@ label act3:
 
     $ renpy.pause(1.5, hard=True)
 
-    "Ilona lays her head against Edwin's chest, and he gently wraps his arms around her. He heaves a contented sigh, yet the arrows piercing him dig into his weary body."
+    "Ilona lays her head against Edwin's chest, and he gently wraps his arms around her. He heaves a contented sigh, yet the arrows piercing him still dig into his weary body."
 
     "Edwin thinks of the time they met, reading aloud poetry and ballads together. He strokes her hair, speaking softly in a murmur. He can feel his hands wet with the blood from her wounds."
 
