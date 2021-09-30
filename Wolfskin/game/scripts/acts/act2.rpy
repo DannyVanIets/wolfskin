@@ -109,7 +109,7 @@ label act2:
 
     il "She asked you to go over the events of the day with her, after she met with us. I assume you came to her room, Anari?"
 
-    show anari_dim smile at right
+    show anari_dim neutral at right
     an "Correct. I gave my report about seeing you and Edwin for the lady's record-keeping. The one thing that's not where it should be is the chest. Though…"
 
     # Let Anari turn around to the right facing the chest
@@ -1067,7 +1067,7 @@ label act2:
 
     stop sound
     play sound 'audio/sfx/old keys jingle.mp3'
-    "She inserts the lockpicks into the keyhole. Ilona had only witnessed Eisleigh do it once, and apparently it’s not as easy as it looks."
+    "She inserts the lockpicks into the keyhole. Ilona had only witnessed Eisleigh do it once, and it’s not as easy as it looks."
 
     $ renpy.pause(3.0)
 
