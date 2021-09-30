@@ -50,7 +50,7 @@ label epilogue:
     nvlNarrator """
     We are found,
 
-    Praying deep in the dead of night,
+    Praying deep in dead of night,
 
     You have found your path.
 

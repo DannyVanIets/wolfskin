@@ -662,7 +662,7 @@ label act3:
     il "I do not care what happens next, Anari. Whether you believe me or not is irrelevant. I've only tried to make sense of what I could from this tragedy."
 
     show ilona_sunset closed solemn happy
-    il "You cannot make me feel guilt for harbouring Edwin as a werewolf. He is not defined by his curse, and I want you to see that."
+    il "You cannot make me feel guilty for harbouring Edwin as a werewolf. He is not defined by his curse, and I want you to see that."
 
     show ilona_sunset talk relaxed -sweat
     il "I have provided evidence and my theory, as you asked. Nothing I do now can change your mind. I accept it, regardless of the outcome."
@@ -806,7 +806,7 @@ label act3:
 
     "Seeing the beast climbing the wall, she rides over to the clock tower and jumps from her position on the horse to the bottom of the tower and begins climbing it, her bow in hand and her quiver on her back."
 
-    "Anari reaches the top of the clock tower. Fury alights her eyes and she grits her teeth, loosing a volley of arrows at the beast, one right after the other."
+    "Anari reaches the top of the clock tower. Fury alights her eyes and she grits her teeth, firing a volley of arrows at the beast, one right after the other."
 
     scene bg wound1
     play sound 'audio/sfx/arrow whistle.mp3'
@@ -912,7 +912,7 @@ label act3:
 
     ed "Ilona! Ho-hold on, we’re almost there!"
 
-    "Time seems to slow down for Edward and Ilona. How much more agony can endure? Edwin braces himself, trying to move past the excruciating pain of his sustained wounds."
+    "Time seems to slow down for Edward and Ilona. How much more agony can they endure? Edwin braces himself, trying to move past the excruciating pain of his sustained wounds."
 
     "Ilona feels her senses deteriorating."
 
@@ -981,7 +981,7 @@ label act3:
     with dissolve
 
     stop sound fadeout 1.0
-    
+
     "After the awkward exchange, Edwin gingerly sets Ilona down on the ground. He reverts to human form, his ears and face red."
 
     "Ilona tries to heal what open wounds Edwin has, not saying a word."
