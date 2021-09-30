@@ -1071,7 +1071,7 @@ label act1:
 
     ed "That day… I was brave, wasn’t I? I did save my sister from the werewolf attack, didn’t I?"
 
-    play sound 'audio/sfx/Creepy Wind A.ogg' volume 0.13
+    play sound 'audio/sfx/Creepy Wind A.ogg' volume 0.3
 
     ed "(But did I really do it for her? Or did my thirst for blood take over…)"
 
@@ -1100,7 +1100,7 @@ label act1:
 
     ed "...What am I doing?"
 
-    play music 'audio/music/mastered/He_Who_Seeks_Hope_Reprise.ogg' volume 0.1 fadein 1.0 noloop
+    play music 'audio/music/mastered/He_Who_Seeks_Hope_Reprise.ogg' volume 0.7 fadein 1.0 noloop
 
     ed "Ilona told me once to hold onto hope… What’s done is done."
 
