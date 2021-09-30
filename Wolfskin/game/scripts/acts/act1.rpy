@@ -12,6 +12,10 @@ transform ilona_move_right:
     ilona_transform_pos1
     linear 0.5 xpos 550
 
+# Disables that the poem does not advance automatically.
+screen disable_Lmouse():
+    key "mouseup_1" action NullAction()
+
 label act1:
 
     $ quick_menu = False
@@ -33,6 +37,9 @@ label act1:
     # Toggle on the auto-play
     $_preferences.afm_enable = True
 
+    # Makes sure that the poem advances automatically. Still possible to instantly see a sentence though!
+    show screen disable_Lmouse()
+
     # NVL mode: Edwin's monologue
 
     nvlNarrator """
@@ -50,6 +57,8 @@ label act1:
 
     So far gone.
     """
+
+    hide screen disable_Lmouse
 
     nvl clear
 

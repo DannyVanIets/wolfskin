@@ -15,6 +15,9 @@ label epilogue:
     # Toggle on the auto-play
     $_preferences.afm_enable = True
 
+    # Makes sure that the poem advances automatically. Still possible to instantly see a sentence though!
+    show screen disable_Lmouse()
+
     # NVL mode: The final poem - this is still being rewritten to have correct stanzas and structure. We are thinking part of this should be spoken in unison, and Edwin and Ilona should have separate parts.
 
 #####   ALTERNATING LINES FOR THE LAST POEM  ########
@@ -71,6 +74,8 @@ label epilogue:
 
     With you, nothing lost is found.
     """
+
+    hide screen disable_Lmouse
 
     nvl clear
 
