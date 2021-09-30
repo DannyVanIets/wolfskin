@@ -61,13 +61,12 @@ define config.sample_voice = "voice/sound_test_boyfriend.mp3"
 ## the player is at the main menu. This file will continue playing into the
 ## game, until it is stopped or another file is played.
 
-define config.main_menu_music = "audio/music/Main_menu.mp3"
+define config.main_menu_music = "audio/music/mastered/Falling_Main_Menu.ogg"
 
 ## Default values on the music, sfx, and voice sliders
 define config.default_music_volume = 0.6
 define config.default_sfx_volume = 0.8
 define config.default_voice_volume = 0.6
-
 
 ## Transitions #################################################################
 ##

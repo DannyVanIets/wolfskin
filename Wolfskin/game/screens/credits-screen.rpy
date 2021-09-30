@@ -119,7 +119,7 @@ screen credits():
             null height 80
             text "ObsidianWasp"
             null height 80
-            text "ThatOneNerd"
+            text "Andrew Rella"
             null height 80
             text "Amemarteau"
 

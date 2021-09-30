@@ -45,7 +45,7 @@ label act2:
         zoom 0.5 xzoom-1
     with dissolve
 
-    play music 'audio/music/Haunting.ogg' fadein 2.0 volume 0.5
+    play music 'audio/music/mastered/Haunting.ogg' fadein 2.0 volume 0.5
 
     "From what is seen, Uldin died of blood loss from a wound to his neck, and Salome shows signs of burns surpassing the third degree."
 
@@ -153,7 +153,7 @@ label act2:
 
     "Anari remains behind her, and nods for Ilona to pull back the covers. Ilona could see something that looked like it's carved from wood…"
 
-    play music 'audio/music/Echoing - Theme Of Fleur -.ogg' volume 0.5
+    play music 'audio/music/mastered/Echoing_Fleur_Theme.ogg' volume 0.5
 
     # wood effigy
     show effigy at center with longdissolve:
@@ -336,7 +336,7 @@ label act2:
     show ilona_dim closed talk
     il "How do you suppose that everyone is saying the absolute truth?"
 
-    play music 'audio/music/Ilona Theme.mp3' volume 0.3 loop
+    play music 'audio/music/mastered/Administer_Justice_Theme_Of_Ilona.ogg' volume 0.3 loop
 
     il "Kellac could have acted as if he had witnessed the murder. We have no account of what he was doing before that."
 
@@ -538,7 +538,7 @@ label act2:
     "Her own heart sounds louder in her ears, so much that it’s making her weak and dizzy… Her extremities are tingling."
 
     scene bg_repeating_town_plaza_kellac_blurry with fade
-    queue music 'audio/music/Fade Away.ogg' volume 0.2
+    queue music 'audio/music/mastered/Fade_Away.ogg' volume 0.2
 
     "It is taking everything for her to stay conscious. Anari glances at Ilona, before smiling to herself and walking away. Ilona sees a figure move in front of her, clad in black robes…"
 
@@ -650,7 +650,7 @@ label act2:
         zoom 0.5 xzoom -1
     with longdissolve
 
-    play music 'audio/music/The Town.ogg' volume 0.5 fadein 1.0
+    play music 'audio/music/mastered/The_Town.ogg' volume 0.5 fadein 1.0
 
     show kellac_dim relaxed talk open with dissolve
     ke "About the tea you had with Anari — was there anything odd about it? I'm asking because before the banquet, I gave Uldin his medicine, a powerful soporific."
@@ -780,7 +780,7 @@ label act2:
     with dissolve
     "Everyone else looks at Eisleigh in alarm."
 
-    play music 'audio/music/Haunting.ogg' fadein 1.0 volume 0.5
+    play music 'audio/music/mastered/Haunting.ogg' fadein 1.0 volume 0.5
 
     show ilona -sweatdrop
     show eisleigh neutral
@@ -952,7 +952,7 @@ label act2:
     play sound 'audio/sfx/stab flesh.mp3' volume 0.8
     extend "\nFive stabs pierce the soft flesh of Eisleigh's hand."
 
-    play music 'audio/music/fade away.ogg' volume 0.2 noloop
+    play music 'audio/music/mastered/Fade_Away.ogg' volume 0.2 noloop
 
     ## SALOME'S BEDROOM
 
@@ -1026,7 +1026,7 @@ label act2:
 
     il "This must be it…"
 
-    il "Ilona touches the wolfskin. She thinks back to meeting Salome, and the dissonance between that friendly encounter and the thought of Salome as a cold-blooded killer."
+    "Ilona touches the wolfskin. She thinks back to meeting Salome, and the dissonance between that friendly encounter and the thought of Salome as a cold-blooded killer."
 
     il "(Salome seemed so kind and caring. Could someone like that really be a murderer?)"
 
@@ -1100,7 +1100,7 @@ label act2:
     show edwin_dim fear yell sweat with dissolve
     ed "Ilona? You shouldn't be here. Wait, you found the…"
 
-    play music 'audio/music/Ilona Theme.mp3' volume 0.5 fadein 1.0
+    play music 'audio/music/mastered/Administer_Justice_Theme_Of_Ilona.ogg' volume 0.5 fadein 1.0
     show ilona_dim pensive solemn at easeinleft_transform:
         zoom 0.6 yoffset 30
 

@@ -130,7 +130,7 @@ label act1:
 
     "The moonlight beams over them, slightly wavering with each breath they take."
 
-    play music 'audio/music/He Who Seeks Hope - Theme Of Edwin -.ogg' fadein 5.0 volume 0.5
+    play music 'audio/music/mastered/He_Who_Seeks_Hope_Theme_Of_Edwin.ogg' fadein 5.0 volume 0.5
 
     il "(If only the moonlight would never leave us. We should rest here for a while.)"
 
@@ -229,7 +229,7 @@ label act1:
     show anari_night angry glance neutral bow with dissolve:
         zoom 0.50 xpos 10 xzoom -1
 
-    queue music 'audio/music/March Of The Huntress - Theme Of Anari -.ogg' fadein 2.0 volume 0.35
+    queue music 'audio/music/mastered/March_Of_the_Huntress_Theme_Of_Anari.ogg' fadein 2.0 volume 0.35
 
     unk "I've been observing your movements from the battlements for a while now. Be grateful that the town master wishes to have a meeting with you, or else I would have already pierced you with my arrows."
 
@@ -332,7 +332,7 @@ label act1:
 
     stop sound fadeout 4.0
 
-    play music 'audio/music/The Town.ogg' volume 0.7
+    play music 'audio/music/mastered/The_Town.ogg' volume 0.7
 
     $ renpy.pause(3.0)
 
@@ -623,7 +623,7 @@ label act1:
 
     "She speaks a few words of gratitude for the harvest and for peace and protection. When she lifts her eyes once again, the lively banquet commences."
 
-    queue music 'audio/music/The Banquet.ogg' fadein 3.0
+    queue music 'audio/music/mastered/The_Banquet.ogg' fadein 3.0
 
     hide ilona_dim with dissolve
 
@@ -1096,7 +1096,7 @@ label act1:
 
     ed "...What am I doing?"
 
-    play music 'audio/music/Edwin Vocal Theme.mp3' volume 0.1 fadein 1.0 noloop
+    play music 'audio/music/mastered/He_Who_Seeks_Hope_Reprise.ogg' volume 0.1 fadein 1.0 noloop
 
     ed "Ilona told me once to hold onto hope… What’s done is done."
 
@@ -1423,7 +1423,7 @@ label act1:
         zoom 0.5
     with longdissolve
 
-    play music 'audio/music/Wail of the Moon.ogg' volume 0.3 fadein 2.0
+    play music 'audio/music/mastered/Wail_Of_The_Moon.ogg' volume 0.3 fadein 2.0
 
     il "Edwin…"
 
@@ -1659,7 +1659,7 @@ label act1:
     show anari_night look talk -sweatdrop
     an "Ilona. Did you know that the man was a werewolf before entering this town?"
 
-    play music 'audio/music/Ilonas_Theme_backing.mp3' volume 0.3 fadein 2.0 noloop
+    play music 'audio/music/mastered/Administer_Justice_Instrumental.ogg' volume 0.3 fadein 2.0 noloop
 
     show ilona_night talk
     il "…Yes. In my presence, he's more capable of controlling his transformation."

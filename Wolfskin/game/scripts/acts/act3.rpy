@@ -31,7 +31,7 @@ label act3:
 
 # SCENE 35-39
 
-    play music 'audio/music/He Who Seeks Hope - Theme Of Edwin -.ogg' fadein 5.0 volume 0.5
+    play music 'audio/music/mastered/He_Who_Seeks_Hope_Theme_Of_Edwin.ogg' fadein 5.0 volume 0.5
 
     scene bg moon with dissolve
 
@@ -110,8 +110,7 @@ label act3:
 
     "Ilona and Edwin fall silent. Even though he had killed Salome, he was not the one who orchestrated the murder on Uldin."
 
-
-    play music 'audio/music/Echoing - Theme Of Fleur -.ogg' volume 0.1
+    play music 'audio/music/mastered/Echoing_Fleur_Theme.ogg' volume 0.1
 
     scene bg forest day
     with dissolve
@@ -204,7 +203,7 @@ label act3:
     show edwin_dim angry furrow with dissolve
     ed "Your hurt and pain will heal. You can recover. If you're with me, you won't be able to walk a righteous path. But if you leave me here, at least one of us will survive."
 
-    play music 'audio/music/Ilonas_Theme_backing.mp3' volume 0.3 fadein 2.0
+    play music 'audio/music/mastered/Administer_Justice_Instrumental.ogg' volume 0.3 fadein 2.0
 
     show ilona_dim cry talk
     show edwin_dim neutral
@@ -355,7 +354,7 @@ label act3:
     "The day grows darker as the sun dips below the horizon. Edwin is brought out from the dungeon, his wolf-like arms bound in chains."
 
 
-    play music 'audio/music/March Of The Huntress - Theme Of Anari -.ogg' fadein 3.0 volume 0.4
+    play music 'audio/music/mastered/March_Of_the_Huntress_Theme_Of_Anari.ogg' fadein 3.0 volume 0.4
     play sound 'audio/sfx/footsteps slow trainers.wav'
     $ renpy.pause(2.0)
 
@@ -385,7 +384,7 @@ label act3:
 
     "Anari's face is grim. She pulls out a letter, the seal on it broken. She reads the brief message out loud for all to hear."
 
-    play music '<from 65 to 128>audio/music/Echoing - Theme Of Fleur -.ogg' fadein 4.0 noloop
+    play music '<from 65 to 128>audio/music/mastered/Echoing_Fleur_Theme.ogg' fadein 4.0 noloop
 
     hide anari_sunset with dissolve
 
@@ -451,7 +450,7 @@ label act3:
     show ilona_sunset glance
     il "During the banquet, Fleur and Salome were able to figure out Edwin's true nature, and thought to drug him by lacing the sugar with the soporific. When Edwin was asleep, they were able to steal a cursed item from him, and assume the form of a werewolf."
 
-    play music 'audio/music/Wail of the Moon.ogg' volume 0.4 fadein 2.0
+    play music 'audio/music/mastered/Wail_Of_The_Moon.ogg' volume 0.4 fadein 2.0
 
     show anari_sunset open talk angry
     an "All I care about are the deaths themselves at the end of the day. So? Who was the one that murdered Uldin?"
@@ -505,7 +504,7 @@ label act3:
         zoom 0.7 xzoom-1
     hide bw_sa_murder
     with vpunch
-    play music 'audio/music/Chaos and Torment.ogg' volume 0.5
+    play music 'audio/music/mastered/Chaos_and_Torment.ogg' volume 0.5
     extend " The corpse of Salome has been misidentified."
 
     scene bg town plaza sunset
@@ -642,7 +641,7 @@ label act3:
 
     "Ilona’s proposition is met with mumblings, grumblings, dissatisfied grunts and a few voices of support from the townsfolk. However, it’s all drowned out in the eyes and minds of both Ilona and Anari-"
 
-    play music 'audio/music/Ilona Theme.mp3' volume 0.5 fadein 1.0
+    play music 'audio/music/mastered/Administer_Justice_Theme_Of_Ilona.ogg' volume 0.5 fadein 1.0
 
     "Ilona is shivering, as the warm rays of sun accentuate the bags under her eyes. Tired. Broken. But still standing."
 
@@ -727,7 +726,7 @@ label act3:
 
     $ renpy.pause(1.5, hard=True)
 
-    play music '<from 71 to 128>audio/music/Chaos And Torment.ogg' fadein 3.0 noloop
+    play music '<from 71 to 128>audio/music/mastered/Chaos_And_Torment.ogg' fadein 3.0 noloop
 
     $all_moves(camera_check_points={'y': [(-111, 0.0, 'bop_out_time_warp'), (-1344, 1.27, 'ease2')], 'x': [(2250, 0.0, 'bop_out_time_warp'), (1012, 1.27, 'ease2')]})
     show hd edwolf unchained  onlayer middle:
@@ -896,7 +895,7 @@ label act3:
 
     "Edwin is quick to react, as he pulls her over while climbing over the wall; carrying her carefully, as though holding an injured bird."
 
-    play music 'audio/music/Rising.ogg'
+    play music 'audio/music/mastered/Rising.ogg'
 
     # mirror image of wall to give impression they climbed over it
     scene bg belorov sunset:
