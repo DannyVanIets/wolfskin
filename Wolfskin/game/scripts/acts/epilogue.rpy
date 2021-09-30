@@ -8,11 +8,14 @@ label epilogue:
     scene bg black
     with fade
 
-    # NVL mode: The final poem - this is still being rewritten to have correct stanzas and structure. We are thinking part of this should be spoken in unison, and Edwin and Ilona should have separate parts.
-
     $ quick_menu = False
 
     window hide
+
+    # Toggle on the auto-play
+    $_preferences.afm_enable = True
+
+    # NVL mode: The final poem - this is still being rewritten to have correct stanzas and structure. We are thinking part of this should be spoken in unison, and Edwin and Ilona should have separate parts.
 
 #####   ALTERNATING LINES FOR THE LAST POEM  ########
 #
@@ -72,6 +75,9 @@ label epilogue:
     nvl clear
 
     play music 'audio/sfx/birdsong.ogg' volume 0.7
+
+    # Toggle off the auto-play
+    $_preferences.afm_enable = False
 
     scene no_cry_be_happy with longfade
     $ renpy.pause (6, hard=True)

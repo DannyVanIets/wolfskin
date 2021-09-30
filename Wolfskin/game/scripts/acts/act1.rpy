@@ -30,6 +30,9 @@ label act1:
     # Edwin's monologue for the intro in NVL mode
     define nvlNarrator = Character(None, kind=nvl, what_font="BluuNext-Bolditalic.otf", what_size=50, what_kerning=2)
 
+    # Toggle on the auto-play
+    $_preferences.afm_enable = True
+
     # NVL mode: Edwin's monologue
 
     nvlNarrator """
@@ -50,7 +53,10 @@ label act1:
 
     nvl clear
 
-    # Show the intro of the act.
+    # Toggle off the auto-play
+    $_preferences.afm_enable = False
+
+    ## Show the intro of the act.
 
     scene bg fluffies
     with fade
