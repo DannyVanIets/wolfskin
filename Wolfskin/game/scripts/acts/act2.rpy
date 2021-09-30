@@ -427,7 +427,7 @@ label act2:
 
     scene bg fleur bedroom with dissolve
 
-    "Anari is confident up until this point — calm and refined. Now, dread and restlessness begin to take over"
+    "Anari is confident up until this point — calm and refined. Now, dread and restlessness begin to take over."
 
     show effigy at center with dissolve:
         zoom 0.5
