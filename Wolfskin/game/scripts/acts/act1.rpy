@@ -959,7 +959,7 @@ label act1:
         xzoom 1 xcenter 850
     with dissolve
 
-    fl "Edwin, are you okay? You're looking awfully pale."
+    fl "Edwin, are you okay? You look awfully pale."
 
     show uldin_dim closed talk
     ul "I apologise, I might have gone too far..."
