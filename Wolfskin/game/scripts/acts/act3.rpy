@@ -644,7 +644,7 @@ label act3:
 
     play music 'audio/music/mastered/Administer_Justice_Theme_Of_Ilona.ogg' volume 0.5 fadein 1.0
 
-    "Ilona is shivering, andthe warm rays of sun accentuate the bags under her eyes. Tired. Broken. But still standing."
+    "Ilona is shivering, and the warm rays of sun accentuate the bags under her eyes. Tired. Broken. But still standing."
 
     show anari_sunset open talk with dissolve
     "Anari’s posture remains unflinching, the totality of her being in complete focus. She asks the crowd to simmer down, uncharacteristically somber."
