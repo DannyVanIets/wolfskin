@@ -749,6 +749,8 @@ label act3:
 
     "He rushes at the guards with a growl. Their attempts are pathetic; he pries Ilona away from them effortlessly."
 
+    "His claws slice through the rope, freeing her."
+
     hide hd edwolf unchained onlayer middle
     show bg black
     scene bg town plaza sunset
@@ -970,7 +972,7 @@ label act3:
 
     il "{i}Darling?{/i}"
 
-    play sound 'audio/sfx/zap clothes rustle.mp3'
+    play sound 'audio/sfx/zap clothes rustle.mp3' volume 0.3
 
     show ilona_sunset shock sad talk blush blood:
         zoom 0.5 yoffset 0 xcenter 700
@@ -978,6 +980,8 @@ label act3:
         zoom 0.5
     with dissolve
 
+    stop sound fadeout 1.0
+    
     "After the awkward exchange, Edwin gingerly sets Ilona down on the ground. He reverts to human form, his ears and face red."
 
     "Ilona tries to heal what open wounds Edwin has, not saying a word."
