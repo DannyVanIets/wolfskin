@@ -348,7 +348,7 @@ label act1:
     show edwin_night smile angry furrow
     ed "(Although — a town full of people not trying to kill me yet is quite an improvement.)"
 
-    "The town is bustling. There's a large bonfire in the square, and there are carved turnips at the doors of all the houses-"
+    "The town is bustling. There's a large bonfire in the square, and there are carved turnips at the doors of all the houses. A large clock tower looms over the plaza."
 
     show ilona_night glance sad neutral with dissolve:
         zoom 0.50 xpos 0.75 xzoom -1
@@ -1005,13 +1005,13 @@ label act1:
 
     "Having separate sleeping quarters is more than Edwin could normally ask for. In this style of house, he had assumed that the guests share one large sleeping space."
 
-    show eisleigh_dim open neutral
+    show eisleigh_dim open neutral with dissolve
 
     "He was prepared to run out of the manse, and to be alone in the darkness of night."
 
     "Instead, he has to play the role of an honoured houseguest."
 
-    show eisleigh_dim smile
+    show eisleigh_dim smile with dissolve
 
     "Eisleigh bows and leaves him with only a few words of comfort, hoping that he will feel better with rest."
 
@@ -1055,15 +1055,15 @@ label act1:
 
     ed "Look at me, a husk of myself. Not even courage remains."
 
-    show edwin_dim stare
+    show edwin_dim stare with dissolve
     ed "Pathetic. I should be better than this. Stronger than this."
 
-    show edwin_dim stare yell
+    show edwin_dim stare yell with dissolve
     ed "What was the point of going through the trials of the military, otherwise?"
 
     ed "I’ve been through worse."
 
-    show edwin_dim fury talk
+    show edwin_dim fury talk with dissolve
 
     ed "That day… I was brave, wasn’t I? I did save my sister from the werewolf attack, didn’t I?"
 

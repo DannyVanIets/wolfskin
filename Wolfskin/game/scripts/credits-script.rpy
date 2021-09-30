@@ -21,7 +21,7 @@ label credits_from_script:
     scene cg_cry with longfade
 
     ## Play credits theme
-    play music 'audio/music/Main Theme WIP.mp3' fadein 2.0 noloop
+    play music 'audio/music/mastered/Lost_No_More_Main_Theme.ogg' fadein 2.0 noloop
 
     ## Go to the credits screen, in here is the text for the credits.
     call screen credits
