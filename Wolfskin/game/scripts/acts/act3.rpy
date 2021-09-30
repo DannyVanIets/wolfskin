@@ -271,7 +271,7 @@ label act3:
 
     play sound 'audio/ambience/wind and trees.ogg' volume 0.4
 
-    "The wind howls and she draws her nun's habit closer to her body. The ruins of the chapel loom towards her, as though the remaining structurethreatens to collapse."
+    "The wind howls and she draws her nun's habit closer to her body. The ruins of the chapel loom towards her, as though the remaining structure threatens to collapse."
 
     show anari grin at center:
         zoom 0.7 yoffset 300
@@ -869,9 +869,11 @@ label act3:
     scene bg blood
     with hpunch
 
-    "One arrow inserts itself deep into Ilona’s shoulder blade, and she winces in agony, Edwin struggling to contain her in his grip as she writhes about."
+    "One arrow inserts itself deep into Ilona’s shoulder blade, and she winces in agony."
 
-    "Despite this, Edwin still manages to hold her in his grip and continues onward."
+    "Edwin struggles to contain her in his grip as she writhes about."
+
+    "Despite this, Edwin still manages to hold her and continues onward."
 
     scene bg wound1
     play sound 'audio/sfx/arrow whistle.mp3'
@@ -903,7 +905,7 @@ label act3:
 
     ed "Ilona! Ho-hold on, we’re almost there!"
 
-    "Time seems to slow down for Edward and Ilona. How much more agony can endure? Edwin braces himself, trying to move past the increasingly alarming pain of his sustained wounds."
+    "Time seems to slow down for Edward and Ilona. How much more agony can endure? Edwin braces himself, trying to move past the excruciating pain of his sustained wounds."
 
     "Ilona feels her senses deteriorating."
 
@@ -934,7 +936,7 @@ label act3:
 
     ed "Ilona! No!"
 
-    "Edwin is quick to react and he heaves them both over the top of the wall, lifting her very carefully, as if she were an injured bird."
+    "Edwin is quick to react and he heaves them both over the top of the wall, lifting her very carefully as if she were an injured bird."
 
     play music 'audio/music/mastered/Rising.ogg'
 
@@ -945,7 +947,7 @@ label act3:
 
     "The wall is stained red with their blood. Despite this, they escape Belorov."
 
-    "Edwin marches on, with Ilona in his arms. It’s too dangerous to be out in the open."
+    "Edwin marches on with Ilona in his arms. It’s too dangerous to be out in the open."
 
     "They search for a place to rest, as dusk awaits them with open arms."
 

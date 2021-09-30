@@ -124,7 +124,9 @@ label act1:
 
     "As she says this, she places her hands over his. His hands are abnormally cold to touch. Ilona learned this was a sign of his transformation."
 
-    "Even so, she must remain with him."
+    "She gently caresses his hand and strokes it soothingly."
+
+    "Despite his curse, she must remain with him."
 
     show ilona_twilight closed relaxed with dissolve
 
@@ -222,7 +224,7 @@ label act1:
 
     stop music fadeout 1.0
 
-    "Edwin immediately lets go of her hand, intertwined seconds ago, but now balled into a fist. The rustling of dry leaves brought with it a heavily armed guard and an archer under a cloak."
+    "Edwin immediately releases her hand, intertwined seconds ago, but now balled into a fist. The rustling of dry leaves brings with it a heavily armed guard and an archer wearing a cloak."
 
     unk "That's enough loitering around the town wall looking suspicious, don't you think?"
 
