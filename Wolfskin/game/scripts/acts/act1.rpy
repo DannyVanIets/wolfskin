@@ -107,11 +107,11 @@ label act1:
 
     ed "I know that I'm asking for too much, but despite everything that's happened… would you please stay with me?"
 
-    show ilona_twilight sad shock talk
+    show ilona_twilight sad shock talk with dissolve
 
     il "What? Edwin, please, calm down-"
 
-    show edwin_twilight fear furrow talk
+    show edwin_twilight fear furrow talk with dissolve
 
     ed "... Ilona I-I can’t. Not in a situation like this..."
 
@@ -211,8 +211,6 @@ label act1:
     show ilona_night neutral
     with dissolve
 
-    play sound 'audio/ambience/wind and trees.ogg' fadein 5.0 volume 0.1
-
     show edwin_night glance talk with dissolve
 
     ed "I did not know the extent of the hatred that lay within their souls until that night… to go as far as to burn me alive…"
@@ -234,6 +232,8 @@ label act1:
     hide ilona_night
 
     hide edwin_night
+
+    play sound 'audio/sfx/Letting_go_of_your_totally_non-romantic_partners_hand_because_someone_just_saw_you.mp3' volume 0.7
 
     with vpunch
 
@@ -1574,6 +1574,8 @@ label act1:
     il "Something's wrong. Your hands… they're not turning back—"
 
     an "Stop — time's up."
+
+    play sound 'audio/sfx/Letting_go_of_your_totally_non-romantic_partners_hand_because_someone_just_saw_you.mp3' volume 0.7
 
     # Ilona turns left (facing Anari)
     show ilona_twilight:

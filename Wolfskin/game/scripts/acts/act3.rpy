@@ -503,7 +503,7 @@ label act3:
         zoom 0.7 xzoom-1
     hide bw_sa_murder
     with vpunch
-    play music 'audio/music/mastered/Chaos_and_Torment.ogg' volume 0.5
+    play music 'audio/music/mastered/Chaos_and_Torment.ogg' volume 0.7
     extend " The corpse of Salome has been misidentified."
 
     scene bg town plaza sunset
@@ -730,7 +730,7 @@ label act3:
 
     play sound 'audio/sfx/Growl_6.mp3'
 
-    play music '<from 71.55 to 128>audio/music/mastered/Chaos_And_Torment.ogg' fadeout 2.0 fadein 1.0
+    play music '<from 46.88 to 128>audio/music/mastered/Chaos_And_Torment.ogg' fadeout 2.0 fadein 0.6 volume 1.0
 
     "Edwin has seen enough."
 
@@ -809,7 +809,7 @@ label act3:
     "Anari reaches the top of the clock tower. Fury alights her eyes and she grits her teeth, firing a volley of arrows at the beast, one right after the other."
 
     scene bg wound1
-    play sound 'audio/sfx/arrow whistle.mp3'
+    play sound 'audio/sfx/arrow_near.mp3'
 
     $ renpy.pause(0.6, hard=True)
     stop sound
@@ -832,7 +832,7 @@ label act3:
     $ renpy.pause(1, hard=True)
     extend " Ilona."
 
-    play music '<from 87 to 192>audio/music/mastered/War_Of_The_Huntress_VS_Anari.ogg' fadein 3.0
+    play music '<from 43 to 192>audio/music/mastered/War_Of_The_Huntress_VS_Anari.ogg' fadein 3.0
 
     scene bg wound3
     play sound 'audio/sfx/arrow whistle.mp3'
@@ -972,7 +972,7 @@ label act3:
 
     il "{i}Darling?{/i}"
 
-    play sound 'audio/sfx/zap clothes rustle.mp3' volume 0.3
+    play sound 'audio/sfx/Letting_go_of_your_totally_non-romantic_partners_hand_because_someone_just_saw_you.mp3' volume 0.7
 
     show ilona_sunset shock sad talk blush blood:
         zoom 0.5 yoffset 0 xcenter 700
