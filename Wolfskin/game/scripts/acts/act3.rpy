@@ -650,7 +650,7 @@ label act3:
     "Anari’s posture remains unflinching, the totality of her being in complete focus. She asks the crowd to simmer down, uncharacteristically somber."
 
     show anari_sunset neutral with dissolve
-    "There is now only one question that remains — and a clocktower that's ticking away, endlessly."
+    "There is now only one question that remains — and a clock tower that's ticking away, endlessly."
 
     show anari_sunset blank fury yell with dissolve
     an "So where is she? Where is Salome?"
