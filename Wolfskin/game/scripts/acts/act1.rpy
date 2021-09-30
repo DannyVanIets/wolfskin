@@ -214,7 +214,7 @@ label act1:
     show ilona_night closed talk
     with dissolve
 
-    il "If you want my answer as a {i}former{/i} nun… You and I have sinned."
+    il "If you want my answer as a former nun… You and I have sinned."
 
     il "You said that you were a beast, through and through."
 
@@ -1345,7 +1345,7 @@ label act1:
     show kellac_twilight anger closed grimace sweat at center:
         zoom 0.7 yoffset 380
 
-    ke "It's no use! Damn it! If only I were stronger…"
+    ke "It's no use! Damn it! If only I was stronger…"
 
     show kellac_twilight glance talk
     ke "I'm going to get Anari! Something's wrong."
