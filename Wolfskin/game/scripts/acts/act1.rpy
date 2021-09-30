@@ -1283,7 +1283,7 @@ label act1:
     queue music 'audio/music/mastered/Death_Tolls.ogg' volume 0.4
 
     "The piercing sound of a howl wakes Kellac first, followed shortly by a woman's loud scream."
-    play sound 'audio/sfx/wood door open and close.wav'
+    play sound 'audio/sfx/Door_Slam.mp3'
     extend " His door opens with a slam, sensing something is incredibly wrong…"
 
     scene bg bedroom night dark
