@@ -200,7 +200,7 @@ label act1:
 
     show edwin_night stare yell with dissolve
 
-    ed "What is it that we've done wrong? Is us being together something so heinous? Is my existence such a sin?"
+    ed "What is it that we've done so wrong? Is us being together something so heinous? Is my existence such a sin?"
 
     show ilona_night sad pensive neutral with dissolve:
         zoom 0.50 xpos 50
@@ -509,7 +509,7 @@ label act1:
         xcenter 1750 xzoom -1
     with dissolve
 
-    an "Sir Uldin, Lady Salome. I've brought to you Sister Ilona, and her companion Edwin."
+    an "Sir Uldin, Lady Salome. I've brought you Sister Ilona, and her companion Edwin."
 
     show uldin_twilight closed laugh
 
@@ -737,7 +737,7 @@ label act1:
     show fleur_dim nii
     show salome_dim smile
 
-    fl "Have you met any mythical creatures in your journeys? Ever met the fair folk?? I've always dreamed of finding one!!"
+    fl "Have you seen any mythical creatures in your journeys? Ever met the fair folk?? I've always dreamed of finding one!!"
 
     show edwin_dim anxious smile -blush
 
@@ -1404,7 +1404,7 @@ label act1:
 
     play sound 'audio/sfx/stairs ascending hurried.wav'
 
-    "When they rush back to the masters' chambers, they realize there is no use for the master key. They find the door broken and battered, but no sign of Anari or Kellac yet."
+    "When they rush back to the master's chambers, they realize there is no use for the master key. They find the door broken and battered, but no sign of Anari or Kellac yet."
 
     scene bg gore
     with fade

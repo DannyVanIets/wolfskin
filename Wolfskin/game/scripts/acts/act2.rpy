@@ -315,7 +315,7 @@ label act2:
 
     scene bg hallway night dark
     with dissolve
-    "It would take some time for a person sleeping below the master's chambers to make it to the servants quarters, which is on the opposite end of the manse."
+    "It would take some time for a person sleeping below the master's chambers to make it to the servants' quarters, which is on the opposite end of the manse."
 
     "Since Anari was on duty for her job as the head of the town guard, she could not possibly be at the crime scene during the murder."
 
@@ -485,7 +485,7 @@ label act2:
     show ilona_dim glance annoyed
     il "(Are we?)"
 
-    an "-and I can’t bear to see you with such a sad face, I’ll let you in on a secret: there is a cure for lycanthropy. You may yet be rid of the beast that lies within your dear beloved."
+    an "-and I can’t bear to see you with such a sad face, I’ll let you in on a secret: there's a cure for lycanthropy. You may yet be rid of the beast that lies within your dear beloved."
 
     show anari_dim look
     an "For your and Edwin’s sake, I suggest you use it."
@@ -804,7 +804,7 @@ label act2:
     ei "But what if it was an item? If he feared betrayal, he wouldn't even show it to an ally."
 
     show eisleigh closed
-    ei "Besides, there's always a risk involved in keeping that item safe — so it is better that only the bearer knows of it, because it could get lost, destroyed, or..."
+    ei "Besides, there's always a risk involved in keeping that item safe — so it is better that only the bearer knows of it, because it could get lost, or destroyed, or..."
 
     show ilona aaaa neutral
     il "… stolen."
