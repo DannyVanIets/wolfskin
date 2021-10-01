@@ -728,7 +728,7 @@ label act3:
 
     "As Edwin watches this, he feels a pang in his heart. He can only watch in horror as Ilona is slowly but steadily bound, resist as she might."
 
-    play sound 'audio/sfx/Growl_6.mp3'
+    play sound [ "<silence 1.3>", "audio/sfx/Growl_6.mp3" ]
 
     play music '<from 46.88 to 128>audio/music/mastered/Chaos_And_Torment.ogg' fadeout 2.0 fadein 0.6 volume 1.0
 
@@ -758,23 +758,29 @@ label act3:
         zoom 0.7 yoffset 220
     with fade
 
+    play sound 'audio/sfx/Pull_Bow.mp3'
+
     "Anari strings her bow and takes an arrow from her quiver, training it on Edwin’s beastly form."
 
     an "I won't let you escape."
 
     hide anari_sunset with dissolve
 
-    play sound 'audio/sfx/arrow whistle.mp3'
+    play sound 'audio/sfx/arrow_fire.mp3'
 
-    "Anari releases the bowstring and an arrow zooms out of the bow's nocking point, making a whistling sound as it flies."
+    "Anari releases the bowstring, and the arrow flies with a terrifying whistle."
 
-    "In one quick moment it grazes against Edwin's hide and he transforms from his bipedal, humanoid werewolf form to the form of a massive, animalistic grey wolf."
+    play sound 'audio/sfx/arrow_hit.mp3'
+
+    "In one quick moment it grazes against Edwin's hide and he transforms from his bipedal, humanoid werewolf form to the form of a massive grey wolf."
 
     play sound 'audio/sfx/Growl_6.mp3'
 
     "His senses numb with a lust for vengeance. Immediately, he swivels and targets Anari, swiping at her."
 
-    "She takes another arrow out of her quiver but is not able to use it, as Edwin's girthy claws knock the bow out of her hands and into the distance."
+    "She deftly steps back from a swipe from Edwin's claws, her every movement precise and intentional."
+
+    "Anari can predict his behaviour easily. After all, he's only a beast — a sentimental one at that."
 
     "Ilona quickly jumps onto Edwin, and he barrels off."
 
@@ -786,53 +792,51 @@ label act3:
 
     il "The gates will be already closed by now. There's a part of the wall that was hastily patched up. You should be able to climb through there."
 
-    "Edwin shifts back into his bipedal form. He takes a running leap and embeds his claws into the ragged stone wall. He shifts back into his half-wolf form and starts climbing."
+    "Edwin shifts back into his bipedal form. The towering stone wall looms ahead."
+
+    "He takes a running leap and embeds his claws into the ragged stone wall. He shifts back into his half-wolf form and starts climbing."
 
 # SCENE 44
 
     play sound 'audio/sfx/Gravel Floor Fall 1.mp3' volume 0.3
     with vpunch
 
-    "The towering stone wall looms overhead. Edwin’s claws are sharp and his balance is not unlike a cat’s — precise and refined."
-
-    "However, he does have to account for Ilona in his other muscular claw, who is throwing his balance off while he does his best to climb as fast as he can."
-
     show bg belorov sunset
     show anari_sunset fury scary neutral kill at center:
         zoom 0.85 yoffset 420
     with fade
 
-    "Almost as if on cue, Anari approaches on horseback."
+    "Anari begins climbing the ladder of the clock tower, her bow in hand and her quiver on her back."
 
-    "Seeing the beast climbing the wall, she rides over to the clock tower and jumps from her position on the horse to the bottom of the tower and begins climbing it, her bow in hand and her quiver on her back."
+    play sound 'audio/sfx/Pull_Bow.mp3'
 
-    "Anari reaches the top of the clock tower. Fury alights her eyes and she grits her teeth, firing a volley of arrows at the beast, one right after the other."
+    "When she reaches to the top of the clock tower, pulls back the bowstring and takes aim at the beast."
 
     scene bg wound1
-    play sound 'audio/sfx/arrow_near.mp3'
-
-    $ renpy.pause(0.6, hard=True)
+    play sound 'audio/sfx/arrow_fire.mp3'
+    $ renpy.pause(0.8, hard=True)
     stop sound
 
     scene bg wound2
-    play sound 'audio/sfx/zap arrow.mp3'
+    play sound 'audio/sfx/arrow_impact_flesh.mp3'
 
     $ renpy.pause(0.1, hard=True)
     stop sound
     $ renpy.pause(0.1, hard=True)
     play sound 'audio/sfx/zap arrow.mp3'
 
-    "Two pierce the wolf’s right shoulder and the fourth embeds itself on his lower back. He howls in agony, almost losing his grip on Ilona."
-
-    "Nonetheless, the beast perseveres, his resolve unaffected."
+    "Two pierce the wolf’s right shoulder. He howls in agony, almost losing his grip on Ilona. Nonetheless, the beast perseveres, his resolve unaffected."
 
     stop music fadeout 3.0
 
-    "Realizing the beast is too strong to shoot down, Anari goes for the next best thing — the cargo the beast is carrying."
+    "The arrows embedded in him are a waste of her ammunition. Anari goes for his true weak point — the burden the beast is carrying."
     $ renpy.pause(1, hard=True)
+    play sound 'audio/sfx/Pull_Bow.mp3'
     extend " Ilona."
 
     play music '<from 43 to 192>audio/music/mastered/War_Of_The_Huntress_VS_Anari.ogg' fadein 3.0
+
+    play sound 'audio/sfx/Pull_Bow.mp3'
 
     scene bg wound3
     play sound 'audio/sfx/arrow whistle.mp3'
@@ -841,7 +845,7 @@ label act3:
     stop sound
 
     scene bg wound4
-    play sound 'audio/sfx/zap arrow.mp3'
+    play sound 'audio/sfx/arrow_impact_flesh.mp3'
 
     $ renpy.pause(0.2, hard=True)
     stop sound
@@ -854,14 +858,18 @@ label act3:
     $ renpy.pause(0.1, hard=True)
     play sound 'audio/sfx/zap arrow.mp3'
 
-    "Edwin has taken worse beatings than this as a werewolf, so when three arrows pierce him — this time in the ribs, he grits his fangs and continues on. He will live — he has to, for Ilona’s sake."
+    "Edwin shields Ilona, clutching her close. Three arrows pierce his hide."
+
+    "He's taken worse beatings than this as a werewolf, so he grits his fangs and continues on. He will live — he has to."
 
     scene edwolf claws with longfade:
         xzoom -1 zoom 0.6
 
     "However, he’s not invincible; a few more well placed shots and he’s down, along with Ilona."
 
-    "Ilona, however, is not either of those. If Ilona falls, the beast will chase after her. Thus Anari aims a volley of arrows at the nun."
+    "Anari knows that Ilona is neither of those. If Ilona falls, the beast will chase after her."
+    play sound 'audio/sfx/Pull_Bow.mp3'
+    extend " Anari takes aim again, completely focused on her target."
 
     show ilona_sunset open aaaa talk at center with dissolve:
         zoom 0.55 yoffset 60
@@ -876,11 +884,11 @@ label act3:
     scene bg blood
     with hpunch
 
-    "One arrow inserts itself deep into Ilona’s shoulder blade, and she winces in agony."
+    "One arrow inserts itself deep into Ilona’s shoulder blade, and she winces and writhes in agony. Despite this, Edwin still manages to hold her and continues onward."
 
-    "Edwin struggles to contain her in his grip as she writhes about."
+    play sound 'audio/sfx/Pull_Bow.mp3'
 
-    "Despite this, Edwin still manages to hold her and continues onward."
+    "Anari pulls back her bow again, readying another volley."
 
     scene bg wound1
     play sound 'audio/sfx/arrow whistle.mp3'
@@ -889,7 +897,7 @@ label act3:
     stop sound
 
     scene bg wound2
-    play sound 'audio/sfx/zap arrow.mp3'
+    play sound 'audio/sfx/arrow_impact_flesh.mp3'
 
     $ renpy.pause(0.1, hard=True)
     stop sound
@@ -912,17 +920,17 @@ label act3:
 
     ed "Ilona! Ho-hold on, we’re almost there!"
 
-    "Time seems to slow down for Edward and Ilona. How much more agony can they endure? Edwin braces himself, trying to move past the excruciating pain of his sustained wounds."
+    "Time seems to slow down for Edward and Ilona. How much more agony can they endure? Edwin grimaces past the pain of his sustained wounds."
 
-    "Ilona feels her senses deteriorating."
-
-    "Against her better judgement, she looks down and sees a pool of blood."
-
-    "Her head dizzies with the thought of whose it is, and she decides to instead consider Anari."
-
-    "What made Anari this way? What caused her to hold so much hatred in her heart?"
+    "There's no question about it — Ilona knows Anari could never miss her mark, and that Edwin might have survived if he escaped on his own."
 
     "Ilona can barely make out the top of the wall. A tired Edwin helps her over."
+
+    "One last glance at Anari leaves nothing more than questions."
+
+    play sound 'audio/sfx/Pull_Bow.mp3'
+
+    "Does she want to {i}let{/i} them leave? Or capture and burn them at the stake alive?"
 
     $ renpy.pause(0.3)
     play sound 'audio/sfx/arrow whistle.mp3'
@@ -935,11 +943,9 @@ label act3:
 
     stop music fadeout 3.0
 
-    "One final arrow impales Ilona in the back, shooting through her cleanly."
+    "One final arrow impales Ilona, shooting through her cleanly through the abdomen."
 
     "Ilona instinctively arches back from the arrow’s momentum and screams in anguish."
-
-    "Blood stains her white dress from the hole the arrow left behind, and she can feel the blood being soaked up by her dress."
 
     ed "Ilona! No!"
 
