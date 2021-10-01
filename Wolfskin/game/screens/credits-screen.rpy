@@ -159,7 +159,7 @@ screen credits():
 
             text "Assistant BG Artist & Colours" size 100
             null height 80
-            text "Jason"
+            text "Jason \”Helrouis\” Cheng"
 
             null height 400
 
