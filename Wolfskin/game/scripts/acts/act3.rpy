@@ -928,13 +928,13 @@ label act3:
 
     "Ilona can barely make out the top of the wall. A tired Edwin helps her over."
 
-    "Ilona considers Anari's motivations. Was she really telling the truth about not being interested in taking power in Belorov? What was the point of that trial she organized?
+    "Ilona considers Anari's motivations. Was she really telling the truth about not being interested in taking power in Belorov? What was the point of that trial she organized?"
 
     "One last glance at Anari leaves nothing more than further questions about her intentions…"
 
     play sound 'audio/sfx/Pull_Bow.mp3'
 
-    extend " but in her current state of mind, she can barely begin to consider what other questions to ask."
+    extend " but in her current state of mind, she can barely begin to consider what other questions of ask."
 
     $ renpy.pause(0.3)
     play sound 'audio/sfx/arrow whistle.mp3'

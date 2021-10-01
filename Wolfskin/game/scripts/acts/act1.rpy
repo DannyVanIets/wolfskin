@@ -658,28 +658,30 @@ label act1:
 
     ke "The food smells amazing. Was that the pheasant you caught today, Anari?"
 
-    show anari_dim nii raised
+    show anari_dim nii raised with dissolve
 
     an "The very one. Ahh, a successful hunt and high quality spices can put even someone like me in a good mood."
 
     show kellac_dim raised nii happy sweat
     show fleur_dim nii happy
+    with dissolve
 
     ke "You should always be in a good mood, then!"
 
     # Anari switches to left to face Fleur
     show anari_dim look:
         xzoom 1
-    show kellac_dim smile open -sweat
+    show kellac_dim smile open -sweat     with dissolve
 
     an "Heheheh. Fleur, would you like some spiced pheasant?"
 
-    show fleur_dim sorry happy
+    show fleur_dim sorry happy     with dissolve
 
     fl "Oh no, thank you, Aunt Anari. You always make it way too spicy… "
 
     show fleur_dim sorry smile
     show anari_dim worry
+    with dissolve
 
     an "That's too bad… I guess you really don't take after Uldin when it comes to food."
 
@@ -921,6 +923,9 @@ label act1:
     show uldin_dim talk
     ul "It's a useful resource, but difficult to master. You did say the two of you are on a pilgrimage… so you might not be aware of recent events."
 
+    stop music fadeout 3.0
+    stop sound fadeout 5.0
+
     show eisleigh_dim angry look talk
     ei "There have been sightings of a werewolf in another town."
 
@@ -930,9 +935,6 @@ label act1:
 
     show uldin_dim pensive angry neutral with dissolve
     ul "Those foul beasts… A werewolf truly must be cursed to succumb to their bloodlust."
-
-    stop music fadeout 3.0
-    stop sound fadeout 5.0
 
     "An oppressive silence lingers and sweat beads down Edwin’s forehead. Ilona tries to keep a straight face, but her brow twitches."
 
@@ -1037,9 +1039,9 @@ label act1:
     "He nods and then closes the door, locking it with the key."
 
     hide eisleigh_dim with dissolve
-    play sound 'audio/sfx/wood door close.wav' volume 0.3
+    play sound 'audio/sfx/wood door close.wav' volume
 
-    queue sound 'audio/ambience/dark forest.mp3' volume 0.1 fadein 3.0 noloop
+    queue sound 'audio/ambience/dark forest.mp3' volume 0.4 fadein 3.0 noloop
 
     "The unexpected privacy given to him helps ease his mind and, feeling his skin cool, he wipes the cold sweat from his brow."
 
@@ -1176,7 +1178,7 @@ label act1:
 
     "Ilona stayed after Edwin's exit to ask Uldin and Eisleigh about the nature of curses, but the conversation that followed was dense and difficult."
 
-    play music 'audio/ambience/bbc fire.mp3' volume 0.2 fadein 2.0 noloop
+    play music 'audio/ambience/bbc fire.mp3' volume 0.3 fadein 2.0 noloop
 
     hide fleur_dim with dissolve
 
