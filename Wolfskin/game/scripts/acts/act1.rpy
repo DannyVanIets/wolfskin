@@ -1039,7 +1039,7 @@ label act1:
     "He nods and then closes the door, locking it with the key."
 
     hide eisleigh_dim with dissolve
-    play sound 'audio/sfx/wood door close.wav' volume
+    play sound 'audio/sfx/wood door close.wav'
 
     queue sound 'audio/ambience/dark forest.mp3' volume 0.4 fadein 3.0 noloop
 
