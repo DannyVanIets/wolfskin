@@ -642,7 +642,7 @@ label act1:
 
     "She speaks a few words of gratitude for the harvest and for peace and protection. When she lifts her eyes once again, the lively banquet commences."
 
-    queue music 'audio/music/mastered/The_Banquet.ogg' fadein 3.0
+    queue music 'audio/music/mastered/The_Banquet.ogg' fadein 3.0 volume 0.69
 
     hide ilona_dim with dissolve
 

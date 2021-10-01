@@ -768,21 +768,21 @@ label act3:
 
     play sound 'audio/sfx/arrow_fire.mp3'
 
-    "Anari releases the bowstring, and the arrow flies with a terrifying whistle."
+    "Anari releases the bowstring and the arrow flies with a terrifying whistle."
 
     play sound 'audio/sfx/arrow_hit.mp3'
 
-    "In one quick moment it grazes against Edwin's hide and he transforms from his bipedal, humanoid werewolf form to the form of a massive grey wolf."
+    "In one quick moment it grazes against Edwin's hide and he transforms from his bipedal werewolf form to the form of a massive grey wolf."
 
     play sound 'audio/sfx/Growl_6.mp3'
 
     "His senses numb with a lust for vengeance. Immediately, he swivels and targets Anari, swiping at her."
 
-    "She deftly steps back from a swipe from Edwin's claws, her every movement precise and intentional."
+    "She deftly steps back from Edwin's claws, her every movement precise and intentional."
 
-    "Anari can predict his behaviour easily. After all, he's only a beast — a sentimental one at that."
+    "Anari can predict his behaviour easily. After all, he's only a beast — and a sentimental one at that."
 
-    "Ilona quickly jumps onto Edwin, and he barrels off."
+    "Ilona quickly jumps onto Edwin, and he barrels off towards the outskirts of Belorov."
 
     ## TOWN WALL
     scene bg black with fade
@@ -792,7 +792,7 @@ label act3:
 
     il "The gates will be already closed by now. There's a part of the wall that was hastily patched up. You should be able to climb through there."
 
-    "Edwin shifts back into his bipedal form. The towering stone wall looms ahead."
+    "Edwin shifts into his bipedal form. The towering stone wall looms ahead."
 
     "He takes a running leap and embeds his claws into the ragged stone wall. He shifts back into his half-wolf form and starts climbing."
 
@@ -810,7 +810,7 @@ label act3:
 
     play sound 'audio/sfx/Pull_Bow.mp3'
 
-    "When she reaches to the top of the clock tower, pulls back the bowstring and takes aim at the beast."
+    "When she reaches the top of the clock tower, she pulls back the bowstring and takes aim at the beast."
 
     scene bg wound1
     play sound 'audio/sfx/arrow_fire.mp3'
@@ -825,11 +825,11 @@ label act3:
     $ renpy.pause(0.1, hard=True)
     play sound 'audio/sfx/zap arrow.mp3'
 
-    "Two pierce the wolf’s right shoulder. He howls in agony, almost losing his grip on Ilona. Nonetheless, the beast perseveres, his resolve unaffected."
+    "Two arrows pierce the wolf’s right shoulder. He howls in agony, almost losing his grip on Ilona. Nonetheless, the beast perseveres; his resolve unaffected."
 
     stop music fadeout 3.0
 
-    "The arrows embedded in him are a waste of her ammunition. Anari goes for his true weak point — the burden the beast is carrying."
+    "The arrows embedded in him are a waste of her ammunition. Anari goes for his true weak point — the burden which the beast is carrying."
     $ renpy.pause(1, hard=True)
     play sound 'audio/sfx/Pull_Bow.mp3'
     extend " Ilona."
@@ -867,7 +867,7 @@ label act3:
 
     "However, he’s not invincible; a few more well placed shots and he’s down, along with Ilona."
 
-    "Anari knows that Ilona is neither of those. If Ilona falls, the beast will chase after her."
+    "Anari knows that Ilona is neither a werewolf nor invincible. If Ilona falls, the beast will chase after her."
     play sound 'audio/sfx/Pull_Bow.mp3'
     extend " Anari takes aim again, completely focused on her target."
 
@@ -884,7 +884,7 @@ label act3:
     scene bg blood
     with hpunch
 
-    "One arrow inserts itself deep into Ilona’s shoulder blade, and she winces and writhes in agony. Despite this, Edwin still manages to hold her and continues onward."
+    "One arrow inserts itself deep into Ilona’s shoulder blade; she winces and writhes in agony. Despite this, Edwin still manages to hold onto her and continues onward."
 
     play sound 'audio/sfx/Pull_Bow.mp3'
 
@@ -928,11 +928,13 @@ label act3:
 
     "Ilona can barely make out the top of the wall. A tired Edwin helps her over."
 
-    "One last glance at Anari leaves nothing more than questions."
+    "Ilona considers Anari's motivations. Was she really telling the truth about not being interested in taking power in Belorov? What was the point of that trial she organized?
+
+    "One last glance at Anari leaves nothing more than further questions about her intentions…"
 
     play sound 'audio/sfx/Pull_Bow.mp3'
 
-    "Does she want to {i}let{/i} them leave? Or capture and burn them at the stake alive?"
+    extend " but in her current state of mind, she can barely begin to consider what other questions to ask."
 
     $ renpy.pause(0.3)
     play sound 'audio/sfx/arrow whistle.mp3'
