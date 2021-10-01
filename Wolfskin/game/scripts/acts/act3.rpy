@@ -772,13 +772,11 @@ label act3:
 
     play sound 'audio/sfx/arrow_hit.mp3'
 
-    "In one quick moment, it grazes against Edwin's hide and he transforms from his bipedal werewolf form to the form of a massive grey wolf."
+    "It grazes against Edwin's hide, and he transforms from his werewolf form to the form of a grey wolf."
 
     play sound 'audio/sfx/Growl_6.mp3'
 
-    "His senses numb with a lust for vengeance. Immediately, he swivels and targets Anari, swiping at her."
-
-    "She deftly steps back from Edwin's claws, her every movement precise and intentional."
+    "He runs to tackle Anari, but she deftly steps back from Edwin's attacks, her every movement precise and intentional."
 
     "Anari can predict his behaviour easily. After all, he's only a beast — and a sentimental one at that."
 
@@ -792,9 +790,7 @@ label act3:
 
     il "The gates will be already closed by now. There's a part of the wall that was hastily patched up. You should be able to climb through there."
 
-    "Edwin shifts into his bipedal form. The towering stone wall looms ahead."
-
-    "He takes a running leap and embeds his claws into the ragged stone wall. He shifts back into his half-wolf form and starts climbing."
+    "Edwin shifts into his bipedal form. He takes a running leap and embeds his claws into the ragged stone wall. He shifts back into his half-wolf form and starts climbing."
 
 # SCENE 44
 
@@ -810,7 +806,7 @@ label act3:
 
     play sound 'audio/sfx/Pull_Bow.mp3'
 
-    "When she reaches the top of the clock tower, she pulls back the bowstring and takes aim at the beast."
+    "When she reaches the top, she pulls back the bowstring and takes aim at the beast."
 
     scene bg wound1
     play sound 'audio/sfx/arrow_fire.mp3'
@@ -824,8 +820,6 @@ label act3:
     stop sound
     $ renpy.pause(0.1, hard=True)
     play sound 'audio/sfx/zap arrow.mp3'
-
-    "Two arrows pierce the wolf’s right shoulder. He howls in agony, almost losing his grip on Ilona. Nonetheless, the beast perseveres; his resolve unaffected."
 
     stop music fadeout 3.0
 
@@ -865,7 +859,7 @@ label act3:
     scene edwolf claws with longfade:
         xzoom -1 zoom 0.6
 
-    "However, he’s not invincible; a few more well placed shots and he’s down, along with Ilona."
+    "However, he’s not invincible; a few more well placed shots and he’s down."
 
     "Anari knows that Ilona is neither a werewolf nor invincible. If Ilona falls, the beast will chase after her."
     play sound 'audio/sfx/Pull_Bow.mp3'
@@ -884,7 +878,7 @@ label act3:
     scene bg blood
     with hpunch
 
-    "One arrow inserts itself deep into Ilona’s shoulder blade; she winces and writhes in agony. Despite this, Edwin still manages to hold onto her and continues onward."
+    "One arrow inserts itself deep into Ilona’s shoulder blade; she writhes in agony. Despite this, Edwin still manages to hold onto her and continues onward."
 
     play sound 'audio/sfx/Pull_Bow.mp3'
 
@@ -926,8 +920,6 @@ label act3:
 
     "There's no question about it — Ilona knows Anari could never miss her mark, and that Edwin might have survived if he escaped on his own."
 
-    "Ilona can barely make out the top of the wall. A tired Edwin helps her over."
-
     "Ilona considers Anari's motivations. Was she really telling the truth about not being interested in taking power in Belorov? What was the point of that trial she organized?"
 
     "One last glance at Anari leaves nothing more than further questions about her intentions…"
@@ -948,8 +940,6 @@ label act3:
     stop music fadeout 3.0
 
     "One final arrow impales Ilona, shooting through her cleanly through the abdomen."
-
-    "Ilona instinctively arches back from the arrow’s momentum and screams in anguish."
 
     ed "Ilona! No!"
 
