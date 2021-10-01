@@ -906,6 +906,8 @@ label act3:
 
     "Two more arrows make their mark, impacting Ilona’s ribs."
 
+    "Ilona's consciousness is starting to slip, unable to bear the arrows embedded in her."
+
     scene cg_repeating_edwolf_edgewolf_blurry with longdissolve:
         zoom 0.6
         # Makes you able to use subpixels, handy for positioning.
@@ -920,7 +922,7 @@ label act3:
 
     ed "Ilona! Ho-hold on, we’re almost there!"
 
-    "Time seems to slow down for Edward and Ilona. How much more agony can they endure? Edwin grimaces past the pain of his sustained wounds."
+    "Time seems to move too slowly. How much more agony can they endure? Edwin grimaces past the pain of his sustained wounds."
 
     "There's no question about it — Ilona knows Anari could never miss her mark, and that Edwin might have survived if he escaped on his own."
 
