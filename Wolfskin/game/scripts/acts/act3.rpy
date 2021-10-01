@@ -747,9 +747,7 @@ label act3:
 
     play sound 'audio/sfx/Growl_4.mp3'
 
-    "He rushes at the guards with a growl. Their attempts are pathetic; he pries Ilona away from them effortlessly."
-
-    "His claws slice through the rope, freeing her."
+    "He rushes at the guards with a growl and pries Ilona away from them. His claws slice through the rope, freeing her."
 
     hide hd edwolf unchained onlayer middle
     show bg black
@@ -760,7 +758,7 @@ label act3:
 
     play sound 'audio/sfx/Pull_Bow.mp3'
 
-    "Anari strings her bow and takes an arrow from her quiver, training it on Edwin’s beastly form."
+    "Anari strings her bow and takes an arrow from her quiver, training it on Edwin."
 
     an "I won't let you escape."
 
@@ -780,7 +778,7 @@ label act3:
 
     "Anari can predict his behaviour easily. After all, he's only a beast — and a sentimental one at that."
 
-    "Ilona quickly jumps onto Edwin, and he barrels off towards the outskirts of Belorov."
+    "Ilona quickly jumps onto Edwin, and he runs off towards the outskirts of Belorov."
 
     ## TOWN WALL
     scene bg black with fade
@@ -806,7 +804,7 @@ label act3:
 
     play sound 'audio/sfx/Pull_Bow.mp3'
 
-    "When she reaches the top, she pulls back the bowstring and takes aim at the beast."
+    "When she reaches the top, she pulls back the bowstring and takes aim at Edwin."
 
     scene bg wound1
     play sound 'audio/sfx/arrow_fire.mp3'
@@ -926,7 +924,7 @@ label act3:
 
     play sound 'audio/sfx/Pull_Bow.mp3'
 
-    extend " but in her current state of mind, she can barely begin to consider what other questions of ask."
+    extend " but in her current state of mind, she can barely begin to consider what other questions to ask."
 
     $ renpy.pause(0.3)
     play sound 'audio/sfx/arrow whistle.mp3'
