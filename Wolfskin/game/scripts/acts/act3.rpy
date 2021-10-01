@@ -772,7 +772,7 @@ label act3:
 
     play sound 'audio/sfx/arrow_hit.mp3'
 
-    "In one quick moment it grazes against Edwin's hide and he transforms from his bipedal werewolf form to the form of a massive grey wolf."
+    "In one quick moment, it grazes against Edwin's hide and he transforms from his bipedal werewolf form to the form of a massive grey wolf."
 
     play sound 'audio/sfx/Growl_6.mp3'
 
