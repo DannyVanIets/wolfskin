@@ -726,7 +726,7 @@ label act3:
 
     "Ilona struggles and tries to shake the men off, but the guards do not relent. One grabs her by the hair and pulls it — the pain making Ilona wince in agony."
 
-    "As Edwin watches this, he feels a pang in his heart. He can only watch in horror as Ilona is slowly but steadily bound, resist as she might."
+    "As Edwin watches this, he knows he has to make a choice. He watches in horror as Ilona is slowly but steadily bound, resist as she might."
 
     play sound [ "<silence 1.3>", "audio/sfx/Growl_6.mp3" ]
 
@@ -743,7 +743,7 @@ label act3:
             zoom 0.46
             ease2 1.27 zoom 0.39
 
-    "He transforms, the metallic chains that once constrained him clattering to the ground in pieces."
+    "The chains that contained him snap off him as he transforms into a massive werewolf."
 
     play sound 'audio/sfx/Growl_4.mp3'
 
