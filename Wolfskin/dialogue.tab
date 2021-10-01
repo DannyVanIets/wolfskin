@@ -797,7 +797,7 @@ act3_fea79246		His claws slice through the rope, freeing her.	game/scripts/acts/
 act3_150c2a17		Anari strings her bow and takes an arrow from her quiver, training it on Edwin’s beastly form.	game/scripts/acts/act3.rpy	763	"[what]"
 act3_5ce66e66	an	I won't let you escape.	game/scripts/acts/act3.rpy	765	an "[what]"
 act3_0dcacad1		Anari releases the bowstring and the arrow flies with a terrifying whistle.	game/scripts/acts/act3.rpy	771	"[what]"
-act3_1f68ffcc		In one quick moment it grazes against Edwin's hide and he transforms from his bipedal werewolf form to the form of a massive grey wolf.	game/scripts/acts/act3.rpy	775	"[what]"
+act3_b9c2d811		In one quick moment, it grazes against Edwin's hide and he transforms from his bipedal werewolf form to the form of a massive grey wolf.	game/scripts/acts/act3.rpy	775	"[what]"
 act3_4e6320f7		His senses numb with a lust for vengeance. Immediately, he swivels and targets Anari, swiping at her.	game/scripts/acts/act3.rpy	779	"[what]"
 act3_0da061b3		She deftly steps back from Edwin's claws, her every movement precise and intentional.	game/scripts/acts/act3.rpy	781	"[what]"
 act3_dc70cd5f		Anari can predict his behaviour easily. After all, he's only a beast — and a sentimental one at that.	game/scripts/acts/act3.rpy	783	"[what]"
