@@ -139,9 +139,7 @@ label act1:
 
     "As she says this, she places her hands over his. His hands are abnormally cold to touch. Ilona learned this was a sign of his transformation."
 
-    "She gently caresses his hand and strokes it soothingly."
-
-    "Despite his curse, she must remain with him."
+    "Even so, she must remain with him."
 
     show ilona_twilight closed relaxed with dissolve
 
