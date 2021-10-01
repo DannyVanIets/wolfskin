@@ -642,7 +642,7 @@ label act1:
 
     "She speaks a few words of gratitude for the harvest and for peace and protection. When she lifts her eyes once again, the lively banquet commences."
 
-    queue music 'audio/music/mastered/The_Banquet.ogg' fadein 3.0 volume 0.69
+    queue music 'audio/music/mastered/The_Banquet.ogg' fadein 3.0 volume 0.60
 
     hide ilona_dim with dissolve
 
@@ -1228,10 +1228,10 @@ label act1:
 
     "His room is on the right side of hers, and Kellac’s on the left."
 
-    show ilona_dim closed
+    show ilona_dim closed with dissolve
     "Ilona presses her ear up to the wall separating her and Edwin's room, but hears nothing from the other side."
 
-    show ilona_dim pensive
+    show ilona_dim pensive with dissolve
     il "(Not a sound. He's probably asleep.)"
 
     scene bg bedroom night dark
