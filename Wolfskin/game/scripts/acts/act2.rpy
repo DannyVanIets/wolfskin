@@ -245,7 +245,7 @@ label act2:
 
     "Ilona, feeling some remorse as though the two of them were bandits, prepares the deceased man's tea according to Anari's instruction."
 
-    "Trying her best to be hospitable Ilona also serves it with milk and sugar, as Fleur did."
+    "Trying her best to be hospitable, Ilona also serves it with milk and sugar, as Fleur did."
 
     play music 'audio/sfx/zapsplat clock.mp3' loop volume 0.1
 

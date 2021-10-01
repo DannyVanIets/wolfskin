@@ -259,7 +259,7 @@ screen credits():
             null height 80
             text "Adam, Sam, Selene and Chase"
             null height 80
-            text "Jessica and Jacob Elaouf of Exigent"
+            text "Jessica and Jacob Elalouf of Exigent"
             null height 80
             text "Remort Studios \nfor hosting\n Spooktober VN Game Jam 2021"
             null height 250
