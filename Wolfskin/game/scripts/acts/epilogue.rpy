@@ -13,10 +13,10 @@ label epilogue:
     window hide
 
     # Toggle on the auto-play
-    $_preferences.afm_enable = True
+    #$_preferences.afm_enable = True
 
     # Makes sure that the poem advances automatically. Still possible to instantly see a sentence though!
-    show screen disable_Lmouse()
+    # show screen disable_Lmouse()
 
     # NVL mode: The final poem - this is still being rewritten to have correct stanzas and structure. We are thinking part of this should be spoken in unison, and Edwin and Ilona should have separate parts.
 
@@ -82,7 +82,7 @@ label epilogue:
     play music 'audio/sfx/birdsong.ogg' volume 0.7
 
     # Toggle off the auto-play
-    $_preferences.afm_enable = False
+    #$_preferences.afm_enable = False
 
     scene no_cry_be_happy with longfade
     $ renpy.pause (6, hard=True)
