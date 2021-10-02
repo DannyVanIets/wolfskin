@@ -1074,7 +1074,7 @@ label act3:
 
     "Eventually, they stop to sit under the shade of a tree, basking in its shadow. Their breath is ragged, but in sync with each other's. Ilona rests her head on Edwin’s shoulders."
 
-    "Edwin and Ilona stay silent, listening to the breathing of the other. They both feared when they would only hear silence. The grievous wounds would prove to both of them that they were alive."
+    "Edwin and Ilona stay silent, each listening to the breathing of the other. They both feared when they would only hear silence. The grievous wounds would prove to both of them that they were alive."
 
     show edwin_sunset glance talk with dissolve
     ed "Evil breeds evil, indeed. Wherever I go, something always goes wrong."

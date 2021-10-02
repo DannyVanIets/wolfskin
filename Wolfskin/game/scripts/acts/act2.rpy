@@ -198,7 +198,7 @@ label act2:
     stop sound fadeout 3.0
     "Finding nothing else of note in the room, Ilona rejoins Anari. She finds Anari with her back pressed to the wall, steadily taking deep breaths."
 
-    "For a woman who seemed to fear nothing, Ilona can’t fathom why Anari look so scared at that moment."
+    "For a woman who seemed to fear nothing, Ilona can’t fathom why Anari looked so scared at that moment."
 
 # SCENE 18
 

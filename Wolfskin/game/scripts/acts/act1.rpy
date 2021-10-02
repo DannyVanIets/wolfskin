@@ -363,9 +363,9 @@ label act1:
     show edwin_night smile angry furrow
     ed "(Although — a town full of people not trying to kill me yet is quite an improvement.)"
 
-    "The town is bustling despite not being very large. A clock tower stands over the plaza. Small patches of land growing wheat are adjacent to the plaza and there is a stocked stable for horses nearby."
+    "The town is bustling despite not being very large. A clock tower stands over the plaza."
 
-    "There's a large bonfire in the square, and there are carved turnips at the doors of all the houses."
+    "There's a large bonfire in the square, and there are carved turnips at the doors of all the houses-"
 
     show ilona_night glance sad neutral with dissolve:
         zoom 0.50 xpos 0.75 xzoom -1
@@ -1475,7 +1475,7 @@ label act1:
     show anari_twilight cringe sweatdrop with dissolve
     an "I knew there was something wrong with him. I should've shot him dead when I had the chance…"
 
-    "This is not the cool and elegant Anari that Ilona had seen before. Instead, she disguises her sorrow with fury instead."
+    "This is not the cool and elegant Anari that Ilona had seen before. Instead, she disguises her sorrow with fury."
 
     scene bg masters chamber night
     show kellac_twilight anger at easeinleft_transform:
