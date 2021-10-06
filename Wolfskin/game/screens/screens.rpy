@@ -777,8 +777,8 @@ screen preferences():
                             bar value Preference("sound volume")
 
                             if config.sample_sound:
+                                spacing 50
                                 textbutton _("Test") action Play("sound", config.sample_sound)
-
 
                     if config.has_voice:
                         label _("Voice Volume")
@@ -787,6 +787,7 @@ screen preferences():
                             bar value Preference("voice volume")
 
                             if config.sample_voice:
+                                spacing 50
                                 textbutton _("Test") action Play("voice", config.sample_voice)
 
                     if config.has_music or config.has_sound or config.has_voice:
@@ -1424,9 +1425,10 @@ style nvl_button_text:
 ## Mobile Variants
 ################################################################################
 
+# vbox for 'Rollback Side' and 'Skip'
 style pref_vbox:
     variant "medium"
-    xsize 675
+    xsize 690
 
 ## Since a mouse may not be present, we replace the quick menu with a version
 ## that uses fewer and bigger buttons that are easier to touch.
@@ -1475,15 +1477,16 @@ style game_menu_outer_frame:
 
 style game_menu_navigation_frame:
     variant "small"
-    xsize 510
+    xsize 420
 
 style game_menu_content_frame:
     variant "small"
     top_margin 0
 
+# vbox for 'Rollback Side' and 'Skip'
 style pref_vbox:
     variant "small"
-    xsize 600
+    xsize 690
 
 style bar:
     variant "small"
@@ -1521,10 +1524,12 @@ style vslider:
     base_bar Frame("gui/phone/slider/vertical_[prefix_]bar.png", gui.vslider_borders, tile=gui.slider_tile)
     thumb "gui/phone/slider/vertical_[prefix_]thumb.png"
 
+# vbox for sliders
 style slider_vbox:
     variant "small"
-    xsize None
+    xsize 690
 
+# length of slider
 style slider_slider:
     variant "small"
-    xsize 900
+    xsize 525
