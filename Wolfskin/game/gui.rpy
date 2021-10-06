@@ -460,7 +460,7 @@ init python:
         gui.history_text_width = 1000
 
         ## File button layout.
-        gui.file_slot_cols = 2
+        gui.file_slot_cols = 3
         gui.file_slot_rows = 2
 
         ## NVL-mode.
