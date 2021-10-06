@@ -456,8 +456,8 @@ init python:
         gui.navigation_spacing = 20
         gui.pref_button_spacing = 10
 
-        gui.history_height = 190
-        gui.history_text_width = 690
+        gui.history_height = None
+        gui.history_text_width = 1000
 
         ## File button layout.
         gui.file_slot_cols = 2
