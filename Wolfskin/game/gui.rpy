@@ -464,17 +464,17 @@ init python:
         gui.file_slot_rows = 2
 
         ## NVL-mode.
-        gui.nvl_height = 170
+        gui.nvl_height = None
 
-        gui.nvl_name_width = 305
-        gui.nvl_name_xpos = 325
+        gui.nvl_name_width = 0
+        gui.nvl_name_xpos = 0
 
-        gui.nvl_text_width = 915
-        gui.nvl_text_xpos = 345
-        gui.nvl_text_ypos = 5
+        gui.nvl_text_width = 1920
+        gui.nvl_text_xpos = 0
+        gui.nvl_text_ypos = 0
 
-        gui.nvl_thought_width = 1240
-        gui.nvl_thought_xpos = 20
+        gui.nvl_thought_width = 780
+        gui.nvl_thought_xpos = 240
 
         gui.nvl_button_width = 1240
         gui.nvl_button_xpos = 20
