@@ -426,7 +426,7 @@ init python:
     ## on tablets and phones.
     if renpy.variant("touch"):
 
-        gui.quick_button_borders = Borders(40, 14, 40, 0)
+        gui.quick_button_borders = Borders(50, 25, 50, 25) 
 
     ## This changes the size and spacing of various GUI elements to ensure they
     ## are easily visible on phones.
@@ -458,7 +458,7 @@ init python:
         gui.history_height = 190
         gui.history_text_width = 690
 
-        gui.quick_button_text_size = 20
+        gui.quick_button_text_size = 35
 
         ## File button layout.
         gui.file_slot_cols = 2
