@@ -433,18 +433,18 @@ init python:
     if renpy.variant("small"):
 
         ## Font sizes.
-        gui.text_size = 30
-        gui.name_text_size = 36
-        gui.notify_text_size = 25
-        gui.interface_text_size = 30
-        gui.button_text_size = 30
-        gui.label_text_size = 34
+        gui.text_size = 40
+        gui.name_text_size = 35
+        gui.notify_text_size = 19
+        gui.interface_text_size = 44
+        gui.button_text_size = gui.interface_text_size
+        gui.label_text_size = 35
 
         ## Adjust the location of the textbox.
-        gui.textbox_height = 240
-        gui.name_xpos = 80
-        gui.dialogue_xpos = 90
-        gui.dialogue_width = 1100
+        gui.textbox_height = 280
+        gui.name_xpos = 280
+        gui.dialogue_xpos = 130
+        gui.dialogue_width = 1630
 
         ## Change the size and spacing of various things.
         gui.slider_size = 36
