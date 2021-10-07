@@ -270,7 +270,8 @@ define gui.choice_spacing = 22
 define gui.navigation_spacing = 4
 
 ## Controls the amount of spacing between preferences.
-define gui.pref_spacing = 10
+# NOTE: vertical spacing between slider boxes and Rollback Slide and Skip Prefs boxes
+define gui.pref_spacing = 20
 
 ## Controls the amount of spacing between preference buttons.
 define gui.pref_button_spacing = 0
@@ -426,56 +427,59 @@ init python:
     ## on tablets and phones.
     if renpy.variant("touch"):
 
-        gui.quick_button_borders = Borders(40, 14, 40, 0)
+        ## Quick Menu Buttons
+        gui.quick_button_borders = Borders(50, 25, 50, 25)
+        gui.quick_button_text_size = 35
+
+        ## Main Menu & Preference Screen
+
+        # Main Menu Screen Buttons
+        gui.navigation_spacing = 30
+        # The options for 'Rollback Side' and 'Skip'.
+        gui.pref_button_spacing = 15
+        # Slider line thickness
+        gui.slider_size = 35
 
     ## This changes the size and spacing of various GUI elements to ensure they
     ## are easily visible on phones.
     if renpy.variant("small"):
 
         ## Font sizes.
-        gui.text_size = 30
-        gui.name_text_size = 36
-        gui.notify_text_size = 25
-        gui.interface_text_size = 30
-        gui.button_text_size = 30
-        gui.label_text_size = 34
+        gui.text_size = 40
+        gui.name_text_size = 35
+        gui.notify_text_size = 19
+        gui.interface_text_size = 44 # Main Menu Labels
+        gui.button_text_size = gui.interface_text_size
+        gui.label_text_size = 35 # Text at sliders
 
         ## Adjust the location of the textbox.
-        gui.textbox_height = 240
-        gui.name_xpos = 80
-        gui.dialogue_xpos = 90
-        gui.dialogue_width = 1100
-
-        ## Change the size and spacing of various things.
-        gui.slider_size = 36
+        gui.textbox_height = 280
+        gui.name_xpos = 280
+        gui.dialogue_xpos = 130
+        gui.dialogue_width = 1630
 
         gui.choice_button_width = 1240
         gui.choice_button_text_size = 30
 
-        gui.navigation_spacing = 20
-        gui.pref_button_spacing = 10
-
-        gui.history_height = 190
-        gui.history_text_width = 690
-
-        gui.quick_button_text_size = 20
+        gui.history_height = None
+        gui.history_text_width = 1000
 
         ## File button layout.
-        gui.file_slot_cols = 2
+        gui.file_slot_cols = 3
         gui.file_slot_rows = 2
 
         ## NVL-mode.
-        gui.nvl_height = 170
+        gui.nvl_height = None
 
-        gui.nvl_name_width = 305
-        gui.nvl_name_xpos = 325
+        gui.nvl_name_width = 0
+        gui.nvl_name_xpos = 0
 
-        gui.nvl_text_width = 915
-        gui.nvl_text_xpos = 345
-        gui.nvl_text_ypos = 5
+        gui.nvl_text_width = 1920
+        gui.nvl_text_xpos = 0
+        gui.nvl_text_ypos = 0
 
-        gui.nvl_thought_width = 1240
-        gui.nvl_thought_xpos = 20
+        gui.nvl_thought_width = 780
+        gui.nvl_thought_xpos = 240
 
         gui.nvl_button_width = 1240
         gui.nvl_button_xpos = 20

@@ -109,12 +109,6 @@ screen say(who, what):
         text what id "what"
 
 
-    ## If there's a side image, display it above the text. Do not display on the
-    ## phone variant - there's no room.
-    if not renpy.variant("small"):
-        add SideImage() xalign 0.0 yalign 1.0
-
-
 ## Make the namebox available for styling through the Character object.
 init python:
     config.character_id_prefixes.append('namebox')
@@ -783,8 +777,8 @@ screen preferences():
                             bar value Preference("sound volume")
 
                             if config.sample_sound:
+                                spacing 50
                                 textbutton _("Test") action Play("sound", config.sample_sound)
-
 
                     if config.has_voice:
                         label _("Voice Volume")
@@ -793,6 +787,7 @@ screen preferences():
                             bar value Preference("voice volume")
 
                             if config.sample_voice:
+                                spacing 50
                                 textbutton _("Test") action Play("voice", config.sample_voice)
 
                     if config.has_music or config.has_sound or config.has_voice:
@@ -1430,9 +1425,10 @@ style nvl_button_text:
 ## Mobile Variants
 ################################################################################
 
+# vbox for 'Rollback Side' and 'Skip'
 style pref_vbox:
     variant "medium"
-    xsize 675
+    xsize 690
 
 ## Since a mouse may not be present, we replace the quick menu with a version
 ## that uses fewer and bigger buttons that are easier to touch.
@@ -1446,13 +1442,13 @@ screen quick_menu():
         hbox:
             style_prefix "quick"
 
-            xalign 0.5
+            xalign 0.9
             yalign 1.0
 
-            textbutton _("Back") action Rollback()
-            textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
-            textbutton _("Auto") action Preference("auto-forward", "toggle")
-            textbutton _("Menu") action ShowMenu()
+            #textbutton _("Back") action Rollback()
+            textbutton _("SKIP") action Skip() alternate Skip(fast=True, confirm=True)
+            textbutton _("AUTO") action Preference("auto-forward", "toggle")
+            textbutton _("MENU") action ShowMenu()
 
 
 style window:
@@ -1481,15 +1477,16 @@ style game_menu_outer_frame:
 
 style game_menu_navigation_frame:
     variant "small"
-    xsize 510
+    xsize 420
 
 style game_menu_content_frame:
     variant "small"
     top_margin 0
 
+# vbox for 'Rollback Side' and 'Skip'
 style pref_vbox:
     variant "small"
-    xsize 600
+    xsize 690
 
 style bar:
     variant "small"
@@ -1527,10 +1524,12 @@ style vslider:
     base_bar Frame("gui/phone/slider/vertical_[prefix_]bar.png", gui.vslider_borders, tile=gui.slider_tile)
     thumb "gui/phone/slider/vertical_[prefix_]thumb.png"
 
+# vbox for sliders
 style slider_vbox:
     variant "small"
-    xsize None
+    xsize 690
 
+# length of slider
 style slider_slider:
     variant "small"
-    xsize 900
+    xsize 525
