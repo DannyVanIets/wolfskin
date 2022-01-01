@@ -1060,7 +1060,7 @@ label act3:
 # keep the xalign values for the bg to scroll in the correct direction
 # Increase linear value for slower scrolling
     image valley_scroll:
-        "images/bg/bg valley sunset long.png"
+        "images/bg/bg valley sunset long.webp"
         xalign 0.0
         linear 340.0 xalign 1.0
         repeat
