@@ -23,7 +23,7 @@ define gui.show_name = False
 
 ## The version of the game.
 
-define config.version = "1.0"
+define config.version = "1.3"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
@@ -198,6 +198,7 @@ init python:
     # images
     build.classify('game/**.png', 'images')
     build.classify('game/**.jpg', 'images')
+    build.classify('game/**.webp', 'images')
 
     # audio
     build.classify('game/**.ogg', 'audio')
