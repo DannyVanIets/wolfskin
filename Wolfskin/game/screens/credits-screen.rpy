@@ -43,229 +43,229 @@ screen credits():
         # In here is all the text for the credits.
         vbox:
             # This "Credits" label is the hbox.
-            label "Credits" xalign 0.5
+            label _("Credits") xalign 0.5
 
             null height 400
 
-            text "Voice Cast" size 100
+            text _("Voice Cast") size 100
             null height 100
-            text "Lasli Tran as Ilona"
-
-            null height 100
-            text "Conner Howard as Edwin"
+            text _("Lasli Tran as Ilona")
 
             null height 100
-            text "Elissa Park as Anari"
+            text _("Conner Howard as Edwin")
 
             null height 100
-            text "Shakyra Dunn as Eisleigh"
+            text _("Elissa Park as Anari")
 
             null height 100
-            text "Daniel Walton as Kellac"
+            text _("Shakyra Dunn as Eisleigh")
 
             null height 100
-            text "Trent Martin as Uldin"
+            text _("Daniel Walton as Kellac")
 
             null height 100
-            text "Lisa-Marie Lee as Salome"
+            text _("Trent Martin as Uldin")
 
             null height 100
-            text "and"
+            text _("Lisa-Marie Lee as Salome")
 
             null height 100
-            text "Bindy Coda as Fleur"
+            text _("and")
+
+            null height 100
+            text _("Bindy Coda as Fleur")
 
             null height 400
 
-            text "Creative Director" size 100
+            text _("Creative Director") size 100
             null height 80
-            text "Tamafry"
+            text _("Tamafry")
 
             null height 400
 
-            text "Lead Writer" size 100
+            text _("Lead Writer") size 100
             null height 80
-            text "Abhishek"
+            text _("Abhishek")
 
             null height 400
 
-            text "Editor and Proofreader" size 100
+            text _("Editor and Proofreader") size 100
             null height 80
-            text "Billie (thelof9)"
+            text _("Billie (thelof9)")
 
             null height 400
 
-            text "Casting and Voice Director" size 100
+            text _("Casting and Voice Director") size 100
             null height 80
-            text "Maxi Molina (SandraMJ)"
+            text _("Maxi Molina (SandraMJ)")
 
             null height 400
 
-            text "Script Editors" size 100
+            text _("Script Editors") size 100
             null height 80
-            text "Jordan K. Brown"
+            text _("Jordan K. Brown")
             null height 80
-            text "Maxi Molina (SandraMJ)"
+            text _("Maxi Molina (SandraMJ)")
 
             null height 400
 
-            text "Voice Audio Editing Team" size 100
+            text _("Voice Audio Editing Team") size 100
             null height 80
-            text "Jordan K. Brown"
+            text _("Jordan K. Brown")
             null height 80
-            text "Luis \"RunnerGuitar\" Guerrero"
+            text _("Luis \"RunnerGuitar\" Guerrero")
             null height 80
-            text "J-Der"
+            text _("J-Der")
             null height 80
-            text "ObsidianWasp"
+            text _("ObsidianWasp")
             null height 80
-            text "Andrew Rella"
+            text _("Andrew Rella")
             null height 80
-            text "Amemarteau"
+            text _("Amemarteau")
 
             null height 400
 
-            text "Voice Mastering" size 100
+            text _("Voice Mastering") size 100
             null height 80
-            text "Luke Ford"
+            text _("Luke Ford")
 
             null height 400
 
-            text "Quality Assurance Tester" size 100
+            text _("Quality Assurance Tester") size 100
             null height 80
-            text "Gaming Variety Potato"
+            text _("Gaming Variety Potato")
 
             null height 400
 
-            text "Programmers" size 100
+            text _("Programmers") size 100
             null height 80
-            text "Gaming Variety Potato"
+            text _("Gaming Variety Potato")
             null height 80
-            text "Vygan"
+            text _("Vygan")
 
             null height 400
 
-            text "Lead Artist" size 100
+            text _("Lead Artist") size 100
             null height 80
-            text "Tamafry"
+            text _("Tamafry")
 
             null height 400
 
-            text "CG Assistance" size 100
+            text _("CG Assistance") size 100
             null height 80
-            text "Luis \"RunnerGuitar\" Guerrero"
+            text _("Luis \"RunnerGuitar\" Guerrero")
 
             null height 400
 
-            text "Assistant BG Artist & Colours" size 100
+            text _("Assistant BG Artist & Colours") size 100
             null height 80
-            text "Jason \"Helrouis\" Cheng"
+            text _("Jason \"Helrouis\" Cheng")
 
             null height 400
 
-            text "GUI & Graphic Designer" size 100
+            text _("GUI & Graphic Designer") size 100
             null height 80
-            text "Kaya"
+            text _("Kaya")
 
             null height 400
 
-            text "Logo Designer" size 100
+            text _("Logo Designer") size 100
             null height 80
-            text "Puchi"
+            text _("Puchi")
 
             null height 400
 
-            text "Music Composers" size 100
+            text _("Music Composers") size 100
             null height 80
-            text "Luis \"RunnerGuitar\" Guerrero"
+            text _("Luis \"RunnerGuitar\" Guerrero")
             null height 80
-            text "Octavio Savinelli"
+            text _("Octavio Savinelli")
             null height 80
-            text "Luke Ford"
+            text _("Luke Ford")
 
             null height 400
 
-            text "Music Arranger and Mixer" size 100
+            text _("Music Arranger and Mixer") size 100
             null height 80
-            text "Luis \"RunnerGuitar\" Guerrero"
+            text _("Luis \"RunnerGuitar\" Guerrero")
 
             null height 400
 
-            text "Sound Designer" size 100
+            text _("Sound Designer") size 100
             null height 80
-            text "Luke Ford"
+            text _("Luke Ford")
 
             null height 400
 
-            text "Wikicommons: Background Resources" size 100
+            text _("Wikicommons: Background Resources") size 100
             null height 80
-            text "Ľuboš Repta"
+            text _("Ľuboš Repta")
             null height 80
-            text "Daniel Thornton"
+            text _("Daniel Thornton")
             null height 80
-            text "Zidikai1"
+            text _("Zidikai1")
             null height 80
-            text "Leonid Evdokimov"
+            text _("Leonid Evdokimov")
             null height 80
-            text "Александр Байдуков"
+            text _("Александр Байдуков")
             null height 80
-            text "Horia Varlan"
+            text _("Horia Varlan")
             null height 80
-            text "Gary Todd"
+            text _("Gary Todd")
             null height 80
-            text "Monyesz"
+            text _("Monyesz")
 
             null height 400
 
-            text "Freepik: Graphic Resources" size 100
+            text _("Freepik: Graphic Resources") size 100
             null height 80
-            text "Racool Studio"
+            text _("Racool Studio")
             null height 80
-            text "Jannoon028"
+            text _("Jannoon028")
             null height 80
-            text "GaryKillian"
+            text _("GaryKillian")
 
             null height 200
 
-            text "FreeSound: Sound Resources" size 100
+            text _("FreeSound: Sound Resources") size 100
             null height 80
-            text "PatrickLieberkind"
+            text _("PatrickLieberkind")
             null height 80
-            text "InspectorK"
+            text _("InspectorK")
             null height 80
-            text "Tim Kahn"
+            text _("Tim Kahn")
             null height 80
-            text "nhaudio"
+            text _("nhaudio")
             null height 80
-            text "Volivieri"
+            text _("Volivieri")
             null height 80
-            text "Gynation"
+            text _("Gynation")
             null height 80
-            text "Reinsamba"
+            text _("Reinsamba")
 
             null height 200
 
-            text "Additional Sounds from" size 100
+            text _("Additional Sounds from") size 100
             null height 80
-            text "Zapsplat"
+            text _("Zapsplat")
             null height 80
-            text "Pro Sound Effects"
+            text _("Pro Sound Effects")
 
             null height 400
 
-            text "Special Thanks" size 100
+            text _("Special Thanks") size 100
             null height 80
-            text "Amemarteau"
+            text _("Amemarteau")
             null height 80
-            text "Adam, Sam, Selene and Chase"
+            text _("Adam, Sam, Selene and Chase")
             null height 80
-            text "Jessica and Jacob Elalouf of Exigent"
+            text _("Jessica and Jacob Elalouf of Exigent")
             null height 80
-            text "Remort Studios \nfor hosting\n Spooktober VN Game Jam 2021"
+            text _("Remort Studios \nfor hosting\n Spooktober VN Game Jam 2021")
             null height 250
 
             null height 80
-            text "Thank you for playing this game. \n\nWe hope you enjoyed it."
+            text _("Thank you for playing this game. \n\nWe hope you enjoyed it.")
 
 # The styling for all the credit text.
 style credits_hbox:

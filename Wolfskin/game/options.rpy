@@ -29,8 +29,7 @@ define config.version = "1.3"
 ## Text that is placed on the game's about screen. Place the text between the
 ## triple-quotes, and leave a blank line between paragraphs.
 
-define gui.about = _p("""
-""")
+define gui.about = _p("""A forsaken nun must prove a monster's innocence. He is offered no voice, but she will lend hers.""")
 
 
 ## A short name for the game used for executables and directories in the built
@@ -223,10 +222,10 @@ init python:
 ## in-app purchases. It can be found on the "Services & APIs" page of the Google
 ## Play developer console.
 
-# define build.google_play_key = "..."
+# define build.google_play_key = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlkRp9K5Y2nO+EwSj5CepRjAcgygGP0+TMCJlAMjCKL1cy76ftnPrItYyZWw0SvkVqafYqDNzGDxqqXOg3mQQlWOqRh7gEpZd21b14Pxm/iss94VeSnei0SyocMNSFSmhuK5tnsWyCL22aSX0oiYOS4RNibtyEAp2RyaY7io6mEzldd70GPweDN+Z4D6eogkPLMIOZ0BsrIfkp1coQvPjQVKTkGhSnmcUGb6BV4vgamDHiG2qXSfTUyJbTG9ozxhVPbXcuWeIYV8d0QF/u2TxPs/WqYY8qSKDcp+wi1Rfv/rPmV+c5E2B0LWddZVlar9w43tF2hxUCcNX/f0Z9GXg8wIDAQAB"
 
 
 ## The username and project name associated with an itch.io project, separated
 ## by a slash.
 
-# define build.itch_project = "renpytom/test-project"
+# define build.itch_project = "tamafry/wolfskins-curse"
