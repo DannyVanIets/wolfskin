@@ -183,6 +183,10 @@ translate french strings:
     new "Concepteur Son"
 
     # game/screens/credits-screen.rpy:200
+    old "French translator"
+    new "Traducteur française"
+
+    # game/screens/credits-screen.rpy:200
     old "Wikicommons: Background Resources"
     new "Wikicommons: Background Resources"
 

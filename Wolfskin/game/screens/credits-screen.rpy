@@ -10,7 +10,7 @@
 
 transform credits_scroll(speed):
     ypos 1100  # This is the space between the top of the screen and the text 'credits'.
-    linear speed ypos -23500 # This is how far down the screen will scroll, with the speed for how fast it will scroll.
+    linear speed ypos -25200 # This is how far down the screen will scroll, with the speed for how fast it will scroll.
 
 screen credits():
     # Make a menu of this, so you do not have main menu in the background while the credits are rolling.
@@ -194,6 +194,12 @@ screen credits():
             text _("Sound Designer") size 100
             null height 80
             text _("Luke Ford")
+
+            null height 400
+
+            text _("French Translator") size 100
+            null height 80
+            text _("Jean-Yves Chasle")
 
             null height 400
 
