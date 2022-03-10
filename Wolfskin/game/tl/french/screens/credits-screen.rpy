@@ -184,7 +184,7 @@ translate french strings:
 
     # game/screens/credits-screen.rpy:200
     old "French translator"
-    new "Traducteur française"
+    new "Traduction française"
 
     # game/screens/credits-screen.rpy:200
     old "Wikicommons: Background Resources"
