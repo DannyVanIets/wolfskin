@@ -726,7 +726,11 @@ label act3:
 
     "Ilona struggles and tries to shake the men off, but the guards do not relent. One grabs her by the hair and pulls it — the pain making Ilona wince in agony."
 
+    hide ilona_sunset
+
+
     "As Edwin watches this, he knows he has to make a choice. He watches in horror as Ilona is slowly but steadily bound, resist as she might."
+    hide edwin_sunset
 
     play sound [ "<silence 1.3>", "audio/sfx/Growl_6.mp3" ]
 
@@ -736,12 +740,7 @@ label act3:
 
     $ renpy.pause(1.1, hard=True)
 
-    $all_moves(camera_check_points={'y': [(-111, 0.0, 'bop_out_time_warp'), (-1344, 1.27, 'ease2')], 'x': [(2250, 0.0, 'bop_out_time_warp'), (1012, 1.27, 'ease2')]})
-    show hd edwolf unchained  onlayer middle:
-        subpixel True xpos 0.5 ypos 1.0 xanchor 0.5 yanchor 1.0 zoom 0.46 rotate None
-        parallel:
-            zoom 0.46
-            ease2 1.27 zoom 0.39
+    show hd edwolf unchained
 
     "The chains that contained him snap off him as he transforms into a massive werewolf."
 
@@ -749,7 +748,7 @@ label act3:
 
     "He rushes at the guards with a growl and pries Ilona away from them. His claws slice through the rope, freeing her."
 
-    hide hd edwolf unchained onlayer middle
+    hide hd edwolf unchained
     show bg black
     scene bg town plaza sunset
     show anari_sunset fury blank neutral kill at center:
@@ -784,7 +783,6 @@ label act3:
     scene bg black with fade
 
     scene hd edwolf protecc with longfade:
-        zoom 0.5
 
     il "The gates will be already closed by now. There's a part of the wall that was hastily patched up. You should be able to climb through there."
 
@@ -854,17 +852,14 @@ label act3:
 
     "He's taken worse beatings than this as a werewolf, so he grits his fangs and continues on. He will live — he has to."
 
-    scene edwolf claws with longfade:
-        xzoom -1 zoom 0.6
+    scene hd edwolf final:
+        zoom 0.6
 
     "However, he’s not invincible; a few more well placed shots and he’s down."
-
     "Anari knows that Ilona is neither a werewolf nor invincible. If Ilona falls, the beast will chase after her."
+
     play sound 'audio/sfx/Pull_Bow.mp3'
     extend " Anari takes aim again, completely focused on her target."
-
-    show ilona_sunset open aaaa talk at center with dissolve:
-        zoom 0.55 yoffset 60
     il "Stay with me Edwin! Don’t lose sight of our escape. I’ll do my best to heal your wounds with- Ah!"
 
     play sound 'audio/sfx/arrow whistle.mp3'
@@ -1108,7 +1103,6 @@ label act3:
     scene bg black with longdissolve
 
     ed "…"
-
     il "Edwin?"
     $ renpy.pause(3.0)
     ed "…"
@@ -1177,9 +1171,7 @@ label act3:
     play sound 'audio/sfx/zap clothes rustle.mp3' volume 0.2
 
     # CG lying on grass (eyes open)
-
-    $all_moves(camera_check_points={'y': [(-3988, 0, None), (-3988, 0, 'linear')], 'x': [(537, 0, None), (549, 0, 'linear')], 'z': [(0, 0, None), (0, 0, 'linear')], 'rotate': [(0, 0, None), (0, 0, 'linear')]}, layer_check_points={'forward': [(1848, 0, None), (1848, 0, None)], 'middle': [(1848, 0, None), (1848, 0, None)], 'background': [(1848, 0, None), (1848, 0, None)]}, focus_check_points={'dof': [(1848.9, 0, None), (9999999, 0, None)], 'focus': [(False, 0, None), (1848.9, 0, None)]})
-    show hd final  onlayer master:
+    show hd final:
         subpixel True xpos 0.5 ypos 1.0 xanchor 0.5 yanchor 1.0 rotate None
         parallel:
             yanchor 1.0
