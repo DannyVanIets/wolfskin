@@ -1,4 +1,4 @@
-﻿# TODO: Translation updated at 2022-02-01 22:41
+# TODO: Translation updated at 2022-02-01 22:41
 
 translate french strings:
 
@@ -45,6 +45,10 @@ translate french strings:
     # game/screens/screens.rpy:307
     old "Preferences"
     new "Préférences"
+
+    # game/screens/screens.rpy:310
+    old "Extras"
+    new "Suppléments"
 
     # game/screens/screens.rpy:311
     old "End Replay"

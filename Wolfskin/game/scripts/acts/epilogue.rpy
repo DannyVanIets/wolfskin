@@ -79,6 +79,8 @@ label epilogue:
 
     nvl clear
 
+    $ persistent.completed = True
+
     play music 'audio/sfx/birdsong.ogg' volume 0.7
 
     # Toggle off the auto-play
