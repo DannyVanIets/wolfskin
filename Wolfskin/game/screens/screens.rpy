@@ -306,6 +306,9 @@ screen navigation():
 
         textbutton _("Preferences") action ShowMenu("preferences")
 
+        if persistent.completed:
+            textbutton _("Extras") action Start("extra")
+
         if _in_replay:
 
             textbutton _("End Replay") action EndReplay(confirm=True)

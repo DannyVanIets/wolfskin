@@ -46,6 +46,11 @@ translate french strings:
     old "Preferences"
     new "Préférences"
 
+    # game/screens/screens.rpy:310
+    old "Extras"
+    new "Suppléments"
+
+
     # game/screens/screens.rpy:311
     old "End Replay"
     new "Terminer Replay"
