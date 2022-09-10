@@ -739,7 +739,8 @@ label act3:
     "Edwin has seen enough."
 
     $ renpy.pause(1.1, hard=True)
-
+    scene hd edwolf unchained
+    $ renpy.movie_cutscene("/images/cg/edwolf gone webm.webm")
     show hd edwolf unchained
 
     "The chains that contained him snap off him as he transforms into a massive werewolf."
