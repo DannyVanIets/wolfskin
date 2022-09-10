@@ -18,29 +18,29 @@ screen intro(actNumber):
 
         vbox:
             if actNumber == 1:
-                label "Act I" xalign 0.5
+                label _("Act I") xalign 0.5
 
                 null height 50
 
-                text "All Hallows' Eve - Sanctuary"
+                text _("All Hallows' Eve - Sanctuary")
 
             elif actNumber == 2:
-                label "Act II" xalign 0.5
+                label _("Act II") xalign 0.5
 
                 null height 50
 
-                text "All Hallows' Day - The Curse"
+                text _("All Hallows' Day - The Curse")
 
             elif actNumber == 3:
-                label "Act III" xalign 0.5
+                label _("Act III") xalign 0.5
 
                 null height 50
 
-                text "All Hallow's Day - Warmth"
+                text _("All Hallow's Day - Warmth")
 
             # In case we want to make it clear that it is the epilogue.
             else:
-                label "Epilogue" xalign 0.5
+                label _("Epilogue") xalign 0.5
 
 style intro_label_text:
     xalign 0.5

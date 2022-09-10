@@ -745,6 +745,12 @@ screen preferences():
                 ## Additional vboxes of type "radio_pref" or "check_pref" can be
                 ## added here, to add additional creator-defined preferences.
 
+                vbox:
+                    style_prefix "radio"
+                    label _("Language")
+                    textbutton _("English") action Language(None)
+                    textbutton _("Français") action Language("french")
+
             null height(4 * gui.pref_spacing)
 
             hbox:
